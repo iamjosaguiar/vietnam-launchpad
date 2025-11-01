@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Trang chủ",
+    "services": "Dịch vụ",
+    "pricing": "Bảng giá",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "resources": "Tài liệu",
+    "getConsultation": "Tư vấn miễn phí"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Định cư Việt Nam một cách tự tin",
+      "subtitle": "Chúng tôi giúp người nước ngoài định cư tại Việt Nam không gặp rắc rối—xử lý visa, thành lập công ty và hội nhập địa phương trong 90 ngày.",
+      "cta": "Bắt đầu hành trình",
+      "ctaSecondary": "Tìm hiểu thêm"
+    },
+    "stats": {
+      "expats": "100,000+",
+      "expatLabel": "Người nước ngoài tại Việt Nam",
+      "growth": "7.1%",
+      "growthLabel": "Tăng trưởng GDP 2024",
+      "ranking": "#1",
+      "rankingLabel": "Chi phí sinh hoạt hợp lý nhất"
+    },
+    "services": {
+      "title": "Dịch vụ Xuất nhập cảnh & Kinh doanh Chuyên nghiệp",
+      "subtitle": "Giá cả minh bạch, hướng dẫn chuyên môn, đảm bảo kết quả",
+      "trc": {
+        "title": "Thẻ tạm trú (TRC)",
+        "description": "Xử lý thẻ tạm trú với tỷ lệ thành công 60-70%",
+        "price": "$350",
+        "duration": "5-7 ngày"
+      },
+      "workPermit": {
+        "title": "Giấy phép lao động",
+        "description": "Đăng ký giấy phép lao động đơn giản",
+        "price": "$180",
+        "duration": "3 tuần"
+      },
+      "companySetup": {
+        "title": "Đăng ký doanh nghiệp",
+        "description": "Thành lập công ty TNHH hoàn chỉnh kèm hỗ trợ ngân hàng",
+        "price": "$3,500",
+        "duration": "2-4 tháng"
+      }
+    }
+  },
+  "common": {
+    "learnMore": "Tìm hiểu thêm",
+    "getStarted": "Bắt đầu",
+    "contactUs": "Liên hệ",
+    "readMore": "Đọc thêm"
+  }
+}

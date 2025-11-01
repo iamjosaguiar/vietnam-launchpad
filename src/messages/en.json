@@ -1,0 +1,140 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "resources": "Resources",
+    "getConsultation": "Get Consultation"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Navigate Vietnam with Confidence",
+      "subtitle": "We help expats relocate to Vietnam with zero hassles—securing visas, company setup, and local integration in 90 days.",
+      "cta": "Start Your Journey",
+      "ctaSecondary": "Learn More"
+    },
+    "stats": {
+      "expats": "100,000+",
+      "expatLabel": "Expats in Vietnam",
+      "growth": "7.1%",
+      "growthLabel": "GDP Growth 2024",
+      "ranking": "#1",
+      "rankingLabel": "Expat Affordability"
+    },
+    "services": {
+      "title": "Professional Immigration & Business Services",
+      "subtitle": "Transparent pricing, expert guidance, guaranteed results",
+      "trc": {
+        "title": "TRC Applications",
+        "description": "Temporary Residence Card processing with 60-70% margins",
+        "price": "$350",
+        "duration": "5-7 days"
+      },
+      "workPermit": {
+        "title": "Work Permits",
+        "description": "Streamlined work permit applications",
+        "price": "$180",
+        "duration": "3 weeks"
+      },
+      "companySetup": {
+        "title": "Company Registration",
+        "description": "Complete LLC setup with banking support",
+        "price": "$3,500",
+        "duration": "2-4 months"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional immigration and business consulting services",
+    "trc": {
+      "title": "TRC Applications",
+      "description": "Get your Temporary Residence Card with our streamlined process. Perfect for long-term stays in Vietnam.",
+      "features": [
+        "1-3 year validity periods",
+        "5-7 working days processing",
+        "Document preparation included",
+        "Renewal assistance"
+      ],
+      "price": "$350",
+      "government_fee": "Government fee: $145-165"
+    },
+    "workPermit": {
+      "title": "Work Permits",
+      "description": "Obtain your work permit legally and efficiently with our expert guidance through the new streamlined process.",
+      "features": [
+        "2-year validity",
+        "3 weeks total processing",
+        "Health check coordination",
+        "Criminal record assistance"
+      ],
+      "price": "$180",
+      "government_fee": "Government fee: $16-42"
+    },
+    "companySetup": {
+      "title": "Company Registration",
+      "description": "Complete LLC setup including banking, legal compliance, and ongoing support for your business in Vietnam.",
+      "features": [
+        "100% foreign ownership allowed",
+        "2-4 months processing",
+        "Banking account setup",
+        "Legal representative service"
+      ],
+      "price": "$3,500",
+      "government_fee": "Government fees included"
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "No hidden fees. Clear pricing for all services.",
+    "packages": {
+      "expatStarter": {
+        "name": "Expat Starter",
+        "price": "$2,800",
+        "description": "Perfect for individuals moving to Vietnam",
+        "features": [
+          "Work permit application",
+          "TRC application",
+          "Visa processing",
+          "Basic relocation consultation"
+        ]
+      },
+      "businessLaunch": {
+        "name": "Business Launch",
+        "price": "$5,500",
+        "description": "Complete business setup package",
+        "features": [
+          "Company registration",
+          "Banking setup",
+          "3 months accounting",
+          "Business visa",
+          "Legal representative"
+        ]
+      },
+      "annualCompliance": {
+        "name": "Annual Compliance",
+        "price": "$4,500/year",
+        "description": "Ongoing compliance and support",
+        "features": [
+          "Monthly accounting",
+          "Tax filing",
+          "Compliance monitoring",
+          "Renewal reminders",
+          "Priority support"
+        ]
+      }
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "features": "Features",
+    "pricing": "Pricing",
+    "getQuote": "Get Quote",
+    "bookConsultation": "Book Consultation"
+  }
+}
