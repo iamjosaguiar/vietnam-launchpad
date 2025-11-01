@@ -1,5 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import TrustSignals from '@/components/TrustSignals';
+import TestimonialSection from '@/components/TestimonialSection';
 
 export default function HomePage() {
   return (
@@ -36,6 +38,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Trust Signals */}
+      <TrustSignals />
 
       {/* Services Preview */}
       <section className="py-20 bg-gray-50">
@@ -115,6 +120,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <TestimonialSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary-600 text-white">
