@@ -1,45 +1,35 @@
-export default function TestimonialSection() {
-  const testimonials = [
-    {
-      name: 'Mark Thompson',
-      nationality: 'USA',
-      service: 'TRC Application',
-      rating: 5,
-      text: 'Vietnam Launchpad made my TRC process incredibly smooth. What would have taken me weeks of frustration was done in just 6 days. Professional, responsive, and worth every penny.',
-      date: 'October 2024'
-    },
-    {
-      name: 'Sarah Chen',
-      nationality: 'Singapore',
-      service: 'Company Setup + Work Permit',
-      rating: 5,
-      text: 'I was nervous about setting up a company in Vietnam, but the team guided me through every step. My company was registered in 3 weeks, and they even helped me open a bank account. Highly recommend!',
-      date: 'September 2024'
-    },
-    {
-      name: 'Kim Ji-hoon',
-      nationality: 'South Korea',
-      service: 'Work Permit',
-      rating: 5,
-      text: 'Fast and reliable service. They handled all the paperwork and translations. I just showed up for the health check. Got my work permit in 8 days.',
-      date: 'November 2024'
-    },
-    {
-      name: 'Emma Rodriguez',
-      nationality: 'Spain',
-      service: 'TRC Application',
-      rating: 5,
-      text: 'As a digital nomad, I needed a TRC quickly. Vietnam Launchpad delivered in 7 days as promised. Great communication and very transparent pricing. No hidden surprises.',
-      date: 'October 2024'
-    }
-  ];
+import { getTranslations } from 'next-intl/server';
+
+const testimonialKeys = [
+  'markThompson',
+  'sarahChen',
+  'kimJihoon',
+  'emmaRodriguez'
+] as const;
+
+const ratings = {
+  markThompson: 5,
+  sarahChen: 5,
+  kimJihoon: 5,
+  emmaRodriguez: 5
+} as const;
+
+export default async function TestimonialSection() {
+  const t = await getTranslations('homepage.testimonials');
+
+  const testimonials = testimonialKeys.map((key) => ({
+    name: t(`${key}.name`),
+    location: t(`${key}.location`),
+    text: t(`${key}.text`),
+    rating: ratings[key]
+  }));
 
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-          <p className="text-xl text-gray-600">Join 500+ satisfied clients from around the world</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
+          <p className="text-xl text-gray-600">{t('subtitle')}</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -57,20 +47,10 @@ export default function TestimonialSection() {
 
               <div className="border-t border-gray-200 pt-4">
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                <div className="text-sm text-gray-500">{testimonial.nationality} • {testimonial.service}</div>
-                <div className="text-xs text-gray-400 mt-1">{testimonial.date}</div>
+                <div className="text-sm text-gray-500">{testimonial.location}</div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 px-6 py-3 rounded-lg">
-            <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span className="font-semibold text-gray-900">100% Money-Back Guarantee</span>
-          </div>
         </div>
       </div>
     </section>
