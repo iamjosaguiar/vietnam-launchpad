@@ -1,18 +1,30 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { routing } from '@/i18n/config';
-import '../globals.css'
-import Script from 'next/script'
-import MobileStickyBar from '@/components/MobileStickyBar'
-import MessagingWidget from '@/components/MessagingWidget'
+import Script from 'next/script';
 
-type Props = {
-  params: Promise<{ locale: string }>;
+import MessagingWidget from '@/components/MessagingWidget';
+import MobileStickyBar from '@/components/MobileStickyBar';
+import { routing } from '@/i18n/config';
+
+import '../globals.css';
+
+type LayoutParams = {
+  locale?: string;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+type LayoutProps = {
+  children: React.ReactNode;
+  params: Promise<LayoutParams>;
+};
+
+async function resolveLocale(params: Promise<LayoutParams>) {
   const { locale } = await params;
+  return locale ?? routing.defaultLocale;
+}
+
+export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+  const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
@@ -29,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     formatDetection: {
       email: false,
       address: false,
-      telephone: false,
+      telephone: false
     },
     openGraph: {
       type: 'website',
@@ -43,15 +55,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: t('ogImageAlt'),
-        },
-      ],
+          alt: t('ogImageAlt')
+        }
+      ]
     },
     twitter: {
       card: 'summary_large_image',
       title: t('twitterTitle'),
       description: t('twitterDescription'),
-      images: ['/og-image.jpg'],
+      images: ['/og-image.jpg']
     },
     robots: {
       index: true,
@@ -61,34 +73,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         follow: true,
         'max-video-preview': -1,
         'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
+        'max-snippet': -1
+      }
     },
     alternates: {
       canonical: `https://vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
       languages: {
-        'en': 'https://vietnamlaunchpad.com',
-        'vi': 'https://vietnamlaunchpad.com/vi',
-        'zh': 'https://vietnamlaunchpad.com/zh',
-        'ko': 'https://vietnamlaunchpad.com/ko',
-      },
-    },
+        en: 'https://vietnamlaunchpad.com',
+        vi: 'https://vietnamlaunchpad.com/vi',
+        zh: 'https://vietnamlaunchpad.com/zh',
+        ko: 'https://vietnamlaunchpad.com/ko'
+      }
+    }
   };
 }
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-
-export default async function LocaleLayout({
-  children,
-  params
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  const messages = await getMessages();
+export default async function SiteLayout({ children, params }: LayoutProps) {
+  const locale = await resolveLocale(params);
+  const messages = await getMessages({ locale });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -121,7 +123,8 @@ export default async function LocaleLayout({
     '@id': 'https://vietnamlaunchpad.com',
     name: 'Vietnam Launchpad',
     image: 'https://vietnamlaunchpad.com/logo.png',
-    description: 'Licensed immigration and business consulting services in Vietnam. Specializing in TRC applications, work permits, and company registration.',
+    description:
+      'Licensed immigration and business consulting services in Vietnam. Specializing in TRC applications, work permits, and company registration.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Ho Chi Minh City',
@@ -174,12 +177,12 @@ export default async function LocaleLayout({
         )}
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <MobileStickyBar />
           <MessagingWidget />
         </NextIntlClientProvider>
       </body>
     </html>
-  )
+  );
 }
