@@ -12,7 +12,7 @@ export default function Footer() {
               Professional immigration and business consulting services for expats relocating to Vietnam.
             </p>
             <div className="text-gray-300">
-              <p>📧 hello@vietnamlaunchpad.com</p>
+              <p>📧 jos@iamjosaguiar.com</p>
               <p>📱 +84 (0)28 1234 5678</p>
               <p>📍 Ho Chi Minh City, Vietnam</p>
             </div>

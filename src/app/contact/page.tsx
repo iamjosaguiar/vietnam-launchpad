@@ -257,7 +257,7 @@ export default function ContactPage() {
                   <div className="text-primary-600 text-2xl">📧</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">hello@vietnamlaunchpad.com</p>
+                    <p className="text-gray-600">jos@iamjosaguiar.com</p>
                     <p className="text-sm text-gray-500">Response within 24 hours</p>
                   </div>
                 </div>

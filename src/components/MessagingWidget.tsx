@@ -38,7 +38,7 @@ export default function MessagingWidget() {
 
       {/* Email */}
       <a
-        href="mailto:hello@vietnamlaunchpad.com"
+        href="mailto:jos@iamjosaguiar.com"
         className="group relative bg-gray-700 text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition-all hover:scale-110"
         aria-label="Send Email"
       >

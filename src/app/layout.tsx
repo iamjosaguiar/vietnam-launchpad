@@ -117,7 +117,7 @@ export default function RootLayout({
       longitude: 106.6297
     },
     telephone: '+84-28-1234-5678',
-    email: 'hello@vietnamlaunchpad.com',
+    email: 'jos@iamjosaguiar.com',
     priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00',
     aggregateRating: {
