@@ -1,12 +1,47 @@
 {
+  "metadata": {
+    "title": "Vietnam Launchpad - Immigration & Business Services for Expats",
+    "siteName": "Vietnam Launchpad",
+    "description": "Professional visa, work permit, and company registration services in Vietnam. 98% approval rate, 500+ successful applications. Expert guidance for expats.",
+    "keywords": "vietnam visa, vietnam work permit, vietnam company registration, expat vietnam, vietnam TRC, vietnam immigration",
+    "ogTitle": "Vietnam Launchpad - Your Gateway to Vietnam",
+    "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with 98% approval rate.",
+    "ogImageAlt": "Vietnam Launchpad - Professional Immigration Services",
+    "twitterTitle": "Vietnam Launchpad - Immigration & Business Services",
+    "twitterDescription": "Professional visa, work permit, and company registration services in Vietnam",
+    "home": {
+      "title": "Vietnam Launchpad - Immigration & Business Services for Expats",
+      "description": "Professional visa, work permit, and company registration services in Vietnam. 98% approval rate, 500+ successful applications. Expert guidance for expats.",
+      "keywords": "vietnam visa, vietnam work permit, vietnam company registration, expat vietnam, vietnam TRC, vietnam immigration",
+      "ogTitle": "Vietnam Launchpad - Your Gateway to Vietnam",
+      "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with 98% approval rate."
+    },
+    "services": {
+      "title": "Our Services - Vietnam Launchpad",
+      "description": "TRC applications, work permits, and company registration services in Vietnam. Transparent pricing, expert guidance, guaranteed results.",
+      "keywords": "vietnam services, TRC application, work permit vietnam, company setup vietnam"
+    },
+    "pricing": {
+      "title": "Pricing - Transparent Fees | Vietnam Launchpad",
+      "description": "Clear, transparent pricing for all Vietnam immigration and business services. No hidden fees. Packages starting from $180.",
+      "keywords": "vietnam visa cost, work permit price, company registration fees vietnam"
+    },
+    "contact": {
+      "title": "Contact Us - Vietnam Launchpad",
+      "description": "Get in touch with our immigration experts. 24-hour response time. Based in Ho Chi Minh City, Vietnam.",
+      "keywords": "contact vietnam immigration, vietnam visa consultant"
+    }
+  },
   "navigation": {
     "home": "Home",
     "services": "Services",
     "pricing": "Pricing",
     "about": "About",
     "contact": "Contact",
+    "faq": "FAQ",
     "resources": "Resources",
-    "getConsultation": "Get Consultation"
+    "getConsultation": "Get Consultation",
+    "languageSelector": "Language"
   },
   "homepage": {
     "hero": {
@@ -23,12 +58,22 @@
       "ranking": "#1",
       "rankingLabel": "Expat Affordability"
     },
+    "trustSignals": {
+      "applications": "500+",
+      "applicationsLabel": "Successful Applications",
+      "approvalRate": "98%",
+      "approvalRateLabel": "Approval Rate",
+      "experience": "6 Years",
+      "experienceLabel": "Experience",
+      "responseTime": "24h",
+      "responseTimeLabel": "Response Time"
+    },
     "services": {
       "title": "Professional Immigration & Business Services",
       "subtitle": "Transparent pricing, expert guidance, guaranteed results",
       "trc": {
         "title": "TRC Applications",
-        "description": "Temporary Residence Card processing with 60-70% margins",
+        "description": "Temporary Residence Card processing with high success rate",
         "price": "$350",
         "duration": "5-7 days"
       },
@@ -44,6 +89,56 @@
         "price": "$3,500",
         "duration": "2-4 months"
       }
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Vietnam Launchpad?",
+      "subtitle": "Your trusted partner for Vietnam immigration and business services",
+      "expertise": {
+        "title": "Local Expertise",
+        "description": "Based in Ho Chi Minh City with deep understanding of Vietnamese immigration law and business regulations"
+      },
+      "support": {
+        "title": "End-to-End Support",
+        "description": "From initial consultation to final approval, we handle everything so you can focus on your move or business"
+      },
+      "transparency": {
+        "title": "Transparent Process",
+        "description": "Clear pricing, regular updates, and no hidden fees. You'll know exactly what to expect at every step"
+      },
+      "success": {
+        "title": "Proven Track Record",
+        "description": "98% approval rate with over 500 successful applications across all service categories"
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Real experiences from expats we've helped",
+      "markThompson": {
+        "name": "Mark Thompson",
+        "location": "USA",
+        "text": "Vietnam Launchpad made my work permit process incredibly smooth. What I thought would take months was done in 3 weeks. Professional, responsive, and transparent throughout."
+      },
+      "sarahChen": {
+        "name": "Sarah Chen",
+        "location": "Singapore",
+        "text": "Setting up my company in Vietnam seemed daunting, but the team guided me through every step. The banking setup alone saved me weeks of frustration. Highly recommended!"
+      },
+      "kimJihoon": {
+        "name": "Kim Ji-hoon",
+        "location": "South Korea",
+        "text": "I needed a TRC renewal and was worried about the process. They handled everything perfectly, kept me updated, and I got my card in just 6 days. Excellent service!"
+      },
+      "emmaRodriguez": {
+        "name": "Emma Rodriguez",
+        "location": "Spain",
+        "text": "As a digital nomad, I needed reliable visa support. Vietnam Launchpad has been my go-to for 2 years now. They understand expat needs and deliver every time."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Vietnam Journey?",
+      "subtitle": "Book a free consultation with our immigration experts today",
+      "button": "Get Free Consultation",
+      "note": "Response within 24 hours"
     }
   },
   "services": {
@@ -52,43 +147,130 @@
     "trc": {
       "title": "TRC Applications",
       "description": "Get your Temporary Residence Card with our streamlined process. Perfect for long-term stays in Vietnam.",
+      "longDescription": "A Temporary Residence Card (TRC) allows you to stay in Vietnam for 1-3 years without needing visa extensions. Our expert team handles all documentation, government submissions, and follow-ups to ensure a smooth approval process.",
       "features": [
         "1-3 year validity periods",
         "5-7 working days processing",
         "Document preparation included",
-        "Renewal assistance"
+        "Renewal assistance",
+        "Government fee guidance",
+        "Status tracking updates"
       ],
       "price": "$350",
-      "government_fee": "Government fee: $145-165"
+      "government_fee": "Government fee: $145-165",
+      "process": {
+        "title": "How It Works",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Document Collection",
+            "description": "We provide you with a complete checklist and help gather all required documents"
+          },
+          {
+            "number": "2",
+            "title": "Application Submission",
+            "description": "Our team prepares and submits your application to immigration authorities"
+          },
+          {
+            "number": "3",
+            "title": "Processing & Follow-up",
+            "description": "We track your application and handle any additional requirements"
+          },
+          {
+            "number": "4",
+            "title": "Card Collection",
+            "description": "Receive your TRC and guidance on maintaining legal status"
+          }
+        ]
+      }
     },
     "workPermit": {
       "title": "Work Permits",
       "description": "Obtain your work permit legally and efficiently with our expert guidance through the new streamlined process.",
+      "longDescription": "Vietnam's new work permit regulations have simplified the process significantly. We navigate the requirements, coordinate health checks, and ensure all documentation meets current legal standards for a hassle-free approval.",
       "features": [
         "2-year validity",
         "3 weeks total processing",
         "Health check coordination",
-        "Criminal record assistance"
+        "Criminal record assistance",
+        "Labor contract review",
+        "Renewal reminders"
       ],
       "price": "$180",
-      "government_fee": "Government fee: $16-42"
+      "government_fee": "Government fee: $16-42",
+      "process": {
+        "title": "How It Works",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Initial Consultation",
+            "description": "Review your qualifications and employment contract requirements"
+          },
+          {
+            "number": "2",
+            "title": "Document Preparation",
+            "description": "Gather and authenticate required documents including diplomas and background checks"
+          },
+          {
+            "number": "3",
+            "title": "Health Check",
+            "description": "We coordinate medical examinations at approved facilities"
+          },
+          {
+            "number": "4",
+            "title": "Submission & Approval",
+            "description": "Application submitted and work permit issued within 3 weeks"
+          }
+        ]
+      }
     },
     "companySetup": {
       "title": "Company Registration",
       "description": "Complete LLC setup including banking, legal compliance, and ongoing support for your business in Vietnam.",
+      "longDescription": "Starting a business in Vietnam requires navigating complex regulations, multiple government departments, and strict compliance requirements. Our comprehensive service handles everything from initial registration to banking setup and ongoing legal support.",
       "features": [
         "100% foreign ownership allowed",
         "2-4 months processing",
         "Banking account setup",
-        "Legal representative service"
+        "Legal representative service",
+        "Business license acquisition",
+        "Tax registration",
+        "Office address support",
+        "Compliance consultation"
       ],
       "price": "$3,500",
-      "government_fee": "Government fees included"
+      "government_fee": "Government fees included",
+      "process": {
+        "title": "How It Works",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Business Planning",
+            "description": "Define your business activities, structure, and capital requirements"
+          },
+          {
+            "number": "2",
+            "title": "Name Reservation & IRC",
+            "description": "Reserve company name and obtain Investment Registration Certificate if required"
+          },
+          {
+            "number": "3",
+            "title": "License & Registration",
+            "description": "Submit to DPI for Enterprise Registration Certificate and tax code"
+          },
+          {
+            "number": "4",
+            "title": "Banking & Compliance",
+            "description": "Open corporate bank account and complete all legal requirements"
+          }
+        ]
+      }
     }
   },
   "pricing": {
     "title": "Transparent Pricing",
     "subtitle": "No hidden fees. Clear pricing for all services.",
+    "note": "All prices exclude government fees unless stated otherwise",
     "packages": {
       "expatStarter": {
         "name": "Expat Starter",
@@ -98,8 +280,11 @@
           "Work permit application",
           "TRC application",
           "Visa processing",
-          "Basic relocation consultation"
-        ]
+          "Basic relocation consultation",
+          "Document checklist",
+          "Email support"
+        ],
+        "popular": false
       },
       "businessLaunch": {
         "name": "Business Launch",
@@ -110,8 +295,11 @@
           "Banking setup",
           "3 months accounting",
           "Business visa",
-          "Legal representative"
-        ]
+          "Legal representative",
+          "Tax registration",
+          "License applications"
+        ],
+        "popular": true
       },
       "annualCompliance": {
         "name": "Annual Compliance",
@@ -122,9 +310,181 @@
           "Tax filing",
           "Compliance monitoring",
           "Renewal reminders",
-          "Priority support"
-        ]
+          "Priority support",
+          "Annual reports",
+          "Regulatory updates"
+        ],
+        "popular": false
       }
+    },
+    "addons": {
+      "title": "Additional Services",
+      "items": [
+        {
+          "name": "Visa Extension",
+          "price": "$80"
+        },
+        {
+          "name": "Document Translation",
+          "price": "$30/page"
+        },
+        {
+          "name": "Notarization Service",
+          "price": "$50/document"
+        },
+        {
+          "name": "Apostille Service",
+          "price": "$150/document"
+        },
+        {
+          "name": "Virtual Office (monthly)",
+          "price": "$100/month"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Pricing FAQ",
+      "questions": [
+        {
+          "question": "Are government fees included in your prices?",
+          "answer": "Government fees are separate unless explicitly stated as 'included'. We provide clear breakdowns of all fees before starting any service."
+        },
+        {
+          "question": "Do you offer payment plans?",
+          "answer": "Yes, we offer flexible payment plans for packages over $3,000. Contact us to discuss your specific needs."
+        },
+        {
+          "question": "What happens if my application is rejected?",
+          "answer": "We have a 98% approval rate. In the rare case of rejection, we'll work with you to address the issues and resubmit at no additional service fee."
+        },
+        {
+          "question": "Can I get a refund if I cancel?",
+          "answer": "Refunds are available before we submit your application to government authorities, minus any work already completed. See our terms for details."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our services",
+    "general": {
+      "title": "General Questions",
+      "questions": [
+        {
+          "question": "How long does the process take?",
+          "answer": "Processing times vary by service: TRC takes 5-7 days, work permits take 3 weeks, and company registration takes 2-4 months. We provide detailed timelines during consultation."
+        },
+        {
+          "question": "Do I need to be in Vietnam to apply?",
+          "answer": "For most services, you'll need to be in Vietnam for document submission and biometric collection. We can advise on specific requirements during your consultation."
+        },
+        {
+          "question": "What languages do you support?",
+          "answer": "We provide services in English, Vietnamese, Chinese (Simplified), and Korean. All documents are translated and certified as needed."
+        },
+        {
+          "question": "How do I get started?",
+          "answer": "Book a free consultation through our website or email us at jos@iamjosaguiar.com. We'll assess your needs and provide a clear roadmap."
+        }
+      ]
+    },
+    "visa": {
+      "title": "Visa & TRC Questions",
+      "questions": [
+        {
+          "question": "What's the difference between a visa and TRC?",
+          "answer": "A visa allows entry and short-term stays (usually up to 90 days), while a TRC permits long-term residence (1-3 years) without needing visa extensions."
+        },
+        {
+          "question": "Can I work with a TRC?",
+          "answer": "A TRC alone doesn't authorize employment. You'll also need a work permit to legally work in Vietnam."
+        },
+        {
+          "question": "How do I renew my TRC?",
+          "answer": "We handle renewals with the same efficiency as new applications. Contact us 2-3 months before expiry to ensure continuity."
+        }
+      ]
+    },
+    "workPermit": {
+      "title": "Work Permit Questions",
+      "questions": [
+        {
+          "question": "What qualifications do I need for a work permit?",
+          "answer": "Generally, you need a university degree or 3+ years of relevant work experience, plus a clean criminal record and health clearance."
+        },
+        {
+          "question": "Can my employer handle the work permit?",
+          "answer": "Yes, but many employers prefer to use specialists like us to ensure compliance and avoid delays. We can work directly with your HR department."
+        },
+        {
+          "question": "What happens if I change jobs?",
+          "answer": "You'll need a new work permit for the new employer. We can help transfer and expedite the process."
+        }
+      ]
+    },
+    "business": {
+      "title": "Business Setup Questions",
+      "questions": [
+        {
+          "question": "Can foreigners own 100% of a company in Vietnam?",
+          "answer": "Yes, most business sectors allow 100% foreign ownership. Some sectors like media and education have restrictions. We'll advise based on your business type."
+        },
+        {
+          "question": "What's the minimum capital requirement?",
+          "answer": "There's no legal minimum for most businesses, but you should have sufficient capital to operate. Banking requirements typically start at $5,000 equivalent."
+        },
+        {
+          "question": "Do I need a Vietnamese partner?",
+          "answer": "No, foreign-owned LLCs don't require a local partner. However, you'll need a legal representative who can be foreign or Vietnamese."
+        },
+        {
+          "question": "What ongoing compliance is required?",
+          "answer": "Monthly accounting, quarterly tax filings, annual reports, and license renewals. Our Annual Compliance package handles everything."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our immigration experts",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+84 123 456 789",
+      "service": "Service Interested In",
+      "servicePlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your needs...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll respond within 24 hours.",
+      "error": "Something went wrong. Please try again or email us directly."
+    },
+    "serviceOptions": {
+      "trc": "TRC Application",
+      "workPermit": "Work Permit",
+      "companySetup": "Company Registration",
+      "package": "Package Deal",
+      "consultation": "General Consultation",
+      "other": "Other"
+    },
+    "info": {
+      "email": "jos@iamjosaguiar.com",
+      "phone": "+84 (0)28 1234 5678",
+      "hours": "Monday - Friday: 9:00 AM - 6:00 PM ICT",
+      "hoursWeekend": "Saturday: 9:00 AM - 1:00 PM ICT",
+      "address": "Ho Chi Minh City, Vietnam",
+      "responseTime": "We typically respond within 24 hours"
+    },
+    "social": {
+      "title": "Follow Us",
+      "wechat": "WeChat",
+      "kakao": "KakaoTalk",
+      "zalo": "Zalo",
+      "whatsapp": "WhatsApp"
     }
   },
   "common": {
@@ -135,6 +495,30 @@
     "features": "Features",
     "pricing": "Pricing",
     "getQuote": "Get Quote",
-    "bookConsultation": "Book Consultation"
+    "bookConsultation": "Book Consultation",
+    "viewDetails": "View Details",
+    "backToTop": "Back to Top",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "required": "Required",
+    "optional": "Optional",
+    "from": "From",
+    "startingAt": "Starting at",
+    "perYear": "per year",
+    "perMonth": "per month",
+    "processing": "Processing",
+    "approved": "Approved",
+    "pending": "Pending",
+    "completed": "Completed",
+    "viewAll": "View All",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
   }
 }

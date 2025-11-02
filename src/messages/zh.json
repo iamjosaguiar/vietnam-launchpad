@@ -1,16 +1,51 @@
 {
+  "metadata": {
+    "title": "Vietnam Launchpad - 越南移民与商务服务",
+    "siteName": "Vietnam Launchpad",
+    "description": "越南专业签证、工作许可证和公司注册服务。98%的批准率,500+成功案例。为外籍人士提供专业指导。",
+    "keywords": "越南签证,越南工作许可证,越南公司注册,越南外籍人士,越南居住证,越南移民",
+    "ogTitle": "Vietnam Launchpad - 您的越南门户",
+    "ogDescription": "自信地探索越南。专业移民和商务服务,批准率高达98%。",
+    "ogImageAlt": "Vietnam Launchpad - 专业移民服务",
+    "twitterTitle": "Vietnam Launchpad - 越南移民与商务服务",
+    "twitterDescription": "越南专业签证、工作许可证和公司注册服务",
+    "home": {
+      "title": "Vietnam Launchpad - 越南移民与商务服务",
+      "description": "越南专业签证、工作许可证和公司注册服务。98%的批准率,500+成功案例。为外籍人士提供专业指导。",
+      "keywords": "越南签证,越南工作许可证,越南公司注册,越南外籍人士,越南居住证,越南移民",
+      "ogTitle": "Vietnam Launchpad - 您的越南门户",
+      "ogDescription": "自信地探索越南。专业移民和商务服务,批准率高达98%。"
+    },
+    "services": {
+      "title": "我们的服务 - Vietnam Launchpad",
+      "description": "越南居住证申请、工作许可证和公司注册服务。透明定价、专业指导、有保障的结果。",
+      "keywords": "越南服务,居住证申请,越南工作许可证,越南公司设立"
+    },
+    "pricing": {
+      "title": "价格 - 透明收费 | Vietnam Launchpad",
+      "description": "所有越南移民和商务服务的清晰透明价格。无隐藏费用。套餐价格从$180起。",
+      "keywords": "越南签证费用,工作许可证价格,越南公司注册费用"
+    },
+    "contact": {
+      "title": "联系我们 - Vietnam Launchpad",
+      "description": "联系我们的移民专家。24小时内回复。办公室位于越南胡志明市。",
+      "keywords": "越南移民咨询,越南签证顾问"
+    }
+  },
   "navigation": {
     "home": "首页",
     "services": "服务",
     "pricing": "价格",
     "about": "关于",
     "contact": "联系",
+    "faq": "常见问题",
     "resources": "资源",
-    "getConsultation": "免费咨询"
+    "getConsultation": "预约咨询",
+    "languageSelector": "语言"
   },
   "homepage": {
     "hero": {
-      "title": "自信地在越南生活",
+      "title": "自信地探索越南",
       "subtitle": "我们帮助外籍人士零麻烦地迁居越南——在90天内搞定签证、公司设立和本地融入。",
       "cta": "开始您的旅程",
       "ctaSecondary": "了解更多"
@@ -21,14 +56,24 @@
       "growth": "7.1%",
       "growthLabel": "2024年GDP增长",
       "ranking": "#1",
-      "rankingLabel": "外籍人士生活成本排名"
+      "rankingLabel": "外籍人士生活成本"
+    },
+    "trustSignals": {
+      "applications": "500+",
+      "applicationsLabel": "成功案例",
+      "approvalRate": "98%",
+      "approvalRateLabel": "批准率",
+      "experience": "6年",
+      "experienceLabel": "经验",
+      "responseTime": "24小时",
+      "responseTimeLabel": "响应时间"
     },
     "services": {
       "title": "专业移民与商务服务",
-      "subtitle": "透明定价，专家指导，保证结果",
+      "subtitle": "透明定价、专家指导、保证结果",
       "trc": {
         "title": "居住证申请",
-        "description": "临时居住证办理，成功率60-70%",
+        "description": "临时居住证办理,成功率高",
         "price": "$350",
         "duration": "5-7天"
       },
@@ -44,12 +89,436 @@
         "price": "$3,500",
         "duration": "2-4个月"
       }
+    },
+    "whyChooseUs": {
+      "title": "为什么选择Vietnam Launchpad?",
+      "subtitle": "您值得信赖的越南移民和商务服务合作伙伴",
+      "expertise": {
+        "title": "本地专业知识",
+        "description": "总部位于胡志明市,深入了解越南移民法和商业法规"
+      },
+      "support": {
+        "title": "端到端支持",
+        "description": "从初步咨询到最终批准,我们处理一切,让您专注于搬迁或业务发展"
+      },
+      "transparency": {
+        "title": "透明流程",
+        "description": "清晰定价、定期更新、无隐藏费用。您将准确了解每个步骤的预期情况"
+      },
+      "success": {
+        "title": "经过验证的成功记录",
+        "description": "所有服务类别的批准率达98%,超过500个成功案例"
+      }
+    },
+    "testimonials": {
+      "title": "客户评价",
+      "subtitle": "我们帮助过的外籍人士的真实体验",
+      "markThompson": {
+        "name": "Mark Thompson",
+        "location": "美国",
+        "text": "Vietnam Launchpad让我的工作许可流程非常顺利。我原以为需要几个月的时间,结果3周就完成了。全程专业、响应迅速且透明。"
+      },
+      "sarahChen": {
+        "name": "Sarah Chen",
+        "location": "新加坡",
+        "text": "在越南设立公司看起来很困难,但团队指导我完成了每一步。仅银行开户一项就为我节省了数周的麻烦。强烈推荐!"
+      },
+      "kimJihoon": {
+        "name": "Kim Ji-hoon",
+        "location": "韩国",
+        "text": "我需要续签居住证,对流程感到担忧。他们完美地处理了一切,随时向我更新进展,我只用了6天就拿到了卡。优秀的服务!"
+      },
+      "emmaRodriguez": {
+        "name": "Emma Rodriguez",
+        "location": "西班牙",
+        "text": "作为数字游民,我需要可靠的签证支持。Vietnam Launchpad已经是我2年来的首选。他们了解外籍人士的需求,每次都能交付。"
+      }
+    },
+    "cta": {
+      "title": "准备开始您的越南之旅?",
+      "subtitle": "今天就预约我们移民专家的免费咨询",
+      "button": "获取免费咨询",
+      "note": "24小时内回复"
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "专业移民和商务咨询服务",
+    "trc": {
+      "title": "居住证申请",
+      "description": "通过我们的简化流程获得临时居住证。非常适合在越南长期居留。",
+      "longDescription": "临时居住证(TRC)允许您在越南居留1-3年,无需签证延期。我们的专家团队处理所有文件、政府提交和跟进,确保顺利的批准流程。",
+      "features": [
+        "1-3年有效期",
+        "5-7个工作日办理",
+        "包含文件准备",
+        "续签协助",
+        "政府费用指导",
+        "状态跟踪更新"
+      ],
+      "price": "$350",
+      "government_fee": "政府费用: $145-165",
+      "process": {
+        "title": "办理流程",
+        "steps": [
+          {
+            "number": "1",
+            "title": "文件收集",
+            "description": "我们提供完整的清单并帮助收集所有必需的文件"
+          },
+          {
+            "number": "2",
+            "title": "提交申请",
+            "description": "我们的团队准备并向移民局提交您的申请"
+          },
+          {
+            "number": "3",
+            "title": "处理与跟进",
+            "description": "我们跟踪您的申请并处理任何额外要求"
+          },
+          {
+            "number": "4",
+            "title": "领取卡片",
+            "description": "领取您的居住证并获得维护合法身份的指导"
+          }
+        ]
+      }
+    },
+    "workPermit": {
+      "title": "工作许可证",
+      "description": "通过我们的专业指导,通过新的简化流程合法高效地获得工作许可证。",
+      "longDescription": "越南新的工作许可证法规大大简化了流程。我们引导您完成要求、协调健康检查,并确保所有文件符合当前法律标准,实现无忧批准。",
+      "features": [
+        "2年有效期",
+        "总共3周办理时间",
+        "健康检查协调",
+        "犯罪记录协助",
+        "劳动合同审核",
+        "续签提醒"
+      ],
+      "price": "$180",
+      "government_fee": "政府费用: $16-42",
+      "process": {
+        "title": "办理流程",
+        "steps": [
+          {
+            "number": "1",
+            "title": "初步咨询",
+            "description": "审核您的资质和雇佣合同要求"
+          },
+          {
+            "number": "2",
+            "title": "文件准备",
+            "description": "收集和认证所需文件,包括学历和背景调查"
+          },
+          {
+            "number": "3",
+            "title": "健康检查",
+            "description": "我们协调在批准机构的体检"
+          },
+          {
+            "number": "4",
+            "title": "提交与批准",
+            "description": "提交申请,3周内签发工作许可证"
+          }
+        ]
+      }
+    },
+    "companySetup": {
+      "title": "公司注册",
+      "description": "完整的有限责任公司设立,包括银行开户、法律合规和您在越南业务的持续支持。",
+      "longDescription": "在越南创业需要应对复杂的法规、多个政府部门和严格的合规要求。我们的综合服务处理从初始注册到银行开户和持续法律支持的一切。",
+      "features": [
+        "允许100%外资所有权",
+        "2-4个月办理",
+        "银行账户开设",
+        "法定代表人服务",
+        "营业执照申请",
+        "税务登记",
+        "办公地址支持",
+        "合规咨询"
+      ],
+      "price": "$3,500",
+      "government_fee": "政府费用已包含",
+      "process": {
+        "title": "办理流程",
+        "steps": [
+          {
+            "number": "1",
+            "title": "业务规划",
+            "description": "确定您的业务活动、结构和资本要求"
+          },
+          {
+            "number": "2",
+            "title": "名称预留与IRC",
+            "description": "预留公司名称并获得投资登记证(如需要)"
+          },
+          {
+            "number": "3",
+            "title": "执照与注册",
+            "description": "向DPI提交以获得企业注册证书和税号"
+          },
+          {
+            "number": "4",
+            "title": "银行与合规",
+            "description": "开设企业银行账户并完成所有法律要求"
+          }
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "title": "透明定价",
+    "subtitle": "无隐藏费用。所有服务价格清晰明了。",
+    "note": "除非另有说明,所有价格不包括政府费用",
+    "packages": {
+      "expatStarter": {
+        "name": "外籍人士入门套餐",
+        "price": "$2,800",
+        "description": "非常适合搬到越南的个人",
+        "features": [
+          "工作许可证申请",
+          "居住证申请",
+          "签证办理",
+          "基本搬迁咨询",
+          "文件清单",
+          "电子邮件支持"
+        ],
+        "popular": false
+      },
+      "businessLaunch": {
+        "name": "商业启动套餐",
+        "price": "$5,500",
+        "description": "完整的商业设立套餐",
+        "features": [
+          "公司注册",
+          "银行开户",
+          "3个月会计服务",
+          "商务签证",
+          "法定代表人",
+          "税务登记",
+          "执照申请"
+        ],
+        "popular": true
+      },
+      "annualCompliance": {
+        "name": "年度合规套餐",
+        "price": "$4,500/年",
+        "description": "持续合规和支持",
+        "features": [
+          "每月会计",
+          "税务申报",
+          "合规监控",
+          "续签提醒",
+          "优先支持",
+          "年度报告",
+          "法规更新"
+        ],
+        "popular": false
+      }
+    },
+    "addons": {
+      "title": "附加服务",
+      "items": [
+        {
+          "name": "签证延期",
+          "price": "$80"
+        },
+        {
+          "name": "文件翻译",
+          "price": "$30/页"
+        },
+        {
+          "name": "公证服务",
+          "price": "$50/份"
+        },
+        {
+          "name": "使馆认证服务",
+          "price": "$150/份"
+        },
+        {
+          "name": "虚拟办公室(月付)",
+          "price": "$100/月"
+        }
+      ]
+    },
+    "faq": {
+      "title": "价格常见问题",
+      "questions": [
+        {
+          "question": "政府费用是否包含在您的价格中?",
+          "answer": "除非明确说明为'已包含',否则政府费用是单独的。在开始任何服务之前,我们会提供所有费用的清晰明细。"
+        },
+        {
+          "question": "你们提供分期付款吗?",
+          "answer": "是的,我们为超过$3,000的套餐提供灵活的付款计划。请联系我们讨论您的具体需求。"
+        },
+        {
+          "question": "如果我的申请被拒绝会怎样?",
+          "answer": "我们的批准率为98%。在极少数被拒绝的情况下,我们将与您合作解决问题并重新提交,无需额外的服务费。"
+        },
+        {
+          "question": "如果我取消可以退款吗?",
+          "answer": "在我们向政府部门提交您的申请之前可以退款,减去已完成的任何工作。详情请查看我们的条款。"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于我们服务您需要了解的一切",
+    "general": {
+      "title": "一般问题",
+      "questions": [
+        {
+          "question": "办理需要多长时间?",
+          "answer": "办理时间因服务而异:居住证需要5-7天,工作许可证需要3周,公司注册需要2-4个月。我们会在咨询时提供详细的时间表。"
+        },
+        {
+          "question": "申请时我需要在越南吗?",
+          "answer": "对于大多数服务,您需要在越南进行文件提交和生物识别采集。我们可以在咨询时就具体要求提供建议。"
+        },
+        {
+          "question": "你们支持哪些语言?",
+          "answer": "我们提供英语、越南语、中文(简体)和韩语服务。所有文件根据需要进行翻译和认证。"
+        },
+        {
+          "question": "如何开始?",
+          "answer": "通过我们的网站预约免费咨询或发送电子邮件至jos@iamjosaguiar.com。我们将评估您的需求并提供清晰的路线图。"
+        }
+      ]
+    },
+    "visa": {
+      "title": "签证与居住证问题",
+      "questions": [
+        {
+          "question": "签证和居住证有什么区别?",
+          "answer": "签证允许入境和短期停留(通常最多90天),而居住证允许长期居留(1-3年),无需签证延期。"
+        },
+        {
+          "question": "我可以凭居住证工作吗?",
+          "answer": "仅凭居住证不能授权就业。您还需要工作许可证才能在越南合法工作。"
+        },
+        {
+          "question": "如何续签我的居住证?",
+          "answer": "我们以与新申请相同的效率处理续签。请在到期前2-3个月联系我们以确保连续性。"
+        }
+      ]
+    },
+    "workPermit": {
+      "title": "工作许可证问题",
+      "questions": [
+        {
+          "question": "我需要什么资质才能获得工作许可证?",
+          "answer": "一般来说,您需要大学学位或3年以上相关工作经验,加上无犯罪记录和健康证明。"
+        },
+        {
+          "question": "我的雇主可以办理工作许可证吗?",
+          "answer": "可以,但许多雇主更喜欢使用像我们这样的专业机构来确保合规并避免延误。我们可以直接与您的人力资源部门合作。"
+        },
+        {
+          "question": "如果我换工作会怎样?",
+          "answer": "您需要为新雇主申请新的工作许可证。我们可以帮助转换并加快流程。"
+        }
+      ]
+    },
+    "business": {
+      "title": "商业设立问题",
+      "questions": [
+        {
+          "question": "外国人可以在越南拥有100%的公司股权吗?",
+          "answer": "可以,大多数商业领域允许100%外资所有权。媒体和教育等某些领域有限制。我们将根据您的业务类型提供建议。"
+        },
+        {
+          "question": "最低资本要求是多少?",
+          "answer": "对于大多数企业没有法定最低资本,但您应该有足够的资本来运营。银行要求通常从相当于$5,000开始。"
+        },
+        {
+          "question": "我需要越南合作伙伴吗?",
+          "answer": "不需要,外资有限责任公司不需要当地合作伙伴。但是,您需要一名法定代表人,可以是外国人或越南人。"
+        },
+        {
+          "question": "需要哪些持续合规要求?",
+          "answer": "每月会计、季度税务申报、年度报告和执照续签。我们的年度合规套餐处理一切。"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "联系我们的移民专家",
+    "form": {
+      "name": "全名",
+      "namePlaceholder": "张三",
+      "email": "电子邮件地址",
+      "emailPlaceholder": "example@email.com",
+      "phone": "电话号码",
+      "phonePlaceholder": "+84 123 456 789",
+      "service": "感兴趣的服务",
+      "servicePlaceholder": "选择一项服务",
+      "message": "留言",
+      "messagePlaceholder": "告诉我们您的需求...",
+      "submit": "发送消息",
+      "sending": "发送中...",
+      "success": "谢谢您!我们将在24小时内回复。",
+      "error": "出了点问题。请重试或直接发送电子邮件给我们。"
+    },
+    "serviceOptions": {
+      "trc": "居住证申请",
+      "workPermit": "工作许可证",
+      "companySetup": "公司注册",
+      "package": "套餐服务",
+      "consultation": "一般咨询",
+      "other": "其他"
+    },
+    "info": {
+      "email": "jos@iamjosaguiar.com",
+      "phone": "+84 (0)28 1234 5678",
+      "hours": "周一至周五: 上午9:00 - 下午6:00 ICT",
+      "hoursWeekend": "周六: 上午9:00 - 下午1:00 ICT",
+      "address": "越南胡志明市",
+      "responseTime": "我们通常在24小时内回复"
+    },
+    "social": {
+      "title": "关注我们",
+      "wechat": "微信",
+      "kakao": "KakaoTalk",
+      "zalo": "Zalo",
+      "whatsapp": "WhatsApp"
     }
   },
   "common": {
     "learnMore": "了解更多",
     "getStarted": "开始",
     "contactUs": "联系我们",
-    "readMore": "阅读更多"
+    "readMore": "阅读更多",
+    "features": "特点",
+    "pricing": "价格",
+    "getQuote": "获取报价",
+    "bookConsultation": "预约咨询",
+    "viewDetails": "查看详情",
+    "backToTop": "返回顶部",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "required": "必填",
+    "optional": "可选",
+    "from": "从",
+    "startingAt": "起价",
+    "perYear": "每年",
+    "perMonth": "每月",
+    "processing": "处理中",
+    "approved": "已批准",
+    "pending": "待处理",
+    "completed": "已完成",
+    "viewAll": "查看全部",
+    "close": "关闭",
+    "next": "下一步",
+    "previous": "上一步",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "yes": "是",
+    "no": "否"
   }
 }

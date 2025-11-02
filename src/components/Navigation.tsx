@@ -1,17 +1,21 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { usePathname } from '@/i18n/config';
+import { Link } from '@/i18n/config';
 import { useState } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
+  const t = useTranslations('navigation');
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('home'), href: '/' },
+    { name: t('services'), href: '/services' },
+    { name: t('pricing'), href: '/pricing' },
+    { name: t('contact'), href: '/contact' },
   ];
 
   return (
@@ -19,16 +23,16 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <span className="text-2xl font-bold text-primary-600">Vietnam</span>
               <span className="text-2xl font-bold text-gray-900 ml-1">Launchpad</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -38,24 +42,24 @@ export default function Navigation() {
                 }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
-          </div>
-
-          <div className="hidden md:block">
-            <a 
-              href="/contact" 
-              className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors"
+            <LanguageSwitcher />
+            <Link
+              href="/contact"
+              className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap"
             >
-              Get Consultation
-            </a>
+              {t('getConsultation')}
+            </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-primary-600 p-2"
+              aria-label="Toggle menu"
             >
               <svg
                 className="h-6 w-6"
@@ -81,7 +85,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
@@ -92,15 +96,15 @@ export default function Navigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
-              <a
+              <Link
                 href="/contact"
                 className="block bg-primary-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-primary-700 transition-colors mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Consultation
-              </a>
+                {t('getConsultation')}
+              </Link>
             </div>
           </div>
         )}
