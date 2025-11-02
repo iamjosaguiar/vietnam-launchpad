@@ -129,9 +129,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Vietnam Journey?</h2>
           <p className="text-xl mb-8">Get a free consultation to discuss your specific needs.</p>
-          <a 
-            href="/contact" 
-            className="bg-white text-red-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+          <a
+            href="/contact"
+            className="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
           >
             Book Free Consultation
           </a>

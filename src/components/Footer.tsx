@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-red-600">Vietnam</span>
+              <span className="text-2xl font-bold text-primary-600">Vietnam</span>
               <span className="text-2xl font-bold text-white ml-1">Launchpad</span>
             </div>
             <p className="text-gray-300 mb-4">
