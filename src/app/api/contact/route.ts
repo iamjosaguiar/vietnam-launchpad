@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     // SendGrid API configuration
     const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
-    const TO_EMAIL = process.env.CONTACT_EMAIL || 'hello@vietnamlaunchpad.com';
+    const TO_EMAIL = process.env.CONTACT_EMAIL || 'jos@iamjosaguiar.com';
     const FROM_EMAIL = process.env.FROM_EMAIL || 'noreply@vietnamlaunchpad.com';
 
     if (!SENDGRID_API_KEY) {
@@ -96,7 +96,7 @@ export async function POST(request: NextRequest) {
       <ul>
         <li>WhatsApp: +84 (0)28 1234 5678</li>
         <li>Zalo: +84 (0)28 1234 5678</li>
-        <li>Email: hello@vietnamlaunchpad.com</li>
+        <li>Email: jos@iamjosaguiar.com</li>
       </ul>
 
       <p>We're excited to help you with your Vietnam journey!</p>
