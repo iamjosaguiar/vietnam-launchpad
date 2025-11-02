@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     // SendGrid API configuration
     const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
     const TO_EMAIL = process.env.CONTACT_EMAIL || 'jos@iamjosaguiar.com';
-    const FROM_EMAIL = process.env.FROM_EMAIL || 'jos@iamjosaguiar.com';
+    const FROM_EMAIL = process.env.FROM_EMAIL || 'contact@vietnamlaunchpad.com';
 
     if (!SENDGRID_API_KEY) {
       console.error('SendGrid API key not configured');
