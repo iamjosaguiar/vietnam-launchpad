@@ -114,6 +114,22 @@ export default async function HomePage() {
               </div>
             ))}
           </div>
+
+          {/* Additional Services Link */}
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 text-lg mb-4">
+              Plus Marriage Registration, Driver's License Conversion, and more...
+            </p>
+            <Link
+              href="/services"
+              className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+            >
+              View All Services
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

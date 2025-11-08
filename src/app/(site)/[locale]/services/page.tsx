@@ -138,6 +138,90 @@ export default function ServicesPage() {
             </div>
 
           </div>
+
+          {/* Additional Services */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Additional Services</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+              {/* Marriage Registration */}
+              <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div className="text-center">
+                  <div className="text-6xl mb-6">💑</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Marriage Registration & TRC</h3>
+                  <p className="text-gray-600 mb-6">
+                    Register your marriage in Vietnam and obtain TRC through marriage to a Vietnamese citizen.
+                  </p>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Marriage certificate registration
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      TRC validity up to 3 years
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      No investment required
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Path to permanent residency
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-6">
+                    <div className="text-3xl font-bold text-primary-600 mb-2">$800-$1,200</div>
+                    <div className="text-sm text-gray-500 mb-4">1-2 months processing</div>
+                    <Link href="/services/marriage-registration" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Driver's License */}
+              <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div className="text-center">
+                  <div className="text-6xl mb-6">🚗</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Driver's License Conversion</h3>
+                  <p className="text-gray-600 mb-6">
+                    Convert your foreign driver's license to a Vietnamese license. Quick and hassle-free.
+                  </p>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      No driving test required
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Valid for 10 years
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Cars & motorbikes supported
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      70+ countries accepted
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-6">
+                    <div className="text-3xl font-bold text-primary-600 mb-2">$150-$250</div>
+                    <div className="text-sm text-gray-500 mb-4">1-2 weeks processing</div>
+                    <Link href="/services/drivers-license" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
 
