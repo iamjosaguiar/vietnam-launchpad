@@ -38,6 +38,11 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     authors: [{ name: 'Vietnam Launchpad' }],
     creator: 'Vietnam Launchpad',
     publisher: 'Vietnam Launchpad',
+    icons: {
+      icon: '/vietnam launchpad logo.png',
+      shortcut: '/vietnam launchpad logo.png',
+      apple: '/vietnam launchpad logo.png',
+    },
     formatDetection: {
       email: false,
       address: false,
@@ -52,7 +57,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       siteName: 'Vietnam Launchpad',
       images: [
         {
-          url: '/og-image.jpg',
+          url: '/vietnam launchpad logo.png',
           width: 1200,
           height: 630,
           alt: t('ogImageAlt')
@@ -63,7 +68,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       card: 'summary_large_image',
       title: t('twitterTitle'),
       description: t('twitterDescription'),
-      images: ['/og-image.jpg']
+      images: ['/vietnam launchpad logo.png']
     },
     robots: {
       index: true,
@@ -98,7 +103,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     name: 'Vietnam Launchpad',
     description: 'Professional immigration and business consulting services for Vietnam',
     url: 'https://vietnamlaunchpad.com',
-    logo: 'https://vietnamlaunchpad.com/logo.png',
+    logo: 'https://vietnamlaunchpad.com/vietnam launchpad logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+84-28-1234-5678',
@@ -122,7 +127,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     '@type': 'ProfessionalService',
     '@id': 'https://vietnamlaunchpad.com',
     name: 'Vietnam Launchpad',
-    image: 'https://vietnamlaunchpad.com/logo.png',
+    image: 'https://vietnamlaunchpad.com/vietnam launchpad logo.png',
     description:
       'Licensed immigration and business consulting services in Vietnam. Specializing in TRC applications, work permits, and company registration.',
     address: {

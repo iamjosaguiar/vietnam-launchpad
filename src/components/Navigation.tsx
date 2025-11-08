@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { usePathname } from '@/i18n/config';
 import { Link } from '@/i18n/config';
 import { useState } from 'react';
+import Image from 'next/image';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
@@ -24,8 +25,14 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary-600">Vietnam</span>
-              <span className="text-2xl font-bold text-gray-900 ml-1">Launchpad</span>
+              <Image
+                src="/vietnam launchpad logo.png"
+                alt="Vietnam Launchpad"
+                width={200}
+                height={50}
+                className="h-10 w-auto"
+                priority
+              />
             </Link>
           </div>
 

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -5,8 +7,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-primary-600">Vietnam</span>
-              <span className="text-2xl font-bold text-white ml-1">Launchpad</span>
+              <Image
+                src="/vietnam launchpad logo.png"
+                alt="Vietnam Launchpad"
+                width={200}
+                height={50}
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-gray-300 mb-4">
               Professional immigration and business consulting services for expats relocating to Vietnam.
