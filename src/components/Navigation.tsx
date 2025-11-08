@@ -22,9 +22,9 @@ export default function Navigation() {
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-32 md:h-36">
+        <div className="flex justify-between items-center py-3 md:py-4">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center py-2">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/vietnam launchpad logo.png"
                 alt="Vietnam Launchpad"
