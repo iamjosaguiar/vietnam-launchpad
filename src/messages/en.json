@@ -72,21 +72,21 @@
       "title": "Professional Immigration & Business Services",
       "subtitle": "Transparent pricing, expert guidance, guaranteed results",
       "trc": {
-        "title": "TRC Applications",
-        "description": "Temporary Residence Card processing with high success rate",
-        "price": "$350",
-        "duration": "5-7 days"
+        "title": "TRC & Investment Visa",
+        "description": "Multiple visa options: 6 months to 4 years based on investment",
+        "price": "$350-$550",
+        "duration": "2-3 weeks"
       },
       "workPermit": {
         "title": "Work Permits",
-        "description": "Streamlined work permit applications",
-        "price": "$180",
-        "duration": "3 weeks"
+        "description": "2-year work permits, pricing varies by location",
+        "price": "$650-$850",
+        "duration": "2 months"
       },
       "companySetup": {
         "title": "Company Registration",
-        "description": "Complete LLC setup with banking support",
-        "price": "$3,500",
+        "description": "Complete LLC setup with FREE consultation included",
+        "price": "$2,000-$3,000",
         "duration": "2-4 months"
       }
     },
@@ -145,19 +145,19 @@
     "title": "Our Services",
     "subtitle": "Professional immigration and business consulting services",
     "trc": {
-      "title": "TRC Applications",
-      "description": "Get your Temporary Residence Card with our streamlined process. Perfect for long-term stays in Vietnam.",
-      "longDescription": "A Temporary Residence Card (TRC) allows you to stay in Vietnam for 1-3 years without needing visa extensions. Our expert team handles all documentation, government submissions, and follow-ups to ensure a smooth approval process.",
+      "title": "TRC & Investment Visa",
+      "description": "Get your Temporary Residence Card with investment visa options. 2-3 weeks processing time.",
+      "longDescription": "Multiple visa routes available: Investment visa (6 months - 4 years based on capital) or Work Permit + TRC route (2 years). We handle all documentation, government submissions, and follow-ups to ensure a smooth approval process.",
       "features": [
-        "1-3 year validity periods",
-        "5-7 working days processing",
+        "Investment visa: 6 months - 4 years",
+        "Work permit + TRC: 2 years",
+        "2-3 weeks processing",
         "Document preparation included",
         "Renewal assistance",
-        "Government fee guidance",
-        "Status tracking updates"
+        "Multiple entry allowed"
       ],
-      "price": "$350",
-      "government_fee": "Government fee: $145-165",
+      "price": "$350-$550",
+      "government_fee": "Fees included",
       "process": {
         "title": "How It Works",
         "steps": [
@@ -186,18 +186,18 @@
     },
     "workPermit": {
       "title": "Work Permits",
-      "description": "Obtain your work permit legally and efficiently with our expert guidance through the new streamlined process.",
-      "longDescription": "Vietnam's new work permit regulations have simplified the process significantly. We navigate the requirements, coordinate health checks, and ensure all documentation meets current legal standards for a hassle-free approval.",
+      "description": "2-year work permits with 2-month processing. Pricing varies by location (Hanoi, HCMC, Da Nang, other provinces).",
+      "longDescription": "We navigate work permit requirements, coordinate health checks, and ensure all documentation meets current legal standards. Pricing depends on your location in Vietnam (Hanoi, Ho Chi Minh City, Da Nang, or other provinces).",
       "features": [
         "2-year validity",
-        "3 weeks total processing",
+        "2 months processing",
         "Health check coordination",
         "Criminal record assistance",
         "Labor contract review",
         "Renewal reminders"
       ],
-      "price": "$180",
-      "government_fee": "Government fee: $16-42",
+      "price": "$650-$850",
+      "government_fee": "Varies by location",
       "process": {
         "title": "How It Works",
         "steps": [
@@ -226,19 +226,19 @@
     },
     "companySetup": {
       "title": "Company Registration",
-      "description": "Complete LLC setup including banking, legal compliance, and ongoing support for your business in Vietnam.",
-      "longDescription": "Starting a business in Vietnam requires navigating complex regulations, multiple government departments, and strict compliance requirements. Our comprehensive service handles everything from initial registration to banking setup and ongoing legal support.",
+      "description": "Complete LLC setup with FREE 1:1 consultation. Pricing depends on company type and licenses needed.",
+      "longDescription": "Starting a business in Vietnam requires navigating complex regulations. Our comprehensive service includes FREE expert consultation, handles everything from initial registration to banking setup and ongoing legal support. Price depends on company type and any special licenses needed (import/export, restaurant, alcohol, etc.).",
       "features": [
+        "FREE 1:1 consultation included",
         "100% foreign ownership allowed",
         "2-4 months processing",
         "Banking account setup",
         "Legal representative service",
         "Business license acquisition",
         "Tax registration",
-        "Office address support",
-        "Compliance consultation"
+        "Capital planning guidance"
       ],
-      "price": "$3,500",
+      "price": "$2,000-$3,000",
       "government_fee": "Government fees included",
       "process": {
         "title": "How It Works",

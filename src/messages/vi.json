@@ -72,21 +72,21 @@
       "title": "Dịch Vụ Xuất Nhập Cảnh & Kinh Doanh Chuyên Nghiệp",
       "subtitle": "Giá cả minh bạch, hướng dẫn chuyên nghiệp, kết quả đảm bảo",
       "trc": {
-        "title": "Xin Thẻ Tạm Trú",
-        "description": "Xử lý thẻ tạm trú với tỷ lệ thành công cao",
-        "price": "$350",
-        "duration": "5-7 ngày"
+        "title": "Thẻ Tạm Trú & Visa Đầu Tư",
+        "description": "Nhiều tùy chọn visa: 6 tháng đến 4 năm tùy theo vốn đầu tư",
+        "price": "$350-$550",
+        "duration": "2-3 tuần"
       },
       "workPermit": {
         "title": "Giấy Phép Lao Động",
-        "description": "Xin giấy phép lao động nhanh chóng, hiệu quả",
-        "price": "$180",
-        "duration": "3 tuần"
+        "description": "Giấy phép lao động 2 năm, giá thay đổi theo địa điểm",
+        "price": "$650-$850",
+        "duration": "2 tháng"
       },
       "companySetup": {
         "title": "Đăng Ký Công Ty",
-        "description": "Thành lập công ty TNHH với hỗ trợ ngân hàng",
-        "price": "$3.500",
+        "description": "Thành lập công ty TNHH với tư vấn MIỄN PHÍ",
+        "price": "$2.000-$3.000",
         "duration": "2-4 tháng"
       }
     },

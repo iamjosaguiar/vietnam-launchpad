@@ -12,52 +12,84 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   const services = [
     {
-      name: 'TRC Application',
+      name: 'TRC & Investment Visa',
       slug: 'trc-application',
-      price: '$350',
-      governmentFees: '$100-200',
-      timeline: '5-7 days',
+      price: '$350-$550',
+      governmentFees: 'Included',
+      timeline: '2-3 weeks',
       popular: true,
       features: [
+        'Investment visa: 6 months - 4 years',
+        'Work permit + TRC: 2 years',
         'Document review & preparation',
         'Application submission',
         'Follow-up with authorities',
-        'TRC pickup & delivery',
-        'Translation services',
-        'Email & phone support'
+        'TRC pickup & delivery'
       ]
     },
     {
       name: 'Work Permit',
       slug: 'work-permit',
-      price: '$180',
-      governmentFees: '$150-300',
-      timeline: '7-10 days',
+      price: '$650-$850',
+      governmentFees: 'Varies by location',
+      timeline: '2 months',
       popular: false,
       features: [
+        '2-year validity',
         'Eligibility assessment',
         'Document preparation',
-        'Permit application submission',
         'Health check coordination',
-        'Permit pickup & delivery',
+        'Permit application submission',
         'Renewal reminders'
       ]
     },
     {
       name: 'Company Setup',
       slug: 'company-setup',
-      price: '$3,500',
-      governmentFees: '$500-1,000',
-      timeline: '3-4 weeks',
+      price: '$2,000-$3,000',
+      governmentFees: 'Included',
+      timeline: '2-4 months',
       popular: false,
       features: [
+        'FREE 1:1 consultation',
         'Business consultation',
         'Company name registration',
         'Business license',
         'Company seal',
         'Tax registration',
-        'Bank account assistance',
-        '6 months support'
+        'Bank account assistance'
+      ]
+    },
+    {
+      name: 'Business Visa',
+      slug: 'business-visa',
+      price: '$150-$250',
+      governmentFees: 'Included',
+      timeline: '3-5 days',
+      popular: false,
+      features: [
+        '3-month validity',
+        'Quick processing',
+        'Business visa application',
+        'Visa approval letter',
+        'Immigration support',
+        'Fast-track option available'
+      ]
+    },
+    {
+      name: '1:1 Consultation',
+      slug: 'consultation',
+      price: '$100/hour',
+      governmentFees: 'N/A',
+      timeline: '48 hours to schedule',
+      popular: false,
+      features: [
+        'Expert advice on your situation',
+        'Tax & accounting guidance',
+        'Work permit & TRC questions',
+        'Business setup planning',
+        'Capital planning help',
+        'FREE for business setup clients'
       ]
     }
   ];
@@ -65,41 +97,43 @@ export default function PricingPage() {
   const packages = [
     {
       name: 'Expat Starter',
-      price: '$2,800',
-      savings: '$600',
+      price: '$1,500',
+      savings: '$200',
       includes: [
-        'TRC Application ($350)',
-        'Work Permit ($180)',
+        'TRC Application ($350-$550)',
+        'Work Permit ($650-$850)',
+        'Business Visa ($150-$250)',
         'Document translation bundle',
         'Priority processing',
-        '3 months concierge support'
+        '3 months email support'
       ],
       recommended: false
     },
     {
       name: 'Business Launch',
-      price: '$5,500',
-      savings: '$1,200',
+      price: '$3,500',
+      savings: '$800',
       includes: [
-        'Company Setup ($3,500)',
-        'TRC Application ($350)',
-        'Work Permit ($180)',
+        'Company Setup ($2,000-$3,000)',
+        'FREE 1:1 consultation included',
+        'TRC Application ($350-$550)',
+        'Investment visa guidance',
         'Corporate bank account',
-        'Legal consultation (2 hours)',
-        '12 months compliance support'
+        '6 months compliance support'
       ],
       recommended: true
     },
     {
-      name: 'Family Relocation',
-      price: '$4,200',
-      savings: '$900',
+      name: 'Complete Package',
+      price: '$5,000',
+      savings: '$1,200',
       includes: [
-        '2x TRC Applications ($700)',
-        '2x Work Permits ($360)',
-        'Dependent visa for 2 children',
-        'School enrollment assistance',
-        '6 months family support'
+        'Company Setup ($2,000-$3,000)',
+        'Work Permit ($650-$850)',
+        'TRC Application ($350-$550)',
+        'FREE consultation included',
+        'Corporate bank account',
+        '12 months compliance support'
       ],
       recommended: false
     }
@@ -123,7 +157,7 @@ export default function PricingPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Individual Services</h2>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -311,13 +345,21 @@ export default function PricingPage() {
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-600 mb-8">Get a free consultation and custom quote for your situation</p>
-          <Link
-            href="/contact"
-            className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors"
-          >
-            Schedule Free Consultation
-          </Link>
+          <p className="text-xl text-gray-600 mb-8">Start your business setup with a free consultation, or contact us for other services</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/get-started"
+              className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors"
+            >
+              Start Business Setup
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block bg-white border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </section>
 

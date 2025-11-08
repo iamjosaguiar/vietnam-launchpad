@@ -72,21 +72,21 @@
       "title": "专业移民与商务服务",
       "subtitle": "透明定价、专家指导、保证结果",
       "trc": {
-        "title": "居住证申请",
-        "description": "临时居住证办理,成功率高",
-        "price": "$350",
-        "duration": "5-7天"
+        "title": "居住证与投资签证",
+        "description": "多种签证选择：根据投资额6个月至4年",
+        "price": "$350-$550",
+        "duration": "2-3周"
       },
       "workPermit": {
         "title": "工作许可证",
-        "description": "简化工作许可证申请流程",
-        "price": "$180",
-        "duration": "3周"
+        "description": "2年工作许可证,价格因地区而异",
+        "price": "$650-$850",
+        "duration": "2个月"
       },
       "companySetup": {
         "title": "公司注册",
-        "description": "完整的有限责任公司设立及银行开户支持",
-        "price": "$3,500",
+        "description": "完整的有限责任公司设立,含免费咨询",
+        "price": "$2,000-$3,000",
         "duration": "2-4个月"
       }
     },

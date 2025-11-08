@@ -28,13 +28,13 @@ export const servicesData: Record<string, ServiceData> = {
   'trc-application': {
     slug: 'trc-application',
     title: 'TRC Application (Temporary Residence Card)',
-    shortDescription: 'Get your Vietnam Temporary Residence Card in 7 days with our streamlined application process.',
-    price: '$350',
-    priceNumeric: 350,
-    governmentFees: '$100-200',
-    timeline: '5-7 working days',
-    heroTitle: 'Get Your Vietnam TRC in 7 Days - Guaranteed',
-    heroDescription: 'Skip the bureaucracy. We handle everything from document preparation to pickup. 500+ successful applications, 98% approval rate.',
+    shortDescription: 'Get your Vietnam Temporary Residence Card with investment visa options. 2-3 weeks processing time.',
+    price: '$350-$550',
+    priceNumeric: 450,
+    governmentFees: 'Included',
+    timeline: '2-3 weeks',
+    heroTitle: 'Get Your Vietnam TRC & Investment Visa',
+    heroDescription: 'Multiple visa options available: 6 months to 4 years depending on your investment. Work permit + TRC route also available. We handle everything from document preparation to pickup.',
     process: [
       {
         step: 1,
@@ -88,8 +88,16 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     faqs: [
       {
+        question: 'What are my options for getting a TRC?',
+        answer: 'You have two main routes: (1) Investment Visa route - invest in your own company. Under 3B VND (~$120K) gets 6-12 month visas, 3B VND+ gets 3-4 year visas. Service fee: $350-$550. (2) Work Permit route - get work permit first (2 months, $650-$850), then TRC for 2 years ($350).'
+      },
+      {
         question: 'How long is the TRC valid for?',
-        answer: 'TRC validity depends on your work contract or sponsorship. Typically 1-2 years, renewable.'
+        answer: 'TRC validity depends on your route: Investment visas range from 6 months to 4 years based on investment amount. Work permit-based TRCs are typically valid for 2 years, matching your work permit duration.'
+      },
+      {
+        question: 'What investment amount do I need for a 3-4 year visa?',
+        answer: 'To qualify for a 3-4 year investment visa, you need to invest at least 3 billion VND (~$120,000 USD) into your Vietnamese company. Investments below this amount typically receive 6-12 month visas.'
       },
       {
         question: 'Can I travel in and out of Vietnam with a TRC?',
@@ -106,10 +114,6 @@ export const servicesData: Record<string, ServiceData> = {
       {
         question: 'Can family members get TRC through my sponsorship?',
         answer: 'Yes, spouses and children under 18 can obtain dependent TRCs. Additional fees apply.'
-      },
-      {
-        question: 'What\'s the difference between TRC and work permit?',
-        answer: 'TRC allows you to reside in Vietnam. Work permit allows you to work legally. Most foreign workers need both.'
       }
     ],
     guarantee: 'If we cannot obtain your TRC due to our error in document preparation or submission, we provide a 100% refund of our service fee.'
@@ -118,10 +122,10 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'work-permit',
     title: 'Vietnam Work Permit',
     shortDescription: 'Secure your legal right to work in Vietnam with our fast work permit processing service.',
-    price: '$180',
-    priceNumeric: 180,
-    governmentFees: '$150-300',
-    timeline: '7-10 working days',
+    price: '$650-$850',
+    priceNumeric: 750,
+    governmentFees: 'Varies by location',
+    timeline: '2 months',
     heroTitle: 'Vietnam Work Permit - Legal Authorization to Work',
     heroDescription: 'Work legally in Vietnam without complications. We handle the entire process from start to finish.',
     process: [
@@ -204,12 +208,12 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'company-setup',
     title: 'Vietnam Company Registration',
     shortDescription: 'Establish your business in Vietnam with full legal compliance and support.',
-    price: '$3,500',
-    priceNumeric: 3500,
-    governmentFees: '$500-1,000',
-    timeline: '3-4 weeks',
+    price: '$2,000-$3,000',
+    priceNumeric: 2500,
+    governmentFees: 'Included',
+    timeline: '2-4 months',
     heroTitle: 'Register Your Company in Vietnam - Full Turnkey Service',
-    heroDescription: 'From company registration to bank account setup. We handle everything so you can focus on growing your business.',
+    heroDescription: 'From company registration to bank account setup. We handle everything so you can focus on growing your business. Includes free 1:1 consultation for business setup clients.',
     process: [
       {
         step: 1,
@@ -293,6 +297,140 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     guarantee: 'We guarantee successful company registration or provide a full refund minus any government fees already paid.'
+  },
+  'business-visa': {
+    slug: 'business-visa',
+    title: 'Vietnam Business Visa',
+    shortDescription: 'Get a 3-month business visa to enter Vietnam quickly and easily.',
+    price: '$150-$250',
+    priceNumeric: 200,
+    governmentFees: 'Included',
+    timeline: '3-5 business days',
+    heroTitle: 'Vietnam Business Visa - Quick Entry',
+    heroDescription: 'Need to enter Vietnam for business? Get your 3-month business visa processed quickly. Perfect for initial visits, property viewing, or exploring business opportunities.',
+    process: [
+      {
+        step: 1,
+        title: 'Submit Documents',
+        description: 'Send us your passport copy and entry dates.',
+        duration: '1 day'
+      },
+      {
+        step: 2,
+        title: 'Visa Processing',
+        description: 'We process your business visa application with immigration.',
+        duration: '2-3 days'
+      },
+      {
+        step: 3,
+        title: 'Receive Visa',
+        description: 'Get your visa approval letter or stamp.',
+        duration: '1 day'
+      }
+    ],
+    included: [
+      'Business visa application',
+      'Visa approval letter',
+      'Immigration support',
+      'Fast-track option available'
+    ],
+    requirements: [
+      'Passport copy (minimum 6 months validity)',
+      'Passport photo',
+      'Entry and exit dates'
+    ],
+    benefits: [
+      'Quick processing time',
+      'Valid for 3 months',
+      'Single or multiple entry options',
+      'Can be extended or converted to other visa types'
+    ],
+    faqs: [
+      {
+        question: 'How long does a business visa last?',
+        answer: 'Standard business visas are valid for 3 months and can be single or multiple entry.'
+      },
+      {
+        question: 'Can I work on a business visa?',
+        answer: 'Business visas are for business activities, meetings, and exploration only - not for employment. You need a work permit to work legally.'
+      },
+      {
+        question: 'Can I extend my business visa?',
+        answer: 'Yes, business visas can typically be extended. We can help with extensions and conversions to other visa types.'
+      },
+      {
+        question: 'Do you offer e-visa services?',
+        answer: 'Yes, we offer expedited e-visa services for quick entry. Contact us for pricing and availability.'
+      }
+    ],
+    guarantee: 'If we cannot obtain your business visa due to our error, we provide a full refund of our service fee.'
+  },
+  'consultation': {
+    slug: 'consultation',
+    title: '1:1 Expert Consultation',
+    shortDescription: 'Get personalized advice on tax, accounting, work permits, TRC, business setup, and living in Vietnam.',
+    price: '$100/hour',
+    priceNumeric: 100,
+    governmentFees: 'N/A',
+    timeline: 'Schedule within 48 hours',
+    heroTitle: '1:1 Vietnam Expert Consultation',
+    heroDescription: 'Get your specific questions answered by an expert. Perfect for those exploring options or needing guidance before committing to a full service.',
+    process: [
+      {
+        step: 1,
+        title: 'Book Your Session',
+        description: 'Contact us with your availability and topics you want to discuss.',
+        duration: '1 day'
+      },
+      {
+        step: 2,
+        title: 'Consultation Call',
+        description: 'Video call session where we answer all your questions in detail.',
+        duration: '1 hour'
+      },
+      {
+        step: 3,
+        title: 'Follow-up Summary',
+        description: 'Receive written summary of key points and next steps discussed.',
+        duration: 'Same day'
+      }
+    ],
+    included: [
+      '1 hour video consultation',
+      'Expert advice on your specific situation',
+      'Written summary of discussion',
+      'Action plan and recommendations',
+      'Email follow-up for clarifications'
+    ],
+    requirements: [
+      'None - just bring your questions!'
+    ],
+    benefits: [
+      'Get clarity before making big decisions',
+      'Understand all your options',
+      'Personalized advice for your situation',
+      'Learn from someone who has helped 500+ expats',
+      'Ask anything about Vietnam business and immigration'
+    ],
+    faqs: [
+      {
+        question: 'What topics can we discuss?',
+        answer: 'Anything related to living and doing business in Vietnam: tax implications, accounting requirements, work permits, TRC, company setup process, capital planning, visa options, or your specific case questions.'
+      },
+      {
+        question: 'Is this free if I sign up for business setup?',
+        answer: 'Yes! If you proceed with our business setup service, the initial consultation is completely free. This paid consultation is for those who need specific advice but aren\'t ready to set up a company yet.'
+      },
+      {
+        question: 'How long is the consultation?',
+        answer: 'Standard consultations are 1 hour. If you need more time, additional hours can be booked at the same rate.'
+      },
+      {
+        question: 'Can I get a refund if not satisfied?',
+        answer: 'We offer a satisfaction guarantee. If you\'re not satisfied with the value provided in the first 15 minutes, we\'ll refund your payment in full.'
+      }
+    ],
+    guarantee: 'Satisfaction guaranteed. If you\'re not satisfied with the consultation quality in the first 15 minutes, we provide a full refund.'
   }
 };
 

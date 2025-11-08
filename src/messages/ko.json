@@ -72,21 +72,21 @@
       "title": "전문 이민 및 비즈니스 서비스",
       "subtitle": "투명한 가격, 전문가 지침, 보장된 결과",
       "trc": {
-        "title": "거주증 신청",
-        "description": "높은 성공률의 임시거주증 처리",
-        "price": "$350",
-        "duration": "5-7일"
+        "title": "거주증 및 투자 비자",
+        "description": "투자액에 따라 6개월~4년까지 다양한 비자 옵션",
+        "price": "$350-$550",
+        "duration": "2-3주"
       },
       "workPermit": {
         "title": "취업허가증",
-        "description": "간소화된 취업허가증 신청",
-        "price": "$180",
-        "duration": "3주"
+        "description": "2년 취업허가증, 지역별 가격 상이",
+        "price": "$650-$850",
+        "duration": "2개월"
       },
       "companySetup": {
         "title": "회사 등록",
-        "description": "은행 지원을 포함한 완전한 유한회사 설립",
-        "price": "$3,500",
+        "description": "무료 1:1 상담 포함 완전한 유한회사 설립",
+        "price": "$2,000-$3,000",
         "duration": "2-4개월"
       }
     },
