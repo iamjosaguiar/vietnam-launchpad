@@ -526,6 +526,105 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     guarantee: 'We guarantee successful marriage registration and TRC issuance or provide a full refund of our service fee (government fees excluded).'
+  },
+  'drivers-license': {
+    slug: 'drivers-license',
+    title: 'Driver\'s License Conversion',
+    shortDescription: 'Convert your foreign driver\'s license to a Vietnamese driver\'s license. Quick and hassle-free process.',
+    price: '$150-$250',
+    priceNumeric: 200,
+    governmentFees: 'Included',
+    timeline: '1-2 weeks',
+    heroTitle: 'Convert Your Foreign Driver\'s License to Vietnamese License',
+    heroDescription: 'Drive legally in Vietnam with a converted Vietnamese driver\'s license. We handle all paperwork, translation, and government submissions.',
+    process: [
+      {
+        step: 1,
+        title: 'Document Verification',
+        description: 'Submit your foreign driver\'s license and required documents for verification.',
+        duration: '1 day'
+      },
+      {
+        step: 2,
+        title: 'Translation & Notarization',
+        description: 'We translate and notarize your license and supporting documents.',
+        duration: '2-3 days'
+      },
+      {
+        step: 3,
+        title: 'Health Check',
+        description: 'Complete mandatory health check at designated clinic (we arrange appointment).',
+        duration: '1 day'
+      },
+      {
+        step: 4,
+        title: 'License Application',
+        description: 'Submit application to Department of Transportation and await approval.',
+        duration: '5-7 days'
+      },
+      {
+        step: 5,
+        title: 'License Pickup',
+        description: 'Collect your Vietnamese driver\'s license and deliver to you.',
+        duration: '1 day'
+      }
+    ],
+    included: [
+      'License verification and eligibility check',
+      'Document translation and notarization',
+      'Health check coordination',
+      'Application submission to DOT',
+      'Follow-up with authorities',
+      'License pickup and delivery',
+      'Guidance on Vietnam traffic rules'
+    ],
+    requirements: [
+      'Valid foreign driver\'s license (minimum 3 months validity)',
+      'Valid passport',
+      'Valid Vietnam visa or TRC',
+      'Passport photos (4x6cm, white background)',
+      'Proof of residence in Vietnam',
+      'Original driver\'s license (must be presented)'
+    ],
+    benefits: [
+      'Drive legally in Vietnam without international permit',
+      'Valid for motorbikes and cars (depending on license class)',
+      'Avoid fines and legal issues',
+      'Required for vehicle registration',
+      'Accepted as valid ID in Vietnam',
+      'No driving test required (for most countries)'
+    ],
+    faqs: [
+      {
+        question: 'Which countries\' licenses can be converted?',
+        answer: 'Vietnam has reciprocal agreements with over 70 countries including USA, UK, Canada, Australia, most EU countries, Japan, South Korea, and many others. Licenses from these countries can be converted without a driving test. Contact us to verify your country\'s eligibility.'
+      },
+      {
+        question: 'Do I need to take a driving test?',
+        answer: 'No driving test is required if your country has a reciprocal agreement with Vietnam. However, you must pass a basic health check and vision test.'
+      },
+      {
+        question: 'How long is the Vietnamese license valid?',
+        answer: 'Vietnamese driver\'s licenses are typically valid for 10 years from the date of issuance.'
+      },
+      {
+        question: 'Can I convert a motorbike license?',
+        answer: 'Yes! Most countries\' motorcycle/motorbike licenses can be converted to Vietnamese Class A1 or A2 licenses depending on engine capacity.'
+      },
+      {
+        question: 'What if my license has expired?',
+        answer: 'Your foreign license must be valid at the time of conversion. If it has expired, you may need to renew it in your home country first, or take a Vietnamese driving test.'
+      },
+      {
+        question: 'Do I keep my original license?',
+        answer: 'No, you must surrender your original foreign license during the conversion process. It will be kept by Vietnamese authorities. Some countries allow you to request a duplicate from your home country afterward.'
+      },
+      {
+        question: 'What license classes can I get?',
+        answer: 'The Vietnamese license class depends on your foreign license: Class B (cars), Class A1 (motorbikes up to 175cc), Class A2 (motorbikes over 175cc), or higher classes for trucks/buses if qualified.'
+      }
+    ],
+    guarantee: 'We guarantee successful license conversion or provide a full refund of our service fee if you meet all eligibility requirements.'
   }
 };
 
