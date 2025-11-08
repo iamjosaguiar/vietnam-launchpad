@@ -21,8 +21,10 @@ export default function Footer() {
             <p className="text-gray-300 mb-4">
               Professional immigration and business consulting services for expats relocating to Vietnam.
             </p>
-            <div className="text-gray-300">
-              <p>📍 Ho Chi Minh City, Vietnam</p>
+            <div className="text-gray-300 space-y-2">
+              <p className="font-semibold">📍 Offices</p>
+              <p className="text-sm">Hanoi: 5th floor, No.7, Alley 3, Lieu Giai Street, Ngoc Ha Ward</p>
+              <p className="text-sm">Da Nang: 16 Tran Phu, Hai Chau Ward</p>
             </div>
           </div>
 

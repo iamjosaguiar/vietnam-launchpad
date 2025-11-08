@@ -274,8 +274,11 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-4">
                   <div className="text-primary-600 text-2xl">📍</div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Office</h3>
-                    <p className="text-gray-600">Ho Chi Minh City, Vietnam</p>
+                    <h3 className="font-semibold text-gray-900">Offices</h3>
+                    <p className="text-gray-600 font-medium">Hanoi Office:</p>
+                    <p className="text-gray-600 text-sm mb-2">5th floor, No.7, Alley 3, Lieu Giai Street, Ngoc Ha Ward, Hanoi City, Vietnam</p>
+                    <p className="text-gray-600 font-medium">Da Nang Office:</p>
+                    <p className="text-gray-600 text-sm mb-2">16 Tran Phu, Hai Chau Ward, Da Nang City, Vietnam</p>
                     <p className="text-sm text-gray-500">Virtual consultations available worldwide</p>
                   </div>
                 </div>

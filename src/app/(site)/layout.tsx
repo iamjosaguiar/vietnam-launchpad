@@ -104,7 +104,8 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Ho Chi Minh City',
+      streetAddress: '5th floor, No.7, Alley 3, Lieu Giai Street, Ngoc Ha Ward',
+      addressLocality: 'Hanoi',
       addressCountry: 'VN'
     },
     sameAs: [
@@ -123,13 +124,14 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
       'Licensed immigration and business consulting services in Vietnam. Specializing in TRC applications, work permits, and company registration.',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Ho Chi Minh City',
+      streetAddress: '5th floor, No.7, Alley 3, Lieu Giai Street, Ngoc Ha Ward',
+      addressLocality: 'Hanoi',
       addressCountry: 'Vietnam'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 10.8231,
-      longitude: 106.6297
+      latitude: 21.0285,
+      longitude: 105.8542
     },
     telephone: '+84-28-1234-5678',
     email: 'jos@iamjosaguiar.com',
