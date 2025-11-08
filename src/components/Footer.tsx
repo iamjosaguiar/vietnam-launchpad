@@ -10,9 +10,9 @@ export default function Footer() {
               <Image
                 src="/vietnam launchpad logo.png"
                 alt="Vietnam Launchpad"
-                width={240}
-                height={60}
-                className="h-12 w-auto brightness-0 invert"
+                width={400}
+                height={100}
+                className="h-16 md:h-20 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-300 mb-4">

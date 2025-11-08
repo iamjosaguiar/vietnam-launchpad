@@ -22,15 +22,15 @@ export default function Navigation() {
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24 md:h-28">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
                 src="/vietnam launchpad logo.png"
                 alt="Vietnam Launchpad"
-                width={240}
-                height={60}
-                className="h-14 w-auto"
+                width={400}
+                height={100}
+                className="h-20 md:h-24 w-auto"
                 priority
               />
             </Link>
