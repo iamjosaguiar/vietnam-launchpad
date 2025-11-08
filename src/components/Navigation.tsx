@@ -28,9 +28,9 @@ export default function Navigation() {
               <Image
                 src="/vietnam launchpad logo.png"
                 alt="Vietnam Launchpad"
-                width={200}
-                height={50}
-                className="h-10 w-auto"
+                width={240}
+                height={60}
+                className="h-14 w-auto"
                 priority
               />
             </Link>
