@@ -33,7 +33,14 @@ export default function LanguageSwitcher() {
 
   const handleLocaleChange = (newLocale: string) => {
     setIsOpen(false);
-    router.replace(pathname, { locale: newLocale });
+
+    // Construct the new URL with locale prefix
+    const newPath = newLocale === 'en'
+      ? pathname
+      : `/${newLocale}${pathname}`;
+
+    // Use window.location to navigate and reload with new locale
+    window.location.href = newPath;
   };
 
   return (
