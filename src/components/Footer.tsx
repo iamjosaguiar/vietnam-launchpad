@@ -107,10 +107,16 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <p>© 2025 Vietnam Launchpad. All rights reserved.</p>
           <p className="text-xs mt-2">Company Number: 0108305670</p>
-          <p className="text-xs mt-3 max-w-3xl mx-auto">
-            All company registration and legal services are performed in partnership with registered Vietnamese Law Offices
-            licensed to practice in Vietnam.
-          </p>
+          <div className="mt-4 space-y-2 max-w-4xl mx-auto">
+            <p className="text-xs">
+              All company registration and legal services are performed in partnership with registered Vietnamese Law Offices
+              licensed to practice in Vietnam.
+            </p>
+            <p className="text-xs">
+              We strive to keep all information on this website accurate and up to date. However, Vietnamese immigration and
+              business regulations are subject to change. Please contact us to confirm current requirements and pricing.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
