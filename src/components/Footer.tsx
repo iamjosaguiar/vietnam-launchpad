@@ -23,7 +23,8 @@ export default function Footer() {
             </p>
             <div className="text-gray-300">
               <p>📧 jos@iamjosaguiar.com</p>
-              <p>📱 +84 (0)28 1234 5678</p>
+              <p>📱 0108305670</p>
+              <p>🏢 TUBUDD JOINT STOCK COMPANY</p>
               <p>📍 Ho Chi Minh City, Vietnam</p>
             </div>
           </div>
