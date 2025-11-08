@@ -625,6 +625,113 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     guarantee: 'We guarantee successful license conversion or provide a full refund of our service fee if you meet all eligibility requirements.'
+  },
+  'property-registration': {
+    slug: 'property-registration',
+    title: 'Foreign-Owned Property Registration',
+    shortDescription: 'Register and secure your property ownership in Vietnam as a foreigner. Complete support for apartments and condominiums.',
+    price: '$500-$1,500',
+    priceNumeric: 1000,
+    governmentFees: 'Varies by property value',
+    timeline: '1-2 months',
+    heroTitle: 'Foreign-Owned Property Registration & Ownership Support',
+    heroDescription: 'Navigate Vietnam\'s property ownership regulations with expert guidance. We help foreigners legally purchase, register, and secure property ownership rights for apartments and condominiums.',
+    process: [
+      {
+        step: 1,
+        title: 'Eligibility & Due Diligence',
+        description: 'Verify eligibility, check property ownership quota, and conduct thorough legal due diligence.',
+        duration: '3-5 days'
+      },
+      {
+        step: 2,
+        title: 'Sales Contract Review',
+        description: 'Review and negotiate sales contract terms to protect your interests.',
+        duration: '2-3 days'
+      },
+      {
+        step: 3,
+        title: 'Documentation Preparation',
+        description: 'Prepare all required documents including notarization and translations.',
+        duration: '1 week'
+      },
+      {
+        step: 4,
+        title: 'Property Transfer Registration',
+        description: 'Submit registration to Department of Natural Resources and Environment.',
+        duration: '2-3 weeks'
+      },
+      {
+        step: 5,
+        title: 'Pink Book Issuance',
+        description: 'Obtain official property ownership certificate (Pink Book/Red Book).',
+        duration: '1-2 weeks'
+      }
+    ],
+    included: [
+      'Property eligibility verification',
+      'Legal due diligence and title search',
+      'Sales contract review and advice',
+      'Document preparation and translation',
+      'Property registration submission',
+      'Coordination with developer/seller',
+      'Pink Book/Red Book pickup',
+      'Ongoing ownership support',
+      'Tax filing assistance'
+    ],
+    requirements: [
+      'Valid passport with Vietnam visa/TRC',
+      'Proof of legal entry into Vietnam',
+      'Notarized passport (for registration)',
+      'Sales contract from developer/seller',
+      'Property eligibility confirmation letter',
+      'Proof of payment/financial capability',
+      'Marriage certificate (if applicable)'
+    ],
+    benefits: [
+      'Legal property ownership in Vietnam',
+      'Official ownership certificate (Pink Book)',
+      '50-year ownership term (renewable)',
+      'Can sell or lease the property',
+      'Pass property to heirs',
+      'Access to bank financing',
+      'Investment portfolio diversification'
+    ],
+    faqs: [
+      {
+        question: 'Can foreigners own property in Vietnam?',
+        answer: 'Yes, but with restrictions. Foreigners can own apartments/condominiums in buildings where foreign ownership doesn\'t exceed 30% of total units. Foreigners cannot own landed property (houses with land) but can own the house structure on leased land.'
+      },
+      {
+        question: 'What is the 30% foreign ownership quota?',
+        answer: 'Each condominium building has a maximum 30% quota for foreign ownership. Once this quota is filled, foreigners cannot purchase more units in that building. We check quota availability during due diligence.'
+      },
+      {
+        question: 'How long can foreigners own property?',
+        answer: 'Foreign ownership is valid for 50 years from the date of issuance of the ownership certificate and can be extended for another 50 years.'
+      },
+      {
+        question: 'What is a Pink Book vs Red Book?',
+        answer: 'Both are property ownership certificates. Pink Book is typically for condos/apartments, Red Book for land. The color distinction is less important than the certificate itself, which proves legal ownership.'
+      },
+      {
+        question: 'Can I get a mortgage as a foreigner?',
+        answer: 'Some Vietnamese banks offer mortgages to foreigners, typically requiring 30-50% down payment. Requirements vary by bank and include valid visa/TRC and proof of income.'
+      },
+      {
+        question: 'What are the ongoing costs of property ownership?',
+        answer: 'Annual costs include property tax (~0.03-0.15% of value), management fees (varies by building), and utilities. We help you understand all costs before purchase.'
+      },
+      {
+        question: 'Can I sell my property to another foreigner or Vietnamese?',
+        answer: 'Yes, you can sell to Vietnamese citizens or other foreigners (subject to the 30% quota). The sale process requires updating registration with authorities.'
+      },
+      {
+        question: 'What happens if my visa/TRC expires?',
+        answer: 'You can still own the property even if your visa/TRC expires. However, you must have had legal entry status at the time of purchase. The property ownership is independent of visa status after purchase.'
+      }
+    ],
+    guarantee: 'We guarantee proper registration and ownership certificate issuance or provide a full refund of our service fee (government fees and taxes excluded).'
   }
 };
 

@@ -142,7 +142,7 @@ export default function ServicesPage() {
           {/* Additional Services */}
           <div className="mt-16">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Additional Services</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
               {/* Marriage Registration */}
               <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
@@ -214,6 +214,44 @@ export default function ServicesPage() {
                     <div className="text-3xl font-bold text-primary-600 mb-2">$150-$250</div>
                     <div className="text-sm text-gray-500 mb-4">1-2 weeks processing</div>
                     <Link href="/services/drivers-license" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Property Registration */}
+              <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div className="text-center">
+                  <div className="text-6xl mb-6">🏘️</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Property Registration</h3>
+                  <p className="text-gray-600 mb-6">
+                    Register and secure your property ownership in Vietnam. Expert support for foreign buyers.
+                  </p>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Legal due diligence
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      50-year ownership (renewable)
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Pink Book/Red Book issuance
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Full ownership support
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-6">
+                    <div className="text-3xl font-bold text-primary-600 mb-2">$500-$1,500</div>
+                    <div className="text-sm text-gray-500 mb-4">1-2 months processing</div>
+                    <Link href="/services/property-registration" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
                       Learn More
                     </Link>
                   </div>

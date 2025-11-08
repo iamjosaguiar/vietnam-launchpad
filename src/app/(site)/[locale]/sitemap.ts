@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/company-setup',
     '/services/marriage-registration',
     '/services/drivers-license',
+    '/services/property-registration',
   ];
 
   return routes.map((route) => ({

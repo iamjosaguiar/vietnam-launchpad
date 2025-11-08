@@ -118,7 +118,7 @@ export default async function HomePage() {
           {/* Additional Services Link */}
           <div className="mt-12 text-center">
             <p className="text-gray-600 text-lg mb-4">
-              Plus Marriage Registration, Driver's License Conversion, and more...
+              Plus Marriage Registration, Property Registration, Driver's License, and more...
             </p>
             <Link
               href="/services"
