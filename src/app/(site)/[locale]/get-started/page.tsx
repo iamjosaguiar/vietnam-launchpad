@@ -381,8 +381,41 @@ export default function GetStartedPage() {
             {/* Capital Planning Guide */}
             <div className="mt-8 bg-gradient-to-r from-primary-50 to-blue-50 rounded-lg shadow-sm p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Capital Planning Guide</h2>
+
+              <div className="bg-white p-6 rounded-lg mb-6 border-l-4 border-primary-600">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Simple Formula:</h3>
+                <p className="text-lg text-gray-800 mb-2">
+                  <strong>Capitalization should support your business for at least 1.5 years of operational expenses.</strong>
+                </p>
+                <p className="text-gray-600 text-sm">
+                  Calculate your annual costs (rent + equipment + salaries + operating expenses) and multiply by 1.5 for a safe starting capital.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg mb-6">
+                <h3 className="font-bold text-gray-900 mb-4">Industry Examples:</h3>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start border-l-2 border-primary-300 pl-4">
+                    <span className="text-primary-600 font-bold mr-3">Coffee Shop:</span>
+                    <span className="text-gray-700">1-2B VND ($40-80K) - Depends on location, with/without alcohol license</span>
+                  </div>
+                  <div className="flex items-start border-l-2 border-primary-300 pl-4">
+                    <span className="text-primary-600 font-bold mr-3">Restaurant:</span>
+                    <span className="text-gray-700">Minimum 3B VND (~$120K) - Higher for premium locations or full bar</span>
+                  </div>
+                  <div className="flex items-start border-l-2 border-primary-300 pl-4">
+                    <span className="text-primary-600 font-bold mr-3">Import/Export:</span>
+                    <span className="text-gray-700">Varies based on products and volume - minimum 1B VND recommended</span>
+                  </div>
+                  <div className="flex items-start border-l-2 border-primary-300 pl-4">
+                    <span className="text-primary-600 font-bold mr-3">Tech/Consulting:</span>
+                    <span className="text-gray-700">500M-1B VND ($20-40K) - Lower overhead businesses</span>
+                  </div>
+                </div>
+              </div>
+
               <p className="text-gray-700 mb-6">
-                Not sure how much capital to register? Here are three important considerations to help you decide:
+                <strong>Three key considerations when deciding your capital amount:</strong>
               </p>
 
               <div className="space-y-6">
@@ -391,8 +424,11 @@ export default function GetStartedPage() {
                     <div className="flex-shrink-0 w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold mr-4">1</div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-2">What You Can Afford Comfortably</h3>
-                      <p className="text-gray-600">
-                        This money becomes company money, and you still need to live as a founder. Don't put everything into the business if it would make you struggle financially. Choose an amount you can commit comfortably.
+                      <p className="text-gray-600 mb-2">
+                        This money becomes company money deposited into the business bank account - you need 100% of the capital available to transfer. You still need to live as a founder, so don't put everything in if it would make you struggle financially.
+                      </p>
+                      <p className="text-sm text-gray-500 italic">
+                        Remember: This capital is working capital for your business, not lost money. You'll use it to operate.
                       </p>
                     </div>
                   </div>
@@ -416,7 +452,7 @@ export default function GetStartedPage() {
                     <div>
                       <h3 className="font-bold text-gray-900 mb-2">Legal Responsibility & Visa Requirements</h3>
                       <p className="text-gray-600 mb-3">
-                        This capital represents your liability if issues arise, so it should be sufficient - at least to cover 12 months of operations. For visa purposes:
+                        This capital represents your liability if issues arise. For visa purposes:
                       </p>
                       <ul className="space-y-2 text-sm text-gray-600">
                         <li className="flex items-start">
@@ -429,7 +465,7 @@ export default function GetStartedPage() {
                         </li>
                         <li className="flex items-start">
                           <span className="text-primary-600 mr-2">•</span>
-                          <span><strong>$100K+ total capital:</strong> Better for sponsoring multiple employees</span>
+                          <span><strong>Higher capital:</strong> Better for sponsoring multiple employees</span>
                         </li>
                       </ul>
                     </div>
@@ -439,7 +475,7 @@ export default function GetStartedPage() {
 
               <div className="mt-6 p-4 bg-blue-100 border-l-4 border-primary-600 rounded">
                 <p className="text-sm text-gray-700">
-                  <strong>Note:</strong> We'll discuss your specific situation during the free consultation and help you determine the optimal capital amount for your business goals and visa needs.
+                  <strong>Note:</strong> We'll discuss your specific situation during the free consultation and help you calculate the optimal capital amount based on your business plan, industry, and visa needs.
                 </p>
               </div>
             </div>
