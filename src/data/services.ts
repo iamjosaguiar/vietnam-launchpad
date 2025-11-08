@@ -729,6 +729,10 @@ export const servicesData: Record<string, ServiceData> = {
       {
         question: 'What happens if my visa/TRC expires?',
         answer: 'You can still own the property even if your visa/TRC expires. However, you must have had legal entry status at the time of purchase. The property ownership is independent of visa status after purchase.'
+      },
+      {
+        question: 'Does property ownership allow me to get a visa or TRC?',
+        answer: 'No, property ownership alone does not grant you visa or TRC eligibility in Vietnam. You still need to obtain a visa or TRC through other means (work permit, investment visa, marriage, etc.). However, property ownership can support your case when applying for long-term visas, and having a TRC makes the property purchase process easier.'
       }
     ],
     guarantee: 'We guarantee proper registration and ownership certificate issuance or provide a full refund of our service fee (government fees and taxes excluded).'
