@@ -431,6 +431,95 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     guarantee: 'Satisfaction guaranteed. If you\'re not satisfied with the consultation quality in the first 15 minutes, we provide a full refund.'
+  },
+  'drivers-license': {
+    slug: 'drivers-license',
+    title: 'Vietnam Driver\'s License Conversion',
+    shortDescription: 'Convert your foreign driver\'s license to a Vietnamese license. Quick processing for international and ASEAN licenses.',
+    price: '$180-$250',
+    priceNumeric: 215,
+    governmentFees: 'Included',
+    timeline: '1-2 weeks',
+    heroTitle: 'Convert Your Driver\'s License to Vietnam License',
+    heroDescription: 'Legally drive in Vietnam with a converted local license. We handle the conversion process for international driver\'s licenses and ASEAN member country licenses.',
+    process: [
+      {
+        step: 1,
+        title: 'Document Verification',
+        description: 'We verify your existing license and check eligibility for conversion.',
+        duration: '1 day'
+      },
+      {
+        step: 2,
+        title: 'Health Check & Translation',
+        description: 'Coordinate required health examination and translate necessary documents.',
+        duration: '2-3 days'
+      },
+      {
+        step: 3,
+        title: 'Application Submission',
+        description: 'Submit your application to the Department of Transport.',
+        duration: '3-5 days'
+      },
+      {
+        step: 4,
+        title: 'License Issuance',
+        description: 'Receive your Vietnamese driver\'s license.',
+        duration: '1-2 days'
+      }
+    ],
+    included: [
+      'License eligibility assessment',
+      'Document translation services',
+      'Health check coordination',
+      'Application preparation and submission',
+      'Follow-up with transport department',
+      'License pickup and delivery',
+      'Email and phone support'
+    ],
+    requirements: [
+      'Valid foreign driver\'s license',
+      'Valid passport (minimum 6 months validity)',
+      'Current Vietnam visa or TRC',
+      'Passport-sized photos (4x6cm, white background)',
+      'Health certificate from Vietnamese hospital',
+      'Proof of residence in Vietnam'
+    ],
+    benefits: [
+      'Drive legally in Vietnam',
+      'Avoid fines and penalties',
+      'Valid identification document',
+      'Rent vehicles more easily',
+      'Lower insurance rates',
+      'Peace of mind during police checks'
+    ],
+    faqs: [
+      {
+        question: 'What international driver\'s licenses are valid in Vietnam?',
+        answer: 'International Driving Permits (IDP) issued under the 1949 Geneva Convention are technically recognized in Vietnam. However, an IDP alone is not sufficient for long-term residence - you should convert to a Vietnamese license. We can help assess your specific license for conversion eligibility.'
+      },
+      {
+        question: 'What about ASEAN member country licenses?',
+        answer: 'Under the ASEAN agreement, driver\'s licenses from ASEAN member countries (Thailand, Malaysia, Singapore, Indonesia, Philippines, Brunei, Cambodia, Laos, Myanmar) are valid by law in Vietnam. However, in our experience, local police may have difficulty accepting foreign licenses during roadside checks, even from ASEAN countries. We strongly recommend converting to a Vietnamese license to avoid complications and ensure smooth interactions with authorities.'
+      },
+      {
+        question: 'How long is the Vietnamese license valid for?',
+        answer: 'Converted Vietnamese driver\'s licenses are typically valid for 10 years from the date of issuance.'
+      },
+      {
+        question: 'Do I need to take a driving test?',
+        answer: 'If you have a valid license from certain countries with reciprocal agreements, you may not need to take a test. We\'ll advise on your specific situation during the eligibility assessment.'
+      },
+      {
+        question: 'Can I drive in Vietnam with just my home country license?',
+        answer: 'For short visits (tourist visa), an International Driving Permit along with your home license may be accepted. However, for residents or long-term stays, you must convert to a Vietnamese license. Driving without proper Vietnamese authorization can result in fines, vehicle impoundment, and insurance issues.'
+      },
+      {
+        question: 'What happens if I get stopped by police with a foreign license?',
+        answer: 'Even with an ASEAN license that is technically valid by law, many local police officers are not familiar with foreign licenses and may issue fines or detain your vehicle. Having a Vietnamese license eliminates this risk entirely and ensures smooth interactions with traffic authorities.'
+      }
+    ],
+    guarantee: 'If we cannot obtain your Vietnamese driver\'s license due to our error in document preparation or submission, we provide a 100% refund of our service fee.'
   }
 };
 
