@@ -9,15 +9,18 @@ import { getTranslations } from 'next-intl/server';
 const serviceCards = [
   {
     icon: '🏠',
-    key: 'trc'
+    key: 'trc',
+    href: '/services/trc-application'
   },
   {
     icon: '💼',
-    key: 'workPermit'
+    key: 'workPermit',
+    href: '/services/work-permit'
   },
   {
     icon: '🏢',
-    key: 'companySetup'
+    key: 'companySetup',
+    href: '/services/company-setup'
   }
 ] as const;
 
@@ -102,7 +105,7 @@ export default async function HomePage() {
                   </div>
                   <div className="text-sm text-gray-500 mb-6">{t(`services.${service.key}.duration`)}</div>
                   <Link
-                    href="/services"
+                    href={service.href}
                     className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors inline-block"
                   >
                     {common('learnMore')}
