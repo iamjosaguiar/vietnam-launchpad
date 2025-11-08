@@ -22,7 +22,6 @@ export default function Footer() {
               Professional immigration and business consulting services for expats relocating to Vietnam.
             </p>
             <div className="text-gray-300">
-              <p>📧 jos@iamjosaguiar.com</p>
               <p>📍 Ho Chi Minh City, Vietnam</p>
             </div>
           </div>

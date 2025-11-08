@@ -254,14 +254,14 @@ export default function ContactPage() {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="text-primary-600 text-2xl">📧</div>
+                  <div className="text-primary-600 text-2xl">💬</div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">jos@iamjosaguiar.com</p>
-                    <p className="text-sm text-gray-500">Response within 24 hours</p>
+                    <h3 className="font-semibold text-gray-900">Get In Touch</h3>
+                    <p className="text-gray-600">Fill out the form and we'll respond within 24 hours</p>
+                    <p className="text-sm text-gray-500">Or use WhatsApp/Zalo for instant messaging</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="text-primary-600 text-2xl">📱</div>
                   <div>
@@ -270,7 +270,7 @@ export default function ContactPage() {
                     <p className="text-sm text-gray-500">Business hours: 9 AM - 6 PM (ICT)</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="text-primary-600 text-2xl">📍</div>
                   <div>
@@ -279,7 +279,7 @@ export default function ContactPage() {
                     <p className="text-sm text-gray-500">Virtual consultations available worldwide</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="text-primary-600 text-2xl">💬</div>
                   <div>
