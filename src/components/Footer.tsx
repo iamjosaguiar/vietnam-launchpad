@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { Link } from '@/i18n/config';
 
 export default function Footer() {
   return (
@@ -28,19 +31,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/services" className="hover:text-white transition-colors">TRC Applications</a></li>
-              <li><a href="/services" className="hover:text-white transition-colors">Work Permits</a></li>
-              <li><a href="/services" className="hover:text-white transition-colors">Company Setup</a></li>
-              <li><a href="/services" className="hover:text-white transition-colors">All Services</a></li>
+              <li><Link href="/services/trc-application" className="hover:text-white transition-colors">TRC Applications</Link></li>
+              <li><Link href="/services/work-permit" className="hover:text-white transition-colors">Work Permits</Link></li>
+              <li><Link href="/services/company-setup" className="hover:text-white transition-colors">Company Setup</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">All Services</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
         </div>
