@@ -135,47 +135,6 @@ export default function ServicesPage() {
             </div>
 
           </div>
-
-          {/* Additional Services */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Additional Services</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-              {/* Business Visa */}
-              <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-                <div className="text-center">
-                  <div className="text-5xl mb-4">✈️</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Business Visa</h3>
-                  <p className="text-gray-600 mb-6">
-                    Quick 3-month business visa for entering Vietnam. Perfect for initial visits and exploring opportunities.
-                  </p>
-                  <div className="text-2xl font-bold text-primary-600 mb-2">$150-$250</div>
-                  <div className="text-sm text-gray-500 mb-4">3-5 business days</div>
-                  <Link href="/services/business-visa" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-
-              {/* Consultation */}
-              <div className="bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-primary-200">
-                <div className="text-center">
-                  <div className="text-5xl mb-4">💡</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">1:1 Expert Consultation</h3>
-                  <p className="text-gray-600 mb-6">
-                    Get personalized advice on tax, accounting, work permits, TRC, business setup, and living in Vietnam.
-                  </p>
-                  <div className="text-2xl font-bold text-primary-600 mb-2">$100/hour</div>
-                  <div className="text-sm text-gray-500 mb-1">Schedule within 48 hours</div>
-                  <div className="text-xs text-primary-700 font-medium mb-4">FREE for business setup clients</div>
-                  <Link href="/services/consultation" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-
-            </div>
-          </div>
         </div>
       </section>
 
