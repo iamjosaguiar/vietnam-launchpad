@@ -23,7 +23,6 @@ export default function Footer() {
             </p>
             <div className="text-gray-300">
               <p>📧 jos@iamjosaguiar.com</p>
-              <p>🏢 TUBUDD JOINT STOCK COMPANY</p>
               <p>📍 Ho Chi Minh City, Vietnam</p>
             </div>
           </div>
