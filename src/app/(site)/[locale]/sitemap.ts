@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/trc-application',
     '/services/work-permit',
     '/services/company-setup',
+    '/services/marriage-registration',
   ];
 
   return routes.map((route) => ({

@@ -60,6 +60,15 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/services/marriage-registration"
+                  className="hover:text-white transition-colors"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
+                  Marriage Registration
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/services"
                   className="hover:text-white transition-colors"
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

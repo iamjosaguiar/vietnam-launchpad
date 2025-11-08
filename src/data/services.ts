@@ -28,13 +28,13 @@ export const servicesData: Record<string, ServiceData> = {
   'trc-application': {
     slug: 'trc-application',
     title: 'TRC Application (Temporary Residence Card)',
-    shortDescription: 'Get your Vietnam Temporary Residence Card with investment visa options. 2-3 weeks processing time.',
+    shortDescription: 'Get your Vietnam Temporary Residence Card through investment, work permit, or marriage. 2-3 weeks processing time.',
     price: '$350-$550',
     priceNumeric: 450,
     governmentFees: 'Included',
     timeline: '2-3 weeks',
-    heroTitle: 'Get Your Vietnam TRC & Investment Visa',
-    heroDescription: 'Multiple visa options available: 6 months to 4 years depending on your investment. Work permit + TRC route also available. We handle everything from document preparation to pickup.',
+    heroTitle: 'Get Your Vietnam TRC - Multiple Pathways Available',
+    heroDescription: 'Choose from Investment Visa (6 months - 4 years), Work Permit sponsorship (2 years), or Marriage to Vietnamese citizen (up to 3 years). We handle everything from document preparation to pickup.',
     process: [
       {
         step: 1,
@@ -89,7 +89,7 @@ export const servicesData: Record<string, ServiceData> = {
     faqs: [
       {
         question: 'What are my options for getting a TRC?',
-        answer: 'You have two main routes: (1) Investment Visa route - invest in your own company. Under 3B VND (~$120K) gets 6-12 month visas, 3B VND+ gets 3-4 year visas. Service fee: $350-$550. (2) Work Permit route - get work permit first (2 months, $650-$850), then TRC for 2 years ($350).'
+        answer: 'You have three main routes: (1) Investment Visa - invest in your own company. Under 3B VND (~$120K) gets 6-12 month visas, 3B VND+ gets 3-4 year visas. (2) Work Permit route - get work permit first (2 months, $650-$850), then TRC for 2 years ($350). (3) Marriage to Vietnamese citizen - up to 3 years validity. See our Marriage Registration service for details.'
       },
       {
         question: 'How long is the TRC valid for?',
@@ -114,6 +114,10 @@ export const servicesData: Record<string, ServiceData> = {
       {
         question: 'Can family members get TRC through my sponsorship?',
         answer: 'Yes, spouses and children under 18 can obtain dependent TRCs. Additional fees apply.'
+      },
+      {
+        question: 'How does the Marriage TRC route work?',
+        answer: 'If you are married to a Vietnamese citizen, you can obtain a TRC valid for up to 3 years without needing investment or a work permit. See our Marriage Registration service for complete details on registering your marriage and obtaining TRC.'
       }
     ],
     guarantee: 'If we cannot obtain your TRC due to our error in document preparation or submission, we provide a 100% refund of our service fee.'
@@ -431,6 +435,97 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     guarantee: 'Satisfaction guaranteed. If you\'re not satisfied with the consultation quality in the first 15 minutes, we provide a full refund.'
+  },
+  'marriage-registration': {
+    slug: 'marriage-registration',
+    title: 'Marriage Registration & TRC',
+    shortDescription: 'Register your marriage in Vietnam and obtain TRC through marriage to a Vietnamese citizen.',
+    price: '$800-$1,200',
+    priceNumeric: 1000,
+    governmentFees: 'Included',
+    timeline: '1-2 months',
+    heroTitle: 'Marriage Registration & Spouse TRC in Vietnam',
+    heroDescription: 'Complete marriage registration service for foreigners marrying Vietnamese citizens. Includes marriage certificate registration and TRC application for the foreign spouse.',
+    process: [
+      {
+        step: 1,
+        title: 'Document Assessment',
+        description: 'Review all required documents and ensure they meet Vietnamese legal requirements.',
+        duration: '2-3 days'
+      },
+      {
+        step: 2,
+        title: 'Marriage Registration',
+        description: 'Submit marriage registration to local authorities and obtain marriage certificate.',
+        duration: '2-3 weeks'
+      },
+      {
+        step: 3,
+        title: 'TRC Application',
+        description: 'Apply for Temporary Residence Card based on marriage.',
+        duration: '2-3 weeks'
+      },
+      {
+        step: 4,
+        title: 'TRC Issuance',
+        description: 'Pick up TRC and deliver to you.',
+        duration: '1 week'
+      }
+    ],
+    included: [
+      'Marriage registration consultation',
+      'Document preparation and translation',
+      'Marriage certificate registration',
+      'TRC application submission',
+      'Follow-up with authorities',
+      'Marriage certificate pickup and delivery',
+      'TRC pickup and delivery',
+      'Ongoing support for renewals'
+    ],
+    requirements: [
+      'Valid passport (minimum 6 months validity)',
+      'Single status declaration (from home country)',
+      'Birth certificate (notarized and legalized)',
+      'Passport photos (4x6cm)',
+      'Vietnamese partner\'s household registration',
+      'Vietnamese partner\'s ID card/passport',
+      'Proof of relationship (photos, communication records)'
+    ],
+    benefits: [
+      'Legal recognition of marriage in Vietnam',
+      'TRC validity up to 3 years',
+      'No investment or work permit required',
+      'Path to permanent residency',
+      'Sponsor family members',
+      'Access to Vietnamese social services'
+    ],
+    faqs: [
+      {
+        question: 'How long does the marriage registration process take?',
+        answer: 'Marriage registration typically takes 2-3 weeks. After that, the TRC application takes another 2-3 weeks, for a total of 1-2 months.'
+      },
+      {
+        question: 'What documents do I need from my home country?',
+        answer: 'You need a single status declaration (Certificate of No Impediment to Marriage) and birth certificate. Both must be notarized, legalized by your country\'s foreign affairs department, and legalized by the Vietnamese embassy/consulate.'
+      },
+      {
+        question: 'How long is the marriage-based TRC valid?',
+        answer: 'Marriage-based TRCs are typically issued for 1-3 years and can be renewed as long as the marriage remains valid.'
+      },
+      {
+        question: 'Can I work with a marriage-based TRC?',
+        answer: 'Yes, you can work with a marriage-based TRC, but you still need a work permit unless you own your own business.'
+      },
+      {
+        question: 'What if I\'m already married outside Vietnam?',
+        answer: 'If you married outside Vietnam, you need to register your marriage in Vietnam for it to be legally recognized. We can help with this process.'
+      },
+      {
+        question: 'Can this lead to permanent residency?',
+        answer: 'Yes, after 3 years of marriage-based TRC, you may be eligible to apply for permanent residency in Vietnam.'
+      }
+    ],
+    guarantee: 'We guarantee successful marriage registration and TRC issuance or provide a full refund of our service fee (government fees excluded).'
   }
 };
 
