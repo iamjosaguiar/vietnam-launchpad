@@ -629,13 +629,13 @@ export const servicesData: Record<string, ServiceData> = {
   'property-registration': {
     slug: 'property-registration',
     title: 'Foreign-Owned Property Registration',
-    shortDescription: 'Register and secure your property ownership in Vietnam as a foreigner. Complete support for apartments and condominiums.',
+    shortDescription: 'Register and secure your property ownership in Vietnam as a foreigner. Complete support for apartments and condominiums in approved projects.',
     price: '$500-$1,500',
     priceNumeric: 1000,
     governmentFees: 'Varies by property value',
     timeline: '1-2 months',
     heroTitle: 'Foreign-Owned Property Registration & Ownership Support',
-    heroDescription: 'Navigate Vietnam\'s property ownership regulations with expert guidance. We help foreigners legally purchase, register, and secure property ownership rights for apartments and condominiums.',
+    heroDescription: 'Navigate Vietnam\'s property ownership regulations with expert guidance. We help foreigners legally purchase, register, and secure property ownership rights for apartments and condominiums in approved projects.',
     process: [
       {
         step: 1,
@@ -669,7 +669,7 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     included: [
-      'Property eligibility verification',
+      'Project approval verification and eligibility check',
       'Legal due diligence and title search',
       'Sales contract review and advice',
       'Document preparation and translation',
@@ -700,11 +700,11 @@ export const servicesData: Record<string, ServiceData> = {
     faqs: [
       {
         question: 'Can foreigners own property in Vietnam?',
-        answer: 'Yes, but with restrictions. Foreigners can own apartments/condominiums in buildings where foreign ownership doesn\'t exceed 30% of total units. Foreigners cannot own landed property (houses with land) but can own the house structure on leased land.'
+        answer: 'Yes, but with restrictions. Foreigners can own apartments/condominiums in approved projects where foreign ownership doesn\'t exceed 30% of total units. Foreigners cannot own landed property (houses with land) but can own the house structure on leased land.'
       },
       {
         question: 'What is the 30% foreign ownership quota?',
-        answer: 'Each condominium building has a maximum 30% quota for foreign ownership. Once this quota is filled, foreigners cannot purchase more units in that building. We check quota availability during due diligence.'
+        answer: 'Each approved condominium project/building has a maximum 30% quota for foreign ownership. Once this quota is filled, foreigners cannot purchase more units in that project. Not all buildings are approved for foreign ownership. We verify project approval and check quota availability during due diligence.'
       },
       {
         question: 'How long can foreigners own property?',
