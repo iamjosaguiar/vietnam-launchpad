@@ -15,7 +15,6 @@ export default function Navigation() {
   const navItems = [
     { name: t('home'), href: '/' },
     { name: t('services'), href: '/services' },
-    { name: t('pricing'), href: '/pricing' },
     { name: t('contact'), href: '/contact' },
   ];
 

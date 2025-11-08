@@ -256,10 +256,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 Start Your Application
               </Link>
               <Link
-                href="/pricing"
+                href="/services"
                 className="inline-block bg-primary-700 text-white border-2 border-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-800 transition-colors"
               >
-                View All Packages
+                View All Services
               </Link>
             </div>
           </div>
