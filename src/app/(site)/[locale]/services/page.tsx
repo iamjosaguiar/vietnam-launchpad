@@ -51,9 +51,9 @@ export default function ServicesPage() {
                 <div className="border-t pt-6">
                   <div className="text-3xl font-bold text-primary-600 mb-2">$350-$550</div>
                   <div className="text-sm text-gray-500 mb-4">Based on visa duration</div>
-                  <button className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                  <Link href="/services/trc-application" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ export default function ServicesPage() {
                 <div className="border-t pt-6">
                   <div className="text-3xl font-bold text-primary-600 mb-2">$650-$850</div>
                   <div className="text-sm text-gray-500 mb-4">Varies by location</div>
-                  <button className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                  <Link href="/services/work-permit" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -151,8 +151,8 @@ export default function ServicesPage() {
                   </p>
                   <div className="text-2xl font-bold text-primary-600 mb-2">$150-$250</div>
                   <div className="text-sm text-gray-500 mb-4">3-5 business days</div>
-                  <Link href="/services/business-visa" className="inline-block text-primary-600 font-semibold hover:text-primary-700">
-                    Learn More →
+                  <Link href="/services/business-visa" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                    Learn More
                   </Link>
                 </div>
               </div>
@@ -168,8 +168,8 @@ export default function ServicesPage() {
                   <div className="text-2xl font-bold text-primary-600 mb-2">$100/hour</div>
                   <div className="text-sm text-gray-500 mb-1">Schedule within 48 hours</div>
                   <div className="text-xs text-primary-700 font-medium mb-4">FREE for business setup clients</div>
-                  <Link href="/services/consultation" className="inline-block text-primary-600 font-semibold hover:text-primary-700">
-                    Book Consultation →
+                  <Link href="/services/consultation" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                    Learn More
                   </Link>
                 </div>
               </div>
