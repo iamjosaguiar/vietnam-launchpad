@@ -34,6 +34,9 @@ export default function LanguageSwitcher() {
   const handleLocaleChange = (newLocale: string) => {
     setIsOpen(false);
 
+    // Set the NEXT_LOCALE cookie to persist language choice
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
+
     // Construct the new URL with locale prefix
     const newPath = newLocale === 'en'
       ? pathname
