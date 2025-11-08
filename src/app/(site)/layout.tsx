@@ -9,22 +9,13 @@ import { routing } from '@/i18n/config';
 
 import '../globals.css';
 
-type LayoutParams = {
-  locale?: string;
-};
-
 type LayoutProps = {
   children: React.ReactNode;
-  params: Promise<LayoutParams>;
+  params: Promise<{ locale?: string }>;
 };
 
-async function resolveLocale(params: Promise<LayoutParams>) {
-  const { locale } = await params;
-  return locale ?? routing.defaultLocale;
-}
-
 export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
-  const locale = await resolveLocale(params);
+  const { locale = routing.defaultLocale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
@@ -94,7 +85,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
 }
 
 export default async function SiteLayout({ children, params }: LayoutProps) {
-  const locale = await resolveLocale(params);
+  const { locale = routing.defaultLocale } = await params;
   const messages = await getMessages({ locale });
 
   const jsonLd = {
