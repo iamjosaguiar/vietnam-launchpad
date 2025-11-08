@@ -127,6 +127,9 @@ export default function ServicesPage() {
                 <div className="border-t pt-6">
                   <div className="text-3xl font-bold text-primary-600 mb-2">$2,000-$3,000</div>
                   <div className="text-sm text-gray-500 mb-4">Depends on company type</div>
+                  <div className="text-xs text-gray-500 italic mb-4 px-2">
+                    * Services performed with registered Vietnamese Law Offices
+                  </div>
                   <Link href="/services/company-setup" className="inline-block bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
                     Learn More
                   </Link>

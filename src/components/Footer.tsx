@@ -107,6 +107,10 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <p>© 2025 Vietnam Launchpad. All rights reserved.</p>
           <p className="text-xs mt-2">Company Number: 0108305670</p>
+          <p className="text-xs mt-3 max-w-3xl mx-auto">
+            All company registration and legal services are performed in partnership with registered Vietnamese Law Offices
+            licensed to practice in Vietnam.
+          </p>
         </div>
       </div>
     </footer>

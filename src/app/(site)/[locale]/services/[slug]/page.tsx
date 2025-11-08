@@ -243,6 +243,29 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           </div>
         </section>
 
+        {/* Legal Disclaimer - Only for company setup */}
+        {service.slug === 'company-setup' && (
+          <section className="py-12 bg-blue-50">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <div className="bg-white border-2 border-primary-200 p-8 rounded-lg">
+                  <div className="flex items-start gap-4">
+                    <div className="text-3xl">⚖️</div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">Legal Partnership Disclosure</h3>
+                      <p className="text-gray-700">
+                        All company registration and legal services are performed in partnership with registered Vietnamese Law Offices
+                        licensed to practice in Vietnam. Our role is to coordinate and manage the entire process, ensuring you receive
+                        expert legal representation and full compliance with Vietnamese regulations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA Section */}
         <section className="py-16 bg-primary-600 text-white">
           <div className="container mx-auto px-4 text-center">
