@@ -23,7 +23,6 @@ export default function Footer() {
             </p>
             <div className="text-gray-300">
               <p>📧 jos@iamjosaguiar.com</p>
-              <p>📱 0108305670</p>
               <p>🏢 TUBUDD JOINT STOCK COMPANY</p>
               <p>📍 Ho Chi Minh City, Vietnam</p>
             </div>
@@ -107,6 +106,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
           <p>© 2025 Vietnam Launchpad. All rights reserved.</p>
+          <p className="text-xs mt-2">Company Number: 0108305670</p>
         </div>
       </div>
     </footer>
