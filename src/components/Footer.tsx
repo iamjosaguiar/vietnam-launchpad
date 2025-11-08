@@ -6,13 +6,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-6">
               <Image
                 src="/vietnam launchpad logo.png"
                 alt="Vietnam Launchpad"
-                width={400}
-                height={100}
-                className="h-16 md:h-20 w-auto brightness-0 invert"
+                width={500}
+                height={125}
+                className="h-24 md:h-28 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-300 mb-4">
