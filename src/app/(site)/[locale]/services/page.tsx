@@ -186,23 +186,23 @@ export default function ServicesPage() {
               <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
                 <div className="text-center">
                   <div className="text-6xl mb-6">🚗</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Driver's License Conversion</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Driver's License & IDL</h3>
                   <p className="text-gray-600 mb-6">
-                    Convert your foreign driver's license to a Vietnamese license. Quick and hassle-free.
+                    IDL for short-term visas. Vietnamese license conversion for TRC holders. We help with both.
                   </p>
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center text-gray-600">
                       <span className="text-green-500 mr-2">✓</span>
-                      No driving test required
+                      IDL assistance for tourists
                     </div>
                     <div className="flex items-center text-gray-600">
                       <span className="text-green-500 mr-2">✓</span>
-                      Valid for 10 years
+                      Conversion for TRC holders
                     </div>
                     <div className="flex items-center text-gray-600">
                       <span className="text-green-500 mr-2">✓</span>
-                      Cars & motorbikes supported
+                      No driving test (conversions)
                     </div>
                     <div className="flex items-center text-gray-600">
                       <span className="text-green-500 mr-2">✓</span>

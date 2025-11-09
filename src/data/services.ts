@@ -530,13 +530,13 @@ export const servicesData: Record<string, ServiceData> = {
   'drivers-license': {
     slug: 'drivers-license',
     title: 'Driver\'s License Conversion',
-    shortDescription: 'Convert your foreign driver\'s license to a Vietnamese driver\'s license. Quick and hassle-free process.',
+    shortDescription: 'International Driver\'s License for short-term visitors. Vietnamese license conversion for TRC holders. We help with both.',
     price: '$150-$250',
     priceNumeric: 200,
     governmentFees: 'Included',
     timeline: '1-2 weeks',
-    heroTitle: 'Convert Your Foreign Driver\'s License to Vietnamese License',
-    heroDescription: 'Drive legally in Vietnam with a converted Vietnamese driver\'s license. We handle all paperwork, translation, and government submissions.',
+    heroTitle: 'Driver\'s License for Vietnam - Conversion & International Permits',
+    heroDescription: 'Short-term visa holders can use an International Driver\'s License (IDL) - we can help you obtain one. TRC/Residency Card holders must convert to a Vietnamese driver\'s license. We handle all paperwork, translation, and government submissions for both options.',
     process: [
       {
         step: 1,
@@ -570,10 +570,12 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     included: [
-      'License verification and eligibility check',
-      'Document translation and notarization',
-      'Health check coordination',
-      'Application submission to DOT',
+      'Consultation on IDL vs Vietnamese license requirements',
+      'International Driver\'s License (IDL) application assistance',
+      'License verification and eligibility check (for conversions)',
+      'Document translation and notarization (for conversions)',
+      'Health check coordination (for conversions)',
+      'Application submission to DOT (for conversions)',
       'Follow-up with authorities',
       'License pickup and delivery',
       'Guidance on Vietnam traffic rules'
@@ -595,6 +597,10 @@ export const servicesData: Record<string, ServiceData> = {
       'No driving test required (for most countries)'
     ],
     faqs: [
+      {
+        question: 'Do I need a Vietnamese license or can I use an International Driver\'s License (IDL)?',
+        answer: 'It depends on your visa status: SHORT-TERM VISA HOLDERS (tourist visas, business visas under 3 months) can legally drive with an International Driver\'s License (IDP/IDL) along with their home country license. We can help you obtain an IDL. TRC/RESIDENCY CARD HOLDERS must convert their foreign license to a Vietnamese driver\'s license - you cannot use an IDL for long-term residence. Our conversion service is for TRC holders.'
+      },
       {
         question: 'Which countries\' licenses can be converted?',
         answer: 'Vietnam has reciprocal agreements with over 70 countries including USA, UK, Canada, Australia, most EU countries, Japan, South Korea, and many others. Licenses from these countries can be converted without a driving test. Contact us to verify your country\'s eligibility.'
