@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/services',
+    '/blog',
     '/contact',
     '/faq',
     '/services/trc-application',
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/marriage-registration',
     '/services/drivers-license',
     '/services/property-registration',
+    '/blog/how-to-legally-teach-english-in-vietnam',
   ];
 
   return routes.map((route) => ({
