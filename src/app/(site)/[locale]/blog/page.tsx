@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { getAllBlogPosts } from '@/data/blog';
+import { Link } from '@/i18n/config';
 
 export const metadata = {
   title: 'Blog - Vietnam Immigration & Business Guides',

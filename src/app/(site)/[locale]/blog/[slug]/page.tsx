@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { getBlogPostBySlug, getAllBlogSlugs } from '@/data/blog';
 import ReactMarkdown from 'react-markdown';
+import { Link } from '@/i18n/config';
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
