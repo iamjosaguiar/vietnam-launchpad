@@ -48,11 +48,6 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     provider: {
       '@type': 'Organization',
       name: 'Vietnam Launchpad'
-    },
-    offers: {
-      '@type': 'Offer',
-      price: service.priceNumeric,
-      priceCurrency: 'USD'
     }
   };
 
@@ -92,16 +87,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 <div className="bg-white/10 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-sm opacity-80">Service Fee</div>
-                  <div className="text-3xl font-bold">{service.price}</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur px-6 py-3 rounded-lg">
                   <div className="text-sm opacity-80">Timeline</div>
                   <div className="text-xl font-semibold">{service.timeline}</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-sm opacity-80">Gov't Fees</div>
-                  <div className="text-xl font-semibold">{service.governmentFees}</div>
                 </div>
               </div>
 
@@ -109,7 +96,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 href="/contact"
                 className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
               >
-                Get Started - {service.price}
+                Get Started
               </Link>
             </div>
           </div>

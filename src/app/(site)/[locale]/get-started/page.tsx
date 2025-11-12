@@ -99,8 +99,8 @@ export default function GetStartedPage() {
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-3">3</div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Get Custom Quote</h3>
-                  <p className="text-sm text-gray-600">Receive tailored pricing and next steps</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Get Custom Plan</h3>
+                  <p className="text-sm text-gray-600">Receive a tailored service plan and next steps</p>
                 </div>
               </div>
             </div>

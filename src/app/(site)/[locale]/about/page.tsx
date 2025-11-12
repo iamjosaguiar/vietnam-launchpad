@@ -90,7 +90,7 @@ export default function AboutPage() {
             <div className="text-center">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Transparency</h3>
-              <p className="text-gray-600">Clear pricing, honest timelines, no hidden surprises.</p>
+              <p className="text-gray-600">Clear communication, honest timelines, no hidden surprises.</p>
             </div>
             
             <div className="text-center">

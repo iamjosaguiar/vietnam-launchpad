@@ -100,9 +100,6 @@ export default async function HomePage() {
                 <p className="text-gray-600 mb-6">{t(`services.${service.key}.description`)}</p>
 
                 <div className="border-t border-gray-100 pt-6">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">
-                    {t(`services.${service.key}.price`)}
-                  </div>
                   <div className="text-sm text-gray-500 mb-6">{t(`services.${service.key}.duration`)}</div>
                   <Link
                     href={service.href}

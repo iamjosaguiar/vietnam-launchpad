@@ -18,13 +18,8 @@
     },
     "services": {
       "title": "Dịch Vụ Của Chúng Tôi - Vietnam Launchpad",
-      "description": "Dịch vụ xin thẻ tạm trú, giấy phép lao động và đăng ký công ty tại Việt Nam. Giá cả minh bạch, hướng dẫn chuyên nghiệp, kết quả đảm bảo.",
+      "description": "Dịch vụ xin thẻ tạm trú, giấy phép lao động và đăng ký công ty tại Việt Nam. Hướng dẫn chuyên nghiệp, kết quả đảm bảo.",
       "keywords": "dịch vụ việt nam, xin TRC, giấy phép lao động việt nam, thành lập công ty việt nam"
-    },
-    "pricing": {
-      "title": "Bảng Giá - Phí Minh Bạch | Vietnam Launchpad",
-      "description": "Bảng giá minh bạch, rõ ràng cho tất cả dịch vụ xuất nhập cảnh và kinh doanh tại Việt Nam. Không có phí ẩn. Gói dịch vụ từ $180.",
-      "keywords": "chi phí visa việt nam, giá giấy phép lao động, phí đăng ký công ty việt nam"
     },
     "contact": {
       "title": "Liên Hệ - Vietnam Launchpad",
@@ -35,7 +30,7 @@
   "navigation": {
     "home": "Trang Chủ",
     "services": "Dịch Vụ",
-    "pricing": "Bảng Giá",
+    "blog": "Blog",
     "about": "Giới Thiệu",
     "contact": "Liên Hệ",
     "faq": "Câu Hỏi Thường Gặp",
@@ -70,23 +65,20 @@
     },
     "services": {
       "title": "Dịch Vụ Xuất Nhập Cảnh & Kinh Doanh Chuyên Nghiệp",
-      "subtitle": "Giá cả minh bạch, hướng dẫn chuyên nghiệp, kết quả đảm bảo",
+      "subtitle": "Hướng dẫn chuyên nghiệp, kết quả đảm bảo",
       "trc": {
         "title": "Thẻ Tạm Trú & Visa Đầu Tư",
         "description": "Nhiều tùy chọn visa: 6 tháng đến 4 năm tùy theo vốn đầu tư",
-        "price": "$350-$550",
         "duration": "2-3 tuần"
       },
       "workPermit": {
         "title": "Giấy Phép Lao Động",
-        "description": "Giấy phép lao động 2 năm, giá thay đổi theo địa điểm",
-        "price": "$650-$850",
+        "description": "Giấy phép lao động 2 năm cho việc làm hợp pháp tại Việt Nam",
         "duration": "2 tháng"
       },
       "companySetup": {
         "title": "Đăng Ký Công Ty",
         "description": "Thành lập công ty TNHH với tư vấn MIỄN PHÍ",
-        "price": "$2.000-$3.000",
         "duration": "2-4 tháng"
       }
     },
@@ -145,19 +137,17 @@
     "title": "Dịch Vụ Của Chúng Tôi",
     "subtitle": "Dịch vụ tư vấn xuất nhập cảnh và kinh doanh chuyên nghiệp",
     "trc": {
-      "title": "Xin Thẻ Tạm Trú",
-      "description": "Nhận thẻ tạm trú của bạn với quy trình đơn giản hóa. Hoàn hảo cho lưu trú dài hạn tại Việt Nam.",
-      "longDescription": "Thẻ tạm trú (TRC) cho phép bạn lưu trú tại Việt Nam trong 1-3 năm mà không cần gia hạn visa. Đội ngũ chuyên gia của chúng tôi xử lý tất cả tài liệu, nộp hồ sơ chính phủ và theo dõi để đảm bảo quy trình phê duyệt suôn sẻ.",
+      "title": "Xin Thẻ Tạm Trú & Visa Đầu Tư",
+      "description": "Nhận thẻ tạm trú với các tùy chọn visa đầu tư. Thời gian xử lý 2-3 tuần.",
+      "longDescription": "Có nhiều hướng visa: Visa đầu tư (6 tháng - 4 năm tùy theo vốn) hoặc hướng Giấy phép lao động + TRC (2 năm). Chúng tôi xử lý tất cả tài liệu, nộp hồ sơ chính phủ và theo dõi để đảm bảo quy trình phê duyệt suôn sẻ.",
       "features": [
-        "Thời hạn 1-3 năm",
-        "Xử lý 5-7 ngày làm việc",
+        "Visa đầu tư: 6 tháng - 4 năm",
+        "Giấy phép lao động + TRC: 2 năm",
+        "Xử lý 2-3 tuần",
         "Chuẩn bị tài liệu đầy đủ",
         "Hỗ trợ gia hạn",
-        "Hướng dẫn phí chính phủ",
-        "Cập nhật tình trạng hồ sơ"
+        "Cho phép nhập cảnh nhiều lần"
       ],
-      "price": "$350",
-      "government_fee": "Phí chính phủ: $145-165",
       "process": {
         "title": "Quy Trình Thực Hiện",
         "steps": [
@@ -186,18 +176,16 @@
     },
     "workPermit": {
       "title": "Giấy Phép Lao Động",
-      "description": "Xin giấy phép lao động hợp pháp và hiệu quả với hướng dẫn chuyên nghiệp qua quy trình đơn giản hóa mới.",
-      "longDescription": "Quy định mới về giấy phép lao động của Việt Nam đã đơn giản hóa quy trình đáng kể. Chúng tôi điều hướng các yêu cầu, phối hợp khám sức khỏe và đảm bảo tất cả tài liệu đáp ứng tiêu chuẩn pháp lý hiện hành để phê duyệt suôn sẻ.",
+      "description": "Giấy phép lao động 2 năm với thời gian xử lý 2 tháng. Giá thay đổi theo địa điểm (Hà Nội, TP.HCM, Đà Nẵng, các tỉnh khác).",
+      "longDescription": "Chúng tôi điều hướng các yêu cầu về giấy phép lao động, phối hợp khám sức khỏe và đảm bảo tất cả tài liệu đáp ứng tiêu chuẩn pháp lý hiện hành. Giá thay đổi tùy theo địa điểm của bạn tại Việt Nam (Hà Nội, Thành phố Hồ Chí Minh, Đà Nẵng hoặc các tỉnh khác).",
       "features": [
         "Thời hạn 2 năm",
-        "Tổng thời gian xử lý 3 tuần",
+        "Xử lý 2 tháng",
         "Phối hợp khám sức khỏe",
         "Hỗ trợ lý lịch tư pháp",
         "Xem xét hợp đồng lao động",
         "Nhắc nhở gia hạn"
       ],
-      "price": "$180",
-      "government_fee": "Phí chính phủ: $16-42",
       "process": {
         "title": "Quy Trình Thực Hiện",
         "steps": [
@@ -226,20 +214,18 @@
     },
     "companySetup": {
       "title": "Đăng Ký Công Ty",
-      "description": "Thành lập công ty TNHH hoàn chỉnh bao gồm ngân hàng, tuân thủ pháp lý và hỗ trợ liên tục cho doanh nghiệp của bạn tại Việt Nam.",
-      "longDescription": "Khởi nghiệp tại Việt Nam đòi hỏi điều hướng quy định phức tạp, nhiều cơ quan chính phủ và yêu cầu tuân thủ nghiêm ngặt. Dịch vụ toàn diện của chúng tôi xử lý mọi thứ từ đăng ký ban đầu đến mở tài khoản ngân hàng và hỗ trợ pháp lý liên tục.",
+      "description": "Thành lập công ty TNHH hoàn chỉnh với tư vấn 1:1 MIỄN PHÍ. Giá tùy thuộc vào loại hình công ty và giấy phép cần thiết.",
+      "longDescription": "Khởi nghiệp tại Việt Nam đòi hỏi điều hướng quy định phức tạp. Dịch vụ toàn diện của chúng tôi bao gồm tư vấn chuyên gia MIỄN PHÍ, xử lý mọi thứ từ đăng ký ban đầu đến mở tài khoản ngân hàng và hỗ trợ pháp lý liên tục. Giá tùy thuộc vào loại hình công ty và bất kỳ giấy phép đặc biệt nào cần thiết (xuất nhập khẩu, nhà hàng, rượu, v.v.).",
       "features": [
+        "Tư vấn 1:1 MIỄN PHÍ",
         "Cho phép 100% vốn nước ngoài",
         "Xử lý 2-4 tháng",
         "Mở tài khoản ngân hàng",
         "Dịch vụ người đại diện pháp luật",
         "Xin giấy phép kinh doanh",
         "Đăng ký thuế",
-        "Hỗ trợ địa chỉ văn phòng",
-        "Tư vấn tuân thủ"
+        "Hướng dẫn lập kế hoạch vốn"
       ],
-      "price": "$3.500",
-      "government_fee": "Phí chính phủ đã bao gồm",
       "process": {
         "title": "Quy Trình Thực Hiện",
         "steps": [
@@ -265,103 +251,6 @@
           }
         ]
       }
-    }
-  },
-  "pricing": {
-    "title": "Bảng Giá Minh Bạch",
-    "subtitle": "Không có phí ẩn. Giá cả rõ ràng cho tất cả dịch vụ.",
-    "note": "Tất cả giá không bao gồm phí chính phủ trừ khi được ghi rõ",
-    "packages": {
-      "expatStarter": {
-        "name": "Gói Khởi Đầu",
-        "price": "$2.800",
-        "description": "Hoàn hảo cho cá nhân chuyển đến Việt Nam",
-        "features": [
-          "Xin giấy phép lao động",
-          "Xin thẻ tạm trú",
-          "Xử lý visa",
-          "Tư vấn định cư cơ bản",
-          "Danh sách kiểm tra tài liệu",
-          "Hỗ trợ qua email"
-        ],
-        "popular": false
-      },
-      "businessLaunch": {
-        "name": "Gói Khởi Nghiệp",
-        "price": "$5.500",
-        "description": "Gói thành lập doanh nghiệp toàn diện",
-        "features": [
-          "Đăng ký công ty",
-          "Mở tài khoản ngân hàng",
-          "Kế toán 3 tháng",
-          "Visa kinh doanh",
-          "Người đại diện pháp luật",
-          "Đăng ký thuế",
-          "Xin giấy phép"
-        ],
-        "popular": true
-      },
-      "annualCompliance": {
-        "name": "Gói Tuân Thủ Hàng Năm",
-        "price": "$4.500/năm",
-        "description": "Tuân thủ và hỗ trợ liên tục",
-        "features": [
-          "Kế toán hàng tháng",
-          "Khai thuế",
-          "Giám sát tuân thủ",
-          "Nhắc nhở gia hạn",
-          "Hỗ trợ ưu tiên",
-          "Báo cáo hàng năm",
-          "Cập nhật quy định"
-        ],
-        "popular": false
-      }
-    },
-    "addons": {
-      "title": "Dịch Vụ Bổ Sung",
-      "items": [
-        {
-          "name": "Gia Hạn Visa",
-          "price": "$80"
-        },
-        {
-          "name": "Dịch Thuật Tài Liệu",
-          "price": "$30/trang"
-        },
-        {
-          "name": "Dịch Vụ Công Chứng",
-          "price": "$50/tài liệu"
-        },
-        {
-          "name": "Dịch Vụ Hợp Pháp Hóa Lãnh Sự",
-          "price": "$150/tài liệu"
-        },
-        {
-          "name": "Văn Phòng Ảo (hàng tháng)",
-          "price": "$100/tháng"
-        }
-      ]
-    },
-    "faq": {
-      "title": "Câu Hỏi Về Giá Cả",
-      "questions": [
-        {
-          "question": "Phí chính phủ có được bao gồm trong giá của bạn không?",
-          "answer": "Phí chính phủ được tách riêng trừ khi được ghi rõ là 'đã bao gồm'. Chúng tôi cung cấp bảng phân tích rõ ràng tất cả các khoản phí trước khi bắt đầu bất kỳ dịch vụ nào."
-        },
-        {
-          "question": "Bạn có cung cấp kế hoạch thanh toán không?",
-          "answer": "Có, chúng tôi cung cấp kế hoạch thanh toán linh hoạt cho các gói trên $3.000. Liên hệ với chúng tôi để thảo luận nhu cầu cụ thể của bạn."
-        },
-        {
-          "question": "Điều gì xảy ra nếu hồ sơ của tôi bị từ chối?",
-          "answer": "Chúng tôi có tỷ lệ phê duyệt 98%. Trong trường hợp hiếm hoi bị từ chối, chúng tôi sẽ làm việc với bạn để giải quyết các vấn đề và nộp lại mà không tính phí dịch vụ bổ sung."
-        },
-        {
-          "question": "Tôi có thể được hoàn tiền nếu hủy không?",
-          "answer": "Hoàn tiền có sẵn trước khi chúng tôi nộp hồ sơ của bạn cho cơ quan chính phủ, trừ bất kỳ công việc nào đã hoàn thành. Xem điều khoản của chúng tôi để biết chi tiết."
-        }
-      ]
     }
   },
   "faq": {
@@ -493,7 +382,6 @@
     "contactUs": "Liên Hệ",
     "readMore": "Đọc Thêm",
     "features": "Tính Năng",
-    "pricing": "Bảng Giá",
     "getQuote": "Nhận Báo Giá",
     "bookConsultation": "Đặt Lịch Tư Vấn",
     "viewDetails": "Xem Chi Tiết",
@@ -503,10 +391,6 @@
     "success": "Thành Công",
     "required": "Bắt buộc",
     "optional": "Tùy chọn",
-    "from": "Từ",
-    "startingAt": "Bắt đầu từ",
-    "perYear": "mỗi năm",
-    "perMonth": "mỗi tháng",
     "processing": "Đang xử lý",
     "approved": "Đã phê duyệt",
     "pending": "Đang chờ",

@@ -2,9 +2,6 @@ export interface ServiceData {
   slug: string;
   title: string;
   shortDescription: string;
-  price: string;
-  priceNumeric: number;
-  governmentFees: string;
   timeline: string;
   heroTitle: string;
   heroDescription: string;
@@ -29,9 +26,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'trc-application',
     title: 'TRC Application (Temporary Residence Card)',
     shortDescription: 'Get your Vietnam Temporary Residence Card through investment, work permit, or marriage. 2-3 weeks processing time.',
-    price: '$350-$550',
-    priceNumeric: 450,
-    governmentFees: 'Included',
     timeline: '2-3 weeks',
     heroTitle: 'Get Your Vietnam TRC - Multiple Pathways Available',
     heroDescription: 'Choose from Investment Visa (6 months - 4 years), Work Permit sponsorship (2 years), or Marriage to Vietnamese citizen (up to 3 years). We handle everything from document preparation to pickup.',
@@ -126,9 +120,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'work-permit',
     title: 'Vietnam Work Permit',
     shortDescription: 'Secure your legal right to work in Vietnam with our fast work permit processing service.',
-    price: '$650-$850',
-    priceNumeric: 750,
-    governmentFees: 'Varies by location',
     timeline: '2 months',
     heroTitle: 'Vietnam Work Permit - Legal Authorization to Work',
     heroDescription: 'Work legally in Vietnam without complications. We handle the entire process from start to finish.',
@@ -212,9 +203,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'company-setup',
     title: 'Vietnam Company Registration',
     shortDescription: 'Establish your business in Vietnam with full legal compliance and support.',
-    price: '$2,000-$3,000',
-    priceNumeric: 2500,
-    governmentFees: 'Included',
     timeline: '2-4 months',
     heroTitle: 'Register Your Company in Vietnam - Full Turnkey Service',
     heroDescription: 'From company registration to bank account setup. We handle everything so you can focus on growing your business. Includes free 1:1 consultation for business setup clients.',
@@ -306,9 +294,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'business-visa',
     title: 'Vietnam Business Visa',
     shortDescription: 'Get a 3-month business visa to enter Vietnam quickly and easily.',
-    price: '$150-$250',
-    priceNumeric: 200,
-    governmentFees: 'Included',
     timeline: '3-5 business days',
     heroTitle: 'Vietnam Business Visa - Quick Entry',
     heroDescription: 'Need to enter Vietnam for business? Get your 3-month business visa processed quickly. Perfect for initial visits, property viewing, or exploring business opportunities.',
@@ -373,9 +358,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'consultation',
     title: '1:1 Expert Consultation',
     shortDescription: 'Get personalized advice on tax, accounting, work permits, TRC, business setup, and living in Vietnam.',
-    price: '$100/hour',
-    priceNumeric: 100,
-    governmentFees: 'N/A',
     timeline: 'Schedule within 48 hours',
     heroTitle: '1:1 Vietnam Expert Consultation',
     heroDescription: 'Get your specific questions answered by an expert. Perfect for those exploring options or needing guidance before committing to a full service.',
@@ -440,9 +422,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'marriage-registration',
     title: 'Marriage Registration & TRC',
     shortDescription: 'Register your marriage in Vietnam and obtain TRC through marriage to a Vietnamese citizen.',
-    price: '$800-$1,200',
-    priceNumeric: 1000,
-    governmentFees: 'Included',
     timeline: '1-2 months',
     heroTitle: 'Marriage Registration & Spouse TRC in Vietnam',
     heroDescription: 'Complete marriage registration service for foreigners marrying Vietnamese citizens. Includes marriage certificate registration and TRC application for the foreign spouse.',
@@ -531,9 +510,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'drivers-license',
     title: 'Driver\'s License Conversion',
     shortDescription: 'International Driver\'s License for short-term visitors. Vietnamese license conversion for TRC holders. We help with both.',
-    price: '$150-$250',
-    priceNumeric: 200,
-    governmentFees: 'Included',
     timeline: '1-2 weeks',
     heroTitle: 'Driver\'s License for Vietnam - Conversion & International Permits',
     heroDescription: 'Short-term visa holders can use an International Driver\'s License (IDL) - we can help you obtain one. TRC/Residency Card holders must convert to a Vietnamese driver\'s license. We handle all paperwork, translation, and government submissions for both options.',
@@ -636,9 +612,6 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'property-registration',
     title: 'Foreign-Owned Property Registration',
     shortDescription: 'Register and secure your property ownership in Vietnam as a foreigner. Complete support for apartments and condominiums in approved projects.',
-    price: '$500-$1,500',
-    priceNumeric: 1000,
-    governmentFees: 'Varies by property value',
     timeline: '1-2 months',
     heroTitle: 'Foreign-Owned Property Registration & Ownership Support',
     heroDescription: 'Navigate Vietnam\'s property ownership regulations with expert guidance. We help foreigners legally purchase, register, and secure property ownership rights for apartments and condominiums in approved projects.',

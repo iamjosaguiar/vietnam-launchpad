@@ -85,31 +85,6 @@ export default function FAQPage() {
       ]
     },
     {
-      category: 'Pricing & Payments',
-      questions: [
-        {
-          q: 'What\'s included in your service fee?',
-          a: 'Our service fee covers all our work: document review, preparation, translations, application submission, follow-ups with authorities, and delivery. Government fees are always listed separately.'
-        },
-        {
-          q: 'Are there any hidden fees?',
-          a: 'Absolutely not. We believe in complete transparency. All fees are disclosed upfront. The only potential additional costs would be optional services like rush processing or extra document translations.'
-        },
-        {
-          q: 'Do you offer payment plans?',
-          a: 'Yes! For services over $2,000, we offer flexible payment terms: 50% upfront and 50% upon completion. Contact us to discuss your specific situation.'
-        },
-        {
-          q: 'When do I pay the government fees?',
-          a: 'Government fees are paid directly to the authorities during the application process. We\'ll guide you on the exact timing and payment method.'
-        },
-        {
-          q: 'What payment methods do you accept?',
-          a: 'We accept bank transfers (preferred - no fees), Wise, PayPal, and Vietnamese payment methods (VNPAY, MoMo, ZaloPay).'
-        }
-      ]
-    },
-    {
       category: 'General Questions',
       questions: [
         {

@@ -18,13 +18,8 @@
     },
     "services": {
       "title": "Our Services - Vietnam Launchpad",
-      "description": "TRC applications, work permits, and company registration services in Vietnam. Transparent pricing, expert guidance, guaranteed results.",
+      "description": "TRC applications, work permits, and company registration services in Vietnam. Expert guidance, guaranteed results.",
       "keywords": "vietnam services, TRC application, work permit vietnam, company setup vietnam"
-    },
-    "pricing": {
-      "title": "Pricing - Transparent Fees | Vietnam Launchpad",
-      "description": "Clear, transparent pricing for all Vietnam immigration and business services. No hidden fees. Packages starting from $180.",
-      "keywords": "vietnam visa cost, work permit price, company registration fees vietnam"
     },
     "contact": {
       "title": "Contact Us - Vietnam Launchpad",
@@ -36,7 +31,6 @@
     "home": "Home",
     "services": "Services",
     "blog": "Blog",
-    "pricing": "Pricing",
     "about": "About",
     "contact": "Contact",
     "faq": "FAQ",
@@ -71,23 +65,20 @@
     },
     "services": {
       "title": "Professional Immigration & Business Services",
-      "subtitle": "Transparent pricing, expert guidance, guaranteed results",
+      "subtitle": "Expert guidance, guaranteed results",
       "trc": {
         "title": "TRC & Investment Visa",
         "description": "Multiple visa options: 6 months to 4 years based on investment",
-        "price": "$350-$550",
         "duration": "2-3 weeks"
       },
       "workPermit": {
         "title": "Work Permits",
-        "description": "2-year work permits, pricing varies by location",
-        "price": "$650-$850",
+        "description": "2-year work permits for legal employment in Vietnam",
         "duration": "2 months"
       },
       "companySetup": {
         "title": "Company Registration",
         "description": "Complete LLC setup with FREE consultation included",
-        "price": "$2,000-$3,000",
         "duration": "2-4 months"
       }
     },
@@ -157,8 +148,6 @@
         "Renewal assistance",
         "Multiple entry allowed"
       ],
-      "price": "$350-$550",
-      "government_fee": "Fees included",
       "process": {
         "title": "How It Works",
         "steps": [
@@ -197,8 +186,6 @@
         "Labor contract review",
         "Renewal reminders"
       ],
-      "price": "$650-$850",
-      "government_fee": "Varies by location",
       "process": {
         "title": "How It Works",
         "steps": [
@@ -239,8 +226,6 @@
         "Tax registration",
         "Capital planning guidance"
       ],
-      "price": "$2,000-$3,000",
-      "government_fee": "Government fees included",
       "process": {
         "title": "How It Works",
         "steps": [
@@ -266,103 +251,6 @@
           }
         ]
       }
-    }
-  },
-  "pricing": {
-    "title": "Transparent Pricing",
-    "subtitle": "No hidden fees. Clear pricing for all services.",
-    "note": "All prices exclude government fees unless stated otherwise",
-    "packages": {
-      "expatStarter": {
-        "name": "Expat Starter",
-        "price": "$2,800",
-        "description": "Perfect for individuals moving to Vietnam",
-        "features": [
-          "Work permit application",
-          "TRC application",
-          "Visa processing",
-          "Basic relocation consultation",
-          "Document checklist",
-          "Email support"
-        ],
-        "popular": false
-      },
-      "businessLaunch": {
-        "name": "Business Launch",
-        "price": "$5,500",
-        "description": "Complete business setup package",
-        "features": [
-          "Company registration",
-          "Banking setup",
-          "3 months accounting",
-          "Business visa",
-          "Legal representative",
-          "Tax registration",
-          "License applications"
-        ],
-        "popular": true
-      },
-      "annualCompliance": {
-        "name": "Annual Compliance",
-        "price": "$4,500/year",
-        "description": "Ongoing compliance and support",
-        "features": [
-          "Monthly accounting",
-          "Tax filing",
-          "Compliance monitoring",
-          "Renewal reminders",
-          "Priority support",
-          "Annual reports",
-          "Regulatory updates"
-        ],
-        "popular": false
-      }
-    },
-    "addons": {
-      "title": "Additional Services",
-      "items": [
-        {
-          "name": "Visa Extension",
-          "price": "$80"
-        },
-        {
-          "name": "Document Translation",
-          "price": "$30/page"
-        },
-        {
-          "name": "Notarization Service",
-          "price": "$50/document"
-        },
-        {
-          "name": "Apostille Service",
-          "price": "$150/document"
-        },
-        {
-          "name": "Virtual Office (monthly)",
-          "price": "$100/month"
-        }
-      ]
-    },
-    "faq": {
-      "title": "Pricing FAQ",
-      "questions": [
-        {
-          "question": "Are government fees included in your prices?",
-          "answer": "Government fees are separate unless explicitly stated as 'included'. We provide clear breakdowns of all fees before starting any service."
-        },
-        {
-          "question": "Do you offer payment plans?",
-          "answer": "Yes, we offer flexible payment plans for packages over $3,000. Contact us to discuss your specific needs."
-        },
-        {
-          "question": "What happens if my application is rejected?",
-          "answer": "We have a 98% approval rate. In the rare case of rejection, we'll work with you to address the issues and resubmit at no additional service fee."
-        },
-        {
-          "question": "Can I get a refund if I cancel?",
-          "answer": "Refunds are available before we submit your application to government authorities, minus any work already completed. See our terms for details."
-        }
-      ]
     }
   },
   "faq": {
@@ -494,7 +382,6 @@
     "contactUs": "Contact Us",
     "readMore": "Read More",
     "features": "Features",
-    "pricing": "Pricing",
     "getQuote": "Get Quote",
     "bookConsultation": "Book Consultation",
     "viewDetails": "View Details",
@@ -504,10 +391,6 @@
     "success": "Success",
     "required": "Required",
     "optional": "Optional",
-    "from": "From",
-    "startingAt": "Starting at",
-    "perYear": "per year",
-    "perMonth": "per month",
     "processing": "Processing",
     "approved": "Approved",
     "pending": "Pending",
