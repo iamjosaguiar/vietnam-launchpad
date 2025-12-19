@@ -11,6 +11,236 @@ export interface BlogPost {
 }
 
 export const blogPosts: Record<string, BlogPost> = {
+  'how-to-convert-drivers-license-vietnam': {
+    slug: 'how-to-convert-drivers-license-vietnam',
+    title: 'How to Convert Your Driver\'s License in Vietnam: Complete Guide 2025',
+    excerpt: 'Everything expats need to know about driving legally in Vietnam - from International Driver\'s Licenses for tourists to full license conversion for TRC holders.',
+    author: 'Vietnam Launchpad Team',
+    date: '2025-01-19',
+    readTime: '8 min read',
+    category: 'Living in Vietnam',
+    content: `
+# How to Convert Your Driver's License in Vietnam: Complete Guide 2025
+
+Driving in Vietnam can be an incredible way to explore this beautiful country - from the winding mountain roads of Ha Giang to the coastal highways of Central Vietnam. But before you hop on a motorbike or rent a car, you need to understand the legal requirements for driving as a foreigner.
+
+This guide covers everything you need to know about driving legally in Vietnam, whether you're a short-term visitor or a long-term resident.
+
+## The Two Paths: IDL vs License Conversion
+
+The first thing to understand is that Vietnam has **two different systems** for foreign drivers, depending on your visa status:
+
+### Option 1: International Driver's License (IDL) - For Short-Term Visitors
+
+If you're in Vietnam on a **tourist visa, business visa, or any short-term stay (under 3 months)**, you can legally drive using an International Driver's License (also called an International Driving Permit or IDP).
+
+**Key points about IDL:**
+- Must be obtained **before** arriving in Vietnam
+- Valid only when paired with your original home country license
+- Accepted for both cars and motorbikes (if your home license covers them)
+- Not valid for TRC holders or long-term residents
+
+**How to get an IDL:**
+Your home country's automobile association (AAA in the US, AA in the UK, CAA in Canada, etc.) can issue an IDL. The process typically takes 1-2 weeks and costs $15-30 USD.
+
+> **Pro tip:** Get your IDL before coming to Vietnam. While we can assist with the process, it's much easier to obtain from your home country.
+
+### Option 2: Vietnamese License Conversion - For TRC Holders
+
+If you hold a **Temporary Residence Card (TRC)** or plan to stay in Vietnam long-term, you **must** convert your foreign license to a Vietnamese driver's license. An IDL is not valid for TRC holders.
+
+**Why conversion is required:**
+- Vietnamese law requires residents to hold Vietnamese licenses
+- Insurance claims may be denied if driving on an IDL with a TRC
+- Police can fine you for driving without proper documentation
+- You cannot register a vehicle in your name without a Vietnamese license
+
+## License Conversion: Step-by-Step Process
+
+Converting your foreign license to a Vietnamese license is straightforward - no driving test required for most nationalities!
+
+### Step 1: Check Your Eligibility
+
+Vietnam has reciprocal agreements with **over 70 countries**, allowing direct license conversion without a driving test. Eligible countries include:
+
+- **North America:** USA, Canada
+- **Europe:** UK, Germany, France, Netherlands, Italy, Spain, Sweden, and most EU countries
+- **Asia-Pacific:** Australia, New Zealand, Japan, South Korea, Singapore
+- **Others:** Many more - [contact us](/contact) to verify your country
+
+**Requirements:**
+- Valid TRC or residency status in Vietnam
+- Valid foreign driver's license (minimum 3 months remaining validity)
+- License must be in good standing (not suspended or revoked)
+
+### Step 2: Gather Required Documents
+
+You'll need:
+1. **Valid passport** (original + copy)
+2. **TRC card** (original + copy)
+3. **Original foreign driver's license** (you will surrender this)
+4. **Passport photos** (4x6cm, white background, 6 photos)
+5. **Proof of residence** (lease agreement or utility bill)
+6. **Health certificate** (obtained from approved clinic in Vietnam)
+
+### Step 3: Document Translation & Notarization
+
+Your foreign driver's license and any non-Vietnamese documents must be:
+- Translated into Vietnamese by a certified translator
+- Notarized by a Vietnamese notary public
+
+This typically takes 2-3 days. We handle all translations and notarizations as part of our service.
+
+### Step 4: Complete the Health Check
+
+Vietnam requires a basic health check for all driver's license applicants. This includes:
+- Vision test
+- Color blindness test
+- Basic physical examination
+- Blood pressure check
+
+The health check takes about 30 minutes and costs approximately 300,000 VND (~$12 USD). We coordinate appointments at approved clinics.
+
+### Step 5: Submit Application
+
+All documents are submitted to the **Department of Transportation (DOT)**. The application includes:
+- Completed application forms
+- All translated/notarized documents
+- Health certificate
+- Your original foreign license (surrendered)
+- Application fee (approximately 500,000 VND)
+
+Processing typically takes **5-7 working days**.
+
+### Step 6: Receive Your Vietnamese License
+
+Once approved, you'll receive a Vietnamese driver's license card. The license is typically valid for **10 years** from the date of issuance.
+
+## License Classes in Vietnam
+
+Your Vietnamese license class depends on what you held in your home country:
+
+| Class | Vehicles Covered |
+|-------|------------------|
+| A1 | Motorbikes up to 175cc |
+| A2 | Motorbikes over 175cc |
+| B | Passenger cars (manual) |
+| B2 | Passenger cars (automatic) |
+| C | Trucks |
+| D | Buses |
+
+**Most popular:** Class A1 for motorbikes and Class B2 for cars.
+
+## The Surrender Rule: What Happens to Your Original License?
+
+**Important:** When you convert to a Vietnamese license, you must **surrender your original foreign license**. It will be retained by Vietnamese authorities.
+
+**What you can do:**
+1. **Before conversion:** Contact your home country's motor vehicle department about getting a duplicate or replacement license
+2. **Some countries** (like the US) allow you to apply for a replacement license while abroad
+3. **Keep copies** of your original license for your records
+
+This is a common concern, but it's a legal requirement. Plan ahead if you might need your home license in the future.
+
+## Common Mistakes to Avoid
+
+### 1. Driving on an Expired IDL
+IDLs are typically valid for 1 year. If you're on multiple short trips, make sure your IDL is still valid.
+
+### 2. Using an IDL with a TRC
+This is illegal. Once you have a TRC, you must convert to a Vietnamese license within a reasonable timeframe.
+
+### 3. Driving Without Proper Documentation
+Always carry:
+- Your Vietnamese license (or IDL + home license for short-term visitors)
+- Passport or TRC
+- Vehicle registration (if you own the vehicle)
+- Insurance documents
+
+### 4. Expired Foreign License
+Your foreign license must be valid at the time of conversion. If it's expired, you may need to renew it first or take a Vietnamese driving test.
+
+### 5. Waiting Too Long to Convert
+Don't wait until you get stopped by police. Start the conversion process soon after receiving your TRC.
+
+## Practical Tips for Driving in Vietnam
+
+### Motorbike Tips
+- Start with an automatic scooter if you're new to motorbikes
+- Always wear a helmet (it's the law)
+- Stay in the right lane unless overtaking
+- Expect the unexpected - defensive driving is essential
+
+### Car Tips
+- Horn usage is normal and expected (not aggressive)
+- Be prepared for motorbikes weaving through traffic
+- Larger vehicles often have "right of way" regardless of rules
+- Consider hiring a driver initially to learn local driving culture
+
+### Insurance
+- Comprehensive insurance is highly recommended
+- Verify your insurance covers foreign license holders (or get Vietnamese coverage)
+- Keep insurance documents in your vehicle
+
+## How We Can Help
+
+At Vietnam Launchpad, we specialize in making the license conversion process simple and stress-free.
+
+**Our Driver's License Service includes:**
+- Eligibility verification for your country
+- Complete document translation and notarization
+- Health check appointment coordination
+- Application preparation and submission
+- Follow-up with Department of Transportation
+- License pickup and delivery
+- Guidance on Vietnam traffic rules
+
+**Timeline:** 1-2 weeks total
+**No driving test required** (for eligible countries)
+
+[**Get Started with License Conversion →**](/services/drivers-license)
+
+## Frequently Asked Questions
+
+**Q: Can I drive a motorbike with just a car license?**
+A: No. In Vietnam (unlike some countries), you need a separate motorbike license. If you only have a car license from home, you can only convert to a car license. To drive motorbikes, you'll need to either:
+- Convert a motorbike license from your home country, OR
+- Take a Vietnamese motorbike driving test
+
+**Q: How much does license conversion cost?**
+A: Total costs include our service fee plus government fees (approximately 500,000 VND for government fees). [Contact us](/contact) for current pricing.
+
+**Q: What if my country isn't on the reciprocal agreement list?**
+A: You'll need to take a Vietnamese driving test. This includes both written (in Vietnamese or English) and practical exams. We can help coordinate this process.
+
+**Q: Can I rent a car or motorbike without a Vietnamese license?**
+A: Rental companies have varying policies. Some accept IDLs for short-term rentals, but many require a Vietnamese license, especially for motorbikes. Having a Vietnamese license opens up more options.
+
+**Q: Is my Vietnamese license valid in other countries?**
+A: For driving abroad, you should obtain an International Driving Permit based on your Vietnamese license. Vietnam is a signatory to the 1968 Vienna Convention, so your license may be recognized in other signatory countries.
+
+**Q: What happens if I'm caught driving without proper documentation?**
+A: Penalties include:
+- Fines (typically 1-5 million VND)
+- Vehicle confiscation (temporary)
+- Potential issues with insurance claims
+- Complications with visa/TRC renewal in severe cases
+
+## Ready to Drive Legally in Vietnam?
+
+Don't risk fines, insurance issues, or legal complications. Get your driver's license conversion handled professionally.
+
+**For TRC holders:** [Start your license conversion today →](/services/drivers-license)
+
+**For short-term visitors:** Make sure you have a valid IDL before arriving, or [contact us](/contact) for guidance.
+
+**Questions?** [Get in touch](/contact) for a free consultation about your driving documentation needs.
+
+---
+
+*Last updated: January 2025. Regulations can change. Always verify current requirements with official sources or professional consultants.*
+    `
+  },
   'how-to-legally-teach-english-in-vietnam': {
     slug: 'how-to-legally-teach-english-in-vietnam',
     title: 'How to Legally Teach English in Vietnam: Complete Guide for 2025',
