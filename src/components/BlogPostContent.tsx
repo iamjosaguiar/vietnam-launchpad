@@ -36,7 +36,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
             Back to Blog
           </Link>
 
-          <div className="max-w-4xl">
+          <div className="max-w-5xl">
             <div className="hero-badge flex flex-wrap items-center gap-4 text-sm text-white/60 mb-6">
               <span className="bg-white/10 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-xs font-medium">
                 {post.category}
@@ -78,7 +78,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
       {/* Article Content */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <AnimateOnScroll>
               <div className="prose prose-lg prose-blue max-w-none
                 prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
