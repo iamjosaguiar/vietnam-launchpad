@@ -79,30 +79,28 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-5xl mx-auto">
-            <AnimateOnScroll>
-              <div className="prose prose-lg prose-blue max-w-none
-                prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
-                prose-h1:text-4xl prose-h1:mb-6 prose-h1:hidden
-                prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200
-                prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-gray-800
-                prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-6
-                prose-a:text-primary-600 prose-a:font-medium prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary-700
-                prose-strong:text-gray-900 prose-strong:font-semibold
-                prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
-                prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
-                prose-li:text-gray-600 prose-li:leading-relaxed
-                prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:pl-6 prose-blockquote:not-italic prose-blockquote:bg-primary-50 prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:rounded-r-xl prose-blockquote:my-8
-                prose-code:text-primary-600 prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
-                prose-hr:my-12 prose-hr:border-gray-200
-                prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-xl prose-table:overflow-hidden
-                prose-thead:bg-primary-600
-                prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
-                prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100
-                prose-tr:even:bg-gray-50"
-              >
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
-              </div>
-            </AnimateOnScroll>
+            <div className="prose prose-lg prose-blue max-w-none
+              prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
+              prose-h1:text-4xl prose-h1:mb-6 prose-h1:hidden
+              prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200
+              prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-gray-800
+              prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-6
+              prose-a:text-primary-600 prose-a:font-medium prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary-700
+              prose-strong:text-gray-900 prose-strong:font-semibold
+              prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
+              prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
+              prose-li:text-gray-600 prose-li:leading-relaxed
+              prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:pl-6 prose-blockquote:not-italic prose-blockquote:bg-primary-50 prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:rounded-r-xl prose-blockquote:my-8
+              prose-code:text-primary-600 prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+              prose-hr:my-12 prose-hr:border-gray-200
+              prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-xl prose-table:overflow-hidden
+              prose-thead:bg-primary-600
+              prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
+              prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100
+              prose-tr:even:bg-gray-50"
+            >
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+            </div>
           </div>
         </div>
       </section>
