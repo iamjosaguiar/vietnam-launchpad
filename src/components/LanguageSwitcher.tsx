@@ -11,7 +11,11 @@ const locales = [
   { code: 'ko', name: '한국어', flag: '🇰🇷' },
 ];
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  isScrolled?: boolean;
+}
+
+export default function LanguageSwitcher({ isScrolled = true }: LanguageSwitcherProps) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -50,7 +54,11 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 transition-colors"
+        className={`flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+          isScrolled
+            ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50'
+            : 'text-white/80 hover:text-white hover:bg-white/10'
+        }`}
         aria-label="Select language"
         aria-expanded={isOpen}
         aria-haspopup="true"
