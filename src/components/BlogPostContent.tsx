@@ -106,7 +106,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80')`,
+            backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />

@@ -18,10 +18,10 @@ const ratings = {
 } as const;
 
 const profileImages = {
-  markThompson: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
-  sarahChen: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
-  kimJihoon: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
-  emmaRodriguez: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face'
+  markThompson: '/images/testimonials/mark-thompson.jpg',
+  sarahChen: '/images/testimonials/sarah-chen.jpg',
+  kimJihoon: '/images/testimonials/kim-jihoon.jpg',
+  emmaRodriguez: '/images/testimonials/emma-rodriguez.jpg'
 } as const;
 
 const serviceTypes = {
@@ -38,7 +38,7 @@ const additionalTestimonials = [
     location: 'Germany',
     text: 'Excellent support for my business visa application. The team was knowledgeable about German-Vietnamese requirements and made the process seamless.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+    image: '/images/testimonials/testimonial-5.jpg',
     service: 'Business Visa'
   },
   {
@@ -46,7 +46,7 @@ const additionalTestimonials = [
     location: 'Japan',
     text: 'They helped me convert my driver\'s license quickly. Very professional service and clear communication throughout the entire process.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face',
+    image: '/images/testimonials/testimonial-6.jpg',
     service: "Driver's License"
   },
   {
@@ -54,7 +54,7 @@ const additionalTestimonials = [
     location: 'Australia',
     text: 'Outstanding service for our marriage registration. They navigated all the paperwork and made what seemed impossible, possible within weeks.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face',
+    image: '/images/testimonials/testimonial-7.jpg',
     service: 'Marriage Registration'
   },
   {
@@ -62,7 +62,7 @@ const additionalTestimonials = [
     location: 'Netherlands',
     text: 'Property registration was handled perfectly. Their expertise saved us from costly mistakes and the whole process was transparent.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face',
+    image: '/images/testimonials/testimonial-8.jpg',
     service: 'Property Registration'
   }
 ];

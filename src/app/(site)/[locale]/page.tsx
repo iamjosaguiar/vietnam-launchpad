@@ -53,7 +53,7 @@ export default async function HomePage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1920&q=80')`,
+            backgroundImage: `url('/images/backgrounds/hero-vietnam.jpg')`,
           }}
         />
         {/* Dark overlay for text readability */}
@@ -291,7 +291,7 @@ export default async function HomePage() {
               {/* Background image */}
               <div className="absolute -inset-4 rounded-3xl overflow-hidden opacity-20">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+                  src="/images/backgrounds/team-working.jpg"
                   alt=""
                   className="w-full h-full object-cover"
                 />
@@ -336,7 +336,7 @@ export default async function HomePage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1528127269322-539801943592?w=1920&q=80')`,
+            backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')`,
           }}
         />
         {/* Dark overlay */}
@@ -352,9 +352,9 @@ export default async function HomePage() {
             <div className="flex justify-center mb-8">
               <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/10">
                 <div className="flex -space-x-2">
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="" className="w-8 h-8 rounded-full border-2 border-white/50" />
-                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face" alt="" className="w-8 h-8 rounded-full border-2 border-white/50" />
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="" className="w-8 h-8 rounded-full border-2 border-white/50" />
+                  <img src="/images/testimonials/mark-thompson.jpg" alt="" className="w-8 h-8 rounded-full border-2 border-white/50" />
+                  <img src="/images/testimonials/sarah-chen.jpg" alt="" className="w-8 h-8 rounded-full border-2 border-white/50" />
+                  <img src="/images/testimonials/kim-jihoon.jpg" alt="" className="w-8 h-8 rounded-full border-2 border-white/50" />
                 </div>
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
