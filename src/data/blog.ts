@@ -13,14 +13,14 @@ export interface BlogPost {
 export const blogPosts: Record<string, BlogPost> = {
   'how-to-convert-drivers-license-vietnam': {
     slug: 'how-to-convert-drivers-license-vietnam',
-    title: 'How to Convert Your Driver\'s License in Vietnam: Complete Guide 2025',
+    title: 'How to Convert Your Driver\'s License in Vietnam: Complete Guide 2026',
     excerpt: 'Everything expats need to know about driving legally in Vietnam - from International Driver\'s Licenses for tourists to full license conversion for TRC holders.',
     author: 'Vietnam Launchpad Team',
     date: '2025-01-19',
     readTime: '8 min read',
     category: 'Living in Vietnam',
     content: `
-# How to Convert Your Driver's License in Vietnam: Complete Guide 2025
+# How to Convert Your Driver's License in Vietnam: Complete Guide 2026
 
 Driving in Vietnam can be an incredible way to explore this beautiful country - from the winding mountain roads of Ha Giang to the coastal highways of Central Vietnam. But before you hop on a motorbike or rent a car, you need to understand the legal requirements for driving as a foreigner.
 
@@ -238,19 +238,19 @@ Don't risk fines, insurance issues, or legal complications. Get your driver's li
 
 ---
 
-*Last updated: January 2025. Regulations can change. Always verify current requirements with official sources or professional consultants.*
+*Last updated: January 2026. Regulations can change. Always verify current requirements with official sources or professional consultants.*
     `
   },
   'how-to-legally-teach-english-in-vietnam': {
     slug: 'how-to-legally-teach-english-in-vietnam',
-    title: 'How to Legally Teach English in Vietnam: Complete Guide for 2025',
+    title: 'How to Legally Teach English in Vietnam: Complete Guide for 2026',
     excerpt: 'Everything you need to know about teaching English legally in Vietnam, from work permits to visa requirements and finding legitimate teaching positions.',
     author: 'Vietnam Launchpad Team',
     date: '2025-01-09',
     readTime: '10 min read',
     category: 'Work Permits',
     content: `
-# How to Legally Teach English in Vietnam: Complete Guide for 2025
+# How to Legally Teach English in Vietnam: Complete Guide for 2026
 
 Vietnam has become one of the most popular destinations for English teachers in Southeast Asia. With a booming economy and strong emphasis on English education, there's high demand for qualified teachers. However, teaching legally in Vietnam requires proper documentation and understanding of local regulations.
 
@@ -501,7 +501,7 @@ Ready to start your teaching journey in Vietnam? [Contact Vietnam Launchpad](/co
 
 ---
 
-*Last updated: January 2025. Visa and work permit regulations can change. Always verify current requirements with official sources or professional consultants.*
+*Last updated: January 2026. Visa and work permit regulations can change. Always verify current requirements with official sources or professional consultants.*
     `
   }
 };
