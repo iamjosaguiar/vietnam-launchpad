@@ -95,8 +95,8 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                 prose-code:text-primary-600 prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
                 prose-hr:my-12 prose-hr:border-gray-200
                 prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-xl prose-table:overflow-hidden
-                prose-thead:bg-primary-600 prose-thead:text-white
-                prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm
+                prose-thead:bg-primary-600
+                prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
                 prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100
                 prose-tr:even:bg-gray-50"
               >
