@@ -50,7 +50,7 @@ export default function AboutPage() {
               </p>
               <p className="text-lg text-gray-600 mb-10 leading-relaxed">
                 Our mission is to provide transparent, professional services that eliminate the stress and
-                uncertainty from your Vietnam journey. No hidden fees, no surprises—just clear guidance
+                uncertainty from your Vietnam journey. No hidden fees, no surprises - just clear guidance
                 and guaranteed results.
               </p>
               <div className="grid grid-cols-2 gap-8">
