@@ -119,8 +119,6 @@ export default function Footer() {
                   { name: 'Blog', href: '/blog' },
                   { name: 'FAQ', href: '/faq' },
                   { name: 'Contact', href: '/contact' },
-                  { name: 'Sitemap', href: '/sitemap.xml' },
-                  { name: 'RSS Feed', href: '/feed.xml' }
                 ].map((item) => (
                   <li key={item.href}>
                     <Link
@@ -132,6 +130,16 @@ export default function Footer() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <a href="/sitemap.xml" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+                    Sitemap
+                  </a>
+                </li>
+                <li>
+                  <a href="/feed.xml" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+                    RSS Feed
+                  </a>
+                </li>
               </ul>
             </div>
 
