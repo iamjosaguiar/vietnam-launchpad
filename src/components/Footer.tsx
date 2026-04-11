@@ -162,7 +162,7 @@ export default function Footer() {
         <div className="py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-500 text-center md:text-left">
-              <p>&copy; 2025 Vietnam Launchpad. All rights reserved. &middot; Company No. 0108305670</p>
+              <p>&copy; {new Date().getFullYear()} Vietnam Launchpad. All rights reserved. &middot; Company No. 0108305670</p>
             </div>
 
             {/* Back to top button */}
