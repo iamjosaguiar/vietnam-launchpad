@@ -18,10 +18,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: 'Guide Not Found' };
   }
 
+  const baseUrl = 'https://vietnamlaunchpad.com';
+
   return {
     title: `${guide.title} | Vietnam Launchpad`,
     description: guide.excerpt,
     keywords: [guide.category, 'Vietnam', 'expat', 'guide', 'living in Vietnam'],
+    alternates: {
+      canonical: `${baseUrl}/guides/${slug}`,
+    },
     openGraph: {
       title: guide.title,
       description: guide.excerpt,

@@ -118,7 +118,9 @@ export default function Footer() {
                   { name: 'All Services', href: '/services' },
                   { name: 'Blog', href: '/blog' },
                   { name: 'FAQ', href: '/faq' },
-                  { name: 'Contact', href: '/contact' }
+                  { name: 'Contact', href: '/contact' },
+                  { name: 'Sitemap', href: '/sitemap.xml' },
+                  { name: 'RSS Feed', href: '/feed.xml' }
                 ].map((item) => (
                   <li key={item.href}>
                     <Link

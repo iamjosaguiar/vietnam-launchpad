@@ -79,7 +79,10 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
         vi: 'https://vietnamlaunchpad.com/vi',
         zh: 'https://vietnamlaunchpad.com/zh',
         ko: 'https://vietnamlaunchpad.com/ko'
-      }
+      },
+      types: {
+        'application/rss+xml': 'https://vietnamlaunchpad.com/feed.xml',
+      },
     }
   };
 }

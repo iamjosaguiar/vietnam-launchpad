@@ -20,10 +20,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  const baseUrl = 'https://vietnamlaunchpad.com';
+
   return {
     title: post.title,
     description: post.excerpt,
     keywords: [post.category, 'Vietnam', 'expat', 'guide'],
+    alternates: {
+      canonical: `${baseUrl}/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
