@@ -131,13 +131,13 @@ const proseClasses = `prose prose-lg prose-blue max-w-none
   prose-tr:even:bg-gray-50`;
 
 const mdComponents = (slugifyFn: (t: string) => string) => ({
-  h2: ({ children }: { children: React.ReactNode }) => {
+  h2: ({ children, ...props }: React.ComponentPropsWithoutRef<'h2'>) => {
     const id = slugifyFn(String(children));
-    return <h2 id={id}>{children}</h2>;
+    return <h2 id={id} {...props}>{children}</h2>;
   },
-  h3: ({ children }: { children: React.ReactNode }) => {
+  h3: ({ children, ...props }: React.ComponentPropsWithoutRef<'h3'>) => {
     const id = slugifyFn(String(children));
-    return <h3 id={id}>{children}</h3>;
+    return <h3 id={id} {...props}>{children}</h3>;
   },
 });
 
