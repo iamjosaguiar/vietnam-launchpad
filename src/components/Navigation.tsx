@@ -45,6 +45,7 @@ const serviceGroups = [
 const guideCategories = [
   {
     category: 'Finance & Money',
+    href: '/guides',
     color: 'text-emerald-600',
     guides: [
       { title: 'Cost of Living', href: '/guides/cost-of-living' },
@@ -54,6 +55,7 @@ const guideCategories = [
   },
   {
     category: 'Visas & Residency',
+    href: '/guides',
     color: 'text-blue-600',
     guides: [
       { title: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
@@ -63,6 +65,7 @@ const guideCategories = [
   },
   {
     category: 'Work & Business',
+    href: '/guides',
     color: 'text-indigo-600',
     guides: [
       { title: 'Company Setup', href: '/guides/company-setup-vietnam' },
@@ -72,6 +75,7 @@ const guideCategories = [
   },
   {
     category: 'Daily Life',
+    href: '/guides',
     color: 'text-purple-600',
     guides: [
       { title: 'Driving & Car Rental', href: '/guides/driving-vietnam' },
@@ -81,6 +85,7 @@ const guideCategories = [
   },
   {
     category: 'Housing & Real Estate',
+    href: '/guides',
     color: 'text-amber-600',
     guides: [
       { title: 'Renting in Vietnam', href: '/guides/renting' },
@@ -89,6 +94,7 @@ const guideCategories = [
   },
   {
     category: 'Health & Wellbeing',
+    href: '/guides',
     color: 'text-rose-600',
     guides: [
       { title: 'Healthcare & Insurance', href: '/guides/healthcare' },
@@ -96,6 +102,7 @@ const guideCategories = [
   },
   {
     category: 'Family & Education',
+    href: '/guides',
     color: 'text-pink-600',
     guides: [
       { title: 'International Schools', href: '/guides/international-schools' },
@@ -104,6 +111,7 @@ const guideCategories = [
   },
   {
     category: 'City Guides',
+    href: '/guides',
     color: 'text-teal-600',
     guides: [
       { title: 'Ho Chi Minh City', href: '/guides/ho-chi-minh-city' },
@@ -303,9 +311,12 @@ export default function Navigation() {
                     <div className="grid grid-cols-4 gap-0 p-6">
                       {guideCategories.map((cat) => (
                         <div key={cat.category} className="min-w-0">
-                          <p className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 truncate ${cat.color}`}>
+                          <Link
+                            href={cat.href}
+                            className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 truncate block hover:underline ${cat.color}`}
+                          >
                             {cat.category}
-                          </p>
+                          </Link>
                           <ul className="space-y-0.5">
                             {cat.guides.map((guide) => (
                               <li key={guide.href}>
