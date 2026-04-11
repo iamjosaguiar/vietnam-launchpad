@@ -3,46 +3,63 @@ import { getAllGuideSlugs } from '@/data/guides';
 import { getAllBlogSlugs } from '@/data/blog';
 import { getAllServiceSlugs } from '@/data/services';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://vietnamlaunchpad.com';
+const baseUrl = 'https://vietnamlaunchpad.com';
 
-  const staticRoutes = [
-    { url: baseUrl, priority: 1.0, changeFrequency: 'daily' as const },
-    { url: `${baseUrl}/services`, priority: 0.9, changeFrequency: 'weekly' as const },
-    { url: `${baseUrl}/guides`, priority: 0.9, changeFrequency: 'weekly' as const },
-    { url: `${baseUrl}/blog`, priority: 0.8, changeFrequency: 'weekly' as const },
-    { url: `${baseUrl}/contact`, priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: `${baseUrl}/faq`, priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: `${baseUrl}/about`, priority: 0.6, changeFrequency: 'monthly' as const },
-  ];
+// Add a new entry here whenever a new programmatic content type is created.
+// Each ID becomes a separate sub-sitemap: /sitemap/0, /sitemap/1, etc.
+// 0 = static pages
+// 1 = services
+// 2 = guides
+// 3 = blog
+export function generateSitemaps() {
+  return [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }];
+}
 
-  const serviceRoutes = getAllServiceSlugs().map((slug) => ({
-    url: `${baseUrl}/services/${slug}`,
-    priority: 0.9,
-    changeFrequency: 'monthly' as const,
-  }));
+export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
+  const now = new Date();
 
-  const guideRoutes = getAllGuideSlugs().map((slug) => ({
-    url: `${baseUrl}/guides/${slug}`,
-    priority: 0.85,
-    changeFrequency: 'monthly' as const,
-  }));
+  // Static pages
+  if (id === 0) {
+    return [
+      { url: baseUrl, priority: 1.0, changeFrequency: 'daily', lastModified: now },
+      { url: `${baseUrl}/services`, priority: 0.9, changeFrequency: 'weekly', lastModified: now },
+      { url: `${baseUrl}/guides`, priority: 0.9, changeFrequency: 'weekly', lastModified: now },
+      { url: `${baseUrl}/blog`, priority: 0.8, changeFrequency: 'weekly', lastModified: now },
+      { url: `${baseUrl}/contact`, priority: 0.8, changeFrequency: 'monthly', lastModified: now },
+      { url: `${baseUrl}/faq`, priority: 0.7, changeFrequency: 'monthly', lastModified: now },
+      { url: `${baseUrl}/about`, priority: 0.6, changeFrequency: 'monthly', lastModified: now },
+    ];
+  }
 
-  const blogRoutes = getAllBlogSlugs().map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    priority: 0.75,
-    changeFrequency: 'monthly' as const,
-  }));
+  // Services
+  if (id === 1) {
+    return getAllServiceSlugs().map((slug) => ({
+      url: `${baseUrl}/services/${slug}`,
+      priority: 0.9,
+      changeFrequency: 'monthly' as const,
+      lastModified: now,
+    }));
+  }
 
-  return [
-    ...staticRoutes,
-    ...serviceRoutes,
-    ...guideRoutes,
-    ...blogRoutes,
-  ].map((route) => ({
-    url: route.url,
-    lastModified: new Date(),
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-  }));
+  // Guides
+  if (id === 2) {
+    return getAllGuideSlugs().map((slug) => ({
+      url: `${baseUrl}/guides/${slug}`,
+      priority: 0.85,
+      changeFrequency: 'monthly' as const,
+      lastModified: now,
+    }));
+  }
+
+  // Blog
+  if (id === 3) {
+    return getAllBlogSlugs().map((slug) => ({
+      url: `${baseUrl}/blog/${slug}`,
+      priority: 0.75,
+      changeFrequency: 'monthly' as const,
+      lastModified: now,
+    }));
+  }
+
+  return [];
 }

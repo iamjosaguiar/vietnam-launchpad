@@ -1,1 +1,1 @@
-export { default } from './[locale]/sitemap';
+export { default, generateSitemaps } from './[locale]/sitemap';
