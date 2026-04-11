@@ -4224,6 +4224,184 @@ Key rules for driving/riding in Vietnam:
 6. **Get motor insurance** - third-party motor insurance is mandatory and cheap (~$10-20/year for a motorbike)
 7. **Register your motorbike** if buying one - always transfer the ownership registration (giay to xe) properly when buying second-hand`,
   },
+
+  'property-registration': {
+    slug: 'property-registration',
+    title: 'Vietnam Property Registration: Red Book, Pink Book, and How Title Works (2026)',
+    subtitle: 'What the property documents actually are, how registration works step by step, and what foreign owners need to do differently',
+    excerpt: "Vietnam property title is recorded in a certificate called the Pink Book (Sổ Hồng). This guide explains what it is, the difference from the old Red Book, the full registration process, required documents, costs, and what foreigners need to do differently.",
+    author: 'Vietnam Launchpad',
+    date: '2026-04-11',
+    lastUpdated: '2026-04-11',
+    readTime: '10 min read',
+    category: 'Housing & Real Estate',
+    ctaTitle: 'Need Help Registering Property in Vietnam?',
+    ctaBody: 'Our property registration service handles the full title certificate process for foreign owners — document preparation, notarisation, submission, and follow-up through to Pink Book issuance.',
+    ctaLink: '/services/property-registration',
+    ctaLinkText: 'View Property Registration Service',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Book a Consultation',
+    content: `## What Is Property Registration in Vietnam?
+
+When you purchase property in Vietnam — or when ownership of property changes for any reason — that transaction must be officially registered with the state. The result of a completed registration is a **Certificate of Land Use Right and House Ownership** (Giay Chung Nhan Quyen Su Dung Dat, Quyen So Huu Nha O Va Tai San Khac Gan Lien Voi Dat), issued in your name.
+
+This certificate is what people commonly call the **Pink Book** (Sổ Hồng). It is the single most important document in Vietnamese real estate and the only document that proves legal ownership.
+
+Without a properly registered Pink Book in your name, you do not legally own the property — even if you have paid in full and moved in.
+
+---
+
+## Red Book vs Pink Book: What Is the Difference?
+
+This is one of the most common questions about Vietnamese property documents, and the answer is mostly historical.
+
+**Red Book (Sổ Đỏ)**
+The Red Book was Vietnam's original land title certificate, introduced in the 1990s under earlier land legislation. It was specifically a **Certificate of Land Use Right** — it covered the land only, not the structures built on it. The physical booklet had a red cover, hence the name.
+
+**Pink Book (Sổ Hồng)**
+From 2009 onward, Vietnam introduced a unified certificate covering both land use rights and house/building ownership on a single document. The new booklet had a pink/burgundy cover. This is now the standard title document for all property in Vietnam.
+
+**What this means today:**
+- All new property registrations issue a Pink Book
+- Existing Red Books are still legally valid and have not been cancelled
+- Many Vietnamese people and agents still use "Red Book" and "Pink Book" interchangeably in casual conversation
+- If someone refers to a property's "Red Book" they typically just mean its title certificate — confirm the actual document they have
+
+**Practical check:** When buying a property, always confirm the title certificate (whether called Red Book or Pink Book) exists, is in the seller's name, and has no encumbrances (liens, mortgages, disputes). This is the essential first step in any purchase due diligence.
+
+---
+
+## What the Pink Book Contains
+
+A valid Pink Book includes:
+
+- **Owner name(s):** The individual or organisation legally holding the title
+- **Land plot number and map sheet:** The cadastral reference identifying the specific plot
+- **Land area:** Total area in square metres
+- **Land use purpose:** Residential, agricultural, commercial, etc.
+- **Land use term:** Permanent (for Vietnamese citizens on residential land) or fixed-term (50 years for foreigners, long-term leases for some commercial uses)
+- **House/building details:** Floor area, number of storeys, construction year
+- **Changes and endorsements:** Any registered mortgages, transfers, or updates are noted in the back pages
+
+Each province issues its own Pink Books, administered by the local Department of Natural Resources and Environment (DONRE, or So Tai Nguyen va Moi Truong).
+
+---
+
+## The Property Registration Process
+
+### For Vietnamese Buyers (Standard Process)
+
+**Step 1: Notarise the Sale and Purchase Agreement**
+The sale and purchase contract must be notarised at a registered notary office (Van Phong Cong Chung). Both parties must be present or represented by a notarised power of attorney.
+
+**Step 2: Pay Registration Tax and Fees**
+- **Registration tax:** 0.5% of the property value (as assessed by the authorities, not necessarily the sale price)
+- **Notary fee:** Varies by property value, typically 0.1% capped at certain limits
+- **Land registration fee:** Fixed administrative charge, varies by province (typically 100,000–500,000 VND)
+
+**Step 3: Submit the Registration Dossier**
+The completed dossier is submitted to the District Land Registration Office (Van Phong Dang Ky Dat Dai) or the provincial DONRE. The dossier includes:
+- Notarised sale and purchase agreement
+- Seller's original Pink Book
+- Copies of both parties' ID/passport and household registration (Ho Khau) if applicable
+- Tax payment receipts
+- Completed application form (Mau Don De Nghi)
+
+**Step 4: Processing and Issuance**
+The authorities review the dossier, update the cadastral records, and issue a new Pink Book in the buyer's name. **Standard processing time: 15–30 working days.** In practice, many registrations take longer due to backlogs.
+
+---
+
+### For Foreign Buyers (Additional Requirements)
+
+Foreigners purchasing property in Vietnam go through the same basic process but with additional document requirements and different land use terms.
+
+**Additional documents required:**
+- Valid passport (original and certified copy)
+- Entry visa or TRC (original and copy)
+- If purchasing through a company: company registration documents, legal representative identification
+- Vietnamese-language translations of all foreign-language documents, notarised in Vietnam
+
+**Key differences for foreign owners:**
+- Land use term is **50 years** (not permanent as for Vietnamese citizens)
+- The Pink Book will show the 50-year expiry date
+- Renewal requires reapplication at least 3 months before expiry
+- Some restricted zones are not available to foreign buyers — the DONRE will flag this during review
+
+**One critical note:** The Pink Book application for a foreign buyer must clearly identify the buyer as a foreign national and the land use term as 50-year fixed. Applications that attempt to obscure foreign ownership are illegal and result in the Pink Book being invalid.
+
+---
+
+## Required Documents Summary
+
+| Document | Vietnamese Buyer | Foreign Buyer |
+|---|---|---|
+| Notarised sale and purchase agreement | Required | Required |
+| Seller's original Pink Book | Required | Required |
+| Buyer ID (CCCD/CMND or passport) | Required | Passport + certified copy |
+| Tax payment receipt | Required | Required |
+| Application form | Required | Required |
+| Visa/TRC copy | Not needed | Required |
+| Notarised document translations | Not needed | Required for all foreign docs |
+| Power of attorney (if using agent) | Optional | Strongly recommended |
+
+---
+
+## Costs and Timeline
+
+| Item | Approximate Cost |
+|---|---|
+| Registration tax | 0.5% of assessed property value |
+| Notary fee | 0.1% of property value (capped) |
+| Land registration fee | 100,000–500,000 VND |
+| Translation and notarisation (foreigners) | 1,000,000–3,000,000 VND |
+| Agent / professional service fee | 5,000,000–20,000,000 VND depending on complexity |
+
+**Timeline:** 15–30 working days for a straightforward residential registration. Complex cases (disputed title, missing documents, foreign buyer in a new development) can take longer.
+
+---
+
+## Common Problems and How to Avoid Them
+
+**1. The seller's Pink Book has a mortgage registered against it**
+Always run a title search before signing anything. A bank-held mortgage must be discharged before or simultaneously with the sale. Do not rely on the seller's verbal assurance that it has been cleared.
+
+**2. The property area on the Pink Book differs from what was sold**
+Discrepancies between actual area and registered area are common, especially in older properties. Resolve this before purchase — it requires a cadastral survey and correction, which takes time and adds cost.
+
+**3. Missing or incorrect household registration (Ho Khau)**
+For Vietnamese sellers, a discrepancy between the Pink Book name and their current household registration can stall the process. Check this early.
+
+**4. Buying in a development where the master Pink Book has not yet been issued**
+Many buyers purchase apartments off-plan or in new developments where the developer has not yet obtained the master title certificate. In these cases, individual Pink Books cannot be issued until the developer completes the process. Before buying, confirm: does the developer have the master Pink Book (or a clear timeline for it)?
+
+**5. The foreign ownership quota is full**
+If the 30% foreign quota in an apartment building is exhausted, a foreign buyer cannot register ownership — even if the purchase contract is signed. Check the quota before signing.
+
+---
+
+## After Registration: What to Keep
+
+Once your Pink Book is issued:
+- Store the original in a secure location — it is extremely difficult to replace
+- Take certified copies for your records
+- Notify your insurance provider (if you have property insurance) that the title has been transferred
+- If you have a mortgage, the lender will typically hold the original Pink Book as security
+
+---
+
+## How We Can Help
+
+Vietnam Launchpad handles property registration for foreign buyers end-to-end: document preparation, translation and notarisation, submission to the land registry, follow-up with DONRE, and delivery of your completed Pink Book.
+
+Foreign ownership registrations involve more steps and more potential complications than domestic transactions. Having a professional manage the process reduces errors and delays significantly.
+
+[View our Property Registration service →](/services/property-registration)
+
+---
+
+*Last updated: April 2026. Land registration procedures and fees are set provincially and are subject to change. Confirm current requirements with a local professional before transacting.*`,
+  },
 };
 
 export function getGuideBySlug(slug: string): Guide | null {

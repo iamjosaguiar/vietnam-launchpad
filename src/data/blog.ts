@@ -654,6 +654,130 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
 
 *Last updated: April 2026. We monitor Vietnamese immigration developments closely and update our content when meaningful changes occur.*
     `
+  },
+
+  'can-you-work-on-marriage-trc-vietnam': {
+    slug: 'can-you-work-on-marriage-trc-vietnam',
+    title: 'Can You Work on a Marriage TRC in Vietnam? Work Permits Explained',
+    excerpt: 'A marriage TRC gives you the right to live in Vietnam long-term — but it does not automatically give you the right to work. Here is what you can and cannot do, and how to get a work permit once you have your marriage TRC.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-11',
+    readTime: '6 min read',
+    category: 'Visas & Immigration',
+    content: `
+# Can You Work on a Marriage TRC in Vietnam?
+
+This is one of the most common questions we get from foreign spouses who have just received their Temporary Residence Card based on marriage to a Vietnamese citizen. The short answer: **a marriage TRC gives you the right to live in Vietnam — not the automatic right to work.**
+
+Here is the full picture.
+
+## What a Marriage TRC Actually Grants
+
+A marriage-based TRC (issued under the family relationship route) grants you:
+
+- **Legal long-term residency** in Vietnam for up to 5 years (renewable)
+- The right to enter and exit Vietnam freely without separate visa applications
+- Access to Vietnamese banking, vehicle ownership, and property purchasing rights
+- The ability to enrol children in local schools
+- A stable immigration status that does not depend on any employer
+
+What it does **not** grant:
+
+- **Automatic authorization to work for a Vietnamese employer or entity**
+
+This distinction matters. Residency and employment authorization are governed by separate laws in Vietnam, and having one does not imply the other.
+
+---
+
+## Do You Need a Work Permit with a Marriage TRC?
+
+**Yes — if you want to work for a Vietnamese company or organization.**
+
+Under Vietnamese labor law (Labor Code 2019 and Decree 152/2020/ND-CP), foreign nationals working in Vietnam for Vietnamese employers generally require a **work permit (Giay Phep Lao Dong)** issued by the Ministry of Labor, Invalids and Social Affairs (MOLISA). This requirement applies regardless of your residency status.
+
+Having a marriage TRC does not create an exemption from the work permit requirement.
+
+---
+
+## Exceptions: When You Do Not Need a Work Permit
+
+There are specific exemptions that apply to some marriage TRC holders:
+
+**1. Owner/legal representative of your own Vietnamese company**
+If you establish or invest in a Vietnamese company and are registered as the legal representative (Nguoi Dai Dien Theo Phap Luat), you are exempt from the standard work permit requirement. You would hold the marriage TRC for residency and operate your business through the company structure.
+
+**2. Work permit exemption categories**
+Certain professional categories are exempt from work permits but still require an **Exemption Certificate** (Giay Xac Nhan Khong Thuoc Dien Cap Giay Phep Lao Dong). These include:
+- Owners or capital contributors to Vietnamese companies
+- Internal corporate transfers (for multinationals)
+- Certain NGO workers and diplomats
+
+**3. Working for a foreign employer (remote work)**
+If you are employed by a foreign company and your work is performed for that foreign company — not for a Vietnamese entity — the Vietnamese work permit requirement technically does not apply. Many foreign spouses work remotely for employers in their home country under this arrangement.
+
+**Important caveat:** The 2026 PIT Law introduced clearer rules on income sourcing. If you are physically in Vietnam performing work, that income may be considered Vietnam-sourced for tax purposes regardless of where your employer is based. Tax obligations and work permit requirements are separate questions — you can have one without the other.
+
+---
+
+## How to Get a Work Permit When You Have a Marriage TRC
+
+The process is largely the same as for any foreign national, with one practical advantage: you already have your residency document sorted, which removes one variable from the timeline.
+
+**Standard work permit process for marriage TRC holders:**
+
+1. **Secure a job offer** from a Vietnamese employer — the employer applies on your behalf, not you
+2. **Prepare your documents:**
+   - Valid passport
+   - Marriage TRC (copy)
+   - Degree certificate (notarised, apostilled, and legalized for Vietnam — or notarised translation if already in Vietnam)
+   - Criminal background check (from your home country, within 6 months, apostilled)
+   - Health certificate from a Vietnamese hospital
+   - CV and relevant professional qualifications
+3. **Employer submits application** to the local MOLISA office
+4. **Processing time:** Approximately 10–20 working days
+5. **Work permit issued** — valid for up to 2 years, tied to the specific employer
+
+**Does having a marriage TRC speed up the work permit?**
+Not significantly in terms of government processing time, but it simplifies your overall situation: you do not need to coordinate TRC and work permit applications simultaneously, and your right to remain in Vietnam is not dependent on the work permit being approved.
+
+---
+
+## Practical Scenarios
+
+**"I have a marriage TRC and want to work at a language school."**
+You need a work permit. The school applies on your behalf. You will also need your teaching qualifications documented and legalized. Our [work permit service](/services/work-permit) covers this end-to-end.
+
+**"I have a marriage TRC and do freelance design work for clients in my home country."**
+The work permit requirement is unlikely to apply since you are working for foreign clients, not a Vietnamese entity. You should however be aware of your Vietnamese personal income tax obligations if you are tax resident (183+ days per year).
+
+**"I have a marriage TRC and want to start my own business in Vietnam."**
+Set up a Vietnamese company, register yourself as the legal representative, and you do not need a separate work permit to operate the business. See our [company setup service](/services/company-setup).
+
+**"I have a marriage TRC and my spouse's family business wants to employ me."**
+You need a work permit. The family business is a Vietnamese entity. The marriage relationship does not create an exemption.
+
+---
+
+## Summary
+
+| Situation | Work Permit Required? |
+|---|---|
+| Employed by Vietnamese company or school | **Yes** |
+| Legal representative of own Vietnamese company | No (Exemption Certificate instead) |
+| Remote work for foreign employer | Generally no (tax obligations still apply) |
+| Freelancing for non-Vietnamese clients | Generally no |
+| Volunteering for registered NGO | Depends on arrangement |
+
+---
+
+## Questions About Your Situation?
+
+Every situation is slightly different. If you are unsure whether your planned work arrangement requires a work permit, [contact us for a consultation](/contact). We deal with marriage TRC and work permit combinations regularly and can give you a clear answer based on your specific circumstances.
+
+---
+
+*Published April 2026. Vietnamese labor law and work permit regulations are subject to change. Verify current requirements before making employment decisions.*
+    `
   }
 };
 
