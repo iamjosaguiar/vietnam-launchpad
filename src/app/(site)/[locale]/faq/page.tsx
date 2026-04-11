@@ -105,12 +105,107 @@ const faqCategories = [
         a: 'Our team speaks English, Vietnamese, Mandarin Chinese, and Korean. We can accommodate most international clients.'
       }
     ]
+  },
+  {
+    category: 'Taxes and Finance',
+    questions: [
+      {
+        q: 'Do I pay Vietnamese income tax if I work remotely for a foreign company?',
+        a: 'It depends on how long you stay. If you spend fewer than 183 days per year in Vietnam, you are a non-resident and only Vietnam-sourced income is taxed at a flat 20%. If you exceed 183 days, you become a tax resident and your worldwide income is taxed at progressive rates of 5-35%. Many remote workers carefully track their days to manage this threshold.'
+      },
+      {
+        q: 'Has Vietnam\'s personal income tax changed in 2026?',
+        a: 'Yes. Law No. 109/2025/QH15 brought the biggest PIT reforms since 2012, effective January 2026. Key changes include raised personal and dependent deduction thresholds, clearer rules for remote/digital income, and high-tech sector incentives. Our Tax Guide covers the full details.'
+      },
+      {
+        q: 'Do US citizens still need to file US taxes while living in Vietnam?',
+        a: 'Yes. US citizens must file a US federal tax return regardless of where they live, if income exceeds the filing threshold. However, the Foreign Earned Income Exclusion (FEIE) and Foreign Tax Credit can significantly reduce or eliminate double taxation. Americans in Vietnam should work with a US expat tax specialist in addition to managing Vietnamese PIT obligations.'
+      },
+      {
+        q: 'Can I open a Vietnamese bank account as a foreigner?',
+        a: 'Yes, but requirements vary by bank and visa type. The easiest route is with a TRC or work permit. Some banks (particularly VPBank) are more foreigner-friendly and may open accounts for those with long-stay visas. Digital alternatives like Wise and Revolut work well for expats who cannot yet open a local account.'
+      },
+      {
+        q: 'What is the best way to send money home from Vietnam?',
+        a: 'Wise (formerly TransferWise) is the most popular choice among expats - transparent fees, good exchange rates, and VND is supported. Bank wires work for larger formal transfers but cost $20-50 flat fee. Transfers out of Vietnam for employment income are straightforward when supported by tax receipts.'
+      }
+    ]
+  },
+  {
+    category: 'Healthcare and Insurance',
+    questions: [
+      {
+        q: 'Do I need health insurance in Vietnam?',
+        a: 'It is strongly recommended, though not legally mandatory for foreigners on most visa types. Without insurance, a serious illness or hospital stay can cost $5,000-50,000+. A regional health insurance plan starts from around $600-1,200/year and covers private international hospitals. Do not arrive in Vietnam without at least basic cover.'
+      },
+      {
+        q: 'What is the difference between a regional and international health insurance plan?',
+        a: 'Regional plans (approximately $600-1,200/year) cover treatment within Asia-Pacific - excellent value for expats who plan to stay in the region. International plans ($1,500-3,500+/year) provide worldwide coverage including the USA, UK, and EU - better for those who travel widely or want home-country treatment access. Both cover international hospitals in Vietnam.'
+      },
+      {
+        q: 'Are there good hospitals in Vietnam for foreigners?',
+        a: 'Yes, especially in Ho Chi Minh City and Hanoi. FV Hospital (HCMC), Family Medical Practice (HCMC and Hanoi), Hanoi French Hospital, and VINMEC are all internationally recognised with English-speaking staff. Da Nang has more limited international hospital access - an important consideration when choosing a city.'
+      },
+      {
+        q: 'Is dental care good in Vietnam?',
+        a: "Vietnam's dental care is genuinely one of the benefits of living here. Quality at established clinics is high and prices are a fraction of Western costs - a dental implant that costs $3,000-6,000 at home runs $600-1,200 in Vietnam. Many expats deliberately delay dental work at home to have it done in HCMC or Hanoi."
+      },
+      {
+        q: 'Can I get mental health support as an expat in Vietnam?',
+        a: 'Yes, though options are more limited than in Western countries. English-speaking counselors exist in HCMC - expat Facebook groups are the best source of recommendations. Online therapy platforms (BetterHelp, Talkspace) work well with Vietnam\'s fast internet. Most international insurance plans now include some mental health coverage.'
+      }
+    ]
+  },
+  {
+    category: 'Housing and Property',
+    questions: [
+      {
+        q: 'Can foreigners buy property in Vietnam?',
+        a: 'Yes, under a 50-year renewable leasehold. Foreigners can purchase apartments and houses in approved commercial residential developments, subject to a 30% foreign ownership cap per building. The underlying land is not owned - you hold a land use right documented in a Pink Book certificate. Full freehold ownership is not available in Vietnam for anyone, Vietnamese or foreign.'
+      },
+      {
+        q: 'What is the 30% foreign quota rule?',
+        a: 'Foreign nationals collectively cannot own more than 30% of total units in any single apartment building. In popular expat areas, this quota can fill quickly. Always verify the remaining foreign quota availability before signing any purchase agreement - this is a critical due diligence step.'
+      },
+      {
+        q: 'What is a Pink Book?',
+        a: "The Pink Book (Sổ Hồng) is Vietnam's land use rights certificate - the closest equivalent to a property title deed. For foreigners, it documents your 50-year leasehold on a residential property. Getting the Pink Book properly registered in your name is the critical final step of any property purchase. Our Property Registration service handles this process."
+      },
+      {
+        q: 'What is a typical lease agreement like for renting?',
+        a: "Most expat apartments are leased furnished on 6 or 12-month terms, priced in USD. A standard lease covers rent amount, security deposit (typically 1-2 months), utilities terms, notice period, and early termination clause. Vietnam has weak tenant protection laws, so carefully reviewing the lease before signing is important. The Vietnamese text is legally binding - have it reviewed by a trusted Vietnamese speaker if it is Vietnamese-only."
+      },
+      {
+        q: 'What is the best neighborhood for expats in Ho Chi Minh City?',
+        a: 'Thao Dien (formerly District 2) is the most established expat family neighborhood - green, community-oriented, close to international schools, and with excellent cafes and restaurants. District 1 is most convenient for short stays. Binh Thanh is more local and affordable, popular with younger expats and digital nomads. District 7/Phu My Hung suits those working in the south and appeals to Korean and Japanese expats.'
+      }
+    ]
   }
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqCategories.flatMap((cat) =>
+    cat.questions.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    }))
+  ),
+};
+
 export default function FAQPage() {
   return (
-    <main className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -132,7 +227,7 @@ export default function FAQPage() {
             </span>
           </h1>
           <p className="hero-subtitle text-xl md:text-2xl text-white/60 max-w-3xl mx-auto">
-            Everything you need to know about our Vietnam immigration services
+            Answers to the questions expats ask most - visas, taxes, healthcare, housing, and everyday life in Vietnam
           </p>
         </div>
       </section>
@@ -214,6 +309,7 @@ export default function FAQPage() {
       </section>
 
       <Footer />
-    </main>
+      </main>
+    </>
   );
 }

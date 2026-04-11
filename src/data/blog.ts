@@ -503,6 +503,157 @@ Ready to start your teaching journey in Vietnam? [Contact Vietnam Launchpad](/co
 
 *Last updated: January 2026. Visa and work permit regulations can change. Always verify current requirements with official sources or professional consultants.*
     `
+  },
+
+  'vietnam-pit-law-2026-changes': {
+    slug: 'vietnam-pit-law-2026-changes',
+    title: "Vietnam's New PIT Law 2026: What Changed and What It Means for Expats",
+    excerpt: "Law No. 109/2025/QH15 brought the biggest personal income tax reforms in Vietnam since 2012. Here is what actually changed, what stayed the same, and what expats need to do now.",
+    author: 'Vietnam Launchpad Team',
+    date: '2026-01-08',
+    readTime: '7 min read',
+    category: 'Finance & Tax',
+    content: `
+# Vietnam's New PIT Law 2026: What Changed and What It Means for Expats
+
+Vietnam's personal income tax rules changed significantly at the start of 2026. **Law No. 109/2025/QH15**, passed in late 2025, introduced the country's most substantial PIT reforms since 2012. If you are living and working in Vietnam, here is what you need to know.
+
+## The Core Change: Raised Deduction Thresholds
+
+The most significant practical change for most expats is an **increase in personal and dependent deduction amounts**. These deductions reduce your taxable income before progressive rates are applied.
+
+The previous personal deduction amount had not been updated since 2013, despite significant inflation and wage growth in Vietnam during that period. The 2026 reform acknowledges this gap.
+
+**What this means in practice:** For expats earning in the mid-to-upper income range, the raised deductions will result in lower effective tax rates compared to 2025, even if gross income stays the same. The benefit is most pronounced for middle-income earners.
+
+Exact deduction amounts will be confirmed in implementing decrees expected in mid-2026.
+
+## New Rules for Remote and Digital Income
+
+The 2026 law introduces **clearer language on income sourcing for remote workers** - an area that was previously ambiguous. Key clarifications:
+
+- Income is generally considered Vietnam-sourced if the work is physically performed from Vietnam, regardless of where the employer is located
+- Income for work performed outside Vietnam (even if paid by a Vietnamese entity) is generally foreign-sourced
+- The Ministry of Finance is expected to issue additional guidance specifically on remote worker taxation in 2026
+
+**The 183-day rule is unchanged.** Spend 183+ days in Vietnam in a calendar year and you are a tax resident subject to progressive rates on worldwide income.
+
+## High-Tech and Innovation Sector Incentives
+
+A new category of **preferential tax treatment** has been introduced for qualifying professionals working in high-technology sectors, digital businesses, and innovation. The specific qualifying criteria are to be defined by implementing decree.
+
+If you work in technology, software development, or research and development, monitor this development - it could meaningfully reduce your effective tax rate.
+
+## What Did NOT Change
+
+- **The 183-day tax residency threshold** - unchanged
+- **The progressive bracket structure** - still 5% to 35%
+- **Non-resident flat rate** - still 20% on Vietnam-sourced income
+- **The basic mechanics** of how employment income is taxed - employer withholds monthly, annual reconciliation by April 30
+
+## What Expats Should Do Now
+
+1. **If you have a Vietnamese tax code and file annually:** Your employer should be applying updated deduction amounts from January 2026. Check with your HR/payroll department that they have updated their calculations.
+
+2. **If you self-assess (remote workers, self-employed):** Review your estimated liability for 2026 under the new deduction amounts. Consider whether your current setup remains optimal.
+
+3. **If you are on the 183-day borderline:** The rules governing residency are unchanged. Keep tracking your days carefully.
+
+4. **If you are a US citizen:** The 2026 PIT changes affect your Vietnamese obligations but your US filing requirements are unchanged. FEIE, FTC, FBAR, and FATCA all continue to apply.
+
+## Get Specific Advice
+
+Tax reform creates both risks and opportunities. The specifics of how the 2026 changes apply to your situation depend on your employment structure, income sources, residency status, and home country tax treaty.
+
+Our consultants can walk through your specific situation and help you understand what the 2026 changes mean for you.
+
+[Book a tax consultation](/contact) or see our comprehensive [Vietnam Tax Guide for Expats](/guides/taxes).
+
+---
+
+*Published January 2026. Implementing decrees for Law 109/2025 are expected mid-2026 and may clarify details noted above as pending.*
+    `
+  },
+
+  'vietnam-golden-visa-2026-update': {
+    slug: 'vietnam-golden-visa-2026-update',
+    title: "Vietnam Golden Visa 2026: What We Know (And What We Don't)",
+    excerpt: "Vietnam's proposed Golden Visa has been discussed since 2025. As of April 2026, there is still no legislation and no application process. Here is the current status and what long-term expats should do instead.",
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-01',
+    readTime: '5 min read',
+    category: 'Visas & Immigration',
+    content: `
+# Vietnam Golden Visa 2026: What We Know (And What We Don't)
+
+The Vietnam Golden Visa has been circulating in expat discussions for over a year. As of April 2026, the honest answer is: **it does not yet exist as an official, accessible programme**.
+
+Here is the full picture.
+
+## What Was Proposed
+
+In **April 2025**, Vietnam's Tourism Advisory Board formally recommended introducing a Golden Visa programme, specifically to attract high-earning remote workers, long-term tourists, and investors who would otherwise choose Thailand, Malaysia, or the Philippines for their extended stays.
+
+The proposal described a potential long-stay visa (reportedly 5-10 years) for people who could demonstrate financial means, clean legal record, and in some versions, a minimum investment threshold.
+
+## What Happened After the Proposal
+
+As of April 2026:
+
+- **No legislation has been passed**
+- **No application process exists**
+- **No official government announcement** has confirmed timelines, requirements, or qualifying criteria
+- The proposal is still in discussion-and-consultation phase within government
+
+Vietnam's legislative process moves carefully and sometimes slowly. Immigration reform requires coordination across multiple ministries. A gap of 12+ months between proposal and any practical implementation is normal.
+
+## What Does Exist: The SVEC
+
+While the Golden Visa proposal stalled, Vietnam did introduce a meaningful alternative: the **Special Visa Exemption Card (SVEC)**, created by Decree No. 221/2025/ND-CP in August 2025.
+
+Key details:
+- **5-year validity**
+- **Multiple entry**
+- **Up to 90 days per stay**
+- Reduces the administrative burden of repeated visa applications for qualifying nationals
+
+The SVEC is not a residency option - you still cannot stay more than 90 consecutive days and the 183-day tax residency threshold still applies. But for frequent Vietnam visitors from eligible nationalities, it is a genuine improvement.
+
+## What Long-Term Expats Should Do Right Now
+
+Do not wait for the Golden Visa. For anyone wanting genuine long-term residency in Vietnam in 2026, the reliable options are:
+
+**Option 1: Investment TRC**
+Invest in a Vietnamese company or approved vehicle to obtain an Investment Visa leading to TRC (1-5 years depending on investment level). The most secure and flexible long-term option for those with capital.
+
+**Option 2: Work Permit + TRC**
+Get employed by a Vietnamese entity, obtain a work permit, then apply for TRC. Standard route for employed expats.
+
+**Option 3: Marriage TRC**
+If married to a Vietnamese citizen, apply for TRC through your marriage. Valid up to 3 years.
+
+**Option 4: E-Visa Cycle**
+For those comfortable with quarterly exits, rolling 90-day e-visas remain the simplest approach for shorter-term or nomadic stays.
+
+## When the Golden Visa Might Happen
+
+Realistically, for any Golden Visa programme to be operational:
+- Legislation would need to pass (National Assembly sessions are in May/June and October/November)
+- Implementing regulations would follow (typically 6-12 months after legislation)
+- Application systems would need to be built
+
+A best-case scenario for an accessible Golden Visa programme is late 2026 to 2027. We will update this post when there is meaningful progress.
+
+## Our Recommendation
+
+Do not put your Vietnam plans on hold waiting for a visa that may or may not arrive on the timeline you need. The existing pathways - particularly the investment TRC route - offer genuine stability and are available now.
+
+[Talk to our team](/contact) about which long-term option fits your situation, or read our [full Retirement in Vietnam guide](/guides/retirement) and [TRC Application service page](/services/trc) for detailed information.
+
+---
+
+*Last updated: April 2026. We monitor Vietnamese immigration developments closely and update our content when meaningful changes occur.*
+    `
   }
 };
 

@@ -2,43 +2,42 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import BlogPostContent from '@/components/BlogPostContent';
-import { getBlogPostBySlug, getAllBlogSlugs } from '@/data/blog';
+import GuideContent from '@/components/GuideContent';
+import { getGuideBySlug, getAllGuideSlugs } from '@/data/guides';
 
 export async function generateStaticParams() {
-  const slugs = getAllBlogSlugs();
+  const slugs = getAllGuideSlugs();
   return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const guide = getGuideBySlug(slug);
 
-  if (!post) {
-    return {
-      title: 'Post Not Found',
-    };
+  if (!guide) {
+    return { title: 'Guide Not Found' };
   }
 
   return {
-    title: post.title,
-    description: post.excerpt,
-    keywords: [post.category, 'Vietnam', 'expat', 'guide'],
+    title: `${guide.title} | Vietnam Launchpad`,
+    description: guide.excerpt,
+    keywords: [guide.category, 'Vietnam', 'expat', 'guide', 'living in Vietnam'],
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: guide.title,
+      description: guide.excerpt,
       type: 'article',
-      publishedTime: post.date,
-      authors: [post.author],
+      publishedTime: guide.date,
+      modifiedTime: guide.lastUpdated,
+      authors: [guide.author],
     },
   };
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const guide = getGuideBySlug(slug);
 
-  if (!post) {
+  if (!guide) {
     notFound();
   }
 
@@ -47,16 +46,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: post.title,
-    description: post.excerpt,
-    url: `${baseUrl}/blog/${post.slug}`,
+    headline: guide.title,
+    description: guide.excerpt,
+    url: `${baseUrl}/guides/${guide.slug}`,
     inLanguage: 'en',
     author: {
       '@type': 'Organization',
-      name: post.author,
+      name: 'Vietnam Launchpad',
       url: baseUrl,
     },
-    datePublished: post.date,
     publisher: {
       '@type': 'Organization',
       name: 'Vietnam Launchpad',
@@ -66,10 +64,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         url: `${baseUrl}/vietnam-launchpad-logo.png`,
       },
     },
-    keywords: `${post.category}, Vietnam expat, ${post.title}`,
+    datePublished: guide.date,
+    dateModified: guide.lastUpdated,
+    about: {
+      '@type': 'Thing',
+      name: guide.category,
+    },
+    keywords: `${guide.title}, ${guide.category}, Vietnam expat, living in Vietnam 2026`,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${baseUrl}/blog/${post.slug}`,
+      '@id': `${baseUrl}/guides/${guide.slug}`,
     },
   };
 
@@ -77,9 +81,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${baseUrl}/blog` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `${baseUrl}/blog/${post.slug}` },
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: baseUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Guides',
+        item: `${baseUrl}/guides`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: guide.title,
+        item: `${baseUrl}/guides/${guide.slug}`,
+      },
     ],
   };
 
@@ -93,10 +112,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-
       <main className="min-h-screen">
         <Navigation />
-        <BlogPostContent post={post} />
+        <GuideContent guide={guide} />
         <Footer />
       </main>
     </>
