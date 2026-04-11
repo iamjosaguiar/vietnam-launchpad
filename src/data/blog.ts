@@ -656,6 +656,126 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
     `
   },
 
+  'vneid-vietnam-digital-id-foreigners': {
+    slug: 'vneid-vietnam-digital-id-foreigners',
+    title: 'VNeID: Vietnam\'s Digital ID App — What Foreigners Need to Know',
+    excerpt: 'Vietnam is replacing physical ID cards with the VNeID digital identity app. Foreign nationals with a TRC can now register too. Here is what VNeID is, what it is accepted for, and how to get it set up.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-11',
+    readTime: '5 min read',
+    category: 'Living in Vietnam',
+    content: `
+# VNeID: Vietnam's Digital ID App — What Foreigners Need to Know
+
+Vietnam has been rolling out a national digital identity system at speed. The **VNeID app** (Vietnam Electronic Identification) is the centrepiece — a government-issued mobile app that stores a verified digital version of your identity documents. For Vietnamese citizens, it replaces the need to carry a physical CCCD card for most daily interactions. For foreign nationals with a TRC, it can do the same for your residency card.
+
+## What VNeID Actually Is
+
+VNeID is an official app developed and managed by the **Ministry of Public Security (Bộ Công an)**. It is not a third-party wallet or convenience app — it is a government-issued identity credential that is legally equivalent to presenting the physical document in most contexts.
+
+When you open VNeID, it displays:
+- Your photo
+- Your ID number (CCCD number for Vietnamese citizens, TRC number for foreign nationals)
+- Your full name, date of birth, and nationality
+- Document validity dates
+- A real-time QR code that authorities and institutions can scan to verify your identity directly against the Ministry of Public Security database
+
+The QR code refreshes regularly and cannot be screenshotted to impersonate — making it more secure than a physical card in some respects.
+
+## Can Foreigners Use VNeID?
+
+**Yes — foreign nationals holding a valid TRC can register for VNeID.**
+
+This was formalised under Circular 17/2024/TT-BCA from the Ministry of Public Security, which extended the VNeID registration framework to foreign nationals with long-term residency in Vietnam. The rollout to foreigners accelerated through 2025 and is now operational across all provinces.
+
+Foreign nationals on shorter-stay visas (tourist, business, e-visa) cannot register for VNeID. You need a valid TRC.
+
+## What VNeID Is Accepted For
+
+Once registered, your VNeID can be used in place of your physical TRC for:
+
+**Government services:**
+- Police registration (tạm trú, tạm vắng) checks
+- Administrative procedures at People's Committees
+- Court and notary identification requirements
+- Tax authority identification
+
+**Daily life:**
+- Hotel and guesthouse check-in (hotels are required to accept VNeID)
+- Domestic airport check-in — Vietnam Airlines, VietJet, Bamboo, and Pacific Airlines all accept VNeID boarding
+- SIM card registration and replacement
+- Some hospital and clinic admissions
+
+**Financial services:**
+- Bank account verification and KYC at major Vietnamese banks (Vietcombank, BIDV, Techcombank, and others have integrated VNeID scanning)
+- Some insurance providers
+- Property transaction identification (increasingly accepted, though some notaries still require physical documents — confirm case by case)
+
+**Important limitation:** VNeID does not replace your passport for international border crossings or for transactions that specifically require your passport (such as certain visa-related processes or consular services).
+
+## How to Register for VNeID as a Foreign National
+
+Registration requires an in-person visit — you cannot complete it remotely.
+
+**Step 1: Download the VNeID app**
+Available on the App Store (iOS) and Google Play (Android). Search "VNeID" — the official app is published by Cục Cảnh sát quản lý hành chính về trật tự xã hội (C06), Ministry of Public Security.
+
+**Step 2: Visit your local police station**
+Go to the **ward or district police station (Công an phường/quận)** where you are registered as residing (tạm trú). Bring:
+- Your original TRC card
+- Your passport
+- Your phone with VNeID installed
+
+**Step 3: Biometric verification**
+An officer will verify your identity, scan your TRC and passport, capture a live facial scan linked to your TRC number, and complete the registration on their system.
+
+**Step 4: Activate your account**
+You will receive an SMS or in-app notification to activate your account. The process typically takes 1–3 working days after the in-person visit before your digital ID is active in the app.
+
+**Cost:** Free. No government fee for VNeID registration.
+
+## VNeID Levels: Level 1 vs Level 2
+
+VNeID has two verification levels, and this matters:
+
+| Level | What it means | What it unlocks |
+|---|---|---|
+| **Level 1** | Basic identity verified against national database | Most daily-use functions — hotels, transport, basic banking |
+| **Level 2** | Full biometric verification with live facial scan linked to chip-based ID | Higher-trust transactions — financial services, notary, government applications |
+
+Foreign nationals registering at a police station are typically issued Level 2 VNeID if their TRC contains a chip (all TRCs issued after 2023 are chip-based). Older TRC holders may be issued Level 1 initially and can upgrade when renewing their TRC.
+
+## The Broader Picture: Vietnam's Digital ID Transition
+
+VNeID is part of Vietnam's **National Digital Transformation Programme**, which has set a target of eliminating paper-based processes for most government services by 2026. Alongside VNeID, the government has deployed:
+
+- **VssID** — digital social insurance book
+- **VHI** — digital health insurance card
+- **The national population database** — which VNeID draws identity data from in real time
+
+The practical consequence for expats: government offices and banks increasingly expect digital verification. Having VNeID set up means fewer trips to bring physical documents and faster processing at most counters.
+
+## What VNeID Does Not Replace
+
+A few situations still require your physical documents or passport:
+- International travel and border crossings
+- Initial TRC applications and renewals (the physical TRC must still be issued)
+- Certain notary transactions where some offices have not yet updated their systems
+- Consular and embassy transactions
+- Employment contracts requiring physical passport copy
+
+## Already Have a TRC? Set It Up Now
+
+If you have a valid TRC, there is no good reason to delay VNeID registration. The in-person registration takes under 30 minutes, and the payoff — not needing to carry your physical TRC for most daily interactions — is immediate.
+
+If you are in the process of getting your TRC, add VNeID registration to your to-do list for the week you receive your card.
+
+---
+
+*Published April 2026. VNeID functionality and acceptance continues to expand. Confirm with specific institutions whether they accept VNeID for your particular transaction.*
+    `,
+  },
+
   'can-you-work-on-marriage-trc-vietnam': {
     slug: 'can-you-work-on-marriage-trc-vietnam',
     title: 'Can You Work on a Marriage TRC in Vietnam? Work Permits Explained',
