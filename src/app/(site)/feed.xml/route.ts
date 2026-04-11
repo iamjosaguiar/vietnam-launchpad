@@ -1,7 +1,7 @@
 import { getAllBlogPosts } from '@/data/blog';
 
 export async function GET() {
-  const baseUrl = 'https://vietnamlaunchpad.com';
+  const baseUrl = 'https://www.vietnamlaunchpad.com';
   const posts = getAllBlogPosts();
 
   const items = posts

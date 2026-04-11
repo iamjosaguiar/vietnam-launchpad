@@ -3,7 +3,7 @@ import { getAllGuideSlugs } from '@/data/guides';
 import { getAllBlogSlugs } from '@/data/blog';
 import { getAllServiceSlugs } from '@/data/services';
 
-const baseUrl = 'https://vietnamlaunchpad.com';
+const baseUrl = 'https://www.vietnamlaunchpad.com';
 
 // Add a new entry here whenever a new programmatic content type is created.
 // Each ID becomes a separate sub-sitemap: /sitemap/0, /sitemap/1, etc.

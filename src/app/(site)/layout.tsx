@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    metadataBase: new URL('https://vietnamlaunchpad.com'),
+    metadataBase: new URL('https://www.vietnamlaunchpad.com'),
     title: {
       default: t('title'),
       template: `%s | ${t('siteName')}`
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     openGraph: {
       type: 'website',
       locale: locale === 'en' ? 'en_US' : locale === 'vi' ? 'vi_VN' : locale === 'zh' ? 'zh_CN' : 'ko_KR',
-      url: `https://vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
+      url: `https://www.vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
       title: t('ogTitle'),
       description: t('ogDescription'),
       siteName: 'Vietnam Launchpad',
@@ -73,15 +73,15 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       }
     },
     alternates: {
-      canonical: `https://vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
+      canonical: `https://www.vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
       languages: {
-        en: 'https://vietnamlaunchpad.com',
-        vi: 'https://vietnamlaunchpad.com/vi',
-        zh: 'https://vietnamlaunchpad.com/zh',
-        ko: 'https://vietnamlaunchpad.com/ko'
+        en: 'https://www.vietnamlaunchpad.com',
+        vi: 'https://www.vietnamlaunchpad.com/vi',
+        zh: 'https://www.vietnamlaunchpad.com/zh',
+        ko: 'https://www.vietnamlaunchpad.com/ko'
       },
       types: {
-        'application/rss+xml': 'https://vietnamlaunchpad.com/feed.xml',
+        'application/rss+xml': 'https://www.vietnamlaunchpad.com/feed.xml',
       },
     }
   };
@@ -91,8 +91,8 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
   const { locale = routing.defaultLocale } = await params;
   const messages = await getMessages({ locale });
 
-  const logoUrl = 'https://vietnamlaunchpad.com/vietnam-launchpad-logo.png';
-  const baseUrl = 'https://vietnamlaunchpad.com';
+  const logoUrl = 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png';
+  const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   const websiteLd = {
     '@context': 'https://schema.org',

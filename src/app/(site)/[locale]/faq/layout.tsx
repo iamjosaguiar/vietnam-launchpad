@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://vietnamlaunchpad.com/faq',
+    canonical: 'https://www.vietnamlaunchpad.com/faq',
   },
 };
 

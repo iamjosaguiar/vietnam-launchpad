@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
-  const baseUrl = 'https://vietnamlaunchpad.com';
+  const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
     title: service.title,
@@ -45,7 +45,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  const baseUrl = 'https://vietnamlaunchpad.com';
+  const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   const serviceSchema = {
     '@context': 'https://schema.org',

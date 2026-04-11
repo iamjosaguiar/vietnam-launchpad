@@ -17,8 +17,8 @@ const nextConfig = {
     return [
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'www.vietnamlaunchpad.com' }],
-        destination: 'https://vietnamlaunchpad.com/:path*',
+        has: [{ type: 'host', value: 'vietnamlaunchpad.com' }],
+        destination: 'https://www.vietnamlaunchpad.com/:path*',
         permanent: true,
       },
     ];

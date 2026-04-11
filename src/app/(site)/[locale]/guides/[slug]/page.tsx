@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: 'Guide Not Found' };
   }
 
-  const baseUrl = 'https://vietnamlaunchpad.com';
+  const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
     title: `${guide.title} | Vietnam Launchpad`,
@@ -46,7 +46,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     notFound();
   }
 
-  const baseUrl = 'https://vietnamlaunchpad.com';
+  const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   const articleSchema = {
     '@context': 'https://schema.org',
