@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Red launch arc: concave bowl from left to right -->
+  <path d="M 8 34 A 30 30 0 0 1 56 34"
+        stroke="#D91F26" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Red 5-pointed star at left tip of arc -->
+  <polygon points="8,29 9.18,32.38 12.76,32.45 9.90,34.62 10.94,38.05 8,36 5.06,38.05 6.10,34.62 3.24,32.45 6.82,32.38"
+           fill="#D91F26"/>
+
+  <!-- Navy rocket, pointing upper-left (-30° from vertical) -->
+  <g transform="translate(38,17) rotate(-30)">
+    <!-- Nose cone -->
+    <polygon points="0,-17 -5.5,-7 5.5,-7" fill="#1A3865"/>
+    <!-- Body -->
+    <rect x="-5.5" y="-7" width="11" height="16" rx="2" fill="#1A3865"/>
+    <!-- Left fin -->
+    <polygon points="-5.5,7 -11,15 -4,10" fill="#1A3865"/>
+    <!-- Right fin -->
+    <polygon points="5.5,7 11,15 4,10" fill="#1A3865"/>
+  </g>
+</svg>

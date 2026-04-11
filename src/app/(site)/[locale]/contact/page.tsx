@@ -309,7 +309,7 @@ export default function ContactPage() {
                       </svg>
                     ),
                     title: 'Phone/WhatsApp',
-                    lines: ['+84 (0)28 1234 5678', 'Business hours: 9 AM - 6 PM (ICT)']
+                    lines: ['+84 76 580 5294', 'Business hours: 9 AM - 6 PM (ICT)']
                   },
                   {
                     icon: (

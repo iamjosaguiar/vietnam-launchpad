@@ -22,7 +22,7 @@ export default function MobileStickyBar() {
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t-2 border-primary-600 shadow-lg p-4 z-50 md:hidden">
       <div className="flex gap-2">
         <a
-          href="tel:+84281234567 8"
+          href="tel:+84765805294"
           className="flex-1 bg-green-500 text-white px-4 py-3 rounded-lg font-semibold text-center hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -31,7 +31,7 @@ export default function MobileStickyBar() {
           Call
         </a>
         <a
-          href="https://wa.me/84281234567"
+          href="https://wa.me/84765805294"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 bg-green-600 text-white px-4 py-3 rounded-lg font-semibold text-center hover:bg-green-700 transition-colors flex items-center justify-center gap-2"

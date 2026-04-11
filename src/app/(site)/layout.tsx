@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     creator: 'Vietnam Launchpad',
     publisher: 'Vietnam Launchpad',
     icons: {
-      icon: '/vietnam launchpad logo.png',
-      shortcut: '/vietnam launchpad logo.png',
-      apple: '/vietnam launchpad logo.png',
+      icon: '/icon.svg',
+      shortcut: '/icon.svg',
+      apple: '/icon.svg',
     },
     formatDetection: {
       email: false,
@@ -97,7 +97,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     logo: 'https://vietnamlaunchpad.com/vietnam launchpad logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+84-28-1234-5678',
+      telephone: '+84 76 580 5294',
       contactType: 'Customer Service',
       areaServed: 'VN',
       availableLanguage: ['English', 'Vietnamese', 'Chinese', 'Korean']
@@ -133,7 +133,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
       latitude: 21.0285,
       longitude: 105.8542
     },
-    telephone: '+84-28-1234-5678',
+    telephone: '+84 76 580 5294',
     email: 'jos@iamjosaguiar.com',
     priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00',

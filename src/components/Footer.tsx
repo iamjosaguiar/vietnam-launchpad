@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Main Footer Content - 4 Columns */}
         <div className="py-16 md:py-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
             {/* Column 1: Brand */}
             <div>
               <div className="mb-6">
@@ -77,7 +77,34 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Column 3: Company */}
+            {/* Column 3: Guides */}
+            <div>
+              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
+                Guides
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { name: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
+                  { name: 'Company Setup', href: '/guides/company-setup-vietnam' },
+                  { name: 'Teaching English', href: '/guides/teaching-english-vietnam' },
+                  { name: 'Cost of Living', href: '/guides/cost-of-living' },
+                  { name: 'City Guides', href: '/guides' },
+                  { name: 'All Guides', href: '/guides' }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+                      onClick={scrollToTop}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 4: Company */}
             <div>
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
                 Company
