@@ -21,6 +21,11 @@ const nextConfig = {
         destination: 'https://www.vietnamlaunchpad.com/:path*',
         permanent: true,
       },
+      {
+        source: '/blog/vneid-vietnam-digital-id-foreigners',
+        destination: '/guides/vneid-vietnam-digital-id-foreigners',
+        permanent: true,
+      },
     ];
   },
 }

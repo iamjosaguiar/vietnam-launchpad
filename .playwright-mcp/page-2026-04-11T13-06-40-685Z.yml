@@ -1,0 +1,218 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - button "Main menu" [ref=e839] [cursor=pointer]:
+            - img [ref=e8]
+          - link "Google Search Console" [ref=e840] [cursor=pointer]:
+            - /url: ./search-console?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+            - img [ref=e13]
+        - generic [ref=e14]:
+          - search [ref=e16]:
+            - generic [ref=e22]:
+              - textbox [disabled] [ref=e23]: Inspect any URL in "https://www.vietnamlaunchpad.com/"
+              - combobox "Inspect any URL in https://www.vietnamlaunchpad.com/" [ref=e841]
+            - button "Search" [ref=e842] [cursor=pointer]:
+              - img [ref=e26]
+          - generic [ref=e29]:
+            - generic [ref=e31]:
+              - button "Help" [ref=e843] [cursor=pointer]:
+                - generic [ref=e36]: 
+              - button "User settings" [ref=e844] [cursor=pointer]:
+                - img [ref=e41]
+            - 'button "Unread messages: 6" [ref=e845] [cursor=pointer]':
+              - generic [ref=e47]:
+                - generic [ref=e48]: 
+                - generic [ref=e610]: "6"
+        - generic [ref=e50]:
+          - button "Google apps" [ref=e846] [cursor=pointer]:
+            - img [ref=e55]
+          - 'button "Google Account: Jos Aguiar (jos@iamjosaguiar.com)" [ref=e847] [cursor=pointer]':
+            - img [ref=e62]
+    - dialog "navigational drawer" [ref=e848]:
+      - navigation "Primary" [ref=e849]:
+        - button "Search property" [ref=e850] [cursor=pointer]:
+          - img [ref=e75]
+          - combobox "https://www.vietnamlaunchpad.com/" [ref=e851]
+          - generic [ref=e83]: 
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - link "Overview" [ref=e852] [cursor=pointer]:
+                - /url: ./search-console?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e90]: home
+                - generic [ref=e92]: Overview
+              - link "Insights" [ref=e853] [cursor=pointer]:
+                - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e97]: lightbulb_2
+                - generic [ref=e99]: Insights
+              - link "Performance" [ref=e854] [cursor=pointer]:
+                - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e104]: trending_up
+                - generic [ref=e106]: Performance
+              - button "URL inspection" [ref=e855] [cursor=pointer]:
+                - generic [ref=e111]: search
+                - generic [ref=e113]: URL inspection
+            - generic [ref=e117]:
+              - button "Indexing report section" [expanded] [ref=e856] [cursor=pointer]:
+                - generic [ref=e119]:
+                  - generic [ref=e122]: Indexing
+                  - img [ref=e126]
+              - generic [ref=e131]:
+                - link "Pages" [ref=e857] [cursor=pointer]:
+                  - /url: ./search-console/index?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e135]: file_copy
+                  - generic [ref=e137]: Pages
+                - link "Sitemaps" [ref=e858] [cursor=pointer]:
+                  - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e142]: account_tree
+                  - generic [ref=e144]: Sitemaps
+                - link "Removals" [ref=e859] [cursor=pointer]:
+                  - /url: ./search-console/removals?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e149]: visibility_off
+                  - generic [ref=e151]: Removals
+            - generic [ref=e155]:
+              - button "Experience report section" [expanded] [ref=e860] [cursor=pointer]:
+                - generic [ref=e157]:
+                  - generic [ref=e160]: Experience
+                  - img [ref=e164]
+              - generic [ref=e169]:
+                - link "Core Web Vitals" [ref=e861] [cursor=pointer]:
+                  - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e173]: speed
+                  - generic [ref=e175]: Core Web Vitals
+                - link "HTTPS" [ref=e862] [cursor=pointer]:
+                  - /url: ./search-console/https?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e180]: lock
+                  - generic [ref=e182]: HTTPS
+            - generic [ref=e186]:
+              - button "Enhancements report section" [expanded] [ref=e863] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - generic [ref=e191]: Enhancements
+                  - img [ref=e195]
+              - generic [ref=e200]:
+                - link "FAQ" [ref=e864] [cursor=pointer]:
+                  - /url: ./search-console/r/faq?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e204]: layers
+                  - generic [ref=e206]: FAQ
+                - link "Review snippets" [ref=e865] [cursor=pointer]:
+                  - /url: ./search-console/r/review-snippet?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                  - generic [ref=e211]: layers
+                  - generic [ref=e213]: Review snippets
+            - button "Security & Manual Actions report section" [ref=e866] [cursor=pointer]:
+              - generic [ref=e219]:
+                - generic [ref=e222]: Security & Manual Actions
+                - img [ref=e226]
+            - generic [ref=e228]:
+              - link "Links report" [ref=e867] [cursor=pointer]:
+                - /url: ./search-console/links?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e232]: link_2
+                - generic [ref=e234]: Links
+              - link "Achievements" [ref=e868] [cursor=pointer]:
+                - /url: ./search-console/achievements?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e239]: trophy
+                - generic [ref=e241]: Achievements
+              - link "Settings" [ref=e869] [cursor=pointer]:
+                - /url: ./search-console/settings?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e246]: settings
+                - generic [ref=e248]: Settings
+          - generic [ref=e250]:
+            - generic [ref=e252]:
+              - button "Submit feedback" [ref=e870] [cursor=pointer]:
+                - generic [ref=e256]: feedback
+                - generic [ref=e258]: Submit feedback
+              - button "About Search Console" [ref=e871] [cursor=pointer]:
+                - generic [ref=e263]: info
+                - generic [ref=e265]: About Search Console
+            - generic [ref=e269]:
+              - link "Privacy" [ref=e872] [cursor=pointer]:
+                - /url: https://myaccount.google.com/privacypolicy?hl=en
+              - link "Terms" [ref=e873] [cursor=pointer]:
+                - /url: https://myaccount.google.com/termsofservice?hl=en
+    - generic [ref=e612]:
+      - generic [ref=e620]: https://www.vietnamlaunchpad.com/blog/vneid-vietnam-digital-id-foreigners
+      - generic [ref=e621]:
+        - generic [ref=e623]:
+          - navigation "Breadcrumbs" [ref=e874]:
+            - heading "URL Inspection" [level=1] [ref=e875]
+          - button "Test live URL" [ref=e876] [cursor=pointer]:
+            - generic [ref=e636]: Test live URL
+        - main [ref=e638]:
+          - generic [ref=e639]:
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - generic [ref=e643]: info
+                - generic [ref=e644]:
+                  - generic [ref=e645]: URL is not on Google
+                  - generic [ref=e646]:
+                    - text: This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed.
+                    - link "Learn more" [ref=e877] [cursor=pointer]:
+                      - /url: https://support.google.com/webmasters/answer/9012289#url_not_on_google
+              - generic [ref=e650]:
+                - button "View crawled page" [disabled] [ref=e878]:
+                  - generic [ref=e659]: View crawled page
+                - generic [ref=e660]:
+                  - generic [ref=e879]:
+                    - generic [ref=e880]: 
+                    - generic [ref=e881]: Indexing requested
+                  - button "Request indexingRequest again" [active] [ref=e882] [cursor=pointer]:
+                    - generic [ref=e883]: Request again
+            - generic [ref=e675]:
+              - 'button "Page indexing Page is not indexed: URL is unknown to Google" [expanded] [ref=e884] [cursor=pointer]':
+                - generic [ref=e677]:
+                  - generic [ref=e679]:
+                    - generic [ref=e681]: info
+                    - generic [ref=e682]:
+                      - generic [ref=e683]: Page indexing
+                      - generic [ref=e684]: "Page is not indexed: URL is unknown to Google"
+                  - generic [ref=e687]: 
+              - generic [ref=e691]:
+                - generic [ref=e692]:
+                  - generic [ref=e693]:
+                    - generic [ref=e694]: Discovery
+                    - generic [ref=e695]:
+                      - generic [ref=e696]: Sitemaps
+                      - generic [ref=e698]: No referring sitemaps detected
+                    - generic [ref=e699]:
+                      - generic [ref=e700]: Referring page
+                      - generic [ref=e702]: None detected
+                    - generic [ref=e704]: URL might be known from other sources that are currently not reported
+                  - generic [ref=e705]:
+                    - generic [ref=e706]: Crawl
+                    - generic [ref=e707]:
+                      - generic [ref=e708]: Last crawl
+                      - generic [ref=e710]: N/A
+                    - generic [ref=e711]:
+                      - generic [ref=e712]: Crawled as
+                      - generic [ref=e714]: N/A
+                    - generic [ref=e715]:
+                      - generic [ref=e716]: Crawl allowed?
+                      - generic [ref=e718]: N/A
+                    - generic [ref=e719]:
+                      - generic [ref=e720]: Page fetch
+                      - generic [ref=e722]: N/A
+                    - generic [ref=e723]:
+                      - generic [ref=e724]: Indexing allowed?
+                      - generic [ref=e726]: info
+                      - generic [ref=e728]: N/A
+                  - generic [ref=e729]:
+                    - generic [ref=e730]: Indexing
+                    - generic [ref=e731]:
+                      - generic [ref=e732]: User-declared canonical
+                      - generic [ref=e734]: N/A
+                    - generic [ref=e735]:
+                      - generic [ref=e737]:
+                        - generic [ref=e738]: Google-selected canonical
+                        - button "null" [ref=e885] [cursor=pointer]:
+                          - generic [ref=e742]: 
+                      - generic [ref=e744]: N/A
+                - link "Link to more extensive documentation" [ref=e886] [cursor=pointer]:
+                  - /url: https://support.google.com/webmasters/answer/9012289#url_unknown
+                  - generic [ref=e753]: Learn More
+            - generic [ref=e754]: Enhancements & Experience
+            - generic [ref=e758]: Only indexed URLs can have enhancements
+  - iframe [ref=e838]:
+    - generic [ref=f7e6]:
+      - text: protected by
+      - strong [ref=f7e7]: reCAPTCHA

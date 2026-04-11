@@ -1,0 +1,193 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Main menu" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "Google Search Console" [ref=e12] [cursor=pointer]:
+          - /url: ./search-console?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+          - img [ref=e13]
+      - generic [ref=e14]:
+        - search [ref=e16]:
+          - generic [ref=e22]:
+            - textbox [disabled] [ref=e23]: Inspect any URL in "https://www.vietnamlaunchpad.com/"
+            - combobox "Inspect any URL in https://www.vietnamlaunchpad.com/" [ref=e24]
+          - button "Search" [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - button "Help" [ref=e33] [cursor=pointer]:
+              - generic [ref=e36]: 
+            - button "User settings" [ref=e38] [cursor=pointer]:
+              - img [ref=e41]
+          - 'button "Unread messages: 6" [ref=e45] [cursor=pointer]':
+            - generic [ref=e47]:
+              - generic [ref=e48]: 
+              - generic [ref=e50]: "6"
+      - generic [ref=e52]:
+        - button "Google apps" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - 'button "Google Account: Jos Aguiar (jos@iamjosaguiar.com)" [ref=e62] [cursor=pointer]':
+          - img [ref=e64]
+  - dialog "navigational drawer" [ref=e68]:
+    - navigation "Primary" [ref=e71]:
+      - button "Search property" [ref=e75] [cursor=pointer]:
+        - img [ref=e77]
+        - combobox "https://www.vietnamlaunchpad.com/" [ref=e84]
+        - generic [ref=e85]: 
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - link "Overview" [ref=e90] [cursor=pointer]:
+              - /url: ./search-console?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e92]: home
+              - generic [ref=e94]: Overview
+            - link "Insights" [ref=e97] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e99]: lightbulb_2
+              - generic [ref=e101]: Insights
+            - link "Performance" [ref=e104] [cursor=pointer]:
+              - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e106]: trending_up
+              - generic [ref=e108]: Performance
+            - button "URL inspection" [ref=e111] [cursor=pointer]:
+              - generic [ref=e113]: search
+              - generic [ref=e115]: URL inspection
+          - generic [ref=e119]:
+            - button "Indexing report section" [expanded] [ref=e120] [cursor=pointer]:
+              - generic [ref=e121]:
+                - generic [ref=e124]: Indexing
+                - img [ref=e128]
+            - generic [ref=e133]:
+              - link "Pages" [ref=e135] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e137]: file_copy
+                - generic [ref=e139]: Pages
+              - link "Sitemaps" [ref=e142] [cursor=pointer]:
+                - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e144]: account_tree
+                - generic [ref=e146]: Sitemaps
+              - link "Removals" [ref=e149] [cursor=pointer]:
+                - /url: ./search-console/removals?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e151]: visibility_off
+                - generic [ref=e153]: Removals
+          - generic [ref=e157]:
+            - button "Experience report section" [expanded] [ref=e158] [cursor=pointer]:
+              - generic [ref=e159]:
+                - generic [ref=e162]: Experience
+                - img [ref=e166]
+            - generic [ref=e171]:
+              - link "Core Web Vitals" [ref=e173] [cursor=pointer]:
+                - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e175]: speed
+                - generic [ref=e177]: Core Web Vitals
+              - link "HTTPS" [ref=e180] [cursor=pointer]:
+                - /url: ./search-console/https?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e182]: lock
+                - generic [ref=e184]: HTTPS
+          - generic [ref=e188]:
+            - button "Enhancements report section" [expanded] [ref=e189] [cursor=pointer]:
+              - generic [ref=e190]:
+                - generic [ref=e193]: Enhancements
+                - img [ref=e197]
+            - generic [ref=e202]:
+              - link "FAQ" [ref=e204] [cursor=pointer]:
+                - /url: ./search-console/r/faq?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e206]: layers
+                - generic [ref=e208]: FAQ
+              - link "Review snippets" [ref=e211] [cursor=pointer]:
+                - /url: ./search-console/r/review-snippet?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e213]: layers
+                - generic [ref=e215]: Review snippets
+          - button "Security & Manual Actions report section" [ref=e220] [cursor=pointer]:
+            - generic [ref=e221]:
+              - generic [ref=e224]: Security & Manual Actions
+              - img [ref=e228]
+          - generic [ref=e230]:
+            - link "Links report" [ref=e232] [cursor=pointer]:
+              - /url: ./search-console/links?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e234]: link_2
+              - generic [ref=e236]: Links
+            - link "Achievements" [ref=e239] [cursor=pointer]:
+              - /url: ./search-console/achievements?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e241]: trophy
+              - generic [ref=e243]: Achievements
+            - link "Settings" [ref=e246] [cursor=pointer]:
+              - /url: ./search-console/settings?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e248]: settings
+              - generic [ref=e250]: Settings
+        - generic [ref=e252]:
+          - generic [ref=e254]:
+            - button "Submit feedback" [ref=e256] [cursor=pointer]:
+              - generic [ref=e258]: feedback
+              - generic [ref=e260]: Submit feedback
+            - button "About Search Console" [ref=e263] [cursor=pointer]:
+              - generic [ref=e265]: info
+              - generic [ref=e267]: About Search Console
+          - generic [ref=e271]:
+            - link "Privacy" [ref=e272] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=en
+            - link "Terms" [ref=e273] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=en
+  - generic [ref=e275]:
+    - navigation "Breadcrumbs" [ref=e280]:
+      - heading "Sitemaps" [level=1] [ref=e283]
+    - main [ref=e287]:
+      - generic [ref=e290]:
+        - generic [ref=e291]: Add a new sitemap
+        - generic [ref=e292]:
+          - generic [ref=e293]:
+            - generic [ref=e294]: https://www.vietnamlaunchpad.com/
+            - generic [ref=e299]:
+              - textbox "Enter sitemap URL" [active] [ref=e300]
+              - generic: Enter sitemap URL
+          - button "Submit" [disabled] [ref=e304]:
+            - generic [ref=e307]: Submit
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - heading "Submitted sitemaps" [level=1] [ref=e313]:
+            - generic [ref=e314]: Submitted sitemaps
+          - button "Filter table rows" [ref=e317] [cursor=pointer]:
+            - generic [ref=e320]: 
+        - table [ref=e322]:
+          - rowgroup [ref=e323]:
+            - row "Sitemap Type Submitted Last read Status Discovered pages Discovered videos" [ref=e324]:
+              - columnheader "Sitemap" [ref=e325]:
+                - text: Sitemap
+                - img [ref=e327] [cursor=pointer]
+              - columnheader "Type" [ref=e329]:
+                - text: Type
+                - img [ref=e331] [cursor=pointer]
+              - columnheader "Submitted" [ref=e333]:
+                - text: Submitted
+                - img [ref=e335] [cursor=pointer]
+              - columnheader "Last read" [ref=e337]:
+                - text: Last read
+                - img [ref=e339] [cursor=pointer]
+              - columnheader "Status" [ref=e341]:
+                - text: Status
+                - img [ref=e343] [cursor=pointer]
+              - columnheader "Discovered pages" [ref=e345]:
+                - img [ref=e347] [cursor=pointer]
+                - text: Discovered pages
+              - columnheader "Discovered videos" [ref=e349]:
+                - img [ref=e351] [cursor=pointer]
+                - text: Discovered videos
+              - columnheader [ref=e353]
+          - rowgroup
+        - generic [ref=e356]:
+          - generic [ref=e358]:
+            - generic [ref=e359]: "Rows per page:"
+            - listbox "Number of rows per page" [ref=e360] [cursor=pointer]:
+              - option "5"
+              - option "10" [selected] [ref=e361]
+              - option "25"
+              - option "50"
+              - option "100"
+              - option "250"
+              - option "500"
+          - generic [ref=e362]:
+            - generic [ref=e363]: 0-0 of 0
+            - generic [ref=e364]:
+              - generic [ref=e366]: 
+              - generic [ref=e368]: 

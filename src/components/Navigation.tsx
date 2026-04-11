@@ -81,6 +81,7 @@ const guideCategories = [
       { title: 'Driving & Car Rental', href: '/guides/driving-vietnam' },
       { title: 'Marriage Registration', href: '/guides/marriage-registration' },
       { title: 'Divorce in Vietnam', href: '/guides/divorce-vietnam' },
+      { title: 'VNeID for Foreigners', href: '/guides/vneid-vietnam-digital-id-foreigners' },
       { title: 'First Week in Vietnam', href: '/guides/first-week' },
     ],
   },

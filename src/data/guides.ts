@@ -4229,7 +4229,7 @@ Key rules for driving/riding in Vietnam:
     slug: 'divorce-vietnam',
     title: 'Divorce in Vietnam: Complete Guide for Foreigners (2026)',
     subtitle: 'Mutual vs one-sided divorce, court process, asset division, child custody, and what happens to your TRC',
-    excerpt: "Vietnam recognises two types of divorce: mutual (both parties agree) and one-sided (contested). This guide covers both processes in full — documents, courts, timelines, costs, and the immigration consequences for foreign nationals.",
+    excerpt: "Vietnam recognises two types of divorce: mutual (both parties agree) and one-sided (contested). This guide covers both processes in full - documents, courts, timelines, costs, and the immigration consequences for foreign nationals.",
     author: 'Vietnam Launchpad',
     date: '2026-04-11',
     lastUpdated: '2026-04-11',
@@ -4243,7 +4243,7 @@ Key rules for driving/riding in Vietnam:
     ctaSecondaryText: 'Ask a Question',
     content: `## Divorce Law in Vietnam: The Basics
 
-Divorce in Vietnam is governed by the **Law on Marriage and Family 2014** (Luật Hôn nhân và Gia đình 2014) and procedurally by the **Code of Civil Procedure 2015**. Vietnamese family law applies to marriages registered in Vietnam — including marriages between a Vietnamese citizen and a foreign national.
+Divorce in Vietnam is governed by the **Law on Marriage and Family 2014** (Luật Hôn nhân và Gia đình 2014) and procedurally by the **Code of Civil Procedure 2015**. Vietnamese family law applies to marriages registered in Vietnam - including marriages between a Vietnamese citizen and a foreign national.
 
 Vietnam recognises two distinct types of divorce:
 
@@ -4277,18 +4277,18 @@ Either spouse may petition for divorce. For marriages involving a foreign nation
 
 Mutual divorce is not simply both parties wanting to divorce. To qualify, both parties must agree on **all three** of the following:
 
-1. **The divorce itself** — both want to end the marriage
+1. **The divorce itself** - both want to end the marriage
 2. **Child custody, living arrangements, and financial support** for any minor children
 3. **Division of jointly-owned assets and debts**
 
-If there is disagreement on any of these points — even if both want the divorce — the court will not grant a mutual divorce. It becomes contested.
+If there is disagreement on any of these points - even if both want the divorce - the court will not grant a mutual divorce. It becomes contested.
 
 ---
 
 ### Mutual Divorce: Step-by-Step Process
 
 **Step 1: Mediation (Hòa giải)**
-Vietnamese law requires the court to attempt mediation before granting any divorce. For mutual divorces, this is usually a formality if both parties clearly want to proceed. The court schedules a mediation session — both parties must attend. If mediation fails (which it typically does when both genuinely want to divorce), the court proceeds with the divorce petition.
+Vietnamese law requires the court to attempt mediation before granting any divorce. For mutual divorces, this is usually a formality if both parties clearly want to proceed. The court schedules a mediation session - both parties must attend. If mediation fails (which it typically does when both genuinely want to divorce), the court proceeds with the divorce petition.
 
 **Step 2: Submit the Divorce Petition**
 File a joint divorce petition at the District People's Court. The petition must include:
@@ -4300,7 +4300,7 @@ File a joint divorce petition at the District People's Court. The petition must 
 The court reviews the submission, conducts the mediation session, and then holds a hearing. For genuine mutual divorces with no contested issues, this process is relatively straightforward.
 
 **Step 4: Divorce Decision Issued**
-The court issues a **Divorce Decision (Quyết định ly hôn)** — not a "decree" as in some Western systems. This is the legally binding document dissolving the marriage.
+The court issues a **Divorce Decision (Quyết định ly hôn)** - not a "decree" as in some Western systems. This is the legally binding document dissolving the marriage.
 
 ---
 
@@ -4351,9 +4351,9 @@ Vietnamese courts do not grant divorce simply because one party wants it. The pe
 
 **Article 56 grounds:**
 
-1. **Domestic violence, abuse, or serious mistreatment** — physical, psychological, or economic abuse of the petitioning spouse or children
-2. **Serious violation of marriage obligations** — adultery, abandonment, failure to contribute to family finances
-3. **The marriage has effectively broken down** and reconciliation is impossible — the most commonly relied-upon ground; requires demonstrating prolonged estrangement, incompatibility, or inability to fulfil the purposes of marriage
+1. **Domestic violence, abuse, or serious mistreatment** - physical, psychological, or economic abuse of the petitioning spouse or children
+2. **Serious violation of marriage obligations** - adultery, abandonment, failure to contribute to family finances
+3. **The marriage has effectively broken down** and reconciliation is impossible - the most commonly relied-upon ground; requires demonstrating prolonged estrangement, incompatibility, or inability to fulfil the purposes of marriage
 4. **One spouse has been declared missing** by a court for 2+ years
 5. **One spouse is serving a prison sentence** for a serious offence
 6. **One spouse has a drug addiction or serious communicable disease** that seriously affects the other party and family
@@ -4371,7 +4371,7 @@ The petitioning party files a unilateral divorce petition at the District People
 The court reviews the petition, assesses jurisdiction, and formally accepts the case. The respondent (other spouse) is officially served with notice of the proceedings.
 
 **Step 3: Mediation (Mandatory)**
-The court schedules one or more mandatory mediation sessions. Unlike mutual divorce, these are substantive — the court actively tries to reconcile the parties. If mediation results in reconciliation, the case is withdrawn. If mediation fails, the court proceeds to hearing.
+The court schedules one or more mandatory mediation sessions. Unlike mutual divorce, these are substantive - the court actively tries to reconcile the parties. If mediation results in reconciliation, the case is withdrawn. If mediation fails, the court proceeds to hearing.
 
 **In practice:** Courts typically schedule 2–3 mediation sessions over several months before a contested case proceeds to full hearing.
 
@@ -4390,7 +4390,7 @@ In addition to the standard documents listed for mutual divorce, one-sided divor
 | Document | Notes |
 |---|---|
 | Divorce petition | Unilateral, setting out the grounds |
-| Evidence supporting grounds | Police reports (for domestic violence), medical records, witness statements, communication records, financial records — depending on the ground relied upon |
+| Evidence supporting grounds | Police reports (for domestic violence), medical records, witness statements, communication records, financial records - depending on the ground relied upon |
 | Evidence of marriage breakdown | Proof of separation, prior failed reconciliation attempts, any existing informal agreements |
 | Evidence of asset ownership | Required for asset division determination |
 
@@ -4423,10 +4423,10 @@ For **domestic violence grounds:** A report filed with the local ward police (Co
 
 ### The Default Rule: Equal Split of Marital Property
 
-Under Vietnamese law, assets acquired during the marriage are presumed to be **joint marital property (tài sản chung)** and are divided equally between the parties on divorce — unless:
+Under Vietnamese law, assets acquired during the marriage are presumed to be **joint marital property (tài sản chung)** and are divided equally between the parties on divorce - unless:
 
 - The parties reach a written agreement on a different division
-- One party can prove that an asset is **separate property (tài sản riêng)** — i.e., owned before the marriage or received as a gift or inheritance specifically to one party during the marriage
+- One party can prove that an asset is **separate property (tài sản riêng)** - i.e., owned before the marriage or received as a gift or inheritance specifically to one party during the marriage
 
 ### What Counts as Marital Property
 
@@ -4441,7 +4441,7 @@ Under Vietnamese law, assets acquired during the marriage are presumed to be **j
 - Gifts or inheritances given specifically to one spouse (not the couple) during the marriage
 - Assets the parties agreed in writing to keep separate
 
-**Practical issue for foreigners:** Proving separate property requires clear documentation — bank records, purchase contracts, inheritance documents. Without documentation, Vietnamese courts presume marital property.
+**Practical issue for foreigners:** Proving separate property requires clear documentation - bank records, purchase contracts, inheritance documents. Without documentation, Vietnamese courts presume marital property.
 
 ### Property Outside Vietnam
 
@@ -4493,7 +4493,7 @@ A **marriage-based TRC** derives its validity from the existence of the marriage
 - Either transition to a new TRC basis (work permit route, investment route) **before** the divorce is finalised if possible, or
 - Apply for a new visa/status within the grace period after divorce
 
-**Grace period:** There is no formally defined statutory grace period, but immigration authorities in practice allow a period of 30–60 days to regularise status. Do not rely on this — sort your status proactively.
+**Grace period:** There is no formally defined statutory grace period, but immigration authorities in practice allow a period of 30–60 days to regularise status. Do not rely on this - sort your status proactively.
 
 ### If You Have a Work Permit or Investment-Based TRC
 
@@ -4530,10 +4530,10 @@ Requirements vary significantly by country. Contact your home country's consulat
 ## Frequently Asked Questions
 
 **Can I get divorced in Vietnam if I was married abroad?**
-Vietnamese courts have jurisdiction over divorces involving a Vietnamese citizen resident in Vietnam regardless of where the marriage was registered. If neither party is Vietnamese but you reside in Vietnam, the courts can also take jurisdiction. In practice, some cross-border cases are complex — get legal advice on jurisdiction early.
+Vietnamese courts have jurisdiction over divorces involving a Vietnamese citizen resident in Vietnam regardless of where the marriage was registered. If neither party is Vietnamese but you reside in Vietnam, the courts can also take jurisdiction. In practice, some cross-border cases are complex - get legal advice on jurisdiction early.
 
 **Do both parties have to be in Vietnam for the divorce?**
-For the court proceedings, both parties need to participate — in person or through a legally-appointed representative (Power of Attorney). If one party is abroad, they can appoint a Vietnamese lawyer as their representative, but requirements vary by case and court. Confirm with your lawyer.
+For the court proceedings, both parties need to participate - in person or through a legally-appointed representative (Power of Attorney). If one party is abroad, they can appoint a Vietnamese lawyer as their representative, but requirements vary by case and court. Confirm with your lawyer.
 
 **Can I get divorced if I can't find my spouse?**
 If your spouse is absent and their whereabouts are unknown, you can petition the court for a declaration of **missing person** status after 2 years. This can then form the basis for a one-sided divorce petition.
@@ -4563,18 +4563,18 @@ There is no waiting period under Vietnamese law once the divorce decision is fin
     readTime: '10 min read',
     category: 'Housing & Real Estate',
     ctaTitle: 'Need Help Registering Property in Vietnam?',
-    ctaBody: 'Our property registration service handles the full title certificate process for foreign owners — document preparation, notarisation, submission, and follow-up through to Pink Book issuance.',
+    ctaBody: 'Our property registration service handles the full title certificate process for foreign owners - document preparation, notarisation, submission, and follow-up through to Pink Book issuance.',
     ctaLink: '/services/property-registration',
     ctaLinkText: 'View Property Registration Service',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Book a Consultation',
     content: `## What Is Property Registration in Vietnam?
 
-When you purchase property in Vietnam — or when ownership of property changes for any reason — that transaction must be officially registered with the state. The result of a completed registration is a **Certificate of Land Use Right and House Ownership** (Giay Chung Nhan Quyen Su Dung Dat, Quyen So Huu Nha O Va Tai San Khac Gan Lien Voi Dat), issued in your name.
+When you purchase property in Vietnam - or when ownership of property changes for any reason - that transaction must be officially registered with the state. The result of a completed registration is a **Certificate of Land Use Right and House Ownership** (Giay Chung Nhan Quyen Su Dung Dat, Quyen So Huu Nha O Va Tai San Khac Gan Lien Voi Dat), issued in your name.
 
 This certificate is what people commonly call the **Pink Book** (Sổ Hồng). It is the single most important document in Vietnamese real estate and the only document that proves legal ownership.
 
-Without a properly registered Pink Book in your name, you do not legally own the property — even if you have paid in full and moved in.
+Without a properly registered Pink Book in your name, you do not legally own the property - even if you have paid in full and moved in.
 
 ---
 
@@ -4583,7 +4583,7 @@ Without a properly registered Pink Book in your name, you do not legally own the
 This is one of the most common questions about Vietnamese property documents, and the answer is mostly historical.
 
 **Red Book (Sổ Đỏ)**
-The Red Book was Vietnam's original land title certificate, introduced in the 1990s under earlier land legislation. It was specifically a **Certificate of Land Use Right** — it covered the land only, not the structures built on it. The physical booklet had a red cover, hence the name.
+The Red Book was Vietnam's original land title certificate, introduced in the 1990s under earlier land legislation. It was specifically a **Certificate of Land Use Right** - it covered the land only, not the structures built on it. The physical booklet had a red cover, hence the name.
 
 **Pink Book (Sổ Hồng)**
 From 2009 onward, Vietnam introduced a unified certificate covering both land use rights and house/building ownership on a single document. The new booklet had a pink/burgundy cover. This is now the standard title document for all property in Vietnam.
@@ -4592,7 +4592,7 @@ From 2009 onward, Vietnam introduced a unified certificate covering both land us
 - All new property registrations issue a Pink Book
 - Existing Red Books are still legally valid and have not been cancelled
 - Many Vietnamese people and agents still use "Red Book" and "Pink Book" interchangeably in casual conversation
-- If someone refers to a property's "Red Book" they typically just mean its title certificate — confirm the actual document they have
+- If someone refers to a property's "Red Book" they typically just mean its title certificate - confirm the actual document they have
 
 **Practical check:** When buying a property, always confirm the title certificate (whether called Red Book or Pink Book) exists, is in the seller's name, and has no encumbrances (liens, mortgages, disputes). This is the essential first step in any purchase due diligence.
 
@@ -4653,7 +4653,7 @@ Foreigners purchasing property in Vietnam go through the same basic process but 
 - Land use term is **50 years** (not permanent as for Vietnamese citizens)
 - The Pink Book will show the 50-year expiry date
 - Renewal requires reapplication at least 3 months before expiry
-- Some restricted zones are not available to foreign buyers — the DONRE will flag this during review
+- Some restricted zones are not available to foreign buyers - the DONRE will flag this during review
 
 **One critical note:** The Pink Book application for a foreign buyer must clearly identify the buyer as a foreign national and the land use term as 50-year fixed. Applications that attempt to obscure foreign ownership are illegal and result in the Pink Book being invalid.
 
@@ -4694,7 +4694,7 @@ Foreigners purchasing property in Vietnam go through the same basic process but 
 Always run a title search before signing anything. A bank-held mortgage must be discharged before or simultaneously with the sale. Do not rely on the seller's verbal assurance that it has been cleared.
 
 **2. The property area on the Pink Book differs from what was sold**
-Discrepancies between actual area and registered area are common, especially in older properties. Resolve this before purchase — it requires a cadastral survey and correction, which takes time and adds cost.
+Discrepancies between actual area and registered area are common, especially in older properties. Resolve this before purchase - it requires a cadastral survey and correction, which takes time and adds cost.
 
 **3. Missing or incorrect household registration (Ho Khau)**
 For Vietnamese sellers, a discrepancy between the Pink Book name and their current household registration can stall the process. Check this early.
@@ -4703,14 +4703,14 @@ For Vietnamese sellers, a discrepancy between the Pink Book name and their curre
 Many buyers purchase apartments off-plan or in new developments where the developer has not yet obtained the master title certificate. In these cases, individual Pink Books cannot be issued until the developer completes the process. Before buying, confirm: does the developer have the master Pink Book (or a clear timeline for it)?
 
 **5. The foreign ownership quota is full**
-If the 30% foreign quota in an apartment building is exhausted, a foreign buyer cannot register ownership — even if the purchase contract is signed. Check the quota before signing.
+If the 30% foreign quota in an apartment building is exhausted, a foreign buyer cannot register ownership - even if the purchase contract is signed. Check the quota before signing.
 
 ---
 
 ## After Registration: What to Keep
 
 Once your Pink Book is issued:
-- Store the original in a secure location — it is extremely difficult to replace
+- Store the original in a secure location - it is extremely difficult to replace
 - Take certified copies for your records
 - Notify your insurance provider (if you have property insurance) that the title has been transferred
 - If you have a mortgage, the lender will typically hold the original Pink Book as security
@@ -4728,6 +4728,142 @@ Foreign ownership registrations involve more steps and more potential complicati
 ---
 
 *Last updated: April 2026. Land registration procedures and fees are set provincially and are subject to change. Confirm current requirements with a local professional before transacting.*`,
+  },
+
+  'vneid-vietnam-digital-id-foreigners': {
+    slug: 'vneid-vietnam-digital-id-foreigners',
+    title: 'VNeID: Vietnam\'s Digital ID App - What Foreigners Need to Know',
+    subtitle: 'Register your TRC on Vietnam\'s national digital identity app and stop carrying physical documents',
+    excerpt: 'Vietnam is replacing physical ID cards with the VNeID digital identity app. Foreign nationals with a TRC can now register too. Here is what VNeID is, what it is accepted for, and how to get it set up.',
+    author: 'Vietnam Launchpad',
+    date: '2026-04-11',
+    lastUpdated: '2026-04-11',
+    readTime: '7 min read',
+    category: 'Daily Life',
+    ctaTitle: 'Need Help Getting Your TRC First?',
+    ctaBody: 'VNeID requires a valid TRC. If you are still in the process of applying, our team can handle the entire TRC application for you.',
+    ctaLink: '/services/trc-application',
+    ctaLinkText: 'View TRC Service',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Ask a Question',
+    content: `## What VNeID Actually Is
+
+VNeID is an official app developed and managed by the **Ministry of Public Security (Bo Cong an)**. It is not a third-party wallet or convenience app - it is a government-issued identity credential that is legally equivalent to presenting the physical document in most contexts.
+
+When you open VNeID, it displays:
+- Your photo
+- Your ID number (CCCD number for Vietnamese citizens, TRC number for foreign nationals)
+- Your full name, date of birth, and nationality
+- Document validity dates
+- A real-time QR code that authorities and institutions can scan to verify your identity directly against the Ministry of Public Security database
+
+The QR code refreshes regularly and cannot be screenshotted to impersonate, making it more secure than a physical card in some respects.
+
+---
+
+## Can Foreigners Use VNeID?
+
+**Yes - foreign nationals holding a valid TRC can register for VNeID.**
+
+This was formalised under Circular 17/2024/TT-BCA from the Ministry of Public Security, which extended the VNeID registration framework to foreign nationals with long-term residency in Vietnam. The rollout to foreigners accelerated through 2025 and is now operational across all provinces.
+
+Foreign nationals on shorter-stay visas (tourist, business, e-visa) cannot register for VNeID. You need a valid TRC.
+
+---
+
+## What VNeID Is Accepted For
+
+Once registered, your VNeID can be used in place of your physical TRC for:
+
+**Government services:**
+- Police registration (tam tru, tam vang) checks
+- Administrative procedures at People's Committees
+- Court and notary identification requirements
+- Tax authority identification
+
+**Daily life:**
+- Hotel and guesthouse check-in (hotels are required to accept VNeID)
+- Domestic airport check-in - Vietnam Airlines, VietJet, Bamboo, and Pacific Airlines all accept VNeID boarding
+- SIM card registration and replacement
+- Some hospital and clinic admissions
+
+**Financial services:**
+- Bank account verification and KYC at major Vietnamese banks (Vietcombank, BIDV, Techcombank, and others have integrated VNeID scanning)
+- Some insurance providers
+- Property transaction identification (increasingly accepted, though some notaries still require physical documents - confirm case by case)
+
+**Important limitation:** VNeID does not replace your passport for international border crossings or for transactions that specifically require your passport (such as certain visa-related processes or consular services).
+
+---
+
+## How to Register for VNeID as a Foreign National
+
+Registration requires an in-person visit - you cannot complete it remotely.
+
+**Step 1: Download the VNeID app**
+Available on the App Store (iOS) and Google Play (Android). Search "VNeID" - the official app is published by Cuc Canh sat quan ly hanh chinh ve trat tu xa hoi (C06), Ministry of Public Security.
+
+**Step 2: Visit your local police station**
+Go to the **ward or district police station (Cong an phuong/quan)** where you are registered as residing (tam tru). Bring:
+- Your original TRC card
+- Your passport
+- Your phone with VNeID installed
+
+**Step 3: Biometric verification**
+An officer will verify your identity, scan your TRC and passport, capture a live facial scan linked to your TRC number, and complete the registration on their system.
+
+**Step 4: Activate your account**
+You will receive an SMS or in-app notification to activate your account. The process typically takes 1-3 working days after the in-person visit before your digital ID is active in the app.
+
+**Cost:** Free. No government fee for VNeID registration.
+
+---
+
+## VNeID Levels: Level 1 vs Level 2
+
+VNeID has two verification levels, and this matters:
+
+| Level | What it means | What it unlocks |
+|---|---|---|
+| **Level 1** | Basic identity verified against national database | Most daily-use functions - hotels, transport, basic banking |
+| **Level 2** | Full biometric verification with live facial scan linked to chip-based ID | Higher-trust transactions - financial services, notary, government applications |
+
+Foreign nationals registering at a police station are typically issued Level 2 VNeID if their TRC contains a chip (all TRCs issued after 2023 are chip-based). Older TRC holders may be issued Level 1 initially and can upgrade when renewing their TRC.
+
+---
+
+## The Broader Picture: Vietnam's Digital ID Transition
+
+VNeID is part of Vietnam's **National Digital Transformation Programme**, which has set a target of eliminating paper-based processes for most government services by 2026. Alongside VNeID, the government has deployed:
+
+- **VssID** - digital social insurance book
+- **VHI** - digital health insurance card
+- **The national population database** - which VNeID draws identity data from in real time
+
+The practical consequence for expats: government offices and banks increasingly expect digital verification. Having VNeID set up means fewer trips to bring physical documents and faster processing at most counters.
+
+---
+
+## What VNeID Does Not Replace
+
+A few situations still require your physical documents or passport:
+- International travel and border crossings
+- Initial TRC applications and renewals (the physical TRC must still be issued)
+- Certain notary transactions where some offices have not yet updated their systems
+- Consular and embassy transactions
+- Employment contracts requiring physical passport copy
+
+---
+
+## Already Have a TRC? Set It Up Now
+
+If you have a valid TRC, there is no good reason to delay VNeID registration. The in-person registration takes under 30 minutes, and the payoff - not needing to carry your physical TRC for most daily interactions - is immediate.
+
+If you are in the process of getting your TRC, add VNeID registration to your to-do list for the week you receive your card.
+
+---
+
+*Published April 2026. VNeID functionality and acceptance continues to expand. Confirm with specific institutions whether they accept VNeID for your particular transaction.*`,
   },
 };
 

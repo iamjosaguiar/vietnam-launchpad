@@ -1,0 +1,321 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Main menu" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "Google Search Console" [ref=e12] [cursor=pointer]:
+          - /url: ./search-console?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+          - img [ref=e13]
+      - generic [ref=e14]:
+        - search [ref=e16]:
+          - generic [ref=e22]:
+            - textbox [disabled] [ref=e23]: Inspect any URL in "https://www.vietnamlaunchpad.com/"
+            - combobox "Inspect any URL in https://www.vietnamlaunchpad.com/" [ref=e24]
+          - button "Search" [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - button "Help" [ref=e33] [cursor=pointer]:
+              - generic [ref=e36]: 
+            - button "User settings" [ref=e38] [cursor=pointer]:
+              - img [ref=e41]
+          - button "Messages" [ref=e45] [cursor=pointer]:
+            - generic [ref=e48]: 
+      - generic [ref=e50]:
+        - button "Google apps" [ref=e54] [cursor=pointer]:
+          - img [ref=e55]
+        - 'button "Google Account: Jos Aguiar (jos@iamjosaguiar.com)" [ref=e60] [cursor=pointer]':
+          - img [ref=e62]
+  - dialog "navigational drawer" [ref=e66]:
+    - navigation "Primary" [ref=e69]:
+      - button "Search property" [ref=e73] [cursor=pointer]:
+        - img [ref=e75]
+        - combobox "https://www.vietnamlaunchpad.com/" [ref=e82]
+        - generic [ref=e83]: 
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - link "Overview" [ref=e88] [cursor=pointer]:
+              - /url: ./search-console?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e90]: home
+              - generic [ref=e92]: Overview
+            - link "Insights" [ref=e95] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e97]: lightbulb_2
+              - generic [ref=e99]: Insights
+            - link "Performance" [ref=e102] [cursor=pointer]:
+              - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e104]: trending_up
+              - generic [ref=e106]: Performance
+            - button "URL inspection" [ref=e109] [cursor=pointer]:
+              - generic [ref=e111]: search
+              - generic [ref=e113]: URL inspection
+          - generic [ref=e117]:
+            - button "Indexing report section" [expanded] [ref=e118] [cursor=pointer]:
+              - generic [ref=e119]:
+                - generic [ref=e122]: Indexing
+                - img [ref=e126]
+            - generic [ref=e131]:
+              - link "Pages" [ref=e133] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e135]: file_copy
+                - generic [ref=e137]: Pages
+              - link "Sitemaps" [ref=e140] [cursor=pointer]:
+                - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e142]: account_tree
+                - generic [ref=e144]: Sitemaps
+              - link "Removals" [ref=e147] [cursor=pointer]:
+                - /url: ./search-console/removals?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e149]: visibility_off
+                - generic [ref=e151]: Removals
+          - generic [ref=e155]:
+            - button "Experience report section" [expanded] [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]:
+                - generic [ref=e160]: Experience
+                - img [ref=e164]
+            - generic [ref=e169]:
+              - link "Core Web Vitals" [ref=e171] [cursor=pointer]:
+                - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e173]: speed
+                - generic [ref=e175]: Core Web Vitals
+              - link "HTTPS" [ref=e178] [cursor=pointer]:
+                - /url: ./search-console/https?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e180]: lock
+                - generic [ref=e182]: HTTPS
+          - generic [ref=e186]:
+            - button "Enhancements report section" [expanded] [ref=e187] [cursor=pointer]:
+              - generic [ref=e188]:
+                - generic [ref=e191]: Enhancements
+                - img [ref=e195]
+            - generic [ref=e200]:
+              - link "FAQ" [ref=e202] [cursor=pointer]:
+                - /url: ./search-console/r/faq?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e204]: layers
+                - generic [ref=e206]: FAQ
+              - link "Review snippets" [ref=e209] [cursor=pointer]:
+                - /url: ./search-console/r/review-snippet?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+                - generic [ref=e211]: layers
+                - generic [ref=e213]: Review snippets
+          - button "Security & Manual Actions report section" [ref=e218] [cursor=pointer]:
+            - generic [ref=e219]:
+              - generic [ref=e222]: Security & Manual Actions
+              - img [ref=e226]
+          - generic [ref=e228]:
+            - link "Links report" [ref=e230] [cursor=pointer]:
+              - /url: ./search-console/links?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e232]: link_2
+              - generic [ref=e234]: Links
+            - link "Achievements" [ref=e237] [cursor=pointer]:
+              - /url: ./search-console/achievements?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e239]: trophy
+              - generic [ref=e241]: Achievements
+            - link "Settings" [ref=e244] [cursor=pointer]:
+              - /url: ./search-console/settings?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+              - generic [ref=e246]: settings
+              - generic [ref=e248]: Settings
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - button "Submit feedback" [ref=e254] [cursor=pointer]:
+              - generic [ref=e256]: feedback
+              - generic [ref=e258]: Submit feedback
+            - button "About Search Console" [ref=e261] [cursor=pointer]:
+              - generic [ref=e263]: info
+              - generic [ref=e265]: About Search Console
+          - generic [ref=e269]:
+            - link "Privacy" [ref=e270] [cursor=pointer]:
+              - /url: https://myaccount.google.com/privacypolicy?hl=en
+            - link "Terms" [ref=e271] [cursor=pointer]:
+              - /url: https://myaccount.google.com/termsofservice?hl=en
+  - generic [ref=e273]:
+    - navigation "Breadcrumbs" [ref=e278]:
+      - heading "Overview" [level=1] [ref=e281]
+    - main [ref=e285]:
+      - generic [ref=e286]:
+        - generic [ref=e291]:
+          - generic [ref=e292]:
+            - generic [ref=e293]: lightbulb_outline
+            - generic [ref=e294]: Get insights into your site's Search performance
+          - generic [ref=e297]:
+            - generic [ref=e299]: chevron_right
+            - generic [ref=e300]: Explore your insights
+            - link "Explore your insights" [ref=e301] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+        - generic [ref=e303]:
+          - generic [ref=e304]:
+            - generic [ref=e305]: Performance
+            - generic [ref=e308]:
+              - generic [ref=e310]: chevron_right
+              - generic [ref=e311]: Full report
+              - link "Full report" [ref=e312] [cursor=pointer]:
+                - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+          - generic [ref=e315]:
+            - generic [ref=e320]: 5 total web search clicks
+            - img [ref=e324]:
+              - generic [ref=e325]:
+                - generic [ref=e326]:
+                  - generic [ref=e328]: 1/10/26
+                  - generic [ref=e330]: 1/21/26
+                  - generic [ref=e332]: 2/1/26
+                  - generic [ref=e334]: 2/12/26
+                  - generic [ref=e336]: 2/23/26
+                  - generic [ref=e338]: 3/6/26
+                  - generic [ref=e340]: 3/17/26
+                  - generic [ref=e342]: 3/28/26
+                  - generic [ref=e344]: 4/8/26
+                - generic [ref=e345]:
+                  - generic [ref=e347]: "3"
+                  - generic [ref=e349]: "2"
+                  - generic [ref=e351]: "1"
+                  - generic [ref=e353]: "0"
+        - generic [ref=e363]:
+          - generic [ref=e364]:
+            - generic [ref=e365]:
+              - generic [ref=e366]: Recommendations
+              - button "null" [ref=e369] [cursor=pointer]:
+                - generic [ref=e370]: 
+            - button "Send feedback" [ref=e372] [cursor=pointer]:
+              - generic [ref=e375]: feedback
+              - generic [ref=e376]: Send feedback
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - generic [ref=e381]: lightbulb
+                - generic [ref=e382]: A page recently got more impressions than usual
+              - generic [ref=e383]:
+                - text: Check this page's performance to investigate further
+                - generic [ref=e384]:
+                  - generic [ref=e385]: https://www.vietnamlaunchpad.com/blog/how-to-legally-teach-english-in-vietnam
+                  - generic [ref=e386]:
+                    - generic [ref=e387]: arrow_upward
+                    - generic [ref=e388]: 111%
+            - generic [ref=e389]:
+              - generic [ref=e391] [cursor=pointer]:
+                - generic [ref=e392]: Check page performance
+                - link "Check page performance" [ref=e393]:
+                  - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F&page=%21https%3A%2F%2Fwww.vietnamlaunchpad.com%2Fblog%2Fhow-to-legally-teach-english-in-vietnam&start_date=20260325&end_date=20260331&compare_start_date=20260318&compare_end_date=20260324&metrics=IMPRESSIONS
+              - generic [ref=e394]:
+                - button "Leave positive feedback" [ref=e395] [cursor=pointer]:
+                  - generic [ref=e397]: thumb_up_filled
+                  - generic [ref=e399]: thumb_up
+                - button "Leave negative feedback" [ref=e401] [cursor=pointer]:
+                  - generic [ref=e403]: thumb_down_filled
+                  - generic [ref=e405]: thumb_down
+        - generic [ref=e408]:
+          - generic [ref=e409]:
+            - generic [ref=e410]: Indexing
+            - generic [ref=e413]:
+              - generic [ref=e415]: chevron_right
+              - generic [ref=e416]: Full report
+              - link "Full report" [ref=e417] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=https%3A%2F%2Fwww.vietnamlaunchpad.com%2F
+          - generic [ref=e420]:
+            - generic [ref=e422]:
+              - generic [ref=e425]: 41 not indexed pages
+              - generic [ref=e428]: 19 indexed pages
+            - img [ref=e432]:
+              - generic [ref=e433]:
+                - generic [ref=e434]:
+                  - generic [ref=e436]: 1/11/26
+                  - generic [ref=e438]: 1/22/26
+                  - generic [ref=e440]: 2/2/26
+                  - generic [ref=e442]: 2/13/26
+                  - generic [ref=e444]: 2/24/26
+                  - generic [ref=e446]: 3/7/26
+                  - generic [ref=e448]: 3/18/26
+                  - generic [ref=e450]: 3/29/26
+                - generic [ref=e451]:
+                  - generic [ref=e453]: "45"
+                  - generic [ref=e455]: "30"
+                  - generic [ref=e457]: "15"
+                  - generic [ref=e459]: "0"
+        - generic [ref=e480]:
+          - generic [ref=e482]: Experience
+          - table [ref=e486]:
+            - rowgroup [ref=e487]:
+              - row "Type Good Needs improvement Poor Trend" [ref=e488]:
+                - columnheader "Type" [ref=e489]
+                - columnheader [ref=e490]
+                - columnheader "Good" [ref=e491]
+                - columnheader "Needs improvement" [ref=e492]
+                - columnheader "Poor" [ref=e493]
+                - columnheader "Trend" [ref=e494]
+                - columnheader [ref=e495]
+            - rowgroup [ref=e496]:
+              - row "Core Web Vitals Mobile Desktop No data No data No data No data No data No data" [ref=e497]:
+                - cell "Core Web Vitals" [ref=e498]:
+                  - generic [ref=e500]: Core Web Vitals
+                - cell "Mobile Desktop" [ref=e501]:
+                  - generic [ref=e503]:
+                    - generic [ref=e504]: Mobile
+                    - generic [ref=e505]: Desktop
+                - cell "No data No data" [ref=e506]:
+                  - generic [ref=e507]:
+                    - generic [ref=e508]: No data
+                    - generic [ref=e509]: No data
+                - cell "No data No data" [ref=e510]:
+                  - generic [ref=e511]:
+                    - generic [ref=e512]: No data
+                    - generic [ref=e513]: No data
+                - cell "No data No data" [ref=e514]:
+                  - generic [ref=e515]:
+                    - generic [ref=e516]: No data
+                    - generic [ref=e517]: No data
+                - cell [ref=e518]
+              - row "HTTPS Non HTTPS" [ref=e519]:
+                - columnheader [ref=e520]
+                - columnheader [ref=e521]
+                - columnheader "HTTPS" [ref=e522]
+                - columnheader [ref=e523]
+                - columnheader "Non HTTPS" [ref=e524]
+                - columnheader [ref=e525]
+                - columnheader [ref=e526]
+              - row "HTTPS 11 0 Open report" [ref=e527]:
+                - cell "HTTPS" [ref=e528]:
+                  - generic [ref=e530]: HTTPS
+                - cell [ref=e531]
+                - cell "11" [ref=e532]:
+                  - generic [ref=e534]: "11"
+                - cell [ref=e535]
+                - cell "0" [ref=e536]:
+                  - generic [ref=e538]: "0"
+                - cell [ref=e539]:
+                  - img [ref=e542]
+                - cell "Open report" [ref=e544]:
+                  - button "Open report" [ref=e547] [cursor=pointer]:
+                    - generic [ref=e548]: chevron_right
+        - generic [ref=e550]:
+          - generic [ref=e552]: Enhancements
+          - table [ref=e556]:
+            - rowgroup [ref=e557]:
+              - row "Type Valid Invalid Trend" [ref=e558]:
+                - columnheader "Type" [ref=e559]
+                - columnheader "Valid" [ref=e560]
+                - columnheader "Invalid" [ref=e561]
+                - columnheader "Trend" [ref=e562]
+                - columnheader [ref=e563]
+            - rowgroup [ref=e564]:
+              - row "FAQ 6 0 Open report" [ref=e565]:
+                - cell "FAQ" [ref=e566]:
+                  - generic [ref=e568]: FAQ
+                - cell "6" [ref=e569]:
+                  - generic [ref=e571]: "6"
+                - cell "0" [ref=e572]:
+                  - generic [ref=e574]: "0"
+                - cell [ref=e575]:
+                  - img [ref=e578]
+                - cell "Open report" [ref=e580]:
+                  - button "Open report" [ref=e583] [cursor=pointer]:
+                    - generic [ref=e584]: chevron_right
+              - row "Review snippets 11 0 Open report" [ref=e585]:
+                - cell "Review snippets" [ref=e586]:
+                  - generic [ref=e588]: Review snippets
+                - cell "11" [ref=e589]:
+                  - generic [ref=e591]: "11"
+                - cell "0" [ref=e592]:
+                  - generic [ref=e594]: "0"
+                - cell [ref=e595]:
+                  - img [ref=e598]
+                - cell "Open report" [ref=e600]:
+                  - button "Open report" [ref=e603] [cursor=pointer]:
+                    - generic [ref=e604]: chevron_right
