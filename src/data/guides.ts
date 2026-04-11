@@ -3043,6 +3043,1187 @@ Hoi An is a UNESCO World Heritage city - the preserved ancient town, lantern-lit
 - Limited direct international flights (Danang airport connects regionally; long-haul via HCMC or Hanoi)
 - Less career opportunity than HCMC`,
   },
+
+  'company-setup-vietnam': {
+    slug: 'company-setup-vietnam',
+    title: 'How to Set Up a Company in Vietnam: The Complete Foreign Investor Guide (2026)',
+    subtitle: 'LLC vs Representative Office, 100% foreign ownership, registration steps, costs, and timeline',
+    excerpt: 'Setting up a company in Vietnam as a foreigner is entirely possible - and in most sectors, you can own 100% of your business. This guide covers every structure option, the registration process, realistic costs, and the legal requirements you need to know before you start.',
+    author: 'Vietnam Launchpad',
+    date: '2026-02-01',
+    lastUpdated: '2026-04-01',
+    readTime: '16 min read',
+    category: 'Work & Business',
+    ctaTitle: 'Ready to Register Your Company in Vietnam?',
+    ctaBody: 'Vietnam Launchpad handles company registration end-to-end for foreign investors - from structure advice to Investment Registration Certificate, Business Registration Certificate, and tax enrollment. We have registered hundreds of foreign-owned companies across multiple sectors.',
+    ctaLink: '/services/company-registration',
+    ctaLinkText: 'Start Company Registration',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Book a Free Consultation',
+    content: `## Can Foreigners Own 100% of a Company in Vietnam?
+
+Yes - in most sectors. Vietnam's Law on Investment (amended 2020) allows full foreign ownership (100%) in the majority of business sectors. Restrictions apply in a limited number of sensitive industries: media, publishing, certain types of education, specific agricultural activities, and industries reserved for state ownership.
+
+For the vast majority of businesses that expats want to establish - consulting, technology, e-commerce, services, trading, manufacturing, food and beverage, hospitality - 100% foreign ownership is available.
+
+Before registering, you should confirm your specific business activity code (VSIC code) is open to full foreign ownership. This is one of the first steps in the process.
+
+---
+
+## Business Structure Options for Foreign Investors
+
+### 1. Limited Liability Company (LLC) - Most Common
+
+The LLC (Cong ty TNHH) is the most common structure for foreign investors setting up operations in Vietnam.
+
+**Key features:**
+- 1 member (single owner) or up to 50 members (multi-owner)
+- Separate legal entity - liability limited to charter capital
+- Can employ Vietnamese and foreign staff
+- Can invoice and collect revenue in Vietnam
+- Can repatriate profits (subject to tax obligations being met)
+
+**Best for:** Consulting firms, service businesses, trading companies, technology companies, any business planning to operate commercially in Vietnam.
+
+**Minimum charter capital:** No statutory minimum in most sectors - but must be sufficient to cover initial operating costs. Common practice is $10,000-50,000 USD equivalent. Some regulated sectors (banking, insurance, education) have prescribed minimums.
+
+---
+
+### 2. Joint Stock Company (JSC)
+
+The JSC (Cong ty Co phan) is similar to an LLC but can have an unlimited number of shareholders and can eventually list on a stock exchange.
+
+**Key features:**
+- Minimum 3 shareholders
+- Can issue shares
+- More complex governance requirements (Board of Directors, General Meeting of Shareholders)
+- Required for companies planning an IPO
+
+**Best for:** Larger operations planning to raise capital from multiple investors or eventually list publicly.
+
+**Not typically appropriate** for a single foreign entrepreneur starting a business.
+
+---
+
+### 3. Representative Office (RO)
+
+A Representative Office is **not** a company - it is a presence, not a legal trading entity.
+
+**Key features:**
+- Cannot generate revenue or issue invoices in Vietnam
+- Cannot sign commercial contracts (can only sign on behalf of the parent company abroad)
+- Can conduct market research, promote the parent company's products/services, liaise with clients
+- Simpler to establish than an LLC
+- Must be renewed annually (or every 5 years depending on application)
+
+**Best for:** Companies headquartered abroad that want a legitimate office presence in Vietnam for liaison, market research, or sales support - without committing to full incorporation.
+
+**Not appropriate if:** You plan to generate any revenue, employ local staff commercially, or sign contracts as a Vietnamese entity.
+
+---
+
+### 4. Branch Office
+
+A Branch of a foreign company can conduct commercial activities - unlike a Representative Office. However, it is rarely used in practice because:
+- Approval is harder to obtain (sector-specific)
+- The parent company bears full liability for the branch's activities
+- An LLC typically offers a cleaner structure with the same capabilities
+
+**Best for:** Specific sectors where branch structures are common (banking, legal services). Generally not recommended for most foreign investors.
+
+---
+
+## The Company Registration Process Step by Step
+
+Setting up a foreign-owned LLC involves two parallel registration tracks in Vietnam.
+
+### Step 1: Investment Registration Certificate (IRC)
+
+Before incorporating, foreign investors must obtain an Investment Registration Certificate from the Department of Planning and Investment (DPI) of the province where the company will operate (typically HCMC or Hanoi).
+
+**What you need:**
+- Passport copies of all investors
+- Draft charter capital amount and business activities (VSIC codes)
+- Proposed business address in Vietnam (a lease agreement or letter of commitment)
+- Investment proposal documentation
+- Bank statement showing funds (amount varies by sector and capital level)
+
+**Timeline:** 15 business days standard. Can be faster with a registered agent.
+
+**Cost:** Official government fee is approximately VND 1 million (under $50). Agent fees for preparation: $500-1,500.
+
+---
+
+### Step 2: Business Registration Certificate (BRC)
+
+With the IRC approved, you then apply for the Business Registration Certificate - the formal company incorporation document.
+
+**What you need:**
+- Approved IRC
+- Company charter (articles of association)
+- Investor and director information
+- Registered business address
+
+**Timeline:** 3-5 business days.
+
+**Cost:** Official fee approximately VND 100,000 (minimal). Agent fees typically bundled with overall registration service.
+
+---
+
+### Step 3: Post-Registration Steps
+
+After receiving both certificates, several additional steps are required before the company can operate:
+
+| Step | Timeline | Notes |
+|---|---|---|
+| Company seal (chop) production | 1-2 days | Required for all official documents |
+| Tax registration and tax code | 5-10 days | Automatic in most cases but requires activation |
+| Business bank account opening | 1-2 weeks | Bring both certificates + passports |
+| Charter capital contribution | 90 days from BRC | Must transfer from abroad into company bank account |
+| VAT registration | Within 10 days of first operation | If expecting taxable turnover |
+| Social insurance registration | Before hiring first employee | Required by law |
+
+---
+
+## Total Timeline
+
+| Phase | Duration |
+|---|---|
+| Preparation and document gathering | 1-2 weeks |
+| IRC application and approval | 3-4 weeks |
+| BRC registration | 1 week |
+| Post-registration setup (seal, bank, tax) | 2-3 weeks |
+| **Total from start to operational** | **6-10 weeks** |
+
+With a professional agent handling the process, the timeline typically runs 6-8 weeks. DIY attempts without Vietnamese language capability can take significantly longer or run into procedural delays.
+
+---
+
+## Realistic Costs
+
+### Government Fees
+Official government fees are minimal - under $100 total for most registrations.
+
+### Agent / Professional Fees
+
+| Service | Typical Cost |
+|---|---|
+| Full company registration service (IRC + BRC) | $800-1,500 |
+| Accounting setup and initial tax compliance | $200-500 |
+| Business address / registered office (if needed) | $100-300/month |
+| Legal advice (if complex structure) | $500-2,000 |
+
+### Ongoing Costs Once Operational
+
+| Item | Approximate Cost |
+|---|---|
+| Monthly accounting and bookkeeping | $200-500/month |
+| Annual audit (required above certain revenue thresholds) | $500-2,000/year |
+| Corporate tax filing | Included in accounting fee or $300-500 separately |
+| Business license tax (annual) | VND 3 million (~$120) for most companies |
+
+---
+
+## Minimum Capital Requirements by Sector
+
+Most sectors have no prescribed minimum capital. However, some regulated activities require minimum charter capital:
+
+| Sector | Minimum Capital |
+|---|---|
+| General trading / consulting / services | None prescribed (practical minimum ~$10,000) |
+| Education (training centers) | VND 300 million (~$12,000) |
+| Financial leasing | VND 150 billion (~$6 million) |
+| Insurance | USD 2 million |
+| Banking | Large prescribed amounts |
+
+For a standard service, consulting, tech, or trading company, there is no legal minimum - but your charter capital should realistically reflect your initial operating costs.
+
+---
+
+## Conditional Business Lines: What Requires Approval
+
+Some business activities require additional licenses or conditional approval beyond the standard IRC/BRC process:
+
+- **Food and Beverage:** Food safety certification required
+- **Education and Training:** Ministry of Education approval for regulated courses
+- **Healthcare services:** Ministry of Health licensing
+- **Travel agency / tourism:** Vietnam National Administration of Tourism license
+- **Employment agency / HR staffing:** Ministry of Labor approval
+- **Real estate brokerage:** Real estate license required
+
+If your business line appears on the conditional list (Appendix IV of the Law on Investment), factor in additional approval time (typically 30-90 additional days) and cost.
+
+---
+
+## The Work Permit Question
+
+Registering a company in Vietnam does not automatically give you the right to work in it as a foreigner. To work legally in your Vietnamese company, you need a work permit.
+
+**Exceptions to work permit requirement:**
+- You are a capital-contributing member (investor) in an LLC with charter capital of at least VND 3 billion (~$120,000)
+- You are a legal representative (director) of an enterprise registered in Vietnam
+
+Most founders register themselves as both investor and legal representative, which satisfies the work permit exemption condition. Confirm the specific current rules with your registration agent, as these thresholds are periodically adjusted.
+
+For most practical purposes: if you are the owner/director and have sufficient charter capital, you will not need a separate work permit.
+
+---
+
+## Legal Representative: What You Need to Know
+
+Every Vietnamese company must have a Legal Representative (Nguoi Dai Dien Phap Luat). This is the person authorized to sign documents on behalf of the company.
+
+**Key points:**
+- Must be permanently resident in Vietnam (or have a proxy arrangement)
+- Personally liable for the company's compliance obligations in certain situations
+- If the Legal Representative plans to leave Vietnam for more than 30 consecutive days, must appoint an authorized representative
+- Foreign nationals can be Legal Representatives - but must have a valid residence permit
+
+Most foreign entrepreneurs appoint themselves as Legal Representative. This is practical and gives direct control. However, it requires that you maintain valid residency status in Vietnam throughout.
+
+---
+
+## Common Mistakes Foreign Investors Make
+
+1. **Choosing the wrong VSIC business codes** - too narrow and you cannot do adjacent activities; incorrect codes cause compliance problems
+2. **Charter capital set too low** - making it hard to demonstrate viable operations or meet banking requirements
+3. **Not registering the business address correctly** - using a virtual address that does not comply with local requirements
+4. **Forgetting the 90-day charter capital contribution deadline** - a violation that can result in penalties
+5. **Not setting up accounting from day one** - Vietnam's bookkeeping requirements are strict and retroactive compliance is painful
+6. **Not understanding the work permit implication** - assuming company ownership automatically grants the right to work
+
+---
+
+## FAQ: Company Setup Vietnam
+
+**Can I set up a company in Vietnam without being physically present?**
+Yes, with a power of attorney. Your agent can handle the entire registration process with notarized/apostilled documents from abroad. You will need to be present to open the bank account in most cases, though some banks allow remote account opening for existing customers.
+
+**Can I register a company in Vietnam as a tourist?**
+Technically you can file the application while on a tourist visa, but as Legal Representative you will need a long-stay visa or residence permit before operations begin. Plan your visa situation before starting the registration.
+
+**How long does a Vietnamese company last?**
+The IRC specifies an investment duration - typically 10-50 years, with renewal possible. This is different from Western companies which have indefinite life by default. Specify an appropriately long duration in your initial application.
+
+**Can I have a Vietnamese partner?**
+Yes. A joint venture (Vietnamese + foreign investor) is also possible. Some sectors require Vietnamese participation. Joint ventures add complexity but can provide local knowledge, networks, and in some sectors access to land use rights that pure foreign-owned companies cannot get.`,
+  },
+
+  'trc-vietnam': {
+    slug: 'trc-vietnam',
+    title: 'TRC Vietnam: Complete Guide to the Temporary Residence Card (2026)',
+    subtitle: 'What TRC means, who qualifies, all 3 application routes, required documents, and costs',
+    excerpt: "TRC stands for Temporary Residence Card (The Tam Tru in Vietnamese) - Vietnam's long-stay residency document for foreigners. This guide covers all three routes to a TRC, the full application process, what documents you need, and how long it takes.",
+    author: 'Vietnam Launchpad',
+    date: '2026-02-01',
+    lastUpdated: '2026-04-01',
+    readTime: '14 min read',
+    category: 'Visas & Residency',
+    ctaTitle: 'Need Help with Your TRC Application?',
+    ctaBody: "Vietnam Launchpad specializes in TRC applications for all routes - investment, work permit, and marriage. We prepare your full document package, liaise with immigration, and handle the process end-to-end. Most TRC applications we manage are approved first time.",
+    ctaLink: '/services/trc',
+    ctaLinkText: 'Start Your TRC Application',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Ask a Question',
+    content: `## What Does TRC Stand For?
+
+**TRC = Temporary Residence Card** (Vietnamese: **The Tam Tru**, abbreviated TRC).
+
+A TRC is Vietnam's official long-term residency document for foreign nationals. It allows you to live in Vietnam for a defined period (typically 1-5 years) without the need to do visa runs or renew visa stamps. It is issued by the Vietnam Department of Immigration.
+
+The TRC is not a permanent residency - "temporary" refers to its fixed duration rather than implying insecurity. TRCs are renewable. Many long-term expats have held TRCs continuously for 10+ years.
+
+---
+
+## TRC vs Visa vs Work Permit: Understanding the Difference
+
+These three documents are distinct and often confused:
+
+| Document | What It Is | Who Issues It |
+|---|---|---|
+| **Visa** | Entry permission (e-visa, visa on arrival, DL stamp) | Immigration / Embassy |
+| **Work Permit** | Authorization to work for a Vietnamese employer | Ministry of Labor (MOLISA) |
+| **TRC** | Long-stay residency card | Department of Immigration |
+
+A TRC replaces the need for ongoing visa renewals but does **not** replace a work permit. If you are employed by a Vietnamese company, you need both a work permit (to work legally) and a TRC (to stay long-term).
+
+---
+
+## TRC Validity Periods
+
+| TRC Type | Standard Duration | Maximum |
+|---|---|---|
+| Work permit-based TRC | Duration of work permit (typically 2 years) | Renewable |
+| Investment TRC | 2-5 years | Renewable |
+| Marriage to Vietnamese citizen TRC | Up to 5 years | Renewable |
+
+TRCs can be renewed before expiry. There is no limit on the number of times you can renew.
+
+---
+
+## The 3 Routes to a TRC
+
+There are three primary pathways for foreign nationals to obtain a TRC in Vietnam.
+
+---
+
+### Route 1: Work Permit-Based TRC
+
+**Who qualifies:** Foreign nationals with a valid Vietnamese work permit issued by MOLISA (Ministry of Labor, Invalids and Social Affairs).
+
+This is the most common route for expats employed by Vietnamese companies or foreign-invested enterprises operating in Vietnam.
+
+**How it works:**
+1. Employer sponsors you for a work permit
+2. Work permit approved (see [Work Permit guide](/guides/working-in-vietnam))
+3. Apply for TRC based on approved work permit
+4. TRC issued for the duration of the work permit (typically 2 years)
+
+**TRC duration:** Matches your work permit - typically 2 years, renewable.
+
+**Key requirement:** You must have a valid, approved work permit before applying. The TRC application cannot be filed concurrently with the work permit application in most cases.
+
+---
+
+### Route 2: Investment TRC
+
+**Who qualifies:** Foreign nationals who have made a qualifying investment in a Vietnam-registered enterprise.
+
+This is the primary TRC route for business owners, entrepreneurs, and investors who do not have a conventional employment relationship.
+
+**Investment threshold:** You must be a capital-contributing member of a Vietnamese enterprise. The enterprise must have charter capital of at least **VND 3 billion** (approximately USD 120,000 at 2026 rates).
+
+**Note:** The VND 3 billion threshold applies to the total charter capital of the enterprise, not necessarily your personal contribution amount. However, you must be a registered investor/member in the company.
+
+**TRC duration:** Up to 5 years, renewable.
+
+**Advantage:** This route gives you the longest initial TRC validity and is independent of any employment relationship. It is the preferred route for founders of Vietnam-registered companies.
+
+**See also:** Our [Company Registration service](/services/company-registration) if you need to establish the underlying company first.
+
+---
+
+### Route 3: Marriage to a Vietnamese Citizen
+
+**Who qualifies:** Foreign nationals legally married to a Vietnamese citizen under Vietnamese law.
+
+**TRC duration:** Up to 5 years, renewable.
+
+**Marriage registration requirement:** The marriage must be registered in Vietnam at the district-level People's Committee. A marriage certificate from abroad is not sufficient - you need a Vietnamese Marriage Registration Certificate or have the foreign marriage recognized in Vietnam.
+
+**See also:** Our [Marriage Registration guide](/guides/marriage-registration) for the full process.
+
+**Note:** This TRC is issued based on the family relationship, not employment. It allows you to live in Vietnam but does not authorize employment - you would still need a work permit if you are employed by a Vietnamese entity (though the investment route or legal representative exemption may apply).
+
+---
+
+## TRC Application: Required Documents
+
+The exact document checklist varies slightly by route and by province, but the core requirements are:
+
+### All Routes
+
+| Document | Notes |
+|---|---|
+| Original passport | Must be valid for at least 6 months beyond TRC start date |
+| Temporary accommodation registration | Registered at local ward police (CT01 form - registered by your landlord or hotel) |
+| 2 passport photos | White background, recent, specific size requirements (3x4 cm or 4x6 cm - confirm current spec) |
+| Application form (NA5 or NA6) | Provided by immigration; complete in Vietnamese |
+| Proof of legal entry | Visa or entry stamp in passport |
+
+### Additional for Work Permit Route
+
+| Document | Notes |
+|---|---|
+| Original work permit | Issued by MOLISA |
+| Labor contract | Notarized copy |
+| Company registration documents | IRC/BRC of employing company |
+
+### Additional for Investment Route
+
+| Document | Notes |
+|---|---|
+| Investment Registration Certificate (IRC) | Company's IRC |
+| Business Registration Certificate (BRC) | Company's BRC |
+| Evidence of capital contribution | Bank transfer records or capital contribution minutes |
+| Company charter | Showing you as investor/member |
+
+### Additional for Marriage Route
+
+| Document | Notes |
+|---|---|
+| Vietnamese Marriage Registration Certificate | Issued by People's Committee |
+| Vietnamese spouse's ID card (CCCD) | |
+| Household registration (Ho Khau) of spouse | Or confirmation of current address |
+
+---
+
+## Where to Apply for a TRC
+
+TRC applications are submitted to the **provincial/city Immigration Department** (Phong Quan Ly Xuat Nhap Canh) in the province where you will reside.
+
+- **Ho Chi Minh City:** HCMC Immigration Department, 161 Nguyen Du, District 1
+- **Hanoi:** Hanoi Immigration Department, 40A Hang Bai, Hoan Kiem
+- **Da Nang:** Da Nang Immigration Department, 7 Tran Qui Cap
+
+All applications must be submitted in person by the applicant.
+
+---
+
+## TRC Processing Timeline
+
+| Step | Duration |
+|---|---|
+| Document preparation | 1-2 weeks |
+| Submission and official processing | 5-15 business days |
+| Card production after approval | 3-5 business days |
+| **Total from submission to card** | **2-4 weeks** |
+
+Processing time varies by province and by current Immigration Department workload. HCMC and Hanoi offices can be slower during peak periods (January, September).
+
+---
+
+## TRC Costs
+
+### Government Fees
+
+| Fee Type | Amount |
+|---|---|
+| TRC issuance fee | VND 800,000 - 1,600,000 (~$32-65) depending on duration |
+| Document stamp fees | Minimal |
+
+### Agent Fees (Vietnam Launchpad)
+
+Using a professional agent for TRC applications typically costs $300-600 all-in (government fees + agent service fee), depending on route complexity and document translation requirements.
+
+Attempting a TRC application without Vietnamese language capability is possible but risks document errors that cause rejection or delay.
+
+---
+
+## TRC and Work Permit: The Combination Question
+
+A common source of confusion is the relationship between TRC and work permit:
+
+**If you have a work permit:** Apply for TRC separately after the work permit is issued. Your TRC will be valid for the same duration as your work permit.
+
+**"TRC work permit" as a phrase:** Some people use "TRC work permit" loosely to mean the combination of a TRC obtained via a work permit route. The TRC and work permit are separate documents even though one depends on the other.
+
+**If your work permit expires:** Your TRC also becomes invalid and must be renewed (or you switch to a different TRC route).
+
+---
+
+## TRC Renewal
+
+Renew your TRC before it expires - do not let it lapse. Overstaying a TRC is treated as an immigration violation.
+
+**When to apply for renewal:** At least 30-45 days before expiry. Offices can be busy and processing times vary.
+
+**Renewal process:** Similar to the initial application. Document requirements are largely the same. If your underlying status has not changed (same employer, same investment), renewal is usually straightforward.
+
+---
+
+## Temporary Residence Registration (Tam Tru) vs TRC
+
+These are different:
+
+**Temporary Residence Registration (Tam Tru / CT01 form):** A local registration that your landlord files at the ward police station declaring you are living at their property. This is an address-level registration, not a visa or stay permission. You need this for daily practicalities (bank account, some government services) and it is a prerequisite for TRC application.
+
+**TRC:** The actual residency card that authorizes your stay in Vietnam.
+
+You need both: the Tam Tru registration proves your address; the TRC authorizes your period of stay.
+
+---
+
+## Frequently Asked Questions
+
+**Can I leave and re-enter Vietnam with a TRC?**
+Yes. A TRC allows multiple entries. You do not need a separate visa to re-enter while your TRC is valid - present your TRC at immigration on return.
+
+**Can my family get TRCs too?**
+Yes. Dependent family members (spouse, children) of TRC holders can apply for dependent TRCs. The work permit and investment routes both allow family member applications.
+
+**Does a TRC give me the right to work?**
+The TRC authorizes your residency - it does not separately authorize employment. The work permit authorizes employment. Exception: investment TRC holders who are legal representatives of their Vietnamese company do not need a separate work permit.
+
+**What happens if I lose my TRC?**
+Report to the local immigration office and the ward police immediately. Apply for a replacement card. There is a government fee for replacement.
+
+**Is a TRC the same as a permanent residency?**
+No. Vietnam has a separate Permanent Residency (PR / Thuong Tru) status requiring 3+ consecutive years of TRC residency and additional requirements. TRC holders who meet the criteria can apply for PR. Most long-term expats maintain TRC status rather than pursuing PR.`,
+  },
+
+  'teaching-english-vietnam': {
+    slug: 'teaching-english-vietnam',
+    title: 'Teaching English in Vietnam: The Complete Guide for 2026',
+    subtitle: 'Requirements for native and non-native speakers, UK citizens, work permits, salaries, and how to find jobs',
+    excerpt: "Vietnam is one of the most popular destinations in Asia for English teaching jobs - and for good reason. High demand, competitive salaries, and a low cost of living make it financially attractive. This guide covers all the requirements, including specific guidance for non-native English speakers and UK citizens.",
+    author: 'Vietnam Launchpad',
+    date: '2026-02-01',
+    lastUpdated: '2026-04-01',
+    readTime: '15 min read',
+    category: 'Work & Business',
+    ctaTitle: 'Need a Work Permit to Teach in Vietnam?',
+    ctaBody: 'Vietnam Launchpad handles work permit applications for English teachers across Vietnam. We prepare your full document package, liaise with MOLISA, and manage the process. Most of our teacher work permit applications are approved first time.',
+    ctaLink: '/services/work-permit',
+    ctaLinkText: 'Apply for Your Work Permit',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Ask a Question',
+    content: `## Why Vietnam for English Teaching?
+
+Vietnam has one of the highest demands for English language education in Southeast Asia. English proficiency is seen as a critical career skill and parents invest heavily in their children's English education. This creates a large, well-funded market for qualified teachers.
+
+**The financial case:**
+- Average salary: $1,500-2,500/month for qualified teachers
+- Cost of living: $800-1,500/month for a comfortable lifestyle
+- Net monthly savings: $500-1,500+/month is achievable
+- Tax rate for non-resident foreign teachers: flat 20% on income; as a tax resident (183+ days/year) you pay progressive rates which can be lower
+
+For context: a teacher earning $2,000/month in Vietnam has a purchasing power equivalent to roughly $4,000-5,000 in the UK or US when local costs are considered.
+
+---
+
+## Types of English Teaching Jobs in Vietnam
+
+Understanding the job market helps you target your applications and negotiate effectively.
+
+### International Schools
+
+**Best paying, highest requirements.** Teach full curricula to international students. Pay: $2,500-5,000+/month. Require full teaching qualifications (PGCE/QTS or equivalent), often a degree in your subject, and experience.
+
+### Language Centers (English Centers)
+
+**The most common employer category.** Major chains: ILA, Wall Street English, Apollo, Apax, Language Link, YOLA, VUS. Hundreds of independent centers also operate across the country.
+
+Pay: $1,200-2,500/month. Requirements vary but generally require TEFL/CELTA and a degree.
+
+### Private/Tutoring
+
+Many teachers supplement or replace center work with private students. Pay: $15-40/hour. No overhead - but no guaranteed hours either.
+
+### Universities
+
+**Stable, good work-life balance.** University positions offer regular hours, holidays that align with the academic calendar, and a professional environment.
+
+Pay: $1,200-2,000/month. Typically require a master's degree or significant experience.
+
+### International Kindergartens and Primary Schools
+
+Strong demand for native or near-native English teachers for young learners. Pay: $1,500-2,500/month. Requirements often include child-safeguarding certification.
+
+---
+
+## Requirements to Teach English in Vietnam
+
+Vietnamese law requires all foreign English teachers to meet a set of legal requirements before they can be legally employed. Since 2018, enforcement has become progressively stricter.
+
+### Core Requirements (All Teachers)
+
+| Requirement | Detail |
+|---|---|
+| **Degree** | Bachelor's degree minimum in any subject |
+| **TEFL/TESOL/CELTA** | Minimum 120 hours; CELTA is most recognised |
+| **Health certificate** | From a licensed hospital; must confirm fitness to work |
+| **Criminal background check** | From your home country AND any country lived in for 6+ months in the past 3 years |
+| **Document apostille** | Degree and criminal check must be apostilled |
+
+All documents from abroad must be apostilled (for countries in the Hague Convention) or notarized through the Vietnamese embassy (for non-Hague countries). Documents in languages other than Vietnamese must be translated by a licensed translation service and notarized.
+
+---
+
+## Requirements for Non-Native English Speakers
+
+This is one of the most frequently asked questions: **can non-native English speakers teach English in Vietnam?**
+
+**Yes - but with additional requirements.**
+
+Vietnamese immigration law defines "native English speaking countries" as: USA, UK, Canada, Australia, New Zealand, Ireland, and South Africa.
+
+If you are not a citizen of one of these seven countries, you are classified as a non-native English speaker under Vietnamese law and must provide **additional documentation** to prove English language proficiency:
+
+### Non-Native Speaker Requirements (2026)
+
+In addition to the standard requirements above, non-native English speakers must provide **one of the following**:
+
+1. **Degree taught entirely in English** from a recognized institution - with a letter from the institution confirming the language of instruction was English throughout
+2. **IELTS 7.5+ or TOEFL 102+** (or equivalent recognized English proficiency test)
+3. **Teaching qualification** (such as CELTA or a nationally-recognized teaching certificate) **from a native English speaking country**
+
+**Practical note:** Option 1 (English-medium degree with supporting letter) is the most commonly used route for non-native speakers. If you studied in English in any country - including non-native countries like Germany, the Netherlands, Singapore, or India - a supporting letter from your university confirming English-medium instruction can satisfy this requirement.
+
+**Country-specific examples:**
+
+- **Indian, Pakistani, Singaporean citizens:** English is widely used as academic medium. Obtain a letter from your university confirming English-medium instruction. This is typically the simplest route.
+- **European citizens (German, Dutch, Swedish, French, etc.):** If your degree was taught in English (common for master's programs and many bachelor's programs across Europe), obtain the university letter. Alternatively, IELTS 7.5+ works.
+- **Filipino citizens:** Despite widespread English use, Philippines is not on the "native speaker" list. However, the university letter route is often straightforward.
+- **South Korean, Japanese, Chinese citizens:** If degree was in your home country in your native language, you will need IELTS 7.5+ or a CELTA from a native-speaker country.
+
+---
+
+## Requirements for UK Citizens Teaching in Vietnam
+
+UK citizens are classified as **native English speakers** and do not face the additional language proficiency requirements.
+
+### What UK Teachers Need
+
+| Document | Notes |
+|---|---|
+| UK degree (any subject) | Bachelor's minimum |
+| TEFL/CELTA (120+ hours) | CELTA strongly preferred for better employers |
+| DBS Enhanced Certificate | Disclosure and Barring Service check - the standard UK criminal background check for teaching |
+| Health certificate | Obtained in Vietnam from a designated hospital; ~$50-100 |
+| Degree apostille | UK degrees must be apostilled via FCDO (formerly FCO) |
+| DBS apostille | The DBS certificate must also be apostilled via FCDO |
+
+**FCDO apostille:** This is the UK Foreign, Commonwealth and Development Office service that authenticates UK documents for use abroad. As of 2026, the online apostille service costs approximately 30 pounds per document and is processed within 1-5 business days for online applications.
+
+**Applying from Vietnam:** You can apply for the FCDO apostille online from Vietnam and have documents emailed or posted to a trusted contact in the UK to handle the original. Plan at least 2-3 weeks for the full document preparation process if doing it remotely.
+
+**DBS note:** Standard DBS checks are not acceptable for Vietnamese work permit purposes - you need an **Enhanced DBS** certificate. If you do not have a current one (less than 3-6 months old is preferred), apply before leaving the UK.
+
+---
+
+## The Work Permit Process for English Teachers
+
+To teach legally in Vietnam, you must have a valid work permit issued by MOLISA (Ministry of Labor). Teaching on a tourist visa or e-visa is illegal and schools can be fined heavily for employing teachers without work permits.
+
+### Step 1: Find a Licensed Employer
+
+The work permit application is sponsored by your employer. Only schools with a valid business registration and education license can legally employ foreign teachers. Verify your employer's status before signing any contract.
+
+### Step 2: Document Preparation
+
+Prepare and apostille all required documents (list above). This is typically done before arriving in Vietnam or in the first weeks of being in the country. Your employer or agent will advise on the specific requirements for your situation.
+
+### Step 3: Work Permit Application
+
+Your employer (or an agent on your behalf) submits the work permit application to MOLISA. Processing: **5-10 business days** in most cases.
+
+### Step 4: TRC Application
+
+Once your work permit is approved, apply for a Temporary Residence Card (TRC). This gives you multi-year residency status without visa runs.
+
+**Full timeline:** 3-6 weeks from starting document preparation to having your work permit and TRC.
+
+---
+
+## Salary Ranges by Job Type (2026)
+
+| Position | Monthly Salary |
+|---|---|
+| Language center (new teacher) | $1,200-1,600 |
+| Language center (experienced) | $1,600-2,200 |
+| Language center (senior/management) | $2,000-2,800 |
+| International school (full curriculum) | $2,500-4,500+ |
+| University lecturer | $1,200-2,000 |
+| Private/tutoring (per hour) | $15-40 |
+
+**HCMC and Hanoi generally pay 10-20% more** than smaller cities due to higher cost of living and competition for qualified teachers.
+
+**Negotiation note:** A CELTA qualification from Cambridge consistently commands higher salaries than generic online TEFL certificates. If you are investing in a qualification, CELTA is the most recognized by serious employers.
+
+---
+
+## TEFL vs CELTA: Which One?
+
+This comes up constantly in the teacher community:
+
+**TEFL (Teaching English as a Foreign Language):** Generic term for various certificates. Quality varies enormously - from 120-hour online courses ($200-500) to intensive in-person programs.
+
+**CELTA (Certificate in English Language Teaching to Adults):** Issued by Cambridge Assessment English. The industry gold standard. Involves assessed teaching practice with real students. Takes 4 weeks full-time or 3 months part-time. Cost: $1,500-2,500 depending on location.
+
+**For Vietnam specifically:** Any 120-hour TEFL meets the legal minimum. However, CELTA holders consistently get better job offers, higher starting salaries, and access to more reputable employers. If you are serious about teaching in Vietnam long-term, CELTA is worth the investment.
+
+---
+
+## Where to Find English Teaching Jobs in Vietnam
+
+### Job Boards and Communities
+- **VietnamTeachingJobs.com** - the largest dedicated English teaching job board
+- **Facebook groups:** "Teaching English in Vietnam" (90,000+ members), "English Teaching Jobs in Ho Chi Minh City," "Teach in Vietnam Hanoi"
+- **Dave's ESL Cafe** - still active for international teaching jobs
+- **LinkedIn** - for international school positions
+
+### Applying Directly
+Many of the largest language center chains (ILA, Apollo, Wall Street English) have careers pages and recruit directly. For international schools, check each school's website individually.
+
+### Recruitment Agencies
+International school recruitment agencies (Search Associates, TIE Online, Schrole) can connect qualified teachers with international school positions before arriving in Vietnam.
+
+---
+
+## HCMC vs Hanoi vs Da Nang for Teaching
+
+**HCMC:** Highest volume of jobs, highest salaries, largest choice of employers. Best for teachers wanting the widest options.
+
+**Hanoi:** Strong market, good salaries, more universities. Smaller city feel than HCMC.
+
+**Da Nang:** Growing market, strong demand relative to supply. Lower absolute salaries but significantly lower cost of living - net savings can be competitive.
+
+**Smaller cities (Can Tho, Hue, Vung Tau, Nha Trang):** Fewer jobs but also fewer competing teachers. Some teachers specifically prefer smaller cities for the lifestyle and community feel.
+
+---
+
+## Common Mistakes Teachers Make
+
+1. **Teaching without a work permit** - the school is fined but you also bear risk, including deportation
+2. **Accepting an apostille for the wrong document type** - make sure criminal checks AND degrees are both apostilled
+3. **Getting a standard DBS rather than Enhanced DBS** (UK teachers)
+4. **Using an expired criminal background check** - checks are typically valid for 6 months
+5. **Signing a contract before verifying the school's licenses** - protect yourself before committing
+6. **Relying on a tourist visa long-term** - this is increasingly risky as enforcement has tightened`,
+  },
+
+  'marriage-registration': {
+    slug: 'marriage-registration',
+    title: 'Getting Married in Vietnam: The Complete Marriage Registration Guide for Foreigners (2026)',
+    subtitle: 'How to register a marriage in Vietnam, documents required, the process for foreign nationals, and getting your Vietnamese marriage certificate',
+    excerpt: "Marriage registration in Vietnam for foreigners involves more paperwork than a domestic marriage - but the process is manageable if you know what to prepare. This guide covers the full registration process, required documents, where to apply, and how to get your certificate recognized internationally.",
+    author: 'Vietnam Launchpad',
+    date: '2026-02-01',
+    lastUpdated: '2026-04-01',
+    readTime: '13 min read',
+    category: 'Daily Life',
+    ctaTitle: 'Need Help with Marriage Registration or the TRC Afterward?',
+    ctaBody: 'Vietnam Launchpad handles marriage registration document preparation for foreign nationals and the subsequent TRC application for the foreign spouse. We know exactly what each province requires and manage the full process.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Consultation',
+    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryText: 'Learn About Marriage-Based TRC',
+    content: `## Getting Married in Vietnam: Overview
+
+Foreign nationals can legally marry Vietnamese citizens in Vietnam. The marriage is registered at the local People's Committee and produces a **Vietnamese Marriage Registration Certificate** (Giay Chung Nhan Ket Hon) - the official legal document proving your marriage under Vietnamese law.
+
+Vietnam also allows two foreign nationals (neither being Vietnamese) to marry in Vietnam, though this is less common and the requirements differ slightly.
+
+This guide primarily covers the most common scenario: a foreign national marrying a Vietnamese citizen in Vietnam.
+
+---
+
+## Why the Marriage Registration Matters
+
+The Vietnamese Marriage Registration Certificate is essential for:
+
+1. **Residency (TRC):** Your foreign spouse can use the marriage certificate as the basis for a long-stay Temporary Residence Card (TRC)
+2. **Spousal visa for the Vietnamese partner** to move abroad (if applicable)
+3. **Inheritance and property rights** within Vietnam
+4. **Recognition in your home country** (with appropriate translation, apostille, and registration processes depending on your country)
+
+Do not mistake a religious or traditional Vietnamese wedding ceremony for legal registration - the ceremony is cultural; the legal registration at the People's Committee is what creates the legally binding marriage.
+
+---
+
+## Who Handles Marriage Registration in Vietnam?
+
+Marriage registration in Vietnam is handled at two levels depending on who is involved:
+
+**Provincial Department of Justice (So Tu Phap):**
+Handles all marriages involving a foreign national. This is where you will register if one or both parties are foreign nationals.
+
+**District People's Committee:**
+Handles marriages between two Vietnamese citizens only. Foreign nationals cannot use this route.
+
+**Key point:** If you are a foreigner marrying a Vietnamese citizen, you must go to the **Provincial Department of Justice** in the province where the Vietnamese party has their household registration (Ho Khau).
+
+---
+
+## Marriage Registration: Step-by-Step Process
+
+### Step 1: Determine Which Province to Apply In
+
+The application is filed at the Department of Justice of the province where the Vietnamese citizen's household registration (Ho Khau) is located. If the Vietnamese party has moved and their Ho Khau is in a different province from where they live, this can affect logistics.
+
+If the Vietnamese party has changed their Ho Khau to a new province (a process in itself), you may be able to apply locally - discuss with the relevant office.
+
+### Step 2: Prepare Documents
+
+Document preparation is the most time-consuming part. Allow **3-6 weeks** for full document gathering, particularly for the foreign national's documents from abroad.
+
+See the full document checklist below.
+
+### Step 3: Submit Application
+
+Submit at the Provincial Department of Justice in person. Both parties must be present at the time of submission (or at the interview stage - practices vary by province, confirm locally).
+
+### Step 4: Interview / Verification (if required)
+
+Some provinces require an interview with both parties to confirm the marriage is genuine and voluntary. This is conducted in Vietnamese - an interpreter can attend.
+
+### Step 5: Certificate Issued
+
+If everything is in order, the **Vietnamese Marriage Registration Certificate** is issued typically within **15-20 business days** of submission (some provinces faster, some slower).
+
+---
+
+## Document Requirements: Foreign National
+
+The following documents are typically required from the foreign national. Requirements can vary slightly by province - confirm the current requirements at the specific Department of Justice where you will apply.
+
+| Document | Notes |
+|---|---|
+| **Original valid passport** | Plus copies |
+| **Birth certificate** | Apostilled from your country of birth; translated into Vietnamese |
+| **Certificate of No Impediment to Marriage** | Issued by your home country - confirms you are legally single. Most countries issue this through the embassy or civil registry. Apostilled. Translated. |
+| **Criminal record certificate** (some provinces) | From home country or local police; requirements vary |
+| **Health certificate** | Confirming no conditions that prevent marriage; issued by a licensed hospital in Vietnam (~$30-80) |
+| **Confirmation of Vietnamese law compliance** | Some provinces require you to sign a declaration that you understand Vietnamese marriage law |
+| **Photos** | Passport-style photos (usually 4-6 required) |
+
+**Certificate of No Impediment (CNI) / Marital Status Certificate:** This is often the hardest document to obtain. Requirements vary dramatically by nationality:
+
+- **UK citizens:** Certificate of No Impediment issued by FCDO (Legalisation Office), or Marital Status Certificate from the General Register Office. Apostille required.
+- **US citizens:** The USA does not issue a national CNI. A "Letter of No Impediment" can sometimes be obtained from the US Consulate in Vietnam, or an affidavit sworn before a notary public (apostilled) is accepted by some provinces. Confirm with the specific DPJ office.
+- **Australian citizens:** Single status declaration before the Australian Consulate in Vietnam, or a statement from the Registry of Births, Deaths and Marriages in your home state. Apostille required.
+- **Other nationalities:** Contact your home country's civil registry or your country's embassy in Vietnam for the correct document and process.
+
+---
+
+## Document Requirements: Vietnamese Citizen
+
+| Document | Notes |
+|---|---|
+| **CCCD (National ID card)** | Must be current and valid |
+| **Household registration book (Ho Khau)** | Or digital household registration confirmation |
+| **Birth certificate** | Vietnamese-issued |
+| **Certificate of marital status** | Issued by local ward People's Committee confirming they are legally single |
+| **Health certificate** | From a licensed hospital |
+| **Photos** | Passport-style |
+
+---
+
+## Document Translation and Apostille Requirements
+
+All foreign documents must be:
+
+1. **Apostilled** in the country of origin (for countries in the Hague Apostille Convention) OR notarized through the Vietnamese Embassy in your home country (for non-Hague countries)
+2. **Translated into Vietnamese** by a licensed translation company and notarized in Vietnam
+
+**Common Hague Convention countries:** UK, USA, Australia, most European countries, etc. Check the official Hague Conference website for the full list.
+
+**Translation note:** Do not use online translation services or personal translators for official documents. Use a licensed translation company (Cong ty dich thuat co phep) that can provide notarized translations. In HCMC and Hanoi, there are many reliable services; fees typically $20-60 per document.
+
+---
+
+## Costs
+
+### Official Fees
+
+| Item | Approximate Cost |
+|---|---|
+| Marriage registration fee (provincial) | VND 500,000 - 2,000,000 (~$20-80) |
+| Health certificate (per person) | ~$30-80 |
+| Document translation (per document) | $20-60 |
+| Notarization (per document) | $5-20 |
+
+### External Document Costs
+
+| Item | Approximate Cost |
+|---|---|
+| CNI / Marital status certificate (from home country) | $50-200 depending on country |
+| Apostille fees (home country) | $25-80 per document |
+| Postage/courier (if getting documents from abroad) | $30-100 |
+
+**Agent fees** if using a professional service to manage the process: typically $400-800.
+
+**Total realistic cost:** $500-1,500 all-in depending on nationality and number of documents needing apostille.
+
+---
+
+## Timeline
+
+| Phase | Duration |
+|---|---|
+| Obtaining documents from home country (CNI, birth cert, apostilles) | 2-6 weeks |
+| Translation and notarization in Vietnam | 1 week |
+| Department of Justice processing | 15-20 business days |
+| **Total from start to certificate** | **6-10 weeks** |
+
+The main variable is how quickly you can obtain documents from your home country - particularly the Certificate of No Impediment.
+
+---
+
+## After Registration: Getting Your Vietnamese Marriage Certificate Recognized Abroad
+
+The Vietnamese Marriage Registration Certificate is a Vietnamese legal document. To use it in your home country, you will typically need to:
+
+1. **Obtain an apostille from Vietnam** for the marriage certificate (through Vietnam's Ministry of Foreign Affairs - Consular Department or their provincial offices). Cost: minimal.
+2. **Have it translated** into your home country's language by a certified translator
+3. **Register or present it** to your home country's civil registry or relevant authority
+
+**UK:** Register with the General Register Office; you will need an apostille and certified translation.
+
+**USA:** State-level civil authorities vary; generally requires apostille and certified translation. Some states require additional notarization.
+
+**Australia:** Register with the relevant state/territory registry.
+
+Confirm current requirements with your home country's consulate or civil registry as processes change.
+
+---
+
+## Getting Married: The Wedding Itself
+
+Registration at the People's Committee or Department of Justice is the legal act. The ceremony is separate.
+
+Many couples:
+1. **Legally register** at the Department of Justice (quiet, official, with required witnesses)
+2. **Hold a wedding ceremony separately** - traditional Vietnamese wedding banquet, Western ceremony, beach ceremony, or any combination
+
+Vietnamese traditional weddings typically involve a formal engagement ceremony (le an hoi) where the groom's family visits the bride's family, and a wedding banquet with many guests. These are cultural traditions, not legal requirements.
+
+---
+
+## Same-Sex Marriage in Vietnam
+
+As of 2026, Vietnam does not legally recognize same-sex marriage. The National Assembly removed criminal penalties for same-sex ceremonies in 2015, but no legislation for legal recognition has passed. Same-sex partners cannot register a marriage at the Department of Justice.
+
+---
+
+## Frequently Asked Questions
+
+**Can we marry at a resort or on the beach?**
+The legal registration must happen at the Department of Justice. You can have your ceremony anywhere you wish. Some resorts have officiant services that accompany the legal registration process.
+
+**How long after registration can we apply for the TRC?**
+Immediately. The marriage certificate is the basis for the TRC application; file as soon as you have the certificate.
+
+**Does the foreign spouse automatically get a TRC after marriage?**
+No - the TRC must be applied for separately. The marriage certificate enables the application but does not automatically grant residency.
+
+**What if one partner cannot be present at the Department of Justice?**
+Both parties typically need to be present. For the submission in some provinces, a Power of Attorney may allow an agent to submit documents, but the interview (if required) usually requires both parties. Confirm with the specific office.
+
+**Is a marriage abroad recognized in Vietnam?**
+A legal marriage from abroad can generally be used as evidence in Vietnam (for property, visa purposes, etc.) with appropriate apostille and translation. However, for the Vietnamese TRC based on marriage, Vietnamese immigration typically prefers a Vietnamese Marriage Registration Certificate. This may require registering the foreign marriage at the Department of Justice in Vietnam.`,
+  },
+
+  'driving-vietnam': {
+    slug: 'driving-vietnam',
+    title: 'Driving in Vietnam: Licenses, Car Rental, and Converting Your Foreign License (2026)',
+    subtitle: 'Can you drive in Vietnam on your foreign license, how to convert it, renting a car, and motorbike rules',
+    excerpt: "Can you drive in Vietnam on a US, UK, or international license? The answer is more complicated than most guides suggest. This page covers what is legally required, how to convert your foreign license, and everything you need to know about renting a car or motorbike in Vietnam.",
+    author: 'Vietnam Launchpad',
+    date: '2026-02-01',
+    lastUpdated: '2026-04-01',
+    readTime: '12 min read',
+    category: 'Daily Life',
+    ctaTitle: 'Need to Convert Your Foreign Driving License?',
+    ctaBody: "Vietnam Launchpad handles driving license conversion for foreign nationals - from document preparation to submission at the Department of Transport. We manage the process so you have a legal Vietnamese license quickly.",
+    ctaLink: '/services/drivers-license',
+    ctaLinkText: 'Start License Conversion',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Ask a Question',
+    content: `## Renting a Car in Vietnam
+
+Renting a car in Vietnam as a foreigner is straightforward - but there are important things to understand before you book.
+
+### What You Need to Rent a Car
+
+**Requirement 1: A valid driver's license**
+
+To rent a car legally in Vietnam, you need either:
+- A valid Vietnamese driving license
+- A valid International Driving Permit (IDP) accompanied by your home country's driving license
+
+Your home country's license **alone** is not sufficient to rent from legitimate car rental companies. You need the IDP paired with your domestic license.
+
+**Requirement 2: Valid passport and visa**
+
+**Requirement 3: Age minimum**
+
+Most rental companies require drivers to be 21-25+ years old. Confirm with the specific company.
+
+### International Driving Permit (IDP) for Car Rental
+
+An IDP is an official document that translates your driving license into multiple languages. It is recognized globally under the Geneva Convention on Road Traffic (which Vietnam has signed).
+
+**Where to get an IDP before arriving in Vietnam:**
+- **UK:** AA or RAC (approximately 6-10 pounds, issued same-day)
+- **USA:** AAA or AATA (approximately $20, requires existing US license)
+- **Australia:** NRMA, RACQ, RAA and other state motoring clubs (~$35)
+- **Canada:** CAA
+- Most national motoring associations in other countries issue IDPs
+
+An IDP is valid for 1 year from issue. Get one before you travel - they cannot be obtained in Vietnam.
+
+**Important:** The IDP must be used together with your original home country license. The IDP alone is not valid.
+
+### Renting With a Driver
+
+A popular alternative to self-driving is hiring a **car with driver**. This is common, affordable, and practical given Vietnam's traffic conditions:
+
+- Day rental with driver (HCMC): $40-80/day depending on car type and distance
+- Intercity with driver (e.g., HCMC to Da Nang): $80-150+ per day
+- Airport transfers: $10-30 depending on distance and car type
+
+For most tourists and short-term visitors, a car with driver makes more practical sense than self-driving - particularly in cities where traffic and navigation are challenging.
+
+### Car Rental Companies in Vietnam
+
+**International brands with Vietnam operations:**
+- Avis Vietnam
+- Europcar Vietnam
+- Budget Vietnam
+
+**Local rental companies** (often better value):
+- Vinasun Car Rental
+- Taxi and car rental services through your hotel
+- Grab (GrabCar) for shorter trips without full-day rental
+
+**Apps:** For flexible car hire by the hour or day, Xanh SM (the VinFast EV ride-hail service) has expanded car options.
+
+### Self-Drive Road Trip Considerations
+
+Self-drive road trips are possible and popular on routes like the Hai Van Pass (Da Nang to Hue) or the Ha Giang Loop. However:
+
+- **Traffic in cities is intense** - HCMC and Hanoi traffic is not recommended for first-time drivers in Vietnam
+- **Road rules are different** - Vietnamese driving culture has its own logic; expect more assertive merging and horn use than Western drivers may be used to
+- **Insurance:** Confirm your rental car has comprehensive insurance and understand the excess amount before driving
+- **Toll roads:** Major highways use electronic tolls and cash toll plazas - have small VND notes available
+
+---
+
+## Can You Drive in Vietnam with a US License?
+
+**The short answer:** You cannot legally drive in Vietnam on a US license alone. A US driver's license by itself is not recognized for driving on Vietnamese roads.
+
+**What works legally:**
+- A valid **International Driving Permit (IDP)** issued in the USA (from AAA or AATA) **plus** your original US license - this combination is legally recognized for car driving
+- A Vietnamese driving license (obtained by conversion - see below)
+
+**What does NOT work:**
+- A US state-issued driving license alone
+- An IDP alone without the US license
+
+**For motorbikes:** The IDP covers car categories. For motorbike/scooter driving, you technically need a Vietnamese license or an IDP that specifically covers motorcycle categories (check your IDP class when applying).
+
+**Practical reality vs legal requirement:** Many tourists ride rented motorbikes in Vietnam on foreign licenses or no license at all. This is common but illegal, voids most rental insurance, and would cause serious complications if you were in an accident. This guide covers the legal position - what you do with that information is your choice.
+
+---
+
+## Can You Drive in Vietnam with a UK License?
+
+**The same rules apply as for a US license:** A UK driving license alone is not valid in Vietnam.
+
+**What works legally:**
+- A valid **International Driving Permit** issued in the UK (from AA or RAC) **plus** your original UK license
+- A Vietnamese driving license
+
+**UK-specific note on IDP type:** The UK now issues two types of IDP:
+1. **1949 IDP** (valid in countries that signed the 1949 Geneva Convention) - valid in Vietnam
+2. **1968 IDP** (valid in countries that signed the 1968 Vienna Convention) - Vietnam signed the 1968 convention but also accepts the 1949 IDP
+
+Get the **1949 IDP** from the AA or RAC (6 pounds) - this is the relevant one for Vietnam. You can hold both if unsure.
+
+---
+
+## Converting Your Foreign Driving License to a Vietnamese License
+
+If you are living in Vietnam long-term, converting your foreign license to a Vietnamese one is the cleanest solution. It removes the IDP dependency and gives you a Vietnamese license that is valid without expiry concerns.
+
+### Who Can Convert?
+
+You must have:
+- A valid foreign driving license from your home country
+- A valid Vietnamese visa or residency permit (TRC or valid stamp)
+- A residence registration in Vietnam (Tam Tru)
+
+License conversion is handled by the **Department of Transport** (So Giao Thong Van Tai) in the province where you are registered.
+
+### Conversion vs. Examination
+
+**Conversion (Doi bang lai):** For licenses from countries that have a bilateral agreement with Vietnam - you exchange your foreign license for a Vietnamese one without sitting a test. Countries with bilateral agreements include: USA, UK, Australia, most European countries, Japan, South Korea, and others.
+
+**Examination:** If your country does not have a bilateral agreement, you may need to sit the Vietnamese driving test in addition to document conversion.
+
+**Practical step:** Check with the provincial Department of Transport whether your country qualifies for direct conversion or requires an exam. The list of eligible countries expands periodically.
+
+### Documents Required for License Conversion
+
+| Document | Notes |
+|---|---|
+| Original foreign driving license | Must be valid |
+| Certified translation of the license | Into Vietnamese, by a licensed translation company |
+| Passport (original + copies) | |
+| Valid Vietnam visa / TRC | Proof of legal stay |
+| Temporary residence registration (Tam Tru) | CT01 form registered at local ward police |
+| Health certificate | Confirming fitness to drive; from a licensed hospital |
+| Application form | Provided by the Department of Transport |
+| Photos | Passport-style, specific size |
+| Apostille/notarization of license | Some provinces require this - confirm locally |
+
+### License Conversion Process
+
+1. **Prepare documents** (including translation and health certificate) - approximately 1-2 weeks
+2. **Submit at the Department of Transport** in your province
+3. **Processing time:** 5-15 business days
+4. **Collect your Vietnamese license**
+
+**Cost:** Official fees approximately VND 135,000-200,000 (under $10). Translation and health certificate add another $50-100. Agent fees if using a service: $150-300.
+
+### What Category of License?
+
+Vietnamese licenses use category codes:
+
+| Category | Vehicle Type |
+|---|---|
+| A1 | Motorbike 50-175cc |
+| A2 | Motorbike over 175cc; 3-wheel motor vehicles |
+| B1 | Car up to 9 seats (automatic; cannot drive commercially) |
+| B2 | Car up to 9 seats (manual; can drive commercially) |
+| C | Truck up to 3.5 tons |
+| D, E, F | Larger vehicles |
+
+If your foreign license covers a car, you will typically convert to B1 or B2 depending on your license specifics. If you also want a motorbike license and your foreign license covers motorcycles, that can usually be converted too.
+
+---
+
+## Motorbike Rules for Foreigners
+
+Motorbikes (xe may) are the primary transport mode in Vietnam and many expats ride them daily.
+
+### Legal Requirements to Ride a Motorbike
+
+- **Under 50cc (xe may dien, electric scooters):** No license required in Vietnam (though rules for electric bicycles vs scooters are evolving - confirm current rules)
+- **50cc-175cc (A1):** Requires Vietnamese A1 license or equivalent
+- **Over 175cc (A2):** Requires Vietnamese A2 license
+
+**IDP for motorbikes:** IDPs typically include motorcycle categories if your home license covers motorcycles. Check the category listed on your IDP when applying in your home country.
+
+### Renting a Motorbike
+
+Motorbike rentals are available everywhere in Vietnam for $5-15/day for a standard semi-automatic or manual bike, or $20-40/day for larger bikes.
+
+**What rental shops check:** Practically speaking, most motorbike rental shops in tourist areas do not check for licenses at all. This is the reality on the ground. However, your rental agreement terms and any insurance coverage may require a valid license.
+
+**Traffic police (CSGT):** Traffic police checkpoints do occur and do check licenses. Being caught riding without a valid license can result in fines (VND 800,000-1,200,000 for unlicensed riding) and potentially having the motorbike impounded.
+
+---
+
+## Traffic Laws and Road Safety
+
+Key rules for driving/riding in Vietnam:
+
+| Rule | Detail |
+|---|---|
+| **Drive on the right** | Vietnam drives on the right side of the road |
+| **Helmet required** | Mandatory for motorbikes; fines for non-compliance |
+| **No drink driving** | Zero tolerance policy with heavy fines |
+| **Headlights** | Must be on at all times when riding a motorbike, even in daylight |
+| **Traffic signals** | Treated as guidance in practice - be observant, not just compliant |
+
+**Road safety reality:** Vietnam has a high road fatality rate. Traffic, particularly in cities, requires constant awareness. Take time to observe local traffic patterns before riding independently. Start with quieter streets and build up.
+
+---
+
+## Driving in Vietnam: Practical Tips
+
+1. **Start on a scooter, not a motorbike** if you are new - automatics (xe tay ga) are much easier in city traffic
+2. **Use Grab** for city travel while you get oriented - it is cheap and removes driving stress
+3. **Get an IDP before you arrive** - you cannot get one in Vietnam
+4. **Convert your license if staying more than 3-6 months** - the legal certainty is worth the paperwork
+5. **Buy a decent helmet** - cheap helmets are common but do not provide adequate protection; invest $30-60 in a quality helmet
+6. **Get motor insurance** - third-party motor insurance is mandatory and cheap (~$10-20/year for a motorbike)
+7. **Register your motorbike** if buying one - always transfer the ownership registration (giay to xe) properly when buying second-hand`,
+  },
 };
 
 export function getGuideBySlug(slug: string): Guide | null {
