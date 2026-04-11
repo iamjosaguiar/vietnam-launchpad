@@ -10,7 +10,7 @@ function url(path: string, priority: number, changefreq: string): string {
     <loc>${baseUrl}${path}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
+    <priority>${priority.toFixed(2)}</priority>
   </url>`;
 }
 

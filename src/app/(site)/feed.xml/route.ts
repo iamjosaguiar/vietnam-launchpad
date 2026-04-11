@@ -8,16 +8,11 @@ export async function GET() {
     .map((post) => {
       const url = `${baseUrl}/blog/${post.slug}`;
       const pubDate = new Date(post.date).toUTCString();
-      const description = post.excerpt
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-      const title = post.title
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
+      const xmlEscape = (s: string) =>
+        s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      const description = xmlEscape(post.excerpt);
+      const title = xmlEscape(post.title);
+      const category = xmlEscape(post.category);
 
       return `
     <item>
@@ -26,7 +21,7 @@ export async function GET() {
       <guid isPermaLink="true">${url}</guid>
       <description>${description}</description>
       <pubDate>${pubDate}</pubDate>
-      <category>${post.category}</category>
+      <category>${category}</category>
       <author>team@vietnamlaunchpad.com (${post.author})</author>
     </item>`;
     })
