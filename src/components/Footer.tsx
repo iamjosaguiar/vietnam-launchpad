@@ -59,13 +59,12 @@ export default function Footer() {
                 {[
                   { name: 'TRC Applications', href: '/services/trc-application' },
                   { name: 'Work Permits', href: '/services/work-permit' },
+                  { name: 'eVisa & Entry Visa', href: '/services/evisa' },
                   { name: 'Company Setup', href: '/services/company-setup' },
-                  { name: 'Tax Filing (PIT)', href: '/services/tax-filing' },
                   { name: 'Accounting & Bookkeeping', href: '/services/accounting-bookkeeping' },
+                  { name: 'Tax Filing (PIT)', href: '/services/tax-filing' },
                   { name: 'Permanent Residency', href: '/services/permanent-residency' },
-                  { name: 'Apostille & Authentication', href: '/services/apostille-services' },
-                  { name: 'Social Insurance', href: '/services/social-insurance' },
-                  { name: "Driver's License", href: '/services/drivers-license' },
+                  { name: 'Relocation & Settling In', href: '/services/relocation-assistance' },
                   { name: 'All Services', href: '/services' }
                 ].map((item) => (
                   <li key={item.href}>

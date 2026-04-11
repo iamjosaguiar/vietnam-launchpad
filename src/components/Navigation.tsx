@@ -15,6 +15,7 @@ const serviceGroups = [
     items: [
       { name: 'TRC Application', desc: 'Temporary Residence Card', href: '/services/trc-application' },
       { name: 'Work Permit', desc: 'Legal authorization to work', href: '/services/work-permit' },
+      { name: 'eVisa & Entry Visa', desc: '90-day fast-track entry', href: '/services/evisa' },
       { name: 'Business Visa', desc: 'Multi-entry business visa', href: '/services/business-visa' },
       { name: 'Marriage Registration', desc: 'Register & TRC for your spouse', href: '/services/marriage-registration' },
       { name: 'Permanent Residency', desc: 'Long-term PR application', href: '/services/permanent-residency' },
@@ -35,6 +36,7 @@ const serviceGroups = [
     items: [
       { name: 'Property Registration', desc: 'Foreign-owned property title', href: '/services/property-registration' },
       { name: "Driver's License", desc: 'Convert your foreign license', href: '/services/drivers-license' },
+      { name: 'Relocation & Settling In', desc: 'Housing, bank, SIM & more', href: '/services/relocation-assistance' },
       { name: 'Expert Consultation', desc: 'One-on-one advisor session', href: '/services/consultation' },
     ],
   },
@@ -250,7 +252,7 @@ export default function Navigation() {
                       ))}
                     </div>
                     <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
-                      <span className="text-xs text-gray-400">13 services available</span>
+                      <span className="text-xs text-gray-400">15 services available</span>
                       <Link
                         href="/services"
                         className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"

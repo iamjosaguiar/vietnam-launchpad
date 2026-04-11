@@ -608,6 +608,173 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     guarantee: 'We guarantee successful license conversion or provide a full refund of our service fee if you meet all eligibility requirements.'
   },
+  'evisa': {
+    slug: 'evisa',
+    title: 'Vietnam eVisa & Entry Visa',
+    shortDescription: 'Fast eVisa for first arrivals, property viewings, and business exploration. 90-day single or multiple entry.',
+    timeline: '2-3 business days',
+    heroTitle: 'Vietnam eVisa - Fast Entry, Hassle-Free',
+    heroDescription: 'The Vietnam eVisa is the quickest way to enter Vietnam legally. Valid for 90 days single or multiple entry, it suits first-time arrivals, property buyers, and business explorers before committing to a TRC or work permit. We handle the application so yours is approved right first time.',
+    process: [
+      {
+        step: 1,
+        title: 'Submit Passport & Photo',
+        description: 'Send us your passport data page and a recent passport photo meeting Vietnamese requirements.',
+        duration: '1 day'
+      },
+      {
+        step: 2,
+        title: 'Application Submission',
+        description: 'We submit your eVisa application to the Immigration Department portal.',
+        duration: '1 day'
+      },
+      {
+        step: 3,
+        title: 'Approval & Delivery',
+        description: 'Receive your approved eVisa PDF by email, ready to print and present at the border.',
+        duration: '1-3 business days'
+      }
+    ],
+    included: [
+      'eVisa application preparation and submission',
+      'Photo compliance check',
+      'Application tracking',
+      'Approved eVisa PDF delivery',
+      'Entry instructions and border tips',
+      'Support if corrections needed'
+    ],
+    requirements: [
+      'Passport valid for at least 6 months beyond intended stay',
+      'Passport photo (4x6cm, white background, recent)',
+      'Intended entry and exit dates',
+      'Entry point (airport or land border)',
+      'Accommodation address in Vietnam'
+    ],
+    benefits: [
+      '90 days single or multiple entry',
+      'Valid for all international airports and major land borders',
+      'No need to visit an embassy or consulate',
+      'Apply from anywhere in the world',
+      'Can be extended or converted to TRC/work permit after arrival',
+      'Available to nationals of 80+ countries'
+    ],
+    faqs: [
+      {
+        question: 'Who can get a Vietnam eVisa?',
+        answer: 'Nationals of over 80 countries are eligible for the Vietnam eVisa. This includes USA, UK, EU member states, Australia, Canada, and most Asian countries. Contact us to confirm your nationality is eligible.'
+      },
+      {
+        question: 'How long does an eVisa last?',
+        answer: 'The standard Vietnam eVisa is valid for 90 days from the date of issue. You can choose single entry or multiple entry. The eVisa itself is valid for up to 90 days from issue date, and your stay cannot exceed 90 days per entry.'
+      },
+      {
+        question: 'Can I extend my eVisa?',
+        answer: 'The eVisa itself cannot be extended, but after arrival you can apply for a visa extension or convert your status to a TRC (if eligible). We can help with this once you are in Vietnam.'
+      },
+      {
+        question: 'What\'s the difference between an eVisa and a Visa on Arrival?',
+        answer: 'An eVisa is a standalone visa - you arrive with it already approved. A Visa on Arrival requires a pre-approved letter that you exchange for a visa stamp at the airport. The eVisa is accepted at all ports of entry including land borders; Visa on Arrival is only available at international airports.'
+      },
+      {
+        question: 'Can I work on an eVisa?',
+        answer: 'No. The eVisa is a tourist/visitor visa and does not permit employment. To work legally in Vietnam you need a work permit and TRC. We can advise on the best pathway once you arrive.'
+      },
+      {
+        question: 'What if my application is rejected?',
+        answer: 'eVisa rejections are uncommon but can happen due to document issues or eligibility reasons. We review your documents before submission to minimize this risk. If rejected due to our error, we resubmit at no extra charge.'
+      }
+    ],
+    guarantee: 'If your eVisa is rejected due to an error in our application, we resubmit at no additional cost.'
+  },
+  'relocation-assistance': {
+    slug: 'relocation-assistance',
+    title: 'Relocation & Settling-In Service',
+    shortDescription: 'End-to-end relocation support: housing search, bank account setup, SIM card, school search, and first-week orientation.',
+    timeline: '1-2 weeks',
+    heroTitle: 'Vietnam Relocation & Settling-In Support',
+    heroDescription: 'Moving to Vietnam involves dozens of small tasks that each take a full day to figure out alone. We handle your first weeks: finding housing, opening a bank account, getting a SIM, registering with local authorities, and making sure you feel at home. So you can focus on what brought you here.',
+    process: [
+      {
+        step: 1,
+        title: 'Pre-Arrival Consultation',
+        description: 'Video call to plan your move, understand your priorities, and prepare your arrival checklist.',
+        duration: '1 hour'
+      },
+      {
+        step: 2,
+        title: 'Housing Search & Shortlist',
+        description: 'We source and vet apartments in your preferred area and budget, arrange viewings.',
+        duration: '3-5 days'
+      },
+      {
+        step: 3,
+        title: 'Arrival & Orientation',
+        description: 'Airport pickup (optional), neighborhood tour, sim card, and same-day essentials.',
+        duration: 'Day 1'
+      },
+      {
+        step: 4,
+        title: 'Admin & Registration',
+        description: 'Bank account opening, local authority registration, utility setup, and any immediate document needs.',
+        duration: 'Days 2-7'
+      }
+    ],
+    included: [
+      'Pre-arrival video consultation',
+      'Housing search and shortlisting (Hanoi or Da Nang)',
+      'Lease contract review and negotiation support',
+      'Airport pickup (Hanoi or Da Nang)',
+      'Neighborhood orientation walkthrough',
+      'Local SIM card setup assistance',
+      'Bank account opening support (Vietnamese bank)',
+      'Temporary Residence Registration with local police (mandatory for expats)',
+      'Utilities and internet setup guidance',
+      'Local services introduction (supermarkets, clinics, expat communities)',
+      '30-day WhatsApp support line'
+    ],
+    requirements: [
+      'Valid passport with Vietnam visa or TRC',
+      'Budget range for housing',
+      'Target neighborhood or area preference',
+      'Intended arrival date'
+    ],
+    benefits: [
+      'Skip months of trial-and-error settling in',
+      'Avoid common expat scams and overpriced rentals',
+      'Legal compliance from day one (police registration)',
+      'Bank account access within your first week',
+      'Trusted local contacts and recommendations',
+      'Ongoing support for the first 30 days',
+      'Bundle with TRC or work permit for end-to-end service'
+    ],
+    faqs: [
+      {
+        question: 'What cities do you cover?',
+        answer: 'We currently offer full relocation support in Hanoi and Da Nang. For Ho Chi Minh City, we can assist with housing search and admin remotely, or refer you to trusted partners.'
+      },
+      {
+        question: 'Do I need to use your service for immigration too?',
+        answer: 'No, relocation assistance is available as a standalone service. However, bundling with our TRC or work permit service gives you a significant discount and a single point of contact for everything.'
+      },
+      {
+        question: 'What types of housing can you help with?',
+        answer: 'We work across serviced apartments (great for the first 1-3 months), standard apartments, and some villa/house options. We focus on properties with clean leases and good landlord communication for expats.'
+      },
+      {
+        question: 'What is the police registration (temporary residence registration)?',
+        answer: 'Foreign nationals living in Vietnam are required to register with the local police ward within 24-48 hours of arrival at a new address. Your landlord should handle this, but many don\'t. We make sure it is done correctly - it\'s essential for TRC applications and bank accounts.'
+      },
+      {
+        question: 'Can you help with school search for my children?',
+        answer: 'Yes. School search and enrollment guidance for international schools is available as an add-on. We have contacts at the main international schools in Hanoi and Da Nang and can advise on waiting lists, fees, and admission requirements.'
+      },
+      {
+        question: 'What if I am already in Vietnam but feel lost?',
+        answer: 'The settling-in service works just as well for people who have been here a few weeks and are still struggling with the basics. Book a consultation and we\'ll fill in the gaps.'
+      }
+    ],
+    guarantee: 'If we cannot find suitable housing options within your budget and requirements within 2 weeks, we refund the housing search portion of our fee in full.'
+  },
   'tax-filing': {
     slug: 'tax-filing',
     title: 'Personal Income Tax (PIT) Filing',

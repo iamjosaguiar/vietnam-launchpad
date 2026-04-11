@@ -232,7 +232,7 @@ export default async function HomePage() {
           {/* More Services Link */}
           <AnimateOnScroll className="mt-16 text-center" delay={200}>
             <p className="text-gray-500 mb-4">
-              Plus Marriage Registration, Property Registration, Driver&apos;s License, and more
+              Plus eVisa, Marriage Registration, Relocation, Accounting, Tax Filing, PR, and 9 more
             </p>
             <Link
               href="/services"
