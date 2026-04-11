@@ -19,23 +19,6 @@ export default function MessagingWidget() {
         </span>
       </a>
 
-      {/* Zalo */}
-      <a
-        href="https://zalo.me/84765805294"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group relative bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all hover:scale-110"
-        aria-label="Chat on Zalo"
-      >
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.67-.3-3.84-.81l-.28-.13-2.86.49.49-2.86-.13-.28C4.3 14.67 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
-          <path d="M12.5 9.5c-.28 0-.5.22-.5.5v3h-3c-.28 0-.5.22-.5.5s.22.5.5.5h3.5c.28 0 .5-.22.5-.5V10c0-.28-.22-.5-.5-.5z"/>
-        </svg>
-        <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-          Chat on Zalo
-        </span>
-      </a>
-
       {/* Email */}
       <a
         href="mailto:jos@iamjosaguiar.com"

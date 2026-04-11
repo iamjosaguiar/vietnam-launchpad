@@ -17,12 +17,22 @@ const serviceGroups = [
       { name: 'Work Permit', desc: 'Legal authorization to work', href: '/services/work-permit' },
       { name: 'Business Visa', desc: 'Multi-entry business visa', href: '/services/business-visa' },
       { name: 'Marriage Registration', desc: 'Register & TRC for your spouse', href: '/services/marriage-registration' },
+      { name: 'Permanent Residency', desc: 'Long-term PR application', href: '/services/permanent-residency' },
     ],
   },
   {
-    title: 'Business & Property',
+    title: 'Business & Compliance',
     items: [
       { name: 'Company Registration', desc: 'Set up a foreign-owned LLC', href: '/services/company-setup' },
+      { name: 'Accounting & Bookkeeping', desc: 'Monthly accounts & tax filings', href: '/services/accounting-bookkeeping' },
+      { name: 'Tax Filing (PIT)', desc: 'Personal income tax returns', href: '/services/tax-filing' },
+      { name: 'Social Insurance', desc: 'Employee SI enrollment', href: '/services/social-insurance' },
+      { name: 'Apostille & Authentication', desc: 'Document legalization', href: '/services/apostille-services' },
+    ],
+  },
+  {
+    title: 'Property & Lifestyle',
+    items: [
       { name: 'Property Registration', desc: 'Foreign-owned property title', href: '/services/property-registration' },
       { name: "Driver's License", desc: 'Convert your foreign license', href: '/services/drivers-license' },
       { name: 'Expert Consultation', desc: 'One-on-one advisor session', href: '/services/consultation' },
@@ -208,12 +218,12 @@ export default function Navigation() {
               {/* Services mega panel */}
               {openMenu === 'services' && (
                 <div
-                  className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-[580px]"
+                  className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-[780px]"
                   onMouseEnter={() => openMega('services')}
                   onMouseLeave={closeMega}
                 >
                   <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden">
-                    <div className="grid grid-cols-2 gap-0 p-6">
+                    <div className="grid grid-cols-3 gap-0 p-6">
                       {serviceGroups.map((group) => (
                         <div key={group.title}>
                           <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 px-2">
@@ -240,7 +250,7 @@ export default function Navigation() {
                       ))}
                     </div>
                     <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
-                      <span className="text-xs text-gray-400">8 services available</span>
+                      <span className="text-xs text-gray-400">13 services available</span>
                       <Link
                         href="/services"
                         className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"

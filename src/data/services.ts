@@ -608,6 +608,443 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     guarantee: 'We guarantee successful license conversion or provide a full refund of our service fee if you meet all eligibility requirements.'
   },
+  'tax-filing': {
+    slug: 'tax-filing',
+    title: 'Personal Income Tax (PIT) Filing',
+    shortDescription: 'Annual PIT return filing for expats in Vietnam. We handle your tax obligations so you stay compliant and avoid penalties.',
+    timeline: '1-2 weeks',
+    heroTitle: 'Vietnam Personal Income Tax Filing for Expats',
+    heroDescription: 'Vietnam taxes residents on worldwide income after 183 days. We calculate your PIT liability, identify deductions, and file your annual return on time - keeping you compliant and penalty-free.',
+    process: [
+      {
+        step: 1,
+        title: 'Income & Residency Review',
+        description: 'Assess your tax residency status, income sources, and applicable deductions.',
+        duration: '1-2 days'
+      },
+      {
+        step: 2,
+        title: 'Document Collection',
+        description: 'Gather payslips, foreign income records, and deduction documentation.',
+        duration: '2-3 days'
+      },
+      {
+        step: 3,
+        title: 'Tax Calculation & Return Preparation',
+        description: 'Calculate your PIT liability, apply all eligible deductions, and prepare the return.',
+        duration: '2-3 days'
+      },
+      {
+        step: 4,
+        title: 'Filing & Confirmation',
+        description: 'Submit to the General Department of Taxation and provide you with confirmation.',
+        duration: '1-2 days'
+      }
+    ],
+    included: [
+      'Tax residency status assessment',
+      'Worldwide income calculation',
+      'Deduction identification (dependants, insurance, etc.)',
+      'Annual PIT return preparation and filing',
+      'Tax authority correspondence',
+      'Filing confirmation document',
+      'Penalty exposure review'
+    ],
+    requirements: [
+      'Passport copy',
+      'TRC or visa showing days in Vietnam',
+      'Monthly payslips or employer income letters',
+      'Foreign income statements (if applicable)',
+      'Proof of dependants (if claiming deductions)',
+      'Previous year tax filing (if available)'
+    ],
+    benefits: [
+      'Stay fully compliant with Vietnamese tax law',
+      'Avoid late filing penalties (up to 25% of tax owed)',
+      'Claim all eligible deductions to reduce liability',
+      'Peace of mind for audit situations',
+      'Clear documentation for employer reimbursement claims',
+      'Understand your worldwide tax obligations'
+    ],
+    faqs: [
+      {
+        question: 'Do I need to file taxes in Vietnam?',
+        answer: 'Yes, if you are a tax resident (present 183+ days in a calendar year or 12 consecutive months from first arrival) or earn income sourced in Vietnam. Non-residents with Vietnam-sourced income also have filing obligations.'
+      },
+      {
+        question: 'What is the tax rate for expats?',
+        answer: 'Tax residents are taxed on a progressive scale from 5% to 35% on all worldwide income. Non-residents pay a flat 20% on Vietnam-sourced income only.'
+      },
+      {
+        question: 'Can I claim deductions?',
+        answer: 'Yes - the personal deduction is 11 million VND/month, plus 4.4 million VND/month per dependent. You can also deduct compulsory insurance contributions and approved charitable donations.'
+      },
+      {
+        question: 'When is the filing deadline?',
+        answer: 'Annual PIT returns must be filed by 30 April of the following year. Monthly or quarterly PIT declarations are also required if your employer does not withhold on your behalf.'
+      },
+      {
+        question: 'What if I also pay tax in my home country?',
+        answer: 'Vietnam has Double Taxation Agreements (DTAs) with over 80 countries. We review whether you can claim foreign tax credits to avoid being taxed twice on the same income.'
+      },
+      {
+        question: 'What if I have missed previous years?',
+        answer: 'We can help you file back years. Late filing penalties and interest apply, but voluntary disclosure before an audit significantly reduces exposure. Contact us to discuss your situation.'
+      }
+    ],
+    guarantee: 'We guarantee accurate PIT returns based on information you provide. If our preparation error causes a penalty, we cover the penalty cost.'
+  },
+  'apostille-services': {
+    slug: 'apostille-services',
+    title: 'Apostille & Document Authentication',
+    shortDescription: 'Get your foreign documents apostilled, legalized, and certified for use in Vietnamese official processes.',
+    timeline: '2-4 weeks (varies by country)',
+    heroTitle: 'Apostille & Document Authentication for Vietnam',
+    heroDescription: 'Foreign documents used in Vietnamese immigration, marriage, business, and legal processes must be apostilled or legalized. We coordinate the full authentication chain - from your home country authority to the Vietnamese consulate - so nothing gets lost in translation.',
+    process: [
+      {
+        step: 1,
+        title: 'Document Assessment',
+        description: 'Review your documents to determine the correct authentication chain for each.',
+        duration: '1 day'
+      },
+      {
+        step: 2,
+        title: 'Home Country Notarization',
+        description: 'Coordinate notarization and apostille or foreign affairs legalization in your home country.',
+        duration: '1-3 weeks'
+      },
+      {
+        step: 3,
+        title: 'Vietnamese Consulate Legalization',
+        description: 'Submit documents to Vietnamese embassy/consulate for legalization (where required).',
+        duration: '3-7 days'
+      },
+      {
+        step: 4,
+        title: 'Translation & Certified Copy',
+        description: 'Prepare certified Vietnamese translations and copies ready for submission.',
+        duration: '2-3 days'
+      }
+    ],
+    included: [
+      'Authentication pathway assessment',
+      'Checklist and instructions for home country notarization',
+      'Coordination with Vietnamese consulate submission',
+      'Certified Vietnamese translation',
+      'Notarized translation copies',
+      'Document tracking and follow-up',
+      'Final review before submission to authorities'
+    ],
+    requirements: [
+      'Original document or certified copy',
+      'Country of document origin',
+      'Purpose of authentication (marriage, business, visa, etc.)',
+      'Target submission date'
+    ],
+    benefits: [
+      'Documents accepted by all Vietnamese authorities',
+      'Avoid costly rejection and re-submission',
+      'Expert guidance on country-specific requirements',
+      'Single point of contact for the entire process',
+      'Correct authentication first time',
+      'Comprehensive support for TRC, work permit, and marriage applications'
+    ],
+    faqs: [
+      {
+        question: 'What is an apostille?',
+        answer: 'An apostille is a form of authentication issued by a designated authority in a country that is a signatory to the Hague Convention. It certifies the origin of a public document so it is accepted in other Hague Convention member countries. Vietnam is not a member, so apostilled documents still need additional legalization at the Vietnamese embassy/consulate.'
+      },
+      {
+        question: 'Which documents commonly need apostille?',
+        answer: 'Birth certificates (for marriage registration), criminal background checks (for work permits and TRC), degree certificates (for work permits), marriage certificates (for dependent TRC), and incorporation documents (for company setup).'
+      },
+      {
+        question: 'Can you handle this if I am already in Vietnam?',
+        answer: 'Yes. We coordinate with agents in your home country and the Vietnamese embassy there on your behalf. You do not need to return home to get documents authenticated.'
+      },
+      {
+        question: 'How long does it take?',
+        answer: 'Timelines vary significantly by country - from 1 week (UK, Australia) to 4-6 weeks (USA varies by state). We provide a realistic timeline estimate once we know your document origin.'
+      },
+      {
+        question: 'My document is already apostilled. Is that enough?',
+        answer: 'Not always. Vietnam requires additional legalization at the Vietnamese embassy/consulate in your home country for documents to be accepted by most Vietnamese authorities. We check whether your documents need the extra step.'
+      }
+    ],
+    guarantee: 'If a document we authenticated is rejected by Vietnamese authorities due to our authentication error, we redo the process at no additional cost.'
+  },
+  'permanent-residency': {
+    slug: 'permanent-residency',
+    title: 'Permanent Residency Application',
+    shortDescription: 'Apply for Vietnam Permanent Residency (PR) after qualifying years of continuous legal residence.',
+    timeline: '3-6 months',
+    heroTitle: 'Vietnam Permanent Residency - Long-Term Security in Vietnam',
+    heroDescription: 'Permanent Residency (PR) in Vietnam gives you the right to live and work indefinitely without ongoing visa renewals. We guide you through eligibility assessment, document preparation, and the full PR application process.',
+    process: [
+      {
+        step: 1,
+        title: 'Eligibility Assessment',
+        description: 'Review your residency history, marital status, and qualifying grounds for PR.',
+        duration: '2-3 days'
+      },
+      {
+        step: 2,
+        title: 'Document Preparation',
+        description: 'Compile and authenticate all required documents including residency history, background checks, and sponsorship letters.',
+        duration: '2-4 weeks'
+      },
+      {
+        step: 3,
+        title: 'Application Submission',
+        description: 'Submit complete PR application to the Immigration Department (Ministry of Public Security).',
+        duration: '1-2 days'
+      },
+      {
+        step: 4,
+        title: 'Review & Approval',
+        description: 'Government reviews application. We follow up and respond to any requests for additional information.',
+        duration: '2-4 months'
+      },
+      {
+        step: 5,
+        title: 'PR Card Issuance',
+        description: 'Collect your Permanent Residency Card (valid indefinitely with periodic registration).',
+        duration: '1-2 weeks'
+      }
+    ],
+    included: [
+      'Eligibility and grounds assessment',
+      'Residency history documentation',
+      'Criminal background check coordination',
+      'Character reference and sponsorship letter guidance',
+      'Application preparation and translation',
+      'Submission to Ministry of Public Security',
+      'Follow-up on government requests',
+      'PR card collection and delivery'
+    ],
+    requirements: [
+      'Continuous legal residence in Vietnam (typically 3+ years for marriage route, 5+ years for other routes)',
+      'Valid passport',
+      'TRC history documentation',
+      'Vietnamese spouse (for marriage route) or Vietnamese citizen sponsor',
+      'Clean criminal record (home country and Vietnam)',
+      'Proof of financial stability',
+      'Health certificate'
+    ],
+    benefits: [
+      'Live in Vietnam indefinitely without visa renewals',
+      'Work legally without a separate work permit',
+      'Own property with the same rights as TRC holders',
+      'Access to Vietnamese banking, loans, and financial services',
+      'Sponsor spouse and children for residency',
+      'Path toward naturalization (for those who qualify)',
+      'No more departure and re-entry requirements'
+    ],
+    faqs: [
+      {
+        question: 'Who qualifies for permanent residency in Vietnam?',
+        answer: 'Main qualifying grounds: (1) Married to a Vietnamese citizen for 3+ consecutive years with TRC. (2) Significant contributions to Vietnam recognized by the state. (3) Exceptional expertise in areas Vietnam needs. (4) Foreign citizens of Vietnamese origin (Viet Kieu). Eligibility is assessed case by case.'
+      },
+      {
+        question: 'How long do I need to have lived in Vietnam?',
+        answer: 'For the marriage route, typically 3 continuous years of TRC-based residence. For other routes, generally 5+ years of continuous legal residence. The law gives the Ministry of Public Security discretion in assessing qualifying periods.'
+      },
+      {
+        question: 'Can I work with a PR card?',
+        answer: 'Yes. Permanent residents do not need a work permit - they can work for any employer or run their own business without additional immigration authorization.'
+      },
+      {
+        question: 'Does PR lead to Vietnamese citizenship?',
+        answer: 'PR is separate from citizenship. Naturalization requires renouncing your existing citizenship (Vietnam generally does not allow dual citizenship) and at least 5 years of PR, among other criteria. Most expats prefer PR over citizenship for this reason.'
+      },
+      {
+        question: 'Does my PR ever expire?',
+        answer: 'The Permanent Residency Card itself has a validity period (typically 10 years) but can be renewed indefinitely. The underlying PR status does not expire as long as you maintain residence in Vietnam.'
+      },
+      {
+        question: 'What if my PR application is rejected?',
+        answer: 'PR rejections can be appealed or reapplied after addressing the reasons for refusal. We provide a detailed review of rejection reasons and advise on the best path forward.'
+      }
+    ],
+    guarantee: 'We provide a thorough eligibility assessment before you commit. If we accept your case and the application fails due to our preparation error, we provide a full service fee refund.'
+  },
+  'accounting-bookkeeping': {
+    slug: 'accounting-bookkeeping',
+    title: 'Accounting & Bookkeeping',
+    shortDescription: 'Monthly accounting, bookkeeping, and financial reporting for foreign-owned companies in Vietnam.',
+    timeline: 'Ongoing monthly service',
+    heroTitle: 'Vietnam Company Accounting & Bookkeeping',
+    heroDescription: 'Vietnamese accounting regulations require monthly/quarterly filings and strict bookkeeping standards. Our local accounting team handles your books, VAT returns, payroll accounting, and annual financial statements - keeping your company compliant so you can focus on business.',
+    process: [
+      {
+        step: 1,
+        title: 'Onboarding & System Setup',
+        description: 'Review your existing records, set up accounting software, and establish reporting cadence.',
+        duration: '3-5 days'
+      },
+      {
+        step: 2,
+        title: 'Monthly Bookkeeping',
+        description: 'Record all transactions, categorize expenses, reconcile bank statements.',
+        duration: 'Ongoing monthly'
+      },
+      {
+        step: 3,
+        title: 'Tax Declaration Filing',
+        description: 'Prepare and submit monthly/quarterly VAT returns and corporate income tax declarations.',
+        duration: 'Monthly/Quarterly'
+      },
+      {
+        step: 4,
+        title: 'Annual Financial Statements',
+        description: 'Prepare audited financial statements and annual tax finalization filing.',
+        duration: 'Annually (March-April)'
+      }
+    ],
+    included: [
+      'Monthly transaction recording and categorization',
+      'Bank reconciliation',
+      'Monthly/quarterly VAT return filing',
+      'Monthly PIT withholding declarations',
+      'Quarterly corporate income tax declarations',
+      'Annual financial statement preparation',
+      'Annual tax finalization (CIT and PIT)',
+      'Payroll accounting (up to 5 employees)',
+      'Management report (P&L, balance sheet)',
+      'Direct communication with tax authorities'
+    ],
+    requirements: [
+      'Active Vietnamese company (ERC)',
+      'Monthly bank statements',
+      'All invoices, receipts, and expense records',
+      'Employee payroll information',
+      'Access to company e-invoice system'
+    ],
+    benefits: [
+      'Stay compliant with Vietnamese accounting standards (VAS)',
+      'Avoid late filing penalties (up to 25M VND per violation)',
+      'Clean books ready for government inspection or audit',
+      'Accurate VAT reclaim on business expenses',
+      'Professional financial statements for bank loans or investor due diligence',
+      'Free up time to focus on growing your business',
+      'Local expertise in Vietnamese tax law'
+    ],
+    faqs: [
+      {
+        question: 'Is accounting mandatory for my Vietnamese company?',
+        answer: 'Yes. All registered companies in Vietnam must maintain proper books, file monthly VAT returns, quarterly CIT declarations, and annual financial statements regardless of revenue level - even zero-revenue companies.'
+      },
+      {
+        question: 'What accounting standards apply in Vietnam?',
+        answer: 'Vietnam uses Vietnamese Accounting Standards (VAS), which differ from IFRS and US GAAP. All transactions must be documented with valid VAT invoices (e-invoices since 2022). Our team is expert in VAS requirements.'
+      },
+      {
+        question: 'Do I need an audit?',
+        answer: 'Foreign-invested enterprises (FIEs) with foreign capital must have their annual financial statements audited by an approved audit firm. We coordinate with licensed auditors and prepare your books to minimize audit fees.'
+      },
+      {
+        question: 'What is the corporate income tax rate?',
+        answer: 'Standard CIT rate is 20% on net profit. Preferential rates (10-15%) apply for specific industries or regions. We identify any applicable incentives for your business.'
+      },
+      {
+        question: 'Can you handle payroll accounting?',
+        answer: 'Yes. Our standard package includes payroll accounting for up to 5 employees, including PIT withholding calculations and social insurance base calculations. Additional employees can be added for an incremental fee.'
+      },
+      {
+        question: 'What if my company has had no activity?',
+        answer: 'Zero-activity companies still need to file nil returns and annual financial statements. We offer a reduced-rate dormant company compliance package for this situation.'
+      }
+    ],
+    guarantee: 'We cover any penalties resulting from errors in our filing work. Our team monitors all deadlines so you never face a late filing penalty due to our oversight.'
+  },
+  'social-insurance': {
+    slug: 'social-insurance',
+    title: 'Social Insurance Enrollment',
+    shortDescription: 'Enroll your employees in Vietnam\'s mandatory social, health, and unemployment insurance schemes.',
+    timeline: '1-2 weeks',
+    heroTitle: 'Vietnam Social Insurance Enrollment for Companies',
+    heroDescription: 'Vietnamese law requires employers to enroll eligible employees in social insurance (SI), health insurance (HI), and unemployment insurance (UI). Failure to comply results in significant penalties. We handle enrollment, monthly contribution declarations, and ongoing compliance.',
+    process: [
+      {
+        step: 1,
+        title: 'Employee Eligibility Review',
+        description: 'Assess which employees require mandatory enrollment based on contract type and nationality.',
+        duration: '1-2 days'
+      },
+      {
+        step: 2,
+        title: 'Registration with Social Insurance Authority',
+        description: 'Register your company and employees with the provincial Social Insurance Authority (VSS).',
+        duration: '3-5 days'
+      },
+      {
+        step: 3,
+        title: 'Health Insurance Card Issuance',
+        description: 'Coordinate health insurance card issuance for all enrolled employees.',
+        duration: '3-7 days'
+      },
+      {
+        step: 4,
+        title: 'Ongoing Monthly Declarations',
+        description: 'Handle monthly contribution reports and payment coordination.',
+        duration: 'Ongoing monthly'
+      }
+    ],
+    included: [
+      'Employee eligibility assessment',
+      'Company registration with Social Insurance Authority',
+      'Employee enrollment forms and submission',
+      'Health insurance card coordination',
+      'Monthly contribution declaration filing',
+      'Annual social insurance reconciliation',
+      'Maternity, sick leave, and benefit claims guidance',
+      'Compliance calendar and deadline reminders'
+    ],
+    requirements: [
+      'Active Vietnamese company (ERC)',
+      'Employee labor contracts (indefinite or 1+ month fixed-term)',
+      'Employee ID/passport copies',
+      'Employee salary information',
+      'Company bank account for contribution payments'
+    ],
+    benefits: [
+      'Full compliance with Vietnamese Labor Code and Social Insurance Law',
+      'Avoid penalties of 18-20% annual interest on unpaid contributions',
+      'Employees receive healthcare coverage (80% of medical costs)',
+      'Employees accrue pension and maternity/sick leave entitlements',
+      'Legitimate employer status for work permit sponsorship',
+      'Attract and retain qualified local and expat staff',
+      'Protect your company from labor disputes'
+    ],
+    faqs: [
+      {
+        question: 'Which employees need social insurance?',
+        answer: 'All employees with indefinite-term contracts or fixed-term contracts of 1 month or more must be enrolled. This includes both Vietnamese employees and foreign employees holding work permits. Part-time workers with contracts under 1 month are exempt.'
+      },
+      {
+        question: 'What are the contribution rates?',
+        answer: 'Employer contributions: 17.5% of salary to SI, 3% to HI, 1% to UI - total 21.5%. Employee contributions: 8% to SI, 1.5% to HI, 1% to UI - total 10.5%. Contributions are capped at 20x the base salary (currently 36 million VND/month cap).'
+      },
+      {
+        question: 'Do foreign employees need social insurance?',
+        answer: 'Yes, since December 2018, foreign employees with work permits, practice certificates, or business licenses must be enrolled in Vietnamese SI (except SI contributions for foreign employees were phased in from 2022). Health insurance is mandatory immediately.'
+      },
+      {
+        question: 'What happens if I don\'t register employees?',
+        answer: 'Employers who fail to register face fines of 12-20% of total unpaid contributions plus 18% annual interest on arrears. In severe cases, the business license can be suspended.'
+      },
+      {
+        question: 'Can employees claim benefits while employed?',
+        answer: 'Yes. Enrolled employees can claim sick leave pay (75% of salary for up to 30 days/year), maternity leave (100% of salary for 6 months), and occupational accident benefits through the VSS system.'
+      },
+      {
+        question: 'What if we are late enrolling existing employees?',
+        answer: 'Back contributions plus penalties apply. We can help you calculate the arrears and negotiate payment terms with the Social Insurance Authority to regularize your status.'
+      }
+    ],
+    guarantee: 'We guarantee timely and accurate enrollment and monthly filings. Any penalties arising from our administrative errors are covered by us.'
+  },
   'property-registration': {
     slug: 'property-registration',
     title: 'Foreign-Owned Property Registration',
