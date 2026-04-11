@@ -4225,6 +4225,333 @@ Key rules for driving/riding in Vietnam:
 7. **Register your motorbike** if buying one - always transfer the ownership registration (giay to xe) properly when buying second-hand`,
   },
 
+  'divorce-vietnam': {
+    slug: 'divorce-vietnam',
+    title: 'Divorce in Vietnam: Complete Guide for Foreigners (2026)',
+    subtitle: 'Mutual vs one-sided divorce, court process, asset division, child custody, and what happens to your TRC',
+    excerpt: "Vietnam recognises two types of divorce: mutual (both parties agree) and one-sided (contested). This guide covers both processes in full — documents, courts, timelines, costs, and the immigration consequences for foreign nationals.",
+    author: 'Vietnam Launchpad',
+    date: '2026-04-11',
+    lastUpdated: '2026-04-11',
+    readTime: '14 min read',
+    category: 'Daily Life',
+    ctaTitle: 'Going Through a Divorce in Vietnam?',
+    ctaBody: 'Our consultants can guide you through the process, prepare your documents, and advise on the immigration implications for your residency status.',
+    ctaLink: '/services/consultation',
+    ctaLinkText: 'Book a Consultation',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Ask a Question',
+    content: `## Divorce Law in Vietnam: The Basics
+
+Divorce in Vietnam is governed by the **Law on Marriage and Family 2014** (Luật Hôn nhân và Gia đình 2014) and procedurally by the **Code of Civil Procedure 2015**. Vietnamese family law applies to marriages registered in Vietnam — including marriages between a Vietnamese citizen and a foreign national.
+
+Vietnam recognises two distinct types of divorce:
+
+| Type | Vietnamese term | What it means |
+|---|---|---|
+| **Mutual divorce** | Thuận tình ly hôn | Both parties agree to end the marriage and agree on terms |
+| **One-sided divorce** | Đơn phương ly hôn | One party petitions the court; the other does not consent or parties cannot agree on terms |
+
+The type of divorce dramatically affects the timeline, cost, and complexity of the process. Mutual divorce is significantly faster and cheaper. One-sided divorce can take a year or more and requires substantiating grounds before the court.
+
+---
+
+## Who Can File for Divorce in Vietnam?
+
+Either spouse may petition for divorce. For marriages involving a foreign national, Vietnamese courts have jurisdiction when:
+
+- The marriage was registered in Vietnam
+- One or both parties currently reside in Vietnam
+- The case involves property or children in Vietnam
+
+**Where to file:**
+- The **District People's Court (Tòa án nhân dân cấp huyện)** handles most divorce cases, including those involving foreigners
+- If the case involves significant cross-border elements or high-value assets, it may be referred to the **Provincial People's Court**
+- File in the district where the **defendant (respondent)** resides, or where the parties agree
+
+---
+
+## Mutual Divorce (Thuận tình ly hôn)
+
+### What "Mutual" Requires
+
+Mutual divorce is not simply both parties wanting to divorce. To qualify, both parties must agree on **all three** of the following:
+
+1. **The divorce itself** — both want to end the marriage
+2. **Child custody, living arrangements, and financial support** for any minor children
+3. **Division of jointly-owned assets and debts**
+
+If there is disagreement on any of these points — even if both want the divorce — the court will not grant a mutual divorce. It becomes contested.
+
+---
+
+### Mutual Divorce: Step-by-Step Process
+
+**Step 1: Mediation (Hòa giải)**
+Vietnamese law requires the court to attempt mediation before granting any divorce. For mutual divorces, this is usually a formality if both parties clearly want to proceed. The court schedules a mediation session — both parties must attend. If mediation fails (which it typically does when both genuinely want to divorce), the court proceeds with the divorce petition.
+
+**Step 2: Submit the Divorce Petition**
+File a joint divorce petition at the District People's Court. The petition must include:
+- A statement confirming mutual agreement
+- The agreed child custody and support arrangements (if children are involved)
+- The agreed asset division plan
+
+**Step 3: Court Review and Hearing**
+The court reviews the submission, conducts the mediation session, and then holds a hearing. For genuine mutual divorces with no contested issues, this process is relatively straightforward.
+
+**Step 4: Divorce Decision Issued**
+The court issues a **Divorce Decision (Quyết định ly hôn)** — not a "decree" as in some Western systems. This is the legally binding document dissolving the marriage.
+
+---
+
+### Mutual Divorce: Documents Required
+
+**Both parties must provide:**
+
+| Document | Notes |
+|---|---|
+| Original Marriage Certificate | Vietnamese-registered certificate; or foreign certificate + apostille + Vietnamese translation if registered abroad |
+| Passport / National ID | Vietnamese party: CCCD. Foreign party: passport |
+| Household registration (Ho Khau) | Vietnamese party |
+| Birth certificates of children | If children under 18 are involved |
+| Property documents | Title certificates (Pink Book), vehicle registrations, bank statements for any jointly-held assets |
+| Joint divorce petition | Drafted and signed by both parties |
+| Written asset division agreement | Signed by both |
+| Written child custody agreement | Signed by both, if applicable |
+
+**For the foreign party specifically:**
+- Passport (original + certified copy)
+- Any foreign documents must be translated into Vietnamese by a certified translator and notarised
+
+---
+
+### Mutual Divorce: Timeline and Costs
+
+| Phase | Duration |
+|---|---|
+| Document preparation | 1–2 weeks |
+| Court filing to mediation session | 2–4 weeks |
+| Mediation to hearing | 2–4 weeks |
+| Hearing to decision issuance | 1–2 weeks |
+| **Total** | **6–12 weeks typical** |
+
+**Official court fees:**
+- Court filing fee: VND 300,000 – 500,000 (approximately $12–20)
+- Property-related fees: 0–0.5% of disputed property value (if any)
+
+**Professional fees** (if using a consultant or lawyer): $300–800 typically for a straightforward mutual divorce.
+
+---
+
+## One-Sided Divorce (Đơn phương ly hôn)
+
+### Grounds for One-Sided Divorce
+
+Vietnamese courts do not grant divorce simply because one party wants it. The petitioning party must establish legal grounds. The Law on Marriage and Family 2014 specifies the following accepted grounds:
+
+**Article 56 grounds:**
+
+1. **Domestic violence, abuse, or serious mistreatment** — physical, psychological, or economic abuse of the petitioning spouse or children
+2. **Serious violation of marriage obligations** — adultery, abandonment, failure to contribute to family finances
+3. **The marriage has effectively broken down** and reconciliation is impossible — the most commonly relied-upon ground; requires demonstrating prolonged estrangement, incompatibility, or inability to fulfil the purposes of marriage
+4. **One spouse has been declared missing** by a court for 2+ years
+5. **One spouse is serving a prison sentence** for a serious offence
+6. **One spouse has a drug addiction or serious communicable disease** that seriously affects the other party and family
+
+In practice, **"marriage has effectively broken down"** is the most frequently used ground. Courts assess this based on the history of the relationship, any prior separation, attempts at reconciliation, and whether the marriage can be said to still fulfil its legal purpose.
+
+---
+
+### One-Sided Divorce: Step-by-Step Process
+
+**Step 1: File the Petition**
+The petitioning party files a unilateral divorce petition at the District People's Court, supported by evidence of the grounds relied upon.
+
+**Step 2: Court Acceptance and Service**
+The court reviews the petition, assesses jurisdiction, and formally accepts the case. The respondent (other spouse) is officially served with notice of the proceedings.
+
+**Step 3: Mediation (Mandatory)**
+The court schedules one or more mandatory mediation sessions. Unlike mutual divorce, these are substantive — the court actively tries to reconcile the parties. If mediation results in reconciliation, the case is withdrawn. If mediation fails, the court proceeds to hearing.
+
+**In practice:** Courts typically schedule 2–3 mediation sessions over several months before a contested case proceeds to full hearing.
+
+**Step 4: Hearing and Evidence**
+A full court hearing is held. Both parties may present evidence, witnesses, and arguments. Legal representation is strongly recommended at this stage.
+
+**Step 5: Judgment**
+The court issues a **Divorce Judgment (Bản án ly hôn)**. Either party may appeal to the Provincial Court within 15 days of receiving the judgment.
+
+---
+
+### One-Sided Divorce: Documents Required
+
+In addition to the standard documents listed for mutual divorce, one-sided divorce requires:
+
+| Document | Notes |
+|---|---|
+| Divorce petition | Unilateral, setting out the grounds |
+| Evidence supporting grounds | Police reports (for domestic violence), medical records, witness statements, communication records, financial records — depending on the ground relied upon |
+| Evidence of marriage breakdown | Proof of separation, prior failed reconciliation attempts, any existing informal agreements |
+| Evidence of asset ownership | Required for asset division determination |
+
+For **domestic violence grounds:** A report filed with the local ward police (Cong an phuong) or a medical report documenting injuries significantly strengthens the case.
+
+---
+
+### One-Sided Divorce: Timeline and Costs
+
+| Phase | Duration |
+|---|---|
+| Document preparation and filing | 2–4 weeks |
+| Court acceptance and service to respondent | 2–4 weeks |
+| Mediation sessions (typically 2–3) | 2–4 months |
+| Hearing preparation | 1–2 months |
+| Hearing to judgment | 2–4 weeks |
+| Appeal period | 15 days from receipt of judgment |
+| **Total (no appeal)** | **6–12 months typical** |
+| **Total (with appeal)** | **12–24+ months** |
+
+**Official court fees:**
+- Filing fee: VND 300,000 – 500,000
+- Property dispute fees: 0–0.5% of disputed assets
+
+**Legal fees** (lawyer or consultant): $800–3,000+ depending on complexity and whether the case is appealed.
+
+---
+
+## Asset Division
+
+### The Default Rule: Equal Split of Marital Property
+
+Under Vietnamese law, assets acquired during the marriage are presumed to be **joint marital property (tài sản chung)** and are divided equally between the parties on divorce — unless:
+
+- The parties reach a written agreement on a different division
+- One party can prove that an asset is **separate property (tài sản riêng)** — i.e., owned before the marriage or received as a gift or inheritance specifically to one party during the marriage
+
+### What Counts as Marital Property
+
+- Income earned by either spouse during the marriage
+- Property purchased with marital income
+- Business profits generated during the marriage
+- Property not proven to be separate
+
+### What Is Separate Property
+
+- Assets owned by either party before the marriage (requires documentation)
+- Gifts or inheritances given specifically to one spouse (not the couple) during the marriage
+- Assets the parties agreed in writing to keep separate
+
+**Practical issue for foreigners:** Proving separate property requires clear documentation — bank records, purchase contracts, inheritance documents. Without documentation, Vietnamese courts presume marital property.
+
+### Property Outside Vietnam
+
+Vietnamese courts can rule on the division of property inside Vietnam. For assets abroad (property, bank accounts, pensions), enforcement depends on the laws of the country where the asset is held. A Vietnamese court ruling on foreign assets may need separate enforcement proceedings abroad.
+
+---
+
+## Child Custody
+
+### General Principles
+
+Vietnamese courts apply the **best interest of the child** standard. Factors considered include:
+
+- Each parent's living conditions and financial situation
+- The parent's ability to care for and support the child
+- The child's existing relationship and attachment to each parent
+- The child's own wishes (given weight as the child gets older)
+
+### Age Guidelines (Not Absolute Rules)
+
+| Child's age | General approach |
+|---|---|
+| Under 36 months | Typically placed with the mother, unless the mother is unable to care for the child |
+| 36 months – 7 years | Court determines based on best interest; living situation and stability weighted heavily |
+| 7 years and above | Child's preference is actively considered |
+
+These are guidelines, not hard rules. Courts can and do deviate based on the specific circumstances.
+
+### Non-Custodial Parent's Rights
+
+The parent without primary custody retains the right to regular contact with the child. The divorce decision or judgment will specify:
+
+- Visiting schedule and arrangements
+- Financial support obligations (child support)
+- How education and healthcare decisions are made
+
+---
+
+## Impact on Your TRC and Immigration Status
+
+This is one of the most important practical consequences of divorce for foreign nationals in Vietnam.
+
+### If Your TRC Is Based on Marriage
+
+A **marriage-based TRC** derives its validity from the existence of the marriage. When the Vietnamese court issues the divorce decision, your legal basis for that TRC disappears.
+
+**What you need to do:**
+- Notify Vietnam's Department of Immigration (in practice, this happens automatically as courts report to immigration)
+- Either transition to a new TRC basis (work permit route, investment route) **before** the divorce is finalised if possible, or
+- Apply for a new visa/status within the grace period after divorce
+
+**Grace period:** There is no formally defined statutory grace period, but immigration authorities in practice allow a period of 30–60 days to regularise status. Do not rely on this — sort your status proactively.
+
+### If You Have a Work Permit or Investment-Based TRC
+
+Your TRC and work permit are independent of your marriage. Divorce does not directly affect them. However, if your spouse's family or connections were relevant to your business or employment, consider any practical impacts.
+
+---
+
+## Foreign Divorces: Recognition in Vietnam
+
+If you were divorced outside Vietnam and need that divorce recognised in Vietnam (for example, to register a new marriage in Vietnam), the foreign divorce decision must be formally recognised by a Vietnamese court.
+
+The process:
+1. File a **petition for recognition of foreign civil judgments** at the relevant Provincial People's Court
+2. Provide the foreign divorce judgment with apostille and certified Vietnamese translation
+3. The court reviews whether recognition is consistent with Vietnamese law and public policy
+4. If recognised, the divorce is recorded in Vietnam's civil registry
+
+This process takes approximately 3–6 months.
+
+---
+
+## Getting a Vietnamese Divorce Recognised Abroad
+
+To use your Vietnamese divorce judgment in your home country:
+
+1. Obtain an **apostille** for the Vietnamese divorce judgment through Vietnam's Ministry of Justice or Ministry of Foreign Affairs Consular Department
+2. Have it translated into your home country's language by a certified translator
+3. Register or present it to your home country's civil registry or relevant court
+
+Requirements vary significantly by country. Contact your home country's consulate or embassy in Vietnam for current specific requirements.
+
+---
+
+## Frequently Asked Questions
+
+**Can I get divorced in Vietnam if I was married abroad?**
+Vietnamese courts have jurisdiction over divorces involving a Vietnamese citizen resident in Vietnam regardless of where the marriage was registered. If neither party is Vietnamese but you reside in Vietnam, the courts can also take jurisdiction. In practice, some cross-border cases are complex — get legal advice on jurisdiction early.
+
+**Do both parties have to be in Vietnam for the divorce?**
+For the court proceedings, both parties need to participate — in person or through a legally-appointed representative (Power of Attorney). If one party is abroad, they can appoint a Vietnamese lawyer as their representative, but requirements vary by case and court. Confirm with your lawyer.
+
+**Can I get divorced if I can't find my spouse?**
+If your spouse is absent and their whereabouts are unknown, you can petition the court for a declaration of **missing person** status after 2 years. This can then form the basis for a one-sided divorce petition.
+
+**What happens to a joint tenancy or property held in both names?**
+Jointly-held property (with both names on the Pink Book) is treated as marital property and subject to the 50/50 default division unless an agreement is reached. If a foreign national holds a 50-year leasehold, the remaining lease term is what is divided.
+
+**Does divorce affect my children's Vietnamese citizenship?**
+No. Children born to a Vietnamese parent retain Vietnamese citizenship regardless of the parents' divorce or the foreign parent's immigration status.
+
+**How long do I have to wait to remarry in Vietnam after divorce?**
+There is no waiting period under Vietnamese law once the divorce decision is final. However, you will need your divorce judgment (with apostille if used abroad) to apply for a new marriage registration.
+
+---
+
+*Last updated: April 2026. Vietnamese family law and court procedures are subject to change. This guide is for informational purposes only and does not constitute legal advice. For your specific circumstances, consult a Vietnamese family lawyer or contact our team.*`,
+  },
+
   'property-registration': {
     slug: 'property-registration',
     title: 'Vietnam Property Registration: Red Book, Pink Book, and How Title Works (2026)',
