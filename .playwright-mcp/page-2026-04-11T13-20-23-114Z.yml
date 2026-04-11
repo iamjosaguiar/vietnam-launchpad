@@ -1,0 +1,477 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "Vietnam Launchpad" [ref=e6] [cursor=pointer]:
+          - /url: /sitemap.xml
+          - img "Vietnam Launchpad" [ref=e7]
+        - generic [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /sitemap.xml
+            - text: Home
+          - link "Services" [ref=e12] [cursor=pointer]:
+            - /url: /sitemap.xml/services
+            - text: Services
+            - img [ref=e13]
+          - link "Guides" [ref=e16] [cursor=pointer]:
+            - /url: /sitemap.xml/guides
+            - text: Guides
+            - img [ref=e17]
+          - link "Blog" [ref=e19] [cursor=pointer]:
+            - /url: /sitemap.xml/blog
+          - link "Contact" [ref=e20] [cursor=pointer]:
+            - /url: /sitemap.xml/contact
+          - button "Select language" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: 🇬🇧
+            - generic [ref=e25]: English
+            - img [ref=e26]
+          - link "Get Consultation" [ref=e28] [cursor=pointer]:
+            - /url: /sitemap.xml/contact
+    - generic [ref=e35]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - img [ref=e39]
+          - img [ref=e41]
+          - img [ref=e43]
+          - img [ref=e45]
+          - img [ref=e47]
+        - generic [ref=e49]: Trusted by 500+ expats across Vietnam
+      - generic [ref=e50]:
+        - heading "Your Vietnam Success Partner" [level=1] [ref=e51]:
+          - text: Your Vietnam
+          - generic [ref=e52]: Success Partner
+        - paragraph [ref=e53]: We help expats relocate to Vietnam with zero hassles - securing visas, company setup, and local integration in 90 days.
+        - generic [ref=e54]:
+          - link "Start Your Journey" [ref=e55] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e56]:
+              - text: Start Your Journey
+              - img [ref=e57]
+          - link "Learn More" [ref=e59] [cursor=pointer]:
+            - /url: /services
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - generic [ref=e62]: 98%
+            - generic [ref=e63]: Approval Rate
+          - generic [ref=e64]:
+            - generic [ref=e65]: 6+
+            - generic [ref=e66]: Years Experience
+          - generic [ref=e67]:
+            - generic [ref=e68]: 24h
+            - generic [ref=e69]: Response Time
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - img [ref=e75]
+        - generic [ref=e77]: Licensed & Registered
+      - generic [ref=e78]:
+        - img [ref=e79]
+        - generic [ref=e81]: Vietnamese Law Office Partners
+      - generic [ref=e82]:
+        - img [ref=e83]
+        - generic [ref=e85]: English, Vietnamese, Korean, Chinese
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]: Our Services
+        - heading "Professional Immigration & Business Services" [level=2] [ref=e90]
+        - paragraph [ref=e91]: Expert guidance, guaranteed results
+      - generic [ref=e92]:
+        - 'link "01 TRC & Investment Visa Multiple visa options: 6 months to 4 years based on investment 2-3 weeks Learn More" [ref=e94] [cursor=pointer]':
+          - /url: /services/trc-application
+          - generic [ref=e95]: "01"
+          - img [ref=e97]
+          - heading "TRC & Investment Visa" [level=3] [ref=e99]
+          - paragraph [ref=e100]: "Multiple visa options: 6 months to 4 years based on investment"
+          - generic [ref=e101]:
+            - img [ref=e102]
+            - text: 2-3 weeks
+          - generic [ref=e104]:
+            - generic [ref=e105]: Learn More
+            - img [ref=e106]
+        - link "02 Work Permits 2-year work permits for legal employment in Vietnam 2 months Learn More" [ref=e109] [cursor=pointer]:
+          - /url: /services/work-permit
+          - generic [ref=e110]: "02"
+          - img [ref=e112]
+          - heading "Work Permits" [level=3] [ref=e114]
+          - paragraph [ref=e115]: 2-year work permits for legal employment in Vietnam
+          - generic [ref=e116]:
+            - img [ref=e117]
+            - text: 2 months
+          - generic [ref=e119]:
+            - generic [ref=e120]: Learn More
+            - img [ref=e121]
+        - link "03 Company Registration Complete LLC setup with FREE consultation included 2-4 months Learn More" [ref=e124] [cursor=pointer]:
+          - /url: /services/company-setup
+          - generic [ref=e125]: "03"
+          - img [ref=e127]
+          - heading "Company Registration" [level=3] [ref=e129]
+          - paragraph [ref=e130]: Complete LLC setup with FREE consultation included
+          - generic [ref=e131]:
+            - img [ref=e132]
+            - text: 2-4 months
+          - generic [ref=e134]:
+            - generic [ref=e135]: Learn More
+            - img [ref=e136]
+      - generic [ref=e138]:
+        - paragraph [ref=e139]: Plus eVisa, Marriage Registration, Relocation, Accounting, Tax Filing, PR, and 9 more
+        - link "View All Services" [ref=e140] [cursor=pointer]:
+          - /url: /services
+          - generic [ref=e141]: View All Services
+          - img [ref=e142]
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - generic [ref=e149]: Why Vietnam Launchpad
+        - heading "Why Choose Vietnam Launchpad?" [level=2] [ref=e150]
+        - paragraph [ref=e151]: Your trusted partner for Vietnam immigration and business services
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - img [ref=e155]
+            - generic [ref=e157]:
+              - heading "Local Expertise" [level=3] [ref=e158]
+              - paragraph [ref=e159]: Based in Ho Chi Minh City with deep understanding of Vietnamese immigration law and business regulations
+          - generic [ref=e160]:
+            - img [ref=e162]
+            - generic [ref=e164]:
+              - heading "End-to-End Support" [level=3] [ref=e165]
+              - paragraph [ref=e166]: From initial consultation to final approval, we handle everything so you can focus on your move or business
+          - generic [ref=e167]:
+            - img [ref=e169]
+            - generic [ref=e171]:
+              - heading "Transparent Process" [level=3] [ref=e172]
+              - paragraph [ref=e173]: Clear pricing, regular updates, and no hidden fees. You'll know exactly what to expect at every step
+          - generic [ref=e174]:
+            - img [ref=e176]
+            - generic [ref=e178]:
+              - heading "Proven Track Record" [level=3] [ref=e179]
+              - paragraph [ref=e180]: 98% approval rate with over 500 successful applications across all service categories
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - generic [ref=e185]: 500+
+          - generic [ref=e186]: Successful Applications
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]: 98%
+            - generic [ref=e190]: Success Rate
+          - generic [ref=e191]:
+            - generic [ref=e192]: 6+
+            - generic [ref=e193]: Years Active
+          - generic [ref=e194]:
+            - generic [ref=e195]: "2"
+            - generic [ref=e196]: Office Locations
+          - generic [ref=e197]:
+            - generic [ref=e198]: "4"
+            - generic [ref=e199]: Languages
+    - generic [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e205]:
+          - img [ref=e206]
+          - generic [ref=e208]: Trusted by 500+ expats
+        - heading "What Our Clients Say" [level=2] [ref=e209]
+        - paragraph [ref=e210]: Real experiences from expats we've helped
+      - generic [ref=e211]:
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - img [ref=e217]
+                - generic [ref=e219]: Work Permit
+              - generic [ref=e220]:
+                - img [ref=e221]
+                - img [ref=e223]
+                - img [ref=e225]
+                - img [ref=e227]
+                - img [ref=e229]
+              - paragraph [ref=e231]: “Vietnam Launchpad made my work permit process incredibly smooth. What I thought would take months was done in 3 weeks. Professional, responsive, and transparent throughout.”
+              - generic [ref=e232]:
+                - generic [ref=e233]:
+                  - img "Mark Thompson" [ref=e234]
+                  - img [ref=e236]
+                - generic [ref=e238]:
+                  - generic [ref=e239]: Mark Thompson
+                  - generic [ref=e240]: USA
+            - generic [ref=e241]:
+              - generic [ref=e242]:
+                - img [ref=e243]
+                - generic [ref=e245]: Company Setup
+              - generic [ref=e246]:
+                - img [ref=e247]
+                - img [ref=e249]
+                - img [ref=e251]
+                - img [ref=e253]
+                - img [ref=e255]
+              - paragraph [ref=e257]: “Setting up my company in Vietnam seemed daunting, but the team guided me through every step. The banking setup alone saved me weeks of frustration. Highly recommended!”
+              - generic [ref=e258]:
+                - generic [ref=e259]:
+                  - img "Sarah Chen" [ref=e260]
+                  - img [ref=e262]
+                - generic [ref=e264]:
+                  - generic [ref=e265]: Sarah Chen
+                  - generic [ref=e266]: Singapore
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - img [ref=e269]
+                - generic [ref=e271]: TRC Renewal
+              - generic [ref=e272]:
+                - img [ref=e273]
+                - img [ref=e275]
+                - img [ref=e277]
+                - img [ref=e279]
+                - img [ref=e281]
+              - paragraph [ref=e283]: “I needed a TRC renewal and was worried about the process. They handled everything perfectly, kept me updated, and I got my card in just 6 days. Excellent service!”
+              - generic [ref=e284]:
+                - generic [ref=e285]:
+                  - img "Kim Ji-hoon" [ref=e286]
+                  - img [ref=e288]
+                - generic [ref=e290]:
+                  - generic [ref=e291]: Kim Ji-hoon
+                  - generic [ref=e292]: South Korea
+            - generic [ref=e293]:
+              - generic [ref=e294]:
+                - img [ref=e295]
+                - generic [ref=e297]: Investment Visa
+              - generic [ref=e298]:
+                - img [ref=e299]
+                - img [ref=e301]
+                - img [ref=e303]
+                - img [ref=e305]
+                - img [ref=e307]
+              - paragraph [ref=e309]: “As a digital nomad, I needed reliable visa support. Vietnam Launchpad has been my go-to for 2 years now. They understand expat needs and deliver every time.”
+              - generic [ref=e310]:
+                - generic [ref=e311]:
+                  - img "Emma Rodriguez" [ref=e312]
+                  - img [ref=e314]
+                - generic [ref=e316]:
+                  - generic [ref=e317]: Emma Rodriguez
+                  - generic [ref=e318]: Spain
+          - generic [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]:
+                - img [ref=e322]
+                - generic [ref=e324]: Business Visa
+              - generic [ref=e325]:
+                - img [ref=e326]
+                - img [ref=e328]
+                - img [ref=e330]
+                - img [ref=e332]
+                - img [ref=e334]
+              - paragraph [ref=e336]: “Excellent support for my business visa application. The team was knowledgeable about German-Vietnamese requirements and made the process seamless.”
+              - generic [ref=e337]:
+                - generic [ref=e338]:
+                  - img "David Mueller" [ref=e339]
+                  - img [ref=e341]
+                - generic [ref=e343]:
+                  - generic [ref=e344]: David Mueller
+                  - generic [ref=e345]: Germany
+            - generic [ref=e346]:
+              - generic [ref=e347]:
+                - img [ref=e348]
+                - generic [ref=e350]: Driver's License
+              - generic [ref=e351]:
+                - img [ref=e352]
+                - img [ref=e354]
+                - img [ref=e356]
+                - img [ref=e358]
+                - img [ref=e360]
+              - paragraph [ref=e362]: “They helped me convert my driver's license quickly. Very professional service and clear communication throughout the entire process.”
+              - generic [ref=e363]:
+                - generic [ref=e364]:
+                  - img "Yuki Tanaka" [ref=e365]
+                  - img [ref=e367]
+                - generic [ref=e369]:
+                  - generic [ref=e370]: Yuki Tanaka
+                  - generic [ref=e371]: Japan
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - img [ref=e374]
+                - generic [ref=e376]: Marriage Registration
+              - generic [ref=e377]:
+                - img [ref=e378]
+                - img [ref=e380]
+                - img [ref=e382]
+                - img [ref=e384]
+                - img [ref=e386]
+              - paragraph [ref=e388]: “Outstanding service for our marriage registration. They navigated all the paperwork and made what seemed impossible, possible within weeks.”
+              - generic [ref=e389]:
+                - generic [ref=e390]:
+                  - img "Michael O'Brien" [ref=e391]
+                  - img [ref=e393]
+                - generic [ref=e395]:
+                  - generic [ref=e396]: Michael O'Brien
+                  - generic [ref=e397]: Australia
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - img [ref=e400]
+                - generic [ref=e402]: Property Registration
+              - generic [ref=e403]:
+                - img [ref=e404]
+                - img [ref=e406]
+                - img [ref=e408]
+                - img [ref=e410]
+                - img [ref=e412]
+              - paragraph [ref=e414]: “Property registration was handled perfectly. Their expertise saved us from costly mistakes and the whole process was transparent.”
+              - generic [ref=e415]:
+                - generic [ref=e416]:
+                  - img "Lisa van der Berg" [ref=e417]
+                  - img [ref=e419]
+                - generic [ref=e421]:
+                  - generic [ref=e422]: Lisa van der Berg
+                  - generic [ref=e423]: Netherlands
+        - generic [ref=e424]:
+          - button "Previous testimonials" [ref=e425] [cursor=pointer]:
+            - img [ref=e426]
+          - generic [ref=e428]:
+            - button "Go to page 1" [ref=e429] [cursor=pointer]
+            - button "Go to page 2" [ref=e430] [cursor=pointer]
+          - button "Next testimonials" [ref=e431] [cursor=pointer]:
+            - img [ref=e432]
+      - generic [ref=e435]:
+        - generic [ref=e436]:
+          - generic [ref=e437]: 500+
+          - generic [ref=e438]: Happy Clients
+        - generic [ref=e439]:
+          - generic [ref=e440]: "5.0"
+          - generic [ref=e441]: Average Rating
+        - generic [ref=e442]:
+          - generic [ref=e443]: 98%
+          - generic [ref=e444]: Success Rate
+        - generic [ref=e445]:
+          - generic [ref=e446]: 15+
+          - generic [ref=e447]: Countries Served
+    - generic [ref=e454]:
+      - generic [ref=e456]:
+        - generic [ref=e458]:
+          - img [ref=e459]
+          - img [ref=e461]
+          - img [ref=e463]
+          - img [ref=e465]
+          - img [ref=e467]
+        - generic [ref=e469]: Rated 5/5 by 500+ clients
+      - generic [ref=e470]:
+        - heading "Ready to Start Your Vietnam Journey?" [level=2] [ref=e471]
+        - paragraph [ref=e472]: Book a free consultation with our immigration experts today
+        - link "Get Free Consultation" [ref=e474] [cursor=pointer]:
+          - /url: /contact
+          - text: Get Free Consultation
+          - img [ref=e475]
+        - generic [ref=e477]:
+          - img [ref=e478]
+          - generic [ref=e480]: Response within 24 hours
+      - generic [ref=e482]:
+        - generic [ref=e483]:
+          - generic [ref=e484]: 98%
+          - generic [ref=e485]: Success Rate
+        - generic [ref=e486]:
+          - generic [ref=e487]: 500+
+          - generic [ref=e488]: Happy Clients
+        - generic [ref=e489]:
+          - generic [ref=e490]: 6+
+          - generic [ref=e491]: Years Experience
+        - generic [ref=e492]:
+          - generic [ref=e493]: 24h
+          - generic [ref=e494]: Response Time
+    - generic [ref=e498]:
+      - generic [ref=e500]:
+        - generic [ref=e501]:
+          - img "Vietnam Launchpad" [ref=e503]
+          - paragraph [ref=e504]: Professional immigration and business consulting services for expats relocating to Vietnam.
+          - generic [ref=e506]:
+            - img [ref=e507]
+            - generic [ref=e510]: Hanoi & Da Nang
+        - generic [ref=e511]:
+          - heading "Services" [level=3] [ref=e512]
+          - list [ref=e513]:
+            - listitem [ref=e514]:
+              - link "TRC Applications" [ref=e515] [cursor=pointer]:
+                - /url: /sitemap.xml/services/trc-application
+            - listitem [ref=e516]:
+              - link "Work Permits" [ref=e517] [cursor=pointer]:
+                - /url: /sitemap.xml/services/work-permit
+            - listitem [ref=e518]:
+              - link "eVisa & Entry Visa" [ref=e519] [cursor=pointer]:
+                - /url: /sitemap.xml/services/evisa
+            - listitem [ref=e520]:
+              - link "Company Setup" [ref=e521] [cursor=pointer]:
+                - /url: /sitemap.xml/services/company-setup
+            - listitem [ref=e522]:
+              - link "Accounting & Bookkeeping" [ref=e523] [cursor=pointer]:
+                - /url: /sitemap.xml/services/accounting-bookkeeping
+            - listitem [ref=e524]:
+              - link "Tax Filing (PIT)" [ref=e525] [cursor=pointer]:
+                - /url: /sitemap.xml/services/tax-filing
+            - listitem [ref=e526]:
+              - link "Permanent Residency" [ref=e527] [cursor=pointer]:
+                - /url: /sitemap.xml/services/permanent-residency
+            - listitem [ref=e528]:
+              - link "Relocation & Settling In" [ref=e529] [cursor=pointer]:
+                - /url: /sitemap.xml/services/relocation-assistance
+            - listitem [ref=e530]:
+              - link "All Services" [ref=e531] [cursor=pointer]:
+                - /url: /sitemap.xml/services
+        - generic [ref=e532]:
+          - heading "Guides" [level=3] [ref=e533]
+          - list [ref=e534]:
+            - listitem [ref=e535]:
+              - link "TRC Complete Guide" [ref=e536] [cursor=pointer]:
+                - /url: /sitemap.xml/guides/trc-vietnam
+            - listitem [ref=e537]:
+              - link "Company Setup" [ref=e538] [cursor=pointer]:
+                - /url: /sitemap.xml/guides/company-setup-vietnam
+            - listitem [ref=e539]:
+              - link "Teaching English" [ref=e540] [cursor=pointer]:
+                - /url: /sitemap.xml/guides/teaching-english-vietnam
+            - listitem [ref=e541]:
+              - link "Cost of Living" [ref=e542] [cursor=pointer]:
+                - /url: /sitemap.xml/guides/cost-of-living
+            - listitem [ref=e543]:
+              - link "City Guides" [ref=e544] [cursor=pointer]:
+                - /url: /sitemap.xml/guides
+            - listitem [ref=e545]:
+              - link "All Guides" [ref=e546] [cursor=pointer]:
+                - /url: /sitemap.xml/guides
+        - generic [ref=e547]:
+          - heading "Company" [level=3] [ref=e548]
+          - list [ref=e549]:
+            - listitem [ref=e550]:
+              - link "About Us" [ref=e551] [cursor=pointer]:
+                - /url: /sitemap.xml/about
+            - listitem [ref=e552]:
+              - link "All Services" [ref=e553] [cursor=pointer]:
+                - /url: /sitemap.xml/services
+            - listitem [ref=e554]:
+              - link "Blog" [ref=e555] [cursor=pointer]:
+                - /url: /sitemap.xml/blog
+            - listitem [ref=e556]:
+              - link "FAQ" [ref=e557] [cursor=pointer]:
+                - /url: /sitemap.xml/faq
+            - listitem [ref=e558]:
+              - link "Contact" [ref=e559] [cursor=pointer]:
+                - /url: /sitemap.xml/contact
+            - listitem [ref=e560]:
+              - link "Sitemap" [ref=e561] [cursor=pointer]:
+                - /url: /sitemap.xml
+            - listitem [ref=e562]:
+              - link "RSS Feed" [ref=e563] [cursor=pointer]:
+                - /url: /feed.xml
+        - generic [ref=e564]:
+          - heading "Get Started" [level=3] [ref=e565]
+          - paragraph [ref=e566]: Ready to start your Vietnam journey? Book a free consultation today.
+          - link "Free Consultation" [ref=e567] [cursor=pointer]:
+            - /url: /sitemap.xml/contact
+            - text: Free Consultation
+            - img [ref=e568]
+      - generic [ref=e571]:
+        - generic [ref=e572]:
+          - paragraph [ref=e574]: © 2026 Vietnam Launchpad. All rights reserved. · Company No. 0108305670
+          - button "Back to top" [ref=e575] [cursor=pointer]:
+            - generic [ref=e576]: Back to top
+            - img [ref=e578]
+        - paragraph [ref=e581]: All company registration and legal services are performed in partnership with registered Vietnamese Law Offices. Information on this website is subject to change. Please contact us to confirm current requirements.
+  - generic [ref=e582]:
+    - link "Chat on WhatsApp" [ref=e583] [cursor=pointer]:
+      - /url: https://wa.me/84765805294
+      - img [ref=e584]
+      - generic [ref=e586]: Chat on WhatsApp
+    - link "Send Email" [ref=e587] [cursor=pointer]:
+      - /url: mailto:jos@iamjosaguiar.com
+      - img [ref=e588]
+      - generic [ref=e591]: Email Us
+  - alert [ref=e592]
