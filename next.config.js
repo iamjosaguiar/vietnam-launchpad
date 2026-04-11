@@ -13,6 +13,16 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.vietnamlaunchpad.com' }],
+        destination: 'https://vietnamlaunchpad.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 }
 
 module.exports = withNextIntl(nextConfig);
