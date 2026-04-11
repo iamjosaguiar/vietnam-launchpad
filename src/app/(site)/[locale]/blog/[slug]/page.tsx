@@ -51,7 +51,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
     url: `${baseUrl}/blog/${post.slug}`,
@@ -62,6 +62,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       url: baseUrl,
     },
     datePublished: post.date,
+    dateModified: post.date,
     publisher: {
       '@type': 'Organization',
       name: 'Vietnam Launchpad',

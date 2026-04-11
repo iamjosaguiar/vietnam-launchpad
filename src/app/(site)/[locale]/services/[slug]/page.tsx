@@ -45,15 +45,25 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
+  const baseUrl = 'https://vietnamlaunchpad.com';
+
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `${baseUrl}/services/${slug}`,
     name: service.title,
     description: service.shortDescription,
+    url: `${baseUrl}/services/${slug}`,
+    areaServed: {
+      '@type': 'Country',
+      name: 'Vietnam',
+    },
     provider: {
       '@type': 'Organization',
-      name: 'Vietnam Launchpad'
-    }
+      '@id': `${baseUrl}/#organization`,
+      name: 'Vietnam Launchpad',
+      url: baseUrl,
+    },
   };
 
   const faqSchema = {
@@ -69,6 +79,16 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     }))
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: `${baseUrl}/services` },
+      { '@type': 'ListItem', position: 3, name: service.title, item: `${baseUrl}/services/${slug}` },
+    ],
+  };
+
   return (
     <>
       <script
@@ -78,6 +98,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <main className="min-h-screen">

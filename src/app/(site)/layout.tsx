@@ -91,13 +91,36 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
   const { locale = routing.defaultLocale } = await params;
   const messages = await getMessages({ locale });
 
+  const logoUrl = 'https://vietnamlaunchpad.com/vietnam-launchpad-logo.png';
+  const baseUrl = 'https://vietnamlaunchpad.com';
+
+  const websiteLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${baseUrl}/#website`,
+    name: 'Vietnam Launchpad',
+    url: baseUrl,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${baseUrl}/guides?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${baseUrl}/#organization`,
     name: 'Vietnam Launchpad',
     description: 'Professional immigration and business consulting services for Vietnam',
-    url: 'https://vietnamlaunchpad.com',
-    logo: 'https://vietnamlaunchpad.com/vietnam launchpad logo.png',
+    url: baseUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: logoUrl,
+    },
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+84 76 580 5294',
@@ -120,11 +143,12 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
   const localBusinessLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    '@id': 'https://vietnamlaunchpad.com',
+    '@id': baseUrl,
     name: 'Vietnam Launchpad',
-    image: 'https://vietnamlaunchpad.com/vietnam launchpad logo.png',
+    image: logoUrl,
     description:
       'Licensed immigration and business consulting services in Vietnam. Specializing in TRC applications, work permits, and company registration.',
+    url: baseUrl,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '5th floor, No.7, Alley 3, Lieu Giai Street, Ngoc Ha Ward',
@@ -142,14 +166,19 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     openingHours: 'Mo-Fr 09:00-18:00',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127'
+      ratingValue: 4.9,
+      reviewCount: 127
     }
   };
 
   return (
     <html lang={locale}>
       <head>
+        <Script
+          id="schema-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+        />
         <Script
           id="schema-organization"
           type="application/ld+json"
