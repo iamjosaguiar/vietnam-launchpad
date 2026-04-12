@@ -112,6 +112,19 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     ],
   };
 
+  const faqSchema = guide.faqs && guide.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: guide.faqs.map((faq: { q: string; a: string }) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a,
+      },
+    })),
+  } : null;
+
   // Inject live data widgets into relevant guides
   let topWidget: React.ReactNode = undefined;
   if (slug === 'cost-of-living') {
@@ -135,6 +148,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <main className="min-h-screen">
         <Navigation />
         <GuideContent guide={guide} topWidget={topWidget} />

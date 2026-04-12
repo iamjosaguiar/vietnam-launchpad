@@ -1214,8 +1214,8 @@ export const servicesData: Record<string, ServiceData> = {
   },
   'property-registration': {
     slug: 'property-registration',
-    title: 'Foreign-Owned Property Registration',
-    shortDescription: 'Register and secure your property ownership in Vietnam as a foreigner. Complete support for apartments and condominiums in approved projects.',
+    title: 'Vietnam Property Registration - Pink Book, Red Book & Foreign Ownership Documents',
+    shortDescription: 'Complete guide to Vietnam property registration for foreigners. Understand the difference between Red Book and Pink Book, all required documents, registration fees, and the full process for apartments and condominiums.',
     timeline: '1-2 months',
     heroTitle: 'Foreign-Owned Property Registration & Ownership Support',
     heroDescription: 'Navigate Vietnam\'s property ownership regulations with expert guidance. We help foreigners legally purchase, register, and secure property ownership rights for apartments and condominiums in approved projects.',

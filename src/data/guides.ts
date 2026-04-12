@@ -15,6 +15,7 @@ export interface Guide {
   ctaSecondaryLink?: string;
   ctaSecondaryText?: string;
   content: string;
+  faqs?: { q: string; a: string }[];
 }
 
 const guidesData: Record<string, Guide> = {
@@ -2126,6 +2127,13 @@ The first week is about practical setup. Week 2-4 shifts to:
     ctaLinkText: 'View Property Registration Service',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Book a Consultation',
+    faqs: [
+      { q: 'What is the difference between a Red Book and Pink Book in Vietnam?', a: 'Both are official Vietnamese property ownership certificates. The Red Book (So Do) was the older format used primarily for land use rights certificates, issued mainly before 2009. The Pink Book (So Hong, officially called the Certificate of Land Use Rights, House Ownership and Assets Attached to Land) is the unified document introduced in 2009 that covers both land use rights and house/structure ownership on a single certificate. For foreign buyers purchasing apartments, you will receive a Pink Book. Red Books are rarely issued for new transactions today - most legacy Red Books are gradually being converted to Pink Books.' },
+      { q: 'What documents are required for property registration in Vietnam?', a: 'For foreign buyers, the key documents for property registration are: (1) your passport and valid Vietnamese visa or TRC, (2) the signed Sale and Purchase Agreement (SPA) with the developer or seller, (3) proof of payment or payment receipts, (4) the developer\'s project approval documents and foreign ownership quota confirmation, (5) a completed registration application form. Your agent or legal representative will compile these and submit to the local Land Registration Office (Van phong dang ky dat dai). We handle the full process.' },
+      { q: 'What is the Vietnam property registration process for foreigners?', a: 'The property registration process for foreigners has 5 main steps: (1) complete the Sale and Purchase Agreement and make full payment; (2) developer submits application to the Land Registration Office on your behalf; (3) authorities review and verify the application including foreign ownership quota; (4) the Pink Book (ownership certificate) is issued - typically 45-90 days after application; (5) you receive the original Pink Book confirming your ownership. We assist with due diligence and the full registration process.' },
+      { q: 'What are Vietnam property registration fees for foreigners?', a: 'Key fees for foreign property registration include: registration fee (0.5% of property value), notarisation fee (0.1-0.3% of value, capped), personal income tax on any capital gain if buying from an individual (2% of sale price paid by seller), VAT on new developer sales (10%), and land use fees if applicable. Total costs including agent fees and legal fees typically run 3-7% of the purchase price on top of the agreed price.' },
+      { q: 'How long does property registration take in Vietnam for foreigners?', a: 'The timeline from completed payment to receiving your Pink Book is typically 45-90 days. This includes the Land Registration Office review (30-60 days) plus preparation time. For off-plan purchases, the Pink Book is issued only after construction completes and the building receives its certificate of completion - this can be years after signing.' },
+    ],
     content: `## Can Foreigners Own Property in Vietnam?
 
 **Yes - but not in the Western sense of full freehold ownership.**
@@ -3568,6 +3576,18 @@ No. Vietnam has a separate Permanent Residency (PR / Thuong Tru) status requirin
     ctaLinkText: 'Apply for Your Work Permit',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Ask a Question',
+    faqs: [
+      { q: 'Can I teach English in Vietnam with a business visa?', a: 'No. A business visa (DN visa) permits business activities such as meetings and negotiations, but does not authorize employment. Teaching English requires a valid work permit regardless of visa type. Teaching on a business or tourist visa is illegal under Vietnamese law and can result in deportation, fines, and blacklisting for your employer.' },
+      { q: 'Do I need my TEFL or TESOL certificate apostilled to teach in Vietnam?', a: 'No. Your TEFL or TESOL certificate does not need to be apostilled. The documents that require apostille are: (1) your university degree certificate, and (2) your criminal background check from your home country. Your TEFL certificate is submitted as a copy alongside these apostilled documents.' },
+      { q: 'Can I teach English in Vietnam without a degree?', a: 'No. Vietnamese law requires a minimum bachelor\'s degree in any subject to qualify for a teaching work permit. There is no legal pathway to teach English in Vietnam with only a TEFL certificate and no university degree. Some schools may accept you informally, but they cannot legally obtain a work permit for you.' },
+      { q: 'Is there an age limit to teach English in Vietnam?', a: 'There is no official upper age limit for teaching English in Vietnam. Teachers in their 50s, 60s, and beyond work successfully here. The legal requirements are the same at any age: a valid bachelor\'s degree, a 120+ hour TEFL/TESOL certificate, a clean criminal background check, and a health certificate.' },
+      { q: 'Can I teach English part-time or in the evenings in Vietnam?', a: 'Yes. Many teachers work evening and weekend hours at language centers while employed elsewhere during the day. However, your work permit specifies your employer. If you want to teach for multiple schools, each additional employer may require a separate work permit or an amendment. Discuss this with your employer before signing contracts.' },
+      { q: 'Do I need a TRC to teach English in Vietnam?', a: 'You do not need a TRC before starting. You need a work permit first, and once you have your work permit you can then apply for a TRC (Temporary Residence Card) for a 2-year stay. Most teachers start on a 90-day business visa while their work permit is processed, then upgrade to a TRC.' },
+      { q: 'Can a Canadian ECE (Early Childhood Educator) teach English in Vietnam?', a: 'A Canadian ECE diploma may qualify as your degree requirement if it is a bachelor-level qualification from an accredited institution. You will still need a 120+ hour TEFL/TESOL certificate alongside it. Contact your specific employer or a work permit specialist to confirm your qualification is accepted before relocating.' },
+      { q: 'Do I need my diploma apostilled to teach English in Vietnam?', a: 'Yes. Your university degree certificate must be apostilled (officially legalized by your home country\'s competent authority). For UK teachers this means FCDO apostille. For US teachers, the Secretary of State for your state. Your TEFL certificate does NOT need apostille.' },
+      { q: 'How strict are background checks to teach English in Vietnam?', a: 'Background checks are taken seriously. You need a police clearance certificate from every country you have lived in for 6+ months in the past 5 years. The check must be issued within 6 months of your work permit application and apostilled. Any criminal record will be assessed case-by-case - minor offenses may not disqualify you, but serious offenses typically will.' },
+      { q: 'Can I use a TESOL from Canada or a TSL to teach in Vietnam?', a: 'Yes, Canadian TESOL certificates from accredited institutions are accepted in Vietnam as the required TEFL/TESOL equivalent. The key requirements are: 120+ contact hours of training and a practicum or observed teaching component. Online-only certificates with no practicum may not meet Vietnamese government standards for work permit applications.' },
+    ],
     content: `## Why Vietnam for English Teaching?
 
 Vietnam has one of the highest demands for English language education in Southeast Asia. English proficiency is seen as a critical career skill and parents invest heavily in their children's English education. This creates a large, well-funded market for qualified teachers.
@@ -3789,6 +3809,12 @@ International school recruitment agencies (Search Associates, TIE Online, Schrol
     ctaLinkText: 'Book a Consultation',
     ctaSecondaryLink: '/services/trc',
     ctaSecondaryText: 'Learn About Marriage-Based TRC',
+    faqs: [
+      { q: 'Can I work in Vietnam with a marriage-based TRC?', a: 'A marriage-based TRC (Temporary Residence Card) gives you the right to live in Vietnam as a spouse of a Vietnamese citizen, but it does NOT automatically give you the right to work. You still need to apply for a separate work permit to be employed legally in Vietnam. The exception is if you qualify for a work permit exemption - for example, if you are a capital-contributing owner of a Vietnamese company.' },
+      { q: 'Do I need a work permit if I have a marriage TRC in Vietnam?', a: 'Yes, in most cases. Your marriage TRC confirms your residency status but work authorization is separate. To work legally for a Vietnamese employer or run a business, you need a work permit (or a valid work permit exemption). Our team can advise on the fastest route based on your situation.' },
+      { q: 'How do I get a marriage TRC in Vietnam?', a: 'After completing your marriage registration at the Provincial Department of Justice or local People\'s Committee, you apply for a TRC at the immigration department using your Vietnamese Marriage Certificate as the basis. The TRC is valid for up to 3 years and is renewable. We handle the full process including document preparation and submission.' },
+      { q: 'Can I work on a marriage TRC as a company owner in Vietnam?', a: 'If you are a legally registered capital-contributing member of a Vietnamese company, you may qualify for a work permit exemption even while holding a marriage TRC. This allows you to manage your company without a separate work permit. We recommend confirming your specific situation with a specialist before proceeding.' },
+    ],
     content: `## Getting Married in Vietnam: Overview
 
 Foreign nationals can legally marry Vietnamese citizens in Vietnam. The marriage is registered at the local People's Committee and produces a **Vietnamese Marriage Registration Certificate** (Giay Chung Nhan Ket Hon) - the official legal document proving your marriage under Vietnamese law.
@@ -4011,6 +4037,13 @@ A legal marriage from abroad can generally be used as evidence in Vietnam (for p
     ctaLinkText: 'Start License Conversion',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Ask a Question',
+    faqs: [
+      { q: 'Can I get a Vietnamese driver\'s license without a TRC?', a: 'Yes. A TRC is not strictly required to convert a foreign driver\'s license to a Vietnamese one. A valid Vietnamese visa is sufficient. However, if your visa expires before the license validity period, your license may be tied to your visa duration. For long-term residents, having a TRC makes the process smoother and the license is typically issued for the full standard validity.' },
+      { q: 'Can you obtain a Vietnamese driver\'s license without a TRC?', a: 'Yes - you can apply with any valid Vietnamese visa. A TRC is recommended but not legally required. Present your passport, valid visa, foreign license, certified Vietnamese translation of your license, health certificate, and residence registration (Tam Tru). Processing takes 5-15 business days.' },
+      { q: 'How do I translate my foreign driver\'s license for Vietnam?', a: 'Your foreign driver\'s license must be translated into Vietnamese by a certified translator. You submit both the original license and the certified Vietnamese translation together as part of your conversion application. The translation does not need to be apostilled - only your identity documents do.' },
+      { q: 'How do I convert a US driver\'s license to a Vietnamese license?', a: 'US licenses can be converted without re-sitting a driving test. You need: your US license, a certified Vietnamese translation of it, your passport, valid Vietnamese visa or TRC, health certificate, Tam Tru (temporary residence registration), and 2 passport photos. Submit at the Department of Transport (So Giao thong Van tai) in your province. Processing takes 5-15 business days.' },
+      { q: 'Can I drive in Vietnam with an International Driving Permit (IDP)?', a: 'Yes, for short-term visitors. An IDP combined with your home country license is valid for driving in Vietnam. However, IDPs are not accepted for motorbikes over 50cc. For longer stays or motorbike riding, you should convert to a Vietnamese license.' },
+    ],
     content: `## Renting a Car in Vietnam
 
 Renting a car in Vietnam as a foreigner is straightforward - but there are important things to understand before you book.
