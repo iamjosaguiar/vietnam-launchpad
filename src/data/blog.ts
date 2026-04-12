@@ -11,6 +11,80 @@ export interface BlogPost {
 }
 
 export const blogPosts: Record<string, BlogPost> = {
+  'why-are-vietnamese-houses-so-thin-and-tall': {
+    slug: 'why-are-vietnamese-houses-so-thin-and-tall',
+    title: 'Why Are Vietnamese Houses So Thin and Tall? The Tube House Explained',
+    excerpt: 'Walk down any street in Hanoi or Ho Chi Minh City and you\'ll notice the same striking pattern: houses just 3-4 metres wide, shooting up five or six floors. This is the nha ong - the tube house - and its shape has a fascinating origin rooted in taxes, inheritance, and feng shui.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-12',
+    readTime: '5 min read',
+    category: 'Living in Vietnam',
+    content: `
+# Why Are Vietnamese Houses So Thin and Tall? The Tube House Explained
+
+Walk down any street in Hanoi's Old Quarter or through a Ho Chi Minh City neighbourhood and the architecture hits you immediately. Buildings just 3 or 4 metres wide, stacked five, six, sometimes seven storeys high, pressed shoulder-to-shoulder like books on a shelf. Bright tiles, balconies, spiral staircases visible through open windows.
+
+This is the **nha ong** - literally "tube house" or "tunnel house" - and it is one of the most distinctive and practical architectural forms in the world. Its shape is not aesthetic coincidence. It has four deeply practical origins.
+
+## 1. Tax Was Charged on Street Frontage
+
+This is the main reason. For centuries - through the Nguyen dynasty and then the French colonial period - land tax in Vietnamese cities was calculated based on the **width of the plot facing the street**, not its total area.
+
+A plot 4 metres wide was taxed far less than one 10 metres wide, regardless of how deep it ran. The rational response: build narrow. Extend as deep as possible into the block. Go up, not out.
+
+French colonial administrators continued the same system, calling it *taxe fonciere* and assessing it on facade width. The incentive was locked in across generations of urban development. Even after the tax rules changed, the urban fabric had already been shaped - and land had already been subdivided accordingly.
+
+## 2. Inheritance Divided Land Into Strips
+
+Vietnamese tradition - and later Vietnamese law - requires land to be divided equally among heirs, typically among sons in older practice. In a city where every plot already faced a street, division happened **vertically**: the land was sliced into narrow strips front-to-back rather than divided across its depth.
+
+Over two or three generations, a modest 12-metre frontage becomes three 4-metre plots. Each heir still has street access. Each plot is still buildable. Each becomes a tube house.
+
+This pattern repeated itself across every old Vietnamese city. The Old Quarter of Hanoi - 36 Streets - was originally organised by craft guilds, each guild occupying a street of shops. The plots were already narrow by design. Inheritance made them narrower still.
+
+## 3. Phong Thuy: Feng Shui Rewarded the Shape
+
+**Phong thuy** (the Vietnamese equivalent of feng shui) added cultural reinforcement to the economic logic. A narrow entrance leading to a deeper, wider interior was considered auspicious - like a fish trap or a jar: easy for wealth to enter, hard for it to escape.
+
+A wide, open facade was seen as letting fortune "leak out" to the street. The ideal home had a narrow **mat tien** (street face) but expanded inward. Many tube houses feature a central **gieng troi** - a sky well or internal courtyard - designed to draw light and air deep into the house while keeping the front narrow.
+
+The result: a home that is economically sensible, legally cheaper to own, and spiritually correct.
+
+## 4. Mat Tien - Street Frontage as Status and Commerce
+
+In Vietnamese cities, having **mat tien** (a street-facing property) was not just convenient - it was the difference between running a business and not. The ground floor of almost every tube house in a commercial area was a shop, a workshop, or a food stall.
+
+People were willing to build extremely narrow buildings specifically to preserve that street access. A 2.5-metre-wide shopfront is still a shopfront. You can sell from it. Your family lives above.
+
+The value of mat tien persists today. Plots without street access - tucked into alleys (hem) - sell for significantly less than equivalent street-facing properties.
+
+## What It's Like to Live in One
+
+For expats renting or buying in Vietnam, tube houses are everywhere - and they are more liveable than they look from the outside.
+
+**The layout:** Ground floor is often parking or a workspace. Each floor above typically contains one or two rooms. A narrow staircase (sometimes spiral) runs the height of the building. The top floor or rooftop is the most prized space - light, views, often a garden or terrace.
+
+**Light:** The middle floors of a deep tube house can be dark. Good ones have a sky well or internal light shaft. Check this before renting.
+
+**The stairs:** There is no avoiding them. Elevators in residential tube houses are rare except in newer, premium builds. Living on the fourth floor means using the stairs every day.
+
+**Sound:** Walls between neighbouring tube houses are often shared and thin. Street noise travels easily. Earplugs and a white noise machine are standard expat purchases.
+
+**The rooftop:** The best feature. Most tube houses have rooftop access. In HCMC and Hanoi, rooftop decks have become social spaces, often with a hammock, some plants, and a view across the city's sea of identical rooftops.
+
+## The Tube House Today
+
+Modern tube houses have evolved considerably. In wealthier neighbourhoods you'll find versions with floor-to-ceiling glass facades, polished concrete interiors, internal gardens, and dramatic double-height living rooms squeezed into 4-metre widths. Vietnamese architects have built an international reputation for inventive tube house design precisely because the constraints are so demanding.
+
+Minimum plot width regulations now apply in most Vietnamese cities - typically 3.5 to 4 metres - but older neighbourhoods were built long before these rules and remain as narrow as ever.
+
+The tube house is Vietnam's most honest piece of architecture: shaped entirely by the economic, legal, and cultural forces of the society that built it.
+
+---
+
+*Moving to Vietnam? Our guides cover [renting](/guides/renting), [buying property](/guides/buying-property), and [cost of living](/guides/cost-of-living) across Hanoi, Ho Chi Minh City, and Da Nang.*
+    `,
+  },
   'how-to-convert-drivers-license-vietnam': {
     slug: 'how-to-convert-drivers-license-vietnam',
     title: 'How to Convert Your Driver\'s License in Vietnam: Complete Guide 2026',
@@ -656,6 +730,108 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
     `
   },
 
+  'vietnam-visa-overstay-fines': {
+    slug: 'vietnam-visa-overstay-fines',
+    title: 'Vietnam Visa Overstay: Fines, Consequences, and What To Do',
+    excerpt: 'Overstaying your Vietnam visa - even by one day - can result in fines, entry bans, and deportation. Here is exactly what happens, how much it costs, and how to avoid it.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-12',
+    readTime: '6 min read',
+    category: 'Visas & Immigration',
+    content: `
+# Vietnam Visa Overstay: Fines, Consequences, and What To Do
+
+Visa overstays happen more often than people expect. A missed flight, a hospital stay, a bureaucratic delay in a paperwork chain - suddenly you are past your permitted date. Vietnam does not treat this lightly, but the consequences are tiered and proportionate to the length of the overstay. Understanding what to expect - and acting quickly - makes a significant difference.
+
+> **Disclaimer:** Fine amounts and procedures are set by Vietnamese government decree and are subject to change. The figures in this article are based on Decree 144/2021/ND-CP and subsequent guidance. Always verify current amounts with the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or a qualified immigration advisor before making decisions.
+
+## The Fine Structure
+
+Vietnam\'s overstay fines are tiered by duration. All fines are applied at the point of exit. Current approximate ranges under Decree 144/2021 are:
+
+| Overstay Duration | Approximate Fine (VND) | Notes |
+|---|---|---|
+| 1 to 3 days | 500,000 - 1,500,000 | Administrative fine only in most cases |
+| 3 to 7 days | 1,500,000 - 3,000,000 | Fine likely, possible note on record |
+| 7 to 30 days | 3,000,000 - 5,000,000 | Fine plus possible short-term entry ban |
+| 30 to 60 days | 5,000,000 - 8,000,000 | Fine plus probable entry ban (typically 1 year) |
+| Over 60 days | 8,000,000 - 15,000,000+ | Fine, likely multi-year entry ban, possible deportation |
+
+Each tier up adds risk beyond the monetary fine. A three-day overstay is typically resolved with a payment. An overstay of several months is a different situation entirely.
+
+Note that USD conversion varies, but the upper end of the fine table sits at roughly $600 USD or more - plus any administrative processing costs at exit.
+
+## Beyond the Fine
+
+The cash fine is often the least of the concerns for longer overstays:
+
+**Passport held at immigration.** When you present your passport at the exit desk, an officer will review your entry and exit dates. If you have overstayed, your passport may be held while the situation is assessed and payment is arranged. This can take time and is stressful at an airport departure gate.
+
+**Entry ban.** For overstays beyond a few weeks, Vietnamese immigration has authority to impose an entry ban ranging from one year to three years. Severe or repeated overstays can result in a permanent ban. The ban is recorded and will be visible when you attempt to re-enter Vietnam.
+
+**Deportation.** For very long overstays (typically several months or more), or for overstays combined with other violations, Vietnam can deport the individual. Deportation costs are typically charged to the individual and the record follows you.
+
+**Watchlist entry.** Your details may be flagged in the immigration database, causing additional scrutiny on future entries even after a ban period has expired.
+
+## What Happens at the Airport When You Have Overstayed
+
+If you arrive at the departure hall having overstayed and without having resolved the situation in advance, the process at the immigration desk is roughly:
+
+1. Officer scans your passport and identifies the overstay
+2. You are directed to a secondary processing area or supervisor
+3. The fine amount is calculated based on the number of days
+4. You pay the fine (typically cash in VND, though some airports have other options - confirm in advance)
+5. Documentation is prepared and you sign an acknowledgement
+6. You are permitted to exit, or in serious cases, detained for further processing
+
+The entire process can add hours to your departure. Arriving at the airport with ample time is essential if you know you have overstayed.
+
+## What To Do If You Realise You Have Overstayed
+
+The worst thing you can do is ignore it and hope the exit officer does not notice. They will notice.
+
+**If the overstay is short (a few days) and you are leaving soon:**
+- Go to the nearest Immigration Department office and declare the overstay
+- Pay the fine there before your departure, which simplifies the airport exit
+- Keep all receipts and documentation
+
+**If the overstay is longer or the situation is complicated:**
+- Contact the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) directly
+- Do not attempt to exit without addressing the situation first
+- Seek assistance from a local immigration consultant or legal advisor - this is exactly the kind of situation where professional help saves time and reduces risk of a worse outcome
+
+**Do not attempt to bribe anyone.** Beyond the legal risk, it typically does not work and can escalate the situation significantly.
+
+## How To Avoid Overstays
+
+Prevention is straightforward:
+
+**Calendar reminders.** Set a reminder 14 days before your visa expiry date and again at 7 days. If you are on a 90-day e-visa, your expiry date is on your visa document - mark it in your phone immediately on arrival.
+
+**Know your visa type.** Tourist e-visas, business visas, and exempt-entry visas all have different validity periods and conditions. A 90-day e-visa does not automatically renew. Many overstays happen because someone assumed they had more time than they did.
+
+**Renew or extend before expiry.** Vietnam allows visa extensions in some cases. If you know you need more time, apply for an extension before your current visa expires - not after.
+
+**Consider long-term residency.** If you are spending significant time in Vietnam, a Temporary Residence Card (TRC) eliminates the visa expiry problem entirely. TRC holders do not manage recurring visa renewals. Our TRC service handles the full application process.
+
+## COVID and Force Majeure Situations
+
+Vietnam has historically applied discretion in genuine emergency cases. During the COVID period, immigration authorities extended leniency to foreigners who were unable to exit due to flight cancellations, border closures, or medical emergencies.
+
+Outside of formal emergency declarations, individual circumstances (serious illness requiring hospitalisation, documented natural disaster disruption, etc.) can be presented to immigration as mitigating factors. This does not guarantee waiver of fines, but officers do have discretion. If you find yourself in a genuine emergency that has caused or will cause an overstay, document everything - hospital records, airline correspondence, police reports - and contact immigration proactively rather than waiting.
+
+## The Long-Term Solution: TRC
+
+If you are spending three months or more per year in Vietnam, or if you are building a life here, the Temporary Residence Card is the cleanest solution to visa management. TRC holders have legal residency status, no recurring visa deadlines to manage, and significantly reduced friction with banking, property, and employment.
+
+We handle TRC applications for investors, employed expats, and foreign spouses of Vietnamese citizens. If you are tired of tracking visa dates, [talk to our team about TRC eligibility](/services/trc).
+
+---
+
+*Published April 2026. Fine amounts are based on Decree 144/2021/ND-CP and associated guidance current at time of writing. Vietnamese immigration regulations can change. Verify current fine amounts and procedures with the Vietnam Immigration Department or a qualified advisor before acting on this information.*
+    `
+  },
+
   'can-you-work-on-marriage-trc-vietnam': {
     slug: 'can-you-work-on-marriage-trc-vietnam',
     title: 'Can You Work on a Marriage TRC in Vietnam? Work Permits Explained',
@@ -777,6 +953,318 @@ Every situation is slightly different. If you are unsure whether your planned wo
 ---
 
 *Published April 2026. Vietnamese labor law and work permit regulations are subject to change. Verify current requirements before making employment decisions.*
+    `
+  },
+
+  'vietnam-business-registration-types': {
+    slug: 'vietnam-business-registration-types',
+    title: 'Vietnam Business Registration Types: LLC, JSC, Rep Office and What Foreigners Can Own',
+    excerpt: 'Vietnam has six main business structures available to foreign investors - each with different ownership rules, liability, capital requirements, and tax treatment. Here is a plain-English breakdown of all of them.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-12',
+    readTime: '10 min read',
+    category: 'Business & Company Setup',
+    content: `
+# Vietnam Business Registration Types: LLC, JSC, Rep Office and What Foreigners Can Own
+
+Vietnam has six main business structures available to foreign investors. Each comes with different ownership rules, liability exposure, capital requirements, and administrative burden. Choosing the wrong structure early can mean costly restructuring later, so it pays to understand your options before you start.
+
+This guide covers all six structures under the Enterprise Law 2020 and Investment Law 2020 (as updated through 2024), with a plain-English explanation of what each one means in practice.
+
+---
+
+## 1. Limited Liability Company (LLC / Cong ty TNHH)
+
+The LLC is the most common structure for foreign investors entering Vietnam. It comes in two forms.
+
+### Single-Member LLC (Cong ty TNHH mot thanh vien)
+
+One owner, which can be a foreign individual or a foreign company. The owner can hold 100% of the charter capital, making this the cleanest structure for solo foreign-invested projects.
+
+Liability is limited to the amount of registered capital. The owner is not personally responsible for debts beyond their capital contribution. Governance is straightforward: no board of shareholders meetings, no complex share transfer mechanics.
+
+### Multi-Member LLC (Cong ty TNHH hai thanh vien tro len)
+
+Between 2 and 50 members. Members hold capital contributions rather than shares. Transferring your stake to an outsider requires offering existing members first right of refusal and following a formal approval process.
+
+This structure suits joint ventures where two or more parties (including a mix of foreign and Vietnamese investors) want to run a business together with defined ownership percentages.
+
+**Key facts for both LLC types:**
+- No universal minimum charter capital for general trading or services businesses, but capital must be sufficient for actual operations
+- Industry-specific minimums apply in regulated sectors (see Charter Capital section below)
+- Cannot issue shares or list on a stock exchange
+- Simpler governance than a Joint Stock Company
+
+---
+
+## 2. Joint Stock Company (JSC / Cong ty Co phan)
+
+A JSC requires at least three shareholders and issues shares rather than capital contributions. Shares can be transferred freely unless the company charter restricts it, and a JSC can eventually list on the Ho Chi Minh Stock Exchange or Hanoi Stock Exchange.
+
+**Governance is more complex:**
+- General Meeting of Shareholders (highest authority)
+- Board of Directors (management oversight)
+- Supervisory Board or independent auditors (depending on structure)
+
+Certain licensed industries require the JSC structure. Banks, insurance companies, and securities firms operating in Vietnam must register as JSCs. For most other foreign investors, the additional administrative burden rarely justifies choosing a JSC over an LLC unless you are raising capital from multiple investors or planning a future IPO.
+
+---
+
+## 3. Partnership (Cong ty Hop danh)
+
+A partnership requires at least two general partners who carry unlimited personal liability for the firm\'s obligations. Limited partners can also participate but cannot manage the business.
+
+Partnerships cannot issue securities. They are rarely used by foreign investors, largely because unlimited liability makes the structure unattractive compared to an LLC. The main use case is professional services firms where regulations require this form.
+
+---
+
+## 4. Private Enterprise (Doanh nghiep tu nhan)
+
+A private enterprise is 100% owned by a single individual and carries unlimited personal liability. This structure is only available to Vietnamese citizens. Foreign nationals cannot register a private enterprise.
+
+---
+
+## 5. Representative Office (Van phong dai dien)
+
+A representative office is not a legal entity. It cannot conduct commercial activities, sign contracts on behalf of the parent company, generate revenue, or issue invoices in Vietnam.
+
+**What a rep office can do:**
+- Promote the parent company\'s products and services
+- Conduct market research
+- Act as a liaison between Vietnamese partners and the foreign parent
+- Build relationships ahead of a full market entry
+
+The setup process is simpler and faster than registering a full company, and ongoing compliance requirements are lighter. For foreign companies that want to test the Vietnamese market before committing to a full investment, a rep office is a sensible first step.
+
+Foreign staff working at a rep office still require valid work permits.
+
+---
+
+## 6. Branch Office (Chi nhanh)
+
+A branch is an extension of the foreign parent company, not a separate legal entity. Unlike a rep office, a branch can conduct business activities and sign contracts in Vietnam.
+
+The catch is that the parent company carries unlimited liability for everything the branch does. Branches are also sector-restricted. Vietnam only permits branches in specific industries, such as banking, legal services, and some trading sectors. For most manufacturing or services businesses, a branch is not an option.
+
+The majority of foreign investors go with an LLC rather than a branch for precisely these reasons.
+
+---
+
+## Foreign Ownership Limits and Restricted Industries
+
+Under the Investment Law and Vietnam\'s WTO commitments, some industries restrict or prohibit foreign ownership. The current position is roughly as follows.
+
+**Generally open to 100% foreign ownership:**
+- Manufacturing and processing
+- IT and software development
+- E-commerce platforms
+- Business consulting and management services
+- Restaurant, food and beverage, and hospitality
+- General trading (with some product-specific conditions)
+
+**Conditional or restricted sectors:**
+- Real estate: foreigners can own apartments and villas on 50-year renewable terms but cannot own land; development projects require Vietnamese joint venture partners in some cases
+- Education: up to 100% foreign ownership is permitted but requires licensing
+- Healthcare: licensed, subject to conditions
+- Media and publishing: joint ventures with Vietnamese partners required
+- Telecommunications: foreign ownership capped at 49%
+- Transportation: limits vary by mode (aviation, road, maritime each have specific rules)
+- Banking and finance: foreign strategic investors in domestic banks are capped at 30%; foreign banks can establish 100% foreign-owned banks subject to licensing
+- Agriculture: conditional, with land use restrictions
+
+**Prohibited entirely:**
+- National defense and security-related industries
+- Activities involving state secrets
+- Production of toxic chemicals and certain controlled substances
+- Some forms of gambling (licensed casinos are permitted under specific conditions)
+
+Always check the current conditional business investment list published by the Ministry of Planning and Investment before finalising your business plan. The list is updated periodically.
+
+---
+
+## IRC vs ERC: The Two Certificates You Need
+
+Foreign-invested companies in Vietnam need two separate certificates before they can operate.
+
+**Investment Registration Certificate (IRC)**
+Issued by the Department of Planning and Investment (DPI) of the relevant province, or by the Ministry of Planning and Investment for larger projects. The IRC approves your investment project, confirms the investment amount, and lists permitted business activities.
+
+**Enterprise Registration Certificate (ERC)**
+Issued by the Business Registration Office under the DPI. The ERC formally registers your company as a legal entity with a tax code.
+
+You apply for the IRC first, then the ERC. Total timeline is typically 15 to 30 business days from submitting a complete application, though it varies by province and industry.
+
+---
+
+## Charter Capital: What You Need to Know
+
+There is no universal minimum charter capital for general trading or services companies. However:
+
+- **Real estate**: minimum 20 billion VND
+- **Banking**: much higher thresholds set by the State Bank of Vietnam
+- **Insurance**: varies by type of insurer
+- **Other licensed sectors**: check sector-specific regulations
+
+Even where no legal minimum exists, your declared capital should reflect what the business actually needs to operate. Authorities can reject permit applications or flag under-capitalised companies during audits.
+
+Once your ERC is issued, you must transfer your registered charter capital into the company\'s foreign direct investment bank account within **90 days**. Missing this deadline can result in administrative penalties.
+
+---
+
+## Which Structure Is Right for You?
+
+For most foreign investors, the answer is a **Single-Member LLC**. It offers full foreign ownership, limited liability, and the simplest ongoing governance requirements.
+
+A Multi-Member LLC makes sense for joint ventures with Vietnamese or other foreign partners. A JSC becomes relevant if you are raising capital from a wide investor base or operate in a sector that legally requires it.
+
+Rep offices suit companies that want a legal presence for business development without committing to a full investment. Branches are niche, useful mainly in sectors where they are specifically permitted.
+
+---
+
+## Ready to Register Your Vietnam Company?
+
+Our [company setup service](/services/company-setup) covers everything from structure advice and document preparation to IRC and ERC applications. We handle the paperwork so you can focus on building the business.
+
+[Get in touch](/contact) to discuss your specific situation and get a clear timeline and cost estimate.
+
+---
+
+*Published April 2026. Business registration regulations, foreign ownership limits, and sector-specific requirements in Vietnam change regularly. This article is for general information only and does not constitute legal or investment advice. Verify current requirements with a qualified adviser before making any decisions.*
+    `
+  },
+  'banking-in-vietnam-expats-guide': {
+    slug: 'banking-in-vietnam-expats-guide',
+    title: 'Banking in Vietnam for Expats: What You Can Do on Each Visa Type',
+    excerpt: 'Can you open a Vietnamese bank account on a tourist visa? What about sending money home? Your visa type determines almost everything about your banking options in Vietnam. Here is a complete breakdown.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-04-12',
+    readTime: '8 min read',
+    category: 'Finance & Money',
+    content: `
+# Banking in Vietnam for Expats: What You Can Do on Each Visa Type
+
+Can you open a Vietnamese bank account on a tourist visa? What about sending money home? Your visa type determines almost everything about your banking options in Vietnam. Here is a complete breakdown.
+
+## Why Your Visa Type Matters for Banking
+
+Vietnamese banks are required to verify legal residency status before opening accounts or processing certain transactions. This is not optional policy on the bank\'s part - it flows from State Bank of Vietnam regulations. Your visa determines what accounts you can open, whether you can send money abroad, and which products are available to you.
+
+The good news: the more established your residency status, the more access you get. The bad news: tourist-visa banking in Vietnam is genuinely limited.
+
+## Banking by Visa and Status Type
+
+### Tourist Visa (DL) / E-Visa
+
+If you are in Vietnam on a tourist visa or e-visa, your banking options are minimal:
+
+- **Cannot open a bank account** at Vietnamese banks - this is legally prohibited, not just a bank policy
+- **Can use foreign cards at ATMs** - VISA and Mastercard are widely accepted at major bank ATMs
+- **ATM withdrawal limits** typically 2 to 5 million VND per transaction, with daily limits around 10 to 20 million VND
+- **No ability to send VND abroad**
+- **International cards are the practical solution** - Wise Debit and Revolut are the most popular options among tourists
+
+If you are staying more than a few weeks, load up a Wise account before arriving. It gives you real exchange rates and lets you withdraw at Vietnamese ATMs without excessive fees.
+
+### Business Visa (DN)
+
+A business visa opens a small crack in the door, but not much more:
+
+- Some banks will open a VND current account with a business visa plus proof of a company relationship (invitation letter, contract, etc.)
+- Limited products - typically no savings accounts, no international transfers
+- **Inconsistent** - this varies significantly by bank branch and even by individual manager discretion
+- Not a recommended long-term banking route - a TRC or work permit gives far better access
+
+If you are in Vietnam on a DN visa regularly, push for TRC status. It makes banking (and much else) considerably easier.
+
+### Work Permit Holders (with Valid Visa)
+
+Holding a valid work permit changes the picture considerably:
+
+- Can open a **full VND current account** at most major banks
+- Can open a **USD foreign currency account**
+- Can **receive salary directly** to a Vietnamese bank account
+- Can **remit salary abroad** - up to 100% of after-tax income, with proof of work permit and salary
+- Access to **savings accounts and term deposits**
+- Online and mobile banking available
+- Some banks offer foreigner-friendly English service (HSBC, Standard Chartered, Techcombank)
+
+The salary remittance right is significant. If you are earning in Vietnam and want to send money home regularly, a work permit plus TRC gives you a legal, documented path to do that.
+
+### TRC Holders (Temporary Residence Card)
+
+TRC holders have the broadest banking access available to foreigners:
+
+- **Full banking access** - equivalent to Vietnamese citizens in most practical respects
+- Can open VND and foreign currency accounts
+- Can **remit funds abroad** - salary, business income, investment returns
+- Access to all retail banking products
+- Easier mortgage and loan eligibility (though still harder than for Vietnamese nationals)
+- Can receive property-related payments directly into account
+
+If you are planning to stay in Vietnam long-term, getting your TRC sorted is probably the single biggest improvement you can make to your practical financial life here.
+
+### Business Owners / Foreign-Invested Company
+
+If you have set up a foreign-invested enterprise (FIE) in Vietnam:
+
+- Company can open **corporate accounts in VND and USD**
+- Outward remittance permitted for legitimate business expenses, profit repatriation, and salary payments
+- **Profit repatriation requires a completed annual audit and tax clearance certificate** - you cannot simply move profits offshore without this
+- Capital accounts (for investment capital) and current accounts (for operating expenses) are kept separate and have different rules
+
+Many business owners discover the profit repatriation requirement only when they try to send money home. Do not skip the annual audit.
+
+## Which Banks Are Most Expat-Friendly
+
+Not all Vietnamese banks are equal when it comes to serving foreigners. Here is a practical ranking:
+
+- **HSBC Vietnam** - Full English service, international wire transfers are straightforward, higher minimum balances required
+- **Standard Chartered** - English service, strong international focus, fewer branches but solid for expats
+- **Techcombank** - Best Vietnamese bank for English-language digital banking; the app is excellent and widely used by expats
+- **Vietcombank (VCB)** - Largest Vietnamese bank with the widest ATM network; English internet banking available; a solid everyday choice
+- **BIDV** - Widely used, strong ATM network, functional English internet banking
+- **VPBank** - Good mobile app, improving English service
+- **MB Bank** - Popular with younger expats for app quality and ease of use
+
+Avoid smaller local banks with Vietnamese-only interfaces if you cannot read Vietnamese. You will struggle with OTP messages, customer service, and statement interpretation.
+
+## Opening a Bank Account: What You Need
+
+For TRC or work permit holders, most banks require:
+
+1. **Passport** (original and copy)
+2. **Valid Vietnamese visa or TRC** (original and copy)
+3. **Work permit** (if applicable)
+4. **Proof of address** - lease agreement or hotel confirmation letter
+5. **Initial deposit** - varies by bank, typically 0 to 500,000 VND
+6. **Tam Tru (temporary residence registration)** - some banks require this, others do not
+
+Get a **Vietnamese SIM card before going to open an account**. You will need a local phone number for the OTP verification that is central to Vietnamese mobile banking. Without a local number, you cannot complete setup.
+
+## Sending Money Abroad
+
+This is where the rules get more specific:
+
+- **TRC or work permit holders remitting salary** - you need payslips, work permit, tax identification code, and recent bank statements. Keep these documents current.
+- **Business owners repatriating profit** - requires completed annual audit and tax clearance. Budget time for this: the audit process takes weeks, not days.
+- **No restriction on bringing money into Vietnam** - incoming transfers are straightforward regardless of visa status
+- **Wire transfers via Vietnamese banks** - possible but slow and expensive. Wise is widely recommended for regular international transfers due to better rates and speed.
+- **Western Union and MoneyGram** - available at post offices and some bank branches for cash-based transfers
+
+## Practical Tips
+
+- **Get a Vietnamese SIM before opening your account** - needed for OTP and mobile banking setup
+- **Set up e-banking and mobile app immediately** - most transaction approvals now require app confirmation; without it, you lose significant functionality
+- **Keep a foreign card as backup** - a Wise Debit card or similar is useful when you travel, when systems are down, or when you need a currency other than VND
+- **Vietnamese banks charge for international ATM withdrawals** - some foreign bank accounts (especially Wise and Charles Schwab) refund these fees; factor this into your banking setup
+
+For a broader picture of what things cost day-to-day, see our [cost of living guide](/guides/cost-of-living).
+
+Have questions about your specific situation? [Contact us](/contact) and we can point you in the right direction.
+
+---
+
+*Disclaimer: Banking regulations and individual bank policies change regularly. This article reflects the general framework as of April 2026. Always verify current requirements directly with your chosen bank and a qualified financial or legal advisor before making decisions.*
     `
   }
 };
