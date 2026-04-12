@@ -93,9 +93,11 @@ export default function Footer() {
               </h3>
               <ul className="space-y-3">
                 {[
+                  { name: 'Visa by Nationality', href: '/visa' },
+                  { name: 'Currency Converter', href: '/convert' },
+                  { name: 'Salary Guide by Role', href: '/salary' },
+                  { name: 'Tax Treaties', href: '/tax-treaty' },
                   { name: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
-                  { name: 'Company Setup Checklist', href: '/guides/company-setup-checklist' },
-                  { name: 'Golden Visa Vietnam', href: '/guides/golden-visa-vietnam' },
                   { name: 'Cost of Living', href: '/guides/cost-of-living' },
                   { name: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
                   { name: 'Vietnam Statistics & Data', href: '/vietnam-statistics' },
