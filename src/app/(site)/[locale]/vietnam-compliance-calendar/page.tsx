@@ -127,6 +127,13 @@ const MONTHS = [
       },
       {
         deadline: '31 Mar',
+        title: 'Audited Financial Statements (FDI companies)',
+        detail: 'Foreign-invested companies must submit audited financial statements to the tax authority within 90 days of fiscal year end. For a standard 31 December year-end, this falls on 31 March.',
+        freq: 'annual',
+        tags: ['company'],
+      },
+      {
+        deadline: '31 Mar',
         title: 'Social Insurance - February Payment',
         detail: 'Monthly SI/HI/UI contributions for February.',
         freq: 'monthly',
@@ -166,9 +173,9 @@ const MONTHS = [
         tags: ['tax'],
       },
       {
-        deadline: '30 Apr',
+        deadline: '31 Mar',
         title: 'Audited Financial Statements (FDI companies)',
-        detail: 'Foreign-invested companies must submit audited financial statements to the tax authority within 90 days of fiscal year end (default: 31 Dec year-end = 31 Mar, but usually 30 Apr in practice). Confirm with your auditor.',
+        detail: 'Foreign-invested companies must submit audited financial statements within 90 days of fiscal year end. For a 31 Dec fiscal year end, the statutory deadline is 31 March. This obligation is listed in April as a reminder to confirm submission — if you missed the March deadline, act immediately.',
         freq: 'annual',
         tags: ['company'],
       },

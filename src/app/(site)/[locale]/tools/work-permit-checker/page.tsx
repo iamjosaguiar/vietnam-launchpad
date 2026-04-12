@@ -41,7 +41,7 @@ const RESULTS: Record<string, Result> = {
   exempt_short: {
     type: 'exempt',
     headline: 'Likely Exempt from Work Permit',
-    body: 'Short-term specialist visits (under 30 days per trip, fewer than 3 trips per year with total stay under 90 days) are generally exempt from work permit requirements under Decree 152/2020.',
+    body: 'Short-term specialist visits totalling under 90 cumulative days per calendar year are generally exempt from work permit requirements under Decree 219/2025/ND-CP (effective August 2025, replacing Decree 152/2020).',
     action: 'Confirm Your Eligibility',
     actionHref: '/contact',
     caveats: [
@@ -253,7 +253,7 @@ export default function WorkPermitCheckerPage() {
               Answer 3-5 questions to find out if you need a work permit, or if you qualify for an exemption.
             </p>
             <p className="text-sm text-white/40">
-              Based on Decree 152/2020 and 2025 amendments. For binding legal advice, consult our team.
+              Based on Decree 219/2025/ND-CP (effective August 2025). For binding legal advice, consult our team.
             </p>
           </div>
         </div>
@@ -402,7 +402,7 @@ export default function WorkPermitCheckerPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">Work Permit Exemption Categories</h2>
-            <p className="text-gray-500 text-sm mb-8">Under Decree 152/2020 and subsequent amendments, these groups may be exempt from Vietnam work permit requirements:</p>
+            <p className="text-gray-500 text-sm mb-8">Under Decree 219/2025/ND-CP (effective August 2025), these groups may be exempt from Vietnam work permit requirements:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and holding a marriage-based TRC qualify for a Work Permit Exemption Certificate - no full work permit required' },

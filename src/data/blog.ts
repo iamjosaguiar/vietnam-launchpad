@@ -743,23 +743,23 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
 
 Visa overstays happen more often than people expect. A missed flight, a hospital stay, a bureaucratic delay in a paperwork chain - suddenly you are past your permitted date. Vietnam does not treat this lightly, but the consequences are tiered and proportionate to the length of the overstay. Understanding what to expect - and acting quickly - makes a significant difference.
 
-> **Disclaimer:** Fine amounts and procedures are set by Vietnamese government decree and are subject to change. The figures in this article are based on Decree 144/2021/ND-CP and subsequent guidance. Always verify current amounts with the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or a qualified immigration advisor before making decisions.
+> **Disclaimer:** Fine amounts and procedures are set by Vietnamese government decree and are subject to change. The figures in this article reflect Decree 282/2025/ND-CP (effective 15 December 2025), which replaced the earlier Decree 144/2021. Penalties increased significantly under the new decree. Always verify current amounts with the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or a qualified immigration advisor before making decisions.
 
 ## The Fine Structure
 
-Vietnam\'s overstay fines are tiered by duration. All fines are applied at the point of exit. Current approximate ranges under Decree 144/2021 are:
+Vietnam\'s overstay fines are tiered by duration. All fines are applied at the point of exit. Current ranges under Decree 282/2025/ND-CP (effective 15 December 2025) are:
 
 | Overstay Duration | Approximate Fine (VND) | Notes |
 |---|---|---|
-| 1 to 3 days | 500,000 - 1,500,000 | Administrative fine only in most cases |
-| 3 to 7 days | 1,500,000 - 3,000,000 | Fine likely, possible note on record |
-| 7 to 30 days | 3,000,000 - 5,000,000 | Fine plus possible short-term entry ban |
-| 30 to 60 days | 5,000,000 - 8,000,000 | Fine plus probable entry ban (typically 1 year) |
-| Over 60 days | 8,000,000 - 15,000,000+ | Fine, likely multi-year entry ban, possible deportation |
+| Under 16 days | 500,000 - 2,000,000 | Administrative fine only in most cases |
+| 16 to 29 days | 5,000,000 - 10,000,000 | Fine plus possible entry restriction |
+| 30 to 59 days | 10,000,000 - 20,000,000 | Fine plus probable entry ban; deportation risk |
+| 60 to 89 days | 20,000,000 - 30,000,000 | Fine, likely multi-year entry ban, deportation likely |
+| 90 days or more | 30,000,000 - 40,000,000 | Maximum fine, deportation, potential permanent ban |
 
-Each tier up adds risk beyond the monetary fine. A three-day overstay is typically resolved with a payment. An overstay of several months is a different situation entirely.
+Each tier up adds risk beyond the monetary fine. A short overstay is typically resolved with a payment at exit. An overstay of several months is a fundamentally different situation. Note that penalties approximately doubled under Decree 282/2025 compared to the previous rules - this is no longer a low-consequence administrative matter.
 
-Note that USD conversion varies, but the upper end of the fine table sits at roughly $600 USD or more - plus any administrative processing costs at exit.
+Note that USD conversion varies, but the upper end of the fine table now reaches 40,000,000 VND (roughly $1,500+ USD) - plus any administrative processing costs at exit.
 
 ## Beyond the Fine
 
@@ -828,7 +828,7 @@ We handle TRC applications for investors, employed expats, and foreign spouses o
 
 ---
 
-*Published April 2026. Fine amounts are based on Decree 144/2021/ND-CP and associated guidance current at time of writing. Vietnamese immigration regulations can change. Verify current fine amounts and procedures with the Vietnam Immigration Department or a qualified advisor before acting on this information.*
+*Published April 2026. Fine amounts reflect Decree 282/2025/ND-CP (effective 15 December 2025). Vietnamese immigration regulations can change. Verify current fine amounts and procedures with the Vietnam Immigration Department or a qualified advisor before acting on this information.*
     `
   },
 

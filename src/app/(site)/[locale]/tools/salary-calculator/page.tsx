@@ -5,14 +5,13 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from '@/i18n/config';
 
-// Vietnam PIT brackets (monthly VND, resident)
+// Vietnam PIT brackets (monthly VND, resident) — 5-bracket system per PIT Law 109/2025/QH15
+// New brackets apply from 1 January 2026 (employer provisional withholding); full legal effect 1 July 2026
 const PIT_BRACKETS = [
-  { limit: 5_000_000, rate: 0.05 },
-  { limit: 10_000_000, rate: 0.10 },
-  { limit: 18_000_000, rate: 0.15 },
-  { limit: 32_000_000, rate: 0.20 },
-  { limit: 52_000_000, rate: 0.25 },
-  { limit: 80_000_000, rate: 0.30 },
+  { limit: 10_000_000, rate: 0.05 },
+  { limit: 30_000_000, rate: 0.10 },
+  { limit: 60_000_000, rate: 0.20 },
+  { limit: 100_000_000, rate: 0.30 },
   { limit: Infinity, rate: 0.35 },
 ];
 
@@ -20,8 +19,8 @@ const BASIC_SALARY = 2_340_000; // VND/month (July 2024 onwards)
 const SI_CAP = 20 * BASIC_SALARY; // 46,800,000 VND - SI/HI cap
 const REGIONAL_MIN_WAGE = 4_960_000; // Zone 1 minimum wage
 const UI_CAP = 20 * REGIONAL_MIN_WAGE; // 99,200,000 VND - UI cap
-const PERSONAL_DEDUCTION = 11_000_000; // VND/month
-const DEPENDENT_DEDUCTION = 4_400_000; // VND/month per dependent
+const PERSONAL_DEDUCTION = 15_500_000; // VND/month — updated per PIT Law 109/2025, effective 1 Jan 2026
+const DEPENDENT_DEDUCTION = 6_200_000; // VND/month per dependent — updated per PIT Law 109/2025
 const USD_TO_VND = 25_450; // approximate - user can see this note
 
 function calcPIT(taxable: number): { total: number; breakdown: { rate: number; base: number; tax: number }[] } {
@@ -119,7 +118,7 @@ export default function SalaryCalculatorPage() {
               Calculate your gross-to-net salary, PIT (personal income tax), and social insurance deductions in Vietnam.
             </p>
             <p className="text-sm text-white/40">
-              Rates current as of July 2024. Basic salary: 2,340,000 VND/month. For individual advice, consult our team.
+              Updated for 2026: new 5-bracket PIT system + revised deductions (PIT Law 109/2025). Basic salary: 2,340,000 VND/month. For individual advice, consult our team.
             </p>
           </div>
         </div>
@@ -219,7 +218,7 @@ export default function SalaryCalculatorPage() {
                     ))}
                   </div>
                   <p className="text-xs text-gray-400 mt-2">
-                    4,400,000 ₫/month deduction per registered dependent (spouse, children, etc.)
+                    6,200,000 ₫/month deduction per registered dependent (spouse, children, etc.)
                   </p>
                 </div>
               )}
@@ -228,8 +227,8 @@ export default function SalaryCalculatorPage() {
               <div className="rounded-xl bg-white border border-gray-100 p-4">
                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Quick Reference</p>
                 <div className="space-y-1.5 text-xs text-gray-600">
-                  <div className="flex justify-between"><span>Personal deduction</span><span className="font-medium">11,000,000 ₫/mo</span></div>
-                  <div className="flex justify-between"><span>Per dependent</span><span className="font-medium">4,400,000 ₫/mo</span></div>
+                  <div className="flex justify-between"><span>Personal deduction</span><span className="font-medium">15,500,000 ₫/mo</span></div>
+                  <div className="flex justify-between"><span>Per dependent</span><span className="font-medium">6,200,000 ₫/mo</span></div>
                   <div className="flex justify-between"><span>SI contribution (employee)</span><span className="font-medium">8% (capped at 46.8M ₫)</span></div>
                   <div className="flex justify-between"><span>HI contribution</span><span className="font-medium">1.5% (same cap)</span></div>
                   <div className="flex justify-between"><span>UI contribution</span><span className="font-medium">1% (capped at 99.2M ₫)</span></div>

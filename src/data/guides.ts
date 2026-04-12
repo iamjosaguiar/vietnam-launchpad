@@ -2894,7 +2894,11 @@ Da Nang is compact and easy to navigate compared to HCMC or Hanoi.
 
 **An Thuong:** Often called the "foreign neighborhood" or "foreigners' street." Concentrated expat cafes, restaurants, yoga studios, co-working spaces, and residential apartments. The most established expat hub.
 
-**Hai Chau (City Center):** The administrative and commercial center. Less residential for expats but practical for those working downtown.
+**Hai Chau (City Center):** The administrative and commercial center of Da Nang. Home to markets, government offices, and the Han River waterfront. Less traditional expat residential territory but increasingly popular for those who want a central, walkable urban base.
+
+**Thanh Khe:** A dense residential district west of the city center. Very local, very affordable, and rarely on expat radar — but if you want a genuine Vietnamese neighbourhood experience at the lowest rents in the city, it delivers.
+
+**Nam Viet A:** A quieter, more established residential area popular with expat families and long-term residents. Less tourist-facing than An Thuong, more genuinely residential. Good schools proximity and a more settled community feel.
 
 **Son Tra Peninsula:** Quiet, scenic, forested. Monkey Mountain and beautiful coastlines. Longer commute to the city but popular with those wanting peace and nature.
 
@@ -2921,6 +2925,24 @@ Streets between Vo Nguyen Giap (beach road) and 3 Thang 2 contain most of the:
 Staying near the beach adds a premium but it is worth it for many:
 
 **Rent:** 1BR sea view apartment: $400-700/month. 2BR: $600-1,000/month.
+
+### Hai Chau
+
+The original city center. The Han River waterfront (Bach Dang Street) is one of Da Nang's most attractive urban stretches. More Vietnamese than An Thuong, with proper markets, street food, and local life. Rents are competitive.
+
+**Rent:** 1BR: $250-500/month.
+
+### Thanh Khe
+
+West of the center — dense, local, and inexpensive. Not the typical expat landing zone but excellent value and genuinely immersive.
+
+**Rent:** 1BR: $150-350/month.
+
+### Nam Viet A
+
+A quieter residential area popular with families and longer-term expats. Less buzzy than An Thuong, more settled. Good for those who want a normal residential life rather than a nomad scene.
+
+**Rent:** 1BR: $250-500/month.
 
 ### Son Tra Peninsula
 
@@ -2985,13 +3007,14 @@ For younger, healthy expats and digital nomads, Da Nang's healthcare is adequate
 Da Nang has fewer international school options than HCMC or Hanoi - this is a real factor for families.
 
 **Current options:**
-- **Da Nang International School:** IB curriculum, primary and secondary. Fees approximately $12,000-20,000/year.
-- **Horizon International School:** British curriculum, more affordable fees. Best for primary age.
+- **Da Nang International School (DANIS):** IB curriculum, primary and secondary.
+- **St. Nicholas School Da Nang:** International curriculum, well-regarded within the local expat community.
+- **APU International School:** English-medium instruction, growing presence in the city.
 - **Babylon International School:** Preschool through primary.
 
-Some families in Da Nang with secondary-age children opt to board in HCMC or Hanoi, or relocate when children reach secondary school age.
+Some families in Da Nang with secondary-age children opt to board in HCMC or Hanoi, or relocate when children reach secondary school age. Fees, curricula, and availability change — we recommend contacting schools directly for current enrolment and pricing.
 
-For pre-school and primary-age children, Da Nang works well. For secondary and IB, the options are more limited.
+For pre-school and primary-age children, Da Nang now has reasonable options. For secondary and IB, choices remain more limited than HCMC or Hanoi.
 
 ---
 
@@ -3000,9 +3023,8 @@ For pre-school and primary-age children, Da Nang works well. For secondary and I
 Da Nang has one of Asia's strongest digital nomad communities relative to its size. The An Thuong neighbourhood has evolved specifically around nomads and younger expats.
 
 **Co-working spaces:**
-- Toong Da Nang: Most established, reliable, professional
-- The Nest: Casual, beach-adjacent, community feel
-- Inspire Da Nang: Good amenities, active community
+- ACE Coworking: Well-equipped, reliable, popular with the local expat and nomad community
+- Toong Da Nang: Part of the national Toong chain, professional setup with reliable infrastructure
 
 **Internet:** Fiber is widely available (200+ Mbps) for $10-20/month. Cafe wifi is reliable. Mobile 4G is fast across the city.
 
