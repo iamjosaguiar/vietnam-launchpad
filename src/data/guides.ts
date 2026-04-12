@@ -4865,6 +4865,224 @@ If you are in the process of getting your TRC, add VNeID registration to your to
 
 *Published April 2026. VNeID functionality and acceptance continues to expand. Confirm with specific institutions whether they accept VNeID for your particular transaction.*`,
   },
+  'golden-visa-vietnam': {
+    slug: 'golden-visa-vietnam',
+    title: 'Vietnam Golden Visa 2025: Long-Stay Visas for Investors and Skilled Professionals',
+    subtitle: 'Vietnam now offers 5-year and 10-year visas for qualified investors, experts, and high-tech talent',
+    excerpt: 'Vietnam\'s 2024-2025 visa reforms introduced multi-year long-stay visas that function like a "golden visa" for qualified foreign nationals. Here is who qualifies, what the process looks like, and how it compares to the Temporary Residence Card.',
+    author: 'Vietnam Launchpad',
+    date: '2026-01-15',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'Visas & Residency',
+    ctaTitle: 'Ready to Apply for a Long-Stay Visa?',
+    ctaBody: 'Our immigration specialists handle the full application process - document preparation, submission, and follow-up with immigration authorities.',
+    ctaLink: '/services/trc-application',
+    ctaLinkText: 'Apply for Long-Stay Visa',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Book a Free Consultation',
+    content: `## What Is Vietnam's "Golden Visa"?
+
+Vietnam does not use the term "golden visa" officially, but the 2024 amendments to the Law on Entry, Exit, Transit and Residence of Foreigners introduced two new long-stay visa categories that serve a similar purpose: the DT (investor) visa and the NN (expert/scientist/talent) visa - both available in 5-year and 10-year terms.
+
+These are not Temporary Residence Cards (TRCs). They are long-duration visas that allow continuous stays without visa runs, and they can be issued relatively quickly compared to the full TRC process.
+
+---
+
+## Who Qualifies
+
+### Investor Visa (DT Visa)
+
+The DT visa is issued to foreign investors committing capital into Vietnam. The duration tiers are:
+
+| Investment Amount | Visa Duration |
+|---|---|
+| From VND 3 billion (~$120,000 USD) | Up to 5 years |
+| From VND 50 billion (~$2 million USD) | Up to 10 years |
+| High-tech or priority sector projects | Up to 10 years (lower thresholds may apply) |
+
+The investment must be registered and documented through a Vietnamese company or project with a proper investment registration certificate (IRC) or enterprise registration certificate (ERC).
+
+### Expert, Scientist, and Skilled Professional Visa (NN Visa)
+
+This category covers:
+
+- Foreign experts with specialist qualifications recognized by Vietnamese authorities (typically requiring a university degree plus 3+ years in the relevant field, or a postgraduate degree)
+- Scientists and researchers holding a doctorate or recognized research credentials
+- Skilled workers in sectors designated as high-priority by the government (technology, semiconductors, AI, renewable energy, and others)
+- Foreign employees of enterprises operating in hi-tech parks or economic zones
+
+Visa duration is typically 5 years for experts and up to 10 years for scientists and hi-tech workers in qualifying roles.
+
+---
+
+## Application Process
+
+### Step 1: Confirm Eligibility and Gather Documents
+
+Investor applicants need:
+- Investment registration certificate or enterprise registration with capital contribution record
+- Passport (minimum 12 months validity beyond intended visa end date)
+- Proof of capital contribution or investment approval
+
+Expert/talent applicants need:
+- Degree certificates and work experience documentation (notarized and apostilled or consularized)
+- Employment contract or letter of engagement from a Vietnamese entity
+- A sponsoring organization in Vietnam (your employer, a hi-tech park, or an approved institution)
+
+### Step 2: Sponsoring Organization Submission
+
+Unlike tourist or business visas, long-stay visas under these categories require a sponsoring entity in Vietnam to submit an approval request to the Immigration Department (under the Ministry of Public Security) before the visa can be issued.
+
+The sponsor submits a formal request letter, supporting documents, and the required forms. Processing by the Immigration Department typically takes 5-10 working days for the approval.
+
+### Step 3: Visa Issuance
+
+Once approved, the visa can be stamped at a Vietnamese embassy abroad or (in many cases) issued as an e-visa or stamp at a port of entry if you are already in Vietnam.
+
+---
+
+## Long-Stay Visa vs. Temporary Residence Card (TRC)
+
+| Feature | Long-Stay Visa (DT/NN) | TRC |
+|---|---|---|
+| Duration | Up to 5 or 10 years | 1-5 years (varies by route) |
+| Multiple re-entry | Yes | Yes |
+| Bank account | Yes | Yes |
+| Processing time | 1-3 weeks | 2-4 weeks |
+| Requires work permit | Not always | Not for investment route |
+| Upgradeable to TRC | Yes | N/A |
+
+The TRC remains the more settled long-term option - it functions as a quasi-resident card and is more widely accepted in administrative contexts (property purchase, hospital registration, etc.). Many investors and skilled professionals obtain the long-stay visa first, then upgrade to a TRC once their Vietnamese entity and documentation are fully established.
+
+---
+
+## Common Questions
+
+**Can I apply from outside Vietnam?**
+Yes - through a Vietnamese embassy or consulate, once your sponsoring entity has obtained the immigration approval.
+
+**Does the visa allow me to work?**
+The DT visa permits activities related to managing your investment. The NN visa is linked to your employment. You may still need a work permit exemption certificate or a standard work permit depending on your role and the activities you perform.
+
+**Can my family join me?**
+Dependants (spouse and minor children) can apply for visas under their own categories. They do not automatically receive the same long-stay terms but can usually obtain visas matching the duration of your stay.
+
+---
+
+*Last updated April 2026. Visa rules in Vietnam change regularly. Confirm current requirements with a qualified immigration consultant before applying.*`,
+  },
+  'company-setup-checklist': {
+    slug: 'company-setup-checklist',
+    title: 'Vietnam Company Setup Checklist 2025: Before and After Incorporation',
+    subtitle: 'A practical pre- and post-incorporation checklist for foreign investors registering a business in Vietnam',
+    excerpt: 'Registering a company in Vietnam involves two distinct phases: decisions and preparation before you file, and compliance steps in the first 90 days after registration. This checklist covers both, with timelines and common mistakes to avoid.',
+    author: 'Vietnam Launchpad',
+    date: '2026-01-15',
+    lastUpdated: '2026-04-12',
+    readTime: '6 min read',
+    category: 'Work & Business',
+    ctaTitle: 'Ready to Register Your Vietnam Company?',
+    ctaBody: 'We handle the full incorporation process - from business line selection to tax registration and bank account opening. Most companies registered in 2-3 weeks.',
+    ctaLink: '/services/company-setup',
+    ctaLinkText: 'Start Company Registration',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Ask a Question First',
+    content: `## Overview
+
+Incorporating a company in Vietnam is a two-stage process. The first stage is getting your Investment Registration Certificate (IRC) and Enterprise Registration Certificate (ERC) from the Department of Planning and Investment (DPI). The second stage is post-incorporation compliance - a set of steps that must be completed within specific deadlines or face penalties.
+
+This checklist covers both stages.
+
+---
+
+## Part 1: Pre-Incorporation Checklist
+
+Complete these decisions and preparations before submitting your application to the DPI.
+
+### Business Structure
+- [ ] Decide on company type: Limited Liability Company (LLC) is most common for small foreign-invested companies; Joint Stock Company (JSC) required if you plan to issue shares or have more than 50 shareholders
+- [ ] Confirm whether you need 100% foreign-owned entity or a joint venture with a Vietnamese partner (some business lines require local partnership)
+- [ ] Decide on number of legal representatives - most small LLCs designate one
+
+### Business Lines (Conditional)
+- [ ] Identify your Vietnam Standard Industrial Classification (VSIC) codes for all intended business activities
+- [ ] Check whether any of your business lines are restricted for foreign investment (requires Ministry of Industry and Trade or sector-specific ministry approval)
+- [ ] Confirm whether your business lines require a sub-license after incorporation (e.g., food safety, education, logistics, fintech)
+
+### Capital and Ownership
+- [ ] Determine charter capital amount - this is the registered investment amount and must be contributed within 90 days of ERC issuance for LLCs (or per schedule for JSCs)
+- [ ] Confirm ownership percentages for each foreign and local investor
+- [ ] Prepare evidence of capital source if required (bank statements or capital commitment letter)
+
+### Name and Address
+- [ ] Choose a Vietnamese company name (must include company type abbreviation, e.g., "Co., Ltd." or "JSC") - check availability with the DPI's national business registration portal
+- [ ] Secure a registered office address in Vietnam - must be a real physical address (virtual office addresses are accepted in most provinces)
+
+### Documents to Prepare
+- [ ] Notarized and apostilled passport copies for all foreign investors and legal representatives
+- [ ] Completed application forms (Form 01, investment proposal, and supporting forms as required)
+- [ ] Draft company charter (articles of association)
+- [ ] Power of attorney if an agent is filing on your behalf
+
+---
+
+## Part 2: Post-Incorporation Checklist (First 90 Days)
+
+After receiving your ERC, there are mandatory steps with strict deadlines.
+
+### Immediate (Within 30 Days of ERC)
+- [ ] Engrave and register your company seal (con dau) - required for signing contracts and official documents
+- [ ] Open a corporate bank account at a Vietnamese bank - required to receive charter capital contributions
+- [ ] Transfer charter capital into the corporate bank account (must be completed within 90 days of ERC issuance)
+- [ ] Display company name and tax ID at registered office address
+
+### Tax and Accounting (Within 30 Days)
+- [ ] Register for Value Added Tax (VAT) with the local Tax Department - choose invoice method (credit method standard for most companies with revenue over VND 1 billion/year)
+- [ ] Register for corporate income tax (CIT) - standard rate is 20%; preferential rates apply to qualifying sectors
+- [ ] Obtain digital tax signature (token) for electronic tax filing - required to file returns and issue e-invoices
+- [ ] Register for e-invoice issuance (Hoa don dien tu) - mandatory since July 2022; coordinate with a licensed e-invoice provider
+
+### Labor and Social Insurance (Within 30 Days of First Hire)
+- [ ] Register employees with the Vietnam Social Security (VSS) for social insurance, health insurance, and unemployment insurance
+- [ ] File initial labor report with the Department of Labor, Invalids and Social Affairs (DOLISA)
+- [ ] Register internal labor regulations (noi quy lao dong) with DOLISA if you have 10 or more employees
+
+### Licenses and Sub-Licenses (Timeline Varies)
+- [ ] Apply for any sector-specific operating licenses required by your business lines (food safety certificate, business license for trading, education license, etc.)
+- [ ] If hiring foreign employees, start work permit applications - allow 6-8 weeks
+
+---
+
+## Government Fee Reference
+
+| Step | Typical Government Fee |
+|---|---|
+| Investment Registration Certificate (IRC) | No fee for domestic DPI; ~VND 3-15 million for economic zone projects |
+| Enterprise Registration Certificate (ERC) | ~VND 200,000 |
+| Company seal registration | ~VND 50,000-100,000 |
+| Sub-licenses (varies widely) | VND 500,000 - 5,000,000+ |
+
+Note: Professional service fees (legal/consultant) are separate and vary by provider and complexity.
+
+---
+
+## Common Mistakes to Avoid
+
+**Choosing the wrong business lines.** Selecting VSIC codes that are restricted for foreign ownership, or missing a code you need later, causes delays and requires expensive amendments.
+
+**Underestimating charter capital timelines.** Charter capital must be contributed within 90 days. Missing this deadline triggers administrative penalties and can jeopardize your company's legal standing.
+
+**Skipping the e-invoice setup.** E-invoice registration is mandatory before you can legally issue invoices to customers. Delays here block revenue collection.
+
+**Not registering the company seal promptly.** Many contracts, banking transactions, and government submissions require the company seal. Delays here bottleneck everything else.
+
+**Missing the social insurance registration window.** Failing to register employees within 30 days of hire attracts fines and back-payment obligations for both employer and employee contributions.
+
+---
+
+*Last updated April 2026. Requirements and fees change periodically. Confirm current requirements with the Department of Planning and Investment in your target province before filing.*`,
+  },
 };
 
 export function getGuideBySlug(slug: string): Guide | null {

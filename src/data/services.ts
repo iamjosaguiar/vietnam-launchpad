@@ -1319,6 +1319,105 @@ export const servicesData: Record<string, ServiceData> = {
       }
     ],
     guarantee: 'We guarantee proper registration and ownership certificate issuance or provide a full refund of our service fee (government fees and taxes excluded).'
+  },
+  'employer-of-record': {
+    slug: 'employer-of-record',
+    title: 'Employer of Record (EOR) / PEO Vietnam',
+    shortDescription: 'Hire staff in Vietnam legally without setting up a company. We act as the legal employer so you can onboard talent fast.',
+    timeline: '5-10 business days',
+    heroTitle: 'Hire in Vietnam Without a Local Entity - EOR Made Simple',
+    heroDescription: 'Want to hire Vietnamese employees but not ready to set up a company? Our Employer of Record service lets you onboard local staff compliantly under our legal entity. We handle payroll, social insurance, labor contracts, and tax compliance - you manage the work.',
+    process: [
+      {
+        step: 1,
+        title: 'Scope and Agreement',
+        description: 'We confirm employee details, salary structure, role, and engagement terms. You review and sign the EOR master service agreement.',
+        duration: '1-2 days'
+      },
+      {
+        step: 2,
+        title: 'Employment Contract and Onboarding',
+        description: 'We draft a compliant Vietnamese labor contract, register the employee with social insurance authorities, and complete onboarding paperwork.',
+        duration: '3-5 days'
+      },
+      {
+        step: 3,
+        title: 'Payroll and Compliance Setup',
+        description: 'We set up monthly payroll processing, personal income tax (PIT) withholding, and mandatory social, health, and unemployment insurance contributions.',
+        duration: '1-2 days'
+      },
+      {
+        step: 4,
+        title: 'Ongoing HR and Reporting',
+        description: 'Monthly payroll runs, payslips, tax filings, and labor reporting. We handle HR issues, leave tracking, and termination procedures when needed.',
+        duration: 'Ongoing'
+      }
+    ],
+    included: [
+      'Vietnamese labor contract drafting (compliant with Labor Code 2019)',
+      'Social insurance, health insurance, and unemployment insurance registration',
+      'Monthly payroll processing and payslip generation',
+      'Personal income tax (PIT) withholding and filing',
+      'Mandatory insurance contribution management (employer and employee portions)',
+      'Annual PIT finalization and employee tax certificates',
+      'Labor report filings with relevant authorities',
+      'HR support for leave management and policy compliance',
+      'Termination and offboarding assistance',
+      'Dedicated account manager'
+    ],
+    requirements: [
+      'Signed EOR/PEO master service agreement',
+      'Employee personal details and copies of ID/passport',
+      'Agreed salary and compensation package details',
+      'Role description and start date',
+      'Bank account details for salary disbursement',
+      'Any specific benefit requirements (allowances, bonuses)'
+    ],
+    benefits: [
+      'Hire Vietnamese talent in days, not months',
+      'No need to register a local entity or wait for company approval',
+      'Full legal compliance with Vietnam Labor Code and tax law',
+      'Avoid penalties from incorrect payroll or social insurance registration',
+      'Test the Vietnam market before committing to a full entity setup',
+      'Reduce administrative burden on your overseas finance and HR teams',
+      'Scale headcount up or down without restructuring a legal entity',
+      'All employer obligations handled - you focus on business outcomes'
+    ],
+    faqs: [
+      {
+        question: 'What is an Employer of Record (EOR) in Vietnam?',
+        answer: 'An EOR is a licensed local company that becomes the legal employer of your staff on paper. You direct the employee\'s work, but the EOR handles the labor contract, payroll, tax, and social insurance obligations under Vietnamese law. This lets foreign companies hire in Vietnam without first incorporating a local entity.'
+      },
+      {
+        question: 'How is EOR different from a staffing agency?',
+        answer: 'A staffing agency recruits and places workers. An EOR employs workers on your behalf on a permanent or long-term basis. With an EOR, you choose who you want to hire - we simply provide the legal framework to employ them compliantly.'
+      },
+      {
+        question: 'What are the mandatory employer contributions in Vietnam?',
+        answer: 'Under Vietnamese law, employers must contribute approximately 21.5% of gross salary to social insurance (17.5%), health insurance (3%), and unemployment insurance (1%). Employee contributions total 10.5%. These are calculated on capped salary bases set by the government and must be registered within 30 days of employment start.'
+      },
+      {
+        question: 'How is personal income tax handled?',
+        answer: 'We withhold and remit PIT on behalf of each employee each month. Vietnam uses a progressive PIT scale from 5% to 35% on employment income, with deductions for personal and dependant allowances. At year-end, we handle annual PIT finalization and issue tax certificates to employees.'
+      },
+      {
+        question: 'Can I use EOR for just one or two employees?',
+        answer: 'Yes. EOR is particularly cost-effective for small teams or test hires. There is no minimum headcount. It is commonly used for a first Vietnam hire before deciding whether to set up a full entity.'
+      },
+      {
+        question: 'What types of employment contracts are used?',
+        answer: 'Vietnamese law recognizes definite-term contracts (up to 36 months) and indefinite-term contracts. Under the Labor Code 2019, if a definite-term contract is renewed more than once, it typically must convert to indefinite-term. We advise on the right structure based on your engagement plan.'
+      },
+      {
+        question: 'How does termination work under EOR?',
+        answer: 'We follow Vietnamese Labor Code requirements for notice periods and severance. Employees with 12+ months of service are entitled to severance pay (0.5 months gross salary per year of service up to the social insurance contribution cap). We manage the process to minimize risk and ensure full compliance.'
+      },
+      {
+        question: 'When should I switch from EOR to my own entity?',
+        answer: 'Most clients transition to their own entity once they have 5 or more employees, need to sign local contracts in their own name, require a business license for their activity, or want greater control over HR policies. We also offer company setup services to make that transition straightforward.'
+      }
+    ],
+    guarantee: 'We guarantee all employment contracts, payroll filings, and social insurance registrations are fully compliant with Vietnamese law. If a penalty arises due to our processing error, we cover it in full.'
   }
 };
 

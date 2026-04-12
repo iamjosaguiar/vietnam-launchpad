@@ -24,6 +24,9 @@ export async function GET() {
     url('/faq', 0.7, 'monthly'),
     url('/about', 0.6, 'monthly'),
     url('/vietnam-exchange-rates', 0.85, 'daily'),
+    url('/vietnam-compliance-calendar', 0.85, 'monthly'),
+    url('/tools/salary-calculator', 0.85, 'monthly'),
+    url('/tools/work-permit-checker', 0.85, 'monthly'),
   ];
 
   const serviceUrls = getAllServiceSlugs().map((slug) =>

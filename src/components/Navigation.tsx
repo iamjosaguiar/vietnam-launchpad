@@ -25,6 +25,7 @@ const serviceGroups = [
     title: 'Business & Compliance',
     items: [
       { name: 'Company Registration', desc: 'Set up a foreign-owned LLC', href: '/services/company-setup' },
+      { name: 'Employer of Record (EOR)', desc: 'Hire in Vietnam without an entity', href: '/services/employer-of-record' },
       { name: 'Accounting & Bookkeeping', desc: 'Monthly accounts & tax filings', href: '/services/accounting-bookkeeping' },
       { name: 'Tax Filing (PIT)', desc: 'Personal income tax returns', href: '/services/tax-filing' },
       { name: 'Social Insurance', desc: 'Employee SI enrollment', href: '/services/social-insurance' },
@@ -52,6 +53,8 @@ const guideCategories = [
       { title: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
       { title: 'Taxes for Expats', href: '/guides/taxes' },
       { title: 'Banking in Vietnam', href: '/guides/banking' },
+      { title: 'Salary Calculator (PIT)', href: '/tools/salary-calculator' },
+      { title: 'Compliance Calendar', href: '/vietnam-compliance-calendar' },
     ],
   },
   {
@@ -60,6 +63,7 @@ const guideCategories = [
     color: 'text-blue-600',
     guides: [
       { title: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
+      { title: 'Golden Visa (Long-Stay)', href: '/guides/golden-visa-vietnam' },
       { title: 'Digital Nomad Visas', href: '/guides/digital-nomads' },
       { title: 'Retirement Visa', href: '/guides/retirement' },
     ],
@@ -70,6 +74,8 @@ const guideCategories = [
     color: 'text-indigo-600',
     guides: [
       { title: 'Company Setup', href: '/guides/company-setup-vietnam' },
+      { title: 'Company Setup Checklist', href: '/guides/company-setup-checklist' },
+      { title: 'Work Permit Checker', href: '/tools/work-permit-checker' },
       { title: 'Teaching English', href: '/guides/teaching-english-vietnam' },
       { title: 'Working in Vietnam', href: '/guides/working-in-vietnam' },
     ],

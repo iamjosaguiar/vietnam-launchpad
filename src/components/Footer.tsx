@@ -61,10 +61,10 @@ export default function Footer() {
                   { name: 'Work Permits', href: '/services/work-permit' },
                   { name: 'eVisa & Entry Visa', href: '/services/evisa' },
                   { name: 'Company Setup', href: '/services/company-setup' },
+                  { name: 'Employer of Record (EOR)', href: '/services/employer-of-record' },
                   { name: 'Accounting & Bookkeeping', href: '/services/accounting-bookkeeping' },
                   { name: 'Tax Filing (PIT)', href: '/services/tax-filing' },
                   { name: 'Permanent Residency', href: '/services/permanent-residency' },
-                  { name: 'Relocation & Settling In', href: '/services/relocation-assistance' },
                   { name: 'All Services', href: '/services' }
                 ].map((item) => (
                   <li key={item.href}>
@@ -88,10 +88,13 @@ export default function Footer() {
               <ul className="space-y-3">
                 {[
                   { name: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
-                  { name: 'Company Setup', href: '/guides/company-setup-vietnam' },
-                  { name: 'Teaching English', href: '/guides/teaching-english-vietnam' },
+                  { name: 'Company Setup Checklist', href: '/guides/company-setup-checklist' },
+                  { name: 'Golden Visa Vietnam', href: '/guides/golden-visa-vietnam' },
                   { name: 'Cost of Living', href: '/guides/cost-of-living' },
                   { name: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
+                  { name: 'Compliance Calendar', href: '/vietnam-compliance-calendar' },
+                  { name: 'Salary Calculator', href: '/tools/salary-calculator' },
+                  { name: 'Work Permit Checker', href: '/tools/work-permit-checker' },
                   { name: 'All Guides', href: '/guides' }
                 ].map((item) => (
                   <li key={item.name}>
