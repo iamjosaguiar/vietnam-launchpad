@@ -9,7 +9,32 @@ import { Link } from '@/i18n/config';
 export default function BlogPage() {
   const posts = getAllBlogPosts();
 
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Vietnam Launchpad Blog',
+    url: 'https://www.vietnamlaunchpad.com/blog',
+    description: 'Practical guides and articles for expats living and working in Vietnam.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Vietnam Launchpad',
+      url: 'https://www.vietnamlaunchpad.com',
+    },
+    blogPost: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      url: `https://www.vietnamlaunchpad.com/blog/${post.slug}`,
+      datePublished: post.date,
+      description: post.excerpt,
+    })),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -103,5 +128,6 @@ export default function BlogPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

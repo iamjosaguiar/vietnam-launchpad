@@ -66,7 +66,28 @@ export default function GetStartedPage() {
     });
   };
 
+  const getStartedSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Get Started with Vietnam Launchpad',
+    url: 'https://www.vietnamlaunchpad.com/get-started',
+    description:
+      'Start your Vietnam relocation journey. Tell us about your situation and we\'ll match you to the right services.',
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vietnamlaunchpad.com' },
+        { '@type': 'ListItem', position: 2, name: 'Get Started', item: 'https://www.vietnamlaunchpad.com/get-started' },
+      ],
+    },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getStartedSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -528,5 +549,6 @@ export default function GetStartedPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

@@ -67,11 +67,30 @@ export default function GuidesPage() {
   const categories = getAllGuideCategories();
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
+  const guidesSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Vietnam Expat Guides',
+    url: 'https://www.vietnamlaunchpad.com/guides',
+    description: 'Comprehensive guides for expats moving to and living in Vietnam.',
+    hasPart: guides.map((guide) => ({
+      '@type': 'Article',
+      name: guide.title,
+      url: `https://www.vietnamlaunchpad.com/guides/${guide.slug}`,
+      description: guide.excerpt,
+    })),
+  };
+
   const filtered = activeCategory === 'All'
     ? guides
     : guides.filter((g) => g.category === activeCategory);
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(guidesSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -236,5 +255,6 @@ export default function GuidesPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

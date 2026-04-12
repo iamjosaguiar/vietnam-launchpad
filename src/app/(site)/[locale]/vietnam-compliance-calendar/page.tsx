@@ -327,8 +327,34 @@ const FREQ_STYLES: Record<ObligationFreq, string> = {
   'one-off': 'bg-orange-50 text-orange-600',
 };
 
+const complianceCalendarSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Vietnam Compliance Calendar 2026',
+  url: 'https://www.vietnamlaunchpad.com/vietnam-compliance-calendar',
+  description:
+    'Monthly compliance deadlines for businesses operating in Vietnam: VAT, PIT, CIT, social insurance, and annual filings.',
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vietnamlaunchpad.com' },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Vietnam Compliance Calendar',
+        item: 'https://www.vietnamlaunchpad.com/vietnam-compliance-calendar',
+      },
+    ],
+  },
+};
+
 export default function ComplianceCalendarPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(complianceCalendarSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -493,5 +519,6 @@ export default function ComplianceCalendarPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

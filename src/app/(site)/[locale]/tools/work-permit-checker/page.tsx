@@ -231,7 +231,25 @@ export default function WorkPermitCheckerPage() {
 
   const progressPct = result ? 100 : Math.min(90, (history.length / 5) * 100);
 
+  const workPermitSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Vietnam Work Permit Exemption Checker',
+    url: 'https://www.vietnamlaunchpad.com/tools/work-permit-checker',
+    description:
+      'Check whether you need a work permit in Vietnam or qualify for an exemption. Decision-tree tool based on Decree 219/2025.',
+    applicationCategory: 'LegalApplication',
+    operatingSystem: 'Web',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    provider: { '@type': 'Organization', name: 'Vietnam Launchpad', url: 'https://www.vietnamlaunchpad.com' },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(workPermitSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -425,5 +443,6 @@ export default function WorkPermitCheckerPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

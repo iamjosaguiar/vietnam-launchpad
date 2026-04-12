@@ -57,9 +57,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     url: `${baseUrl}/blog/${post.slug}`,
     inLanguage: 'en',
     author: {
-      '@type': 'Organization',
+      '@type': 'Person',
       name: post.author,
-      url: baseUrl,
+      affiliation: {
+        '@type': 'Organization',
+        name: 'Vietnam Launchpad',
+        url: baseUrl,
+      },
     },
     datePublished: post.date,
     dateModified: post.date,

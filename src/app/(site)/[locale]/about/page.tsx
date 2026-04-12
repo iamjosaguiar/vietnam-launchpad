@@ -5,8 +5,42 @@ import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
 
+const aboutSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About Vietnam Launchpad',
+    url: 'https://www.vietnamlaunchpad.com/about',
+    description:
+      'Vietnam Launchpad is a professional consulting firm helping expats navigate immigration, business setup, and residency in Vietnam.',
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vietnamlaunchpad.com' },
+        { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.vietnamlaunchpad.com/about' },
+      ],
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Vietnam Launchpad',
+    url: 'https://www.vietnamlaunchpad.com',
+    logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
+    telephone: '+84765805294',
+    email: 'info@vietnamlaunchpad.com',
+    description: 'Professional immigration and business consulting services for expats relocating to Vietnam.',
+    address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },
+  },
+];
+
 export default function AboutPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -156,5 +190,6 @@ export default function AboutPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

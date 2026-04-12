@@ -39,11 +39,53 @@ const ServiceIcons = {
   )
 };
 
+const homepageSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': ['ProfessionalService', 'LocalBusiness'],
+    name: 'Vietnam Launchpad',
+    url: 'https://www.vietnamlaunchpad.com',
+    logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
+    telephone: '+84765805294',
+    email: 'info@vietnamlaunchpad.com',
+    description:
+      'Professional immigration and business consulting for expats moving to Vietnam. Work permits, TRC, company setup, marriage registration.',
+    address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },
+    areaServed: 'VN',
+    priceRange: '$$',
+    serviceType: [
+      'Immigration Consulting',
+      'Visa Services',
+      'Business Registration',
+      'Work Permit Services',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Vietnam Launchpad',
+    url: 'https://www.vietnamlaunchpad.com',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.vietnamlaunchpad.com/search?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+];
+
 export default async function HomePage() {
   const t = await getTranslations('homepage');
   const common = await getTranslations('common');
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -425,5 +467,6 @@ export default async function HomePage() {
 
       <Footer />
     </main>
+    </>
   );
 }

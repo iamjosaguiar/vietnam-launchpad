@@ -252,8 +252,30 @@ const categories = [
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
+const servicesSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Vietnam Expat Services',
+  url: 'https://www.vietnamlaunchpad.com/services',
+  description: 'Professional visa, immigration and business services for expats in Vietnam.',
+  provider: { '@type': 'Organization', name: 'Vietnam Launchpad', url: 'https://www.vietnamlaunchpad.com' },
+  offers: categories.flatMap((cat) =>
+    cat.services.map((s) => ({
+      '@type': 'Offer',
+      name: s.title,
+      url: `https://www.vietnamlaunchpad.com/services/${s.slug}`,
+      description: s.description,
+    }))
+  ),
+};
+
 export default function ServicesPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -456,5 +478,6 @@ export default function ServicesPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

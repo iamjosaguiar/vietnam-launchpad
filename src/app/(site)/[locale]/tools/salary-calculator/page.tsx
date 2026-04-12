@@ -96,7 +96,25 @@ export default function SalaryCalculatorPage() {
 
   const usdGross = result ? (currency === 'USD' ? parseFloat(grossInput) : result.gross / USD_TO_VND) : 0;
 
+  const salaryCalcSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Vietnam Salary Calculator',
+    url: 'https://www.vietnamlaunchpad.com/tools/salary-calculator',
+    description:
+      'Calculate your gross-to-net salary in Vietnam including PIT (personal income tax) and social insurance deductions. Free tool, 2026 rates.',
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Web',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    provider: { '@type': 'Organization', name: 'Vietnam Launchpad', url: 'https://www.vietnamlaunchpad.com' },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(salaryCalcSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -419,5 +437,6 @@ export default function SalaryCalculatorPage() {
 
       <Footer />
     </main>
+    </>
   );
 }

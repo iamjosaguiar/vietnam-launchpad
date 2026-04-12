@@ -69,7 +69,28 @@ export default function ContactPage() {
     });
   };
 
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Vietnam Launchpad',
+    url: 'https://www.vietnamlaunchpad.com/contact',
+    description:
+      'Get in touch with Vietnam Launchpad for immigration, visa, and business consulting services.',
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vietnamlaunchpad.com' },
+        { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.vietnamlaunchpad.com/contact' },
+      ],
+    },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
     <main className="min-h-screen">
       <Navigation />
 
@@ -360,5 +381,6 @@ export default function ContactPage() {
 
       <Footer />
     </main>
+    </>
   );
 }
