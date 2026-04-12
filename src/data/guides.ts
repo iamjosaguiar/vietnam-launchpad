@@ -5138,6 +5138,1081 @@ Note: Professional service fees (legal/consultant) are separate and vary by prov
 
 *Last updated April 2026. Requirements and fees change periodically. Confirm current requirements with the Department of Planning and Investment in your target province before filing.*`,
   },
+
+  'hoi-an': {
+    slug: 'hoi-an',
+    title: 'Hoi An Expat Guide 2026',
+    subtitle: 'Living in Vietnam\'s ancient lantern city — UNESCO World Heritage town, digital nomads, and long-term expat retirees',
+    excerpt: 'Hoi An is Vietnam\'s most atmospheric town — UNESCO-listed ancient streets, lantern-lit evenings, and one of the cheapest costs of living among Vietnam\'s expat destinations. This guide covers everything honest about living here long-term.',
+    author: 'Vietnam Launchpad',
+    date: '2026-04-12',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'City Guides',
+    ctaTitle: 'Considering Hoi An?',
+    ctaBody: 'Vietnam Launchpad helps expats across Vietnam with visa applications, TRC (Temporary Residence Card), and local setup. Whether you are moving to Hoi An or the wider Da Nang-Hoi An corridor, we can help.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Free Consultation',
+    ctaSecondaryLink: '/services',
+    ctaSecondaryText: 'View All Services',
+    content: `## What Is Hoi An?
+
+Hoi An is a small, remarkably well-preserved trading port town on Vietnam's central coast, 30km south of Da Nang. It is a UNESCO World Heritage Site — its ancient town core of 15th–19th century merchant houses, temples, and covered Japanese Bridge has survived largely intact, which is extraordinary in a country that has been through so much upheaval.
+
+For expats and long-term visitors, Hoi An offers something genuinely rare: a beautiful, human-scale, walkable environment with some of the lowest costs of living in Vietnam. It draws a mix of long-term expat retirees who want a slower pace of life, digital nomads seeking atmosphere over amenities, and a steady seasonal flow of tourists.
+
+The trade-offs are real: it is a small town, healthcare is limited, the ancient town is extremely tourist-heavy, and October–November floods are a genuine annual disruption.
+
+---
+
+## Neighborhoods
+
+### Ancient Town (Pho Co)
+
+The UNESCO-listed core. Atmospheric yellow walls, lanterns, Japanese Bridge, merchant houses. **Not practical for long-term residency** — it is a tourist zone with noise, crowds, and short-term pricing. Most expats visit the ancient town regularly but live outside it.
+
+### Cam Chau and Cam Pho
+
+The most popular residential areas for long-term expats. A 5–10 minute walk or bicycle ride from the ancient town but genuinely residential — Vietnamese families, local markets, quieter streets. Good range of villa and apartment options. The sweet spot for expats wanting proximity to the town without the tourist circus.
+
+**Rent:** 1BR: $250–450/month. 2BR villa: $400–700/month.
+
+### Cua Dai Beach Area
+
+4km from the ancient town. The Cua Dai beach strip has seen heavy coastal erosion in recent years (significant stretches of beach have been lost), but the residential area inland from the coast remains popular. Quieter than the town, some good villa options.
+
+**Rent:** 1BR: $300–500/month.
+
+### An Bang Beach
+
+A smaller, more local beach 3km from the ancient town. Less developed and more authentic than Cua Dai. Popular with younger expats and nomads. A growing cluster of expat-friendly cafes and restaurants.
+
+**Rent:** 1BR near the beach: $300–550/month.
+
+---
+
+## Cost of Living
+
+Hoi An is the most affordable major expat destination in Vietnam:
+
+| Item | Monthly Cost |
+|---|---|
+| 1BR apartment (Cam Chau/Cam Pho) | $250–450 |
+| Food (mixed local/Western) | $150–300 |
+| Transport (bicycle + occasional Grab) | $20–60 |
+| Utilities | $40–80 |
+| Healthcare insurance (basic) | $50–100 |
+| Social and entertainment | $80–150 |
+| **Comfortable single expat total** | **~$600–1,200/mo** |
+
+A careful but comfortable life in Hoi An is achievable for under $1,000/month for a single person — genuinely lower than Da Nang or HCMC.
+
+---
+
+## Healthcare: The Critical Limitation
+
+This is Hoi An's most significant practical limitation.
+
+**Local options:**
+- Hoi An General Hospital: Public facility, adequate for basic and emergency care, limited English-speaking staff
+- A few small private clinics in and around town — useful for minor illnesses, GP consultations
+
+**What is not available:**
+- International-standard hospital care — the nearest is Vinmec Da Nang or Da Nang C Hospital, approximately 30 minutes away by taxi or Grab
+- Specialist treatment of any complexity requires Da Nang or, for serious cases, Ho Chi Minh City
+
+**Implication:** Comprehensive international health insurance with medevac coverage is more important in Hoi An than almost anywhere else in Vietnam. For younger, healthy expats, the local options are acceptable for most situations. For older expats, families, or those with ongoing medical needs, the 30-minute dependency on Da Nang is a genuine factor to weigh.
+
+---
+
+## International Schools
+
+Hoi An has **no established international schools**. This makes it unsuitable as a long-term base for expat families with school-age children unless they are willing to commute to Da Nang (30–45 minutes each way) or use online schooling.
+
+For families, Da Nang is the practical base, with Hoi An as a nearby weekend/lifestyle option.
+
+---
+
+## Digital Nomad Scene
+
+Despite its small size, Hoi An has a solid digital nomad presence, particularly in the November–April dry season.
+
+**Coworking:** Several coworking options exist in and around the ancient town. The options change regularly — the most established at time of writing are clustered near the An Thuong and An Bang areas. Reliable fiber internet is available in most residential areas, though speeds can vary in older properties in the town core.
+
+**Internet:** Fiber is available in most modern apartments outside the ancient town. In the ancient town itself, older buildings sometimes have weaker connections. Test before committing to accommodation.
+
+**Nomad community:** The Hoi An expat and nomad Facebook groups are active. The community is smaller than Da Nang's but tight-knit and welcoming.
+
+---
+
+## Floods and Typhoon Season
+
+Hoi An floods. This is a fact of life, not a rare occurrence.
+
+**October and November** are the flood months. The Thu Bon River, which borders the ancient town, regularly overtops its banks. The ancient town streets can flood to knee-depth or higher. Roads in and out can become impassable.
+
+**Practical implications:**
+- Many experienced expats leave Hoi An for 4–6 weeks during October–November
+- Some rent accommodation with upper-floor options to avoid flood damage to possessions
+- Ground-floor ancient-town accommodation is particularly vulnerable
+- Travel disruption (Da Nang airport services the region — check access) is real
+
+This is the most significant seasonal disruption for Hoi An expats and cannot be ignored in long-term planning.
+
+---
+
+## Getting Around
+
+Hoi An's ancient town is walkable and bikeable — this is one of its genuine charms.
+
+**Bicycle:** The standard transport for most Hoi An expats. The town and surrounding rice fields are flat and beautiful to cycle. Many expats use bicycles as their primary transport.
+
+**Motorbike:** Useful for wider exploration, Cua Dai, An Bang, and the road to Da Nang.
+
+**Grab:** Works in Hoi An, though response times can be slower than in larger cities.
+
+**To Da Nang:** 30km, approximately 40–45 minutes by taxi or Grab (around 150,000–200,000 VND). Many expats make this trip regularly for hospitals, larger supermarkets, international school runs, or Da Nang airport.
+
+---
+
+## Pros and Cons of Hoi An
+
+### Pros
+- UNESCO World Heritage atmosphere — genuinely beautiful town to live in
+- Lowest cost of living among Vietnam's main expat destinations
+- Walkable and bicycle-friendly
+- Strong expat and nomad community relative to size
+- Excellent food scene — local Vietnamese and a wide range of international options
+- No urban traffic stress
+
+### Cons
+- Very limited healthcare (30 min to nearest international-standard hospital)
+- No international schools
+- Annual October–November flooding is disruptive — some expats leave for months
+- Very heavy tourist density in the ancient town (the "selfie stick effect")
+- Internet can be unreliable in the older town core
+- Limited career opportunities — primarily for remote workers, retirees, or local hospitality sector
+- Small city — social scene can feel limited for some after extended periods`,
+    faqs: [
+      {
+        q: 'What is it like living as an expat in Hoi An?',
+        a: 'Hoi An offers a uniquely atmospheric and affordable lifestyle. The ancient town is beautiful, costs are low, and the expat community is welcoming. The trade-offs are limited healthcare (30 minutes to Da Nang), no international schools, and annual October–November flooding that disrupts daily life. It suits retirees, digital nomads, and remote workers well — less so families with school-age children.',
+      },
+      {
+        q: 'What is the cost of living in Hoi An for expats?',
+        a: 'Hoi An is Vietnam\'s most affordable major expat destination. A single person living comfortably (1BR apartment in Cam Chau or Cam Pho, mixed local/Western diet, occasional entertainment) typically spends $600–1,200/month. Rent for a 1BR is $250–450/month. This is significantly cheaper than Da Nang, Hanoi, or HCMC.',
+      },
+      {
+        q: 'Is the healthcare good in Hoi An?',
+        a: 'Hoi An\'s healthcare is limited. There is a local general hospital and some private clinics for basic care, but serious conditions require a 30-minute trip to Da Nang (Vinmec Da Nang is the closest international-standard hospital). Comprehensive international health insurance with medevac coverage is strongly recommended for expats in Hoi An.',
+      },
+      {
+        q: 'Does Hoi An flood? When is the rainy season?',
+        a: 'Yes — Hoi An floods regularly, typically in October and November. The Thu Bon River can overtop its banks and flood the ancient town streets to knee-depth or higher. Many experienced expats temporarily relocate during this period. When renting accommodation, avoid ground-floor units in flood-prone areas and factor the disruption into your planning.',
+      },
+      {
+        q: 'Are there international schools in Hoi An?',
+        a: 'No. Hoi An has no established international schools. Expat families with school-age children typically use Da Nang as their primary base (30–45 minutes away), where international school options including DANIS and St. Nicholas School are available. Online schooling is another option used by some expat families in Hoi An.',
+      },
+    ],
+  },
+
+  'nha-trang': {
+    slug: 'nha-trang',
+    title: 'Nha Trang Expat Guide 2026',
+    subtitle: 'Beach city on Vietnam\'s south-central coast — growing international community, lower costs, honest trade-offs',
+    excerpt: 'Nha Trang is Vietnam\'s most famous beach resort city. Beyond tourism, it has a genuine and growing expat community. This guide covers what life is really like here for long-term residents.',
+    author: 'Vietnam Launchpad',
+    date: '2026-04-12',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'City Guides',
+    ctaTitle: 'Moving to Nha Trang?',
+    ctaBody: 'Vietnam Launchpad helps expats across Vietnam with visa applications, TRC (Temporary Residence Card), and local setup. Get expert support for your Nha Trang move.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Free Consultation',
+    ctaSecondaryLink: '/services',
+    ctaSecondaryText: 'View All Services',
+    content: `## What Is Nha Trang?
+
+Nha Trang is a coastal city of approximately 500,000 people on Vietnam's south-central coast, in Khanh Hoa province. It sits between mountains and a beautiful bay, with a long stretch of white-sand beach running through the city center.
+
+It is primarily known as Vietnam's main beach resort destination — the Tran Phu boulevard runs the length of the beachfront, lined with hotels, restaurants, and tourist facilities. Beyond the tourist strip, Nha Trang is a real city with local markets, Vietnamese residential neighborhoods, and a functioning urban economy.
+
+For expats, Nha Trang offers genuine beach lifestyle, lower costs than HCMC or Da Nang, and an international community that — while smaller than Da Nang's — is established and growing. The Russian expat and tourist community has been historically prominent here. The city is less cosmopolitan and has fewer international career opportunities than Da Nang or HCMC, but for remote workers and retirees, it provides excellent value.
+
+---
+
+## The City Layout
+
+**Tran Phu Boulevard:** The main beach road running the length of Nha Trang beach. Hotels, restaurants, tourist businesses. Residential options exist but are priced at tourist rates.
+
+**Nguyen Thien Thuat and surrounding streets:** The main backpacker/budget tourist area. More local than Tran Phu but still heavily tourist-oriented.
+
+**Pham Van Dong Street (north beach):** A quieter, longer stretch of beach running north of the main Nha Trang beach. Less developed, more local residential options, and a growing alternative to the crowded main beach strip.
+
+**West of the train station:** More genuinely local, residential Vietnamese neighborhoods. Cheaper rent, less English, more authentic daily life.
+
+**Vinh Hoa and Vinh Truong:** Residential areas popular with longer-term expats seeking more local surroundings with easy access to the beach and city center.
+
+---
+
+## Cost of Living
+
+Nha Trang is notably cheaper than HCMC and broadly comparable to, or slightly cheaper than, Da Nang:
+
+| Item | Monthly Cost |
+|---|---|
+| 1BR apartment (good location) | $300–550 |
+| Food (mixed local/Western) | $200–350 |
+| Transport (Grab + motorbike) | $50–100 |
+| Utilities | $50–100 |
+| Healthcare insurance (basic) | $50–100 |
+| Social and entertainment | $100–200 |
+| **Comfortable single expat total** | **~$800–1,400/mo** |
+
+Beach-adjacent apartments command a premium. Moving 500m–1km from the beach drops rent noticeably.
+
+---
+
+## Climate
+
+Nha Trang has a different climate pattern from northern and central Vietnam:
+
+**Dry season (January–August):** Hot, sunny, excellent beach conditions. March–July is peak season.
+
+**Rainy season (September–December):** More rainfall, some storms. October is the wettest month. Unlike Hoi An or Da Nang, Nha Trang's rainy season is less severe in terms of flooding — the topography (mountains behind the city) provides some protection.
+
+**Heat:** Nha Trang is hot year-round. Summer months (June–August) regularly reach 35°C+. This is the main climate challenge versus the cooler central Vietnam cities.
+
+---
+
+## Healthcare
+
+**Vinmec Nha Trang** is the key facility for expats — part of the national Vinmec chain, with international-standard care, English-speaking staff, and comprehensive services. It is the best private hospital option in the city.
+
+General Hospital 2 (public) serves the broader population.
+
+For serious specialist care requiring the highest level, HCMC (7–8 hours by road or 1.5-hour flight) remains the primary option. Medical evacuation insurance is advisable.
+
+---
+
+## International Schools
+
+Nha Trang has **limited international school options**. The city has not developed the international school infrastructure of HCMC, Hanoi, or even Da Nang.
+
+For expat families with school-age children, this is a significant constraint. Some families use bilingual schools (Vietnamese curriculum with English instruction) or online schooling. Others make Nha Trang a base only when children are young or pre-school age.
+
+Confirm current options directly with local international education providers, as availability and quality change.
+
+---
+
+## Digital Nomad and Remote Work Scene
+
+Nha Trang has a functional but smaller nomad scene than Da Nang. Several coworking options are available in the city, primarily in the central tourist zone. Fiber internet is widely available for apartments. Cafe wifi quality varies.
+
+The nomad community is present but less organized than Da Nang's. Expat Facebook groups (Nha Trang Expats, Expats in Nha Trang) are useful resources for current information.
+
+---
+
+## Getting Around
+
+**Motorbike:** The standard and most practical way to navigate Nha Trang. Traffic is lighter than HCMC or Hanoi.
+
+**Grab:** Reliable in the city center. Response times can be slower in residential areas away from the tourist strip.
+
+**Cycling:** Possible along the beach road. Hillier terrain than Hoi An makes city-wide cycling less practical.
+
+**From Nha Trang:** Da Lat (the highland city) is 135km away — a spectacular mountain road, approximately 3 hours by car. HCMC is 7–8 hours south by train or road.
+
+---
+
+## The Russian Community
+
+Nha Trang developed a large Russian tourist and expat community from the 2000s onwards, driven by direct Aeroflot and charter flights from Russian cities. Russian language signage is still visible throughout the tourist strip.
+
+Post-2022, this community has changed significantly. The international mix in Nha Trang has diversified. The infrastructure built around Russian tourism (Russian-language services, certain restaurant types) is still partly present but is evolving.
+
+---
+
+## Pros and Cons of Nha Trang
+
+### Pros
+- Beautiful beach setting — one of Vietnam's best
+- Lower cost of living than HCMC or Da Nang
+- Vinmec hospital provides reasonable healthcare
+- Good domestic connections (Cam Ranh Airport — direct flights to HCMC, Hanoi, and some international routes)
+- Less crowded and intense than HCMC
+- Warm, sunny climate most of the year
+
+### Cons
+- Heavy domestic and international tourism development — the city center can feel like a resort rather than a real city
+- Limited international school options
+- Less cosmopolitan than Da Nang — smaller expat community, fewer international career opportunities
+- Very hot in summer
+- Less developed digital nomad infrastructure than Da Nang
+- Overdevelopment concerns in parts of the city`,
+    faqs: [
+      {
+        q: 'What is expat life like in Nha Trang?',
+        a: 'Nha Trang offers a beach lifestyle with lower costs than HCMC or Da Nang. The expat community is established but smaller and less organized than Da Nang\'s. It suits remote workers, retirees, and those primarily seeking a beach-based lifestyle. Career opportunities in the city are limited to hospitality and tourism, or remote work.',
+      },
+      {
+        q: 'What is the cost of living in Nha Trang?',
+        a: 'Nha Trang is affordable — a comfortable single expat lifestyle typically costs $800–1,400/month. A 1BR apartment runs $300–550/month depending on location and proximity to the beach. This is comparable to, or slightly cheaper than, Da Nang, and notably cheaper than HCMC.',
+      },
+      {
+        q: 'Is healthcare good in Nha Trang for expats?',
+        a: 'Vinmec Nha Trang provides the best international-standard healthcare in the city. For most expat healthcare needs — GP, emergencies, standard procedures — Vinmec is adequate. Specialist care requiring HCMC-level facilities means a 1.5-hour flight or 7-hour drive south. International health insurance is strongly recommended.',
+      },
+      {
+        q: 'Are there international schools in Nha Trang?',
+        a: 'International school options in Nha Trang are limited. The city has not developed the international education infrastructure of HCMC, Hanoi, or Da Nang. Expat families with school-age children face challenges — options include bilingual schools, online schooling, or using Da Nang or HCMC as a base for school-age years.',
+      },
+      {
+        q: 'When is the best time to live in Nha Trang?',
+        a: 'January through August is the best period — the dry season, with warm sunny weather and excellent beach conditions. September–December brings more rain, with October being the wettest month. Nha Trang\'s rainy season is generally less severe than Hoi An or Da Nang\'s, but some rain and occasional storms are normal in Q4.',
+      },
+    ],
+  },
+
+  'phu-quoc': {
+    slug: 'phu-quoc',
+    title: 'Phu Quoc Expat Guide 2026',
+    subtitle: "Vietnam's largest island — booming development, growing expat community, special visa rules",
+    excerpt: 'Phu Quoc is Vietnam\'s island boom story. Massive tourism development, a special 30-day visa-free zone, and a growing community of expat retirees and remote workers. Here is the honest picture of island life.',
+    author: 'Vietnam Launchpad',
+    date: '2026-04-12',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'City Guides',
+    ctaTitle: 'Moving to Phu Quoc?',
+    ctaBody: 'Vietnam Launchpad helps expats across Vietnam with visa applications, TRC (Temporary Residence Card), and setup. Island living has unique logistics — let us help you navigate them.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Free Consultation',
+    ctaSecondaryLink: '/services',
+    ctaSecondaryText: 'View All Services',
+    content: `## What Is Phu Quoc?
+
+Phu Quoc is Vietnam's largest island, located in the Gulf of Thailand off the southwest coast of Vietnam, close to the Cambodian coast. It is part of Kien Giang province and has undergone one of the most dramatic development transformations in Southeast Asia over the past decade.
+
+From a backpacker island with dirt roads in the early 2010s, Phu Quoc has been transformed into a major international tourism destination — with Vinpearl Resort, Grand World entertainment complex, and Sun Group developing entire new districts. A new international airport connects it directly to HCMC, Hanoi, and international routes.
+
+For expats, Phu Quoc offers a genuinely unique proposition: tropical island living, a 30-day visa-free special economic zone, and improving (if still limited) international infrastructure. The trade-offs are real — island logistics, expensive imported goods, limited healthcare, and concerns about overdevelopment pace.
+
+---
+
+## The Visa Situation
+
+Phu Quoc has a special economic zone status that grants **30 days visa-free entry** to nationalities that would otherwise require a Vietnamese visa. This is separate from Vietnam's general visa-free agreements and specifically applies to the island.
+
+**Practical implication:** For nationalities that do not have visa-free access to mainland Vietnam, Phu Quoc can serve as a 30-day base without a visa. For longer stays, standard Vietnamese visa rules apply.
+
+For long-term expats, the standard Vietnam e-visa (90 days, extendable) or a TRC (Temporary Residence Card) is the practical path to staying legally beyond short visits.
+
+---
+
+## The Island: Key Areas
+
+### Duong Dong Town
+
+The main town on the west coast. Markets, government offices, airport, most basic services. The most affordable residential area on the island. A functioning Vietnamese town beneath the tourism overlay.
+
+**Rent:** 1BR: $300–500/month.
+
+### Long Beach (Bai Truong)
+
+The main tourist strip south of Duong Dong. Hotels, restaurants, bars, nightlife. Popular with shorter-stay visitors and some expats who want easy access to amenities.
+
+**Rent:** 1BR near beach: $400–700/month.
+
+### Ong Lang Beach
+
+North of Long Beach, quieter and more residential. Popular with longer-term expats seeking a more peaceful environment. A growing cluster of expat-friendly cafes and restaurants.
+
+**Rent:** 1BR: $350–600/month.
+
+### North Island (Ganh Dau / Bai Thom)
+
+The north is the least developed part of the island. Quieter, more forested, more rural. Appealing for those seeking genuine island solitude. Very limited services.
+
+### Grand World / South Island
+
+The southern portion of the island hosts Vinpearl and the Grand World development — a large-scale entertainment and resort complex. More tourist infrastructure, but heavily commercial in character.
+
+---
+
+## Cost of Living
+
+Island living in Vietnam means a premium on imported goods:
+
+| Item | Monthly Cost |
+|---|---|
+| 1BR apartment (Duong Dong / Ong Lang) | $350–600 |
+| Food (mixed local/Western) | $250–450 |
+| Transport (motorbike essential) | $50–100 |
+| Utilities (electricity runs high in island heat) | $80–150 |
+| Healthcare insurance | $60–120 |
+| Groceries (imported goods more expensive) | Premium vs. mainland |
+| **Comfortable single expat total** | **~$900–1,600/mo** |
+
+The island premium is real — many goods are transported from the mainland and carry a price markup. Local Vietnamese food and produce remain affordable.
+
+---
+
+## Healthcare: The Island Limitation
+
+Healthcare is Phu Quoc's most significant practical limitation.
+
+**Available:** Phu Quoc General Hospital (public), some private clinics in Duong Dong for routine care.
+
+**Not available:** Serious medical emergencies, complex specialist care, and surgery beyond basic procedures require evacuation to HCMC — a 1-hour flight or an expensive helicopter transfer. Phu Quoc does not have international-standard hospital facilities comparable to Vinmec Da Nang or HCMC's international hospitals.
+
+**Critical:** Medical evacuation insurance is not optional for Phu Quoc expats. It is a practical necessity. Medevac to HCMC costs can be substantial without coverage.
+
+---
+
+## International Schools
+
+Phu Quoc has **very limited international school options**. The development of the island has focused on tourism rather than the international education infrastructure that HCMC, Hanoi, or Da Nang possess.
+
+For expat families with school-age children, Phu Quoc is generally not suitable as a primary long-term base. Some younger families use online schooling or treat it as a temporary base before transitioning to a mainland city.
+
+---
+
+## Connectivity and Infrastructure
+
+**Airport:** Phu Quoc International Airport (PQC) has direct connections to HCMC (55 minutes), Hanoi (2 hours), and some international routes. This makes mainland access relatively convenient.
+
+**Internet:** Fiber is available in established residential and commercial areas. The speed and reliability have improved significantly in recent years. More remote parts of the island may have limited connectivity.
+
+**Transport on the island:** A motorbike is essential. The island road network has improved significantly with paved roads reaching most areas. Grab operates on the island.
+
+---
+
+## Wet Season and Weather
+
+Phu Quoc's weather divides sharply:
+
+**Dry season (November–April):** Excellent. Calm sea, sunshine, ideal beach conditions.
+
+**Wet season (May–October):** Heavy rain, rough seas, some flooding in low-lying areas. The west coast (Long Beach) faces the wind. The east coast is calmer in wet season but less developed. Some expats and many tourists leave during wet season, particularly June–September.
+
+The wet season can make island life feel isolating. Factor this into annual planning.
+
+---
+
+## Overdevelopment Concerns
+
+The pace of Phu Quoc's development has been a source of controversy. Large resort and theme park developments have significantly altered the southern and coastal areas of the island. Some long-term expats who arrived early in the island's development cycle have noted concerns about:
+
+- Traffic increasing as more vehicles arrive (the island now allows car registration)
+- Environmental pressure on reefs and mangroves
+- Rising costs tracking tourism inflation
+
+This is the nature of a boom destination. The island is simultaneously more convenient and more developed than it was five years ago.
+
+---
+
+## Pros and Cons of Phu Quoc
+
+### Pros
+- Tropical island living — beaches, sunsets, seafood
+- 30-day visa-free entry (special economic zone)
+- Direct flights to HCMC and Hanoi (easy mainland access)
+- Affordable cost of living by comparison to resort destinations elsewhere in Southeast Asia
+- Genuine tropical nature still accessible in the north of the island
+
+### Cons
+- Medical emergencies require HCMC evacuation — medevac insurance is essential
+- No established international schools
+- Expensive imported goods (island logistics premium)
+- Wet season (May–October) can be very wet with rough seas
+- Rapid overdevelopment has changed the character of much of the island
+- More remote areas have limited services and connectivity`,
+    faqs: [
+      {
+        q: 'Can I live in Phu Quoc without a Vietnam visa?',
+        a: 'Phu Quoc has a special economic zone status granting 30 days visa-free entry to most nationalities, including those who would normally require a Vietnamese visa. This applies specifically to the island, not mainland Vietnam. For longer stays, you need a standard Vietnamese e-visa (90 days) or a Temporary Residence Card (TRC). Contact us for current visa options.',
+      },
+      {
+        q: 'What is expat life like in Phu Quoc?',
+        a: 'Phu Quoc offers tropical island living with improving (but still limited) international infrastructure. The expat community is growing, particularly retirees and remote workers. Day-to-day life is relaxed and centered on beach and outdoor activities. The major constraints are limited healthcare (medevac to HCMC for serious cases), no international schools, and a significant wet season May–October.',
+      },
+      {
+        q: 'Is Phu Quoc expensive to live in?',
+        a: 'Phu Quoc is more expensive than comparable mainland Vietnamese cities due to the island logistics premium on imported goods and services. A comfortable single expat lifestyle typically costs $900–1,600/month. Rent for a 1BR in a good location runs $350–600/month. Local Vietnamese food and produce remain affordable; imported goods carry a noticeable premium.',
+      },
+      {
+        q: 'What is the healthcare situation in Phu Quoc?',
+        a: 'Healthcare in Phu Quoc is limited. Basic and routine care is available at local clinics and the general hospital. Serious medical emergencies require evacuation to Ho Chi Minh City (1-hour flight). Medical evacuation insurance is considered essential for expats on the island — this is not optional given the island\'s distance from major medical facilities.',
+      },
+      {
+        q: 'When is the best time to be in Phu Quoc?',
+        a: 'November through April is the peak dry season — excellent weather, calm seas, ideal beach conditions. May through October is the wet season, with heavy rain and rough seas particularly from June–September. Some expats temporarily relocate during the heart of wet season. If you are planning a long-term stay, building in flexibility around wet season is advisable.',
+      },
+    ],
+  },
+
+  'da-lat': {
+    slug: 'da-lat',
+    title: 'Da Lat Expat Guide 2026',
+    subtitle: 'Vietnam\'s highland city — cool year-round climate, digital nomads, flower farms, and a life unlike any other Vietnamese city',
+    excerpt: 'Da Lat sits at 1,500m altitude with a year-round cool climate utterly unlike the rest of Vietnam. It is growing as a digital nomad base and appeals to those who want Vietnamese life without extreme heat. Here is the honest picture.',
+    author: 'Vietnam Launchpad',
+    date: '2026-04-12',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'City Guides',
+    ctaTitle: 'Considering Da Lat?',
+    ctaBody: 'Vietnam Launchpad helps expats across Vietnam with visa applications, TRC (Temporary Residence Card), and local setup. Da Lat is unique — we can help you get established.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Free Consultation',
+    ctaSecondaryLink: '/services',
+    ctaSecondaryText: 'View All Services',
+    content: `## What Makes Da Lat Different?
+
+Da Lat (Dalat) is unlike any other city in Vietnam. Located in the Central Highlands of Lam Dong province at 1,500 metres above sea level, it has a year-round cool, temperate climate — 15–25°C — in a country where most cities are relentlessly hot and humid.
+
+The French developed Da Lat as a hill station and resort town during the colonial era. That architectural legacy, combined with pine forests, flower farms, strawberry fields, coffee plantations, and a network of lakes, gives Da Lat a visual character completely unlike Vietnamese lowland cities. It looks and feels different — more European in some aspects of its architecture, more mountain-town than Southeast Asian metropolis.
+
+For expats, Da Lat's appeal is primarily:
+1. **The climate** — genuine relief from Vietnam's heat for those who struggle with it
+2. **The scenery and lifestyle** — outdoor activities, nature, a quieter pace
+3. **Cost** — very low cost of living
+4. **The growing nomad scene** — sufficient coworking and cafe infrastructure for remote workers
+
+The constraints are real: limited English-language infrastructure, no international schools, basic healthcare, limited direct international flights, and a smaller expat social scene than HCMC, Hanoi, or Da Nang.
+
+---
+
+## The City
+
+Da Lat is centered around **Xuan Huong Lake** — a reservoir in the heart of the city, surrounded by gardens and walkways. The central market area is the commercial hub. The city fans out from there across hilly terrain.
+
+### Central Area (Around Xuan Huong Lake)
+
+The cafes, restaurants, hotels, and markets are concentrated here. Walkable, charming, atmospheric. A mix of French-colonial villas, local Vietnamese businesses, and cafes. Popular with visitors and a natural center for nomads and short-to-medium-term expats.
+
+**Rent:** 1BR: $250–450/month.
+
+### Residential Districts (Further from Center)
+
+Da Lat fans into residential neighborhoods on hilly terrain. More local, more affordable. Good villa options with gardens.
+
+**Rent:** House/villa with garden: $400–700/month.
+
+### Outskirts (Farms and Villas)
+
+Da Lat's surrounding countryside is genuinely beautiful — coffee farms, flower greenhouses, pine forests. Some expats rent villas on the city's outskirts for a more rural lifestyle.
+
+---
+
+## Climate
+
+This is Da Lat's defining feature and primary draw:
+
+- **Year-round temperature:** 15–25°C
+- **No extreme heat:** No 38°C+ days that are routine in HCMC or Hanoi in summer
+- **Rainy season:** April–October brings more rainfall, with misty, foggy days. The highlands mist is atmospheric but can be persistent.
+- **Dry season:** November–March is Da Lat's peak season — clear skies, cool crisp days
+
+For expats who have struggled with Vietnam's lowland heat, Da Lat is genuinely transformative. It is the only major Vietnamese city where you might need a jacket.
+
+---
+
+## Cost of Living
+
+Da Lat is one of Vietnam's cheapest cities for expats:
+
+| Item | Monthly Cost |
+|---|---|
+| 1BR apartment / small villa | $250–500 |
+| Food (mixed local/Western) | $150–300 |
+| Transport (motorbike essential) | $30–70 |
+| Utilities | $40–80 |
+| Healthcare insurance | $50–100 |
+| Social and entertainment | $60–120 |
+| **Comfortable single expat total** | **~$600–1,100/mo** |
+
+Da Lat is a significant step cheaper than HCMC, Hanoi, or Da Nang. Many nomads successfully manage a comfortable lifestyle here for under $1,000/month.
+
+---
+
+## Healthcare
+
+Da Lat's healthcare is basic by international expat standards.
+
+The city has a provincial general hospital and some private clinics. For serious conditions, the practical options are:
+- **HCMC:** 7–8 hours by road (or 50 minutes by flight, when direct flights are available)
+- **Nha Trang:** 2.5 hours by road (Vinmec is available there)
+
+International health insurance with medevac capability is strongly recommended for Da Lat-based expats.
+
+---
+
+## International Schools
+
+Da Lat has **no established international schools**. This makes it unsuitable as a long-term base for expat families with school-age children who require an international curriculum.
+
+Bilingual schools with English instruction exist, but are not comparable to international schools in HCMC or Hanoi.
+
+---
+
+## Digital Nomad Scene
+
+Da Lat has quietly developed into one of Vietnam's more interesting nomad bases, particularly for those who prioritize:
+- Climate over urban amenities
+- Nature and outdoor lifestyle
+- Lower costs
+- Quiet, focused work environment
+
+**Coworking:** Several coworking spaces operate in the central area. The scene is smaller than Da Nang's but functional. Cafe culture is strong — Da Lat is famous for its coffee, and many cafes have excellent wifi and a good working atmosphere.
+
+**Internet:** Fiber is widely available in the city. Speed and reliability are generally good in the central areas.
+
+**Community:** Da Lat's nomad and expat community is smaller and less structured than Da Nang's. The Facebook groups ("Da Lat Expats", "Digital Nomads Da Lat") provide useful community connections. The scene has a more bohemian, less corporate character.
+
+---
+
+## Getting There and Around
+
+**From HCMC:**
+- Flight: 50 minutes (Da Lat Lien Khuong Airport — LDJ). Multiple daily flights on Bamboo Airways, VietJet, and Vietnam Airlines.
+- Road: 7–8 hours by car/bus through the spectacular mountain road from Phan Rang.
+
+**From Da Nang:** No direct flight — typically connects via HCMC or takes 8+ hours by road through Nha Trang.
+
+**From Hanoi:** Direct flights available, approximately 1.5–2 hours.
+
+**On the ground:** A motorbike is essential. Da Lat is hilly — cycling is an option for some routes but challenging for city-wide transport. Grab operates in Da Lat.
+
+---
+
+## Language and Culture
+
+The language barrier is noticeably higher in Da Lat than in HCMC, Hanoi, or Da Nang. English proficiency in the local population is lower. Vietnamese language skills are genuinely useful here beyond the tourist areas.
+
+Da Lat is also more culturally conservative and traditional than Vietnam's larger cities. The pace of life is slower. The city has a reputation as a domestic Vietnamese holiday destination (honeymooners and weekend visitors from HCMC), which shapes some of the local business and social environment.
+
+---
+
+## Pros and Cons of Da Lat
+
+### Pros
+- Unique year-round cool climate (15–25°C) — no extreme heat
+- Beautiful highland scenery — pine forests, lakes, flower farms, coffee country
+- Very affordable cost of living
+- Relaxed, non-intense pace of life
+- Good coffee culture and growing cafe/coworking scene
+- Strong domestic flight connections to HCMC and Hanoi
+
+### Cons
+- Limited international healthcare — HCMC 7–8 hours away (or 50-minute flight)
+- No international schools
+- Higher language barrier than coastal cities — less English in local population
+- Smaller and less organized expat social scene
+- No direct international flights — all routes via HCMC, Hanoi, or Nha Trang
+- Rainy season mist can be relentless (April–October)
+- Limited career opportunities beyond remote work or local hospitality`,
+    faqs: [
+      {
+        q: 'What is it like living as an expat in Da Lat?',
+        a: 'Da Lat offers a unique highland lifestyle at 1,500m altitude with a cool year-round climate (15–25°C) unlike anywhere else in Vietnam. The scenery is beautiful, costs are very low, and the digital nomad community is growing. The trade-offs are basic healthcare, no international schools, a higher language barrier than coastal cities, and no direct international flights.',
+      },
+      {
+        q: 'What is the cost of living in Da Lat?',
+        a: 'Da Lat is one of Vietnam\'s cheapest major expat bases. A comfortable single expat lifestyle typically costs $600–1,100/month. A 1BR apartment or small villa runs $250–500/month. Food, transport, and entertainment are all significantly cheaper than HCMC, Hanoi, or Da Nang.',
+      },
+      {
+        q: 'Is Da Lat good for digital nomads?',
+        a: 'Yes — Da Lat has become an underrated digital nomad base. There are several coworking spaces in the central area, strong cafe culture with reliable wifi, good fiber internet, and very low costs. The main nomad trade-offs versus Da Nang are: smaller community, higher language barrier, no beach, and limited direct flight options. Many nomads use it as a seasonal base, particularly in dry season (November–March).',
+      },
+      {
+        q: 'How do I get to Da Lat from HCMC?',
+        a: 'The fastest option is a direct flight — approximately 50 minutes, with multiple daily flights on VietJet, Bamboo Airways, and Vietnam Airlines from Tan Son Nhat to Da Lat\'s Lien Khuong Airport (LDJ). By road, it is a 7–8 hour journey through the mountains. The drive through the highland pass is spectacular but long.',
+      },
+      {
+        q: 'Are there international schools in Da Lat?',
+        a: 'No established international schools are available in Da Lat. The city has bilingual schools with English-medium instruction, but these are not equivalent to the international schools in HCMC, Hanoi, or Da Nang. Expat families with school-age children requiring a full international curriculum typically need to base themselves in a larger city or use online schooling.',
+      },
+    ],
+  },
+
+  'vung-tau': {
+    slug: 'vung-tau',
+    title: 'Vung Tau Expat Guide 2026',
+    subtitle: "HCMC's beach escape — 90km from the city, oil and gas industry, long-established Western expat community",
+    excerpt: 'Vung Tau is a beach city 90km from Ho Chi Minh City with a long history as home to Vietnam\'s offshore oil and gas industry. It has one of the most established Western expat communities outside HCMC. This is what life here is really like.',
+    author: 'Vietnam Launchpad',
+    date: '2026-04-12',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'City Guides',
+    ctaTitle: 'Moving to Vung Tau?',
+    ctaBody: 'Vietnam Launchpad helps expats across Vietnam with visa applications, TRC (Temporary Residence Card), and local setup. Vung Tau has unique characteristics — we can help you navigate them.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Free Consultation',
+    ctaSecondaryLink: '/services',
+    ctaSecondaryText: 'View All Services',
+    content: `## What Is Vung Tau?
+
+Vung Tau is a coastal city at the tip of the Vung Tau peninsula, approximately 90km southeast of Ho Chi Minh City by road (or 1.5–2 hours by high-speed ferry from HCMC's Bach Dang ferry terminal). It is part of Ba Ria-Vung Tau province.
+
+The city is defined by two elements:
+
+1. **Oil and gas:** Vung Tau is the base for Vietnam's offshore oil and gas industry. Vietsovpetro (the Vietnamese-Russian joint venture), PVEP, and multiple international energy companies operate here. This has historically made Vung Tau home to a significant community of Western oil and gas workers — Australian, British, American, and European engineers and contractors on rotation.
+
+2. **HCMC weekend destination:** Vung Tau is the most popular weekend beach escape for Ho Chi Minh City's 10 million residents. The Back Beach (Bai Sau) is the main recreation strip, busy with domestic visitors on weekends.
+
+For expats, Vung Tau offers something distinct: a genuine beach city with a long-established international community, reasonable infrastructure for its size, and proximity to HCMC without HCMC's intensity.
+
+---
+
+## Beaches
+
+Vung Tau has three main beaches:
+
+**Back Beach (Bai Sau):** The main beach, 3km long. The primary residential and entertainment strip for both locals and expats. Hotels, restaurants, apartment buildings, sports facilities. The most popular expat living area.
+
+**Front Beach (Bai Truoc):** The older, shorter beach in the city center. More scenic but less useful for swimming — rougher conditions and traditionally more commercial.
+
+**Pineapple Beach (Bai Dua):** Small, quieter beach south of the city. More local.
+
+---
+
+## Expat Neighborhoods
+
+### Back Beach Area
+
+The primary expat residential area. A wide boulevard running the length of the beach, backed by apartment buildings, restaurants, supermarkets, and sports clubs. This is where the established expat community concentrates.
+
+**Rent:** 1BR: $400–650/month. 2BR: $600–1,000/month. Larger villas: $1,000–2,000/month.
+
+### City Center (Tran Hung Dao / Hoang Hoa Tham)
+
+More local, more convenient for daily services. Some expats prefer the city center for easier access to markets, banks, and services.
+
+**Rent:** 1BR: $300–550/month.
+
+---
+
+## Cost of Living
+
+Vung Tau is cheaper than HCMC but slightly more expensive than other beach cities:
+
+| Item | Monthly Cost |
+|---|---|
+| 1BR apartment (Back Beach area) | $400–700 |
+| Food (mixed local/Western) | $200–400 |
+| Transport (car/motorbike) | $50–150 |
+| Utilities | $60–120 |
+| Healthcare insurance | $60–120 |
+| Social and entertainment | $100–200 |
+| **Comfortable single expat total** | **~$900–1,700/mo** |
+
+Oil and gas workers on company packages typically have housing and transport provided — individual costs for this group are lower in practice.
+
+---
+
+## The Oil and Gas Community
+
+The oil and gas expat community in Vung Tau is one of Vietnam's most established and long-running. Workers on offshore rotation (typically 2 weeks on/2 weeks off or similar) have been based here since the 1980s.
+
+**Character of the community:** More traditional and less nomadic than the Da Nang or Hoi An expat scene. More family-settled, more career-oriented. Established expat clubs (sports clubs, golf, social clubs) are active.
+
+**Companies:** International energy services companies (Schlumberger/SLB, Halliburton, Baker Hughes, PTSC, Technip) and their contractors have offices and facilities in or near Vung Tau.
+
+This community is unlike the digital nomad or lifestyle expat communities found in Da Nang or Hoi An. It is more industry-specific and has a distinct social character.
+
+---
+
+## Healthcare
+
+Vung Tau has reasonable healthcare for a city of its size, significantly enhanced by the oil and gas industry's presence.
+
+**Key facilities:**
+- Ba Ria General Hospital: The main public hospital, large and reasonably equipped
+- Columbia Asia Vung Tau: Private hospital with international-standard care, historically used by the expat community
+- Several private clinics
+
+**HCMC connection:** 90 minutes away — specialist care at HCMC's international hospitals (FV, Victoria Healthcare, Cho Ray) is accessible without flying. This is significantly better than Phu Quoc or Da Lat's medical situation.
+
+---
+
+## International Schools
+
+Vung Tau has **limited but more developed** international education options compared to Hoi An or Phu Quoc, driven by the long-established expat community.
+
+The existing options have historically served the oil and gas expat community. Confirm current availability, curricula, and fees directly with schools as options and quality evolve.
+
+For families seeking a full range of secondary-level international options, HCMC (90 minutes away) remains the primary resource.
+
+---
+
+## Getting Around
+
+Vung Tau is a peninsula — the city is relatively compact.
+
+**Motorbike:** Standard transport within the city.
+
+**Car:** More common here than in Da Nang or Hoi An — the oil and gas community often drives. Parking is generally manageable.
+
+**Grab:** Works well throughout the city.
+
+**To HCMC:** High-speed ferry (Vung Tau Express, Greenlines) from Vung Tau ferry terminal to HCMC's Bach Dang pier — approximately 75–90 minutes, multiple daily services. This makes the HCMC commute viable for those who need frequent city access.
+
+**Road:** 2 hours by car to HCMC (longer in Friday evening or Sunday afternoon traffic).
+
+---
+
+## Weekends in Vung Tau
+
+Vung Tau is heavily used as a weekend destination by HCMC residents. This has two implications:
+
+1. **Amenities:** The demand from HCMC weekenders has driven a strong restaurant, entertainment, and sports infrastructure for a city its size.
+
+2. **Crowds:** Weekends (Friday evening to Sunday) can be busy at the Back Beach, in restaurants, and on the main roads. Weekdays are quieter and more pleasant for residents.
+
+---
+
+## Pros and Cons of Vung Tau
+
+### Pros
+- Established Western expat community — less effort to build a social network
+- Beach lifestyle 90km from HCMC — accessible for business meetings in HCMC via ferry
+- Reasonable healthcare (Columbia Asia, close proximity to HCMC)
+- Good infrastructure for a mid-sized city
+- Strong weekend restaurant and activity scene
+- Proven base for oil and gas careers in Vietnam
+
+### Cons
+- Heavy weekend domestic tourism can disrupt resident lifestyle
+- Less "authentic" beach experience than Phu Quoc or Hoi An — heavily developed
+- Limited international schools (secondary level means HCMC dependency)
+- Traffic can be significant on approach roads from HCMC
+- Less developed digital nomad scene than Da Nang
+- Less atmospheric than HCMC, Hoi An, or Da Lat`,
+    faqs: [
+      {
+        q: 'What is expat life like in Vung Tau?',
+        a: 'Vung Tau has one of Vietnam\'s most established Western expat communities, historically driven by the offshore oil and gas industry. It offers a beach lifestyle with HCMC 90 minutes away by ferry. The community is more traditional and settled than Da Nang\'s nomad scene — more families, more career-oriented expats. Back Beach is the primary expat residential and social area.',
+      },
+      {
+        q: 'How far is Vung Tau from Ho Chi Minh City?',
+        a: 'Vung Tau is approximately 90km southeast of HCMC by road (2 hours by car) and 75–90 minutes by high-speed ferry. The ferry from Vung Tau to Bach Dang pier in HCMC runs multiple times daily. Many Vung Tau expats use the ferry to attend meetings or appointments in HCMC while living at the beach.',
+      },
+      {
+        q: 'What is the cost of living in Vung Tau?',
+        a: 'Vung Tau is cheaper than HCMC but slightly more expensive than Da Nang or Nha Trang. A comfortable single expat lifestyle typically costs $900–1,700/month. Back Beach 1BR apartments run $400–700/month. Oil and gas workers on company packages often have accommodation and transport covered, reducing out-of-pocket costs significantly.',
+      },
+      {
+        q: 'Is healthcare good in Vung Tau?',
+        a: 'Vung Tau has better healthcare than most comparable beach cities in Vietnam. Columbia Asia Vung Tau provides private international-standard care, and HCMC\'s full range of international hospitals (FV Hospital, Victoria Healthcare) is 90 minutes away. This makes Vung Tau significantly better positioned medically than Phu Quoc, Hoi An, or Da Lat.',
+      },
+      {
+        q: 'Are there jobs for expats in Vung Tau?',
+        a: 'The primary employment sector for Western expats in Vung Tau is offshore oil and gas. Positions at Vietsovpetro, PVEP, and international oilfield services companies (SLB, Halliburton, Baker Hughes) are the main employer base. Outside the energy sector, remote work or HCMC-based employment with a Vung Tau residence is the typical path.',
+      },
+    ],
+  },
+
+  'hue': {
+    slug: 'hue',
+    title: 'Hue Expat Guide 2026',
+    subtitle: "Vietnam's imperial capital — Perfume River, UNESCO citadel, traditional culture, and a smaller, quieter expat life",
+    excerpt: "Hue was Vietnam's imperial capital for nearly 150 years. It is a city of genuine historical depth, slower pace, and lower costs than Da Nang or HCMC. Here is what living here is really like for expats.",
+    author: 'Vietnam Launchpad',
+    date: '2026-04-12',
+    lastUpdated: '2026-04-12',
+    readTime: '8 min read',
+    category: 'City Guides',
+    ctaTitle: 'Considering Hue?',
+    ctaBody: 'Vietnam Launchpad helps expats across Vietnam with visa applications, TRC (Temporary Residence Card), and local setup. Whether Hue or another Vietnamese city, we can help.',
+    ctaLink: '/contact',
+    ctaLinkText: 'Book a Free Consultation',
+    ctaSecondaryLink: '/services',
+    ctaSecondaryText: 'View All Services',
+    content: `## What Is Hue?
+
+Hue (pronounced "Hway") is the capital of Thua Thien-Hue province in central Vietnam. It sits on the Perfume River (Song Huong), flanked by mountains to the west, and is approximately 100km north of Da Nang and 700km north of Ho Chi Minh City.
+
+From 1802 to 1945, Hue was the capital of unified Vietnam under the Nguyen Dynasty. The Imperial Citadel, a walled palace complex modeled partly on Beijing's Forbidden City, stands at the heart of the city and is a UNESCO World Heritage Site. A network of royal tombs along the Perfume River south of the city adds to the extraordinary density of imperial heritage.
+
+For expats, Hue is:
+- **Historically significant** — more than any other Vietnamese city, Hue has preserved its imperial cultural heritage
+- **Slower and more traditional** — more conservative in character than Da Nang, more culturally Vietnamese
+- **Affordable** — one of the cheapest cities in Vietnam for expats
+- **Small** — with a correspondingly limited expat social scene
+
+The expat community in Hue is primarily language teachers (English, at universities and language centers), academics, and retirees who want a genuinely Vietnamese cultural experience rather than an expat bubble.
+
+---
+
+## City Layout
+
+### Citadel District (North Bank)
+
+The Imperial Citadel and surrounding residential area north of the Perfume River. Historic atmosphere, traditional Vietnamese architecture. More local and less tourist-oriented than the south bank areas near the hotels.
+
+**Rent:** 1BR: $200–400/month.
+
+### South Bank (Dong Ba Market Area)
+
+The main commercial district south of the river. Hotels, restaurants, markets, transport hubs. The center of tourist and expat social life in Hue.
+
+**Rent:** 1BR: $250–450/month.
+
+### Pham Ngu Lao / An Cu Area
+
+Residential areas slightly further from the center — more local, more affordable. Popular with long-term expats and teachers who want a normal Vietnamese residential life.
+
+**Rent:** 1BR: $200–350/month.
+
+---
+
+## Cost of Living
+
+Hue is one of the cheapest cities in Vietnam:
+
+| Item | Monthly Cost |
+|---|---|
+| 1BR apartment | $200–400 |
+| Food (mixed local/Western) | $150–280 |
+| Transport (bicycle + Grab) | $30–70 |
+| Utilities | $40–80 |
+| Healthcare insurance | $50–100 |
+| Social and entertainment | $60–120 |
+| **Comfortable single expat total** | **~$550–1,000/mo** |
+
+Hue is genuinely cheaper than Da Nang, Nha Trang, or HCMC. For expats on fixed incomes (teachers, retirees) or those prioritizing cost minimization, Hue is hard to beat.
+
+---
+
+## Climate
+
+Hue has a challenging climate — more extreme than Da Nang in several respects:
+
+**Rainy season (September–January):** Hue receives the highest rainfall of any major Vietnamese city. October and November can see weeks of continuous heavy rain. Typhoon risk is real. Flooding of the Perfume River can affect parts of the city.
+
+**Dry season (February–August):** Hot and increasingly dry. Summer months (June–August) can reach 40°C — the Laos-facing mountains trap heat over the city.
+
+**The con:** Hue's climate is arguably less pleasant year-round than Da Nang's or HCMC's — very wet in Q4 and very hot in summer. Many expats find the October–November rainy period particularly challenging.
+
+**The pro:** The autumn light on the Perfume River and Imperial Citadel, and the cooler February–April period, can be genuinely beautiful.
+
+---
+
+## Healthcare
+
+Hue Central Hospital is one of the largest public hospitals in central Vietnam — significantly larger and better equipped than hospitals in Hoi An or Phu Quoc. As a historical provincial capital and university city, Hue has a more developed medical infrastructure than cities of comparable size.
+
+**What's available:**
+- Hue Central Hospital (Benh Vien Trung Uong Hue): Large public hospital, comprehensive services
+- Hue University Hospital: University-affiliated, teaching hospital
+- Several private clinics in the city
+
+**What's limited:**
+- International-standard private hospital care — there is no Vinmec or international-chain hospital in Hue
+- For the highest-level specialist care, Da Nang (1 hour) or HCMC (10 hours) are the options
+
+Overall, Hue's healthcare is better than Hoi An, Phu Quoc, or Da Lat — but not at the level of HCMC, Hanoi, or even Da Nang in terms of international-standard private facilities.
+
+---
+
+## International Schools
+
+Hue has **very limited international school options**. It is primarily a university city with a Vietnamese education system. Expat families with school-age children are typically not based in Hue long-term — those who are usually use Da Nang's international schools (1 hour away) or online education.
+
+---
+
+## Culture and Character
+
+Hue is Vietnam's most culturally traditional major city. Several things shape daily life:
+
+**Hue cuisine:** Considered by many food writers to be Vietnam's most refined regional cooking. Royal cuisine, bun bo Hue (the city's famous spicy beef noodle soup), banh khoai, and the extraordinary variety of local dishes make Hue one of the best eating cities in Vietnam.
+
+**University city:** Hue University is one of Vietnam's largest and oldest. This gives the city a significant student population and a certain academic, intellectual character.
+
+**Conservative pace:** Hue is more reserved and traditional than Da Nang or HCMC. Nightlife is limited. Social activity for expats tends to center on cafes, language exchange events, and university connections.
+
+**The Perfume River:** The river is genuinely beautiful and central to the city's identity. Boat trips to royal tombs, evening walks along the riverbank, and the view of Thien Mu Pagoda are regular features of expat life here.
+
+---
+
+## Expat Community and Career Opportunities
+
+The expat community in Hue is small by Vietnamese city standards:
+
+**Who lives here:**
+- English language teachers (at Hue University, language centers, and high schools)
+- Academics and researchers (Hue University has international programs)
+- Long-stay retirees who have chosen a genuinely Vietnamese cultural experience
+- A small number of business operators (guesthouses, restaurants, tourism services)
+
+**Career opportunities:** Limited. English teaching is the primary option for those without location-independent income. Hue does not have HCMC's corporate sector, Hanoi's NGO community, or Da Nang's nomad infrastructure.
+
+---
+
+## Getting Around
+
+Hue is compact and relatively flat near the river:
+
+**Bicycle:** Very viable. The historic citadel, river, and tomb circuit are well suited to cycling. Many expats use bicycles as primary transport.
+
+**Motorbike:** Practical for wider city navigation and day trips to the surrounding royal tombs and mountains.
+
+**Grab:** Available in Hue, though response times can be slower than in larger cities.
+
+**From Hue:**
+- Da Nang: 100km south, approximately 1.5–2 hours by car/bus. The Hai Van Pass between the two cities is one of Vietnam's most spectacular coastal drives.
+- Hanoi: 7 hours by train (sleeper trains available) or 1.5 hours by flight.
+- HCMC: 12+ hours by train or 1.5 hours by flight.
+
+---
+
+## Pros and Cons of Hue
+
+### Pros
+- Extraordinary historical and cultural depth — Vietnam's imperial heritage city
+- Very affordable — among the cheapest major expat bases in Vietnam
+- Excellent food scene — Hue cuisine is widely regarded as Vietnam's finest regional cooking
+- Compact, bikeable city
+- More genuine Vietnamese cultural experience than Da Nang or HCMC's expat bubbles
+- University city atmosphere
+- Beautiful Perfume River and surrounding landscape
+
+### Cons
+- Very challenging climate — significant rainy season (October–November), very hot summers
+- Small expat community — social scene limited
+- No international-standard private hospital (Hue Central Hospital covers most needs)
+- No established international schools
+- Limited career opportunities for non-teachers or non-remote workers
+- More conservative city — less nightlife, less international infrastructure than Da Nang
+- Typhoon and flooding risk October–November`,
+    faqs: [
+      {
+        q: 'What is expat life like in Hue, Vietnam?',
+        a: 'Hue is a smaller, more traditional, and culturally rich expat experience than Da Nang or HCMC. The expat community is primarily language teachers, academics, and retirees. Life is genuinely immersive in Vietnamese culture — less expat-bubble than Da Nang. The trade-offs are a small social scene, limited international school and healthcare options, and a challenging climate (heavy rain October–November, very hot summers).',
+      },
+      {
+        q: 'What is the cost of living in Hue?',
+        a: 'Hue is among the cheapest major cities in Vietnam for expats. A comfortable single expat lifestyle typically costs $550–1,000/month. A 1BR apartment runs $200–400/month. Food is very affordable, particularly eating local (Hue cuisine is extraordinary and cheap). This is meaningfully cheaper than Da Nang, Nha Trang, or HCMC.',
+      },
+      {
+        q: 'Is healthcare good in Hue for expats?',
+        a: 'Hue has better healthcare than Hoi An or Phu Quoc, thanks to Hue Central Hospital (one of central Vietnam\'s largest public hospitals) and Hue University Hospital. However, there is no international-standard private hospital chain (no Vinmec) in Hue. For most expat healthcare needs, Hue Central is adequate. Specialist care or international-standard facilities means Da Nang (1 hour) or HCMC.',
+      },
+      {
+        q: 'How is the weather in Hue?',
+        a: 'Hue has one of the most challenging climates among Vietnam\'s expat cities. October and November are very wet — Hue receives more rainfall than any other major Vietnamese city during this period, with weeks of continuous rain and flooding risk. Summers (June–August) are very hot (up to 40°C). The best periods are February–April (spring, cool and dry) and May–June before peak summer heat.',
+      },
+      {
+        q: 'What are the best things about living in Hue?',
+        a: 'Hue\'s main draws are its extraordinary cultural depth (UNESCO Imperial Citadel, royal tombs, Perfume River), Vietnam\'s finest regional cuisine, very low cost of living, and a genuinely immersive Vietnamese cultural experience. It suits expats who want more than a beach resort or tech hub — those interested in Vietnamese history, traditional culture, and a slower, more authentic pace of life.',
+      },
+    ],
+  },
 };
 
 export function getGuideBySlug(slug: string): Guide | null {
