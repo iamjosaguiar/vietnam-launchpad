@@ -92,6 +92,7 @@ export default function Footer() {
                   { name: 'Golden Visa Vietnam', href: '/guides/golden-visa-vietnam' },
                   { name: 'Cost of Living', href: '/guides/cost-of-living' },
                   { name: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
+                  { name: 'Vietnam Statistics & Data', href: '/vietnam-statistics' },
                   { name: 'Compliance Calendar', href: '/vietnam-compliance-calendar' },
                   { name: 'Salary Calculator', href: '/tools/salary-calculator' },
                   { name: 'Work Permit Checker', href: '/tools/work-permit-checker' },

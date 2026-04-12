@@ -51,6 +51,7 @@ const guideCategories = [
     guides: [
       { title: 'Cost of Living', href: '/guides/cost-of-living' },
       { title: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
+      { title: 'Vietnam Statistics & Data', href: '/vietnam-statistics' },
       { title: 'Taxes for Expats', href: '/guides/taxes' },
       { title: 'Banking in Vietnam', href: '/guides/banking' },
       { title: 'Salary Calculator (PIT)', href: '/tools/salary-calculator' },

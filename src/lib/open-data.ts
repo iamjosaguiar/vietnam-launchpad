@@ -85,3 +85,95 @@ export function formatVnd(amount: number): string {
     maximumFractionDigits: 0,
   }).format(Math.round(amount));
 }
+
+// ─── Multi-year series helper ─────────────────────────────────────────────────
+
+async function fetchWorldBankSeries(indicator: string, years: number = 5): Promise<WorldBankEntry[]> {
+  try {
+    const res = await fetch(
+      `https://api.worldbank.org/v2/country/VN/indicator/${indicator}?format=json&mrv=${years}`,
+      { next: { revalidate: 86400 } }
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    if (Array.isArray(data) && Array.isArray(data[1])) {
+      const entries = (data[1] as WorldBankEntry[]).filter((e) => e.value !== null);
+      return entries.sort((a, b) => Number(b.date) - Number(a.date));
+    }
+    return [];
+  } catch {
+    return [];
+  }
+}
+
+// ─── Tourism ──────────────────────────────────────────────────────────────────
+
+export interface TourismDataPoint {
+  year: string;
+  arrivals: number | null;
+  receiptsUsd: number | null;
+}
+
+export async function getVietnamTourismTrend(): Promise<TourismDataPoint[]> {
+  const [arrivalsData, receiptsData] = await Promise.all([
+    fetchWorldBankSeries('ST.INT.ARVL', 6),
+    fetchWorldBankSeries('ST.INT.RCPT.CD', 6),
+  ]);
+
+  // Build a year-keyed map
+  const byYear: Record<string, TourismDataPoint> = {};
+
+  for (const entry of arrivalsData) {
+    byYear[entry.date] = {
+      year: entry.date,
+      arrivals: entry.value,
+      receiptsUsd: null,
+    };
+  }
+  for (const entry of receiptsData) {
+    if (byYear[entry.date]) {
+      byYear[entry.date].receiptsUsd = entry.value;
+    } else {
+      byYear[entry.date] = { year: entry.date, arrivals: null, receiptsUsd: entry.value };
+    }
+  }
+
+  return Object.values(byYear).sort((a, b) => Number(b.year) - Number(a.year));
+}
+
+// ─── Sector breakdown ─────────────────────────────────────────────────────────
+
+export interface SectorDataPoint {
+  year: string;
+  services: number | null;
+  industry: number | null;
+  manufacturing: number | null;
+  agriculture: number | null;
+}
+
+export async function getVietnamSectorTrend(): Promise<SectorDataPoint[]> {
+  const [servicesData, industryData, manufacturingData, agricultureData] = await Promise.all([
+    fetchWorldBankSeries('NV.SRV.TOTL.ZS', 5),
+    fetchWorldBankSeries('NV.IND.TOTL.ZS', 5),
+    fetchWorldBankSeries('NV.IND.MANF.ZS', 5),
+    fetchWorldBankSeries('NV.AGR.TOTL.ZS', 5),
+  ]);
+
+  const byYear: Record<string, SectorDataPoint> = {};
+
+  const merge = (entries: WorldBankEntry[], key: keyof Omit<SectorDataPoint, 'year'>) => {
+    for (const entry of entries) {
+      if (!byYear[entry.date]) {
+        byYear[entry.date] = { year: entry.date, services: null, industry: null, manufacturing: null, agriculture: null };
+      }
+      byYear[entry.date][key] = entry.value;
+    }
+  };
+
+  merge(servicesData, 'services');
+  merge(industryData, 'industry');
+  merge(manufacturingData, 'manufacturing');
+  merge(agricultureData, 'agriculture');
+
+  return Object.values(byYear).sort((a, b) => Number(b.year) - Number(a.year));
+}
