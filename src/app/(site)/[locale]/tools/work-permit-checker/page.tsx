@@ -24,6 +24,20 @@ type Step = {
 };
 
 const RESULTS: Record<string, Result> = {
+  exempt_marriage: {
+    type: 'exempt',
+    headline: 'Exempt - Marriage TRC Qualifies for Work Permit Exemption',
+    body: 'Spouses of Vietnamese citizens holding a marriage-based TRC qualify for a Work Permit Exemption in Vietnam. You do not need a full work permit. Instead, you apply for a Work Permit Exemption Certificate through DOLISA (Department of Labour, Invalids and Social Affairs). This is faster and simpler than a standard work permit and covers both employment and running a business.',
+    action: 'Get Your Work Permit Exemption',
+    actionHref: '/contact',
+    secondaryAction: 'Marriage TRC Service',
+    secondaryHref: '/services/marriage-registration',
+    caveats: [
+      'You must hold a valid marriage-based TRC (not just a tourist or business visa)',
+      'Apply for the exemption certificate through DOLISA before starting work',
+      'The exemption certificate should be renewed when your TRC is renewed',
+    ],
+  },
   exempt_short: {
     type: 'exempt',
     headline: 'Likely Exempt from Work Permit',
@@ -118,6 +132,7 @@ const STEPS: Record<string, Step> = {
     id: 'start',
     question: 'What best describes why you are working in Vietnam?',
     options: [
+      { label: 'Married to a Vietnamese citizen (marriage-based TRC)', value: 'married', next: RESULTS.exempt_marriage },
       { label: 'Employed by a Vietnamese company or organization', value: 'employed', next: 'q_employed' },
       { label: "Transferred here by my overseas employer (intra-company)", value: 'ict', next: 'q_ict' },
       { label: 'Investor, company owner, or director', value: 'owner', next: 'q_owner' },
@@ -390,12 +405,12 @@ export default function WorkPermitCheckerPage() {
             <p className="text-gray-500 text-sm mb-8">Under Decree 152/2020 and subsequent amendments, these groups may be exempt from Vietnam work permit requirements:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
+                { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and holding a marriage-based TRC qualify for a Work Permit Exemption Certificate - no full work permit required' },
                 { cat: 'Capital Owners', desc: 'Foreign individuals who are legal capital-contributing members of a Vietnamese company (subject to minimum contribution threshold)' },
                 { cat: 'Board Members', desc: 'Members of the Board of Directors or Members Council who are appointed in official company documents' },
                 { cat: 'Short-Stay Specialists', desc: 'Specialists visiting Vietnam for under 30 days per trip, with no more than 3 visits and under 90 total days per year' },
                 { cat: 'Intra-Company Transfers', desc: 'Managers, executives, and specialists transferred within a multinational for assignments under 3 months' },
                 { cat: 'Students/Interns', desc: 'Foreign students completing internships that are formally part of their academic program' },
-                { cat: 'International Agreements', desc: 'Persons entering Vietnam to implement provisions of international agreements that Vietnam is party to' },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl border border-gray-100 p-5">
                   <p className="font-semibold text-gray-900 text-sm mb-1.5">{item.cat}</p>

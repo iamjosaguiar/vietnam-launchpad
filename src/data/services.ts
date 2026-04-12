@@ -493,7 +493,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'Can I work with a marriage-based TRC?',
-        answer: 'Yes, you can work with a marriage-based TRC, but you still need a work permit unless you own your own business.'
+        answer: 'Yes. Marriage TRC holders qualify for a Work Permit Exemption - you do not need a full work permit. You apply for a Work Permit Exemption Certificate through DOLISA, which confirms your legal right to work based on your marriage to a Vietnamese citizen. This is faster and simpler than a standard work permit and covers both employment and running your own business.'
       },
       {
         question: 'What if I\'m already married outside Vietnam?',
