@@ -141,7 +141,7 @@ const mdComponents = (slugifyFn: (t: string) => string) => ({
   },
 });
 
-export default function GuideContent({ guide }: { guide: Guide }) {
+export default function GuideContent({ guide, topWidget }: { guide: Guide; topWidget?: React.ReactNode }) {
   const toc = extractToc(guide.content);
   const [activeId, setActiveId] = useState<string>('');
   const [tocOpen, setTocOpen] = useState(false);
@@ -288,6 +288,8 @@ export default function GuideContent({ guide }: { guide: Guide }) {
                   )}
                 </div>
               )}
+
+              {topWidget}
 
               <div>
                 {sections.map((section, i) => (

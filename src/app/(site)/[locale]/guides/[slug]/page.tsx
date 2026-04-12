@@ -1,9 +1,14 @@
+import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import GuideContent from '@/components/GuideContent';
+import LiveRatesWidget from '@/components/LiveRatesWidget';
+import EconomicSnapshotWidget from '@/components/EconomicSnapshotWidget';
 import { getGuideBySlug, getAllGuideSlugs } from '@/data/guides';
+
+export const revalidate = 21600; // ISR: re-render every 6 hours for live data
 
 export async function generateStaticParams() {
   const slugs = getAllGuideSlugs();
@@ -107,6 +112,19 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     ],
   };
 
+  // Inject live data widgets into relevant guides
+  let topWidget: React.ReactNode = undefined;
+  if (slug === 'cost-of-living') {
+    topWidget = (
+      <>
+        <LiveRatesWidget compact />
+        <EconomicSnapshotWidget />
+      </>
+    );
+  } else if (slug === 'company-setup-vietnam') {
+    topWidget = <EconomicSnapshotWidget />;
+  }
+
   return (
     <>
       <script
@@ -119,7 +137,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       />
       <main className="min-h-screen">
         <Navigation />
-        <GuideContent guide={guide} />
+        <GuideContent guide={guide} topWidget={topWidget} />
         <Footer />
       </main>
     </>

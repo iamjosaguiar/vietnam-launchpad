@@ -49,6 +49,7 @@ const guideCategories = [
     color: 'text-emerald-600',
     guides: [
       { title: 'Cost of Living', href: '/guides/cost-of-living' },
+      { title: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
       { title: 'Taxes for Expats', href: '/guides/taxes' },
       { title: 'Banking in Vietnam', href: '/guides/banking' },
     ],

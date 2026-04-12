@@ -91,7 +91,7 @@ export default function Footer() {
                   { name: 'Company Setup', href: '/guides/company-setup-vietnam' },
                   { name: 'Teaching English', href: '/guides/teaching-english-vietnam' },
                   { name: 'Cost of Living', href: '/guides/cost-of-living' },
-                  { name: 'City Guides', href: '/guides' },
+                  { name: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
                   { name: 'All Guides', href: '/guides' }
                 ].map((item) => (
                   <li key={item.name}>

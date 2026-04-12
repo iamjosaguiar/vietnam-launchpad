@@ -23,6 +23,7 @@ export async function GET() {
     url('/contact', 0.8, 'monthly'),
     url('/faq', 0.7, 'monthly'),
     url('/about', 0.6, 'monthly'),
+    url('/vietnam-exchange-rates', 0.85, 'daily'),
   ];
 
   const serviceUrls = getAllServiceSlugs().map((slug) =>
