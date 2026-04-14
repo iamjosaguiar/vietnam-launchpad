@@ -395,7 +395,7 @@ export const servicesData: Record<string, ServiceData> = {
       'Get clarity before making big decisions',
       'Understand all your options',
       'Personalized advice for your situation',
-      'Learn from someone who has helped 500+ expats',
+      'Benefit from years of on-the-ground Vietnam experience',
       'Ask anything about Vietnam business and immigration'
     ],
     faqs: [

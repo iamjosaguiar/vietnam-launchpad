@@ -125,7 +125,7 @@ export default async function HomePage() {
                   </svg>
                 ))}
               </div>
-              <span className="text-white/70 text-sm font-medium">Trusted by 500+ expats across Vietnam</span>
+              <span className="text-white/70 text-sm font-medium">Trusted by expats across Vietnam</span>
             </div>
           </div>
 
@@ -341,9 +341,9 @@ export default async function HomePage() {
               <div className="relative bg-gradient-to-br from-white/10 to-white/5 rounded-3xl p-10 md:p-14 backdrop-blur-sm border border-white/10">
                 <div className="text-center mb-10">
                   <div className="text-8xl md:text-9xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-400 mb-4">
-                    500+
+                    6+
                   </div>
-                  <div className="text-white/60 text-lg">Successful Applications</div>
+                  <div className="text-white/60 text-lg">Years in Vietnam</div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-6">
@@ -405,7 +405,7 @@ export default async function HomePage() {
                     </svg>
                   ))}
                 </div>
-                <span className="text-white/80 text-sm font-medium">Rated 5/5 by 500+ clients</span>
+                <span className="text-white/80 text-sm font-medium">Rated 5/5 by our clients</span>
               </div>
             </div>
 
@@ -448,8 +448,8 @@ export default async function HomePage() {
                   <div className="text-sm text-white/50">Success Rate</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-display font-bold text-white mb-1">500+</div>
-                  <div className="text-sm text-white/50">Happy Clients</div>
+                  <div className="text-3xl font-display font-bold text-white mb-1">2</div>
+                  <div className="text-sm text-white/50">Office Locations</div>
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-white mb-1">6+</div>

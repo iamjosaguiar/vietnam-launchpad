@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Vietnam Launchpad - Immigration & Business Services for Expats",
     "siteName": "Vietnam Launchpad",
-    "description": "Professional visa, work permit, and company registration services in Vietnam. 98% approval rate, 500+ successful applications. Expert guidance for expats.",
+    "description": "Professional visa, work permit, and company registration services in Vietnam. Expert guidance for expats on visas, work permits, and company setup.",
     "keywords": "vietnam visa, vietnam work permit, vietnam company registration, expat vietnam, vietnam TRC, vietnam immigration",
     "ogTitle": "Vietnam Launchpad - Your Gateway to Vietnam",
     "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with 98% approval rate.",
@@ -11,7 +11,7 @@
     "twitterDescription": "Professional visa, work permit, and company registration services in Vietnam",
     "home": {
       "title": "Vietnam Launchpad - Immigration & Business Services for Expats",
-      "description": "Professional visa, work permit, and company registration services in Vietnam. 98% approval rate, 500+ successful applications. Expert guidance for expats.",
+      "description": "Professional visa, work permit, and company registration services in Vietnam. Expert guidance for expats on visas, work permits, and company setup.",
       "keywords": "vietnam visa, vietnam work permit, vietnam company registration, expat vietnam, vietnam TRC, vietnam immigration",
       "ogTitle": "Vietnam Launchpad - Your Gateway to Vietnam",
       "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with 98% approval rate."
@@ -55,12 +55,12 @@
       "rankingLabel": "Lower cost vs. Singapore"
     },
     "trustSignals": {
-      "applications": "500+",
-      "applicationsLabel": "Successful Applications",
       "approvalRate": "98%",
       "approvalRateLabel": "Approval Rate",
-      "experience": "6 Years",
-      "experienceLabel": "Experience",
+      "experience": "6+ Years",
+      "experienceLabel": "Vietnam Experience",
+      "locations": "2",
+      "locationsLabel": "Office Locations",
       "responseTime": "24h",
       "responseTimeLabel": "Response Time"
     },
@@ -100,7 +100,7 @@
       },
       "success": {
         "title": "Proven Track Record",
-        "description": "98% approval rate with over 500 successful applications across all service categories"
+        "description": "98% approval rate across all service categories — TRC, work permits, and company registration"
       }
     },
     "testimonials": {

@@ -55,7 +55,7 @@ export default function AboutPage() {
             <svg className="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm text-white/70">Trusted by 500+ expats</span>
+            <span className="text-sm text-white/70">Trusted by expats across Vietnam</span>
           </div>
           <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl font-display font-bold mb-6 leading-tight">
             About Vietnam
@@ -90,7 +90,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-8">
                 {[
                   { value: '6+', label: 'Years in Vietnam' },
-                  { value: '500+', label: 'Clients Served' },
+                  { value: '6+', label: 'Years in Vietnam' },
                   { value: '98%', label: 'Success Rate' },
                   { value: '24h', label: 'Response Time' },
                 ].map((stat, index) => (

@@ -275,7 +275,7 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
               Ready to Get Started?
             </h2>
             <p className="text-xl text-white/70 mb-10">
-              Join 500+ satisfied clients who trusted us with their Vietnam journey
+              Trusted by expats across Vietnam for immigration and business services
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
