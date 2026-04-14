@@ -166,12 +166,12 @@ export default async function HomePage() {
             {/* Key Stats - Prominent */}
             <div className="hero-stats grid grid-cols-3 gap-8 max-w-3xl mx-auto">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">98%</div>
-                <div className="text-sm text-white/50 uppercase tracking-wider">Approval Rate</div>
+                <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">Free</div>
+                <div className="text-sm text-white/50 uppercase tracking-wider">Consultation</div>
               </div>
               <div className="text-center border-x border-white/10">
-                <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">6+</div>
-                <div className="text-sm text-white/50 uppercase tracking-wider">Years Experience</div>
+                <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">2</div>
+                <div className="text-sm text-white/50 uppercase tracking-wider">Office Locations</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">24h</div>
@@ -348,20 +348,20 @@ export default async function HomePage() {
 
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-white/5 rounded-2xl p-6 text-center">
-                    <div className="text-3xl font-display font-bold text-white mb-1">98%</div>
-                    <div className="text-sm text-white/50">Success Rate</div>
-                  </div>
-                  <div className="bg-white/5 rounded-2xl p-6 text-center">
-                    <div className="text-3xl font-display font-bold text-white mb-1">6+</div>
-                    <div className="text-sm text-white/50">Years Active</div>
-                  </div>
-                  <div className="bg-white/5 rounded-2xl p-6 text-center">
                     <div className="text-3xl font-display font-bold text-white mb-1">2</div>
                     <div className="text-sm text-white/50">Office Locations</div>
                   </div>
                   <div className="bg-white/5 rounded-2xl p-6 text-center">
-                    <div className="text-3xl font-display font-bold text-white mb-1">4</div>
-                    <div className="text-sm text-white/50">Languages</div>
+                    <div className="text-3xl font-display font-bold text-white mb-1">24h</div>
+                    <div className="text-sm text-white/50">Response Time</div>
+                  </div>
+                  <div className="bg-white/5 rounded-2xl p-6 text-center">
+                    <div className="text-3xl font-display font-bold text-white mb-1">Free</div>
+                    <div className="text-sm text-white/50">Consultation</div>
+                  </div>
+                  <div className="bg-white/5 rounded-2xl p-6 text-center">
+                    <div className="text-3xl font-display font-bold text-white mb-1">VN</div>
+                    <div className="text-sm text-white/50">Vietnam-Based</div>
                   </div>
                 </div>
               </div>
@@ -444,16 +444,16 @@ export default async function HomePage() {
             <div className="mt-16 pt-10 border-t border-white/10">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-display font-bold text-white mb-1">98%</div>
-                  <div className="text-sm text-white/50">Success Rate</div>
+                  <div className="text-3xl font-display font-bold text-white mb-1">Free</div>
+                  <div className="text-sm text-white/50">Consultation</div>
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-white mb-1">2</div>
                   <div className="text-sm text-white/50">Office Locations</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-display font-bold text-white mb-1">6+</div>
-                  <div className="text-sm text-white/50">Years Experience</div>
+                  <div className="text-3xl font-display font-bold text-white mb-1">15+</div>
+                  <div className="text-sm text-white/50">Services Offered</div>
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-white mb-1">24h</div>

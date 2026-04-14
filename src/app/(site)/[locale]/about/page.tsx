@@ -89,9 +89,9 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-2 gap-8">
                 {[
-                  { value: '6+', label: 'Years in Vietnam' },
-                  { value: '6+', label: 'Years in Vietnam' },
-                  { value: '98%', label: 'Success Rate' },
+                  { value: '2', label: 'Office Locations' },
+                  { value: 'Free', label: 'Consultation' },
+                  { value: '15+', label: 'Services' },
                   { value: '24h', label: 'Response Time' },
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 rounded-2xl bg-gray-50">

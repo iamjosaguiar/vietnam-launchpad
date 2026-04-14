@@ -5,7 +5,7 @@
     "description": "Professional visa, work permit, and company registration services in Vietnam. Expert guidance for expats on visas, work permits, and company setup.",
     "keywords": "vietnam visa, vietnam work permit, vietnam company registration, expat vietnam, vietnam TRC, vietnam immigration",
     "ogTitle": "Vietnam Launchpad - Your Gateway to Vietnam",
-    "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with 98% approval rate.",
+    "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with Vietnam-based team, free consultation.",
     "ogImageAlt": "Vietnam Launchpad - Professional Immigration Services",
     "twitterTitle": "Vietnam Launchpad - Immigration & Business Services",
     "twitterDescription": "Professional visa, work permit, and company registration services in Vietnam",
@@ -14,7 +14,7 @@
       "description": "Professional visa, work permit, and company registration services in Vietnam. Expert guidance for expats on visas, work permits, and company setup.",
       "keywords": "vietnam visa, vietnam work permit, vietnam company registration, expat vietnam, vietnam TRC, vietnam immigration",
       "ogTitle": "Vietnam Launchpad - Your Gateway to Vietnam",
-      "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with 98% approval rate."
+      "ogDescription": "Navigate Vietnam with confidence. Professional immigration and business services with Vietnam-based team, free consultation."
     },
     "services": {
       "title": "Our Services - Vietnam Launchpad",
@@ -23,7 +23,7 @@
     },
     "contact": {
       "title": "Contact Us - Vietnam Launchpad",
-      "description": "Get in touch with our immigration experts. 24-hour response time. Based in Ho Chi Minh City, Vietnam.",
+      "description": "Get in touch with our immigration and business consultants. Based in Hanoi and Da Nang, Vietnam.",
       "keywords": "contact vietnam immigration, vietnam visa consultant"
     }
   },
@@ -55,12 +55,12 @@
       "rankingLabel": "Lower cost vs. Singapore"
     },
     "trustSignals": {
-      "approvalRate": "98%",
-      "approvalRateLabel": "Approval Rate",
-      "experience": "6+ Years",
-      "experienceLabel": "Vietnam Experience",
+      "consultation": "Free",
+      "consultationLabel": "Consultation",
       "locations": "2",
       "locationsLabel": "Office Locations",
+      "services": "15+",
+      "servicesLabel": "Services",
       "responseTime": "24h",
       "responseTimeLabel": "Response Time"
     },
@@ -100,7 +100,7 @@
       },
       "success": {
         "title": "Proven Track Record",
-        "description": "98% approval rate across all service categories — TRC, work permits, and company registration"
+        "description": "Vietnam-based team with deep local knowledge across all service categories — TRC, work permits, and company registration"
       }
     },
     "testimonials": {

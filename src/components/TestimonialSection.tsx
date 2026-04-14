@@ -258,20 +258,20 @@ export default function TestimonialSection() {
         <div className="mt-16 pt-12 border-t border-gray-200">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">6+</div>
-              <div className="text-sm text-gray-500">Years Experience</div>
+              <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">Free</div>
+              <div className="text-sm text-gray-500">Consultation</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">5.0</div>
-              <div className="text-sm text-gray-500">Average Rating</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">98%</div>
-              <div className="text-sm text-gray-500">Success Rate</div>
+              <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">2</div>
+              <div className="text-sm text-gray-500">Office Locations</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">15+</div>
-              <div className="text-sm text-gray-500">Countries Served</div>
+              <div className="text-sm text-gray-500">Services</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-1">24h</div>
+              <div className="text-sm text-gray-500">Response Time</div>
             </div>
           </div>
         </div>

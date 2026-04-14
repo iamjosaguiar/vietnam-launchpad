@@ -419,12 +419,12 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-10 text-center">
             <div>
-              <div className="text-4xl font-display font-bold text-primary-400 mb-2">98%</div>
-              <div className="text-sm text-white/50 uppercase tracking-wider">Application Approval Rate</div>
+              <div className="text-4xl font-display font-bold text-primary-400 mb-2">Free</div>
+              <div className="text-sm text-white/50 uppercase tracking-wider">Initial Consultation</div>
             </div>
             <div className="border-x border-white/10">
-              <div className="text-4xl font-display font-bold text-primary-400 mb-2">6+</div>
-              <div className="text-sm text-white/50 uppercase tracking-wider">Years Advising Expats</div>
+              <div className="text-4xl font-display font-bold text-primary-400 mb-2">2</div>
+              <div className="text-sm text-white/50 uppercase tracking-wider">Office Locations</div>
             </div>
             <div>
               <div className="text-4xl font-display font-bold text-primary-400 mb-2">24h</div>
