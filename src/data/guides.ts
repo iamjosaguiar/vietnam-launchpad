@@ -133,7 +133,7 @@ The most common expat choice for daily transport:
 
 ### Owning a Car
 
-Vietnam's import taxes on cars are steep (often 50-80% on top of base price):
+Vietnam's total taxes on cars are steep — combined import duty, special consumption tax, VAT, and registration fees can add 50–100%+ on top of the base vehicle price, depending on engine size and country of origin:
 
 - Entry-level new car: $20,000-35,000
 - Parking in HCMC: $50-150/month
@@ -659,7 +659,7 @@ Most international insurance plans now include some mental health cover. Check t
 
 A real consideration, particularly for Hanoi:
 
-- Hanoi has recorded some of the worst urban air quality in Asia, especially October through January
+- Hanoi consistently ranks among the most polluted cities in Southeast Asia during winter months (October–January), according to IQAir's annual World Air Quality Reports
 - HCMC is significantly better but still elevated compared to Western cities
 - Air purifiers in apartments are widely recommended and available
 - This is an important factor for anyone with respiratory conditions, asthma, or young children
@@ -1291,7 +1291,7 @@ Vietnam's banking sector is rapidly digitizing. Cashless payment is increasingly
     slug: 'international-schools',
     title: 'International Schools in Vietnam 2026: The Complete Guide for Expat Families',
     subtitle: 'Costs, curricula, top schools in HCMC and Hanoi, application timelines, and how to choose',
-    excerpt: "Vietnam's international school sector has grown 40%+ since 2019. Fees range from $10,000 to $38,000 per year. This guide covers every option so you can plan your family's move accurately.",
+    excerpt: "Vietnam's international school sector has expanded significantly in recent years. Fees range from $10,000 to $38,000 per year. This guide covers every option so you can plan your family's move accurately.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
     lastUpdated: '2026-04-01',
@@ -1307,7 +1307,7 @@ Vietnam's banking sector is rapidly digitizing. Cashless payment is increasingly
 
 Vietnam offers three pathways for expat children: public schools (Vietnamese curriculum, free), private bilingual schools (mid-range fees, mixed curriculum), and international schools (full English-medium, internationally recognised curricula). Most expat families with children choose international schools for continuity, language, and university pathway considerations.
 
-Since 2019, the number of international schools in Vietnam has grown by over 40%, driven by both the growing expat population and affluent Vietnamese families seeking global education standards.
+The number of international schools in Vietnam has grown significantly over the past decade, driven by both the growing expat population and affluent Vietnamese families seeking global education standards.
 
 ---
 
@@ -1456,7 +1456,7 @@ Headline tuition fees are not the full picture:
 | School trips and activities | $500-2,000/year |
 | **True annual cost** | **$18,000-45,000+** |
 
-For a family with two school-age children at a top school in HCMC, school fees alone can reach $70,000-80,000 per year. This is typically the largest single item in an expat family budget.
+For a family with two school-age children at a top international school in HCMC, total annual school costs (fees plus extras) can exceed $40,000–90,000 depending on the schools chosen — typically the largest single item in an expat family budget.
 
 ---
 
@@ -2676,7 +2676,7 @@ HCMC's food scene is extraordinary - arguably the best street food city in South
 
 HCMC has one of Asia's most active and welcoming expat communities.
 
-**Online:** "Expats in Ho Chi Minh City" Facebook group (100,000+ members) is the primary hub. Buy/sell/rent, recommendations, events, questions all active daily.
+**Online:** "Expats in Ho Chi Minh City" Facebook group is the primary hub. Buy/sell/rent, recommendations, events, questions all active daily.
 
 **Professional:** InterNations HCMC holds regular events. AmCham (American Chamber of Commerce), BritCham, and EuroCham all host networking events.
 
@@ -2872,7 +2872,7 @@ The Old Quarter street food scene is extraordinary. Weekend nights on Ta Hien St
     slug: 'da-nang',
     title: "Da Nang Expat Guide 2026",
     subtitle: "Vietnam's rising third city - beaches, affordability, a growing nomad scene, and a more relaxed pace",
-    excerpt: "Da Nang is Vietnam's fastest-growing expat destination. Lower cost, beach access, improving infrastructure - with the honest trade-offs around healthcare, schools, and smaller social scene.",
+    excerpt: "Da Nang has become one of Vietnam's most popular expat destinations. Lower cost, beach access, improving infrastructure - with the honest trade-offs around healthcare, schools, and smaller social scene.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
     lastUpdated: '2026-04-01',
@@ -5881,7 +5881,7 @@ The city is defined by two elements:
 
 1. **Oil and gas:** Vung Tau is the base for Vietnam's offshore oil and gas industry. Vietsovpetro (the Vietnamese-Russian joint venture), PVEP, and multiple international energy companies operate here. This has historically made Vung Tau home to a significant community of Western oil and gas workers — Australian, British, American, and European engineers and contractors on rotation.
 
-2. **HCMC weekend destination:** Vung Tau is the most popular weekend beach escape for Ho Chi Minh City's 10 million residents. The Back Beach (Bai Sau) is the main recreation strip, busy with domestic visitors on weekends.
+2. **HCMC weekend destination:** Vung Tau is the most popular weekend beach escape for Ho Chi Minh City's 9 million+ residents. The Back Beach (Bai Sau) is the main recreation strip, busy with domestic visitors on weekends.
 
 For expats, Vung Tau offers something distinct: a genuine beach city with a long-established international community, reasonable infrastructure for its size, and proximity to HCMC without HCMC's intensity.
 

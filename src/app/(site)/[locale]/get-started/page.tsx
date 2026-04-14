@@ -501,8 +501,8 @@ export default function GetStartedPage() {
                       title: 'Legal Responsibility & Visa Requirements',
                       desc: 'This capital represents your liability if issues arise. For visa purposes:',
                       bullets: [
-                        'Under 3B VND (~$120K): Typically 6-12 month investment visas',
-                        '3B VND+ (~$120K+): Qualify for 3-4 year investment visas',
+                        'Under 3B VND (~$120K): DT4 visa — 1-year TRC',
+                        '3B VND+ (~$120K+): DT3 visa — 3-year TRC',
                         'Higher capital: Better for sponsoring multiple employees'
                       ]
                     }

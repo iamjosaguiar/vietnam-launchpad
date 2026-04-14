@@ -28,7 +28,7 @@ export const servicesData: Record<string, ServiceData> = {
     shortDescription: 'Get your Vietnam Temporary Residence Card through investment, work permit, or marriage. 2-3 weeks processing time.',
     timeline: '2-3 weeks',
     heroTitle: 'Get Your Vietnam TRC - Multiple Pathways Available',
-    heroDescription: 'Choose from Investment Visa (6 months - 4 years), Work Permit sponsorship (2 years), or Marriage to Vietnamese citizen (up to 3 years). We handle everything from document preparation to pickup.',
+    heroDescription: 'Choose from Investment Visa (DT4: 1-year TRC; DT3: 3-year TRC), Work Permit sponsorship (2 years), or Marriage to Vietnamese citizen (up to 3 years). We handle everything from document preparation to pickup.',
     process: [
       {
         step: 1,
@@ -83,15 +83,15 @@ export const servicesData: Record<string, ServiceData> = {
     faqs: [
       {
         question: 'What are my options for getting a TRC?',
-        answer: 'You have three main routes: (1) Investment Visa - invest in your own company. Under 3B VND (~$120K) gets 6-12 month visas, 3B VND+ gets 3-4 year visas. (2) Work Permit route - get work permit first (2 months, $650-$850), then TRC for 2 years ($350). (3) Marriage to Vietnamese citizen - up to 3 years validity. See our Marriage Registration service for details.'
+        answer: 'You have three main routes: (1) Investment Visa - invest in your own company. Under 3B VND (~$120K) qualifies for a DT4 visa (1-year TRC); 3B VND+ qualifies for a DT3 visa (3-year TRC). (2) Work Permit route - get work permit first (2 months, $650-$850), then TRC for 2 years ($350). (3) Marriage to Vietnamese citizen - up to 3 years validity. See our Marriage Registration service for details.'
       },
       {
         question: 'How long is the TRC valid for?',
-        answer: 'TRC validity depends on your route: Investment visas range from 6 months to 4 years based on investment amount. Work permit-based TRCs are typically valid for 2 years, matching your work permit duration.'
+        answer: 'TRC validity depends on your route: DT4 investment visa (under 3B VND) gives a 1-year TRC; DT3 investment visa (3B VND+) gives a 3-year TRC. Work permit-based TRCs are typically valid for 2 years, matching your work permit duration.'
       },
       {
-        question: 'What investment amount do I need for a 3-4 year visa?',
-        answer: 'To qualify for a 3-4 year investment visa, you need to invest at least 3 billion VND (~$120,000 USD) into your Vietnamese company. Investments below this amount typically receive 6-12 month visas.'
+        question: 'What investment amount do I need for a 3-year TRC?',
+        answer: 'To qualify for a DT3 investment visa (3-year TRC), you need to invest at least 3 billion VND (~$120,000 USD) into your Vietnamese company. Investments below this threshold qualify for a DT4 visa with a 1-year TRC.'
       },
       {
         question: 'Can I travel in and out of Vietnam with a TRC?',

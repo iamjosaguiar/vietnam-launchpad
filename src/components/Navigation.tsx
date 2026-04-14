@@ -5,7 +5,6 @@ import { usePathname } from '@/i18n/config';
 import { Link } from '@/i18n/config';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import LanguageSwitcher from './LanguageSwitcher';
 
 // ─── Mega menu data ───────────────────────────────────────────────────────────
 
@@ -401,10 +400,6 @@ export default function Navigation() {
               )}
             </Link>
 
-            <div className={`w-px h-6 mx-3 ${isScrolled ? 'bg-gray-200' : 'bg-white/20'}`} />
-
-            <LanguageSwitcher isScrolled={isScrolled} />
-
             <Link
               href="/contact"
               className="btn-primary ml-4 text-white px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap"
@@ -415,7 +410,6 @@ export default function Navigation() {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-3">
-            <LanguageSwitcher isScrolled={isScrolled} />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`relative w-10 h-10 flex items-center justify-center transition-colors ${

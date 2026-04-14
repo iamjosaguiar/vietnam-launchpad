@@ -49,10 +49,10 @@
     "stats": {
       "expats": "100,000+",
       "expatLabel": "Expats in Vietnam",
-      "growth": "7.1%",
-      "growthLabel": "GDP Growth 2024",
-      "ranking": "#1",
-      "rankingLabel": "Expat Affordability"
+      "growth": "7.09%",
+      "growthLabel": "GDP Growth 2024 (GSO)",
+      "ranking": "60-70%",
+      "rankingLabel": "Lower cost vs. Singapore"
     },
     "trustSignals": {
       "applications": "500+",
@@ -69,7 +69,7 @@
       "subtitle": "Expert guidance, guaranteed results",
       "trc": {
         "title": "TRC & Investment Visa",
-        "description": "Multiple visa options: 6 months to 4 years based on investment",
+        "description": "Multiple visa options: 1-year (DT4) or 3-year (DT3) TRC based on investment level",
         "duration": "2-3 weeks"
       },
       "workPermit": {
@@ -140,9 +140,9 @@
     "trc": {
       "title": "TRC & Investment Visa",
       "description": "Get your Temporary Residence Card with investment visa options. 2-3 weeks processing time.",
-      "longDescription": "Multiple visa routes available: Investment visa (6 months - 4 years based on capital) or Work Permit + TRC route (2 years). We handle all documentation, government submissions, and follow-ups to ensure a smooth approval process.",
+      "longDescription": "Multiple visa routes available: Investment visa (DT4: 1-year TRC; DT3: 3-year TRC based on capital) or Work Permit + TRC route (2 years). We handle all documentation, government submissions, and follow-ups to ensure a smooth approval process.",
       "features": [
-        "Investment visa: 6 months - 4 years",
+        "Investment visa: DT4 (1 year) or DT3 (3 years)",
         "Work permit + TRC: 2 years",
         "2-3 weeks processing",
         "Document preparation included",

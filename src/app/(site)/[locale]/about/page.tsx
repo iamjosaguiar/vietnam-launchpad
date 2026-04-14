@@ -107,9 +107,9 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-display font-bold text-gray-900 mb-6">Why Vietnam?</h3>
                 <div className="space-y-5">
                   {[
-                    { text: '#1 globally for expat affordability (5 consecutive years)', highlight: '#1 globally' },
-                    { text: '7.1% GDP growth in 2024, top 6 globally', highlight: '7.1% GDP growth' },
-                    { text: '100,000+ expats already call Vietnam home', highlight: '100,000+ expats' },
+                    { text: 'Cost of living 60–70% lower than Singapore, London, or Sydney', highlight: '60–70% lower' },
+                    { text: '7.09% GDP growth in 2024 (GSO), among the fastest-growing economies globally', highlight: '7.09% GDP growth' },
+                    { text: 'An estimated 100,000+ expats already call Vietnam home', highlight: '100,000+ expats' },
                     { text: 'Manufacturing hub attracting global companies', highlight: 'Manufacturing hub' },
                     { text: 'Digital nomad friendly with growing infrastructure', highlight: 'Digital nomad friendly' },
                   ].map((item, index) => (
