@@ -186,6 +186,108 @@ export default function Navigation() {
         isScrolled ? 'glass shadow-lg shadow-black/5 py-2' : 'bg-transparent py-4'
       }`}
     >
+      {/* Services mega panel — anchored to full nav width, not trigger button */}
+      {openMenu === 'services' && (
+        <div
+          className="absolute top-full left-0 right-0 pt-3 z-50"
+          onMouseEnter={() => openMega('services')}
+          onMouseLeave={closeMega}
+        >
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden max-w-[780px]">
+              <div className="grid grid-cols-3 gap-0 p-6">
+                {serviceGroups.map((group) => (
+                  <div key={group.title}>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 px-2">
+                      {group.title}
+                    </p>
+                    <ul className="space-y-0.5">
+                      {group.items.map((item) => (
+                        <li key={item.href}>
+                          <Link
+                            href={item.href}
+                            className="group flex flex-col px-2 py-2.5 rounded-xl hover:bg-primary-50 transition-colors"
+                          >
+                            <span className="text-sm font-semibold text-gray-800 group-hover:text-primary-700 transition-colors">
+                              {item.name}
+                            </span>
+                            <span className="text-xs text-gray-400 group-hover:text-primary-500 transition-colors leading-tight">
+                              {item.desc}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
+                <span className="text-xs text-gray-400">15 services available</span>
+                <Link
+                  href="/services"
+                  className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                >
+                  View all services
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Guides mega panel — anchored to full nav width, not trigger button */}
+      {openMenu === 'guides' && (
+        <div
+          className="absolute top-full left-0 right-0 pt-3 z-50"
+          onMouseEnter={() => openMega('guides')}
+          onMouseLeave={closeMega}
+        >
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden w-full max-w-[820px] ml-auto">
+              <div className="grid grid-cols-4 gap-0 p-6">
+                {guideCategories.map((cat) => (
+                  <div key={cat.category} className="min-w-0">
+                    <Link
+                      href={cat.href}
+                      className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 truncate block hover:underline ${cat.color}`}
+                    >
+                      {cat.category}
+                    </Link>
+                    <ul className="space-y-0.5">
+                      {cat.guides.map((guide) => (
+                        <li key={guide.href}>
+                          <Link
+                            href={guide.href}
+                            className="block px-2 py-1.5 text-xs text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors leading-tight"
+                          >
+                            {guide.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
+                <span className="text-xs text-gray-400">Guides, tools &amp; data across all topics</span>
+                <Link
+                  href="/guides"
+                  className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                >
+                  Browse all guides
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
 
@@ -243,55 +345,7 @@ export default function Navigation() {
                 )}
               </Link>
 
-              {/* Services mega panel */}
-              {openMenu === 'services' && (
-                <div
-                  className="absolute top-full left-1/2 -translate-x-1/2 mt-0 pt-3 w-[780px]"
-                  onMouseEnter={() => openMega('services')}
-                  onMouseLeave={closeMega}
-                >
-                  <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden">
-                    <div className="grid grid-cols-3 gap-0 p-6">
-                      {serviceGroups.map((group) => (
-                        <div key={group.title}>
-                          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 px-2">
-                            {group.title}
-                          </p>
-                          <ul className="space-y-0.5">
-                            {group.items.map((item) => (
-                              <li key={item.href}>
-                                <Link
-                                  href={item.href}
-                                  className="group flex flex-col px-2 py-2.5 rounded-xl hover:bg-primary-50 transition-colors"
-                                >
-                                  <span className="text-sm font-semibold text-gray-800 group-hover:text-primary-700 transition-colors">
-                                    {item.name}
-                                  </span>
-                                  <span className="text-xs text-gray-400 group-hover:text-primary-500 transition-colors leading-tight">
-                                    {item.desc}
-                                  </span>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
-                      <span className="text-xs text-gray-400">15 services available</span>
-                      <Link
-                        href="/services"
-                        className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
-                      >
-                        View all services
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              )}
+              {/* Services mega panel rendered at nav level above — see top of return */}
             </div>
 
             {/* Guides - mega menu trigger */}
@@ -318,53 +372,7 @@ export default function Navigation() {
                 )}
               </Link>
 
-              {/* Guides mega panel */}
-              {openMenu === 'guides' && (
-                <div
-                  className="absolute top-full right-0 mt-0 pt-3 w-[700px]"
-                  onMouseEnter={() => openMega('guides')}
-                  onMouseLeave={closeMega}
-                >
-                  <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden">
-                    <div className="grid grid-cols-4 gap-0 p-6">
-                      {guideCategories.map((cat) => (
-                        <div key={cat.category} className="min-w-0">
-                          <Link
-                            href={cat.href}
-                            className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 truncate block hover:underline ${cat.color}`}
-                          >
-                            {cat.category}
-                          </Link>
-                          <ul className="space-y-0.5">
-                            {cat.guides.map((guide) => (
-                              <li key={guide.href}>
-                                <Link
-                                  href={guide.href}
-                                  className="block px-2 py-1.5 text-xs text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors leading-tight"
-                                >
-                                  {guide.title}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
-                      <span className="text-xs text-gray-400">20 guides across 8 topics</span>
-                      <Link
-                        href="/guides"
-                        className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
-                      >
-                        Browse all guides
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              )}
+              {/* Guides mega panel rendered at nav level above — see top of return */}
             </div>
 
             {/* Blog */}
