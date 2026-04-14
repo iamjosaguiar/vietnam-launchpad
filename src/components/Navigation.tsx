@@ -238,7 +238,7 @@ export default function Navigation() {
         </div>
       )}
 
-      {/* Guides mega panel — anchored to full nav width, not trigger button */}
+      {/* Guides mega panel — full container width, anchored to nav */}
       {openMenu === 'guides' && (
         <div
           className="absolute top-full left-0 right-0 pt-3 z-50"
@@ -246,13 +246,13 @@ export default function Navigation() {
           onMouseLeave={closeMega}
         >
           <div className="container mx-auto px-4 md:px-8">
-            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden w-full max-w-[820px] ml-auto">
+            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden w-full">
               <div className="grid grid-cols-4 gap-0 p-6">
                 {guideCategories.map((cat) => (
                   <div key={cat.category} className="min-w-0">
                     <Link
                       href={cat.href}
-                      className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 truncate block hover:underline ${cat.color}`}
+                      className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 block hover:underline truncate ${cat.color}`}
                     >
                       {cat.category}
                     </Link>
@@ -261,7 +261,7 @@ export default function Navigation() {
                         <li key={guide.href}>
                           <Link
                             href={guide.href}
-                            className="block px-2 py-1.5 text-xs text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors leading-tight"
+                            className="block px-2 py-1 text-xs text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors leading-tight"
                           >
                             {guide.title}
                           </Link>
