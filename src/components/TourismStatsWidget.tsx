@@ -1,6 +1,11 @@
 import { getVietnamTourismTrend, TourismDataPoint } from '@/lib/open-data';
 
-// ─── Static origin-market data (VNAT 2024 estimates) ─────────────────────────
+// ─── Static origin-market data ───────────────────────────────────────────────
+// The 17.5M total arrivals figure is VNAT's published 2024 annual result.
+// Country-level breakdown figures are approximate, based on VNAT reported top
+// source markets for 2024. Individual country totals are rounded estimates
+// and should be treated as indicative order-of-magnitude figures only.
+// Source: Vietnam National Administration of Tourism (VNAT).
 
 const ORIGIN_MARKETS = [
   { country: 'South Korea', arrivals: 4.0 },
@@ -85,7 +90,7 @@ export default async function TourismStatsWidget({ compact = false }: TourismSta
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-semibold text-gray-900 text-sm">International Tourism</h3>
-          <span className="text-xs text-gray-400">VNAT 2024 estimates</span>
+          <span className="text-xs text-gray-400">VNAT 2024 data</span>
         </div>
 
         {/* Headline stat */}
@@ -124,7 +129,7 @@ export default async function TourismStatsWidget({ compact = false }: TourismSta
         </div>
 
         <p className="text-xs text-gray-400 mt-4">
-          Source: Vietnam National Administration of Tourism (VNAT), 2024 estimates
+          Total arrivals: Source: VNAT (published 2024 annual figure). Country breakdown: approximate figures based on VNAT reported top markets. Individual country totals are rounded estimates.
         </p>
       </div>
     );
@@ -229,7 +234,7 @@ export default async function TourismStatsWidget({ compact = false }: TourismSta
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-2">
-            Source: Vietnam National Administration of Tourism (VNAT), 2024 estimates
+            Source: Vietnam National Administration of Tourism (VNAT). Total 17.5M arrivals is VNAT&apos;s published 2024 annual figure. Country-level breakdown figures are approximate estimates based on VNAT reported top source markets — individual country totals are rounded and indicative.
           </p>
         </div>
 

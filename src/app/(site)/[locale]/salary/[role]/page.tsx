@@ -158,9 +158,30 @@ export default async function SalaryRolePage({
         <section className="py-16 bg-white border-b border-gray-100">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-display font-bold text-gray-900 mb-8">
+              <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">
                 Salary Ranges
               </h2>
+
+              {/* Disclaimer banner */}
+              <div className="flex items-start gap-3 rounded-xl bg-amber-50 border border-amber-200 px-5 py-4 mb-8">
+                <svg className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-sm text-amber-800 leading-relaxed">
+                  <strong>Indicative estimates only.</strong> These salary ranges are based on publicly
+                  available job postings and industry surveys. Individual salaries vary significantly
+                  based on experience, employer size, and negotiation. For authoritative Vietnam salary
+                  data, see the{' '}
+                  <a
+                    href="https://www.gso.gov.vn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline font-medium"
+                  >
+                    Vietnam General Statistics Office (gso.gov.vn)
+                  </a>.
+                </p>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Local rate card */}
@@ -176,13 +197,13 @@ export default async function SalaryRolePage({
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-xs text-gray-400 mb-1">Monthly Range (VND)</p>
+                    <p className="text-xs text-gray-400 mb-1">Estimated range (VND/month)</p>
                     <p className="text-3xl font-display font-bold text-gray-900">
                       {formatVndShort(salaryRole.localMonthlyVnd.min)}
                       <span className="text-gray-400 mx-2">–</span>
                       {formatVndShort(salaryRole.localMonthlyVnd.max)}
                     </p>
-                    <p className="text-sm text-gray-500 mt-1">₫ per month</p>
+                    <p className="text-sm text-gray-500 mt-1">₫ per month <span className="text-amber-600 font-medium">(indicative)</span></p>
                   </div>
 
                   <div className="pt-4 border-t border-gray-200">
@@ -205,13 +226,13 @@ export default async function SalaryRolePage({
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-xs text-primary-500 mb-1">Monthly Range (USD)</p>
+                    <p className="text-xs text-primary-500 mb-1">Estimated range (USD/month)</p>
                     <p className="text-3xl font-display font-bold text-primary-900">
                       ${salaryRole.expatMonthlyUsd.min.toLocaleString()}
                       <span className="text-primary-400 mx-2">–</span>
                       ${salaryRole.expatMonthlyUsd.max.toLocaleString()}
                     </p>
-                    <p className="text-sm text-primary-600 mt-1">USD per month</p>
+                    <p className="text-sm text-primary-600 mt-1">USD per month <span className="text-amber-600 font-medium">(indicative)</span></p>
                   </div>
 
                   <div className="pt-4 border-t border-primary-200">
@@ -224,7 +245,7 @@ export default async function SalaryRolePage({
               </div>
 
               <p className="text-xs text-gray-400 mt-4 text-center">
-                Salary data for 2024–2026 Vietnam market. Ranges vary by experience, company size, and location.
+                Indicative market estimates for 2024–2026 based on publicly available job postings and industry surveys. Ranges vary by experience, company size, and location. Not a substitute for direct employer negotiation or official labour market statistics.
               </p>
             </div>
           </div>

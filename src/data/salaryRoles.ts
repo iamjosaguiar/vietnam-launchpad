@@ -1,3 +1,19 @@
+/**
+ * SALARY DATA DISCLAIMER
+ * ---------------------
+ * All salary ranges in this file are indicative market estimates based on
+ * publicly available job postings and industry surveys (LinkedIn, VietnamWorks,
+ * ITviec, TopDev, and general recruiter benchmarks). They are NOT derived from
+ * a single authoritative statistical source.
+ *
+ * Individual salaries vary significantly based on experience, employer size,
+ * industry sector, negotiation, and benefits package.
+ *
+ * For authoritative Vietnam salary and labour market data, see:
+ *   - Vietnam General Statistics Office: gso.gov.vn
+ *   - Ministry of Labour, Invalids and Social Affairs (MOLISA): molisa.gov.vn
+ */
+
 export interface SalaryRole {
   slug: string;
   title: string;           // "Software Engineer"
@@ -10,6 +26,7 @@ export interface SalaryRole {
   workPermitNote: string;    // brief note on work permit requirements for this role
   description: string;       // 2-3 sentences about this role in Vietnam's job market
   faqs: { q: string; a: string }[];  // 4 FAQs
+  disclaimerNote?: string;   // optional per-role disclaimer for unusual data points
 }
 
 export const SALARY_ROLES: SalaryRole[] = [

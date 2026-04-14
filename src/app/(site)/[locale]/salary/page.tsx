@@ -199,10 +199,17 @@ export default function SalaryListPage() {
         <section className="py-8 bg-gray-50 border-t border-gray-100">
           <div className="container mx-auto px-4 md:px-8">
             <p className="text-xs text-gray-400 max-w-3xl mx-auto text-center">
-              Salary data is based on Vietnam market research for 2024–2026. Ranges represent typical
-              compensation; actual salaries vary by company size, location, language skills, and negotiation.
-              Local VND rates reflect Vietnamese national employees; expat USD packages reflect foreigners
-              hired on international contracts. Always negotiate based on your specific experience and market conditions.
+              <strong>Indicative estimates only.</strong> All salary ranges are based on publicly available
+              job postings and industry surveys for 2024–2026 and are not derived from a single authoritative
+              statistical source. Individual salaries vary significantly by company size, location, language
+              skills, experience, and negotiation. For authoritative Vietnam labour market data, see the{' '}
+              <a href="https://www.gso.gov.vn" target="_blank" rel="noopener noreferrer" className="underline">
+                Vietnam General Statistics Office (gso.gov.vn)
+              </a>{' '}
+              or{' '}
+              <a href="https://www.molisa.gov.vn" target="_blank" rel="noopener noreferrer" className="underline">
+                MOLISA (molisa.gov.vn)
+              </a>.
             </p>
           </div>
         </section>

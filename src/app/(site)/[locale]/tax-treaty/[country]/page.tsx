@@ -209,6 +209,20 @@ export default async function TaxTreatyCountryPage({
         <section className="py-16 bg-white border-b border-gray-100">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-4xl mx-auto">
+
+              {/* Tax treaty disclaimer */}
+              <div className="flex items-start gap-3 rounded-xl bg-amber-50 border border-amber-200 px-5 py-4 mb-10">
+                <svg className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-sm text-amber-800 leading-relaxed">
+                  <strong>Important notice.</strong> Treaty rates shown are standard rates from published treaty texts.
+                  Reduced rates may apply subject to beneficial ownership requirements and other conditions specified
+                  in each treaty article. Tax treaty application is technically complex and fact-specific.
+                  Consult a qualified tax advisor for your specific situation before relying on these rates.
+                </p>
+              </div>
+
               {treaty.inForce ? (
                 <>
                   <h2 className="text-2xl font-display font-bold text-gray-900 mb-8">

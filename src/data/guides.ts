@@ -165,6 +165,8 @@ Health insurance is strongly recommended. Regional plans run $600-1,200/year; in
 | Mobile data (unlimited 4G) | $5-15 |
 | Streaming services | $5-15 |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 > Electricity is the big variable. Running AC around the clock in HCMC's heat can push bills to $120-150+ for a one-bedroom. Most expats learn to manage this quickly.
 
 ---
@@ -1616,6 +1618,8 @@ Vietnam is one of the most affordable retirement destinations in Asia. What a co
 | Miscellaneous | $100-200 |
 | **Total** | **$1,830-3,070/month** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 **A comfortable single-person retirement in Vietnam costs approximately $1,500-2,500/month** - significantly less than in Western countries, Thailand, or Singapore.
 
 For couples, the cost does not double - shared accommodation and many shared costs mean roughly $2,500-4,000/month for two.
@@ -2603,6 +2607,8 @@ Very popular with Korean and Japanese expats. SSIS international school is here.
 | Gym + social activities | $150-300 |
 | **Comfortable single expat total** | **~$1,600-2,500/mo** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 For a full breakdown across lifestyle levels, see our [Cost of Living Guide](/guides/cost-of-living).
 
 ---
@@ -2797,6 +2803,8 @@ Hanoi has four genuine seasons - this is both an attraction and a drawback:
 | Social and entertainment | $150-300 |
 | **Comfortable single expat total** | **~$1,400-2,250/mo** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 Hanoi is slightly cheaper than HCMC across most categories. The main exception is that premium expat neighborhoods (Tay Ho) are priced similarly to Thao Dien in HCMC.
 
 ---
@@ -2965,6 +2973,8 @@ Da Nang is Vietnam's most affordable major expat city:
 | Healthcare insurance (basic) | $60-120 |
 | Social and entertainment | $100-200 |
 | **Comfortable single expat total** | **~$800-1,600/mo** |
+
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
 
 This is genuinely significantly cheaper than HCMC. A digital nomad or retiree can live very comfortably in Da Nang for $1,200-1,500/month, versus $2,000+ in HCMC.
 
@@ -5205,6 +5215,8 @@ Hoi An is the most affordable major expat destination in Vietnam:
 | Social and entertainment | $80–150 |
 | **Comfortable single expat total** | **~$600–1,200/mo** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 A careful but comfortable life in Hoi An is achievable for under $1,000/month for a single person — genuinely lower than Da Nang or HCMC.
 
 ---
@@ -5370,6 +5382,8 @@ Nha Trang is notably cheaper than HCMC and broadly comparable to, or slightly ch
 | Healthcare insurance (basic) | $50–100 |
 | Social and entertainment | $100–200 |
 | **Comfortable single expat total** | **~$800–1,400/mo** |
+
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
 
 Beach-adjacent apartments command a premium. Moving 500m–1km from the beach drops rent noticeably.
 
@@ -5556,6 +5570,8 @@ Island living in Vietnam means a premium on imported goods:
 | Groceries (imported goods more expensive) | Premium vs. mainland |
 | **Comfortable single expat total** | **~$900–1,600/mo** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 The island premium is real — many goods are transported from the mainland and carry a price markup. Local Vietnamese food and produce remain affordable.
 
 ---
@@ -5735,6 +5751,8 @@ Da Lat is one of Vietnam's cheapest cities for expats:
 | Social and entertainment | $60–120 |
 | **Comfortable single expat total** | **~$600–1,100/mo** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 Da Lat is a significant step cheaper than HCMC, Hanoi, or Da Nang. Many nomads successfully manage a comfortable lifestyle here for under $1,000/month.
 
 ---
@@ -5911,6 +5929,8 @@ Vung Tau is cheaper than HCMC but slightly more expensive than other beach citie
 | Social and entertainment | $100–200 |
 | **Comfortable single expat total** | **~$900–1,700/mo** |
 
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
+
 Oil and gas workers on company packages typically have housing and transport provided — individual costs for this group are lower in practice.
 
 ---
@@ -6084,6 +6104,8 @@ Hue is one of the cheapest cities in Vietnam:
 | Healthcare insurance | $50–100 |
 | Social and entertainment | $60–120 |
 | **Comfortable single expat total** | **~$550–1,000/mo** |
+
+*Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
 
 Hue is genuinely cheaper than Da Nang, Nha Trang, or HCMC. For expats on fixed incomes (teachers, retirees) or those prioritizing cost minimization, Hue is hard to beat.
 

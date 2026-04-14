@@ -16,7 +16,7 @@ const KEY_SECTORS = [
     color: 'bg-blue-50 border-blue-100 text-blue-700',
     badge: 'Largest FDI attractor',
     badgeColor: 'bg-blue-100 text-blue-700',
-    desc: 'Samsung, Intel, LG assembly operations. Accounts for approximately 30% of Vietnam\'s total exports. Anchor of the manufacturing boom.',
+    desc: 'Samsung, Intel, LG assembly operations. Accounts for approximately 30% of Vietnam\'s total exports (Source: GSO). Anchor of the manufacturing boom.',
   },
   {
     name: 'Technology & Software',
@@ -31,7 +31,7 @@ const KEY_SECTORS = [
     color: 'bg-indigo-50 border-indigo-100 text-indigo-700',
     badge: 'Fastest growing by headcount',
     badgeColor: 'bg-indigo-100 text-indigo-700',
-    desc: '500,000+ IT workers. Vietnam is a leading offshore software development hub for Japanese, Korean, and Western tech firms.',
+    desc: '500,000+ IT workers (Source: VINASA). Vietnam is a leading offshore software development hub for Japanese, Korean, and Western tech firms.',
   },
   {
     name: 'Renewable Energy',
@@ -46,7 +46,7 @@ const KEY_SECTORS = [
     color: 'bg-emerald-50 border-emerald-100 text-emerald-700',
     badge: 'Government priority',
     badgeColor: 'bg-emerald-100 text-emerald-700',
-    desc: 'Aggressive solar and wind capacity additions. Government target: 47% renewables by 2030. Strong FDI pipeline in utility-scale projects.',
+    desc: 'Aggressive solar and wind capacity additions. Government target: 47% renewables by 2030 (Source: Power Development Plan 8 / PDP8). Strong FDI pipeline in utility-scale projects.',
   },
   {
     name: 'Tourism & Hospitality',
@@ -61,7 +61,7 @@ const KEY_SECTORS = [
     color: 'bg-amber-50 border-amber-100 text-amber-700',
     badge: 'Recovery complete',
     badgeColor: 'bg-amber-100 text-amber-700',
-    desc: '17.5M international arrivals in 2024, growing toward the pre-COVID 18M peak of 2019. Hospitality investment accelerating.',
+    desc: '17.5M international arrivals in 2024 (Source: VNAT), growing toward the pre-COVID 18M peak of 2019. Hospitality investment accelerating.',
   },
   {
     name: 'Real Estate & Construction',
@@ -224,7 +224,7 @@ export default async function GrowingSectorsWidget() {
             ))}
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            FDI and sector growth data, 2024. Sources: Ministry of Planning and Investment (MPI), General Statistics Office of Vietnam (GSO).
+            Sector data, 2024. Sources: MPI, GSO, VNAT, VINASA, Power Development Plan 8 (PDP8). Individual statistics cited inline. Some figures are approximate or widely-reported estimates.
           </p>
         </div>
 
