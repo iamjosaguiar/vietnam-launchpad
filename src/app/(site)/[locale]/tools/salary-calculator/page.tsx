@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from '@/i18n/config';
 
-// Vietnam PIT brackets (monthly VND, resident) — 5-bracket system per PIT Law 109/2025/QH15
+// Vietnam PIT brackets (monthly VND, resident) - 5-bracket system per PIT Law 109/2025/QH15
 // New brackets apply from 1 January 2026 (employer provisional withholding); full legal effect 1 July 2026
 const PIT_BRACKETS = [
   { limit: 10_000_000, rate: 0.05 },
@@ -19,8 +19,8 @@ const BASIC_SALARY = 2_340_000; // VND/month (July 2024 onwards)
 const SI_CAP = 20 * BASIC_SALARY; // 46,800,000 VND - SI/HI cap
 const REGIONAL_MIN_WAGE = 4_960_000; // Zone 1 minimum wage
 const UI_CAP = 20 * REGIONAL_MIN_WAGE; // 99,200,000 VND - UI cap
-const PERSONAL_DEDUCTION = 15_500_000; // VND/month — updated per PIT Law 109/2025, effective 1 Jan 2026
-const DEPENDENT_DEDUCTION = 6_200_000; // VND/month per dependent — updated per PIT Law 109/2025
+const PERSONAL_DEDUCTION = 15_500_000; // VND/month - updated per PIT Law 109/2025, effective 1 Jan 2026
+const DEPENDENT_DEDUCTION = 6_200_000; // VND/month per dependent - updated per PIT Law 109/2025
 const USD_TO_VND = 25_450; // approximate - user can see this note
 
 function calcPIT(taxable: number): { total: number; breakdown: { rate: number; base: number; tax: number }[] } {

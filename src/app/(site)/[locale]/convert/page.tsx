@@ -105,7 +105,7 @@ export default async function ConvertIndexPage() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                 </span>
-                <span className="text-sm text-emerald-400 font-medium">Live data — refreshes every 6 hours</span>
+                <span className="text-sm text-emerald-400 font-medium">Live data - refreshes every 6 hours</span>
               </div>
 
               <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
@@ -195,7 +195,7 @@ export default async function ConvertIndexPage() {
                             <div className="text-xs text-gray-400">per 1 {pair.from}</div>
                           </>
                         ) : (
-                          <div className="text-sm text-gray-400">—</div>
+                          <div className="text-sm text-gray-400">-</div>
                         )}
                         <div className="mt-1 text-xs text-primary-600 group-hover:text-primary-700 font-medium">
                           View →
@@ -232,7 +232,7 @@ export default async function ConvertIndexPage() {
                 </p>
                 <p>
                   For regular transfers, Wise and Revolut consistently offer near mid-market rates with
-                  low fees — significantly better than traditional bank wire rates. For large one-off
+                  low fees - significantly better than traditional bank wire rates. For large one-off
                   conversions, licensed money changers in major cities sometimes offer competitive rates
                   for substantial sums.
                 </p>
@@ -286,7 +286,7 @@ export default async function ConvertIndexPage() {
                 Planning Your Move to Vietnam?
               </h2>
               <p className="text-lg text-white/70 mb-8">
-                Our consultants handle visas, work permits, company setup, and banking — so your move goes smoothly.
+                Our consultants handle visas, work permits, company setup, and banking - so your move goes smoothly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

@@ -175,7 +175,7 @@ const MONTHS = [
       {
         deadline: '31 Mar',
         title: 'Audited Financial Statements (FDI companies)',
-        detail: 'Foreign-invested companies must submit audited financial statements within 90 days of fiscal year end. For a 31 Dec fiscal year end, the statutory deadline is 31 March. This obligation is listed in April as a reminder to confirm submission — if you missed the March deadline, act immediately.',
+        detail: 'Foreign-invested companies must submit audited financial statements within 90 days of fiscal year end. For a 31 Dec fiscal year end, the statutory deadline is 31 March. This obligation is listed in April as a reminder to confirm submission - if you missed the March deadline, act immediately.',
         freq: 'annual',
         tags: ['company'],
       },

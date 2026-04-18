@@ -1,5 +1,3 @@
-'use client';
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
@@ -11,15 +9,7 @@ const aboutSchema = [
     '@type': 'AboutPage',
     name: 'About Vietnam Launchpad',
     url: 'https://www.vietnamlaunchpad.com/about',
-    description:
-      'Vietnam Launchpad is a professional consulting firm helping expats navigate immigration, business setup, and residency in Vietnam.',
-    breadcrumb: {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vietnamlaunchpad.com' },
-        { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.vietnamlaunchpad.com/about' },
-      ],
-    },
+    description: "Vietnam Launchpad is Vietnam's premier market-entry and compliance firm for founders, investors, and executives.",
   },
   {
     '@context': 'https://schema.org',
@@ -29,7 +19,6 @@ const aboutSchema = [
     logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
     telephone: '+84765805294',
     email: 'info@vietnamlaunchpad.com',
-    description: 'Professional immigration and business consulting services for expats relocating to Vietnam.',
     address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },
   },
 ];
@@ -37,159 +26,178 @@ const aboutSchema = [
 export default function AboutPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
-      />
-    <main className="min-h-screen">
-      <Navigation />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
+      <main className="min-h-screen bg-ivory">
+        <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white py-32 overflow-hidden">
-        {/* Background elements */}
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-500/5 rounded-full blur-[100px]" />
+        {/* Hero */}
+        <section className="relative bg-gradient-to-br from-stone-950 via-primary-950 to-stone-950 text-white py-36 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-primary-500/8 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent-400/5 rounded-full blur-[100px]" />
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
-          <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8">
-            <svg className="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm text-white/70">Trusted by expats across Vietnam</span>
-          </div>
-          <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl font-display font-bold mb-6 leading-tight">
-            About Vietnam
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 via-primary-400 to-accent-400">
-              Launchpad
+          <div className="container mx-auto px-4 md:px-8 relative z-10 max-w-4xl">
+            <span className="hero-badge inline-block text-accent-400 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-6">
+              About Vietnam Launchpad
             </span>
-          </h1>
-          <p className="hero-subtitle text-xl md:text-2xl text-white/60 max-w-3xl mx-auto">
-            Your trusted partner for navigating Vietnam&apos;s immigration and business landscape
-          </p>
-        </div>
-      </section>
+            <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl font-display font-bold mb-8 leading-tight">
+              Vietnam specialists,
+              <span className="italic block text-primary-300">not generalists</span>
+            </h1>
+            <p className="hero-subtitle text-lg md:text-xl text-white/65 max-w-2xl font-body leading-relaxed">
+              We built Vietnam Launchpad after watching too many founders and investors lose time, money, and deals to avoidable administrative failure. Vietnam is not difficult - but it is specific. Knowing the difference is what we do.
+            </p>
+          </div>
+        </section>
 
-      {/* Mission & Story */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <AnimateOnScroll animation="fade-right">
-              <span className="inline-block text-primary-600 font-semibold text-sm uppercase tracking-wider mb-4">Our Mission</span>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8 leading-tight">
-                Making Vietnam Accessible to Everyone
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                We exist to make Vietnam accessible to everyone. As experienced expats ourselves, we understand
-                the challenges of navigating complex bureaucracy, language barriers, and cultural differences.
-              </p>
-              <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-                Our mission is to provide transparent, professional services that eliminate the stress and
-                uncertainty from your Vietnam journey. No hidden fees, no surprises - just clear guidance
-                and guaranteed results.
-              </p>
-              <div className="grid grid-cols-2 gap-8">
-                {[
-                  { value: '2', label: 'Office Locations' },
-                  { value: 'Free', label: 'Consultation' },
-                  { value: '15+', label: 'Services' },
-                  { value: '24h', label: 'Response Time' },
-                ].map((stat, index) => (
-                  <div key={index} className="text-center p-4 rounded-2xl bg-gray-50">
-                    <div className="text-3xl md:text-4xl font-display font-bold text-primary-600 mb-1">{stat.value}</div>
-                    <div className="text-sm text-gray-500">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </AnimateOnScroll>
+        {/* Our Story */}
+        <section className="py-24 md:py-36 bg-white">
+          <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+              <AnimateOnScroll animation="fade-right">
+                <span className="inline-block text-primary-600 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-5">
+                  Our Story
+                </span>
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-8 leading-tight">
+                  Six years building the firm we wished existed
+                </h2>
+                <div className="space-y-5 text-stone-500 leading-relaxed">
+                  <p>
+                    Vietnam Launchpad was founded by professionals who had lived the frustration of Vietnam's bureaucracy firsthand - as founders, employees, and investors themselves. We saw how much time serious people were wasting on process that should be invisible.
+                  </p>
+                  <p>
+                    We started by solving immigration for individuals. Work permits, TRCs, visas. But our clients kept asking us to do more - set up their company, handle their accounting, bring their team over. So we built the infrastructure to do all of it.
+                  </p>
+                  <p>
+                    Today, Vietnam Launchpad operates from offices in Hanoi and Da Nang, with a team that speaks English, Vietnamese, Korean, and Chinese. Our clients range from individual expats to multinational corporations entering Vietnam for the first time.
+                  </p>
+                  <p>
+                    The throughline: we handle the process so you can focus on the reason you came here.
+                  </p>
+                </div>
+              </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-left" delay={200}>
-              <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-10 shadow-xl shadow-gray-200/50 border border-gray-100">
-                <h3 className="text-2xl font-display font-bold text-gray-900 mb-6">Why Vietnam?</h3>
-                <div className="space-y-5">
+              <AnimateOnScroll animation="fade-left" delay={150}>
+                <div className="grid grid-cols-2 gap-4">
                   {[
-                    { text: 'Cost of living 60–70% lower than Singapore, London, or Sydney', highlight: '60–70% lower' },
-                    { text: '7.09% GDP growth in 2024 (GSO), among the fastest-growing economies globally', highlight: '7.09% GDP growth' },
-                    { text: 'An estimated 100,000+ expats already call Vietnam home', highlight: '100,000+ expats' },
-                    { text: 'Manufacturing hub attracting global companies', highlight: 'Manufacturing hub' },
-                    { text: 'Digital nomad friendly with growing infrastructure', highlight: 'Digital nomad friendly' },
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary-100 flex items-center justify-center mt-0.5">
-                        <svg className="w-4 h-4 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-600">{item.text}</span>
+                    { value: '6+', label: 'Years in Vietnam', desc: 'Operating since 2018' },
+                    { value: '2', label: 'Office Locations', desc: 'Hanoi and Da Nang' },
+                    { value: '15+', label: 'Services', desc: 'End-to-end coverage' },
+                    { value: '4', label: 'Languages', desc: 'EN, VI, KO, ZH' },
+                  ].map((s) => (
+                    <div key={s.label} className="bg-stone-50 rounded-2xl p-6 border border-stone-100">
+                      <div className="text-4xl font-display font-bold text-primary-600 mb-1">{s.value}</div>
+                      <div className="font-semibold text-stone-800 text-sm mb-1">{s.label}</div>
+                      <div className="text-stone-400 text-xs">{s.desc}</div>
                     </div>
                   ))}
                 </div>
-              </div>
-            </AnimateOnScroll>
+              </AnimateOnScroll>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Values */}
-      <section className="py-24 md:py-32 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-8">
-          <AnimateOnScroll className="text-center mb-16">
-            <span className="inline-block text-primary-600 font-semibold text-sm uppercase tracking-wider mb-4">Our Values</span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">What Drives Us Every Day</h2>
-            <p className="text-xl text-gray-500 max-w-2xl mx-auto">The principles that guide everything we do</p>
-          </AnimateOnScroll>
+        {/* Our Approach */}
+        <section className="py-24 md:py-36 bg-ivory">
+          <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+            <AnimateOnScroll className="text-center max-w-2xl mx-auto mb-16">
+              <span className="inline-block text-primary-600 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-5">
+                Our Methodology
+              </span>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">
+                The Vietnam Readiness Framework
+              </h2>
+              <p className="text-stone-500 leading-relaxed">
+                Every engagement follows a structured methodology refined over 6 years. Nothing is improvised.
+              </p>
+            </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: '🔍', title: 'Transparency', desc: 'Clear communication, honest timelines, no hidden surprises.' },
-              { icon: '🎯', title: 'Results', desc: 'We deliver what we promise, when we promise it.' },
-              { icon: '🤝', title: 'Partnership', desc: "We're your long-term partners, not just service providers." },
-              { icon: '🚀', title: 'Innovation', desc: 'Always improving our processes for better client experience.' },
-            ].map((value, index) => (
-              <AnimateOnScroll key={index} delay={index * 100}>
-                <div className="bg-white rounded-2xl p-8 text-center shadow-lg shadow-gray-200/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
-                  <div className="text-5xl mb-6">{value.icon}</div>
-                  <h3 className="text-xl font-display font-bold text-gray-900 mb-3">{value.title}</h3>
-                  <p className="text-gray-500">{value.desc}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { number: '01', title: 'Assess', desc: 'We map your exact situation - nationality, investment, timeline, team size - and identify every requirement before we start.', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' },
+                { number: '02', title: 'Structure', desc: "We design the optimal legal and tax structure for your situation - not a template, but something built around your goals.", icon: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z' },
+                { number: '03', title: 'Execute', desc: "We handle every government submission, follow up on every approval, and escalate every exception - you're never chasing paperwork.", icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4' },
+                { number: '04', title: 'Maintain', desc: "Operational means nothing if compliance lapses. We proactively manage renewals, filings, and reporting so nothing falls through.", icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' },
+              ].map((step, i) => (
+                <AnimateOnScroll key={step.number} delay={i * 100}>
+                  <div className="bg-white rounded-3xl p-8 border border-stone-100 h-full hover:shadow-elevation-2 transition-all duration-400">
+                    <div className="text-5xl font-display font-bold text-stone-100 mb-6">{step.number}</div>
+                    <div className="w-10 h-10 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-5">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d={step.icon} />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-display font-bold text-stone-900 mb-3">{step.title}</h3>
+                    <p className="text-stone-500 text-sm leading-relaxed">{step.desc}</p>
+                  </div>
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Values + Offices */}
+        <section className="py-24 md:py-36 bg-primary-950 text-white overflow-hidden relative">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-500/6 rounded-full blur-[100px]" />
+
+          <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <AnimateOnScroll animation="fade-right">
+                <span className="inline-block text-accent-400 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-6">
+                  Our Values
+                </span>
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
+                  What makes us different
+                </h2>
+                <div className="space-y-8">
+                  {[
+                    { title: 'Depth over breadth', desc: 'We only operate in Vietnam. Not "Southeast Asia." Not "emerging markets." Vietnam. This specificity is what allows us to be genuinely excellent.' },
+                    { title: 'One accountable person', desc: 'Every engagement has a named senior consultant who owns it. Not a ticket queue. Not a shared inbox. One person responsible for your outcome.' },
+                    { title: 'No surprises', desc: "We quote fixed fees. We tell you what will happen before it happens. We tell you when something unexpected arises - before it becomes a problem." },
+                    { title: 'Results, not activity', desc: "Our standard isn't effort - it's outcome. We're not done until your application is approved, your entity is operational, your team is authorized." },
+                  ].map((v) => (
+                    <div key={v.title} className="flex gap-5">
+                      <div className="flex-shrink-0 w-2 h-2 rounded-full bg-accent-400 mt-2.5" />
+                      <div>
+                        <h3 className="text-white/90 font-semibold mb-2">{v.title}</h3>
+                        <p className="text-white/60 text-sm leading-relaxed">{v.desc}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </AnimateOnScroll>
-            ))}
+
+              <AnimateOnScroll animation="fade-left" delay={150}>
+                <div className="bg-white/4 border border-white/8 rounded-3xl p-10">
+                  <h3 className="text-2xl font-display font-bold text-white mb-8">Our offices</h3>
+                  <div className="space-y-8 mb-10">
+                    {[
+                      { city: 'Hanoi', address: '5th Floor, No.7, Alley 3, Lieu Giai Street, Ba Dinh District', role: 'Main office - corporate, immigration, compliance' },
+                      { city: 'Da Nang', address: '16 Tran Phu Street, Hai Chau Ward', role: 'Central Vietnam hub - residency, relocation' },
+                    ].map((office) => (
+                      <div key={office.city} className="border-b border-white/6 pb-8 last:border-0 last:pb-0">
+                        <div className="text-accent-400 font-semibold text-sm mb-2 font-body">{office.city}</div>
+                        <div className="text-white/70 text-sm mb-1 leading-relaxed">{office.address}</div>
+                        <div className="text-white/50 text-xs">{office.role}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <Link
+                    href="/contact"
+                    className="group inline-flex items-center gap-3 px-8 py-4 bg-accent-400 text-stone-950 rounded-full text-sm font-semibold hover:bg-accent-300 transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    Request a consultation
+                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </AnimateOnScroll>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA */}
-      <section className="py-24 md:py-32 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />
-
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <AnimateOnScroll animation="scale" className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-              Ready to Start Your Vietnam Journey?
-            </h2>
-            <p className="text-xl text-white/70 mb-10">
-              Join hundreds of successful expats who trusted us with their Vietnam relocation
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-3 bg-white text-primary-700 px-10 py-5 rounded-full text-lg font-bold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300"
-            >
-              Get Free Consultation
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      <Footer />
-    </main>
+        <Footer />
+      </main>
     </>
   );
 }

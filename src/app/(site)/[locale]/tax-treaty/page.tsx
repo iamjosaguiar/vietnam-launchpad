@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 function formatRate(rate: number | null): string {
-  if (rate === null) return '—';
+  if (rate === null) return '-';
   return `${rate}%`;
 }
 
@@ -73,7 +73,7 @@ export default function TaxTreatyListPage() {
 
             <p className="text-xl md:text-2xl text-white/60 max-w-3xl mx-auto mb-12">
               Vietnam has tax treaties with 80+ countries. Find withholding tax rates on dividends,
-              interest, and royalties — and what each treaty means for expats and investors.
+              interest, and royalties - and what each treaty means for expats and investors.
             </p>
 
             <div className="flex flex-wrap justify-center gap-8">
@@ -167,7 +167,7 @@ export default function TaxTreatyListPage() {
                         {formatRate(treaty.royaltiesRate)}
                       </td>
                       <td className="px-6 py-4 text-center text-gray-500">
-                        {treaty.inForceYear ?? '—'}
+                        {treaty.inForceYear ?? '-'}
                       </td>
                     </tr>
                   ))}

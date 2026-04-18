@@ -56,7 +56,7 @@ export default async function LiveRatesWidget({ compact = false }: LiveRatesWidg
                     {cur.symbol}1 {cur.code === 'JPY' ? '/ ¥100' : cur.code === 'KRW' ? '/ ₩1K' : ''}
                   </div>
                   <div className="text-base font-bold text-gray-900">
-                    {rate !== null ? `${formatVnd(rate)} ₫` : '—'}
+                    {rate !== null ? `${formatVnd(rate)} ₫` : '-'}
                   </div>
                 </div>
               );
@@ -119,7 +119,7 @@ export default async function LiveRatesWidget({ compact = false }: LiveRatesWidg
                   </div>
                   <div className="text-right">
                     <div className="font-bold text-gray-900">
-                      {rate !== null ? `${formatVnd(rate)} ₫` : '—'}
+                      {rate !== null ? `${formatVnd(rate)} ₫` : '-'}
                     </div>
                     <div className="text-xs text-gray-400">per {cur.multiplier ? `${cur.multiplier.toLocaleString()} ${cur.code}` : `1 ${cur.code}`}</div>
                   </div>
@@ -129,7 +129,7 @@ export default async function LiveRatesWidget({ compact = false }: LiveRatesWidg
           </div>
           <div className="px-6 py-3 bg-gray-50 border-t border-gray-100">
             <p className="text-xs text-gray-400">
-              Indicative mid-market rates. Actual bank and exchange rates will differ. Source: open.er-api.com — refreshed every 6 hours.
+              Indicative mid-market rates. Actual bank and exchange rates will differ. Source: open.er-api.com - refreshed every 6 hours.
             </p>
           </div>
         </>

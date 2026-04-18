@@ -248,8 +248,8 @@ export default async function TaxTreatyCountryPage({
 
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                     {[
-                      { label: 'Treaty Signed', value: treaty.signedYear?.toString() ?? '—' },
-                      { label: 'In Force Since', value: treaty.inForceYear?.toString() ?? '—' },
+                      { label: 'Treaty Signed', value: treaty.signedYear?.toString() ?? '-' },
+                      { label: 'In Force Since', value: treaty.inForceYear?.toString() ?? '-' },
                       { label: 'Status', value: 'Active' },
                       { label: 'Model', value: 'OECD-based' },
                     ].map((item) => (
@@ -321,7 +321,7 @@ export default async function TaxTreatyCountryPage({
                     <div className="px-6 py-4">
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {treaty.dividendRate !== null
-                          ? `When a Vietnamese company pays dividends to a ${treaty.country} shareholder, Vietnam withholds ${treaty.dividendRate}% under this treaty — compared to Vietnam's standard domestic rate which may be higher. This applies to portfolio investors. Substantial shareholders may qualify for even lower rates in some treaties.`
+                          ? `When a Vietnamese company pays dividends to a ${treaty.country} shareholder, Vietnam withholds ${treaty.dividendRate}% under this treaty - compared to Vietnam's standard domestic rate which may be higher. This applies to portfolio investors. Substantial shareholders may qualify for even lower rates in some treaties.`
                           : `This treaty does not specify a standard WHT rate on dividends, or one or both countries do not impose such withholding. Consult a qualified tax adviser for your specific situation.`}
                       </p>
                     </div>
@@ -355,7 +355,7 @@ export default async function TaxTreatyCountryPage({
                     <div className="px-6 py-4">
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {treaty.royaltiesRate !== null
-                          ? `Royalties paid from Vietnam to ${treaty.country} for use of IP (patents, trademarks, software, know-how) are capped at ${treaty.royaltiesRate}% withholding tax. ${treaty.royaltiesRate <= 7 ? `This is a favorable rate compared to many other treaties — particularly advantageous for ${treaty.country} companies licensing technology to Vietnamese operations.` : `This rate applies to all qualifying royalty payments under the treaty.`}`
+                          ? `Royalties paid from Vietnam to ${treaty.country} for use of IP (patents, trademarks, software, know-how) are capped at ${treaty.royaltiesRate}% withholding tax. ${treaty.royaltiesRate <= 7 ? `This is a favorable rate compared to many other treaties - particularly advantageous for ${treaty.country} companies licensing technology to Vietnamese operations.` : `This rate applies to all qualifying royalty payments under the treaty.`}`
                           : `This treaty does not specify a standard WHT rate on royalties. Consult a qualified tax adviser for your specific situation.`}
                       </p>
                     </div>

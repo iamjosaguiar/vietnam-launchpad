@@ -323,7 +323,7 @@ export default async function VietnamExchangeRatesPage() {
                 Planning Your Move to Vietnam?
               </h2>
               <p className="text-lg text-white/70 mb-8">
-                Our consultants handle visas, work permits, company setup, and banking — so your move goes smoothly.
+                Our consultants handle visas, work permits, company setup, and banking - so your move goes smoothly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

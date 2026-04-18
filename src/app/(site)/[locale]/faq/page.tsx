@@ -11,7 +11,7 @@ const faqCategories = [
     questions: [
       {
         q: 'How long does the TRC application process take?',
-        a: 'The TRC application typically takes 5-7 working days once all required documents are submitted and verified. This timeline can vary slightly depending on government processing times.'
+        a: 'New TRC applications typically take 4-8 weeks from document submission to card collection. Renewals with clean records are often faster. Timeline depends on your visa route (investment vs. work permit), the issuing province, and document completeness.'
       },
       {
         q: 'What is the difference between a TRC and a visa?',
@@ -73,7 +73,7 @@ const faqCategories = [
       },
       {
         q: 'How long does company registration take?',
-        a: 'The complete process typically takes 3-4 weeks, including name approval, license application, seal creation, and tax registration.'
+        a: 'The Enterprise Registration Certificate (ERC) itself typically takes 3-5 working days once submitted. However, the full setup - including bank account opening, seal, tax code, and any special licenses - realistically takes 2-4 months. Banking is often the longest step.'
       },
       {
         q: 'Can my company sponsor my work permit and TRC?',

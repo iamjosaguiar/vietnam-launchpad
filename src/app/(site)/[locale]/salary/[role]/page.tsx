@@ -388,7 +388,7 @@ export default async function SalaryRolePage({
               Need a work permit for this role?
             </h2>
             <p className="text-gray-500 text-lg mb-8 max-w-xl mx-auto">
-              Our team handles the full work permit application — from document preparation
+              Our team handles the full work permit application - from document preparation
               to submission and follow-up with Vietnamese authorities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

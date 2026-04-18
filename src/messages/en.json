@@ -41,10 +41,10 @@
   },
   "homepage": {
     "hero": {
-      "title": "Navigate Vietnam with Confidence",
-      "subtitle": "We help expats relocate to Vietnam with zero hassles - securing visas, company setup, and local integration in 90 days.",
-      "cta": "Start Your Journey",
-      "ctaSecondary": "Learn More"
+      "title": "The Firm Serious Investors Trust to Enter Vietnam.",
+      "subtitle": "Complete market entry for founders, family offices, and executives. Legal structure to first hire - on your timeline.",
+      "cta": "Request Private Consultation",
+      "ctaSecondary": "Enterprise Services"
     },
     "stats": {
       "expats": "100,000+",
@@ -56,82 +56,82 @@
     },
     "trustSignals": {
       "consultation": "Free",
-      "consultationLabel": "Consultation",
+      "consultationLabel": "Initial Consultation",
       "locations": "2",
       "locationsLabel": "Office Locations",
       "services": "15+",
       "servicesLabel": "Services",
       "responseTime": "24h",
-      "responseTimeLabel": "Response Time"
+      "responseTimeLabel": "Response Guarantee"
     },
     "services": {
-      "title": "Professional Immigration & Business Services",
-      "subtitle": "Expert guidance, guaranteed results",
+      "title": "Every piece of your Vietnam strategy",
+      "subtitle": "From a single work permit to complete market entry - handled end to end by specialists who do nothing else.",
       "trc": {
         "title": "TRC & Investment Visa",
-        "description": "Multiple visa options: 1-year (DT4) or 3-year (DT3) TRC based on investment level",
-        "duration": "2-3 weeks"
+        "description": "1-year (DT4) or 3-year (DT3) Temporary Residence Cards via investment or work permit route. All documentation handled.",
+        "duration": "4–8 weeks"
       },
       "workPermit": {
         "title": "Work Permits",
-        "description": "2-year work permits for legal employment in Vietnam",
-        "duration": "2 months"
+        "description": "2-year work permits for legal employment. We process your full team concurrently, not sequentially.",
+        "duration": "4–6 weeks"
       },
       "companySetup": {
         "title": "Company Registration",
-        "description": "Complete LLC setup with FREE consultation included",
-        "duration": "2-4 months"
+        "description": "LLC, representative office, or branch - structured for your investment type and operational needs. Banking included.",
+        "duration": "2–4 months"
       }
     },
     "whyChooseUs": {
-      "title": "Why Choose Vietnam Launchpad?",
-      "subtitle": "Your trusted partner for Vietnam immigration and business services",
+      "title": "The difference is depth",
+      "subtitle": "We only operate in Vietnam. That specificity is what allows us to be genuinely excellent.",
       "expertise": {
-        "title": "Local Expertise",
-        "description": "Based in Ho Chi Minh City with deep understanding of Vietnamese immigration law and business regulations"
+        "title": "Vietnam only - no generalists",
+        "description": "Six years of operating exclusively in Vietnam, with offices in Hanoi and Da Nang. We know every department, every process, every exception."
       },
       "support": {
-        "title": "End-to-End Support",
-        "description": "From initial consultation to final approval, we handle everything so you can focus on your move or business"
+        "title": "One consultant, end to end",
+        "description": "Every engagement has a named senior consultant who owns it completely. Direct access, weekly updates, no ticket queues."
       },
       "transparency": {
-        "title": "Transparent Process",
-        "description": "Clear pricing, regular updates, and no hidden fees. You'll know exactly what to expect at every step"
+        "title": "Fixed fees, no surprises",
+        "description": "We quote fixed fees before you commit. If we quote it, we deliver it. If something changes, you hear about it before it affects you."
       },
       "success": {
-        "title": "Proven Track Record",
-        "description": "Vietnam-based team with deep local knowledge across all service categories — TRC, work permits, and company registration"
+        "title": "Outcome is the standard",
+        "description": "We're not done until your application is approved, your entity is operational, your team is authorized. Results, not activity."
       }
     },
     "testimonials": {
-      "title": "What Our Clients Say",
-      "subtitle": "Real experiences from expats we've helped",
+      "title": "What our clients say",
+      "subtitle": "Real results from founders, executives, and families who trusted us with their Vietnam strategy.",
       "markThompson": {
         "name": "Mark Thompson",
         "location": "USA",
-        "text": "Vietnam Launchpad made my work permit process incredibly smooth. What I thought would take months was done in 3 weeks. Professional, responsive, and transparent throughout."
+        "text": "Vietnam Launchpad made my work permit process incredibly smooth. They handled everything, kept me updated at every step, and I had my permit faster than I expected. Professional, responsive, and transparent throughout."
       },
       "sarahChen": {
         "name": "Sarah Chen",
         "location": "Singapore",
-        "text": "Setting up my company in Vietnam seemed daunting, but the team guided me through every step. The banking setup alone saved me weeks of frustration. Highly recommended!"
+        "text": "Setting up my company in Vietnam seemed daunting, but the team guided me through every step. The banking setup alone saved me weeks of frustration. Highly recommended."
       },
       "kimJihoon": {
         "name": "Kim Ji-hoon",
         "location": "South Korea",
-        "text": "I needed a TRC renewal and was worried about the process. They handled everything perfectly, kept me updated, and I got my card in just 6 days. Excellent service!"
+        "text": "I needed a TRC renewal and was worried about the process. They handled everything perfectly, kept me updated the whole way through, and the result was seamless. Exceptional service."
       },
       "emmaRodriguez": {
         "name": "Emma Rodriguez",
         "location": "Spain",
-        "text": "As a digital nomad, I needed reliable visa support. Vietnam Launchpad has been my go-to for 2 years now. They understand expat needs and deliver every time."
+        "text": "As a founder building in Vietnam for 2 years, Vietnam Launchpad has been the one constant. They understand what serious operators need and they deliver every time."
       }
     },
     "cta": {
-      "title": "Ready to Start Your Vietnam Journey?",
-      "subtitle": "Book a free consultation with our immigration experts today",
-      "button": "Get Free Consultation",
-      "note": "Response within 24 hours"
+      "title": "Ready to enter Vietnam seriously?",
+      "subtitle": "Book a private consultation with a senior consultant. We respond within 4 business hours.",
+      "button": "Request Private Consultation",
+      "note": "Senior consultant responds within 4 business hours"
     }
   },
   "services": {
@@ -139,12 +139,12 @@
     "subtitle": "Professional immigration and business consulting services",
     "trc": {
       "title": "TRC & Investment Visa",
-      "description": "Get your Temporary Residence Card with investment visa options. 2-3 weeks processing time.",
+      "description": "Get your Temporary Residence Card with investment visa options. 4-8 weeks processing time.",
       "longDescription": "Multiple visa routes available: Investment visa (DT4: 1-year TRC; DT3: 3-year TRC based on capital) or Work Permit + TRC route (2 years). We handle all documentation, government submissions, and follow-ups to ensure a smooth approval process.",
       "features": [
         "Investment visa: DT4 (1 year) or DT3 (3 years)",
         "Work permit + TRC: 2 years",
-        "2-3 weeks processing",
+        "4-8 weeks processing",
         "Document preparation included",
         "Renewal assistance",
         "Multiple entry allowed"
@@ -208,7 +208,7 @@
           {
             "number": "4",
             "title": "Submission & Approval",
-            "description": "Application submitted and work permit issued within 3 weeks"
+            "description": "Application submitted and work permit issued within 6-8 weeks"
           }
         ]
       }
@@ -262,7 +262,7 @@
       "questions": [
         {
           "question": "How long does the process take?",
-          "answer": "Processing times vary by service: TRC takes 5-7 days, work permits take 3 weeks, and company registration takes 2-4 months. We provide detailed timelines during consultation."
+          "answer": "Processing times vary by service: TRC applications take 4-8 weeks, work permits take 6-10 weeks, and full company setup (including banking) takes 2-4 months. We provide detailed timelines during your consultation based on your specific situation and province."
         },
         {
           "question": "Do I need to be in Vietnam to apply?",

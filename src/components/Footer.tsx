@@ -9,9 +9,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-gray-900 text-white overflow-hidden">
+    <footer className="relative bg-stone-950 text-white overflow-hidden">
       {/* Decorative gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900 to-primary-900/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-950 to-primary-950/50" />
 
       {/* Subtle pattern */}
       <div
@@ -36,8 +36,8 @@ export default function Footer() {
                   className="h-16 md:h-20 w-auto brightness-0 invert opacity-90"
                 />
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                Professional immigration and business consulting services for expats relocating to Vietnam.
+              <p className="text-white/35 text-sm leading-relaxed mb-6">
+                Vietnam's premier market-entry and compliance firm for founders, investors, and executives.
               </p>
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center gap-2">

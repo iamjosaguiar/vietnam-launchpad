@@ -39,8 +39,8 @@ const categories = [
         slug: 'trc-application',
         title: 'TRC Application',
         description: 'Temporary Residence Card via investment, work permit, or marriage. 1 to 3 years validity.',
-        features: ['Investment TRC: DT4 (1 yr) or DT3 (3 yrs)', 'Work permit-based TRC: 2 years', 'Marriage TRC: up to 3 years', '2-3 weeks processing'],
-        duration: '2-3 weeks',
+        features: ['Investment TRC: DT4 (1 yr) or DT3 (3 yrs)', 'Work permit-based TRC: 2 years', 'Marriage TRC: up to 3 years', '4-8 weeks processing'],
+        duration: '4-8 weeks',
         badge: 'Most Popular',
         icon: (
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>

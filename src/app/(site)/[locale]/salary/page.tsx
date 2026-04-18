@@ -7,7 +7,7 @@ import { Link } from '@/i18n/config';
 export const metadata: Metadata = {
   title: 'Expat Salary Guide Vietnam 2026 | Salaries by Role | Vietnam Launchpad',
   description:
-    'Vietnam expat salary guide 2026. Local VND market rates and USD expat packages for 12 key roles — software engineers, teachers, managers, and more.',
+    'Vietnam expat salary guide 2026. Local VND market rates and USD expat packages for 12 key roles - software engineers, teachers, managers, and more.',
   alternates: {
     canonical: 'https://www.vietnamlaunchpad.com/salary',
   },
@@ -44,7 +44,7 @@ export default function SalaryListPage() {
     '@type': 'CollectionPage',
     name: 'Vietnam Expat Salary Guide 2026',
     url: 'https://www.vietnamlaunchpad.com/salary',
-    description: 'Vietnam expat salary guide 2026 — local VND market rates and USD expat packages by role.',
+    description: 'Vietnam expat salary guide 2026 - local VND market rates and USD expat packages by role.',
     hasPart: SALARY_ROLES.map((role) => ({
       '@type': 'WebPage',
       name: `${role.title} Salary in Vietnam 2026`,
@@ -82,7 +82,7 @@ export default function SalaryListPage() {
             </h1>
 
             <p className="text-xl md:text-2xl text-white/60 max-w-3xl mx-auto mb-12">
-              Real salary ranges for expats in Vietnam — local VND market rates and
+              Real salary ranges for expats in Vietnam - local VND market rates and
               USD expat packages, with work permit guidance for each role.
             </p>
 
@@ -221,7 +221,7 @@ export default function SalaryListPage() {
               Ready to work in Vietnam?
             </h2>
             <p className="text-gray-500 text-lg mb-8 max-w-xl mx-auto">
-              Our team handles work permits, TRC applications, and tax compliance —
+              Our team handles work permits, TRC applications, and tax compliance -
               so you can focus on your new role.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

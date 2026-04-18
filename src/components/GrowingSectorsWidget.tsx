@@ -112,7 +112,7 @@ function SectorBar({ label, value, color, bgColor, max }: SectorBarProps) {
       <div className="flex justify-between items-baseline">
         <span className="text-sm font-medium text-gray-700">{label}</span>
         <span className="text-sm font-bold text-gray-900">
-          {value !== null ? `${value.toFixed(1)}%` : '—'}
+          {value !== null ? `${value.toFixed(1)}%` : '-'}
         </span>
       </div>
       <div className={`w-full ${bgColor} rounded-full h-4 overflow-hidden`}>
@@ -132,7 +132,7 @@ export default async function GrowingSectorsWidget() {
   const sectorTrend = await getVietnamSectorTrend();
   const latest: SectorDataPoint | undefined = sectorTrend[0];
 
-  // Compute a sensible max for bars — services will be the largest (~40%+)
+  // Compute a sensible max for bars - services will be the largest (~40%+)
   const values = [latest?.services, latest?.industry, latest?.agriculture].filter(
     (v): v is number => typeof v === 'number'
   );
@@ -150,7 +150,7 @@ export default async function GrowingSectorsWidget() {
 
       <div className="p-6 space-y-8">
 
-        {/* GDP composition — CSS-width bars from World Bank */}
+        {/* GDP composition - CSS-width bars from World Bank */}
         <div>
           <div className="flex items-baseline justify-between mb-4">
             <h3 className="text-sm font-semibold text-gray-800">GDP Composition by Sector ({year})</h3>
@@ -187,14 +187,14 @@ export default async function GrowingSectorsWidget() {
             />
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Source: World Bank Open Data (NV.SRV.TOTL.ZS, NV.IND.TOTL.ZS, NV.IND.MANF.ZS, NV.AGR.TOTL.ZS) — ({year})
+            Source: World Bank Open Data (NV.SRV.TOTL.ZS, NV.IND.TOTL.ZS, NV.IND.MANF.ZS, NV.AGR.TOTL.ZS) - ({year})
           </p>
         </div>
 
         {/* Divider */}
         <div className="h-px bg-gray-100" />
 
-        {/* Key growth sectors — static curated data */}
+        {/* Key growth sectors - static curated data */}
         <div>
           <div className="flex items-baseline justify-between mb-4">
             <h3 className="text-sm font-semibold text-gray-800">Key Growth Sectors</h3>

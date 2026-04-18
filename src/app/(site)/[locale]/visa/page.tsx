@@ -170,7 +170,7 @@ export default function VisaIndexPage() {
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
                 </span>
                 <span className="text-sm text-emerald-400 font-medium">
-                  Updated April 2026 — based on Vietnam&apos;s 2023 visa policy
+                  Updated April 2026 - based on Vietnam&apos;s 2023 visa policy
                 </span>
               </div>
 
@@ -183,7 +183,7 @@ export default function VisaIndexPage() {
 
               <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
                 Find out if you need a visa for Vietnam, how long you can stay, and the best options
-                for longer-term residency — by nationality.
+                for longer-term residency - by nationality.
               </p>
 
               <div className="flex flex-wrap gap-3 text-sm text-white/50">
@@ -422,7 +422,7 @@ export default function VisaIndexPage() {
                   ),
                   title: 'Visa-Free Entry',
                   description:
-                    'Citizens of 40+ countries can enter without a visa for 30–45 days. No application needed — just a valid passport. Cannot be extended, but you can re-enter after leaving the country.',
+                    'Citizens of 40+ countries can enter without a visa for 30–45 days. No application needed - just a valid passport. Cannot be extended, but you can re-enter after leaving the country.',
                 },
                 {
                   icon: (
@@ -565,7 +565,7 @@ export default function VisaIndexPage() {
               </h2>
               <p className="text-lg text-white/70 mb-8">
                 Our consultants handle e-visas, business visas, work permits, and TRC
-                applications — so you can focus on building your life in Vietnam.
+                applications - so you can focus on building your life in Vietnam.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

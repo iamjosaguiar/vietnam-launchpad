@@ -49,31 +49,31 @@ export default async function EconomicSnapshotWidget() {
       <div className="p-5 grid grid-cols-2 sm:grid-cols-3 gap-3">
         <StatCard
           label="GDP"
-          value={data.gdpUsd !== null ? fmtBillions(data.gdpUsd) : '—'}
+          value={data.gdpUsd !== null ? fmtBillions(data.gdpUsd) : '-'}
           sub="Total economy size"
           color="blue"
         />
         <StatCard
           label="GDP per Capita"
-          value={data.gdpPerCapitaUsd !== null ? `$${Math.round(data.gdpPerCapitaUsd).toLocaleString()}` : '—'}
+          value={data.gdpPerCapitaUsd !== null ? `$${Math.round(data.gdpPerCapitaUsd).toLocaleString()}` : '-'}
           sub="Per person, USD"
           color="green"
         />
         <StatCard
           label="Inflation"
-          value={data.inflationPercent !== null ? `${fmt(data.inflationPercent)}%` : '—'}
+          value={data.inflationPercent !== null ? `${fmt(data.inflationPercent)}%` : '-'}
           sub="Consumer price index"
           color="amber"
         />
         <StatCard
           label="Population"
-          value={data.populationMillions !== null ? `${fmt(data.populationMillions, 0)}M` : '—'}
+          value={data.populationMillions !== null ? `${fmt(data.populationMillions, 0)}M` : '-'}
           sub="Total population"
           color="purple"
         />
         <StatCard
           label="FDI Inflows"
-          value={data.fdiPctGdp !== null ? `${fmt(data.fdiPctGdp)}% of GDP` : '—'}
+          value={data.fdiPctGdp !== null ? `${fmt(data.fdiPctGdp)}% of GDP` : '-'}
           sub="Foreign direct investment"
           color="blue"
         />

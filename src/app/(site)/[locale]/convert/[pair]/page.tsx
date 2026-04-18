@@ -32,7 +32,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'Large Conversions (Apartment Deposits)',
-        body: 'For large USD→VND conversions like apartment deposits (often 2-3 months rent), compare rates at a reputable gold shop / money changer in Binh Tay or the licensed exchangers near Ben Thanh market — they often beat bank rates for large amounts.',
+        body: 'For large USD→VND conversions like apartment deposits (often 2-3 months rent), compare rates at a reputable gold shop / money changer in Binh Tay or the licensed exchangers near Ben Thanh market - they often beat bank rates for large amounts.',
       },
     ],
   },
@@ -105,7 +105,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'Australian Superannuation',
-        body: 'If you leave Australia permanently, you may be able to access your superannuation under the Departing Australia Superannuation Payment (DASP) scheme. Take tax advice — withholding rates apply.',
+        body: 'If you leave Australia permanently, you may be able to access your superannuation under the Departing Australia Superannuation Payment (DASP) scheme. Take tax advice - withholding rates apply.',
       },
       {
         title: 'AUD at Vietnamese ATMs',
@@ -163,7 +163,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'DBS/OCBC International Transfers',
-        body: 'Singapore banks (DBS, OCBC, UOB) support online international transfers to Vietnam. Rates and fees vary but direct bank transfers are fully traceable — useful for large amounts.',
+        body: 'Singapore banks (DBS, OCBC, UOB) support online international transfers to Vietnam. Rates and fees vary but direct bank transfers are fully traceable - useful for large amounts.',
       },
       {
         title: 'Short SGD→VND Spreads',
@@ -186,7 +186,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'Japanese Expats in Vietnam',
-        body: 'Vietnam has a large Japanese expat community (especially HCMC District 7 and Hanoi). Japanese companies often pay local Vietnam salaries in USD or VND — not JPY.',
+        body: 'Vietnam has a large Japanese expat community (especially HCMC District 7 and Hanoi). Japanese companies often pay local Vietnam salaries in USD or VND - not JPY.',
       },
       {
         title: 'JPY Notes Are Not Accepted Locally',
@@ -221,7 +221,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'Wise and Kakao Pay',
-        body: 'Wise handles KRW→VND. Kakao Pay and Toss support international transfers — check current Vietnam support status as offerings evolve rapidly.',
+        body: 'Wise handles KRW→VND. Kakao Pay and Toss support international transfers - check current Vietnam support status as offerings evolve rapidly.',
       },
     ],
   },
@@ -271,7 +271,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'Kasikorn and Bangkok Bank',
-        body: 'Thai banks offer international transfer options. Bangkok Bank has relationships with Vietnamese correspondent banks. Fees vary — compare with Wise for your transfer amount.',
+        body: 'Thai banks offer international transfer options. Bangkok Bank has relationships with Vietnamese correspondent banks. Fees vary - compare with Wise for your transfer amount.',
       },
       {
         title: 'Both Currencies Cash-Heavy',
@@ -298,7 +298,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'ASEAN Business Context',
-        body: 'Malaysia is a significant trade partner with Vietnam. Many Malaysia-Vietnam business transactions settle in USD rather than MYR/VND directly — check what currency your counterpart prefers.',
+        body: 'Malaysia is a significant trade partner with Vietnam. Many Malaysia-Vietnam business transactions settle in USD rather than MYR/VND directly - check what currency your counterpart prefers.',
       },
       {
         title: 'MYR Is Rarely Exchanged Locally',
@@ -514,7 +514,7 @@ const CURRENCY_PAIRS = [
       },
       {
         title: 'Indian Tech Community in Vietnam',
-        body: 'Vietnam\'s tech sector — particularly in HCMC — has a growing Indian professional community. Salary payments are often in USD, with personal remittances in INR or USD.',
+        body: 'Vietnam\'s tech sector - particularly in HCMC - has a growing Indian professional community. Salary payments are often in USD, with personal remittances in INR or USD.',
       },
       {
         title: 'INR Notes Are Not Exchanged Locally',
@@ -569,7 +569,7 @@ const COMMON_FROM_AMOUNTS = [100, 500, 1000, 5000, 10000];
 const COMMON_VND_AMOUNTS = [1_000_000, 5_000_000, 10_000_000, 50_000_000, 100_000_000];
 
 function formatFromCurrency(amount: number, symbol: string, from: string): string {
-  // For JPY, KRW, IDR — no decimal needed
+  // For JPY, KRW, IDR - no decimal needed
   const noDecimal = ['JPY', 'KRW', 'IDR'];
   const opts: Intl.NumberFormatOptions = noDecimal.includes(from)
     ? { maximumFractionDigits: 0 }
@@ -614,7 +614,7 @@ export default async function CurrencyPairPage({
 
   const inverseRate = rate ? (1 / rate) : null;
 
-  // Related pairs — pick 4 others excluding current
+  // Related pairs - pick 4 others excluding current
   const relatedPairs = CURRENCY_PAIRS.filter((p) => p.from !== from).slice(0, 5);
 
   const pageSchema = {
@@ -673,7 +673,7 @@ export default async function CurrencyPairPage({
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                 </span>
-                <span className="text-sm text-emerald-400 font-medium">Live data — refreshes every 6 hours</span>
+                <span className="text-sm text-emerald-400 font-medium">Live data - refreshes every 6 hours</span>
               </div>
 
               <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
@@ -738,7 +738,7 @@ export default async function CurrencyPairPage({
                         <div className="text-sm text-gray-400">
                           Inverse: 1,000,000 ₫ ={' '}
                           <span className="font-semibold text-gray-600">
-                            {symbol}{inverseRate !== null ? (inverseRate * 1_000_000).toFixed(2) : '—'} {from}
+                            {symbol}{inverseRate !== null ? (inverseRate * 1_000_000).toFixed(2) : '-'} {from}
                           </span>
                         </div>
                       </div>
@@ -747,7 +747,7 @@ export default async function CurrencyPairPage({
                       <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-100">
                         <div className="text-center">
                           <div className="text-xs text-gray-400 mb-1">Last Updated</div>
-                          <div className="text-sm font-semibold text-gray-700">{updatedAt ?? '—'}</div>
+                          <div className="text-sm font-semibold text-gray-700">{updatedAt ?? '-'}</div>
                         </div>
                         <div className="text-center">
                           <div className="text-xs text-gray-400 mb-1">Update Frequency</div>
@@ -778,8 +778,8 @@ export default async function CurrencyPairPage({
                     movements tend to be gradual rather than volatile.
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed mt-2">
-                    For most expat needs — rent (commonly USD-denominated), daily spending in VND, and occasional
-                    large transfers — understanding the {from}/VND rate helps you plan realistic monthly budgets
+                    For most expat needs - rent (commonly USD-denominated), daily spending in VND, and occasional
+                    large transfers - understanding the {from}/VND rate helps you plan realistic monthly budgets
                     and optimise when to convert larger sums.
                   </p>
                 </div>
@@ -843,7 +843,7 @@ export default async function CurrencyPairPage({
                                     symbol,
                                     from
                                   )
-                                : '—'}
+                                : '-'}
                             </span>
                           </div>
                         ))}
@@ -931,7 +931,7 @@ export default async function CurrencyPairPage({
               </h2>
               <p className="text-lg text-white/70 mb-8">
                 Our team helps with banking setup, TRC (Temporary Residence Card), company registration, and
-                financial planning — so your move goes smoothly.
+                financial planning - so your move goes smoothly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

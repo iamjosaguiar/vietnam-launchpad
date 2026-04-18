@@ -185,7 +185,7 @@ export default function Navigation() {
         isScrolled ? 'glass shadow-lg shadow-black/5 py-2' : 'bg-transparent py-4'
       }`}
     >
-      {/* Services mega panel — anchored to full nav width, not trigger button */}
+      {/* Services mega panel - anchored to full nav width, not trigger button */}
       {openMenu === 'services' && (
         <div
           className="absolute top-full left-0 right-0 pt-3 z-50"
@@ -237,7 +237,7 @@ export default function Navigation() {
         </div>
       )}
 
-      {/* Guides mega panel — full container width, anchored to nav */}
+      {/* Guides mega panel - full container width, anchored to nav */}
       {openMenu === 'guides' && (
         <div
           className="absolute top-full left-0 right-0 pt-3 z-50"
@@ -344,7 +344,7 @@ export default function Navigation() {
                 )}
               </Link>
 
-              {/* Services mega panel rendered at nav level above — see top of return */}
+              {/* Services mega panel rendered at nav level above - see top of return */}
             </div>
 
             {/* Guides - mega menu trigger */}
@@ -371,7 +371,7 @@ export default function Navigation() {
                 )}
               </Link>
 
-              {/* Guides mega panel rendered at nav level above — see top of return */}
+              {/* Guides mega panel rendered at nav level above - see top of return */}
             </div>
 
             {/* Blog */}
@@ -383,6 +383,19 @@ export default function Navigation() {
             >
               {t('blog')}
               {isActive('/blog') && (
+                <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
+              )}
+            </Link>
+
+            {/* Enterprise */}
+            <Link
+              href="/enterprise"
+              className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 ${
+                isActive('/enterprise') ? linkActive : linkBase
+              }`}
+            >
+              Enterprise
+              {isActive('/enterprise') && (
                 <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
               )}
             </Link>
@@ -402,9 +415,9 @@ export default function Navigation() {
 
             <Link
               href="/contact"
-              className="btn-primary ml-4 text-white px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap"
+              className={`btn-primary ml-4 text-white px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap`}
             >
-              {t('getConsultation')}
+              Private Consultation
             </Link>
           </div>
 
@@ -554,13 +567,24 @@ export default function Navigation() {
               {t('contact')}
             </Link>
 
+            {/* Enterprise */}
+            <Link
+              href="/enterprise"
+              onClick={() => setIsMenuOpen(false)}
+              className={`block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${
+                isActive('/enterprise') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
+              }`}
+            >
+              Enterprise
+            </Link>
+
             <div className="pt-2">
               <Link
                 href="/contact"
                 className="block btn-primary text-white px-4 py-3 rounded-xl text-base font-semibold text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t('getConsultation')}
+                Private Consultation
               </Link>
             </div>
           </div>

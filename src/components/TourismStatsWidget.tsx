@@ -55,7 +55,7 @@ function TrendBar({ point, maxArrivals }: { point: TourismDataPoint; maxArrivals
         />
       </div>
       <span className="text-xs font-semibold text-gray-700 w-16 shrink-0">
-        {point.arrivals ? fmtMillions(point.arrivals) : '—'}
+        {point.arrivals ? fmtMillions(point.arrivals) : '-'}
       </span>
     </div>
   );
@@ -166,7 +166,7 @@ export default async function TourismStatsWidget({ compact = false }: TourismSta
               Tourism Receipts ({latestYear})
             </p>
             <p className="text-3xl font-bold text-emerald-800">
-              {receiptsVal ? fmtBillions(receiptsVal) : '—'}
+              {receiptsVal ? fmtBillions(receiptsVal) : '-'}
             </p>
             <p className="text-xs text-emerald-500 mt-1">World Bank ST.INT.RCPT.CD</p>
             <p className="text-sm text-emerald-600 mt-1">USD total receipts</p>
@@ -234,7 +234,7 @@ export default async function TourismStatsWidget({ compact = false }: TourismSta
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-2">
-            Source: Vietnam National Administration of Tourism (VNAT). Total 17.5M arrivals is VNAT&apos;s published 2024 annual figure. Country-level breakdown figures are approximate estimates based on VNAT reported top source markets — individual country totals are rounded and indicative.
+            Source: Vietnam National Administration of Tourism (VNAT). Total 17.5M arrivals is VNAT&apos;s published 2024 annual figure. Country-level breakdown figures are approximate estimates based on VNAT reported top source markets - individual country totals are rounded and indicative.
           </p>
         </div>
 

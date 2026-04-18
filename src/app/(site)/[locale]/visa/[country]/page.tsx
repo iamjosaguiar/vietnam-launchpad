@@ -96,7 +96,7 @@ export default async function VisaCountryPage({
       : `${nat} nationals need to obtain a visa through a Vietnamese embassy. Stay duration depends on the visa type issued.`,
   };
 
-  // Generic fallback answer builder — uses captured variables so no closure over `data`
+  // Generic fallback answer builder - uses captured variables so no closure over `data`
   const genericFallback =
     data.visaFree && data.visaFreeDays
       ? `${nat} passport holders enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam. ${data.evisaEligible ? 'For longer stays, apply for the 90-day e-visa at evisa.xuatnhapcanh.gov.vn.' : 'For longer stays, contact a Vietnamese embassy or consulate.'} For long-term residency, ${data.recommendedLongStay} is recommended.`
@@ -300,14 +300,14 @@ export default async function VisaCountryPage({
                         <dt className="text-sm text-gray-500">Visa-free entry</dt>
                         <dd className="text-sm font-semibold text-gray-900">
                           {data.visaFree && data.visaFreeDays
-                            ? `Yes — ${data.visaFreeDays} days`
+                            ? `Yes - ${data.visaFreeDays} days`
                             : 'No'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">E-visa available</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.evisaEligible ? `Yes — ${data.evisaDays} days` : 'No'}
+                          {data.evisaEligible ? `Yes - ${data.evisaDays} days` : 'No'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
@@ -354,7 +354,7 @@ export default async function VisaCountryPage({
                         <p className="text-sm text-emerald-700 leading-relaxed">
                           As a {data.nationality} passport holder, you can enter Vietnam without
                           a visa for up to <strong>{data.visaFreeDays} days</strong> per visit. No
-                          application required — just a valid passport with at least 6 months
+                          application required - just a valid passport with at least 6 months
                           validity.
                         </p>
                       </div>
@@ -473,7 +473,7 @@ export default async function VisaCountryPage({
                                 d="M5 13l4 4L19 7"
                               />
                             </svg>
-                            Apply online — no embassy visit required
+                            Apply online - no embassy visit required
                           </li>
                           <li className="flex items-start gap-2">
                             <svg

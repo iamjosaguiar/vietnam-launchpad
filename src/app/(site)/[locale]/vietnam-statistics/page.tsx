@@ -99,7 +99,7 @@ export default async function VietnamStatisticsPage() {
               </h1>
 
               <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
-                Live and curated Vietnam market data — tourism arrivals, GDP, sector composition, FDI, and key
+                Live and curated Vietnam market data - tourism arrivals, GDP, sector composition, FDI, and key
                 growth industries. Sourced daily from World Bank and VNAT.
               </p>
 
@@ -155,7 +155,7 @@ export default async function VietnamStatisticsPage() {
                   Economic Snapshot
                 </h2>
                 <p className="text-gray-500 text-sm mb-6">
-                  Key macroeconomic indicators from World Bank open data — refreshed daily.
+                  Key macroeconomic indicators from World Bank open data - refreshed daily.
                 </p>
               </AnimateOnScroll>
               <AnimateOnScroll animation="fade-up">
@@ -275,7 +275,7 @@ export default async function VietnamStatisticsPage() {
                 Ready to Operate in Vietnam?
               </h2>
               <p className="text-lg text-white/70 mb-8">
-                Our consultants handle company registration, visas, work permits, and ongoing compliance —
+                Our consultants handle company registration, visas, work permits, and ongoing compliance -
                 so you can focus on growing your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
