@@ -17,7 +17,7 @@ const aboutSchema = [
     name: 'Vietnam Launchpad',
     url: 'https://www.vietnamlaunchpad.com',
     logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
-    telephone: '+84765805294',
+    telephone: '+841239121299',
     email: 'info@vietnamlaunchpad.com',
     address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },
   },

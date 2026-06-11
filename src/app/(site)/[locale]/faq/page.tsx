@@ -293,7 +293,7 @@ export default function FAQPage() {
                 </svg>
               </Link>
               <a
-                href="https://wa.me/84281234567"
+                href="https://wa.me/841239121299"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-secondary-500 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-secondary-600 transition-all duration-300"

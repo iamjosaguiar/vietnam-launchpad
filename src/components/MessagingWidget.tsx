@@ -5,7 +5,7 @@ export default function MessagingWidget() {
     <div className="fixed right-6 bottom-24 md:bottom-6 z-40 flex flex-col gap-3">
       {/* WhatsApp */}
       <a
-        href="https://wa.me/84765805294"
+        href="https://wa.me/841239121299"
         target="_blank"
         rel="noopener noreferrer"
         className="group relative bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110"

@@ -123,7 +123,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+84 76 580 5294',
+      telephone: '+84 123 912 1299',
       contactType: 'Customer Service',
       areaServed: 'VN',
       availableLanguage: ['English', 'Vietnamese', 'Chinese', 'Korean']
@@ -160,7 +160,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
       latitude: 21.0285,
       longitude: 105.8542
     },
-    telephone: '+84 76 580 5294',
+    telephone: '+84 123 912 1299',
     email: 'jos@iamjosaguiar.com',
     priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00',

@@ -225,7 +225,7 @@ export default function GetStartedPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                          placeholder="+84 (0)28 1234 5678"
+                          placeholder="+84 123 456 789"
                         />
                       </div>
 

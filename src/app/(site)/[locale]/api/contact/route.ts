@@ -94,8 +94,8 @@ export async function POST(request: NextRequest) {
 
       <p><strong>Need immediate assistance?</strong></p>
       <ul>
-        <li>WhatsApp: +84 (0)28 1234 5678</li>
-        <li>Zalo: +84 (0)28 1234 5678</li>
+        <li>WhatsApp: +84 123 912 1299</li>
+        <li>Zalo: +84 123 912 1299</li>
         <li>Email: jos@iamjosaguiar.com</li>
       </ul>
 

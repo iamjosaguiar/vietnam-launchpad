@@ -158,8 +158,8 @@ export async function POST(request: NextRequest) {
       <h3>Need immediate assistance?</h3>
       <ul>
         <li><strong>Email:</strong> jos@iamjosaguiar.com</li>
-        <li><strong>WhatsApp:</strong> +84 (0)28 1234 5678</li>
-        <li><strong>Zalo:</strong> +84 (0)28 1234 5678</li>
+        <li><strong>WhatsApp:</strong> +84 123 912 1299</li>
+        <li><strong>Zalo:</strong> +84 123 912 1299</li>
       </ul>
 
       <p>We look forward to helping you launch your business in Vietnam!</p>

@@ -40,7 +40,7 @@ const homepageSchema = [
     name: 'Vietnam Launchpad',
     url: 'https://www.vietnamlaunchpad.com',
     logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
-    telephone: '+84765805294',
+    telephone: '+841239121299',
     email: 'info@vietnamlaunchpad.com',
     description: "Vietnam's premier market-entry and compliance firm for founders, investors, and executives. Work permits, TRC, company setup, and full enterprise market-entry packages.",
     address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },
