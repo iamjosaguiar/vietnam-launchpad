@@ -1,3 +1,5 @@
+import { bestEsimVietnamGuide } from '@/data/bestEsimGuide';
+
 export interface Guide {
   slug: string;
   title: string;
@@ -164,6 +166,10 @@ Health insurance is strongly recommended. Regional plans run $600-1,200/year; in
 | Fiber internet (100+ Mbps) | $10-20 |
 | Mobile data (unlimited 4G) | $5-15 |
 | Streaming services | $5-15 |
+
+The mobile-data row is a local prepaid plan after a Vietnamese SIM is registered. It is not the cost of staying online on the flight in.
+
+{{holafly:cost}}
 
 *Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
 
@@ -852,6 +858,8 @@ Vietnam's internet is one of its underrated strengths:
 - Providers: Viettel, VNPT, FPT Telecom - all reliable
 - Cafe wifi: universally available and usually fast
 - VPN: recommended - some services are blocked, and it is standard practice among expats
+
+{{holafly:nomad}}
 
 ---
 
@@ -1987,6 +1995,8 @@ Do this before you leave the arrivals hall. All three major carriers (Viettel, V
 
 Having mobile data immediately means Grab works, Google Maps works, and you can contact your accommodation if needed.
 
+{{holafly:airport}}
+
 ---
 
 ## Day 1-3: Accommodation and Orientation
@@ -2368,6 +2378,8 @@ Moving internationally with children requires longer lead time than a solo move.
 - Set up Wise or international banking
 - Download offline maps, Grab, Zalo
 
+{{holafly:family}}
+
 ---
 
 ## Visas for the Whole Family
@@ -2611,6 +2623,10 @@ Very popular with Korean and Japanese expats. SSIS international school is here.
 
 For a full breakdown across lifestyle levels, see our [Cost of Living Guide](/guides/cost-of-living).
 
+## Getting Connected
+
+{{holafly:city}}
+
 ---
 
 ## Transport
@@ -2806,6 +2822,10 @@ Hanoi has four genuine seasons - this is both an attraction and a drawback:
 *Cost estimates are approximate and based on typical expat spending patterns. Prices vary by lifestyle, neighbourhood, and exchange rate. Last reviewed April 2026.*
 
 Hanoi is slightly cheaper than HCMC across most categories. The main exception is that premium expat neighborhoods (Tay Ho) are priced similarly to Thao Dien in HCMC.
+
+## Getting Connected
+
+{{holafly:city}}
 
 ---
 
@@ -3039,6 +3059,10 @@ Da Nang has one of Asia's strongest digital nomad communities relative to its si
 **Internet:** Fiber is widely available (200+ Mbps) for $10-20/month. Cafe wifi is reliable. Mobile 4G is fast across the city.
 
 **Community:** "Da Nang Expats" and "Digital Nomads Da Nang" Facebook groups are active. Regular meetups, sports events, and community gatherings.
+
+## Getting Connected
+
+{{holafly:city}}
 
 ---
 
@@ -5271,6 +5295,10 @@ Hoi An floods. This is a fact of life, not a rare occurrence.
 
 This is the most significant seasonal disruption for Hoi An expats and cannot be ignored in long-term planning.
 
+## Getting Connected
+
+{{holafly:city}}
+
 ---
 
 ## Getting Around
@@ -5601,6 +5629,10 @@ For expat families with school-age children, Phu Quoc is generally not suitable 
 **Airport:** Phu Quoc International Airport (PQC) has direct connections to HCMC (55 minutes), Hanoi (2 hours), and some international routes. This makes mainland access relatively convenient.
 
 **Internet:** Fiber is available in established residential and commercial areas. The speed and reliability have improved significantly in recent years. More remote parts of the island may have limited connectivity.
+
+## Getting Connected
+
+{{holafly:city}}
 
 **Transport on the island:** A motorbike is essential. The island road network has improved significantly with paved roads reaching most areas. Grab operates on the island.
 
@@ -6235,6 +6267,7 @@ Hue is compact and relatively flat near the river:
       },
     ],
   },
+  'best-esim-vietnam': bestEsimVietnamGuide,
 };
 
 export function getGuideBySlug(slug: string): Guide | null {

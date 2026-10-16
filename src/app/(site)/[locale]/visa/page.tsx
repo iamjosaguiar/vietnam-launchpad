@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import HolaflyCallout from '@/components/HolaflyCallout';
 import { Link } from '@/i18n/config';
 import { VISA_COUNTRIES } from '@/data/visas';
 
@@ -468,6 +469,9 @@ export default function VisaIndexPage() {
                   </div>
                 </AnimateOnScroll>
               ))}
+            </div>
+            <div className="max-w-5xl mx-auto mt-10">
+              <HolaflyCallout variant="visa" />
             </div>
           </div>
         </section>

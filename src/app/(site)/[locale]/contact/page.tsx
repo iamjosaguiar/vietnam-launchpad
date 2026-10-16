@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import { PHONE_DISPLAY, PHONE_TEL, PHONE_WHATSAPP } from '@/lib/site';
 
 const companyTypes = [
   'Technology / SaaS',
@@ -41,11 +42,13 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
 
     try {
       const response = await fetch('/api/contact', {
@@ -54,7 +57,11 @@ export default function ContactPage() {
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) throw new Error('Failed to submit form');
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        const message = data && typeof data.error === 'string' ? data.error : 'Failed to submit form';
+        throw new Error(message);
+      }
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', company: '', companyType: '', investmentSize: '', service: '', timeline: '', situation: '' });
@@ -62,8 +69,9 @@ export default function ContactPage() {
       if (typeof window !== 'undefined' && (window as any).gtag) {
         (window as any).gtag('event', 'generate_lead', { event_category: 'engagement', event_label: formData.service });
       }
-    } catch {
+    } catch (err) {
       setSubmitStatus('error');
+      setErrorMessage(err instanceof Error ? err.message : 'Something went wrong. Please try again or email us directly.');
     } finally {
       setIsSubmitting(false);
     }
@@ -224,7 +232,7 @@ export default function ContactPage() {
 
                     {submitStatus === 'error' && (
                       <div className="p-5 bg-red-50 border border-red-200 rounded-2xl">
-                        <p className="text-red-800 font-medium text-sm">Something went wrong. Please try again or contact us directly at info@vietnamlaunchpad.com</p>
+                        <p className="text-red-800 font-medium text-sm">{errorMessage || 'Something went wrong. Please try again or contact us directly at info@vietnamlaunchpad.com'}</p>
                       </div>
                     )}
 
@@ -293,7 +301,8 @@ export default function ContactPage() {
                         {
                           icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',
                           title: 'WhatsApp / Phone',
-                          detail: '+84 123 912 1299',
+                          detail: PHONE_DISPLAY,
+                          href: PHONE_TEL,
                           sub: 'Mon–Fri, 9am–6pm ICT',
                         },
                         {
@@ -316,7 +325,23 @@ export default function ContactPage() {
                             </svg>
                           </div>
                           <div>
-                            <div className="font-semibold text-stone-800 text-sm">{item.detail}</div>
+                            {'href' in item && item.href ? (
+                              <a href={item.href} className="font-semibold text-stone-800 text-sm hover:text-primary-600 transition-colors">
+                                {item.detail}
+                              </a>
+                            ) : (
+                              <div className="font-semibold text-stone-800 text-sm">{item.detail}</div>
+                            )}
+                            {item.title === 'WhatsApp / Phone' && (
+                              <a
+                                href={PHONE_WHATSAPP}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block text-primary-600 text-xs font-medium hover:text-primary-500"
+                              >
+                                WhatsApp
+                              </a>
+                            )}
                             <div className="text-stone-400 text-xs">{item.sub}</div>
                           </div>
                         </div>

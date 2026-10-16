@@ -92,6 +92,7 @@ const guideCategories = [
       { title: 'Divorce in Vietnam', href: '/guides/divorce-vietnam' },
       { title: 'VNeID for Foreigners', href: '/guides/vneid-vietnam-digital-id-foreigners' },
       { title: 'First Week in Vietnam', href: '/guides/first-week' },
+      { title: 'Best eSIM for Vietnam', href: '/guides/best-esim-vietnam' },
     ],
   },
   {

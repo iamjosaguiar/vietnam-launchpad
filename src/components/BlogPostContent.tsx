@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import MarkdownBlocks from '@/components/MarkdownBlocks';
 
 interface BlogPost {
   slug: string;
@@ -208,7 +207,9 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                 </div>
               )}
 
-              <div className="prose prose-lg prose-blue max-w-none
+              <MarkdownBlocks
+                markdown={post.content}
+                className="prose prose-lg prose-blue max-w-none
                 prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
                 prose-h1:text-4xl prose-h1:mb-6 prose-h1:hidden
                 prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200
@@ -227,11 +228,8 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                 prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
                 prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100
                 prose-tr:even:bg-gray-50"
-              >
-                <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>
-                  {post.content}
-                </ReactMarkdown>
-              </div>
+                components={mdComponents}
+              />
             </div>
           </div>
         </div>

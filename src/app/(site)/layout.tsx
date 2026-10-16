@@ -6,6 +6,7 @@ import Script from 'next/script';
 import MessagingWidget from '@/components/MessagingWidget';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import { routing } from '@/i18n/config';
+import { PHONE_E164 } from '@/lib/site';
 
 import '../globals.css';
 
@@ -123,7 +124,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+84 123 912 1299',
+      telephone: PHONE_E164,
       contactType: 'Customer Service',
       areaServed: 'VN',
       availableLanguage: ['English', 'Vietnamese', 'Chinese', 'Korean']
@@ -160,7 +161,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
       latitude: 21.0285,
       longitude: 105.8542
     },
-    telephone: '+84 123 912 1299',
+    telephone: PHONE_E164,
     email: 'jos@iamjosaguiar.com',
     priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00',

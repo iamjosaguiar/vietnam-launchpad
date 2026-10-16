@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { PHONE_DISPLAY } from '@/lib/site';
 
 export async function POST(request: NextRequest) {
   try {
@@ -158,8 +159,8 @@ export async function POST(request: NextRequest) {
       <h3>Need immediate assistance?</h3>
       <ul>
         <li><strong>Email:</strong> jos@iamjosaguiar.com</li>
-        <li><strong>WhatsApp:</strong> +84 123 912 1299</li>
-        <li><strong>Zalo:</strong> +84 123 912 1299</li>
+        <li><strong>WhatsApp:</strong> ${PHONE_DISPLAY}</li>
+        <li><strong>Zalo:</strong> ${PHONE_DISPLAY}</li>
       </ul>
 
       <p>We look forward to helping you launch your business in Vietnam!</p>

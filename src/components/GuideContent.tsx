@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import MarkdownBlocks from '@/components/MarkdownBlocks';
 
 // ─── Inline CTA components ────────────────────────────────────────────────────
 
@@ -294,14 +293,11 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
               <div>
                 {sections.map((section, i) => (
                   <div key={i}>
-                    <div className={proseClasses}>
-                      <ReactMarkdown
-                        remarkPlugins={[remarkGfm]}
-                        components={mdComponents(slugify)}
-                      >
-                        {section}
-                      </ReactMarkdown>
-                    </div>
+                    <MarkdownBlocks
+                      markdown={section}
+                      className={proseClasses}
+                      components={mdComponents(slugify)}
+                    />
                     {i === cta1At - 1 && <SoftCta />}
                     {i === cta2At - 1 && (
                       <ServiceCta
