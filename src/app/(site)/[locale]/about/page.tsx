@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
+import { PHONE_E164 } from '@/lib/site';
 
 const aboutSchema = [
   {
@@ -17,7 +18,7 @@ const aboutSchema = [
     name: 'Vietnam Launchpad',
     url: 'https://www.vietnamlaunchpad.com',
     logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
-    telephone: '+841239121299',
+    telephone: PHONE_E164,
     email: 'info@vietnamlaunchpad.com',
     address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },
   },

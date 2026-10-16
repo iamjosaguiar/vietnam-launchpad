@@ -8,6 +8,7 @@ import HeroSection from '@/components/HeroSection';
 import EnterpriseSection from '@/components/EnterpriseSection';
 import CaseStudiesSection from '@/components/CaseStudiesSection';
 import { getTranslations } from 'next-intl/server';
+import { PHONE_E164 } from '@/lib/site';
 
 const serviceCards = [
   { key: 'trc', href: '/services/trc-application' },
@@ -40,7 +41,7 @@ const homepageSchema = [
     name: 'Vietnam Launchpad',
     url: 'https://www.vietnamlaunchpad.com',
     logo: 'https://www.vietnamlaunchpad.com/vietnam-launchpad-logo.png',
-    telephone: '+841239121299',
+    telephone: PHONE_E164,
     email: 'info@vietnamlaunchpad.com',
     description: "Vietnam's premier market-entry and compliance firm for founders, investors, and executives. Work permits, TRC, company setup, and full enterprise market-entry packages.",
     address: { '@type': 'PostalAddress', addressCountry: 'VN', addressLocality: 'Hanoi' },

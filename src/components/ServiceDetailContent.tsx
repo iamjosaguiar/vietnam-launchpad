@@ -1,6 +1,7 @@
 'use client';
 
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import HolaflyCallout from '@/components/HolaflyCallout';
 import { Link } from '@/i18n/config';
 
 interface ServiceData {
@@ -101,6 +102,16 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
                 </AnimateOnScroll>
               ))}
             </div>
+            {service.slug === 'evisa' && (
+              <div className="mt-10">
+                <HolaflyCallout variant="visa" />
+              </div>
+            )}
+            {service.slug === 'relocation-assistance' && (
+              <div className="mt-10">
+                <HolaflyCallout variant="relocation" />
+              </div>
+            )}
           </div>
         </div>
       </section>

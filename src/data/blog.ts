@@ -1241,6 +1241,8 @@ For TRC or work permit holders, most banks require:
 
 Get a **Vietnamese SIM card before going to open an account**. You will need a local phone number for the OTP verification that is central to Vietnamese mobile banking. Without a local number, you cannot complete setup.
 
+{{holafly:banking}}
+
 ## Sending Money Abroad
 
 This is where the rules get more specific:

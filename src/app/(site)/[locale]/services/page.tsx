@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
+import { PHONE_WHATSAPP } from '@/lib/site';
 
 // ─── Pricing map (starting-from figures, updated manually) ───────────────────
 
@@ -461,7 +462,7 @@ export default function ServicesPage() {
                 </svg>
               </Link>
               <a
-                href="https://wa.me/841239121299"
+                href={PHONE_WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 border-2 border-white/30 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 transition-all duration-300"
