@@ -153,7 +153,6 @@ export async function POST(request: NextRequest) {
       <ul>
         <li>WhatsApp: ${PHONE_DISPLAY}</li>
         <li>Zalo: ${PHONE_DISPLAY}</li>
-        <li>Email: jos@iamjosaguiar.com</li>
       </ul>
 
       <p>We're excited to help you with your Vietnam journey!</p>

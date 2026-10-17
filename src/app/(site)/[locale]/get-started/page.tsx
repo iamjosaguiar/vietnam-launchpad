@@ -5,6 +5,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
+import { PHONE_DISPLAY } from '@/lib/site';
 
 export default function GetStartedPage() {
   const [formData, setFormData] = useState({
@@ -225,7 +226,7 @@ export default function GetStartedPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                          placeholder="+84 123 456 789"
+                          placeholder={PHONE_DISPLAY}
                         />
                       </div>
 

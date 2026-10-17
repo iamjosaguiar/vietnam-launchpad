@@ -148,7 +148,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2">Phone / WhatsApp</label>
-                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className={inputClass} placeholder="+1 (555) 000-0000" />
+                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className={inputClass} placeholder={PHONE_DISPLAY} />
                       </div>
                       <div>
                         <label className="block text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2">Company / Organization</label>

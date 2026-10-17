@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/config';
+import { PHONE_DISPLAY } from '@/lib/site';
 
 export default function Footer() {
   const t = useTranslations('navigation');
@@ -22,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="text-gray-300">
               <p>📧 hello@vietnamlaunchpad.com</p>
-              <p>📱 +84 (0)28 1234 5678</p>
+              <p>📱 {PHONE_DISPLAY}</p>
               <p>📍 Ho Chi Minh City, Vietnam</p>
             </div>
           </div>
