@@ -6,7 +6,7 @@ import Script from 'next/script';
 import MessagingWidget from '@/components/MessagingWidget';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import { routing } from '@/i18n/config';
-import { PHONE_E164 } from '@/lib/site';
+import { CONTACT_EMAILS, PHONE_E164 } from '@/lib/site';
 
 import '../globals.css';
 
@@ -162,7 +162,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
       longitude: 105.8542
     },
     telephone: PHONE_E164,
-    email: 'jos@iamjosaguiar.com',
+    email: CONTACT_EMAILS[0],
     priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00',
     aggregateRating: {

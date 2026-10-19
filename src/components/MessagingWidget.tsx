@@ -1,6 +1,6 @@
 'use client';
 
-import { PHONE_WHATSAPP } from '@/lib/site';
+import { CONTACT_MAILTO, PHONE_WHATSAPP } from '@/lib/site';
 
 export default function MessagingWidget() {
   return (
@@ -23,7 +23,7 @@ export default function MessagingWidget() {
 
       {/* Email */}
       <a
-        href="mailto:jos@iamjosaguiar.com"
+        href={CONTACT_MAILTO}
         className="group relative bg-gray-700 text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition-all hover:scale-110"
         aria-label="Send Email"
       >
