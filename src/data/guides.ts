@@ -709,7 +709,7 @@ Vietnam has seasonal dengue fever - no widely available vaccine, managed through
     ctaBody: "If you're ready to move beyond the 90-day cycle, we can help structure a proper long-term visa or residency through investment, work, or business setup.",
     ctaLink: '/contact',
     ctaLinkText: 'Talk to an Expert',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Explore TRC Options',
     content: `## The Reality Check
 
@@ -928,7 +928,7 @@ The language barrier is real but improving. Basic Vietnamese phrases are appreci
     ctaBody: "Once you have found your apartment, the next step is sorting your long-term visa or residency status. We can handle that side completely.",
     ctaLink: '/contact',
     ctaLinkText: 'Talk to Us About Your Visa',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Explore TRC Options',
     content: `## Before You Search
 
@@ -1121,7 +1121,7 @@ Vietnamese law requires deposit return within a certain period, but enforcement 
     ctaBody: 'A TRC or work permit unlocks proper banking access and a lot more. We handle the paperwork and make sure everything goes through correctly.',
     ctaLink: '/contact',
     ctaLinkText: 'Talk to Us',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Explore TRC Options',
     content: `## Can Foreigners Open a Vietnamese Bank Account?
 
@@ -1309,7 +1309,7 @@ Vietnam's banking sector is rapidly digitizing. Cashless payment is increasingly
     ctaBody: 'School fees are the biggest variable in a family budget. Our consultants can walk you through school options, visa requirements for children, and the full family setup.',
     ctaLink: '/contact',
     ctaLinkText: 'Book a Family Consultation',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Explore TRC Options',
     content: `## The Education Landscape
 
@@ -1540,7 +1540,7 @@ Vietnam has several international university campuses (RMIT Vietnam, BUV - Briti
     ctaBody: "Whether it's an investment TRC, business visa, or another route, we'll find the cleanest long-term solution for your situation.",
     ctaLink: '/contact',
     ctaLinkText: 'Book a Consultation',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Explore TRC Options',
     content: `## The First Surprise: No Retirement Visa
 
@@ -1579,7 +1579,7 @@ The most secure long-term option for retirees with capital:
 - 3 billion VND (~$120,000): TRC up to 2 years
 - 50 billion VND (~$2,000,000): TRC up to 5 years
 
-See our [TRC Application service](/services/trc) for the full process.
+See our [TRC Application service](/services/trc-application) for the full process.
 
 **Pros:** Stability, banking access, property ownership eligibility, no visa runs
 **Cons:** Capital required, ongoing compliance for the business entity
@@ -1591,7 +1591,7 @@ If you are married to a Vietnamese citizen, you can obtain a TRC through your ma
 **Pros:** Very stable, long-term, full integration
 **Cons:** Only applicable if you are married to a Vietnamese national
 
-See our [Marriage Registration and TRC service](/services/marriage-trc).
+See our [Marriage Registration and TRC service](/services/marriage-registration).
 
 ### Option 4: The Proposed Golden Visa
 
@@ -1802,7 +1802,7 @@ The single largest source of expat employment in Vietnam. Demand is consistent a
 - International schools: $2,000-4,000/month + benefits
 - Private tutoring: $20-50/hour depending on level and location
 
-> For a detailed breakdown of teaching requirements, see our blog post: [How to Legally Teach English in Vietnam](/blog/how-to-legally-teach-english-vietnam).
+> For a detailed breakdown of teaching requirements, see our blog post: [How to Legally Teach English in Vietnam](/blog/how-to-legally-teach-english-in-vietnam).
 
 ---
 
@@ -2351,7 +2351,7 @@ If you have Vietnamese citizenship or are of Vietnamese origin, seek specific ad
     ctaBody: "Family relocations have more moving parts - visa types for each family member, school applications, health insurance for all. Our consultants handle the full picture.",
     ctaLink: '/contact',
     ctaLinkText: 'Book a Family Consultation',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Explore Long-Term Visa Options',
     content: `## Planning Timeline for Families
 
@@ -2397,7 +2397,7 @@ Each family member needs their own visa. Children are not automatically covered 
 
 For a family requiring long-term status, the investment TRC route often makes most sense - one application that covers the primary applicant and then supports family members.
 
-See our [TRC service](/services/trc) for full details.
+See our [TRC service](/services/trc-application) for full details.
 
 ---
 
@@ -3120,7 +3120,7 @@ Hoi An is a UNESCO World Heritage city - the preserved ancient town, lantern-lit
     category: 'Work & Business',
     ctaTitle: 'Ready to Register Your Company in Vietnam?',
     ctaBody: 'Vietnam Launchpad handles company registration end-to-end for foreign investors - from structure advice to Investment Registration Certificate, Business Registration Certificate, and tax enrollment. We have registered hundreds of foreign-owned companies across multiple sectors.',
-    ctaLink: '/services/company-registration',
+    ctaLink: '/services/company-setup',
     ctaLinkText: 'Start Company Registration',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Book a Free Consultation',
@@ -3395,7 +3395,7 @@ Yes. A joint venture (Vietnamese + foreign investor) is also possible. Some sect
     category: 'Visas & Residency',
     ctaTitle: 'Need Help with Your TRC Application?',
     ctaBody: "Vietnam Launchpad specializes in TRC applications for all routes - investment, work permit, and marriage. We prepare your full document package, liaise with immigration, and handle the process end-to-end. Most TRC applications we manage are approved first time.",
-    ctaLink: '/services/trc',
+    ctaLink: '/services/trc-application',
     ctaLinkText: 'Start Your TRC Application',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Ask a Question',
@@ -3473,7 +3473,7 @@ This is the primary TRC route for business owners, entrepreneurs, and investors 
 
 **Advantage:** This route gives you the longest initial TRC validity and is independent of any employment relationship. It is the preferred route for founders of Vietnam-registered companies.
 
-**See also:** Our [Company Registration service](/services/company-registration) if you need to establish the underlying company first.
+**See also:** Our [Company Registration service](/services/company-setup) if you need to establish the underlying company first.
 
 ---
 
@@ -3873,7 +3873,7 @@ International school recruitment agencies (Search Associates, TIE Online, Schrol
     ctaBody: 'Vietnam Launchpad handles marriage registration document preparation for foreign nationals and the subsequent TRC application for the foreign spouse. We know exactly what each province requires and manage the full process.',
     ctaLink: '/contact',
     ctaLinkText: 'Book a Consultation',
-    ctaSecondaryLink: '/services/trc',
+    ctaSecondaryLink: '/services/trc-application',
     ctaSecondaryText: 'Learn About Marriage-Based TRC',
     faqs: [
       { q: 'Can I work in Vietnam with a marriage-based TRC?', a: 'Yes. Being married to a Vietnamese citizen and holding a marriage-based TRC qualifies you for a work permit exemption in Vietnam. You do not need a full work permit. Instead, you apply for a Work Permit Exemption Certificate through DOLISA, which is faster and simpler than a standard work permit application. This covers employment by Vietnamese companies as well as running your own business.' },
@@ -6292,7 +6292,7 @@ Hue is compact and relatively flat near the river:
     ctaTitle: 'Setting up to trade with EFTA markets?',
     ctaBody:
       'Vietnam Launchpad helps foreign investors register trading and service companies, obtain work permits, and navigate market entry. Book a consultation to align your structure with export or import plans.',
-    ctaLink: '/services/company-registration',
+    ctaLink: '/services/company-setup',
     ctaLinkText: 'Company registration support',
     ctaSecondaryLink: '/contact',
     ctaSecondaryText: 'Book a free consultation',
@@ -6435,7 +6435,7 @@ Confirmed in official summaries: **competition**, **SMEs**, **dispute settlement
 
 An FTA does **not** replace Viet Nam's **investment licensing**, **tax**, or **immigration** rules. Foreign traders typically need a Vietnamese **limited liability company** (or branch, where permitted) with the correct **VSIC codes** for import/export, plus **work permits** or investor exemptions for foreign staff.
 
-See our [company setup in Vietnam guide](/guides/company-setup-vietnam) and [company registration service](/services/company-registration). For tax on cross-border income, EFTA home countries' **double taxation agreements** with Viet Nam remain relevant alongside customs preferences ([tax treaty overview](/tax-treaty)).
+See our [company setup in Vietnam guide](/guides/company-setup-vietnam) and [company registration service](/services/company-setup). For tax on cross-border income, EFTA home countries' **double taxation agreements** with Viet Nam remain relevant alongside customs preferences ([tax treaty overview](/tax-treaty)).
 
 ### Relationship to EVFTA and other agreements
 
