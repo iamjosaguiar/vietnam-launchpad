@@ -245,7 +245,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Swiss passport holders enjoy 45-day visa-free entry. Switzerland is not part of the EU but benefits from the same visa-free arrangement. Swiss nationals working in finance, pharma, or hospitality find Vietnam an attractive base in Southeast Asia.',
+      'Swiss passport holders enjoy 45-day visa-free entry. Switzerland is not part of the EU but benefits from the same visa-free arrangement. Swiss nationals working in finance, pharma, or hospitality find Vietnam an attractive base in Southeast Asia. Switzerland is an EFTA member; the EFTA-Vietnam FTA was signed in October 2026 and awaits ratification before entry into force.',
     topQueries: [
       'switzerland vietnam visa',
       'do swiss citizens need visa for vietnam',
@@ -325,7 +325,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Norwegian passport holders benefit from 45-day visa-free entry. Norway is not an EU member but is covered by Vietnam\'s visa-free policy for select European countries. The e-visa is the go-to option for extended visits.',
+      'Norwegian passport holders benefit from 45-day visa-free entry. Norway is not an EU member but is covered by Vietnam\'s visa-free policy for select European countries. The e-visa is the go-to option for extended visits. Norway is an EFTA member; the EFTA-Vietnam FTA was signed in October 2026 and awaits ratification before entry into force.',
     topQueries: [
       'norway vietnam visa',
       'do norwegians need visa for vietnam',

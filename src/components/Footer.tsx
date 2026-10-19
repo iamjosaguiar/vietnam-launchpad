@@ -100,6 +100,7 @@ export default function Footer() {
                   { name: 'Tax Treaties', href: '/tax-treaty' },
                   { name: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
                   { name: 'Cost of Living', href: '/guides/cost-of-living' },
+                  { name: 'EFTA-Vietnam Free Trade Agreement', href: '/guides/efta-vietnam-free-trade-agreement' },
                   { name: 'Best eSIM for Vietnam', href: '/guides/best-esim-vietnam' },
                   { name: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
                   { name: 'Vietnam Statistics & Data', href: '/vietnam-statistics' },

@@ -244,6 +244,7 @@ export default async function VietnamStatisticsPage() {
                       { name: 'Vietnam Compliance Calendar', href: '/vietnam-compliance-calendar' },
                       { name: 'Cost of Living in Vietnam 2026', href: '/guides/cost-of-living' },
                       { name: 'Company Setup in Vietnam', href: '/guides/company-setup-vietnam' },
+                      { name: 'EFTA-Vietnam Free Trade Agreement', href: '/guides/efta-vietnam-free-trade-agreement' },
                       { name: 'Salary Calculator (PIT)', href: '/tools/salary-calculator' },
                     ].map((link) => (
                       <li key={link.href}>
