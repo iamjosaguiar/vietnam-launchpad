@@ -722,7 +722,7 @@ A best-case scenario for an accessible Golden Visa programme is late 2026 to 202
 
 Do not put your Vietnam plans on hold waiting for a visa that may or may not arrive on the timeline you need. The existing pathways - particularly the investment TRC route - offer genuine stability and are available now.
 
-[Talk to our team](/contact) about which long-term option fits your situation, or read our [full Retirement in Vietnam guide](/guides/retirement) and [TRC Application service page](/services/trc) for detailed information.
+[Talk to our team](/contact) about which long-term option fits your situation, or read our [full Retirement in Vietnam guide](/guides/retirement) and [TRC Application service page](/services/trc-application) for detailed information.
 
 ---
 
@@ -824,7 +824,7 @@ Outside of formal emergency declarations, individual circumstances (serious illn
 
 If you are spending three months or more per year in Vietnam, or if you are building a life here, the Temporary Residence Card is the cleanest solution to visa management. TRC holders have legal residency status, no recurring visa deadlines to manage, and significantly reduced friction with banking, property, and employment.
 
-We handle TRC applications for investors, employed expats, and foreign spouses of Vietnamese citizens. If you are tired of tracking visa dates, [talk to our team about TRC eligibility](/services/trc).
+We handle TRC applications for investors, employed expats, and foreign spouses of Vietnamese citizens. If you are tired of tracking visa dates, [talk to our team about TRC eligibility](/services/trc-application).
 
 ---
 
