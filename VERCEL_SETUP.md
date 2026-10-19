@@ -7,7 +7,7 @@ Your Vietnam Launchpad site needs these environment variables to work properly.
 | Variable | Description | Example Value |
 |----------|-------------|---------------|
 | `SENDGRID_API_KEY` | SendGrid API key for contact form emails | `SG.xxxxx...` |
-| `CONTACT_EMAIL` | Email where form submissions are sent | `hello@vietnamlaunchpad.com` |
+| `CONTACT_EMAIL` | Email(s) where form submissions are sent. Separate several with commas. | `a@example.com,b@example.com` |
 | `FROM_EMAIL` | From address for automated emails | `noreply@vietnamlaunchpad.com` |
 | `NEXT_PUBLIC_GA_ID` | Google Analytics 4 tracking ID (optional) | `G-XXXXXXXXXX` |
 
