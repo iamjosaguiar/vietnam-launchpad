@@ -1869,7 +1869,7 @@ Many expats choose to operate their own business rather than seek employment. Vi
 
 Popular business types among expats:
 - Consulting (management, IT, education, legal)
-- Import/export
+- Import/export (see [EFTA-Vietnam FTA guide](/guides/efta-vietnam-free-trade-agreement) for the latest European market access context)
 - Restaurants and cafes
 - Online businesses (e-commerce, content, software)
 - Property management
@@ -3115,7 +3115,7 @@ Hoi An is a UNESCO World Heritage city - the preserved ancient town, lantern-lit
     excerpt: 'Setting up a company in Vietnam as a foreigner is entirely possible - and in most sectors, you can own 100% of your business. This guide covers every structure option, the registration process, realistic costs, and the legal requirements you need to know before you start.',
     author: 'Vietnam Launchpad',
     date: '2026-02-01',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-10-19',
     readTime: '16 min read',
     category: 'Work & Business',
     ctaTitle: 'Ready to Register Your Company in Vietnam?',
@@ -3316,6 +3316,16 @@ Some business activities require additional licenses or conditional approval bey
 - **Real estate brokerage:** Real estate license required
 
 If your business line appears on the conditional list (Appendix IV of the Law on Investment), factor in additional approval time (typically 30-90 additional days) and cost.
+
+---
+
+## Trade agreements and market access
+
+Viet Nam is party to multiple free trade agreements, including **RCEP**, **CPTPP**, the **EU-Vietnam FTA (EVFTA)**, and, as of **18 October 2026**, the signed but not yet in-force **EFTA-Viet Nam FTA (VEFTA)** with Iceland, Liechtenstein, Norway, and Switzerland.
+
+If your business model depends on **importing machinery, pharmaceuticals, or seafood** from Europe, or **exporting** Vietnamese goods to those markets, tariff schedules and **rules of origin** under the relevant FTA will affect your landed costs and competitiveness once agreements are in force.
+
+For a verified timeline, annex structure, and business checklist, see our [EFTA-Vietnam Free Trade Agreement guide](/guides/efta-vietnam-free-trade-agreement).
 
 ---
 
@@ -6267,6 +6277,212 @@ Hue is compact and relatively flat near the river:
       },
     ],
   },
+
+  'efta-vietnam-free-trade-agreement': {
+    slug: 'efta-vietnam-free-trade-agreement',
+    title: 'EFTA-Vietnam Free Trade Agreement (VEFTA): Business Guide 2026',
+    subtitle: 'Status, tariff schedules, rules of origin, and what the Iceland-Liechtenstein-Norway-Switzerland deal means for trade and investment',
+    excerpt:
+      'The Viet Nam-EFTA Free Trade Agreement (VEFTA) was signed in Hanoi on 18 October 2026. Entry into force is still pending ratification. This guide explains the parties, negotiation timeline, main chapters, and practical steps for exporters, importers, and investors.',
+    author: 'Vietnam Launchpad',
+    date: '2026-10-19',
+    lastUpdated: '2026-10-19',
+    readTime: '14 min read',
+    category: 'Work & Business',
+    ctaTitle: 'Setting up to trade with EFTA markets?',
+    ctaBody:
+      'Vietnam Launchpad helps foreign investors register trading and service companies, obtain work permits, and navigate market entry. Book a consultation to align your structure with export or import plans.',
+    ctaLink: '/services/company-registration',
+    ctaLinkText: 'Company registration support',
+    ctaSecondaryLink: '/contact',
+    ctaSecondaryText: 'Book a free consultation',
+    content: `## Status at a glance (19 October 2026)
+
+| Item | Detail |
+|---|---|
+| Official names | **EFTA-Viet Nam Free Trade Agreement**; Vietnam's Ministry of Industry and Trade also uses **VEFTA** |
+| Parties | **Viet Nam** and the four **EFTA** states: **Iceland**, **Liechtenstein**, **Norway**, and **Switzerland** |
+| Negotiations concluded | **2 July 2026** (announced after the EFTA Ministerial meeting in Reykjavík, **22 June 2026**) |
+| Signed | **18 October 2026** in **Hanoi** |
+| Entry into force | **Pending** (not yet in force as of 19 October 2026) |
+| Ratification | Under way in EFTA capitals and in Viet Nam; timing varies by country |
+
+Until the agreement enters into force, normal MFN tariffs and existing rules apply. Businesses should use the signing period to map product lines against the published annex structure and prepare origin documentation processes.
+
+---
+
+## What is EFTA (and how is it different from the EU)?
+
+The **European Free Trade Association (EFTA)** is an intergovernmental organisation whose current members are **Iceland**, **Liechtenstein**, **Norway**, and **Switzerland**. EFTA is **not** the European Union. Viet Nam already has a separate, in-force agreement with the EU: the **EU-Vietnam Free Trade Agreement (EVFTA)**. The new **EFTA-Viet Nam FTA** is an additional bridge to four high-income European economies with strong positions in pharmaceuticals, machinery, seafood, and financial services.
+
+EFTA publishes the full agreement structure, including goods and services annexes, on its [Viet Nam trade relations page](https://www.efta.int/trade-relations/free-trade-network/viet-nam).
+
+---
+
+## Negotiation history
+
+According to [EFTA](https://www.efta.int/trade-relations/free-trade-network/viet-nam) and [Vietnam's Ministry of Industry and Trade (MOIT)](https://moit.gov.vn/en/news/signing-of-the-free-trade-agreement-between-viet-nam-and-the-member-states-of-the-european-free-trade-association-efta-.html):
+
+- Talks **launched on 2 July 2012** in Hanoi.
+- **16 formal rounds** ran until **2018**, when negotiations slowed.
+- Negotiations **relaunched on 8 September 2025** in Geneva and completed **five further rounds**.
+- A **joint announcement on 2 July 2026** confirmed that legal text was agreed.
+- The agreement was **signed in Hanoi on 18 October 2026**, in the presence of Viet Nam's top leadership and ministers from all four EFTA states.
+
+MOIT notes that the two sides held **21 official negotiation rounds** in total across the two phases.
+
+---
+
+## Why the agreement matters for bilateral trade
+
+**EFTA trade statistics (goods, 2025):** EFTA reports bilateral trade of about **EUR 4.8 billion** in 2025, with Viet Nam recording a surplus of about **EUR 2.5 billion** (Swiss data exclude trade in gold). EFTA's goods exports to Viet Nam were about **EUR 1.1 billion**; imports from Viet Nam about **EUR 3.7 billion**.
+
+**MOIT figures:** MOIT states that Viet Nam-EFTA trade has averaged **nearly USD 2 billion annually**, with complementary trade structures. Viet Nam's main exports to EFTA include **seafood, footwear, textiles and garments, machinery and equipment, electronics and components**. Imports from EFTA include **machinery, industrial equipment, chemicals, pharmaceuticals, and production inputs**.
+
+**Investment (MOIT, end 2025):** Switzerland had **234 projects** with registered capital above **USD 2.4 billion**; Norway had **62 projects** above **USD 201 million**. EFTA investors are active in manufacturing, food, pharmaceuticals, energy, and technology.
+
+These numbers illustrate why market access and predictable rules matter for both Vietnamese exporters and EFTA suppliers.
+
+---
+
+## Main chapters and coverage
+
+MOIT and EFTA describe VEFTA as a **comprehensive, modern agreement**. Confirmed areas include:
+
+### Trade in goods
+
+- **Tariff elimination or reduction** through country-specific schedules (see annex list below).
+- **Rules of origin** and origin documentation.
+- **Sanitary and phytosanitary (SPS)** measures and **technical barriers to trade (TBT)**.
+- **Customs procedures** and **trade facilitation**.
+- **Trade remedies** (anti-dumping, safeguards, etc.).
+- Dedicated provisions on **pharmaceutical products and medical devices** (Annex 2I).
+- Viet Nam **export duty** schedule (Annex 2E) and goods subject to **specific measures** (Annex 2G).
+
+**Tariff annexes (each party's commitments):**
+
+| Annex | Content |
+|---|---|
+| 2A | Viet Nam's tariff commitments on goods originating in EFTA states |
+| 2B | Iceland's commitments on goods originating in Viet Nam |
+| 2C | Norway's commitments on goods originating in Viet Nam |
+| 2D | Switzerland's commitments on goods originating in Viet Nam (also relevant for Liechtenstein in the EFTA customs arrangement) |
+
+EFTA does not publish a single headline percentage for all Viet Nam lines in its public summary. **Product-by-product rates and phase-out periods are in the annex schedules.** Do not rely on media round numbers for Viet Nam's offers to EFTA unless you have checked the legal text.
+
+**Illustrative Norway-to-Viet Nam outcomes (official Norwegian government figures):** Norway's Ministry of Foreign Affairs states that about **half** of Norwegian goods exports to Viet Nam will be **tariff-free at entry into force**, rising to **more than 98% tariff-free within seven years**. For **seafood**, Viet Nam currently applies tariffs of up to **15%** on Norwegian salmon and mackerel; **salmon** is to enter **tariff-free when the agreement enters into force**, with **mackerel tariffs phased out over three years** ([regjeringen.no, 18 October 2026](https://www.regjeringen.no/en/whats-new/undertegnet-frihandelsavtale-med-vietnam-apner-nye-muligheter-for-norske-bedrifter/id3178346/)).
+
+### Rules of origin
+
+Annex **2F** sets the origin rules, with:
+
+- **Appendix 2F-a:** product-specific rules
+- **Appendix 2F-b:** specimen **VN-EFTA** certificate of origin
+- **Appendix 2F-c:** origin declaration
+- **Appendix 2F-d:** products under the territoriality principle (Article 11)
+
+Exporters will need to confirm whether their goods qualify under the product-specific rules and whether a certificate or approved exporter declaration is required for each shipment.
+
+### Trade in services and investment
+
+The agreement includes **services schedules** (Annex 4E and related sector annexes on movement of natural persons, financial services, telecommunications, and maritime transport) and **investment commitments** (Annex 5A schedules per party). EFTA and Norway highlight **facilitated investment and services trade** as a core benefit; detailed sector openings are in the appendices for each country.
+
+### Government procurement
+
+**Annex 7A** covers government procurement, opening selected public buying to cross-border competition according to the agreed thresholds and entities list.
+
+### Intellectual property
+
+**Annex 9A** addresses protection of intellectual property, aligned with modern FTA practice and relevant international standards.
+
+### Trade and sustainable development
+
+Both MOIT and EFTA reference a **trade and sustainable development** chapter. Norway describes it as **ambitious** in its signing press release. The [Viet Nam government portal](https://www.vietnam.vn/en/mo-ra-giai-doan-hop-tac-moi-giua-viet-nam-va-cac-nuoc-efta) reports cooperation themes discussed by ambassadors, including **offshore wind**, **low-emission shipping**, **marine aquaculture**, **circular economy**, and **forest protection**, as part of the broader bilateral agenda alongside the FTA.
+
+### Other topics
+
+Confirmed in official summaries: **competition**, **SMEs**, **dispute settlement**, **cooperation and capacity building**, and **bilateral side letters** between each EFTA state and Viet Nam regarding Article 10.16.
+
+---
+
+## Entry into force and ratification (what we know)
+
+- **EFTA:** The [EFTA Viet Nam page](https://www.efta.int/trade-relations/free-trade-network/viet-nam) lists **Date of Entry Into Force: Pending** as of the signing.
+- **Switzerland:** [SECO](https://www.seco.admin.ch/en/free-trade-agreement-vietnam) records the agreement as **concluded on 2 July 2026** and points to EFTA for updates. The Swiss Ambassador told the Viet Nam government portal that **parliamentary ratification** is the priority and that a **referendum** is possible under Switzerland's direct democracy if citizens request one ([vietnam.vn, 18 October 2026](https://www.vietnam.vn/en/mo-ra-giai-doan-hop-tac-moi-giua-viet-nam-va-cac-nuoc-efta)).
+- **Norway:** The Norwegian Ambassador stated that the agreement **enters into force three months after Viet Nam and at least one EFTA member complete ratification**, and that Norway will submit the agreement to **Parliament** ([vietnam.vn, 18 October 2026](https://www.vietnam.vn/en/mo-ra-giai-doan-hop-tac-moi-giua-viet-nam-va-cac-nuoc-efta)). Treat this procedural detail as **reported by Norway's ambassador** until the final legal text is published in your jurisdiction.
+
+**Not yet confirmed in primary legal text on public pages reviewed:** exact ratification timelines for Iceland, Liechtenstein, and Viet Nam's National Assembly, and whether all four EFTA states must ratify before benefits apply to each market. Check EFTA and MOIT for updated notices.
+
+---
+
+## Practical implications for businesses
+
+### Vietnamese exporters to EFTA
+
+- **Prepare origin paperwork early.** Without a valid VEFTA origin certificate or declaration, preferential rates will not apply even after entry into force.
+- **Map HS codes** against Annex 2B to 2D schedules for Iceland, Norway, and Switzerland (and Liechtenstein's channel through the Swiss customs union for goods).
+- **Seafood, footwear, textiles, and electronics** are already important export lines to EFTA; MOIT expects the FTA to support diversification and value-chain upgrading.
+- **Sustainable production** is increasingly relevant for EFTA consumers; official commentary highlights environmental and labour-related expectations in trade and sustainable development chapters.
+
+### EFTA exporters and investors into Viet Nam
+
+- **Pharmaceuticals, machinery, and chemicals** are major import categories today; tariff phase-downs will affect landed cost once schedules apply.
+- **Norwegian seafood** gains a clear, published tariff trajectory for salmon and mackerel (see Norwegian government figures above).
+- **Swiss and other EFTA manufacturers** with existing Viet Nam operations (MOIT cites long-standing investors such as in precision engineering, food, and pharma) can plan pricing and sourcing against Annex 2A Viet Nam commitments.
+- **Services and investment** openings depend on each party's Annex 4E/5A schedules; financial, telecom, and maritime annexes merit review for regulated sectors.
+
+### Setting up or expanding a company in Viet Nam
+
+An FTA does **not** replace Viet Nam's **investment licensing**, **tax**, or **immigration** rules. Foreign traders typically need a Vietnamese **limited liability company** (or branch, where permitted) with the correct **VSIC codes** for import/export, plus **work permits** or investor exemptions for foreign staff.
+
+See our [company setup in Vietnam guide](/guides/company-setup-vietnam) and [company registration service](/services/company-registration). For tax on cross-border income, EFTA home countries' **double taxation agreements** with Viet Nam remain relevant alongside customs preferences ([tax treaty overview](/tax-treaty)).
+
+### Relationship to EVFTA and other agreements
+
+Viet Nam participates in **ASEAN**, **RCEP**, **CPTPP**, **EVFTA**, and bilateral deals. **VEFTA is additive:** it does not replace EVFTA for EU trade. Businesses should choose the **preferential scheme** that applies to each destination market and prove origin under that agreement's rules.
+
+---
+
+## Official sources used on this page
+
+| Topic | Source |
+|---|---|
+| Signature, negotiation timeline, annex list, 2025 trade values | [EFTA: Viet Nam](https://www.efta.int/trade-relations/free-trade-network/viet-nam) |
+| Signing ceremony, VEFTA scope, trade and FDI figures | [MOIT (English)](https://moit.gov.vn/en/news/signing-of-the-free-trade-agreement-between-viet-nam-and-the-member-states-of-the-european-free-trade-association-efta-.html) |
+| Negotiations concluded (July 2026) | [EFTA news, 2 July 2026](https://www.efta.int/media-resources/news/efta-and-viet-nam-conclude-negotiations-free-trade-agreement) |
+| Switzerland/EFTA status page | [SECO](https://www.seco.admin.ch/en/free-trade-agreement-vietnam) |
+| Norwegian export tariff outcomes (salmon, mackerel, 98% within seven years) | [Norwegian government, 18 Oct 2026](https://www.regjeringen.no/en/whats-new/undertegnet-frihandelsavtale-med-vietnam-apner-nye-muligheter-for-norske-bedrifter/id3178346/) |
+| Ratification process (Norway Parliament; Switzerland referendum possibility; three-month entry into force statement) | [Viet Nam government portal (vietnam.vn), 18 Oct 2026](https://www.vietnam.vn/en/mo-ra-giai-doan-hop-tac-moi-giua-viet-nam-va-cac-nuoc-efta) |
+
+*Last updated: 19 October 2026. Preferential tariffs apply only after entry into force. Verify HS codes, origin rules, and licensing with customs authorities and qualified advisers before shipping or investing.*`,
+    faqs: [
+      {
+        q: 'Is the EFTA-Vietnam free trade agreement in force yet?',
+        a: 'No. As of 19 October 2026, EFTA lists entry into force as pending. The agreement was signed in Hanoi on 18 October 2026 but still requires ratification by Viet Nam and EFTA member states before preferential tariffs apply.',
+      },
+      {
+        q: 'Which countries are covered by the EFTA-Vietnam FTA?',
+        a: 'Viet Nam and all four EFTA members: Iceland, Liechtenstein, Norway, and Switzerland. Vietnam\'s Ministry of Industry and Trade refers to the deal as VEFTA.',
+      },
+      {
+        q: 'How is the EFTA-Vietnam FTA different from the EU-Vietnam EVFTA?',
+        a: 'EVFTA is between Viet Nam and the European Union. The EFTA agreement is separate and covers Iceland, Liechtenstein, Norway, and Switzerland only. Businesses need to use the correct agreement and rules of origin for each destination market.',
+      },
+      {
+        q: 'Where are the tariff elimination schedules published?',
+        a: 'EFTA\'s Viet Nam page lists annexes 2A (Viet Nam commitments on EFTA goods), 2B–2D (Iceland, Norway, and Switzerland commitments on Vietnamese goods), and related origin annexes. Line-by-line duty rates are in those legal schedules, not in press summaries.',
+      },
+      {
+        q: 'What should exporters do before the agreement enters into force?',
+        a: 'Classify products by HS code, review the relevant annex schedules, design origin compliance (including whether a VN-EFTA certificate or origin declaration is needed), and confirm SPS/TBT requirements for food, seafood, and regulated goods. MOIT and EFTA ambassadors have publicly encouraged businesses to prepare during the ratification period.',
+      },
+      {
+        q: 'Does the FTA change visa or company registration rules in Vietnam?',
+        a: 'No. Market access for goods and services under the FTA is separate from immigration and investment licensing. Foreigners still need appropriate visas, work permits or investor exemptions, and a correctly registered Vietnamese entity to trade or operate locally.',
+      },
+    ],
+  },
+
   'best-esim-vietnam': bestEsimVietnamGuide,
 };
 
