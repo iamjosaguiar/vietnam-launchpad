@@ -57,7 +57,7 @@ export default function CaseStudiesSection() {
       <div className="container mx-auto px-4 md:px-8">
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-2xl mb-16 md:mb-20"
@@ -78,7 +78,7 @@ export default function CaseStudiesSection() {
           {cases.map((c, i) => (
             <motion.div
               key={c.headline}
-              initial={{ opacity: 0, y: 24 }}
+              initial={false}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i * 0.12 }}
               className={`relative bg-white rounded-3xl p-8 border ${c.borderColor} hover:shadow-elevation-3 transition-all duration-500 group hover:-translate-y-1`}
@@ -130,7 +130,7 @@ export default function CaseStudiesSection() {
 
         {/* Footer note */}
         <motion.p
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-center text-stone-400 text-sm mt-10"

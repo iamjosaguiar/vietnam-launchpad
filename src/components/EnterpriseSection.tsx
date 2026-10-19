@@ -37,7 +37,7 @@ export default function EnterpriseSection() {
 
           {/* Left - Copy */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={false}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
@@ -80,7 +80,7 @@ export default function EnterpriseSection() {
 
           {/* Right - Deliverables */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={false}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
             className="relative"
@@ -103,7 +103,7 @@ export default function EnterpriseSection() {
                 {deliverables.map((item, i) => (
                   <motion.div
                     key={item.label}
-                    initial={{ opacity: 0, x: 15 }}
+                    initial={false}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 + i * 0.07 }}
                     className="flex gap-4"

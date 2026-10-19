@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
-import { PHONE_DISPLAY } from '@/lib/site';
+import { CONTACT_EMAIL_DISPLAY, PHONE_DISPLAY } from '@/lib/site';
 
 export default function GetStartedPage() {
   const [formData, setFormData] = useState({
@@ -171,7 +171,7 @@ export default function GetStartedPage() {
 
             {/* Questionnaire Form */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
+              <div id="quote-form" className="scroll-mt-24 bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
                 <h2 className="text-3xl font-display font-bold text-gray-900 mb-8">Business Setup Questionnaire</h2>
 
                 <form onSubmit={handleSubmit} className="space-y-10">
@@ -414,7 +414,7 @@ export default function GetStartedPage() {
 
                   {submitStatus === 'error' && (
                     <div className="p-6 bg-red-50 border border-red-200 rounded-2xl">
-                      <p className="text-red-800 font-medium">Something went wrong. Please try again or contact us directly at jos@iamjosaguiar.com</p>
+                      <p className="text-red-800 font-medium">Something went wrong. Please try again or contact us directly at {CONTACT_EMAIL_DISPLAY}</p>
                     </div>
                   )}
 

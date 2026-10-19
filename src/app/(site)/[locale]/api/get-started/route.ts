@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PHONE_DISPLAY } from '@/lib/site';
+import { CONTACT_EMAIL_DISPLAY, PHONE_DISPLAY } from '@/lib/site';
 import { getLeadRecipients } from '@/lib/lead-recipients';
 
 export async function POST(request: NextRequest) {
@@ -159,7 +159,7 @@ export async function POST(request: NextRequest) {
 
       <h3>Need immediate assistance?</h3>
       <ul>
-        <li><strong>Email:</strong> jos@iamjosaguiar.com</li>
+        <li><strong>Email:</strong> ${CONTACT_EMAIL_DISPLAY}</li>
         <li><strong>WhatsApp:</strong> ${PHONE_DISPLAY}</li>
         <li><strong>Zalo:</strong> ${PHONE_DISPLAY}</li>
       </ul>
