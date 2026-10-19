@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -59,7 +60,9 @@ export async function generateMetadata({
       description: descriptionParts.join(' '),
       type: 'article',
       url: `${baseUrl}/visa/${slug}`,
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

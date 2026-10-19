@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -35,7 +36,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

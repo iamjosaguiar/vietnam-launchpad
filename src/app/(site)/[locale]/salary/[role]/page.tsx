@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -39,7 +40,9 @@ export async function generateMetadata({
       title: `${salaryRole.title} Salary in Vietnam 2026`,
       description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}–${localMax} VND/month, expat packages $${expatMin}–$${expatMax}/month USD.`,
       type: 'article',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import LiveRatesWidget from '@/components/LiveRatesWidget';
@@ -31,7 +32,9 @@ export const metadata: Metadata = {
     title: 'Live Vietnam Dong (VND) Exchange Rates',
     description: 'Live exchange rates for USD, EUR, GBP and more currencies to Vietnamese Dong. Updated every 6 hours.',
     type: 'website',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 const exchangeSchema = {

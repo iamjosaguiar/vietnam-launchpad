@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { TAX_TREATIES } from '@/data/taxTreaties';
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
     description:
       "Complete list of Vietnam's double taxation agreements (DTAs) with 40+ countries. Withholding tax rates on dividends, interest, and royalties.",
     type: 'website',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 function formatRate(rate: number | null): string {

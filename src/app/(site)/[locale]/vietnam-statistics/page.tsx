@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import TourismStatsWidget from '@/components/TourismStatsWidget';
@@ -31,7 +32,9 @@ export const metadata: Metadata = {
     description:
       'Live Vietnam economic data: tourism arrivals, GDP, sector breakdown, FDI, and key growth industries. Updated daily.',
     type: 'website',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 const pageSchema = {

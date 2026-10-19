@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -561,7 +562,9 @@ export async function generateMetadata({
       title: `${fromCode} to VND Exchange Rate - Live Rate`,
       description: `Current ${fromCode} to VND exchange rate with conversion table. Expat money tips for Vietnam.`,
       type: 'website',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

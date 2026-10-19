@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
@@ -29,7 +30,9 @@ export const metadata: Metadata = {
       '45-day visa-free for UK, US, Australia, Canada and more. E-visa available to 111 countries. Check your nationality.',
     type: 'website',
     url: 'https://www.vietnamlaunchpad.com/visa',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 const visaFreeCountries45 = VISA_COUNTRIES.filter(

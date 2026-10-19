@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { SALARY_ROLES, getAllSalaryCategories } from '@/data/salaryRoles';
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
     description:
       'Vietnam expat salary guide 2026. Local VND market rates and USD expat packages for 12 key roles.',
     type: 'website',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 function formatVnd(n: number): string {

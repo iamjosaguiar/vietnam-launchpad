@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from '@/i18n/config';
@@ -28,7 +29,9 @@ export const metadata: Metadata = {
     title: 'VND Currency Converter - Convert to Vietnamese Dong',
     description: 'Live currency conversion to Vietnamese Dong. 19 currency pairs with expat tips.',
     type: 'website',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 const CURRENCY_PAIRS = [

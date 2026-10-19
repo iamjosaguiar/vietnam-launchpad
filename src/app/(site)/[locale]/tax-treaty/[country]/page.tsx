@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -34,7 +35,9 @@ export async function generateMetadata({
       title: `Vietnam ${treaty.country} Double Tax Agreement (DTA)`,
       description: `Vietnam–${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
       type: 'article',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

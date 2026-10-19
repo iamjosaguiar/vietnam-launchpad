@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -33,7 +34,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: service.title,
       description: service.shortDescription,
       type: 'website',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 
