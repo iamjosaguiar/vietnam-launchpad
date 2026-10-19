@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { ogImages, twitterDefaults } from '@/lib/seo';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
@@ -21,9 +21,7 @@ export const metadata: Metadata = {
     '45 day visa free vietnam',
     'vietnam evisa eligible countries',
   ],
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/visa',
-  },
+  alternates: buildAlternates('/visa'),
   openGraph: {
     title: 'Vietnam Visa Requirements by Nationality 2026',
     description:

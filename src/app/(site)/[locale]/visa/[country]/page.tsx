@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { ogImages, twitterDefaults } from '@/lib/seo';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -52,9 +52,7 @@ export async function generateMetadata({
       `vietnam e-visa ${data.nationality.toLowerCase()}`,
       `${data.country.toLowerCase()} passport vietnam`,
     ],
-    alternates: {
-      canonical: `${baseUrl}/visa/${slug}`,
-    },
+    alternates: buildAlternates(`/visa/${slug}`),
     openGraph: {
       title: `Vietnam Visa for ${data.nationality} Citizens 2026`,
       description: descriptionParts.join(' '),

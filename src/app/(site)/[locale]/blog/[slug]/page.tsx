@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { ogImages, twitterDefaults } from '@/lib/seo';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -27,9 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title,
     description: post.excerpt,
     keywords: [post.category, 'Vietnam', 'expat', 'guide'],
-    alternates: {
-      canonical: `${baseUrl}/blog/${slug}`,
-    },
+    alternates: buildAlternates(`/blog/${slug}`),
     openGraph: {
       title: post.title,
       description: post.excerpt,

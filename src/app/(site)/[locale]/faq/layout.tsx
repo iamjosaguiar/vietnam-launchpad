@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/faq',
-  },
+  alternates: buildAlternates('/faq'),
 };
 
 export default function FaqLayout({ children }: { children: React.ReactNode }) {

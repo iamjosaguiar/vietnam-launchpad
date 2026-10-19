@@ -1,3 +1,5 @@
+import { routing } from '@/i18n/config';
+
 /**
  * Shared social card defaults. Page-level `openGraph` and `twitter` objects replace the
  * layout's objects in Next.js metadata, so every page spreads these in.
@@ -15,3 +17,15 @@ export const twitterDefaults = {
   card: 'summary_large_image' as const,
   images: [{ url: OG_IMAGE_URL, alt: OG_IMAGE_ALT }],
 };
+
+/**
+ * Self-referencing canonical plus hreflang for a path ('/about', or '' / '/' for the homepage).
+ * localePrefix is 'never', so every locale shares one URL and only locales that exist are listed.
+ */
+export function buildAlternates(path: string) {
+  const url = `${BASE_URL}${path === '/' ? '' : path}`;
+  const languages: Record<string, string> = {};
+  for (const locale of routing.locales) languages[locale] = url;
+  languages['x-default'] = url;
+  return { canonical: url, languages };
+}

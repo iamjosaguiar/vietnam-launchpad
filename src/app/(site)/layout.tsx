@@ -74,13 +74,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       }
     },
     alternates: {
-      canonical: `https://www.vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
-      languages: {
-        en: 'https://www.vietnamlaunchpad.com',
-        vi: 'https://www.vietnamlaunchpad.com/vi',
-        zh: 'https://www.vietnamlaunchpad.com/zh',
-        ko: 'https://www.vietnamlaunchpad.com/ko'
-      },
+      // No canonical or hreflang here: every page sets its own via buildAlternates() in src/lib/seo.ts.
       types: {
         'application/rss+xml': 'https://www.vietnamlaunchpad.com/feed.xml',
       },

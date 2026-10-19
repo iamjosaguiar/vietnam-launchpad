@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { ogImages, twitterDefaults } from '@/lib/seo';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import TourismStatsWidget from '@/components/TourismStatsWidget';
@@ -24,9 +24,7 @@ export const metadata: Metadata = {
     'vietnam economic indicators',
     'vietnam growth sectors',
   ],
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/vietnam-statistics',
-  },
+  alternates: buildAlternates('/vietnam-statistics'),
   openGraph: {
     title: 'Vietnam Economic Statistics & Market Data 2026',
     description:

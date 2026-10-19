@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/blog',
-  },
+  alternates: buildAlternates('/blog'),
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
