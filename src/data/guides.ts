@@ -3115,7 +3115,7 @@ Hoi An is a UNESCO World Heritage city - the preserved ancient town, lantern-lit
     excerpt: 'Setting up a company in Vietnam as a foreigner is entirely possible - and in most sectors, you can own 100% of your business. This guide covers every structure option, the registration process, realistic costs, and the legal requirements you need to know before you start.',
     author: 'Vietnam Launchpad',
     date: '2026-02-01',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-10-19',
     readTime: '16 min read',
     category: 'Work & Business',
     ctaTitle: 'Ready to Register Your Company in Vietnam?',
