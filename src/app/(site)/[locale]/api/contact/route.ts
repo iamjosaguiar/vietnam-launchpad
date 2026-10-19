@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PHONE_DISPLAY } from '@/lib/site';
+import { getLeadRecipients } from '@/lib/lead-recipients';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -24,7 +25,7 @@ function escapeHtml(value: string): string {
 
 async function sendMail(params: {
   apiKey: string;
-  to: string;
+  to: { email: string }[];
   from: string;
   fromName: string;
   subject: string;
@@ -38,7 +39,7 @@ async function sendMail(params: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      personalizations: [{ to: [{ email: params.to }], subject: params.subject }],
+      personalizations: [{ to: params.to, subject: params.subject }],
       from: { email: params.from, name: params.fromName },
       ...(params.replyTo ? { reply_to: params.replyTo } : {}),
       content: [{ type: 'text/html', value: params.html }],
@@ -76,7 +77,7 @@ export async function POST(request: NextRequest) {
     }
 
     const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
-    const TO_EMAIL = process.env.CONTACT_EMAIL || 'jos@iamjosaguiar.com';
+    const TO_EMAILS = getLeadRecipients();
     const FROM_EMAIL = process.env.FROM_EMAIL || 'contact@vietnamlaunchpad.com';
 
     if (!SENDGRID_API_KEY) {
@@ -120,7 +121,7 @@ export async function POST(request: NextRequest) {
 
     const response = await sendMail({
       apiKey: SENDGRID_API_KEY,
-      to: TO_EMAIL,
+      to: TO_EMAILS,
       from: FROM_EMAIL,
       fromName: 'Vietnam Launchpad Contact Form',
       subject: emailSubject,
@@ -164,7 +165,7 @@ export async function POST(request: NextRequest) {
     try {
       const autoReply = await sendMail({
         apiKey: SENDGRID_API_KEY,
-        to: email,
+        to: [{ email }],
         from: FROM_EMAIL,
         fromName: 'Vietnam Launchpad',
         subject: autoResponderSubject,

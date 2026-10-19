@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PHONE_DISPLAY } from '@/lib/site';
+import { getLeadRecipients } from '@/lib/lead-recipients';
 
 export async function POST(request: NextRequest) {
   try {
@@ -28,7 +29,7 @@ export async function POST(request: NextRequest) {
 
     // SendGrid API configuration
     const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
-    const TO_EMAIL = process.env.CONTACT_EMAIL || 'jos@iamjosaguiar.com';
+    const TO_EMAILS = getLeadRecipients();
     const FROM_EMAIL = process.env.FROM_EMAIL || 'contact@vietnamlaunchpad.com';
 
     if (!SENDGRID_API_KEY) {
@@ -95,7 +96,7 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         personalizations: [
           {
-            to: [{ email: TO_EMAIL }],
+            to: TO_EMAILS,
             subject: emailSubject,
           },
         ],
