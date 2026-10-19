@@ -1,12 +1,12 @@
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const DEFAULT_RECIPIENT = 'jos@iamjosaguiar.com';
+const DEFAULT_RECIPIENTS = ['voyennhi187@gmail.com', 'jos@profitgeeks.com.au'];
 
 /**
  * Lead notification recipients, read from CONTACT_EMAIL.
  * Accepts one address or several separated by commas, semicolons, or spaces,
  * for example "a@example.com,b@example.com". Invalid entries and duplicates
- * are dropped. Falls back to the default address when nothing valid is set.
+ * are dropped. Falls back to the default addresses when nothing valid is set.
  */
 export function getLeadRecipients(): { email: string }[] {
   const raw = process.env.CONTACT_EMAIL || '';
@@ -21,5 +21,7 @@ export function getLeadRecipients(): { email: string }[] {
     recipients.push({ email });
   }
 
-  return recipients.length > 0 ? recipients : [{ email: DEFAULT_RECIPIENT }];
+  return recipients.length > 0
+    ? recipients
+    : DEFAULT_RECIPIENTS.map((email) => ({ email }));
 }
