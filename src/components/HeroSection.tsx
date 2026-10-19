@@ -84,7 +84,7 @@ export default function HeroSection() {
 
         {/* Trust badge */}
         <motion.div
-          initial={{ opacity: 0, y: -16 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
           className="flex justify-center mb-14"
@@ -105,7 +105,7 @@ export default function HeroSection() {
         <div className="text-center max-w-5xl mx-auto">
           <motion.h1
             variants={container}
-            initial="hidden"
+            initial={false}
             animate="show"
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-[1.02] tracking-tight mb-8"
             style={{ perspective: 800 }}
@@ -123,7 +123,7 @@ export default function HeroSection() {
 
           {/* Accent divider */}
           <motion.div
-            initial={{ scaleX: 0, opacity: 0 }}
+            initial={false}
             animate={{ scaleX: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 1.0 }}
             className="w-16 h-px bg-gradient-to-r from-transparent via-accent-400 to-transparent mx-auto mb-8 origin-center"
@@ -133,7 +133,7 @@ export default function HeroSection() {
           <motion.p
             custom={1.0}
             variants={fadeUp}
-            initial="hidden"
+            initial={false}
             animate="show"
             className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto mb-14 leading-relaxed font-light"
           >
@@ -146,7 +146,7 @@ export default function HeroSection() {
           <motion.div
             custom={1.1}
             variants={fadeUp}
-            initial="hidden"
+            initial={false}
             animate="show"
             className="flex flex-col sm:flex-row justify-center gap-4 mb-24"
           >
@@ -172,7 +172,7 @@ export default function HeroSection() {
           {/* Stats bar */}
           <motion.div
             variants={statsContainer}
-            initial="hidden"
+            initial={false}
             animate="show"
             className="grid grid-cols-2 md:grid-cols-4 gap-0 max-w-3xl mx-auto border border-white/8 rounded-2xl overflow-hidden backdrop-blur-sm bg-white/3"
           >
