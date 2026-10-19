@@ -5,6 +5,7 @@ import Script from 'next/script';
 
 import MobileStickyBar from '@/components/MobileStickyBar';
 import { routing } from '@/i18n/config';
+import { OG_IMAGE_URL } from '@/lib/seo';
 import { CONTACT_EMAILS, PHONE_E164 } from '@/lib/site';
 
 import '../globals.css';
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       siteName: 'Vietnam Launchpad',
       images: [
         {
-          url: '/vietnam launchpad logo.png',
+          url: OG_IMAGE_URL,
           width: 1200,
           height: 630,
           alt: t('ogImageAlt')
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       card: 'summary_large_image',
       title: t('twitterTitle'),
       description: t('twitterDescription'),
-      images: ['/vietnam launchpad logo.png']
+      images: [OG_IMAGE_URL]
     },
     robots: {
       index: true,
@@ -73,13 +74,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       }
     },
     alternates: {
-      canonical: `https://www.vietnamlaunchpad.com${locale === 'en' ? '' : `/${locale}`}`,
-      languages: {
-        en: 'https://www.vietnamlaunchpad.com',
-        vi: 'https://www.vietnamlaunchpad.com/vi',
-        zh: 'https://www.vietnamlaunchpad.com/zh',
-        ko: 'https://www.vietnamlaunchpad.com/ko'
-      },
+      // No canonical or hreflang here: every page sets its own via buildAlternates() in src/lib/seo.ts.
       types: {
         'application/rss+xml': 'https://www.vietnamlaunchpad.com/feed.xml',
       },

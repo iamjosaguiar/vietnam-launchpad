@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from '@/i18n/config';
@@ -18,9 +19,7 @@ export const metadata: Metadata = {
     'Vietnam business compliance',
     'Vietnam accounting deadlines',
   ],
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/vietnam-compliance-calendar',
-  },
+  alternates: buildAlternates('/vietnam-compliance-calendar'),
 };
 
 type ObligationFreq = 'monthly' | 'quarterly' | 'annual' | 'one-off';

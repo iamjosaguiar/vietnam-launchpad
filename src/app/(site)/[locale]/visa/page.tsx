@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
@@ -20,16 +21,16 @@ export const metadata: Metadata = {
     '45 day visa free vietnam',
     'vietnam evisa eligible countries',
   ],
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/visa',
-  },
+  alternates: buildAlternates('/visa'),
   openGraph: {
     title: 'Vietnam Visa Requirements by Nationality 2026',
     description:
       '45-day visa-free for UK, US, Australia, Canada and more. E-visa available to 111 countries. Check your nationality.',
     type: 'website',
     url: 'https://www.vietnamlaunchpad.com/visa',
+    images: ogImages,
   },
+  twitter: twitterDefaults,
 };
 
 const visaFreeCountries45 = VISA_COUNTRIES.filter(

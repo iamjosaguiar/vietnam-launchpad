@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
+
 export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://www.vietnamlaunchpad.com/contact',
-  },
+  alternates: buildAlternates('/contact'),
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

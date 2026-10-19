@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -27,14 +28,14 @@ export async function generateMetadata({
   return {
     title: `Vietnam ${treaty.country} Double Tax Agreement (DTA) | Vietnam Launchpad`,
     description: `Vietnam–${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
-    alternates: {
-      canonical: `${baseUrl}/tax-treaty/${treaty.slug}`,
-    },
+    alternates: buildAlternates(`/tax-treaty/${treaty.slug}`),
     openGraph: {
       title: `Vietnam ${treaty.country} Double Tax Agreement (DTA)`,
       description: `Vietnam–${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
       type: 'article',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

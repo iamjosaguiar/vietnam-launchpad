@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -29,9 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${guide.title} | Vietnam Launchpad`,
     description: guide.excerpt,
     keywords: [guide.category, 'Vietnam', 'expat', 'guide', 'living in Vietnam'],
-    alternates: {
-      canonical: `${baseUrl}/guides/${slug}`,
-    },
+    alternates: buildAlternates(`/guides/${slug}`),
     openGraph: {
       title: guide.title,
       description: guide.excerpt,
@@ -39,7 +38,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: guide.date,
       modifiedTime: guide.lastUpdated,
       authors: [guide.author],
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

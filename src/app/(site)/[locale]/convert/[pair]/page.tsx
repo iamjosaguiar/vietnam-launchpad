@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -554,14 +555,14 @@ export async function generateMetadata({
   return {
     title: `${fromCode} to VND Exchange Rate Today (${fromName} to Vietnamese Dong) | Vietnam Launchpad`,
     description: `Live ${fromCode} to VND exchange rate. Convert ${fromName} to Vietnamese Dong. Updated every 6 hours. Expat tips for converting ${fromName} in Vietnam.`,
-    alternates: {
-      canonical: `https://www.vietnamlaunchpad.com/convert/${pair}`,
-    },
+    alternates: buildAlternates(`/convert/${pair}`),
     openGraph: {
       title: `${fromCode} to VND Exchange Rate - Live Rate`,
       description: `Current ${fromCode} to VND exchange rate with conversion table. Expat money tips for Vietnam.`,
       type: 'website',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 

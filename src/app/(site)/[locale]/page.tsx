@@ -9,6 +9,12 @@ import EnterpriseSection from '@/components/EnterpriseSection';
 import CaseStudiesSection from '@/components/CaseStudiesSection';
 import { getTranslations } from 'next-intl/server';
 import { PHONE_E164 } from '@/lib/site';
+import { buildAlternates } from '@/lib/seo';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: buildAlternates('/'),
+};
 
 const serviceCards = [
   { key: 'trc', href: '/services/trc-application' },

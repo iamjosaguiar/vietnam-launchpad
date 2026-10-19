@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -32,14 +33,14 @@ export async function generateMetadata({
   return {
     title: `${salaryRole.title} Salary in Vietnam 2026 | Vietnam Launchpad`,
     description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}–${localMax} VND/month, expat packages $${expatMin}–$${expatMax}/month USD. Work permit requirements and top employers.`,
-    alternates: {
-      canonical: `${baseUrl}/salary/${salaryRole.slug}`,
-    },
+    alternates: buildAlternates(`/salary/${salaryRole.slug}`),
     openGraph: {
       title: `${salaryRole.title} Salary in Vietnam 2026`,
       description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}–${localMax} VND/month, expat packages $${expatMin}–$${expatMax}/month USD.`,
       type: 'article',
+      images: ogImages,
     },
+    twitter: twitterDefaults,
   };
 }
 
