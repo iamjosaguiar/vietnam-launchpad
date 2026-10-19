@@ -4,10 +4,9 @@ export const PHONE_E164 = '+84393266105';
 export const PHONE_TEL = `tel:${PHONE_E164}`;
 export const PHONE_WHATSAPP = `https://wa.me/${PHONE_E164}`;
 
-/** Public contact emails. Display form is for people; mailto opens one draft to both. */
+/** Public contact emails, shown on the site and in confirmation emails. */
 export const CONTACT_EMAILS = ['voyennhi187@gmail.com', 'jos@profitgeeks.com.au'] as const;
 export const CONTACT_EMAIL_DISPLAY = CONTACT_EMAILS.join(', ');
-export const CONTACT_MAILTO = `mailto:${CONTACT_EMAILS.join(',')}`;
 
 /**
  * Holafly Plans affiliate URL. The discount code is applied by the link.

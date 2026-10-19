@@ -171,7 +171,7 @@ export default function GetStartedPage() {
 
             {/* Questionnaire Form */}
             <AnimateOnScroll>
-              <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
+              <div id="quote-form" className="scroll-mt-24 bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
                 <h2 className="text-3xl font-display font-bold text-gray-900 mb-8">Business Setup Questionnaire</h2>
 
                 <form onSubmit={handleSubmit} className="space-y-10">

@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-stone-950 text-white overflow-hidden">
+    <footer className="relative bg-stone-950 text-white overflow-hidden pb-24 md:pb-0">
       {/* Decorative gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-950 to-primary-950/50" />
 

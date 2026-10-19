@@ -3,7 +3,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import Script from 'next/script';
 
-import MessagingWidget from '@/components/MessagingWidget';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import { routing } from '@/i18n/config';
 import { CONTACT_EMAILS, PHONE_E164 } from '@/lib/site';
@@ -211,7 +210,6 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <MobileStickyBar />
-          <MessagingWidget />
         </NextIntlClientProvider>
       </body>
     </html>
