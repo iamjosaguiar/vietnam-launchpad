@@ -16,6 +16,21 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/sitemap.html',
+        destination: '/sitemap',
+        statusCode: 301,
+      },
+      {
+        source: '/site-map',
+        destination: '/sitemap',
+        statusCode: 301,
+      },
+      {
+        source: '/site-map/',
+        destination: '/sitemap',
+        statusCode: 301,
+      },
+      {
         source: '/:path*',
         has: [{ type: 'host', value: 'vietnamlaunchpad.com' }],
         destination: 'https://www.vietnamlaunchpad.com/:path*',

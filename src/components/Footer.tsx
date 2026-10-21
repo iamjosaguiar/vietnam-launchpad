@@ -146,7 +146,7 @@ export default function Footer() {
                   </li>
                 ))}
                 <li>
-                  <a href="/sitemap.xml" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+                  <a href="/sitemap" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
                     Sitemap
                   </a>
                 </li>
