@@ -1,4 +1,4 @@
-import { BASE_URL, getSitemapEntries } from '@/lib/sitemap';
+import { BASE_URL, getSitemapEntries, type SitemapEntry } from '@/lib/sitemap';
 
 export const dynamic = 'force-static';
 export const runtime = 'nodejs';
@@ -11,8 +11,21 @@ function xmlEscape(value: string): string {
     .replace(/"/g, '&quot;');
 }
 
+// The HTML sitemap lists every other page, so it is added only here and
+// does not appear in its own list. Its lastmod is the newest date it links to.
+function withHtmlSitemap(entries: SitemapEntry[]): SitemapEntry[] {
+  const lastmod = entries.reduce<string | undefined>(
+    (newest, item) => (item.lastmod && (!newest || item.lastmod > newest) ? item.lastmod : newest),
+    undefined,
+  );
+  return [
+    ...entries,
+    { path: '/sitemap', title: 'Sitemap', section: 'Pages', lastmod, changefreq: 'weekly', priority: 0.3 },
+  ];
+}
+
 export function GET() {
-  const urls = getSitemapEntries()
+  const urls = withHtmlSitemap(getSitemapEntries())
     .map((entry) => {
       const loc = xmlEscape(`${BASE_URL}${entry.path}`);
       const lastmod = entry.lastmod ? `\n    <lastmod>${entry.lastmod}</lastmod>` : '';
