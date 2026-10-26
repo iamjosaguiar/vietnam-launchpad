@@ -1299,7 +1299,7 @@ Decree 393/2026/ND-CP takes effect on 5 December 2026. It was signed on 20 Octob
 
 Article 8 of the decree lists 18 exempt cases. In plain English, they are:
 
-1. Cases carried over from Labour Code Article 154, clauses 3 to 8. These include heads of representative offices or projects, people in charge of international organisations or foreign NGOs, people who enter Vietnam for under 3 months to offer services, people who come to deal with urgent and complex technical problems, foreign lawyers licensed to practise in Vietnam, and cases exempted by a treaty.
+1. Cases carried over from Labour Code Article 154, clauses 3 to 8. These include heads of representative offices or projects, people in charge of international organisations or foreign NGOs, people who enter Vietnam for under 3 months to offer services, people who come to deal with urgent and complex technical problems, foreign lawyers licensed to practise in Vietnam, foreigners married to a Vietnamese citizen and living in Vietnam, and cases exempted by a treaty.
 2. Owners or capital-contributing members of a limited liability company with contributed capital of VND 3 billion or more.
 3. Chairpersons or board members of a joint stock company with contributed capital of VND 3 billion or more.
 4. People entering Vietnam to give professional or technical consultancy, or do other work, on programmes and projects funded by ODA, non-refundable aid or concessional loans.
@@ -1322,6 +1322,8 @@ Article 8 of the decree lists 18 exempt cases. In plain English, they are:
 
 Not if they meet the VND 3 billion test. Owners or capital-contributing members of a limited liability company, and chairpersons or board members of a joint stock company, are exempt when contributed capital is VND 3 billion or more. This is the same threshold as under Decree 219.
 
+Owners and board members who meet the test file a notice, not an exemption certificate application. Under Article 10, clause 4, the employer notifies the authority at least 3 working days before the start date.
+
 Being the legal representative on its own is not enough. If you do not meet the capital test, you should expect to need a work permit. Our [company setup service](/services/company-setup) and the [company setup guide](/guides/company-setup-vietnam) explain how capital and roles are set up.
 
 ## What counts as short-term work?
@@ -1332,19 +1334,22 @@ There is a catch. If there is an employment relationship and you are paid, a wor
 
 ## Are foreigners married to Vietnamese citizens exempt?
 
-Possibly, but do not rely on it yet. The Labour Code (Article 154) has an exemption for foreigners who marry a Vietnamese citizen and live in Vietnam. Decree 393 pulls in Article 154, clauses 3 to 8. Some law firm and news summaries list married foreigners among the exempt groups. The decree's own list of 18 cases does not name this group on its own line.
+Yes. Foreign nationals married to a Vietnamese citizen and living in Vietnam are exempt from a work permit. The exemption sits in Article 154 of the Labour Code, and Decree 393 pulls in Article 154, clauses 3 to 8. It is not on its own line in the decree's list of 18 cases, but it is covered through that first item.
 
-Before you start work on this basis, confirm with your local labour authority. That means the provincial People's Committee or the office it delegates to. Our post on [working on a marriage TRC](/blog/can-you-work-on-marriage-trc-vietnam) covers the spouse situation in more detail.
+Your employer files a notice at least 3 working days before you start. Our post on [working on a marriage TRC](/blog/can-you-work-on-marriage-trc-vietnam) covers the spouse situation in more detail.
 
 ## Does exempt mean no paperwork?
 
-No. Exempt workers do not need a work permit, but they may need an Exemption Certificate or must send a notice. The exact route depends on the case.
+Not always. Exempt workers do not need a work permit, but they either need an Exemption Certificate or must send a notice. The route depends on the case.
 
 For the certificate route, the employer files 10 working days to 60 days before the start date. The authority issues the certificate within 5 working days of a complete file. It is valid for up to 2 years.
 
 For the notice route, the employer notifies the authority at least 3 working days before the start date. The decree puts these in the notice-only group:
 
 - Owners and board members who meet the VND 3 billion test
+- Foreigners married to a Vietnamese citizen and living in Vietnam
+- Foreign lawyers licensed in Vietnam
+- People who come for under 3 months to offer services or fix urgent technical problems
 - Accredited journalists
 - Relatives of mission staff
 - People setting up a commercial presence
