@@ -1274,6 +1274,120 @@ Have questions about your specific situation? [Contact us](/contact) and we can 
 
 *Disclaimer: Banking regulations and individual bank policies change regularly. This article reflects the general framework as of April 2026. Always verify current requirements directly with your chosen bank and a qualified financial or legal advisor before making decisions.*
     `
+  },
+
+  'vietnam-work-permit-exemptions-decree-393-2026': {
+    slug: 'vietnam-work-permit-exemptions-decree-393-2026',
+    title: 'Vietnam Work Permit Exemptions 2026: Who Is Exempt Under Decree 393',
+    excerpt: 'Decree 393/2026/ND-CP replaces Decree 219 on 5 December 2026 and lists 18 cases where a foreign worker does not need a work permit. Here is who is exempt and what paperwork still applies.',
+    author: 'Vietnam Launchpad Team',
+    date: '2026-10-26',
+    readTime: '7 min read',
+    category: 'Visas & Immigration',
+    content: `
+# Vietnam Work Permit Exemptions 2026: Who Is Exempt Under Decree 393/2026/ND-CP
+
+Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP on 5 December 2026. It lists 18 cases where a foreign worker does not need a work permit in Vietnam. Until that date, the current rules stay in force.
+
+This post covers who is exempt, how the company owner and short-term rules work, what paperwork exempt workers still file, and what is new compared with Decree 219. You can also run your own case through our [work permit checker](/tools/work-permit-checker).
+
+## When does Decree 393/2026 take effect?
+
+Decree 393/2026/ND-CP takes effect on 5 December 2026. It was signed on 20 October 2026 and replaces Decree 219/2025/ND-CP. It has five chapters and 37 articles. Provincial People's Committees are the competent authorities for work permits and exemption certificates (Article 5).
+
+## Who is exempt from a work permit in Vietnam?
+
+Article 8 of the decree lists 18 exempt cases. In plain English, they are:
+
+1. Cases carried over from Labour Code Article 154, clauses 3 to 8. These include heads of representative offices or projects, people in charge of international organisations or foreign NGOs, people who enter Vietnam for under 3 months to offer services, people who come to deal with urgent and complex technical problems, foreign lawyers licensed to practise in Vietnam, foreigners married to a Vietnamese citizen and living in Vietnam, and cases exempted by a treaty.
+2. Owners or capital-contributing members of a limited liability company with contributed capital of VND 3 billion or more.
+3. Chairpersons or board members of a joint stock company with contributed capital of VND 3 billion or more.
+4. People entering Vietnam to give professional or technical consultancy, or do other work, on programmes and projects funded by ODA, non-refundable aid or concessional loans.
+5. Foreign journalists confirmed by the Ministry of Foreign Affairs.
+6. People sent by a competent foreign body to teach or manage at education institutions set up at the request of foreign diplomatic missions or intergovernmental organisations, or under treaties Vietnam has joined.
+7. Foreign students and trainees studying in Vietnam or abroad who have an internship agreement or job invitation from an employer in Vietnam, and trainees on Vietnamese seagoing ships.
+8. Relatives of foreign mission staff who may work in Vietnam under a treaty.
+9. People with official (service) passports who come to work for state agencies or political or socio-political organisations.
+10. People responsible for setting up a commercial presence in Vietnam.
+11. Volunteers who are unpaid, work under a treaty and are confirmed by a foreign diplomatic mission or international organisation in Vietnam.
+12. People entering Vietnam to carry out international agreements signed by central or provincial agencies.
+13. Short-term workers, and intra-company transferees within the 11 WTO service sectors listed in the decree.
+14. Foreigners in education. This covers people in joint education or training programmes, research, technology transfer or international education projects approved or signed by the authorities, and people on cooperation programmes between a foreign and a Vietnamese education institution. It also covers people with a master's degree or higher in STEM, science, technology, digital transformation, finance, economics or business administration who teach or research, people with a doctorate teaching or researching at vocational or higher education, and professors and associate professors teaching or researching at vocational or higher education.
+15. Foreign workers confirmed by a ministry, a ministerial-level agency or a provincial People's Committee.
+16. People entering Vietnam on the special visa exemption card under Decree 221/2025/ND-CP.
+17. Experts working in fields on the Prime Minister's strategic technology and strategic technology product lists, and their relatives.
+18. Foreign workers brought in under the Prime Minister's decision on the national programme to develop artificial intelligence human resources.
+
+## Do company owners and board members need a work permit?
+
+Not if they meet the VND 3 billion test. Owners or capital-contributing members of a limited liability company, and chairpersons or board members of a joint stock company, are exempt when contributed capital is VND 3 billion or more. This is the same threshold as under Decree 219.
+
+Owners and board members who meet the test file a notice, not an exemption certificate application. Under Article 10, clause 4, the employer notifies the authority at least 3 working days before the start date.
+
+Being the legal representative on its own is not enough. If you do not meet the capital test, you should expect to need a work permit. Our [company setup service](/services/company-setup) and the [company setup guide](/guides/company-setup-vietnam) explain how capital and roles are set up.
+
+## What counts as short-term work?
+
+In the decree, short-term work means managers, executives, experts or technical workers working for one or more Vietnamese employers for no more than 90 days in total in a calendar year. The calendar year runs from 1 January to 31 December.
+
+There is a catch. If there is an employment relationship and you are paid, a work permit application is required (Article 8, clause 13a). So a short stay is not a way around the rules for paid employment.
+
+## Are foreigners married to Vietnamese citizens exempt?
+
+Yes. Foreign nationals married to a Vietnamese citizen and living in Vietnam are exempt from a work permit. The exemption sits in Article 154 of the Labour Code, and Decree 393 pulls in Article 154, clauses 3 to 8. It is not on its own line in the decree's list of 18 cases, but it is covered through that first item.
+
+Your employer files a notice at least 3 working days before you start. Our post on [working on a marriage TRC](/blog/can-you-work-on-marriage-trc-vietnam) covers the spouse situation in more detail.
+
+## Does exempt mean no paperwork?
+
+Not always. Exempt workers do not need a work permit, but they either need an Exemption Certificate or must send a notice. The route depends on the case.
+
+For the certificate route, the employer files 10 working days to 60 days before the start date. The authority issues the certificate within 5 working days of a complete file. It is valid for up to 2 years.
+
+For the notice route, the employer notifies the authority at least 3 working days before the start date. The decree puts these in the notice-only group:
+
+- Owners and board members who meet the VND 3 billion test
+- Foreigners married to a Vietnamese citizen and living in Vietnam
+- Foreign lawyers licensed in Vietnam
+- People who come for under 3 months to offer services or fix urgent technical problems
+- Accredited journalists
+- Relatives of mission staff
+- People setting up a commercial presence
+- Short-term workers
+- Some education cases
+- Holders of the special visa exemption card
+
+Other cases need a certificate. If you are not sure which route applies, ask the authority or a licensed professional.
+
+For workers who are not exempt, a work permit application is filed 10 working days to 60 days before the start date. It is decided within 10 working days and is valid for up to 2 years. Our [work permit service](/services/work-permit) can handle this for you.
+
+## What is new compared with Decree 219?
+
+Three cases are new. These are the special visa exemption card, strategic technology experts and their relatives, and the AI talent programme.
+
+Two other things changed:
+
+- Education exemptions are now spelled out as specific cases.
+- Intra-company transferees are now defined as managers, executives and experts. Technical workers are no longer listed in that definition. Documents already issued for technical workers stay valid until they expire. They can be renewed as experts if the person meets the experience rule.
+
+## What rules apply until 5 December 2026?
+
+Decree 219/2025/ND-CP applies until 5 December 2026. Do not apply the new list to work that starts before that date.
+
+Article 35 covers the switch. Work permits and exemption certificates issued under Decree 219/2025 keep working until they expire. Applications filed before 5 December 2026 are still decided under Decree 219.
+
+## How can you check your own situation?
+
+Start with our [work permit checker](/tools/work-permit-checker). It gives you a quick read on whether you are likely to need a permit.
+
+Then read the [working in Vietnam guide](/guides/working-in-vietnam) and the [company setup guide](/guides/company-setup-vietnam) if you own or plan to own a company. If you are on a spouse visa, see the [marriage TRC post](/blog/can-you-work-on-marriage-trc-vietnam) and the [TRC guide](/guides/trc-vietnam).
+
+If you want a licensed professional to look at your case, see our [work permit service](/services/work-permit) or [contact us](/contact).
+
+---
+
+*Published October 2026. Decree 393/2026/ND-CP takes effect on 5 December 2026 and Vietnamese work permit rules are subject to change. Confirm current requirements with a licensed professional before making employment decisions.*
+    `
   }
 };
 
