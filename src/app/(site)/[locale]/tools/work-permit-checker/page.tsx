@@ -66,7 +66,7 @@ const RESULTS: Record<string, Result> = {
   exempt_owner: {
     type: 'likely-exempt',
     headline: 'Potentially Exempt as Capital Owner',
-    body: "Owners and capital-contributing members of a Vietnamese limited liability company may be exempt from a work permit if they contribute at least VND 3 billion (about US$116,000). Decree 393/2026/ND-CP keeps that threshold when it takes effect on 5 December 2026.",
+    body: "Owners and capital-contributing members of a Vietnamese limited liability company may be exempt from a work permit if they contribute at least VND 3 billion (about US$116,000). Decree 393/2026/ND-CP keeps that threshold when it takes effect on 5 December 2026. Under Article 10(4), your company files a notice at least 3 working days before you start. You do not apply for an exemption certificate.",
     action: 'Book a Free Confirmation Call',
     actionHref: '/contact',
     secondaryAction: 'Company Setup Service',
@@ -74,13 +74,14 @@ const RESULTS: Record<string, Result> = {
     caveats: [
       'You must be a registered legal member/owner in company documents',
       'The minimum contribution is VND 3 billion',
+      'Your company files a notice, not an exemption certificate application',
       "A TRC through the investment route is still strongly recommended for long-term stays",
     ],
   },
   exempt_director: {
     type: 'likely-exempt',
     headline: 'Potentially Exempt as Board Member',
-    body: 'The chair or a member of the Board of Directors of a Vietnamese joint-stock company may qualify for a work permit exemption if they contribute at least VND 3 billion. Decree 393/2026/ND-CP keeps this from 5 December 2026. You will still need the right visa status (TRC recommended for stays over 30 days).',
+    body: 'The chair or a member of the Board of Directors of a Vietnamese joint-stock company may qualify for a work permit exemption if they contribute at least VND 3 billion. Decree 393/2026/ND-CP keeps this from 5 December 2026. Under Article 10(4), your company files a notice at least 3 working days before you start. You do not apply for an exemption certificate. You will still need the right visa status (TRC recommended for stays over 30 days).',
     action: 'Confirm Your Status',
     actionHref: '/contact',
     secondaryAction: 'TRC Application',
@@ -426,7 +427,7 @@ export default function WorkPermitCheckerPage() {
             <p className="text-gray-500 text-sm mb-8">Under Decree 219/2025/ND-CP (in force now), these groups may be exempt from Vietnam work permit requirements:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and holding a marriage-based TRC qualify for a Work Permit Exemption Certificate - no full work permit required' },
+                { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and residing in Vietnam are exempt - no full work permit required' },
                 { cat: 'Capital Owners', desc: 'Foreign individuals who are legal capital-contributing members of a Vietnamese company (subject to minimum contribution threshold)' },
                 { cat: 'Board Members', desc: 'Members of the Board of Directors or Members Council who are appointed in official company documents' },
                 { cat: 'Short-Stay Specialists', desc: 'Specialists visiting Vietnam for under 30 days per trip, with no more than 3 visits and under 90 total days per year' },

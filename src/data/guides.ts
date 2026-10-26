@@ -1774,14 +1774,17 @@ The key things to understand:
 
 ### Work Permit Exemptions
 
-Certain categories are exempt from the standard work permit requirement but still need an **Exemption Certificate**:
+Certain categories are exempt from the standard work permit requirement. Most of them need an **Exemption Certificate** or a notice from your employer:
 
-- Owners or capital-contributing members of an LLC who have contributed at least VND 3 billion
-- Chairs or members of the Board of Directors of a joint-stock company who have contributed at least VND 3 billion
+- Owners or capital-contributing members of an LLC who have contributed at least VND 3 billion (notice only)
+- Chairs or members of the Board of Directors of a joint-stock company who have contributed at least VND 3 billion (notice only)
+- Foreign nationals married to a Vietnamese citizen and living in Vietnam
 - Short-term visitors on assignments of up to 90 cumulative days in a calendar year (if a Vietnamese employer hires and pays you, you need a work permit)
 - Intra-company transfers in the 11 service sectors Vietnam committed to under its WTO schedule
 - Certain foreign workers in the education sector, such as teachers in approved joint programmes and holders of a doctorate or professor title
 - Other groups such as ODA project consultants, journalists accredited by the Ministry of Foreign Affairs, volunteers, and some students and trainees with an internship agreement or job offer in Vietnam
+
+**Owners and board members file a notice, not a certificate.** Under Article 10, clause 4 of Decree 393/2026/ND-CP, your company tells the authority at least 3 working days before you start work. You do not apply for an exemption certificate.
 
 **What changes on 5 December 2026:** Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP and lists 18 cases exempt from a work permit. It also covers holders of a special visa exemption card, strategic technology experts and their relatives, and people recruited under the national AI talent programme. Until that date, the current rules apply.
 
@@ -3343,9 +3346,9 @@ Registering a company in Vietnam does not automatically give you the right to wo
 - You are an owner or capital-contributing member of an LLC and have contributed at least VND 3 billion (~$116,000)
 - You are the chair or a board member of a joint-stock company and have contributed at least VND 3 billion
 
-The role of legal representative (director) is not on the list of exempt cases. The exemption depends on your own capital contribution. You also still need an Exemption Certificate.
+The role of legal representative (director) is not on the list of exempt cases. The exemption depends on your own capital contribution.
 
-These rules are in Decree 219/2025/ND-CP today. From 5 December 2026, Decree 393/2026/ND-CP replaces it and keeps the VND 3 billion contribution test. Confirm your case with a licensed professional or your registration agent before you rely on it.
+These rules are in Decree 219/2025/ND-CP today. From 5 December 2026, Decree 393/2026/ND-CP replaces it and keeps the VND 3 billion contribution test. Under Article 10, clause 4 of the new decree, your company files a notice at least 3 working days before you start work. You do not apply for an exemption certificate. Confirm your case with a licensed professional or your registration agent before you rely on it.
 
 ---
 
@@ -3623,7 +3626,7 @@ Yes. A TRC allows multiple entries. You do not need a separate visa to re-enter 
 Yes. Dependent family members (spouse, children) of TRC holders can apply for dependent TRCs. The work permit and investment routes both allow family member applications.
 
 **Does a TRC give me the right to work?**
-The TRC authorizes your residency - it does not separately authorize employment. The work permit authorizes employment. Exception: investment TRC holders who are owners or capital-contributing members with at least VND 3 billion contributed (or chairs or board members of a joint-stock company with that contribution) do not need a separate work permit. This rule carries over into Decree 393/2026/ND-CP from 5 December 2026.
+The TRC authorizes your residency - it does not separately authorize employment. The work permit authorizes employment. Exception: investment TRC holders who are owners or capital-contributing members with at least VND 3 billion contributed (or chairs or board members of a joint-stock company with that contribution) do not need a separate work permit. This rule carries over into Decree 393/2026/ND-CP from 5 December 2026. Your company only files a notice for you, not an exemption certificate application.
 
 **What happens if I lose my TRC?**
 Report to the local immigration office and the ward police immediately. Apply for a replacement card. There is a government fee for replacement.
