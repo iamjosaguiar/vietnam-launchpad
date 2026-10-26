@@ -869,9 +869,11 @@ This distinction matters. Residency and employment authorization are governed by
 
 **Yes - if you want to work for a Vietnamese company or organization.**
 
-Under Vietnamese labor law (Labor Code 2019 and Decree 152/2020/ND-CP), foreign nationals working in Vietnam for Vietnamese employers generally require a **work permit (Giay Phep Lao Dong)** issued by the Ministry of Labor, Invalids and Social Affairs (MOLISA). This requirement applies regardless of your residency status.
+Under Vietnamese labor law (Labor Code 2019 and Decree 219/2025/ND-CP, which replaced Decree 152/2020/ND-CP in August 2025), foreign nationals working in Vietnam for Vietnamese employers generally require a **work permit (Giay Phep Lao Dong)** issued by the Ministry of Labor, Invalids and Social Affairs (MOLISA). This requirement applies regardless of your residency status.
 
 Having a marriage TRC does not create an exemption from the work permit requirement.
+
+**Update:** Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP on 5 December 2026. Until then, the current rules apply.
 
 ---
 
@@ -879,14 +881,15 @@ Having a marriage TRC does not create an exemption from the work permit requirem
 
 There are specific exemptions that apply to some marriage TRC holders:
 
-**1. Owner/legal representative of your own Vietnamese company**
-If you establish or invest in a Vietnamese company and are registered as the legal representative (Nguoi Dai Dien Theo Phap Luat), you are exempt from the standard work permit requirement. You would hold the marriage TRC for residency and operate your business through the company structure.
+**1. Owner or board member of your own Vietnamese company**
+If you own an LLC or contribute capital to it, and your contribution is at least VND 3 billion, you can be exempt from the standard work permit requirement. The same goes for the chair or a board member of a joint-stock company who has contributed at least VND 3 billion. Being the legal representative (Nguoi Dai Dien Theo Phap Luat) is not enough on its own. You would hold the marriage TRC for residency and operate your business through the company structure. Decree 393/2026/ND-CP keeps this test from 5 December 2026.
 
 **2. Work permit exemption categories**
 Certain professional categories are exempt from work permits but still require an **Exemption Certificate** (Giay Xac Nhan Khong Thuoc Dien Cap Giay Phep Lao Dong). These include:
-- Owners or capital contributors to Vietnamese companies
-- Internal corporate transfers (for multinationals)
-- Certain NGO workers and diplomats
+- Owners or capital contributors to Vietnamese companies (VND 3 billion or more)
+- Internal corporate transfers in the 11 WTO service sectors (for multinationals)
+- Certain education staff, ODA project consultants, journalists and volunteers
+- Relatives of foreign diplomatic mission members, where a treaty allows it
 
 **3. Working for a foreign employer (remote work)**
 If you are employed by a foreign company and your work is performed for that foreign company - not for a Vietnamese entity - the Vietnamese work permit requirement technically does not apply. Many foreign spouses work remotely for employers in their home country under this arrangement.
@@ -939,7 +942,7 @@ You need a work permit. The family business is a Vietnamese entity. The marriage
 | Situation | Work Permit Required? |
 |---|---|
 | Employed by Vietnamese company or school | **Yes** |
-| Legal representative of own Vietnamese company | No (Exemption Certificate instead) |
+| Owner or board member with VND 3 billion or more contributed | No (Exemption Certificate instead) |
 | Remote work for foreign employer | Generally no (tax obligations still apply) |
 | Freelancing for non-Vietnamese clients | Generally no |
 | Volunteering for registered NGO | Depends on arrangement |
@@ -952,7 +955,7 @@ Every situation is slightly different. If you are unsure whether your planned wo
 
 ---
 
-*Published April 2026. Vietnamese labor law and work permit regulations are subject to change. Verify current requirements before making employment decisions.*
+*Published April 2026, updated October 2026. Vietnamese labor law and work permit regulations are subject to change. Confirm current requirements with a licensed professional before making employment decisions.*
     `
   },
 

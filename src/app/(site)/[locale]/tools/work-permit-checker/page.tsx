@@ -41,13 +41,14 @@ const RESULTS: Record<string, Result> = {
   exempt_short: {
     type: 'exempt',
     headline: 'Likely Exempt from Work Permit',
-    body: 'Short-term specialist visits totalling under 90 cumulative days per calendar year are generally exempt from work permit requirements under Decree 219/2025/ND-CP (effective August 2025, replacing Decree 152/2020).',
+    body: 'Short-term specialist visits totalling under 90 cumulative days per calendar year are generally exempt from work permit requirements under Decree 219/2025/ND-CP (effective August 2025, replacing Decree 152/2020). Decree 393/2026/ND-CP takes over on 5 December 2026. Until then, the current rules apply.',
     action: 'Confirm Your Eligibility',
     actionHref: '/contact',
     caveats: [
       'You must still hold a valid visa for each entry (Business Visa or e-Visa)',
       'Your employer must keep records of your visits',
       'If your stay pattern changes, reassess immediately',
+      'From 5 December 2026, if a Vietnamese employer hires and pays you during the visit, you need a work permit',
     ],
   },
   exempt_student: {
@@ -65,21 +66,21 @@ const RESULTS: Record<string, Result> = {
   exempt_owner: {
     type: 'likely-exempt',
     headline: 'Potentially Exempt as Capital Owner',
-    body: "Capital-contributing members and owners of Vietnamese companies may be exempt from work permit requirements if they meet the minimum capital contribution thresholds set by Vietnamese law. The threshold and conditions changed under recent amendments - this is worth confirming.",
+    body: "Owners and capital-contributing members of a Vietnamese limited liability company may be exempt from a work permit if they contribute at least VND 3 billion (about US$116,000). Decree 393/2026/ND-CP keeps that threshold when it takes effect on 5 December 2026.",
     action: 'Book a Free Confirmation Call',
     actionHref: '/contact',
     secondaryAction: 'Company Setup Service',
     secondaryHref: '/services/company-setup',
     caveats: [
       'You must be a registered legal member/owner in company documents',
-      'There is a minimum capital contribution threshold',
+      'The minimum contribution is VND 3 billion',
       "A TRC through the investment route is still strongly recommended for long-term stays",
     ],
   },
   exempt_director: {
     type: 'likely-exempt',
     headline: 'Potentially Exempt as Board Member',
-    body: 'Members of the Board of Directors or Members Council of a Vietnamese company may qualify for a work permit exemption. However, you will still need appropriate visa status (TRC recommended for stays over 30 days).',
+    body: 'The chair or a member of the Board of Directors of a Vietnamese joint-stock company may qualify for a work permit exemption if they contribute at least VND 3 billion. Decree 393/2026/ND-CP keeps this from 5 December 2026. You will still need the right visa status (TRC recommended for stays over 30 days).',
     action: 'Confirm Your Status',
     actionHref: '/contact',
     secondaryAction: 'TRC Application',
@@ -100,6 +101,7 @@ const RESULTS: Record<string, Result> = {
       'Must be employed by the overseas parent/affiliated company for at least 12 months',
       'Role must be manager, executive, or specialist',
       'Duration limit applies - longer assignments need a full work permit',
+      'Decree 393/2026/ND-CP, from 5 December 2026, covers intra-company transfers in the 11 WTO service sectors, so confirm your sector before you apply',
     ],
   },
   permit_required: {
@@ -114,6 +116,7 @@ const RESULTS: Record<string, Result> = {
       'Valid for 2 years, renewable',
       "You'll need a university degree or 5+ years experience in your field",
       'Your employer must sponsor the application',
+      'Decree 393/2026/ND-CP changes some filing rules from 5 December 2026, so check the latest steps before you start',
     ],
   },
   consult: {
@@ -237,7 +240,7 @@ export default function WorkPermitCheckerPage() {
     name: 'Vietnam Work Permit Exemption Checker',
     url: 'https://www.vietnamlaunchpad.com/tools/work-permit-checker',
     description:
-      'Check whether you need a work permit in Vietnam or qualify for an exemption. Decision-tree tool based on Decree 219/2025.',
+      'Check whether you need a work permit in Vietnam or qualify for an exemption. Decision-tree tool based on Decree 219/2025, with Decree 393/2026 changes from 5 December 2026.',
     applicationCategory: 'LegalApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -271,7 +274,7 @@ export default function WorkPermitCheckerPage() {
               Answer 3-5 questions to find out if you need a work permit, or if you qualify for an exemption.
             </p>
             <p className="text-sm text-white/40">
-              Based on Decree 219/2025/ND-CP (effective August 2025). For binding legal advice, consult our team.
+              Based on Decree 219/2025/ND-CP (in force now). Decree 393/2026/ND-CP replaces it on 5 December 2026. For binding legal advice, consult our team.
             </p>
           </div>
         </div>
@@ -420,7 +423,7 @@ export default function WorkPermitCheckerPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">Work Permit Exemption Categories</h2>
-            <p className="text-gray-500 text-sm mb-8">Under Decree 219/2025/ND-CP (effective August 2025), these groups may be exempt from Vietnam work permit requirements:</p>
+            <p className="text-gray-500 text-sm mb-8">Under Decree 219/2025/ND-CP (in force now), these groups may be exempt from Vietnam work permit requirements:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and holding a marriage-based TRC qualify for a Work Permit Exemption Certificate - no full work permit required' },
@@ -436,6 +439,24 @@ export default function WorkPermitCheckerPage() {
                 </div>
               ))}
             </div>
+            <h3 className="text-xl font-display font-bold text-gray-900 mt-12 mb-2">What changes on 5 December 2026</h3>
+            <p className="text-gray-500 text-sm mb-8">Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP and lists 18 cases exempt from a work permit. These are some of the cases it covers:</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { cat: 'Special Visa Exemption Card Holders', desc: 'Foreigners holding a special visa exemption card under Decree 221/2025/ND-CP' },
+                { cat: 'Strategic Technology Experts', desc: 'Experts working in fields on the Prime Minister\'s strategic technology lists, and their relatives' },
+                { cat: 'AI Talent', desc: 'People recruited under the National Programme for Artificial Intelligence Human Resources Development' },
+                { cat: 'Education Staff', desc: 'Teachers and researchers at education institutions, including master\'s holders in STEM, finance, economics or business, PhD holders, professors and associate professors' },
+                { cat: 'ODA and Aid Projects', desc: 'Consultants and staff on projects funded by official development assistance, non-refundable aid or concessional loans' },
+                { cat: 'Ministry or Province Confirmed', desc: 'People certified by a ministry, a ministerial-level agency or a provincial People\'s Committee' },
+              ].map((item, i) => (
+                <div key={i} className="bg-white rounded-xl border border-gray-100 p-5">
+                  <p className="font-semibold text-gray-900 text-sm mb-1.5">{item.cat}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-gray-400 mt-6">Until 5 December 2026, current rules still apply. Please confirm your case with a licensed professional.</p>
             <p className="text-xs text-gray-400 mt-6">This is a summary only. Exact conditions, thresholds and documentation requirements apply. Always verify your specific situation with a qualified advisor before proceeding.</p>
           </div>
         </div>
