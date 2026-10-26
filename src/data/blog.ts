@@ -867,28 +867,33 @@ This distinction matters. Residency and employment authorization are governed by
 
 ## Do You Need a Work Permit with a Marriage TRC?
 
-**Yes - if you want to work for a Vietnamese company or organization.**
+**Not a full one. Foreign nationals married to a Vietnamese citizen and residing in Vietnam are exempt.**
 
-Under Vietnamese labor law (Labor Code 2019 and Decree 152/2020/ND-CP), foreign nationals working in Vietnam for Vietnamese employers generally require a **work permit (Giay Phep Lao Dong)** issued by the Ministry of Labor, Invalids and Social Affairs (MOLISA). This requirement applies regardless of your residency status.
+Under Vietnamese labor law (Labor Code 2019 and Decree 219/2025/ND-CP, which replaced Decree 152/2020/ND-CP in August 2025), foreign nationals working in Vietnam for Vietnamese employers generally require a **work permit (Giay Phep Lao Dong)** issued by the Ministry of Labor, Invalids and Social Affairs (MOLISA). Article 154 of the Labor Code exempts foreign nationals married to a Vietnamese citizen who live in Vietnam. Your employer files a notice with the labor authority at least 3 working days before you start.
 
-Having a marriage TRC does not create an exemption from the work permit requirement.
+The TRC itself does not authorize work. The marriage is what gives you the exemption.
+
+**Update:** Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP on 5 December 2026. Until then, the current rules apply.
 
 ---
 
 ## Exceptions: When You Do Not Need a Work Permit
 
-There are specific exemptions that apply to some marriage TRC holders:
+There are specific exemptions that apply to marriage TRC holders:
 
-**1. Owner/legal representative of your own Vietnamese company**
-If you establish or invest in a Vietnamese company and are registered as the legal representative (Nguoi Dai Dien Theo Phap Luat), you are exempt from the standard work permit requirement. You would hold the marriage TRC for residency and operate your business through the company structure.
+**1. Married to a Vietnamese citizen**
+If you are married to a Vietnamese citizen and live in Vietnam, you do not need a work permit. Decree 393/2026/ND-CP keeps this from 5 December 2026.
 
-**2. Work permit exemption categories**
-Certain professional categories are exempt from work permits but still require an **Exemption Certificate** (Giay Xac Nhan Khong Thuoc Dien Cap Giay Phep Lao Dong). These include:
-- Owners or capital contributors to Vietnamese companies
-- Internal corporate transfers (for multinationals)
-- Certain NGO workers and diplomats
+**2. Owner or board member of your own Vietnamese company**
+If you own an LLC or contribute capital to it, and your contribution is at least VND 3 billion, you can be exempt from the standard work permit requirement. The same goes for the chair or a board member of a joint-stock company who has contributed at least VND 3 billion. Being the legal representative (Nguoi Dai Dien Theo Phap Luat) is not enough on its own. You would hold the marriage TRC for residency and operate your business through the company structure. Decree 393/2026/ND-CP keeps this test from 5 December 2026. Your company files a notice at least 3 working days before you start. You do not apply for an exemption certificate.
 
-**3. Working for a foreign employer (remote work)**
+**3. Work permit exemption categories**
+Other professional categories are exempt from work permits but may need an **Exemption Certificate** (Giay Xac Nhan Khong Thuoc Dien Cap Giay Phep Lao Dong). These include:
+- Internal corporate transfers in the 11 WTO service sectors (for multinationals)
+- Certain education staff, ODA project consultants, journalists and volunteers
+- Relatives of foreign diplomatic mission members, where a treaty allows it
+
+**4. Working for a foreign employer (remote work)**
 If you are employed by a foreign company and your work is performed for that foreign company - not for a Vietnamese entity - the Vietnamese work permit requirement technically does not apply. Many foreign spouses work remotely for employers in their home country under this arrangement.
 
 **Important caveat:** The 2026 PIT Law introduced clearer rules on income sourcing. If you are physically in Vietnam performing work, that income may be considered Vietnam-sourced for tax purposes regardless of where your employer is based. Tax obligations and work permit requirements are separate questions - you can have one without the other.
@@ -897,7 +902,7 @@ If you are employed by a foreign company and your work is performed for that for
 
 ## How to Get a Work Permit When You Have a Marriage TRC
 
-The process is largely the same as for any foreign national, with one practical advantage: you already have your residency document sorted, which removes one variable from the timeline.
+If you are not covered by an exemption, the process is largely the same as for any foreign national, with one practical advantage: you already have your residency document sorted, which removes one variable from the timeline.
 
 **Standard work permit process for marriage TRC holders:**
 
@@ -921,16 +926,16 @@ Not significantly in terms of government processing time, but it simplifies your
 ## Practical Scenarios
 
 **"I have a marriage TRC and want to work at a language school."**
-You need a work permit. The school applies on your behalf. You will also need your teaching qualifications documented and legalized. Our [work permit service](/services/work-permit) covers this end-to-end.
+You do not need a full work permit. The school files the notice for you. Our [work permit service](/services/work-permit) can handle the paperwork end-to-end.
 
 **"I have a marriage TRC and do freelance design work for clients in my home country."**
 The work permit requirement is unlikely to apply since you are working for foreign clients, not a Vietnamese entity. You should however be aware of your Vietnamese personal income tax obligations if you are tax resident (183+ days per year).
 
 **"I have a marriage TRC and want to start my own business in Vietnam."**
-Set up a Vietnamese company, register yourself as the legal representative, and you do not need a separate work permit to operate the business. See our [company setup service](/services/company-setup).
+Set up a Vietnamese company. You do not need a separate work permit, and being a legal representative on its own is not what counts: your marriage exempts you, and so does a contribution of at least VND 3 billion as an owner or member. See our [company setup service](/services/company-setup).
 
 **"I have a marriage TRC and my spouse's family business wants to employ me."**
-You need a work permit. The family business is a Vietnamese entity. The marriage relationship does not create an exemption.
+You do not need a full work permit. The family business is a Vietnamese entity, but your marriage to a Vietnamese citizen exempts you. The business files a notice before you start.
 
 ---
 
@@ -938,8 +943,9 @@ You need a work permit. The family business is a Vietnamese entity. The marriage
 
 | Situation | Work Permit Required? |
 |---|---|
-| Employed by Vietnamese company or school | **Yes** |
-| Legal representative of own Vietnamese company | No (Exemption Certificate instead) |
+| Employed by Vietnamese company or school | **Yes**, unless an exemption applies |
+| Married to a Vietnamese citizen and living in Vietnam | No (notice only) |
+| Owner or board member with VND 3 billion or more contributed | No (notice only) |
 | Remote work for foreign employer | Generally no (tax obligations still apply) |
 | Freelancing for non-Vietnamese clients | Generally no |
 | Volunteering for registered NGO | Depends on arrangement |
@@ -952,7 +958,7 @@ Every situation is slightly different. If you are unsure whether your planned wo
 
 ---
 
-*Published April 2026. Vietnamese labor law and work permit regulations are subject to change. Verify current requirements before making employment decisions.*
+*Published April 2026, updated October 2026. Vietnamese labor law and work permit regulations are subject to change. Confirm current requirements with a licensed professional before making employment decisions.*
     `
   },
 
