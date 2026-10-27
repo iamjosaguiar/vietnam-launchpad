@@ -928,7 +928,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Brazilian passport holders are not currently on Vietnam\'s visa-free list but are eligible for the 90-day e-visa. Brazil and Vietnam are both major emerging economies with growing bilateral trade. The e-visa is the standard entry method for most Brazilian visitors and short-term workers.',
+      'Brazilian passport holders are not currently eligible for visa-free entry to Vietnam but can apply for the e-visa, valid up to 90 days. Brazil and Vietnam are both major emerging economies with growing bilateral trade. The e-visa is the standard entry method for most Brazilian visitors and short-term workers.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_LIST],
     topQueries: [
@@ -950,7 +950,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Mexican passport holders are not on Vietnam\'s visa-free list but can apply online for the 90-day e-visa. Mexico and Vietnam are both members of CPTPP, which is strengthening bilateral trade ties. The e-visa is the most convenient entry method for Mexican nationals.',
+      'Mexican passport holders are not eligible for visa-free entry to Vietnam but can apply online for the e-visa, valid up to 90 days. Mexico and Vietnam are both members of CPTPP, which is strengthening bilateral trade ties. The e-visa is the most convenient entry method for Mexican nationals.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_LIST],
     topQueries: [

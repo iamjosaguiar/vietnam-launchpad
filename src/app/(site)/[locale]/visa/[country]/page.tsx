@@ -342,7 +342,7 @@ export default async function VisaCountryPage({
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">E-visa available</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.evisaEligible ? `Yes - up to ${data.evisaDays} days` : 'No'}
+                          {data.evisaEligible ? 'Yes' : 'No'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
@@ -358,7 +358,7 @@ export default async function VisaCountryPage({
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">E-visa duration</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.evisaEligible ? `Up to ${data.evisaDays} days` : 'N/A'}
+                          {data.evisaEligible ? `${data.evisaDays} days maximum` : 'N/A'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-start py-3">
