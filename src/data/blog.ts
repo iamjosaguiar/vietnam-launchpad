@@ -810,15 +810,13 @@ Prevention is straightforward:
 
 **Know your visa type.** Tourist e-visas, business visas, and exempt-entry visas all have different validity periods and conditions. A 90-day e-visa does not automatically renew. Many overstays happen because someone assumed they had more time than they did.
 
-**Ask about extending before expiry.** Extensions are limited and depend on your visa type and sponsor. If you know you need more time, ask before your current visa expires - not after.
+**Ask about extending before expiry.** Vietnam does not give automatic extensions, and extensions are only possible before your current visa expires. If you know you need more time, ask before the expiry date, not after.
 
 **Consider long-term residency.** If you are spending significant time in Vietnam, a Temporary Residence Card (TRC) eliminates the visa expiry problem entirely. TRC holders do not manage recurring visa renewals. Our TRC service handles the full application process.
 
 ## Genuine Emergencies
 
-Vietnam has historically applied discretion in genuine emergency cases.
-
-Individual circumstances (serious illness requiring hospitalisation, documented natural disaster disruption, etc.) can be presented to immigration as mitigating factors. This does not guarantee waiver of fines, but officers do have discretion. If you find yourself in a genuine emergency that has caused or will cause an overstay, document everything - hospital records, airline correspondence, police reports - and contact immigration proactively rather than waiting.
+Immigration officers have some discretion over the amount of a fine and over additional penalties such as expulsion, taking into account mitigating circumstances. A serious illness needing hospital care or a documented natural disaster are the kinds of circumstances you can raise. This does not guarantee any reduction or waiver. If you are in this situation, keep all records (hospital records, airline correspondence, police reports) and contact Immigration early rather than waiting.
 
 ## The Long-Term Solution: TRC
 
