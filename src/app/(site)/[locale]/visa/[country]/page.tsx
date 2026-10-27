@@ -6,7 +6,26 @@ import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import HolaflyCallout from '@/components/HolaflyCallout';
 import { Link } from '@/i18n/config';
-import { getAllVisaSlugs, getVisaCountry } from '@/data/visas';
+import { getAllVisaSlugs, getVisaCountry, SRC_EVISA_FEES } from '@/data/visas';
+import {
+  E_VISA_FACTS,
+  E_VISA_LINE_TEXT,
+  EVISA_PORTAL_URL,
+  INDONESIA_CHECK_LINE,
+  PRIVATE_LINE,
+  formatVerifiedDate,
+  lastVerifiedLine,
+} from '@/data/visa-copy';
+
+const NOINDEX_UNTIL_FIXED = new Set([
+  'united-states',
+  'australia',
+  'canada',
+  'new-zealand',
+  'austria',
+  'portugal',
+  'greece',
+]);
 
 export async function generateStaticParams() {
   return getAllVisaSlugs().map((slug) => ({ country: slug }));
@@ -27,22 +46,29 @@ export async function generateMetadata({
   const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   const descriptionParts: string[] = [];
-  if (data.visaFree && data.visaFreeDays) {
+  if (data.visaFreeCheck) {
+    descriptionParts.push(INDONESIA_CHECK_LINE);
+  } else if (data.visaFree && data.visaFreeDays) {
     descriptionParts.push(
       `${data.nationality} citizens enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam.`
     );
   } else {
     descriptionParts.push(
-      `${data.nationality} citizens need a Vietnam e-visa before arrival.`
+      `${data.nationality} citizens need an e-visa for Vietnam.`
     );
   }
   if (data.evisaEligible) {
     descriptionParts.push(
-      `E-visa available online for 90 days. Long-stay options: ${data.recommendedLongStay}.`
+      `E-visa: US$25 single entry, US$50 multiple entry, 3 working days, valid up to 90 days. Long-stay options: ${data.recommendedLongStay}.`
     );
   }
 
+  const robots = NOINDEX_UNTIL_FIXED.has(slug)
+    ? { index: false, follow: true, googleBot: { index: false, follow: true } }
+    : undefined;
+
   return {
+    ...(robots ? { robots } : {}),
     title: `Vietnam Visa for ${data.nationality} Citizens 2026 | Vietnam Launchpad`,
     description: descriptionParts.join(' '),
     keywords: [
@@ -84,25 +110,30 @@ export default async function VisaCountryPage({
 
   // Generate FAQ answers for topQueries
   const nat = data.nationality;
+  const hasVisaFreeDays = data.visaFree && !!data.visaFreeDays;
+  const lastVerified = lastVerifiedLine(data.verifiedOn);
+  const needsVisaAnswer = data.visaFreeCheck
+    ? INDONESIA_CHECK_LINE
+    : hasVisaFreeDays
+    ? `No. ${nat} passport holders can enter Vietnam visa-free for up to ${data.visaFreeDays} days. For longer stays, an e-visa (valid up to 90 days) is the most convenient option.`
+    : `Yes. ${nat} nationals are not eligible for visa-free entry to Vietnam and need an e-visa. ${E_VISA_LINE_TEXT}`;
+  const howLongAnswer = data.visaFreeCheck
+    ? `${INDONESIA_CHECK_LINE} With an e-visa you can stay for up to 90 days. For longer stays, a business visa or Temporary Residence Card (TRC) is required.`
+    : hasVisaFreeDays
+    ? `${nat} passport holders can stay in Vietnam for up to ${data.visaFreeDays} days without a visa. If you hold an e-visa, you can stay for up to 90 days. For longer stays, a business visa or Temporary Residence Card (TRC) is required.`
+    : `${nat} nationals need an e-visa to enter Vietnam. With the e-visa, you can stay for up to 90 days. For longer stays, a business visa or TRC is required.`;
   const faqAnswers: Record<string, string> = {
-    [`do ${nat.toLowerCase()} need a visa for vietnam`]: data.visaFree
-      ? `No. ${nat} passport holders can enter Vietnam visa-free for up to ${data.visaFreeDays} days. For stays longer than ${data.visaFreeDays} days, an e-visa (90 days, multiple entry) is the most convenient option.`
-      : `Yes. ${nat} nationals are not eligible for visa-free entry to Vietnam. ${data.evisaEligible ? 'However, you can apply for a 90-day e-visa online before departure.' : 'You will need to obtain a visa through a Vietnamese embassy or consulate.'}`,
-    [`vietnam e-visa for ${nat.toLowerCase()} passport`]: data.evisaEligible
-      ? `Yes, ${nat} passport holders are eligible for Vietnam's online e-visa. It is valid for 90 days with multiple entries. You can apply at the official Vietnam Immigration Department portal (evisa.xuatnhapcanh.gov.vn). Processing typically takes around 3 business days and costs approximately $25 USD.`
-      : `${nat} nationals are not currently eligible for the Vietnam online e-visa. Please contact a Vietnamese embassy or consulate for visa options.`,
-    [`how long can ${nat.toLowerCase()} stay in vietnam`]: data.visaFree
-      ? `${nat} passport holders can stay in Vietnam for up to ${data.visaFreeDays} days without a visa. If you hold an e-visa, you can stay for up to 90 days. For longer stays, a business visa or Temporary Residence Card (TRC) is required.`
-      : data.evisaEligible
-      ? `${nat} nationals require a visa to enter Vietnam. With the 90-day e-visa, you can stay for up to 90 days. For longer stays, a business visa or TRC is required.`
-      : `${nat} nationals need to obtain a visa through a Vietnamese embassy. Stay duration depends on the visa type issued.`,
+    [`do ${nat.toLowerCase()} need a visa for vietnam`]: needsVisaAnswer,
+    [`vietnam e-visa for ${nat.toLowerCase()} passport`]: `Yes, ${nat} passport holders are eligible for Vietnam's online e-visa. ${E_VISA_LINE_TEXT}`,
+    [`how long can ${nat.toLowerCase()} stay in vietnam`]: howLongAnswer,
   };
 
   // Generic fallback answer builder - uses captured variables so no closure over `data`
-  const genericFallback =
-    data.visaFree && data.visaFreeDays
-      ? `${nat} passport holders enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam. ${data.evisaEligible ? 'For longer stays, apply for the 90-day e-visa at evisa.xuatnhapcanh.gov.vn.' : 'For longer stays, contact a Vietnamese embassy or consulate.'} For long-term residency, ${data.recommendedLongStay} is recommended.`
-      : `${nat} nationals ${data.evisaEligible ? 'need to apply for a Vietnam e-visa online before arrival. The e-visa is valid for 90 days, multiple entry.' : 'need to obtain a visa through a Vietnamese embassy or consulate before travel.'} For long-term stays, ${data.recommendedLongStay} is recommended.`;
+  const genericFallback = data.visaFreeCheck
+    ? `${INDONESIA_CHECK_LINE} ${E_VISA_LINE_TEXT} For long-term residency, ${data.recommendedLongStay} is recommended.`
+    : hasVisaFreeDays
+    ? `${nat} passport holders enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam. For longer stays, apply for the e-visa. ${E_VISA_LINE_TEXT} For long-term residency, ${data.recommendedLongStay} is recommended.`
+    : `${nat} nationals are not eligible for visa-free entry and need an e-visa. ${E_VISA_LINE_TEXT} For long-term stays, ${data.recommendedLongStay} is recommended.`;
 
   function getFaqAnswer(query: string): string {
     const lowerQuery = query.toLowerCase();
@@ -217,7 +248,7 @@ export default async function VisaCountryPage({
                         d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3"
                       />
                     </svg>
-                    E-Visa Required
+                    {data.visaFreeCheck ? 'Check current visa-free rules' : 'E-Visa Required'}
                   </span>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-sm font-semibold px-4 py-2 rounded-full">
@@ -265,7 +296,7 @@ export default async function VisaCountryPage({
               </svg>
               <span>
                 <strong>Disclaimer:</strong> Visa policies change frequently. This information
-                reflects Vietnam&apos;s policy as of April 2026 and is provided for general guidance
+                reflects Vietnam&apos;s policy as of {formatVerifiedDate(data.verifiedOn)} and is provided for general guidance
                 only. Always verify with the Vietnam Immigration Department or your nearest Vietnamese
                 embassy before travel.
               </span>
@@ -301,7 +332,9 @@ export default async function VisaCountryPage({
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">Visa-free entry</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.visaFree && data.visaFreeDays
+                          {data.visaFreeCheck
+                            ? INDONESIA_CHECK_LINE
+                            : data.visaFree && data.visaFreeDays
                             ? `Yes - ${data.visaFreeDays} days`
                             : 'No'}
                         </dd>
@@ -309,19 +342,23 @@ export default async function VisaCountryPage({
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">E-visa available</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.evisaEligible ? `Yes - ${data.evisaDays} days` : 'No'}
+                          {data.evisaEligible ? `Yes - up to ${data.evisaDays} days` : 'No'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">Max visa-free stay</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.visaFreeDays ? `${data.visaFreeDays} days` : 'N/A'}
+                          {data.visaFreeCheck
+                            ? 'Not confirmed'
+                            : data.visaFreeDays
+                            ? `${data.visaFreeDays} days`
+                            : 'N/A'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-center py-3 border-b border-gray-50">
                         <dt className="text-sm text-gray-500">E-visa duration</dt>
                         <dd className="text-sm font-semibold text-gray-900">
-                          {data.evisaEligible ? `${data.evisaDays} days (multiple entry)` : 'N/A'}
+                          {data.evisaEligible ? `Up to ${data.evisaDays} days` : 'N/A'}
                         </dd>
                       </div>
                       <div className="flex justify-between items-start py-3">
@@ -331,11 +368,38 @@ export default async function VisaCountryPage({
                         </dd>
                       </div>
                     </dl>
+                    <div className="mt-5 pt-4 border-t border-gray-100 text-xs text-gray-500 space-y-1">
+                      <p className="font-medium text-gray-700">{lastVerified}</p>
+                      <p>
+                        Official source:{' '}
+                        {[...data.sources, SRC_EVISA_FEES].map((src, i) => (
+                          <span key={src.url}>
+                            {i > 0 && ' | '}
+                            <a
+                              href={src.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary-600 hover:text-primary-700 underline"
+                            >
+                              {src.label}
+                            </a>
+                          </span>
+                        ))}
+                      </p>
+                    </div>
                   </div>
 
                   {/* Entry summary */}
                   <div className="space-y-4">
-                    {data.visaFree && data.visaFreeDays ? (
+                    {data.visaFreeCheck ? (
+                      <div className="bg-blue-50 rounded-2xl border border-blue-100 p-6">
+                        <h3 className="font-semibold text-blue-800 mb-3">Visa-Free Entry</h3>
+                        <p className="text-sm text-blue-700 leading-relaxed">
+                          {INDONESIA_CHECK_LINE} The e-visa is available to {data.nationality}{' '}
+                          passport holders.
+                        </p>
+                      </div>
+                    ) : data.visaFree && data.visaFreeDays ? (
                       <div className="bg-emerald-50 rounded-2xl border border-emerald-100 p-6">
                         <div className="flex items-center gap-2 mb-3">
                           <svg
@@ -379,11 +443,9 @@ export default async function VisaCountryPage({
                           <h3 className="font-semibold text-blue-800">Visa Required Before Arrival</h3>
                         </div>
                         <p className="text-sm text-blue-700 leading-relaxed">
-                          {data.nationality} passport holders are not eligible for visa-free entry
-                          to Vietnam.{' '}
-                          {data.evisaEligible
-                            ? 'You can apply for a 90-day e-visa online before your trip.'
-                            : 'You will need to obtain a visa through a Vietnamese embassy or consulate.'}
+                          You need an e-visa. Not visa-free. {data.nationality} passport holders are
+                          not eligible for visa-free entry to Vietnam and can apply for the e-visa
+                          online before the trip.
                         </p>
                       </div>
                     )}
@@ -411,7 +473,7 @@ export default async function VisaCountryPage({
                         <p className="text-sm text-blue-700 leading-relaxed">
                           For stays beyond {data.visaFreeDays} days,{' '}
                           {data.evisaEligible
-                            ? `apply for the 90-day e-visa before your trip. It allows multiple entries and is the most popular option for digital nomads and short-term workers.`
+                            ? `apply for the e-visa (valid up to 90 days) before your trip. It is the most popular option for digital nomads and short-term workers.`
                             : 'you will need to apply for a visa at a Vietnamese embassy or consulate.'}
                         </p>
                       </div>
@@ -464,7 +526,17 @@ export default async function VisaCountryPage({
                                 d="M5 13l4 4L19 7"
                               />
                             </svg>
-                            Valid for <strong>90 days</strong>, multiple entry
+                            <span>
+                              {E_VISA_FACTS}{' '}
+                              <a
+                                href={EVISA_PORTAL_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary-600 hover:text-primary-700 underline font-medium"
+                              >
+                                evisa.gov.vn
+                              </a>
+                            </span>
                           </li>
                           <li className="flex items-start gap-2">
                             <svg
@@ -481,38 +553,6 @@ export default async function VisaCountryPage({
                               />
                             </svg>
                             Apply online - no embassy visit required
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <svg
-                              className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                            Processing: approximately <strong>3 business days</strong>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <svg
-                              className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                            Cost: approximately <strong>$25 USD</strong>
                           </li>
                           <li className="flex items-start gap-2">
                             <svg
@@ -604,12 +644,16 @@ export default async function VisaCountryPage({
                     </div>
                     <div className="mt-6 pt-6 border-t border-gray-100">
                       <p className="text-sm text-gray-500">
-                        <strong>Where to apply:</strong> Use the official Vietnam Immigration Department
-                        portal at{' '}
-                        <span className="font-medium text-gray-700">
-                          evisa.xuatnhapcanh.gov.vn
-                        </span>
-                        . Be cautious of third-party sites that charge higher fees for the same service.
+                        <strong>Where to apply:</strong> Use the official portal at{' '}
+                        <a
+                          href={EVISA_PORTAL_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-medium text-primary-600 hover:text-primary-700 underline"
+                        >
+                          evisa.gov.vn
+                        </a>
+                        .
                       </p>
                     </div>
                   </div>
@@ -645,14 +689,14 @@ export default async function VisaCountryPage({
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
                       The business visa is suitable for freelancers, entrepreneurs, and business
-                      visitors planning stays of 3–12 months. It requires a sponsor letter from a
+                      visitors planning stays of 3 to 12 months. It requires a sponsor letter from a
                       Vietnamese company or your own registered entity. Single or multiple entry
                       options available.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-500 mb-5">
                       <li className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0" />
-                        Valid for 3–12 months
+                        Valid for 3 to 12 months
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0" />
@@ -690,14 +734,14 @@ export default async function VisaCountryPage({
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
                       The TRC is Vietnam&apos;s primary long-term residency document for foreign
-                      nationals. It is valid for 1–2 years and is renewable. A TRC eliminates the
+                      nationals. It is valid for 1 to 2 years and is renewable. A TRC eliminates the
                       need for repeated visa renewals and is the most stable residency option for
                       long-term expats.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-500 mb-5">
                       <li className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0" />
-                        Valid for 1–2 years (renewable)
+                        Valid for 1 to 2 years (renewable)
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary-400 flex-shrink-0" />
@@ -816,6 +860,7 @@ export default async function VisaCountryPage({
                 Our consultants handle e-visas, business visas, work permits, and TRC applications
                 for {data.nationality} nationals. Book a free consultation today.
               </p>
+              <p className="text-sm text-white/60 mb-8 -mt-4">{PRIVATE_LINE}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"

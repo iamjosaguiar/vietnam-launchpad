@@ -1,3 +1,38 @@
+export interface VisaSource {
+  label: string;
+  url: string;
+}
+
+export const SRC_MOFA_LIST: VisaSource = {
+  label: 'Vietnam Ministry of Foreign Affairs visa exemption list (page dated 30 June 2025)',
+  url: 'https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-172.html',
+};
+
+export const SRC_MOFA_RES229: VisaSource = {
+  label: 'Vietnam Ministry of Foreign Affairs notice on Resolution 229 visa exemption (13 August 2025)',
+  url: 'https://mofa.gov.vn/tin-chi-tiet/chi-tiet/viet-nam-mien-thi-thuc-theo-chuong-trinh-kich-cau-phat-trien-du-lich-cho-cong-dan-12-nuoc-bi-bulgaria-croatia-sec-hungary-luxembourg-ha-lan-ba-lan-romania-slovakia-slovenia-va-thuy-sy-57388-595.html',
+};
+
+export const SRC_RES128: VisaSource = {
+  label: 'Government of Vietnam Resolution 128/NQ-CP (14 August 2023)',
+  url: 'https://vanban.chinhphu.vn/?docid=208479&pageid=27160',
+};
+
+export const SRC_MPS_EVISA: VisaSource = {
+  label: 'Ministry of Public Security Q&A on the e-visa for all countries and territories (15 December 2023)',
+  url: 'https://bocongan.gov.vn/hoi-dap/chi-tiet-cau-hoi/33cfd9a6-0283-4bf1-81f4-336afee671ae?page=%2F',
+};
+
+export const SRC_CHINA_PILOT: VisaSource = {
+  label: 'Government of Vietnam news: visa-free entry for Chinese tourists to Khanh Hoa province (13 October 2026)',
+  url: 'https://en.baochinhphu.vn/viet-nam-offers-visa-free-entry-to-chinese-tourists-to-khanh-hoa-province-111261013092351259.htm',
+};
+
+export const SRC_EVISA_FEES: VisaSource = {
+  label: 'Vietnam Immigration Department e-visa fee and processing page (checked 27 October 2026)',
+  url: 'https://evisa.immigration.gov.vn/en_US/web/guest/khai-thi-thuc-dien-tu/cap-thi-thuc-dien-tu',
+};
+
 export interface VisaCountry {
   slug: string;
   country: string;
@@ -9,6 +44,11 @@ export interface VisaCountry {
   evisaDays: number;
   recommendedLongStay: string;
   notes: string;
+  /** Set when the visa-free rule could not be confirmed from an official source. */
+  visaFreeCheck?: boolean;
+  /** Date the facts on this record were last checked against the official sources (YYYY-MM-DD). */
+  verifiedOn: string;
+  sources: VisaSource[];
   topQueries: string[];
 }
 
@@ -25,7 +65,9 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'Business Visa → TRC',
     notes:
-      'UK nationals enjoy 45-day visa-free entry since the 2023 policy update. For stays beyond 45 days, an e-visa (90 days, multiple entry) or business visa is the most flexible option. The UK expat community is one of the largest in Hanoi and Ho Chi Minh City.',
+      'UK nationals enjoy 45-day visa-free entry since the 2023 policy update. For stays beyond 45 days, an e-visa (up to 90 days) or business visa is the most flexible option. The UK expat community is one of the largest in Hanoi and Ho Chi Minh City.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'do british need a visa for vietnam',
       'uk vietnam visa requirements 2026',
@@ -39,13 +81,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'United States',
     nationality: 'American',
     flag: '🇺🇸',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa (90 days) → Business Visa or TRC',
     notes:
-      'US citizens were added to Vietnam\'s visa-free list in August 2023 with a 45-day allowance. The e-visa is the most popular option for digital nomads and short-term workers, offering 90 days with multiple entry. Americans make up one of the fastest-growing expat communities in Vietnam.',
+      'US passport holders are not eligible for visa-free entry to Vietnam and need an e-visa. The e-visa is the most popular option for digital nomads and short-term workers. Americans make up one of the fastest-growing expat communities in Vietnam.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'do americans need a visa for vietnam',
       'us citizen vietnam visa 2026',
@@ -59,13 +103,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'Australia',
     nationality: 'Australian',
     flag: '🇦🇺',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Australian passport holders enjoy 45-day visa-free entry to Vietnam. The e-visa (90-day, multiple entry) is widely used for longer stays or multiple trips per year. Australia and Vietnam have strong bilateral ties, and there is a significant Vietnamese diaspora community in Australia.',
+      'Australian passport holders are not eligible for visa-free entry to Vietnam and need an e-visa. The e-visa (up to 90 days) is widely used for longer stays or multiple trips per year. Australia and Vietnam have strong bilateral ties, and there is a significant Vietnamese diaspora community in Australia.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'do australians need a visa for vietnam',
       'vietnam visa australia 2026',
@@ -79,13 +125,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'Canada',
     nationality: 'Canadian',
     flag: '🇨🇦',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Canada was added to Vietnam\'s 45-day visa-free list in 2023. Canadians are eligible for the 90-day e-visa for longer visits. Canada has a large Vietnamese diaspora, and cultural familiarity makes Vietnam a popular destination for Canadian expats and entrepreneurs.',
+      'Canadian passport holders are not eligible for visa-free entry to Vietnam and need an e-visa, valid up to 90 days. Canada has a large Vietnamese diaspora, and cultural familiarity makes Vietnam a popular destination for Canadian expats and entrepreneurs.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'do canadians need a visa for vietnam',
       'canada vietnam visa requirements 2026',
@@ -99,13 +147,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'New Zealand',
     nationality: 'New Zealander',
     flag: '🇳🇿',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'New Zealand passport holders benefit from 45-day visa-free entry to Vietnam. The e-visa is recommended for digital nomads and longer stays. Vietnam and New Zealand enjoy a strong trade relationship under RCEP and bilateral agreements.',
+      'New Zealand passport holders are not eligible for visa-free entry to Vietnam and need an e-visa. The e-visa is recommended for digital nomads and longer stays. Vietnam and New Zealand enjoy a strong trade relationship under RCEP and bilateral agreements.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'new zealand vietnam visa',
       'do nz citizens need visa for vietnam',
@@ -126,6 +176,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'German nationals enjoy 45-day visa-free entry. Germany is one of the largest sources of European expats in Vietnam. The Schengen passport is accepted for e-visa applications. Many German companies operate in Vietnam\'s manufacturing and automotive sectors, making it a popular destination for German professionals.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'germany vietnam visa',
       'do germans need visa for vietnam',
@@ -146,6 +198,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'French nationals enjoy 45-day visa-free entry. France has a significant expat community in Vietnam, particularly in Hanoi and Ho Chi Minh City, reflecting the countries\' shared colonial history. French qualifications are well-recognized in Vietnam, especially in education and architecture.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'france vietnam visa',
       'vietnam visa francais',
@@ -166,6 +220,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Italian passport holders enjoy 45-day visa-free entry to Vietnam. The e-visa (90 days) is the recommended option for extended stays. Italy and Vietnam have growing bilateral trade, particularly in fashion, food, and manufacturing.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'italy vietnam visa',
       'do italians need visa for vietnam',
@@ -185,7 +241,9 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Spanish citizens enjoy 45-day visa-free entry to Vietnam. The e-visa (90 days, multiple entry) is recommended for digital nomads and longer stays. Vietnam is increasingly popular among Spanish-speaking travelers and entrepreneurs.',
+      'Spanish citizens enjoy 45-day visa-free entry to Vietnam. The e-visa (up to 90 days) is recommended for digital nomads and longer stays. Vietnam is increasingly popular among Spanish-speaking travelers and entrepreneurs.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'spain vietnam visa',
       'do spanish citizens need visa for vietnam',
@@ -206,6 +264,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Dutch passport holders enjoy 45-day visa-free entry. The Netherlands is one of Vietnam\'s largest European trading partners. The e-visa is ideal for extended stays or frequent visits for business purposes.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'netherlands vietnam visa',
       'do dutch citizens need visa for vietnam',
@@ -226,6 +286,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Belgian passport holders enjoy 45-day visa-free entry to Vietnam. The e-visa (90 days) is available for longer stays. Belgium has significant investment presence in Vietnam through the EU trade relationship.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'belgium vietnam visa',
       'do belgians need visa for vietnam',
@@ -246,6 +308,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Swiss passport holders enjoy 45-day visa-free entry. Switzerland is not part of the EU but benefits from the same visa-free arrangement. Swiss nationals working in finance, pharma, or hospitality find Vietnam an attractive base in Southeast Asia. Switzerland is an EFTA member; the EFTA-Vietnam FTA was signed in October 2026 and awaits ratification before entry into force.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'switzerland vietnam visa',
       'do swiss citizens need visa for vietnam',
@@ -259,13 +323,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'Austria',
     nationality: 'Austrian',
     flag: '🇦🇹',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Austrian passport holders benefit from 45-day visa-free entry to Vietnam. The 90-day e-visa is recommended for extended stays and business visits.',
+      'Austrian passport holders are not eligible for visa-free entry to Vietnam and need an e-visa. The e-visa, valid up to 90 days, is recommended for extended stays and business visits.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_MOFA_RES229],
     topQueries: [
       'austria vietnam visa',
       'do austrians need visa for vietnam',
@@ -286,6 +352,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Danish nationals enjoy 45-day visa-free access to Vietnam. Denmark has a growing number of expats and entrepreneurs working in Vietnam\'s technology and sustainability sectors.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'denmark vietnam visa',
       'do danes need visa for vietnam',
@@ -306,6 +374,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Finnish passport holders enjoy 45-day visa-free entry to Vietnam. The e-visa (90 days) is available for those planning longer stays. Finland has notable investment in Vietnam\'s ICT sector.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'finland vietnam visa',
       'do finns need visa for vietnam',
@@ -326,6 +396,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Norwegian passport holders benefit from 45-day visa-free entry. Norway is not an EU member but is covered by Vietnam\'s visa-free policy for select European countries. The e-visa is the go-to option for extended visits. Norway is an EFTA member; the EFTA-Vietnam FTA was signed in October 2026 and awaits ratification before entry into force.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'norway vietnam visa',
       'do norwegians need visa for vietnam',
@@ -346,6 +418,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Swedish passport holders enjoy 45-day visa-free entry to Vietnam. Sweden has significant investment ties with Vietnam, particularly in manufacturing and telecommunications.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'sweden vietnam visa',
       'do swedes need visa for vietnam',
@@ -359,13 +433,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'Portugal',
     nationality: 'Portuguese',
     flag: '🇵🇹',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Portuguese nationals enjoy 45-day visa-free access to Vietnam. Portugal\'s growing remote work culture makes Vietnam an increasingly popular long-term destination for Portuguese digital nomads.',
+      'Portuguese nationals are not eligible for visa-free entry to Vietnam and need an e-visa. Portugal\'s growing remote work culture makes Vietnam an increasingly popular long-term destination for Portuguese digital nomads.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_MOFA_RES229],
     topQueries: [
       'portugal vietnam visa',
       'do portuguese need visa for vietnam',
@@ -386,6 +462,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Czech passport holders enjoy 45-day visa-free entry to Vietnam. The Czech Republic has a notable Vietnamese community and longstanding cultural ties. The e-visa (90 days) is popular among Czech expats and entrepreneurs.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'czech republic vietnam visa',
       'do czechs need visa for vietnam',
@@ -406,6 +484,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Hungarian passport holders enjoy 45-day visa-free entry. Hungary has one of Europe\'s largest Vietnamese diaspora communities, reflecting close historical ties. The e-visa is ideal for longer business or lifestyle visits.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'hungary vietnam visa',
       'do hungarians need visa for vietnam',
@@ -426,6 +506,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Polish passport holders enjoy 45-day visa-free entry to Vietnam. Poland has a significant Vietnamese community and a growing number of Polish entrepreneurs establishing businesses in Southeast Asia.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'poland vietnam visa',
       'do poles need visa for vietnam',
@@ -445,7 +527,9 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Romanian citizens enjoy 45-day visa-free entry to Vietnam. The e-visa (90 days, multiple entry) is recommended for extended stays. Romania and Vietnam share historical diplomatic ties from the socialist era.',
+      'Romanian citizens enjoy 45-day visa-free entry to Vietnam. The e-visa (up to 90 days) is recommended for extended stays. Romania and Vietnam share historical diplomatic ties from the socialist era.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'romania vietnam visa',
       'do romanians need visa for vietnam',
@@ -459,13 +543,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'Greece',
     nationality: 'Greek',
     flag: '🇬🇷',
-    visaFree: true,
-    visaFreeDays: 45,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Greek passport holders enjoy 45-day visa-free entry to Vietnam. The e-visa is available for longer stays. Greece and Vietnam have growing bilateral tourism and business links.',
+      'Greek passport holders are not eligible for visa-free entry to Vietnam and need an e-visa. Greece and Vietnam have growing bilateral tourism and business links.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'greece vietnam visa',
       'do greeks need visa for vietnam',
@@ -486,6 +572,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Slovak passport holders enjoy 45-day visa-free entry to Vietnam. Like the Czech Republic, Slovakia has a notable Vietnamese community due to historical guest-worker programs. The e-visa is the recommended option for longer stays.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_RES229],
     topQueries: [
       'slovakia vietnam visa',
       'do slovaks need visa for vietnam',
@@ -506,6 +594,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'Business Visa → TRC',
     notes:
       'Japanese passport holders enjoy 45-day visa-free access to Vietnam. Japan is one of Vietnam\'s largest trading partners and a top source of foreign direct investment. The Japanese expat community is one of the largest in Vietnam, particularly in manufacturing hubs like Binh Duong and Hanoi. Many Japanese businesses operate through representative offices or subsidiaries.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'do japanese need visa for vietnam',
       'japan vietnam visa requirements 2026',
@@ -526,6 +616,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'Business Visa → TRC',
     notes:
       'South Korean nationals enjoy 45-day visa-free entry to Vietnam. South Korea is Vietnam\'s largest source of FDI and one of the biggest tourism markets. The Korean expat community is extensive, centered in HCMC, Hanoi, and Binh Duong. Samsung, LG, and Lotte have large presences. Korean nationals on long-term work contracts typically apply for a TRC through their employer.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'do koreans need visa for vietnam',
       'south korea vietnam visa requirements',
@@ -548,6 +640,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Thai passport holders enjoy 30-day visa-free entry to Vietnam under the ASEAN agreement. For longer stays, the e-visa (90 days) provides a convenient option. Thailand and Vietnam share a close economic relationship and significant cross-border business activity.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'thailand vietnam visa',
       'do thais need visa for vietnam',
@@ -568,6 +662,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'Business Visa → TRC',
     notes:
       'Singaporean passport holders enjoy 30-day visa-free entry to Vietnam under ASEAN. Singapore is one of Vietnam\'s top FDI sources, and there is a substantial Singaporean business community in Hanoi and HCMC. Long-term residents typically obtain a TRC through their employer or a business entity. The e-visa (90 days) is available for extended stays.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'singapore vietnam visa',
       'do singaporeans need visa for vietnam',
@@ -588,6 +684,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Malaysian passport holders enjoy 30-day visa-free entry under the ASEAN agreement. Malaysia is a significant investor in Vietnam, and many Malaysian companies operate in the country. The e-visa is widely used for longer business visits.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'malaysia vietnam visa',
       'do malaysians need visa for vietnam',
@@ -602,12 +700,14 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     nationality: 'Filipino',
     flag: '🇵🇭',
     visaFree: true,
-    visaFreeDays: 30,
+    visaFreeDays: 21,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Filipino passport holders enjoy 30-day visa-free entry to Vietnam under the ASEAN agreement. The e-visa is available for longer stays. There is a growing community of Filipino professionals in Vietnam, particularly in education, hospitality, and healthcare.',
+      'Filipino passport holders enjoy 21-day visa-free entry to Vietnam. The e-visa is available for longer stays. There is a growing community of Filipino professionals in Vietnam, particularly in education, hospitality, and healthcare.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'philippines vietnam visa',
       'do filipinos need visa for vietnam',
@@ -621,13 +721,16 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'Indonesia',
     nationality: 'Indonesian',
     flag: '🇮🇩',
-    visaFree: true,
-    visaFreeDays: 30,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Indonesian passport holders enjoy 30-day visa-free entry under the ASEAN agreement. Indonesia and Vietnam are close economic partners in the region. The e-visa (90 days) is available for extended stays.',
+      'Check with the Indonesian or Vietnamese authorities, rules changed July 2026. Indonesia and Vietnam are close economic partners in the region. The e-visa (up to 90 days) is available for extended stays.',
+    visaFreeCheck: true,
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'indonesia vietnam visa',
       'do indonesians need visa for vietnam',
@@ -643,11 +746,13 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     flag: '🇰🇭',
     visaFree: true,
     visaFreeDays: 30,
-    evisaEligible: false,
-    evisaDays: 0,
+    evisaEligible: true,
+    evisaDays: 90,
     recommendedLongStay: 'Business Visa (apply at consulate)',
     notes:
-      'Cambodian passport holders enjoy 30-day visa-free entry to Vietnam under the ASEAN agreement. Cambodians are not currently eligible for Vietnam\'s online e-visa system. For stays beyond 30 days, a business or tourist visa should be obtained through a Vietnamese consulate.',
+      'Cambodian passport holders enjoy 30-day visa-free entry to Vietnam under the ASEAN agreement. For stays beyond 30 days, Cambodian nationals can apply for the e-visa, valid up to 90 days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_MPS_EVISA, SRC_EVISA_FEES],
     topQueries: [
       'cambodia vietnam visa',
       'do cambodians need visa for vietnam',
@@ -663,11 +768,13 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     flag: '🇱🇦',
     visaFree: true,
     visaFreeDays: 30,
-    evisaEligible: false,
-    evisaDays: 0,
+    evisaEligible: true,
+    evisaDays: 90,
     recommendedLongStay: 'Business Visa (apply at consulate)',
     notes:
-      'Lao passport holders enjoy 30-day visa-free entry to Vietnam under the ASEAN agreement. The e-visa is not currently available for Lao nationals. For extended stays, a business or long-term visa should be arranged through a Vietnamese embassy or consulate.',
+      'Lao passport holders enjoy 30-day visa-free entry to Vietnam under the ASEAN agreement. For extended stays, Lao nationals can apply for the e-visa, valid up to 90 days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_MPS_EVISA, SRC_EVISA_FEES],
     topQueries: [
       'laos vietnam visa',
       'do lao citizens need visa for vietnam',
@@ -683,11 +790,13 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     flag: '🇲🇲',
     visaFree: true,
     visaFreeDays: 30,
-    evisaEligible: false,
-    evisaDays: 0,
+    evisaEligible: true,
+    evisaDays: 90,
     recommendedLongStay: 'Business Visa (apply at consulate)',
     notes:
-      'Myanmar passport holders enjoy 30-day visa-free entry under the ASEAN agreement. Myanmar nationals are not currently eligible for Vietnam\'s e-visa system. Long-term stays require a visa obtained through a Vietnamese embassy or consulate.',
+      'Myanmar passport holders enjoy 30-day visa-free entry under the ASEAN agreement. For longer stays, Myanmar nationals can apply for the e-visa, valid up to 90 days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_MPS_EVISA, SRC_EVISA_FEES],
     topQueries: [
       'myanmar vietnam visa',
       'do myanmar citizens need visa for vietnam',
@@ -702,12 +811,14 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     nationality: 'Bruneian',
     flag: '🇧🇳',
     visaFree: true,
-    visaFreeDays: 30,
+    visaFreeDays: 14,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Bruneian passport holders enjoy 30-day visa-free entry under the ASEAN agreement and are eligible for the 90-day e-visa for longer stays.',
+      'Bruneian passport holders enjoy 14-day visa-free entry to Vietnam and are eligible for the e-visa, valid up to 90 days, for longer stays.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'brunei vietnam visa',
       'do bruneians need visa for vietnam',
@@ -722,12 +833,14 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     nationality: 'Russian',
     flag: '🇷🇺',
     visaFree: true,
-    visaFreeDays: 30,
+    visaFreeDays: 45,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Russian passport holders enjoy 30-day visa-free entry to Vietnam under a bilateral agreement. Russia and Vietnam have maintained close ties since the Soviet era, and there is a significant Russian expat and tourism community, particularly in coastal cities like Da Nang and Nha Trang. The e-visa (90 days) is available for longer stays.',
+      'Russian passport holders enjoy 45-day visa-free entry to Vietnam under Vietnam\'s unilateral visa exemption policy. Russia and Vietnam have maintained close ties since the Soviet era, and there is a significant Russian expat and tourism community, particularly in coastal cities like Da Nang and Nha Trang. The e-visa (up to 90 days) is available for longer stays.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_RES128],
     topQueries: [
       'russia vietnam visa',
       'do russians need visa for vietnam',
@@ -741,13 +854,15 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     country: 'China',
     nationality: 'Chinese',
     flag: '🇨🇳',
-    visaFree: true,
-    visaFreeDays: 30,
+    visaFree: false,
+    visaFreeDays: null,
     evisaEligible: true,
     evisaDays: 90,
     recommendedLongStay: 'Business Visa → TRC',
     notes:
-      'Chinese passport holders enjoy 30-day visa-free entry to Vietnam under a bilateral agreement. China is Vietnam\'s largest trading partner. There is a significant Chinese business community operating in Vietnam\'s manufacturing, retail, and construction sectors. Long-term residents typically obtain a TRC through their employer or business entity. The e-visa (90 days) is available for extended stays.',
+      'Chinese passport holders are not eligible for general visa-free entry to Vietnam and need an e-visa. A pilot (Resolution 325/NQ-CP) lets mainland Chinese tourists on organised group tours enter Khanh Hoa province only without a visa, from 12 October 2026 to 31 December 2027. China is Vietnam\'s largest trading partner. There is a significant Chinese business community operating in Vietnam\'s manufacturing, retail, and construction sectors. Long-term residents typically obtain a TRC through their employer or business entity. The e-visa (up to 90 days) is available for extended stays.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_CHINA_PILOT],
     topQueries: [
       'china vietnam visa',
       'do chinese need visa for vietnam',
@@ -769,7 +884,9 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'Business Visa → TRC',
     notes:
-      'Indian passport holders are not currently eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. India is Vietnam\'s growing strategic partner, and Indian IT and pharmaceutical companies are expanding in Vietnam. There is an increasing Indian professional community in HCMC and Hanoi. Processing time for the e-visa is typically 3 business days.',
+      'Indian passport holders are not currently eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. India is Vietnam\'s growing strategic partner, and Indian IT and pharmaceutical companies are expanding in Vietnam. There is an increasing Indian professional community in HCMC and Hanoi. Processing time for the e-visa is typically 3 working days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'india vietnam visa requirements',
       'vietnam e-visa for indian passport',
@@ -790,6 +907,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'South African passport holders are not eligible for visa-free entry but can apply for a 90-day e-visa online. South Africa and Vietnam are growing trade partners under the BRICS framework, and there is an emerging South African expat community in Vietnam.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'south africa vietnam visa',
       'vietnam e-visa south africa',
@@ -810,6 +929,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Brazilian passport holders are not currently on Vietnam\'s visa-free list but are eligible for the 90-day e-visa. Brazil and Vietnam are both major emerging economies with growing bilateral trade. The e-visa is the standard entry method for most Brazilian visitors and short-term workers.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'brazil vietnam visa',
       'vietnam e-visa brazil',
@@ -830,6 +951,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Mexican passport holders are not on Vietnam\'s visa-free list but can apply online for the 90-day e-visa. Mexico and Vietnam are both members of CPTPP, which is strengthening bilateral trade ties. The e-visa is the most convenient entry method for Mexican nationals.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'mexico vietnam visa',
       'vietnam e-visa mexico',
@@ -850,6 +973,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Argentine nationals are not visa-free for Vietnam but are eligible for the 90-day e-visa online. Argentina has growing diplomatic and business ties with Vietnam. The e-visa is the recommended entry method for Argentine travelers and short-term workers.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'argentina vietnam visa',
       'vietnam e-visa argentina',
@@ -869,7 +994,9 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'Business Visa (apply at consulate or via e-visa)',
     notes:
-      'Pakistani passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. Pakistan and Vietnam have growing trade links. Vietnamese e-visa processing usually takes 3 business days.',
+      'Pakistani passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. Pakistan and Vietnam have growing trade links. Vietnamese e-visa processing usually takes 3 working days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'pakistan vietnam visa',
       'vietnam e-visa pakistan',
@@ -890,6 +1017,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'Business Visa (apply at consulate)',
     notes:
       'Bangladeshi passport holders are not eligible for visa-free entry but can apply for the 90-day e-visa. Bangladesh and Vietnam are both growing garment and manufacturing economies with increasing commercial interaction.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'bangladesh vietnam visa',
       'vietnam e-visa bangladesh',
@@ -910,6 +1039,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Nigerian passport holders are not eligible for visa-free entry to Vietnam but can apply online for the 90-day e-visa. There is a growing Nigerian business and entrepreneurial community in Vietnam, particularly in HCMC. The e-visa simplifies the entry process compared to embassy visits.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'nigeria vietnam visa',
       'vietnam e-visa nigeria',
@@ -930,6 +1061,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'UAE passport holders are not currently eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. The UAE and Vietnam have growing business ties, with increasing direct investment from Gulf companies. The e-visa is the standard entry method for Emirati nationals.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'uae vietnam visa',
       'vietnam e-visa uae',
@@ -950,6 +1083,8 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
       'Saudi passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa. Saudi investment in Vietnam is growing as part of the Kingdom\'s Vision 2030 international diversification strategy.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'saudi arabia vietnam visa',
       'vietnam e-visa saudi arabia',
@@ -969,7 +1104,9 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Israeli passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. There is a growing Israeli entrepreneurial and startup community in Ho Chi Minh City and Hanoi. The e-visa processing typically takes 3 business days.',
+      'Israeli passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. There is a growing Israeli entrepreneurial and startup community in Ho Chi Minh City and Hanoi. The e-visa processing typically takes 3 working days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST],
     topQueries: [
       'israel vietnam visa',
       'vietnam e-visa israel',
@@ -985,11 +1122,13 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     flag: '🇮🇷',
     visaFree: false,
     visaFreeDays: null,
-    evisaEligible: false,
-    evisaDays: 0,
-    recommendedLongStay: 'Visa on Arrival (pre-approved) or consulate visa',
+    evisaEligible: true,
+    evisaDays: 90,
+    recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Iranian passport holders are not eligible for visa-free entry or the standard online e-visa. Entry to Vietnam requires obtaining a visa through a Vietnamese embassy or consulate, or arranging a pre-approved visa on arrival letter through a licensed travel agency. Processing times are typically longer.',
+      'Iranian passport holders are not eligible for visa-free entry to Vietnam and need an e-visa. Iranian nationals can apply for the e-visa online before travel, valid up to 90 days.',
+    verifiedOn: '2026-10-27',
+    sources: [SRC_MOFA_LIST, SRC_MPS_EVISA, SRC_EVISA_FEES],
     topQueries: [
       'iran vietnam visa',
       'do iranians need visa for vietnam',

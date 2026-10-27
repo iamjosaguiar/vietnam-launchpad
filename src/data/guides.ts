@@ -725,7 +725,7 @@ This guide cuts through the noise and tells you what is actually available, what
 
 Vietnam's e-visa is the standard entry document for most nationalities:
 
-- **Eligible:** 80+ countries
+- **Eligible:** all countries and territories
 - **Duration:** Up to 90 days per entry
 - **Entry:** Multiple entry
 - **Cost:** $50 USD

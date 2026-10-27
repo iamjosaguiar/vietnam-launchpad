@@ -3,6 +3,16 @@
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import HolaflyCallout from '@/components/HolaflyCallout';
 import { Link } from '@/i18n/config';
+import { SRC_EVISA_FEES, SRC_MPS_EVISA } from '@/data/visas';
+import {
+  E_VISA_FACTS,
+  EVISA_PORTAL_URL,
+  FEE_SPLIT_LINE,
+  PRIVATE_LINE,
+  lastVerifiedLine,
+} from '@/data/visa-copy';
+
+const EVISA_VERIFIED_ON = '2026-10-27';
 
 interface ServiceData {
   slug: string;
@@ -103,7 +113,39 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
               ))}
             </div>
             {service.slug === 'evisa' && (
-              <div className="mt-10">
+              <div className="mt-10 space-y-6">
+                <div className="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-sm text-blue-900 space-y-3">
+                  <p className="font-semibold">{PRIVATE_LINE}</p>
+                  <p>{FEE_SPLIT_LINE}</p>
+                  <p>
+                    {E_VISA_FACTS}{' '}
+                    <a
+                      href={EVISA_PORTAL_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline font-medium"
+                    >
+                      evisa.gov.vn
+                    </a>
+                  </p>
+                  <p>{lastVerifiedLine(EVISA_VERIFIED_ON)}</p>
+                  <p>
+                    Official source:{' '}
+                    {[SRC_EVISA_FEES, SRC_MPS_EVISA].map((src, i) => (
+                      <span key={src.url}>
+                        {i > 0 && ' | '}
+                        <a
+                          href={src.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline"
+                        >
+                          {src.label}
+                        </a>
+                      </span>
+                    ))}
+                  </p>
+                </div>
                 <HolaflyCallout variant="visa" />
               </div>
             )}
