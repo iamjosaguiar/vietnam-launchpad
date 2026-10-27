@@ -726,10 +726,10 @@ This guide cuts through the noise and tells you what is actually available, what
 Vietnam's e-visa is the standard entry document for most nationalities:
 
 - **Eligible:** all countries and territories
-- **Duration:** Up to 90 days per entry
-- **Entry:** Multiple entry
-- **Cost:** $50 USD
-- **Processing:** 3-5 business days online
+- **Duration:** Up to 90 days
+- **Entry:** Single or multiple entry
+- **Government fee:** US$25 single entry, US$50 multiple entry
+- **Processing:** 3 working days online
 - **Renewability:** Cannot extend - you must exit and re-enter
 
 For nomads staying under 90 days at a time, this is the cleanest option. Apply through the official Vietnam immigration portal.
@@ -1556,7 +1556,7 @@ There is no Vietnamese immigration law provision that says "you are retired, the
 
 Many retirees, particularly those under 65 and in good health, simply live on a rolling e-visa:
 
-- 90-day multiple-entry e-visa at $50
+- E-visa valid up to 90 days, US$50 for multiple entry
 - Exit and re-enter every 90 days (typically a quick trip to Cambodia, Thailand, or Malaysia)
 - Very low administrative burden
 - Annual cost of visa runs: $400-1,000 (flights + accommodation for border crossing)

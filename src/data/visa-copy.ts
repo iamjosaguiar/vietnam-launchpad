@@ -13,7 +13,7 @@ export const FEE_SPLIT_LINE =
   'The US$25 or US$50 government fee is paid to the Vietnamese Government on evisa.gov.vn. Our service fee is separate.';
 
 export const INDONESIA_CHECK_LINE =
-  'Check with the Indonesian or Vietnamese authorities, rules changed July 2026.';
+  'The Indonesian embassy reported a change to visa-free rules in July 2026. We could not confirm it on a Vietnamese government source, so check with the Indonesian or Vietnamese authorities.';
 
 const MONTHS = [
   'January',

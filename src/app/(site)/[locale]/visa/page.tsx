@@ -258,7 +258,7 @@ export default function VisaIndexPage() {
               </div>
               <div>
                 <div className="text-2xl font-display font-bold text-gray-900">{visaFreeTotal}</div>
-                <div className="text-sm text-gray-500 mt-0.5">Visa-free countries</div>
+                <div className="text-sm text-gray-500 mt-0.5">Visa-free nationalities listed</div>
               </div>
               <div>
                 <div className="text-2xl font-display font-bold text-gray-900">Up to 90 days</div>

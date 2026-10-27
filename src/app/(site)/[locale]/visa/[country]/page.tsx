@@ -50,7 +50,7 @@ export async function generateMetadata({
     descriptionParts.push(INDONESIA_CHECK_LINE);
   } else if (data.visaFree && data.visaFreeDays) {
     descriptionParts.push(
-      `${data.nationality} citizens enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam.`
+      `${data.nationality} citizens enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam${data.tourismOnly ? ' for tourism only, with a passport valid for at least 6 months' : ''}.`
     );
   } else {
     descriptionParts.push(
@@ -112,37 +112,52 @@ export default async function VisaCountryPage({
   const nat = data.nationality;
   const hasVisaFreeDays = data.visaFree && !!data.visaFreeDays;
   const lastVerified = lastVerifiedLine(data.verifiedOn);
+  const tourismNote = data.tourismOnly
+    ? ' This visa-free entry is for tourism only and needs a passport valid for at least 6 months.'
+    : '';
   const needsVisaAnswer = data.visaFreeCheck
     ? INDONESIA_CHECK_LINE
     : hasVisaFreeDays
-    ? `No. ${nat} passport holders can enter Vietnam visa-free for up to ${data.visaFreeDays} days. For longer stays, an e-visa (valid up to 90 days) is the most convenient option.`
+    ? `No. ${nat} passport holders can enter Vietnam visa-free for up to ${data.visaFreeDays} days.${tourismNote} For longer stays, an e-visa (valid up to 90 days) is the most convenient option.`
     : `Yes. ${nat} nationals are not eligible for visa-free entry to Vietnam and need an e-visa. ${E_VISA_LINE_TEXT}`;
+  const eVisaAnswer = `Yes, ${nat} passport holders are eligible for Vietnam's online e-visa. ${E_VISA_LINE_TEXT}`;
   const howLongAnswer = data.visaFreeCheck
     ? `${INDONESIA_CHECK_LINE} With an e-visa you can stay for up to 90 days. For longer stays, a business visa or Temporary Residence Card (TRC) is required.`
     : hasVisaFreeDays
-    ? `${nat} passport holders can stay in Vietnam for up to ${data.visaFreeDays} days without a visa. If you hold an e-visa, you can stay for up to 90 days. For longer stays, a business visa or Temporary Residence Card (TRC) is required.`
+    ? `${nat} passport holders can stay in Vietnam for up to ${data.visaFreeDays} days without a visa.${tourismNote} If you hold an e-visa, you can stay for up to 90 days. For longer stays, a business visa or Temporary Residence Card (TRC) is required.`
     : `${nat} nationals need an e-visa to enter Vietnam. With the e-visa, you can stay for up to 90 days. For longer stays, a business visa or TRC is required.`;
-  const faqAnswers: Record<string, string> = {
-    [`do ${nat.toLowerCase()} need a visa for vietnam`]: needsVisaAnswer,
-    [`vietnam e-visa for ${nat.toLowerCase()} passport`]: `Yes, ${nat} passport holders are eligible for Vietnam's online e-visa. ${E_VISA_LINE_TEXT}`,
-    [`how long can ${nat.toLowerCase()} stay in vietnam`]: howLongAnswer,
-  };
-
-  // Generic fallback answer builder - uses captured variables so no closure over `data`
-  const genericFallback = data.visaFreeCheck
-    ? `${INDONESIA_CHECK_LINE} ${E_VISA_LINE_TEXT} For long-term residency, ${data.recommendedLongStay} is recommended.`
+  const longStayAnswer = `For long-term residency, ${data.recommendedLongStay} is recommended for ${nat} passport holders. An e-visa lets you stay up to 90 days at a time. A business visa or Temporary Residence Card (TRC) covers longer stays.`;
+  const requirementsAnswer = data.visaFreeCheck
+    ? `${INDONESIA_CHECK_LINE} ${nat} passport holders can apply for the e-visa. ${E_VISA_LINE_TEXT}`
     : hasVisaFreeDays
-    ? `${nat} passport holders enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam. For longer stays, apply for the e-visa. ${E_VISA_LINE_TEXT} For long-term residency, ${data.recommendedLongStay} is recommended.`
-    : `${nat} nationals are not eligible for visa-free entry and need an e-visa. ${E_VISA_LINE_TEXT} For long-term stays, ${data.recommendedLongStay} is recommended.`;
+    ? `${nat} passport holders enjoy ${data.visaFreeDays}-day visa-free entry to Vietnam.${tourismNote} For longer stays, apply for the e-visa. ${E_VISA_LINE_TEXT}`
+    : `${nat} nationals are not eligible for visa-free entry and need an e-visa before travel. ${E_VISA_LINE_TEXT}`;
 
-  function getFaqAnswer(query: string): string {
-    const lowerQuery = query.toLowerCase();
-    for (const [key, answer] of Object.entries(faqAnswers)) {
-      if (lowerQuery.includes(key) || key.includes(lowerQuery)) {
-        return answer;
-      }
+  // Pick a different answer for each question on the page: match by topic first,
+  // then hand any unmatched question the next answer that has not been used yet.
+  const faqTopics: { test: RegExp; answer: string }[] = [
+    { test: /how long|how many days|stay in|can stay/i, answer: howLongAnswer },
+    { test: /long[- ]?stay|living|live in|resid|retire|long[- ]term|\bwork\b/i, answer: longStayAnswer },
+    { test: /e-?visa|evisa|online visa/i, answer: eVisaAnswer },
+    { test: /do .*need|need (a )?visa|visa free|visa-free|without a visa/i, answer: needsVisaAnswer },
+    { test: /requirement|entry/i, answer: requirementsAnswer },
+  ];
+  const faqPool = [needsVisaAnswer, requirementsAnswer, eVisaAnswer, howLongAnswer, longStayAnswer];
+  const usedAnswers = new Set<string>();
+  const faqAnswerList: (string | undefined)[] = data.topQueries.map((query) => {
+    const topic = faqTopics.find((t) => t.test.test(query) && !usedAnswers.has(t.answer));
+    if (topic) usedAnswers.add(topic.answer);
+    return topic?.answer;
+  });
+  for (let i = 0; i < faqAnswerList.length; i += 1) {
+    if (faqAnswerList[i] === undefined) {
+      const next = faqPool.find((a) => !usedAnswers.has(a)) ?? requirementsAnswer;
+      usedAnswers.add(next);
+      faqAnswerList[i] = next;
     }
-    return genericFallback;
+  }
+  function getFaqAnswer(index: number): string {
+    return faqAnswerList[index] ?? requirementsAnswer;
   }
 
   const webPageSchema = {
@@ -174,12 +189,12 @@ export default async function VisaCountryPage({
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: data.topQueries.map((query) => ({
+    mainEntity: data.topQueries.map((query, i) => ({
       '@type': 'Question',
       name: query.charAt(0).toUpperCase() + query.slice(1) + '?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: getFaqAnswer(query),
+        text: getFaqAnswer(i),
       },
     })),
   };
@@ -333,9 +348,9 @@ export default async function VisaCountryPage({
                         <dt className="text-sm text-gray-500">Visa-free entry</dt>
                         <dd className="text-sm font-semibold text-gray-900">
                           {data.visaFreeCheck
-                            ? INDONESIA_CHECK_LINE
+                            ? 'Not confirmed'
                             : data.visaFree && data.visaFreeDays
-                            ? `Yes - ${data.visaFreeDays} days`
+                            ? `Yes - ${data.visaFreeDays} days${data.tourismOnly ? ' (tourism only, passport valid 6 months)' : ''}`
                             : 'No'}
                         </dd>
                       </div>
@@ -372,7 +387,9 @@ export default async function VisaCountryPage({
                       <p className="font-medium text-gray-700">{lastVerified}</p>
                       <p>
                         Official source:{' '}
-                        {[...data.sources, SRC_EVISA_FEES].map((src, i) => (
+                        {[...data.sources, SRC_EVISA_FEES]
+                          .filter((src, idx, all) => all.findIndex((x) => x.url === src.url) === idx)
+                          .map((src, i) => (
                           <span key={src.url}>
                             {i > 0 && ' | '}
                             <a
@@ -422,6 +439,7 @@ export default async function VisaCountryPage({
                           a visa for up to <strong>{data.visaFreeDays} days</strong> per visit. No
                           application required - just a valid passport with at least 6 months
                           validity.
+                          {data.tourismOnly ? ' This visa-free entry is for tourism only.' : ''}
                         </p>
                       </div>
                     ) : (
@@ -568,7 +586,7 @@ export default async function VisaCountryPage({
                                 d="M5 13l4 4L19 7"
                               />
                             </svg>
-                            Accepted at all international airports, seaports, and land borders
+                            Accepted at Vietnam's 42 designated e-visa border gates
                           </li>
                         </ul>
                       </div>
@@ -806,7 +824,7 @@ export default async function VisaCountryPage({
                         </svg>
                       </summary>
                       <div className="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
-                        {getFaqAnswer(query)}
+                        {getFaqAnswer(i)}
                       </div>
                     </details>
                   </AnimateOnScroll>

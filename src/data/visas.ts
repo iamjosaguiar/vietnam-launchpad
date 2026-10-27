@@ -46,6 +46,8 @@ export interface VisaCountry {
   notes: string;
   /** Set when the visa-free rule could not be confirmed from an official source. */
   visaFreeCheck?: boolean;
+  /** Visa-free entry under Resolution 229 applies to tourism only and needs a passport valid for at least 6 months. */
+  tourismOnly?: boolean;
   /** Date the facts on this record were last checked against the official sources (YYYY-MM-DD). */
   verifiedOn: string;
   sources: VisaSource[];
@@ -266,6 +268,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Dutch passport holders enjoy 45-day visa-free entry. The Netherlands is one of Vietnam\'s largest European trading partners. The e-visa is ideal for extended stays or frequent visits for business purposes.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'netherlands vietnam visa',
       'do dutch citizens need visa for vietnam',
@@ -288,6 +291,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Belgian passport holders enjoy 45-day visa-free entry to Vietnam. The e-visa (90 days) is available for longer stays. Belgium has significant investment presence in Vietnam through the EU trade relationship.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'belgium vietnam visa',
       'do belgians need visa for vietnam',
@@ -310,6 +314,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Swiss passport holders enjoy 45-day visa-free entry. Switzerland is not part of the EU but benefits from the same visa-free arrangement. Swiss nationals working in finance, pharma, or hospitality find Vietnam an attractive base in Southeast Asia. Switzerland is an EFTA member; the EFTA-Vietnam FTA was signed in October 2026 and awaits ratification before entry into force.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'switzerland vietnam visa',
       'do swiss citizens need visa for vietnam',
@@ -464,6 +469,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Czech passport holders enjoy 45-day visa-free entry to Vietnam. The Czech Republic has a notable Vietnamese community and longstanding cultural ties. The e-visa (90 days) is popular among Czech expats and entrepreneurs.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'czech republic vietnam visa',
       'do czechs need visa for vietnam',
@@ -486,6 +492,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Hungarian passport holders enjoy 45-day visa-free entry. Hungary has one of Europe\'s largest Vietnamese diaspora communities, reflecting close historical ties. The e-visa is ideal for longer business or lifestyle visits.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'hungary vietnam visa',
       'do hungarians need visa for vietnam',
@@ -508,6 +515,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Polish passport holders enjoy 45-day visa-free entry to Vietnam. Poland has a significant Vietnamese community and a growing number of Polish entrepreneurs establishing businesses in Southeast Asia.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'poland vietnam visa',
       'do poles need visa for vietnam',
@@ -530,6 +538,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Romanian citizens enjoy 45-day visa-free entry to Vietnam. The e-visa (up to 90 days) is recommended for extended stays. Romania and Vietnam share historical diplomatic ties from the socialist era.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'romania vietnam visa',
       'do romanians need visa for vietnam',
@@ -574,6 +583,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
       'Slovak passport holders enjoy 45-day visa-free entry to Vietnam. Like the Czech Republic, Slovakia has a notable Vietnamese community due to historical guest-worker programs. The e-visa is the recommended option for longer stays.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_RES229],
+    tourismOnly: true,
     topQueries: [
       'slovakia vietnam visa',
       'do slovaks need visa for vietnam',
@@ -727,7 +737,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Check with the Indonesian or Vietnamese authorities, rules changed July 2026. Indonesia and Vietnam are close economic partners in the region. The e-visa (up to 90 days) is available for extended stays.',
+      'The Indonesian embassy reported a change to visa-free rules in July 2026. We could not confirm it on a Vietnamese government source, so check with the Indonesian or Vietnamese authorities. Indonesia and Vietnam are close economic partners in the region. The e-visa (up to 90 days) is available for extended stays.',
     visaFreeCheck: true,
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_LIST],
