@@ -771,34 +771,36 @@ The bands rise with the length of the overstay, and the top band is 30,000,000 t
 
 Article 21 of Decree 282/2025/ND-CP also allows expulsion (deportation) as an additional penalty. Authorities can apply it for overstays of 16 days or more, the bands from clause 4 up, depending on how serious the violation is and any mitigating or aggravating circumstances. It is not automatic. For anything beyond a short overstay, speak to Immigration or a qualified advisor about your specific case.
 
-## What Happens at the Airport When You Have Overstayed
+## What Can Happen at the Airport if You Have Overstayed
 
-If you arrive at the departure hall having overstayed and without having resolved the situation in advance, the process at the immigration desk is roughly:
+There is no single published airport procedure for overstays, so what happens depends on the officer, the airport and your case. Government travel advice from the UK and Australia warns that you can be stopped when you try to leave, fined, and in some cases held or prevented from leaving until a fine is dealt with.
 
-1. Officer scans your passport and identifies the overstay
-2. You are directed to a secondary processing area or supervisor
-3. The fine amount is calculated based on the number of days
-4. You pay the fine (typically cash in VND, though some airports have other options - confirm in advance)
-5. Documentation is prepared and you sign an acknowledgement
-6. You are permitted to exit, or in serious cases, detained for further processing
+What you should expect:
 
-The entire process can add hours to your departure. Arriving at the airport with ample time is essential if you know you have overstayed.
+1. Your entry and exit dates are checked when you leave, so an overstay is likely to be picked up.
+2. The fine is a penalty decision from Immigration. Under Decree 282/2025/ND-CP Article 21 the amount falls within a band set by the number of days you overstayed.
+3. Fines are normally paid under the penalty decision, at the State Treasury or into the bank account named in it, and you keep the receipt. Ask Immigration exactly how and where to pay in your case, rather than assuming you can pay at the airport.
+4. You may be stopped from leaving until the penalty is dealt with. In some cases, expulsion can also be applied.
+
+This can add extra time to your departure, so allow plenty of time if you know you have overstayed.
 
 ## What To Do If You Realise You Have Overstayed
 
-The worst thing you can do is ignore it and hope the exit officer does not notice. They will notice.
+Do not ignore it and hope it goes unnoticed. Dates are checked when you leave, and sorting it out before you get to the airport is usually easier.
 
-**If the overstay is short (a few days) and you are leaving soon:**
-- Go to the nearest Immigration Department office and declare the overstay
-- Pay the fine there before your departure, which simplifies the airport exit
-- Keep all receipts and documentation
+**For a short overstay:**
 
-**If the overstay is longer or the situation is complicated:**
-- Contact the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) directly
-- Do not attempt to exit without addressing the situation first
-- Seek assistance from a local immigration consultant or legal advisor - this is exactly the kind of situation where professional help saves time and reduces risk of a worse outcome
+- Go to the Immigration Management Division of the police in the province or city where you are staying and tell them about the overstay
+- Ask how and where to pay the fine under the penalty decision. This is usually the State Treasury or a bank account named in the decision
+- Keep all receipts and paperwork
 
-**Do not attempt to bribe anyone.** Beyond the legal risk, it typically does not work and can escalate the situation significantly.
+**For a longer or more complicated overstay:**
+
+- Contact the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or the provincial immigration office to arrange your exit
+- Do not try to leave the country before the matter is settled
+- Get help from a local immigration consultant or legal advisor. A longer overstay is where professional advice can save you time and reduce your risk
+
+**Do not offer anyone money to get around the process.** It is illegal in Vietnam and can make your situation worse.
 
 ## How To Avoid Overstays
 
