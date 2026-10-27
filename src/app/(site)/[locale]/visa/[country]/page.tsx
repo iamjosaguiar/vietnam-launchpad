@@ -5,6 +5,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import HolaflyCallout from '@/components/HolaflyCallout';
+import CuratedVisaPage from '@/components/CuratedVisaPage';
+import { curatedVisaPages } from '@/data/visaCurated';
 import { Link } from '@/i18n/config';
 import { getAllVisaSlugs, getVisaCountry, SRC_EVISA_FEES } from '@/data/visas';
 import {
@@ -44,6 +46,26 @@ export async function generateMetadata({
   }
 
   const baseUrl = 'https://www.vietnamlaunchpad.com';
+
+  const curated = curatedVisaPages[slug];
+  if (curated) {
+    return {
+      ...(NOINDEX_UNTIL_FIXED.has(slug)
+        ? { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } }
+        : {}),
+      title: curated.metaTitle,
+      description: curated.metaDescription,
+      alternates: buildAlternates(`/visa/${slug}`),
+      openGraph: {
+        title: curated.metaTitle,
+        description: curated.metaDescription,
+        type: 'article',
+        url: `${baseUrl}/visa/${slug}`,
+        images: ogImages,
+      },
+      twitter: twitterDefaults,
+    };
+  }
 
   const descriptionParts: string[] = [];
   if (data.visaFreeCheck) {
@@ -100,6 +122,11 @@ export default async function VisaCountryPage({
 
   if (!maybeData) {
     notFound();
+  }
+
+  const curatedPage = curatedVisaPages[slug];
+  if (curatedPage) {
+    return <CuratedVisaPage page={curatedPage} />;
   }
 
   // After notFound(), TypeScript still sees maybeData as potentially undefined in closures.

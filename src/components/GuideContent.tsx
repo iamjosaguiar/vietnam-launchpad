@@ -64,6 +64,7 @@ interface Guide {
   ctaLinkText: string;
   ctaSecondaryLink?: string;
   ctaSecondaryText?: string;
+  inlineCtas?: boolean;
 }
 
 interface TocItem {
@@ -209,7 +210,9 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
               {guide.title}
             </h1>
 
-            <p className="hero-subtitle text-lg text-white/50 mb-4 font-medium">{guide.subtitle}</p>
+            {guide.subtitle && (
+              <p className="hero-subtitle text-lg text-white/50 mb-4 font-medium">{guide.subtitle}</p>
+            )}
             <p className="text-xl text-white/60 mb-8">{guide.excerpt}</p>
           </div>
         </div>
@@ -298,8 +301,8 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
                       className={proseClasses}
                       components={mdComponents(slugify)}
                     />
-                    {i === cta1At - 1 && <SoftCta />}
-                    {i === cta2At - 1 && (
+                    {guide.inlineCtas !== false && i === cta1At - 1 && <SoftCta />}
+                    {guide.inlineCtas !== false && i === cta2At - 1 && (
                       <ServiceCta
                         title={guide.ctaTitle}
                         body={guide.ctaBody}

@@ -1,4 +1,5 @@
 import { bestEsimVietnamGuide } from '@/data/bestEsimGuide';
+import { howLongGuide, livingInVietnamGuide } from '@/data/guidesSeo';
 
 export interface Guide {
   slug: string;
@@ -18,6 +19,14 @@ export interface Guide {
   ctaSecondaryText?: string;
   content: string;
   faqs?: { q: string; a: string }[];
+  /** Exact page title for search results. Defaults to the title plus the site name. */
+  metaTitle?: string;
+  /** Exact meta description. Defaults to the excerpt. */
+  metaDescription?: string;
+  /** Last breadcrumb label. Defaults to the title. */
+  breadcrumbName?: string;
+  /** Set to false to hide the inline call to action blocks inside the article. */
+  inlineCtas?: boolean;
 }
 
 const guidesData: Record<string, Guide> = {
@@ -6493,6 +6502,9 @@ Viet Nam participates in **ASEAN**, **RCEP**, **CPTPP**, **EVFTA**, and bilatera
   },
 
   'best-esim-vietnam': bestEsimVietnamGuide,
+
+  'how-long-can-you-stay-in-vietnam': howLongGuide,
+  'living-in-vietnam': livingInVietnamGuide,
 };
 
 export function getGuideBySlug(slug: string): Guide | null {

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 
 import { buildAlternates } from '@/lib/seo';
+import { aboutCopy } from '@/data/aboutCopy';
 
 export const metadata: Metadata = {
-  title: 'About - Vietnam Launchpad',
-  description: "Vietnam specialists, not generalists. Six years building the firm serious investors trust to enter Vietnam. Meet our team and methodology.",
+  title: aboutCopy.title,
+  description: aboutCopy.description,
   alternates: buildAlternates('/about'),
 };
 

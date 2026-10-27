@@ -5,139 +5,16 @@ import { usePathname } from '@/i18n/config';
 import { Link } from '@/i18n/config';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import {
+  navVisas,
+  navLivingGroups,
+  navLivingLast,
+  navServiceGroups,
+  navServicesLast,
+  navButton,
+} from '@/data/siteNav';
 
 // ─── Mega menu data ───────────────────────────────────────────────────────────
-
-const serviceGroups = [
-  {
-    title: 'Residency & Visas',
-    items: [
-      { name: 'TRC Application', desc: 'Temporary Residence Card', href: '/services/trc-application' },
-      { name: 'Work Permit', desc: 'Legal authorization to work', href: '/services/work-permit' },
-      { name: 'eVisa & Entry Visa', desc: '90-day fast-track entry', href: '/services/evisa' },
-      { name: 'Business Visa', desc: 'Multi-entry business visa', href: '/services/business-visa' },
-      { name: 'Marriage Registration', desc: 'Register & TRC for your spouse', href: '/services/marriage-registration' },
-      { name: 'Permanent Residency', desc: 'Long-term PR application', href: '/services/permanent-residency' },
-    ],
-  },
-  {
-    title: 'Business & Compliance',
-    items: [
-      { name: 'Company Registration', desc: 'Set up a foreign-owned LLC', href: '/services/company-setup' },
-      { name: 'Employer of Record (EOR)', desc: 'Hire in Vietnam without an entity', href: '/services/employer-of-record' },
-      { name: 'Accounting & Bookkeeping', desc: 'Monthly accounts & tax filings', href: '/services/accounting-bookkeeping' },
-      { name: 'Tax Filing (PIT)', desc: 'Personal income tax returns', href: '/services/tax-filing' },
-      { name: 'Social Insurance', desc: 'Employee SI enrollment', href: '/services/social-insurance' },
-      { name: 'Apostille & Authentication', desc: 'Document legalization', href: '/services/apostille-services' },
-    ],
-  },
-  {
-    title: 'Property & Lifestyle',
-    items: [
-      { name: 'Property Registration', desc: 'Foreign-owned property title', href: '/services/property-registration' },
-      { name: "Driver's License", desc: 'Convert your foreign license', href: '/services/drivers-license' },
-      { name: 'Relocation & Settling In', desc: 'Housing, bank, SIM & more', href: '/services/relocation-assistance' },
-      { name: 'Expert Consultation', desc: 'One-on-one advisor session', href: '/services/consultation' },
-    ],
-  },
-];
-
-const guideCategories = [
-  {
-    category: 'Finance & Money',
-    href: '/guides',
-    color: 'text-emerald-600',
-    guides: [
-      { title: 'Cost of Living', href: '/guides/cost-of-living' },
-      { title: 'Currency Converter', href: '/convert' },
-      { title: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
-      { title: 'Vietnam Statistics & Data', href: '/vietnam-statistics' },
-      { title: 'Salary Guide by Role', href: '/salary' },
-      { title: 'Salary Calculator (PIT)', href: '/tools/salary-calculator' },
-      { title: 'Tax Treaties by Country', href: '/tax-treaty' },
-      { title: 'Compliance Calendar', href: '/vietnam-compliance-calendar' },
-    ],
-  },
-  {
-    category: 'Visas & Residency',
-    href: '/guides',
-    color: 'text-blue-600',
-    guides: [
-      { title: 'Visa by Nationality', href: '/visa' },
-      { title: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
-      { title: 'Golden Visa (Long-Stay)', href: '/guides/golden-visa-vietnam' },
-      { title: 'Digital Nomad Visas', href: '/guides/digital-nomads' },
-      { title: 'Retirement Visa', href: '/guides/retirement' },
-    ],
-  },
-  {
-    category: 'Work & Business',
-    href: '/guides',
-    color: 'text-indigo-600',
-    guides: [
-      { title: 'Company Setup', href: '/guides/company-setup-vietnam' },
-      { title: 'Company Setup Checklist', href: '/guides/company-setup-checklist' },
-      { title: 'Work Permit Checker', href: '/tools/work-permit-checker' },
-      { title: 'Teaching English', href: '/guides/teaching-english-vietnam' },
-      { title: 'Working in Vietnam', href: '/guides/working-in-vietnam' },
-    ],
-  },
-  {
-    category: 'Daily Life',
-    href: '/guides',
-    color: 'text-purple-600',
-    guides: [
-      { title: 'Driving & Car Rental', href: '/guides/driving-vietnam' },
-      { title: 'Marriage Registration', href: '/guides/marriage-registration' },
-      { title: 'Divorce in Vietnam', href: '/guides/divorce-vietnam' },
-      { title: 'VNeID for Foreigners', href: '/guides/vneid-vietnam-digital-id-foreigners' },
-      { title: 'First Week in Vietnam', href: '/guides/first-week' },
-      { title: 'Best eSIM for Vietnam', href: '/guides/best-esim-vietnam' },
-    ],
-  },
-  {
-    category: 'Housing & Real Estate',
-    href: '/guides',
-    color: 'text-amber-600',
-    guides: [
-      { title: 'Renting in Vietnam', href: '/guides/renting' },
-      { title: 'Buying Property', href: '/guides/buying-property' },
-    ],
-  },
-  {
-    category: 'Health & Wellbeing',
-    href: '/guides',
-    color: 'text-rose-600',
-    guides: [
-      { title: 'Healthcare & Insurance', href: '/guides/healthcare' },
-    ],
-  },
-  {
-    category: 'Family & Education',
-    href: '/guides',
-    color: 'text-pink-600',
-    guides: [
-      { title: 'International Schools', href: '/guides/international-schools' },
-      { title: 'Moving with Family', href: '/guides/moving-with-family' },
-    ],
-  },
-  {
-    category: 'City Guides',
-    href: '/guides',
-    color: 'text-teal-600',
-    guides: [
-      { title: 'Ho Chi Minh City', href: '/guides/ho-chi-minh-city' },
-      { title: 'Hanoi', href: '/guides/hanoi' },
-      { title: 'Da Nang', href: '/guides/da-nang' },
-      { title: 'Hoi An', href: '/guides/hoi-an' },
-      { title: 'Nha Trang', href: '/guides/nha-trang' },
-      { title: 'Phu Quoc', href: '/guides/phu-quoc' },
-      { title: 'Da Lat', href: '/guides/da-lat' },
-      { title: 'Vung Tau', href: '/guides/vung-tau' },
-      { title: 'Hue', href: '/guides/hue' },
-    ],
-  },
-];
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -194,9 +71,9 @@ export default function Navigation() {
           onMouseLeave={closeMega}
         >
           <div className="container mx-auto px-4 md:px-8">
-            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden max-w-[780px]">
-              <div className="grid grid-cols-3 gap-0 p-6">
-                {serviceGroups.map((group) => (
+            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden max-w-[960px]">
+              <div className="grid grid-cols-4 gap-0 p-6">
+                {navServiceGroups.map((group) => (
                   <div key={group.title}>
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 px-2">
                       {group.title}
@@ -211,9 +88,6 @@ export default function Navigation() {
                             <span className="text-sm font-semibold text-gray-800 group-hover:text-primary-700 transition-colors">
                               {item.name}
                             </span>
-                            <span className="text-xs text-gray-400 group-hover:text-primary-500 transition-colors leading-tight">
-                              {item.desc}
-                            </span>
                           </Link>
                         </li>
                       ))}
@@ -222,12 +96,11 @@ export default function Navigation() {
                 ))}
               </div>
               <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
-                <span className="text-xs text-gray-400">15 services available</span>
                 <Link
-                  href="/services"
-                  className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                  href={navServicesLast.href}
+                  className="ml-auto text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
                 >
-                  View all services
+                  {navServicesLast.name}
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -238,32 +111,57 @@ export default function Navigation() {
         </div>
       )}
 
-      {/* Guides mega panel - full container width, anchored to nav */}
-      {openMenu === 'guides' && (
+      {/* Visas panel */}
+      {openMenu === 'visas' && (
         <div
           className="absolute top-full left-0 right-0 pt-3 z-50"
-          onMouseEnter={() => openMega('guides')}
+          onMouseEnter={() => openMega('visas')}
+          onMouseLeave={closeMega}
+        >
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden max-w-[360px]">
+              <ul className="space-y-0.5 p-4">
+                {navVisas.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="block px-2 py-2 rounded-xl text-sm font-semibold text-gray-800 hover:text-primary-700 hover:bg-primary-50 transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Living in Vietnam mega panel - full container width, anchored to nav */}
+      {openMenu === 'living' && (
+        <div
+          className="absolute top-full left-0 right-0 pt-3 z-50"
+          onMouseEnter={() => openMega('living')}
           onMouseLeave={closeMega}
         >
           <div className="container mx-auto px-4 md:px-8">
             <div className="bg-white rounded-2xl shadow-2xl shadow-black/10 border border-gray-100 overflow-hidden w-full">
               <div className="grid grid-cols-4 gap-0 p-6">
-                {guideCategories.map((cat) => (
-                  <div key={cat.category} className="min-w-0">
-                    <Link
-                      href={cat.href}
-                      className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 block hover:underline truncate ${cat.color}`}
+                {navLivingGroups.map((cat) => (
+                  <div key={cat.title} className="min-w-0">
+                    <p
+                      className={`text-xs font-bold uppercase tracking-wider mb-2 px-2 block truncate ${cat.color}`}
                     >
-                      {cat.category}
-                    </Link>
+                      {cat.title}
+                    </p>
                     <ul className="space-y-0.5">
-                      {cat.guides.map((guide) => (
+                      {cat.items.map((guide) => (
                         <li key={guide.href}>
                           <Link
                             href={guide.href}
                             className="block px-2 py-1 text-xs text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors leading-tight"
                           >
-                            {guide.title}
+                            {guide.name}
                           </Link>
                         </li>
                       ))}
@@ -272,12 +170,11 @@ export default function Navigation() {
                 ))}
               </div>
               <div className="border-t border-gray-100 px-6 py-3 bg-gray-50 flex items-center justify-between">
-                <span className="text-xs text-gray-400">Guides, tools &amp; data across all topics</span>
                 <Link
-                  href="/guides"
-                  className="text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                  href={navLivingLast.href}
+                  className="ml-auto text-xs font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
                 >
-                  Browse all guides
+                  {navLivingLast.name}
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -308,18 +205,55 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
 
-            {/* Home */}
-            <Link
-              href="/"
-              className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                isActive('/') ? linkActive : linkBase
-              }`}
+            {/* Visas - mega menu trigger */}
+            <div
+              className="relative"
+              onMouseEnter={() => openMega('visas')}
+              onMouseLeave={closeMega}
             >
-              {t('home')}
-              {isActive('/') && (
-                <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
-              )}
-            </Link>
+              <Link
+                href="/visa"
+                className={`relative flex items-center gap-1 px-4 py-2 text-sm font-medium transition-all duration-300 ${
+                  isActive('/visa') ? linkActive : linkBase
+                }`}
+              >
+                Visas
+                <svg
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${openMenu === 'visas' ? 'rotate-180' : ''}`}
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+                {isActive('/visa') && (
+                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
+                )}
+              </Link>
+            </div>
+
+            {/* Living in Vietnam - mega menu trigger */}
+            <div
+              className="relative"
+              onMouseEnter={() => openMega('living')}
+              onMouseLeave={closeMega}
+            >
+              <Link
+                href="/guides/living-in-vietnam"
+                className={`relative flex items-center gap-1 px-4 py-2 text-sm font-medium transition-all duration-300 ${
+                  isActive('/guides') ? linkActive : linkBase
+                }`}
+              >
+                Living in Vietnam
+                <svg
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${openMenu === 'living' ? 'rotate-180' : ''}`}
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+                {isActive('/guides') && (
+                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
+                )}
+              </Link>
+            </div>
 
             {/* Services - mega menu trigger */}
             <div
@@ -348,33 +282,6 @@ export default function Navigation() {
               {/* Services mega panel rendered at nav level above - see top of return */}
             </div>
 
-            {/* Guides - mega menu trigger */}
-            <div
-              className="relative"
-              onMouseEnter={() => openMega('guides')}
-              onMouseLeave={closeMega}
-            >
-              <Link
-                href="/guides"
-                className={`relative flex items-center gap-1 px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                  isActive('/guides') ? linkActive : linkBase
-                }`}
-              >
-                {t('guides')}
-                <svg
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${openMenu === 'guides' ? 'rotate-180' : ''}`}
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                </svg>
-                {isActive('/guides') && (
-                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
-                )}
-              </Link>
-
-              {/* Guides mega panel rendered at nav level above - see top of return */}
-            </div>
-
             {/* Blog */}
             <Link
               href="/blog"
@@ -384,19 +291,6 @@ export default function Navigation() {
             >
               {t('blog')}
               {isActive('/blog') && (
-                <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
-              )}
-            </Link>
-
-            {/* Enterprise */}
-            <Link
-              href="/enterprise"
-              className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                isActive('/enterprise') ? linkActive : linkBase
-              }`}
-            >
-              Enterprise
-              {isActive('/enterprise') && (
                 <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full ${isScrolled ? 'bg-primary-600' : 'bg-white'}`} />
               )}
             </Link>
@@ -418,7 +312,7 @@ export default function Navigation() {
               href="/contact"
               className={`btn-primary ml-4 text-white px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap`}
             >
-              Private Consultation
+              {navButton.text}
             </Link>
           </div>
 
@@ -442,22 +336,89 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-500 ease-out ${
-            isMenuOpen ? 'max-h-[600px] opacity-100 mt-4' : 'max-h-0 opacity-0'
+          className={`md:hidden transition-all duration-500 ease-out ${
+            isMenuOpen ? 'max-h-[85vh] overflow-y-auto opacity-100 mt-4' : 'max-h-0 overflow-hidden opacity-0'
           }`}
         >
           <div className="glass rounded-2xl p-4 space-y-1 shadow-lg">
 
-            {/* Home */}
-            <Link
-              href="/"
-              onClick={() => setIsMenuOpen(false)}
-              className={`block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${
-                isActive('/') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
-              }`}
-            >
-              {t('home')}
-            </Link>
+            {/* Visas accordion */}
+            <div>
+              <button
+                onClick={() => setMobileExpanded(mobileExpanded === 'visas' ? null : 'visas')}
+                className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${
+                  isActive('/visa') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
+                }`}
+              >
+                Visas
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === 'visas' ? 'rotate-180' : ''}`}
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className={`transition-all duration-300 ${mobileExpanded === 'visas' ? 'max-h-[60vh] overflow-y-auto' : 'max-h-0 overflow-hidden'}`}>
+                <div className="pl-4 pt-1 pb-2 space-y-0.5">
+                  {navVisas.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block px-4 py-2 rounded-lg text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Living in Vietnam accordion */}
+            <div>
+              <button
+                onClick={() => setMobileExpanded(mobileExpanded === 'living' ? null : 'living')}
+                className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${
+                  isActive('/guides') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
+                }`}
+              >
+                Living in Vietnam
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === 'living' ? 'rotate-180' : ''}`}
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className={`transition-all duration-300 ${mobileExpanded === 'living' ? 'max-h-[60vh] overflow-y-auto' : 'max-h-0 overflow-hidden'}`}>
+                <div className="pl-4 pt-1 pb-2 space-y-0.5">
+                  {navLivingGroups.map((group) => (
+                    <div key={group.title}>
+                      <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider text-gray-400">
+                        {group.title}
+                      </p>
+                      {group.items.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          onClick={() => setIsMenuOpen(false)}
+                          className="block px-4 py-1.5 rounded-lg text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                  <Link
+                    href={navLivingLast.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block px-4 py-2 rounded-lg text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors"
+                  >
+                    {navLivingLast.name}
+                  </Link>
+                </div>
+              </div>
+            </div>
 
             {/* Services accordion */}
             <div>
@@ -467,7 +428,7 @@ export default function Navigation() {
                   isActive('/services') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
                 }`}
               >
-                {t('services')}
+                Services
                 <svg
                   className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === 'services' ? 'rotate-180' : ''}`}
                   fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -475,72 +436,31 @@ export default function Navigation() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className={`overflow-hidden transition-all duration-300 ${mobileExpanded === 'services' ? 'max-h-96' : 'max-h-0'}`}>
+              <div className={`transition-all duration-300 ${mobileExpanded === 'services' ? 'max-h-[60vh] overflow-y-auto' : 'max-h-0 overflow-hidden'}`}>
                 <div className="pl-4 pt-1 pb-2 space-y-0.5">
-                  {serviceGroups.map((group) =>
-                    group.items.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        onClick={() => setIsMenuOpen(false)}
-                        className="block px-4 py-2 rounded-lg text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
-                      >
-                        {item.name}
-                      </Link>
-                    ))
-                  )}
-                  <Link
-                    href="/services"
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block px-4 py-2 rounded-lg text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors"
-                  >
-                    View all services
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Guides accordion */}
-            <div>
-              <button
-                onClick={() => setMobileExpanded(mobileExpanded === 'guides' ? null : 'guides')}
-                className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${
-                  isActive('/guides') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
-                }`}
-              >
-                {t('guides')}
-                <svg
-                  className={`w-4 h-4 transition-transform duration-200 ${mobileExpanded === 'guides' ? 'rotate-180' : ''}`}
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className={`overflow-hidden transition-all duration-300 ${mobileExpanded === 'guides' ? 'max-h-96 overflow-y-auto' : 'max-h-0'}`}>
-                <div className="pl-4 pt-1 pb-2 space-y-0.5">
-                  {guideCategories.map((cat) => (
-                    <div key={cat.category}>
-                      <p className={`px-4 py-1 text-xs font-bold uppercase tracking-wider ${cat.color}`}>
-                        {cat.category}
+                  {navServiceGroups.map((group) => (
+                    <div key={group.title}>
+                      <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider text-gray-400">
+                        {group.title}
                       </p>
-                      {cat.guides.map((guide) => (
+                      {group.items.map((item) => (
                         <Link
-                          key={guide.href}
-                          href={guide.href}
+                          key={item.href}
+                          href={item.href}
                           onClick={() => setIsMenuOpen(false)}
                           className="block px-4 py-1.5 rounded-lg text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
                         >
-                          {guide.title}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
                   ))}
                   <Link
-                    href="/guides"
+                    href={navServicesLast.href}
                     onClick={() => setIsMenuOpen(false)}
                     className="block px-4 py-2 rounded-lg text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors"
                   >
-                    Browse all guides
+                    {navServicesLast.name}
                   </Link>
                 </div>
               </div>
@@ -554,7 +474,7 @@ export default function Navigation() {
                 isActive('/blog') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
               }`}
             >
-              {t('blog')}
+              Blog
             </Link>
 
             {/* Contact */}
@@ -565,27 +485,16 @@ export default function Navigation() {
                 isActive('/contact') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
               }`}
             >
-              {t('contact')}
-            </Link>
-
-            {/* Enterprise */}
-            <Link
-              href="/enterprise"
-              onClick={() => setIsMenuOpen(false)}
-              className={`block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 ${
-                isActive('/enterprise') ? 'text-primary-600 bg-primary-50' : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
-              }`}
-            >
-              Enterprise
+              Contact
             </Link>
 
             <div className="pt-2">
               <Link
-                href="/contact"
+                href={navButton.href}
                 className="block btn-primary text-white px-4 py-3 rounded-xl text-base font-semibold text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Private Consultation
+                {navButton.text}
               </Link>
             </div>
           </div>

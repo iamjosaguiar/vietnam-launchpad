@@ -733,7 +733,7 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
   'vietnam-visa-overstay-fines': {
     slug: 'vietnam-visa-overstay-fines',
     title: 'Vietnam Visa Overstay: Fines, Consequences, and What To Do',
-    excerpt: 'Overstaying your Vietnam visa - even by one day - can result in fines, entry bans, and deportation. Here is exactly what happens, how much it costs, and how to avoid it.',
+    excerpt: 'Overstaying your Vietnam visa - even by one day - can result in fines and other consequences. Here is exactly what happens, how much it costs, and how to avoid it.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
     readTime: '6 min read',
@@ -743,23 +743,27 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
 
 Visa overstays happen more often than people expect. A missed flight, a hospital stay, a bureaucratic delay in a paperwork chain - suddenly you are past your permitted date. Vietnam does not treat this lightly, but the consequences are tiered and proportionate to the length of the overstay. Understanding what to expect - and acting quickly - makes a significant difference.
 
-> **Disclaimer:** Fine amounts and procedures are set by Vietnamese government decree and are subject to change. The figures in this article reflect Decree 282/2025/ND-CP (effective 15 December 2025), which replaced the earlier Decree 144/2021. Penalties increased significantly under the new decree. Always verify current amounts with the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or a qualified immigration advisor before making decisions.
+> **Disclaimer:** Fine amounts and procedures are set by Vietnamese government decree and are subject to change. The figures in this article reflect Decree 282/2025/ND-CP (effective 15 December 2025), which replaced the earlier Decree 144/2021. Always verify current amounts with the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or a qualified immigration advisor before making decisions.
 
 ## The Fine Structure
 
-Vietnam\'s overstay fines are tiered by duration. All fines are applied at the point of exit. Current ranges under Decree 282/2025/ND-CP (effective 15 December 2025) are:
+Vietnam\'s overstay fines are tiered by duration. All fines are applied at the point of exit. The ranges under Article 21 of Decree 282/2025/ND-CP (effective 15 December 2025) are:
 
-| Overstay Duration | Approximate Fine (VND) | Notes |
-|---|---|---|
-| Under 16 days | 500,000 - 2,000,000 | Administrative fine only in most cases |
-| 16 to 29 days | 5,000,000 - 10,000,000 | Fine plus possible entry restriction |
-| 30 to 59 days | 10,000,000 - 20,000,000 | Fine plus probable entry ban; deportation risk |
-| 60 to 89 days | 20,000,000 - 30,000,000 | Fine, likely multi-year entry ban, deportation likely |
-| 90 days or more | 30,000,000 - 40,000,000 | Maximum fine, deportation, potential permanent ban |
+| Overstay Duration | Fine (VND) |
+|---|---|
+| Under 16 days | 500,000 - 2,000,000 |
+| 16 days to under 30 days | 5,000,000 - 10,000,000 |
+| 30 days to under 60 days | 10,000,000 - 15,000,000 |
+| 60 days to under 90 days | 15,000,000 - 20,000,000 |
+| 90 days to under 180 days | 20,000,000 - 25,000,000 |
+| 180 days to under 1 year | 25,000,000 - 30,000,000 |
+| 1 year or more | 30,000,000 - 40,000,000 |
 
-Each tier up adds risk beyond the monetary fine. A short overstay is typically resolved with a payment at exit. An overstay of several months is a fundamentally different situation. Note that penalties approximately doubled under Decree 282/2025 compared to the previous rules - this is no longer a low-consequence administrative matter.
+Source: [Decree 282/2025/ND-CP, Article 21 (official gazette PDF)](https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/10/46543/59667-1-20251583-1584282-2025-nd-cp.pdf).
 
-Note that USD conversion varies, but the upper end of the fine table now reaches 40,000,000 VND (roughly $1,500+ USD) - plus any administrative processing costs at exit.
+Each tier up adds risk beyond the monetary fine. A short overstay is typically resolved with a payment at exit. An overstay of several months is a fundamentally different situation.
+
+The upper end of the fine table reaches 40,000,000 VND (roughly $1,500+ USD), plus any administrative processing costs at exit.
 
 ## Beyond the Fine
 
@@ -767,7 +771,7 @@ The cash fine is often the least of the concerns for longer overstays:
 
 **Passport held at immigration.** When you present your passport at the exit desk, an officer will review your entry and exit dates. If you have overstayed, your passport may be held while the situation is assessed and payment is arranged. This can take time and is stressful at an airport departure gate.
 
-**Entry ban.** For overstays beyond a few weeks, Vietnamese immigration has authority to impose an entry ban ranging from one year to three years. Severe or repeated overstays can result in a permanent ban. The ban is recorded and will be visible when you attempt to re-enter Vietnam.
+**Entry ban.** Vietnamese immigration has authority to restrict re-entry in some cases. Any restriction is recorded and will be visible when you attempt to re-enter Vietnam. Ask immigration or a qualified advisor about your specific case.
 
 **Deportation.** For very long overstays (typically several months or more), or for overstays combined with other violations, Vietnam can deport the individual. Deportation costs are typically charged to the individual and the record follows you.
 
@@ -814,11 +818,11 @@ Prevention is straightforward:
 
 **Consider long-term residency.** If you are spending significant time in Vietnam, a Temporary Residence Card (TRC) eliminates the visa expiry problem entirely. TRC holders do not manage recurring visa renewals. Our TRC service handles the full application process.
 
-## COVID and Force Majeure Situations
+## Genuine Emergencies
 
-Vietnam has historically applied discretion in genuine emergency cases. During the COVID period, immigration authorities extended leniency to foreigners who were unable to exit due to flight cancellations, border closures, or medical emergencies.
+Vietnam has historically applied discretion in genuine emergency cases.
 
-Outside of formal emergency declarations, individual circumstances (serious illness requiring hospitalisation, documented natural disaster disruption, etc.) can be presented to immigration as mitigating factors. This does not guarantee waiver of fines, but officers do have discretion. If you find yourself in a genuine emergency that has caused or will cause an overstay, document everything - hospital records, airline correspondence, police reports - and contact immigration proactively rather than waiting.
+Individual circumstances (serious illness requiring hospitalisation, documented natural disaster disruption, etc.) can be presented to immigration as mitigating factors. This does not guarantee waiver of fines, but officers do have discretion. If you find yourself in a genuine emergency that has caused or will cause an overstay, document everything - hospital records, airline correspondence, police reports - and contact immigration proactively rather than waiting.
 
 ## The Long-Term Solution: TRC
 

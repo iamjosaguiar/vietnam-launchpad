@@ -133,6 +133,18 @@ const categories = [
         ),
       },
       {
+        slug: 'employer-of-record',
+        title: 'Employer of Record',
+        description: 'Hire staff in Vietnam without setting up a company, with us as the legal employer.',
+        features: ['No local company needed', 'Payroll and social insurance handled', 'Labor contracts and tax compliance', 'You manage the work'],
+        duration: '5-10 business days',
+        icon: (
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+          </svg>
+        ),
+      },
+      {
         slug: 'accounting-bookkeeping',
         title: 'Accounting & Bookkeeping',
         description: 'Monthly bookkeeping, VAT returns, CIT declarations, and annual financial statements for foreign-owned companies.',
@@ -290,7 +302,7 @@ export default function ServicesPage() {
             <svg className="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm text-white/70">15 services - transparent pricing</span>
+            <span className="text-sm text-white/70">16 services - transparent pricing</span>
           </div>
           <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl font-display font-bold mb-6 leading-tight">
             Our
@@ -393,8 +405,12 @@ export default function ServicesPage() {
                     {/* Card footer */}
                     <div className="px-6 py-4 border-t border-gray-50 flex items-center justify-between gap-4">
                       <div className="flex items-center gap-3 text-sm text-gray-400 min-w-0">
-                        <span className="font-semibold text-gray-900 text-base">{pricing[service.slug]}</span>
-                        <span className="text-gray-300">·</span>
+                        {pricing[service.slug] && (
+                          <>
+                            <span className="font-semibold text-gray-900 text-base">{pricing[service.slug]}</span>
+                            <span className="text-gray-300">·</span>
+                          </>
+                        )}
                         <span className="truncate">{service.duration}</span>
                       </div>
                       <Link
@@ -414,6 +430,20 @@ export default function ServicesPage() {
           </div>
         </section>
       ))}
+
+      {/* For business */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">For business</h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            Setting up or running a company in Vietnam? See{' '}
+            <Link href="/services/company-setup" className="text-primary-600 font-semibold hover:underline">company registration</Link>,{' '}
+            <Link href="/services/employer-of-record" className="text-primary-600 font-semibold hover:underline">employer of record</Link>,{' '}
+            <Link href="/services/accounting-bookkeeping" className="text-primary-600 font-semibold hover:underline">accounting</Link> and our{' '}
+            <Link href="/enterprise" className="text-primary-600 font-semibold hover:underline">enterprise services</Link>.
+          </p>
+        </div>
+      </section>
 
       {/* Labour law depth banner */}
       <section className="py-16 bg-slate-950 text-white">
