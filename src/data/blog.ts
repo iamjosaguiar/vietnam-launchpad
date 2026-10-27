@@ -4,6 +4,7 @@ export interface BlogPost {
   excerpt: string;
   author: string;
   date: string;
+  lastUpdated?: string;
   readTime: string;
   category: string;
   image?: string;
@@ -736,6 +737,7 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
     excerpt: 'Overstaying your Vietnam visa - even by one day - can result in fines and other consequences. Here is exactly what happens, how much it costs, and how to avoid it.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
+    lastUpdated: '2026-10-27',
     readTime: '6 min read',
     category: 'Visas & Immigration',
     content: `
@@ -747,7 +749,7 @@ Visa overstays happen more often than people expect. A missed flight, a hospital
 
 ## The Fine Structure
 
-Vietnam\'s overstay fines are tiered by duration. All fines are applied at the point of exit. The ranges under Article 21 of Decree 282/2025/ND-CP (effective 15 December 2025) are:
+Vietnam\'s overstay fines are tiered by duration. The ranges under Article 21 of Decree 282/2025/ND-CP (effective 15 December 2025) are:
 
 | Overstay Duration | Fine (VND) |
 |---|---|
@@ -761,21 +763,13 @@ Vietnam\'s overstay fines are tiered by duration. All fines are applied at the p
 
 Source: [Decree 282/2025/ND-CP, Article 21 (official gazette PDF)](https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/10/46543/59667-1-20251583-1584282-2025-nd-cp.pdf).
 
-Each tier up adds risk beyond the monetary fine. A short overstay is typically resolved with a payment at exit. An overstay of several months is a fundamentally different situation.
+Last verified: 27 October 2026.
 
-The upper end of the fine table reaches 40,000,000 VND (roughly $1,500+ USD), plus any administrative processing costs at exit.
+The bands rise with the length of the overstay, and the top band is 30,000,000 to 40,000,000 VND.
 
 ## Beyond the Fine
 
-The cash fine is often the least of the concerns for longer overstays:
-
-**Passport held at immigration.** When you present your passport at the exit desk, an officer will review your entry and exit dates. If you have overstayed, your passport may be held while the situation is assessed and payment is arranged. This can take time and is stressful at an airport departure gate.
-
-**Entry ban.** Vietnamese immigration has authority to restrict re-entry in some cases. Any restriction is recorded and will be visible when you attempt to re-enter Vietnam. Ask immigration or a qualified advisor about your specific case.
-
-**Deportation.** For very long overstays (typically several months or more), or for overstays combined with other violations, Vietnam can deport the individual. Deportation costs are typically charged to the individual and the record follows you.
-
-**Watchlist entry.** Your details may be flagged in the immigration database, causing additional scrutiny on future entries even after a ban period has expired.
+Article 21 of Decree 282/2025/ND-CP also allows expulsion (deportation) as an additional penalty. Authorities can apply it for overstays of 16 days or more, the bands from clause 4 up, depending on how serious the violation is and any mitigating or aggravating circumstances. It is not automatic. For anything beyond a short overstay, speak to Immigration or a qualified advisor about your specific case.
 
 ## What Happens at the Airport When You Have Overstayed
 
@@ -814,7 +808,7 @@ Prevention is straightforward:
 
 **Know your visa type.** Tourist e-visas, business visas, and exempt-entry visas all have different validity periods and conditions. A 90-day e-visa does not automatically renew. Many overstays happen because someone assumed they had more time than they did.
 
-**Renew or extend before expiry.** Vietnam allows visa extensions in some cases. If you know you need more time, apply for an extension before your current visa expires - not after.
+**Ask about extending before expiry.** Extensions are limited and depend on your visa type and sponsor. If you know you need more time, ask before your current visa expires - not after.
 
 **Consider long-term residency.** If you are spending significant time in Vietnam, a Temporary Residence Card (TRC) eliminates the visa expiry problem entirely. TRC holders do not manage recurring visa renewals. Our TRC service handles the full application process.
 

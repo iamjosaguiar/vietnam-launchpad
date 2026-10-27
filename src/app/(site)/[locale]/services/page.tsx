@@ -78,7 +78,7 @@ const categories = [
         slug: 'business-visa',
         title: 'Business Visa',
         description: '3-month business visa for meetings, property viewings, and exploring opportunities before committing.',
-        features: ['3-month validity', 'Single or multiple entry', 'Fast processing', 'Extendable in-country'],
+        features: ['3-month validity', 'Single or multiple entry', 'Fast processing', 'Can be considered for extension'],
         duration: '3-5 days',
         icon: (
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>

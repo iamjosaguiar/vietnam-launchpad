@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
-    title: guide.metaTitle ?? `${guide.title} | Vietnam Launchpad`,
+    title: guide.metaTitle ? { absolute: guide.metaTitle } : `${guide.title} | Vietnam Launchpad`,
     description: guide.metaDescription ?? guide.excerpt,
     keywords: [guide.category, 'Vietnam', 'expat', 'guide', 'living in Vietnam'],
     alternates: buildAlternates(`/guides/${slug}`),

@@ -53,7 +53,7 @@ export async function generateMetadata({
       ...(NOINDEX_UNTIL_FIXED.has(slug)
         ? { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } }
         : {}),
-      title: curated.metaTitle,
+      title: { absolute: curated.metaTitle },
       description: curated.metaDescription,
       alternates: buildAlternates(`/visa/${slug}`),
       openGraph: {
