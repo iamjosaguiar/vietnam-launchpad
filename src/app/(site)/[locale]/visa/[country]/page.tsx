@@ -586,7 +586,7 @@ export default async function VisaCountryPage({
                                 d="M5 13l4 4L19 7"
                               />
                             </svg>
-                            Accepted at Vietnam's 42 designated e-visa border gates
+                            Accepted at Vietnam's designated e-visa border gates
                           </li>
                         </ul>
                       </div>

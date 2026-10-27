@@ -65,7 +65,7 @@ const categories = [
         slug: 'evisa',
         title: 'eVisa & Entry Visa',
         description: '90-day eVisa for first arrivals, property viewings, and business exploration. Fast approval.',
-        features: ['Valid up to 90 days, single or multiple entry', '3 working days processing', 'Accepted at the border gates listed on the official portal', 'All nationalities eligible'],
+        features: ['Valid up to 90 days, single or multiple entry', '3 working days processing', 'Accepted at the designated e-visa border gates listed on the official portal', 'All nationalities eligible'],
         duration: '3 working days',
         badge: 'Quick',
         icon: (

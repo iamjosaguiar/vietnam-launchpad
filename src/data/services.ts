@@ -652,7 +652,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     benefits: [
       'Valid up to 90 days, single or multiple entry',
-      'Accepted at the international border gates listed on the official portal',
+      'Accepted at the designated e-visa border gates listed on the official portal',
       'No need to visit an embassy or consulate',
       'Apply from anywhere in the world',
       'Can be extended or converted to TRC/work permit after arrival',
@@ -677,7 +677,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'What\'s the difference between an eVisa and a Visa on Arrival?',
-        answer: 'An eVisa is a standalone visa - you arrive with it already approved. A Visa on Arrival requires a pre-approved letter that you exchange for a visa stamp at the airport. The eVisa is accepted at the international border gates listed on the official portal, (42 designated gates in total); Visa on Arrival is only available at international airports.'
+        answer: 'An eVisa is a standalone visa - you arrive with it already approved. A Visa on Arrival requires a pre-approved letter that you exchange for a visa stamp at the airport. The eVisa is accepted at the designated e-visa border gates listed on the official portal; Visa on Arrival is only available at international airports.'
       },
       {
         question: 'Can I work on an eVisa?',
