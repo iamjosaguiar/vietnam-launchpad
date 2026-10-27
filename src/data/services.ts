@@ -611,10 +611,10 @@ export const servicesData: Record<string, ServiceData> = {
   'evisa': {
     slug: 'evisa',
     title: 'Vietnam eVisa & Entry Visa',
-    shortDescription: 'Fast eVisa for first arrivals, property viewings, and business exploration. 90-day single or multiple entry.',
-    timeline: '2-3 business days',
+    shortDescription: 'Fast eVisa for first arrivals, property viewings, and business exploration. Valid up to 90 days, single or multiple entry.',
+    timeline: '3 working days',
     heroTitle: 'Vietnam eVisa - Fast Entry, Hassle-Free',
-    heroDescription: 'The Vietnam eVisa is the quickest way to enter Vietnam legally. Valid for 90 days single or multiple entry, it suits first-time arrivals, property buyers, and business explorers before committing to a TRC or work permit. We handle the application so yours is approved right first time.',
+    heroDescription: 'The Vietnam eVisa is the quickest way to enter Vietnam legally. Valid up to 90 days, with single or multiple entry, it suits first-time arrivals, property buyers, and business explorers before committing to a TRC or work permit. We handle the application so yours is approved right first time.',
     process: [
       {
         step: 1,
@@ -632,7 +632,7 @@ export const servicesData: Record<string, ServiceData> = {
         step: 3,
         title: 'Approval & Delivery',
         description: 'Receive your approved eVisa PDF by email, ready to print and present at the border.',
-        duration: '1-3 business days'
+        duration: '3 working days'
       }
     ],
     included: [
@@ -651,21 +651,25 @@ export const servicesData: Record<string, ServiceData> = {
       'Accommodation address in Vietnam'
     ],
     benefits: [
-      '90 days single or multiple entry',
-      'Valid for all international airports and major land borders',
+      'Valid up to 90 days, single or multiple entry',
+      'Accepted at the designated e-visa border gates listed on the official portal',
       'No need to visit an embassy or consulate',
       'Apply from anywhere in the world',
       'Can be extended or converted to TRC/work permit after arrival',
-      'Available to nationals of 80+ countries'
+      'Available to citizens of all countries and territories'
     ],
     faqs: [
       {
         question: 'Who can get a Vietnam eVisa?',
-        answer: 'Nationals of over 80 countries are eligible for the Vietnam eVisa. This includes USA, UK, EU member states, Australia, Canada, and most Asian countries. Contact us to confirm your nationality is eligible.'
+        answer: 'The Vietnam eVisa is available to citizens of all countries and territories.'
       },
       {
         question: 'How long does an eVisa last?',
-        answer: 'The standard Vietnam eVisa is valid for 90 days from the date of issue. You can choose single entry or multiple entry. The eVisa itself is valid for up to 90 days from issue date, and your stay cannot exceed 90 days per entry.'
+        answer: 'The Vietnam eVisa is valid for up to 90 days. You can choose single entry or multiple entry.'
+      },
+      {
+        question: 'How much does the eVisa cost?',
+        answer: 'The government fee is US$25 for a single entry eVisa and US$50 for a multiple entry eVisa. The US$25 or US$50 government fee is paid to the Vietnamese Government on evisa.gov.vn. Our service fee is separate.'
       },
       {
         question: 'Can I extend my eVisa?',
@@ -673,7 +677,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'What\'s the difference between an eVisa and a Visa on Arrival?',
-        answer: 'An eVisa is a standalone visa - you arrive with it already approved. A Visa on Arrival requires a pre-approved letter that you exchange for a visa stamp at the airport. The eVisa is accepted at all ports of entry including land borders; Visa on Arrival is only available at international airports.'
+        answer: 'An eVisa is a standalone visa - you arrive with it already approved. A Visa on Arrival requires a pre-approved letter that you exchange for a visa stamp at the airport. The eVisa is accepted at the designated e-visa border gates listed on the official portal; Visa on Arrival is only available at international airports.'
       },
       {
         question: 'Can I work on an eVisa?',

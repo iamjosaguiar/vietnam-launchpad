@@ -5,12 +5,22 @@ import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import HolaflyCallout from '@/components/HolaflyCallout';
 import { Link } from '@/i18n/config';
-import { VISA_COUNTRIES } from '@/data/visas';
+import { SRC_EVISA_FEES, SRC_MOFA_LIST, VISA_COUNTRIES } from '@/data/visas';
+import {
+  E_VISA_FACTS,
+  EVISA_PORTAL_URL,
+  PRIVATE_LINE,
+  formatVerifiedDate,
+  lastVerifiedLine,
+} from '@/data/visa-copy';
+
+const verifiedDates = VISA_COUNTRIES.map((c) => c.verifiedOn).sort();
+const verifiedOn = verifiedDates[verifiedDates.length - 1] ?? '2026-10-27';
+const lastVerified = lastVerifiedLine(verifiedOn);
 
 export const metadata: Metadata = {
   title: 'Vietnam Visa Requirements by Nationality 2026 | Vietnam Launchpad',
-  description:
-    'Check Vietnam visa requirements for your nationality. 45-day visa-free entry for UK, US, Australia, Canada and more. E-visa available to 111 countries. Updated 2026.',
+  description: `Check Vietnam visa requirements for your nationality: who is visa-free and who needs an e-visa. E-visa available to citizens of all countries and territories. ${lastVerified}.`,
   keywords: [
     'vietnam visa requirements',
     'vietnam visa by nationality',
@@ -25,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Vietnam Visa Requirements by Nationality 2026',
     description:
-      '45-day visa-free for UK, US, Australia, Canada and more. E-visa available to 111 countries. Check your nationality.',
+      'Who is visa-free and who needs an e-visa. E-visa available to citizens of all countries and territories. Check your nationality.',
     type: 'website',
     url: 'https://www.vietnamlaunchpad.com/visa',
     images: ogImages,
@@ -39,12 +49,11 @@ const visaFreeCountries45 = VISA_COUNTRIES.filter(
 const visaFreeCountries30 = VISA_COUNTRIES.filter(
   (c) => c.visaFree && c.visaFreeDays === 30
 );
-const evisaOnlyCountries = VISA_COUNTRIES.filter(
-  (c) => !c.visaFree && c.evisaEligible
+const visaFreeCountriesShorter = VISA_COUNTRIES.filter(
+  (c) => c.visaFree && c.visaFreeDays !== 45 && c.visaFreeDays !== 30
 );
-const otherCountries = VISA_COUNTRIES.filter(
-  (c) => !c.visaFree && !c.evisaEligible
-);
+const evisaOnlyCountries = VISA_COUNTRIES.filter((c) => !c.visaFree);
+const visaFreeTotal = VISA_COUNTRIES.filter((c) => c.visaFree).length;
 
 const collectionSchema = {
   '@context': 'https://schema.org',
@@ -52,7 +61,7 @@ const collectionSchema = {
   name: 'Vietnam Visa Requirements by Nationality 2026',
   url: 'https://www.vietnamlaunchpad.com/visa',
   description:
-    'Check Vietnam visa requirements for your nationality. 45-day visa-free entry for UK, US, Australia and more. E-visa available to 111 countries.',
+    'Check Vietnam visa requirements for your nationality: who is visa-free and who needs an e-visa. E-visa available to citizens of all countries and territories.',
   publisher: {
     '@type': 'Organization',
     name: 'Vietnam Launchpad',
@@ -62,9 +71,11 @@ const collectionSchema = {
     '@type': 'WebPage',
     name: `Vietnam Visa for ${c.nationality} Citizens`,
     url: `https://www.vietnamlaunchpad.com/visa/${c.slug}`,
-    description: c.visaFree
+    description: c.visaFreeCheck
+      ? 'Check current visa-free rules.'
+      : c.visaFree
       ? `${c.nationality} passport holders enjoy ${c.visaFreeDays}-day visa-free entry to Vietnam.`
-      : `${c.nationality} passport holders need a Vietnam e-visa for entry.`,
+      : `${c.nationality} passport holders need an e-visa for Vietnam.`,
   })),
 };
 
@@ -94,6 +105,7 @@ function CountryCard({
   visaFree,
   visaFreeDays,
   evisaEligible,
+  visaFreeCheck,
 }: {
   slug: string;
   flag: string;
@@ -101,6 +113,7 @@ function CountryCard({
   visaFree: boolean;
   visaFreeDays: number | null;
   evisaEligible: boolean;
+  visaFreeCheck?: boolean;
 }) {
   return (
     <Link
@@ -114,7 +127,11 @@ function CountryCard({
         <div className="font-semibold text-gray-900 group-hover:text-primary-700 transition-colors truncate">
           {country}
         </div>
-        {visaFree && visaFreeDays ? (
+        {visaFreeCheck ? (
+          <div className="text-sm text-blue-600 font-medium mt-0.5">
+            Check current visa-free rules
+          </div>
+        ) : visaFree && visaFreeDays ? (
           <div className="text-sm text-emerald-600 font-medium mt-0.5">
             {visaFreeDays}-day visa-free
           </div>
@@ -172,7 +189,7 @@ export default function VisaIndexPage() {
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
                 </span>
                 <span className="text-sm text-emerald-400 font-medium">
-                  Updated April 2026 - based on Vietnam&apos;s 2023 visa policy
+                  {lastVerified}
                 </span>
               </div>
 
@@ -185,7 +202,7 @@ export default function VisaIndexPage() {
 
               <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
                 Find out if you need a visa for Vietnam, how long you can stay, and the best options
-                for longer-term residency - by nationality.
+                for longer-term residency, by nationality.
               </p>
 
               <div className="flex flex-wrap gap-3 text-sm text-white/50">
@@ -198,7 +215,7 @@ export default function VisaIndexPage() {
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  45-day visa-free for 40+ nationalities
+                  Visa-free entry for listed nationalities
                 </span>
                 <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,7 +226,7 @@ export default function VisaIndexPage() {
                       d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                     />
                   </svg>
-                  E-visa available to 111+ countries
+                  E-visa available to all countries and territories
                 </span>
                 <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -233,21 +250,25 @@ export default function VisaIndexPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
                 <div className="text-2xl font-display font-bold text-gray-900">
-                  {visaFreeCountries45.length + visaFreeCountries30.length}
+                  {VISA_COUNTRIES.length}
                 </div>
-                <div className="text-sm text-gray-500 mt-0.5">Visa-free countries</div>
+                <div className="text-sm text-gray-500 mt-0.5">
+                  Nationalities covered on this page
+                </div>
               </div>
               <div>
-                <div className="text-2xl font-display font-bold text-gray-900">45 days</div>
-                <div className="text-sm text-gray-500 mt-0.5">Max visa-free stay (Western)</div>
+                <div className="text-2xl font-display font-bold text-gray-900">{visaFreeTotal}</div>
+                <div className="text-sm text-gray-500 mt-0.5">Visa-free nationalities listed</div>
               </div>
               <div>
-                <div className="text-2xl font-display font-bold text-gray-900">90 days</div>
+                <div className="text-2xl font-display font-bold text-gray-900">Up to 90 days</div>
                 <div className="text-sm text-gray-500 mt-0.5">E-visa duration</div>
               </div>
               <div>
-                <div className="text-2xl font-display font-bold text-gray-900">111+</div>
-                <div className="text-sm text-gray-500 mt-0.5">E-visa eligible countries</div>
+                <div className="text-2xl font-display font-bold text-gray-900">All</div>
+                <div className="text-sm text-gray-500 mt-0.5">
+                  countries and territories eligible for the e-visa
+                </div>
               </div>
             </div>
           </div>
@@ -272,14 +293,42 @@ export default function VisaIndexPage() {
               </svg>
               <span>
                 <strong>Disclaimer:</strong> Visa policies change frequently. This page reflects Vietnam&apos;s
-                visa policy as of April 2026 and is provided for general guidance only. Always verify
-                current requirements with the{' '}
+                visa policy as of {formatVerifiedDate(verifiedOn)} and is provided for general
+                guidance only. Always verify current requirements with the{' '}
                 <span className="font-medium">
                   Vietnam Immigration Department or your nearest Vietnamese embassy
                 </span>{' '}
                 before travel.
               </span>
             </p>
+          </div>
+        </section>
+
+        {/* Verification and sources */}
+        <section className="bg-white border-b border-gray-100 py-4">
+          <div className="container mx-auto px-4 md:px-8 text-sm text-gray-600 space-y-1">
+            <p className="font-medium text-gray-800">{lastVerified}</p>
+            <p>
+              Official source:{' '}
+              {[
+                SRC_MOFA_LIST,
+                SRC_EVISA_FEES,
+                { label: 'evisa.gov.vn', url: EVISA_PORTAL_URL },
+              ].map((src, i) => (
+                <span key={src.url}>
+                  {i > 0 && ' | '}
+                  <a
+                    href={src.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-600 hover:text-primary-700 underline"
+                  >
+                    {src.label}
+                  </a>
+                </span>
+              ))}
+            </p>
+            <p>{PRIVATE_LINE}</p>
           </div>
         </section>
 
@@ -297,8 +346,9 @@ export default function VisaIndexPage() {
                 Visa-Free Countries (45 Days)
               </h2>
               <p className="text-gray-500 mb-8 max-w-2xl">
-                Citizens of these countries can enter Vietnam without a visa for up to 45 days per
-                visit. Extended stays require an e-visa or long-term visa.
+                Vietnam grants 45 days visa-free to citizens of 24 countries, tourism only for 12
+                of them. This page covers {visaFreeCountries45.length} of them. Extended stays
+                require an e-visa or long-term visa.
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll animation="fade-up">
@@ -325,8 +375,8 @@ export default function VisaIndexPage() {
                 Visa-Free Countries (30 Days)
               </h2>
               <p className="text-gray-500 mb-8 max-w-2xl">
-                ASEAN member states and select bilateral agreements offer 30-day visa-free access.
-                E-visa or consulate visa needed for longer stays.
+                Citizens of these countries can enter Vietnam without a visa for up to 30 days per
+                visit. An e-visa is available for longer stays.
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll animation="fade-up">
@@ -339,22 +389,60 @@ export default function VisaIndexPage() {
           </div>
         </section>
 
+        {/* Shorter visa-free stays */}
+        {visaFreeCountriesShorter.length > 0 && (
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4 md:px-8">
+              <AnimateOnScroll>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-700 text-sm font-semibold px-3 py-1 rounded-full">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
+                    Shorter Visa-Free Stays
+                  </span>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2">
+                  Shorter Visa-Free Stays
+                </h2>
+                <p className="text-gray-500 mb-8 max-w-2xl">
+                  Citizens of these countries can enter Vietnam without a visa for the number of
+                  days shown on each card. An e-visa is available for longer stays.
+                </p>
+              </AnimateOnScroll>
+              <AnimateOnScroll animation="fade-up">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                  {visaFreeCountriesShorter.map((c) => (
+                    <CountryCard key={c.slug} {...c} />
+                  ))}
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </section>
+        )}
+
         {/* E-Visa Only Countries */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 md:px-8">
             <AnimateOnScroll>
               <div className="flex items-center gap-3 mb-3">
                 <span className="inline-flex items-center gap-1.5 bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full">
                   <span className="w-2 h-2 rounded-full bg-blue-500 inline-block" />
-                  E-Visa Required
+                  E-Visa
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2">
-                E-Visa Countries (No Visa-Free)
+                E-Visa Countries
               </h2>
               <p className="text-gray-500 mb-8 max-w-2xl">
-                Citizens of these countries must apply for an e-visa before arrival. The e-visa
-                is valid for 90 days and allows multiple entries.
+                Citizens of these countries need an e-visa to enter Vietnam, unless a card says to
+                check current visa-free rules. {E_VISA_FACTS}{' '}
+                <a
+                  href={EVISA_PORTAL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-600 hover:text-primary-700 underline"
+                >
+                  evisa.gov.vn
+                </a>
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll animation="fade-up">
@@ -366,36 +454,6 @@ export default function VisaIndexPage() {
             </AnimateOnScroll>
           </div>
         </section>
-
-        {/* Consulate Visa Countries */}
-        {otherCountries.length > 0 && (
-          <section className="py-16 bg-gray-50">
-            <div className="container mx-auto px-4 md:px-8">
-              <AnimateOnScroll>
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-flex items-center gap-1.5 bg-amber-100 text-amber-700 text-sm font-semibold px-3 py-1 rounded-full">
-                    <span className="w-2 h-2 rounded-full bg-amber-500 inline-block" />
-                    Consulate Visa Required
-                  </span>
-                </div>
-                <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2">
-                  Consulate Visa Required
-                </h2>
-                <p className="text-gray-500 mb-8 max-w-2xl">
-                  Citizens of these countries are not eligible for the online e-visa and must
-                  obtain a visa through a Vietnamese embassy or consulate.
-                </p>
-              </AnimateOnScroll>
-              <AnimateOnScroll animation="fade-up">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                  {otherCountries.map((c) => (
-                    <CountryCard key={c.slug} {...c} />
-                  ))}
-                </div>
-              </AnimateOnScroll>
-            </div>
-          </section>
-        )}
 
         {/* How it works / explainer */}
         <section className="py-16 md:py-24 bg-white">
@@ -424,7 +482,7 @@ export default function VisaIndexPage() {
                   ),
                   title: 'Visa-Free Entry',
                   description:
-                    'Citizens of 40+ countries can enter without a visa for 30–45 days. No application needed - just a valid passport. Cannot be extended, but you can re-enter after leaving the country.',
+                    'Citizens of some countries can enter without a visa. The number of days depends on the country and is shown on each country page. No application needed - just a valid passport.',
                 },
                 {
                   icon: (
@@ -435,9 +493,20 @@ export default function VisaIndexPage() {
                       d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                     />
                   ),
-                  title: 'E-Visa (90 Days)',
-                  description:
-                    'Apply online at evisa.xuatnhapcanh.gov.vn. Valid for 90 days, multiple entry. Processing takes approximately 3 business days. Costs around $25 USD. Available to 111+ nationalities.',
+                  title: 'E-Visa (Up to 90 Days)',
+                  description: (
+                    <>
+                      {E_VISA_FACTS}{' '}
+                      <a
+                        href={EVISA_PORTAL_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary-600 hover:text-primary-700 underline"
+                      >
+                        evisa.gov.vn
+                      </a>
+                    </>
+                  ),
                 },
                 {
                   icon: (
@@ -450,7 +519,7 @@ export default function VisaIndexPage() {
                   ),
                   title: 'Long-Stay Options',
                   description:
-                    'For stays beyond 90 days, a Business Visa or Temporary Residence Card (TRC) is required. The TRC is Vietnam\'s main long-term residency document for expats, valid for 1–2 years.',
+                    'For stays beyond 90 days, a Business Visa or Temporary Residence Card (TRC) is required. The TRC is Vietnam\'s main long-term residency document for expats, valid for 1 to 2 years.',
                 },
               ].map((item, i) => (
                 <AnimateOnScroll key={i} animation="fade-up" delay={i * 100}>
@@ -502,7 +571,7 @@ export default function VisaIndexPage() {
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
                       Suitable for freelancers, entrepreneurs, and short-term business visitors.
-                      Available for 3–12 months with single or multiple entry. Requires sponsorship
+                      Available for 3 to 12 months with single or multiple entry. Requires sponsorship
                       from a Vietnamese company or business entity.
                     </p>
                     <Link
@@ -532,7 +601,7 @@ export default function VisaIndexPage() {
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">
                       The TRC is Vietnam&apos;s main long-term residency document for foreign nationals.
-                      Valid for 1–2 years (renewable). Requires a valid work permit or business
+                      Valid for 1 to 2 years (renewable). Requires a valid work permit or business
                       entity. Replaces the need for visa renewals.
                     </p>
                     <Link
@@ -570,8 +639,9 @@ export default function VisaIndexPage() {
               </h2>
               <p className="text-lg text-white/70 mb-8">
                 Our consultants handle e-visas, business visas, work permits, and TRC
-                applications - so you can focus on building your life in Vietnam.
+                applications, so you can focus on building your life in Vietnam.
               </p>
+              <p className="text-sm text-white/60 mb-8 -mt-4">{PRIVATE_LINE}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
