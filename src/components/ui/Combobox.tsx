@@ -5,6 +5,8 @@ import { useEffect, useId, useMemo, useRef, useState } from 'react';
 export interface ComboboxOption {
   value: string;
   label: string;
+  /** Hidden aliases (e.g. "uk"); matched by exact or starts-with only and never displayed. */
+  keywords?: string[];
 }
 
 /** Lowercase and strip accents so "Cote" matches "Côte" and "dao" matches "Đảo". */
@@ -44,17 +46,30 @@ export default function Combobox({
   const [selected, setSelected] = useState('');
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
+  const [justChosen, setJustChosen] = useState(false);
 
-  const selectedLabel = options.find((option) => option.value === selected)?.label;
-  // Right after choosing, show the full list rather than only the chosen row.
-  const query = selectedLabel !== undefined && text === selectedLabel ? '' : normalize(text);
+  // Right after picking from the list, show the full list rather than only the chosen row.
+  const query = justChosen ? '' : normalize(text);
 
   const results = useMemo(() => {
     if (!query) return options;
-    const matches = options.filter((option) => normalize(option.label).includes(query));
-    const starts = (option: ComboboxOption) => (normalize(option.label).startsWith(query) ? 0 : 1);
-    return matches.sort((a, b) => starts(a) - starts(b));
+    // 0 exact label or keyword, 1 label starts-with, 2 keyword starts-with, 3 label contains, -1 no match.
+    const rank = (option: ComboboxOption) => {
+      const name = normalize(option.label);
+      const words = (option.keywords ?? []).map(normalize);
+      if (name === query || words.includes(query)) return 0;
+      if (name.startsWith(query)) return 1;
+      if (words.some((word) => word.startsWith(query))) return 2;
+      return name.includes(query) ? 3 : -1;
+    };
+    return options
+      .map((option) => ({ option, rank: rank(option) }))
+      .filter((entry) => entry.rank >= 0)
+      .sort((a, b) => a.rank - b.rank)
+      .map((entry) => entry.option);
   }, [options, query]);
+
+  const selectedIndex = results.findIndex((option) => option.value === selected);
 
   const choose = (option: ComboboxOption | undefined) => {
     setSelected(option?.value ?? '');
@@ -64,7 +79,13 @@ export default function Combobox({
   const select = (option: ComboboxOption) => {
     choose(option);
     setText(option.label);
+    setJustChosen(true);
     setOpen(false);
+  };
+
+  const openList = () => {
+    if (!open && justChosen && selectedIndex >= 0) setActive(selectedIndex);
+    setOpen(true);
   };
 
   const move = (next: number) => {
@@ -93,8 +114,10 @@ export default function Combobox({
       case 'ArrowDown':
       case 'ArrowUp':
         event.preventDefault();
-        if (count) move(open ? active + (event.key === 'ArrowDown' ? 1 : -1) : event.key === 'ArrowDown' ? 0 : count - 1);
-        else setOpen(true);
+        if (!count) setOpen(true);
+        else if (open) move(active + (event.key === 'ArrowDown' ? 1 : -1));
+        else if (selectedIndex >= 0) move(selectedIndex);
+        else move(event.key === 'ArrowDown' ? 0 : count - 1);
         break;
       case 'Home':
       case 'End':
@@ -107,6 +130,10 @@ export default function Combobox({
         if (open && active >= 0 && results[active]) {
           event.preventDefault();
           select(results[active]);
+        } else if (!selected && query && count === 1) {
+          // Partial text with a single match: choose it instead of submitting.
+          event.preventDefault();
+          select(results[0]);
         }
         break;
       case 'Escape':
@@ -122,10 +149,17 @@ export default function Combobox({
   const onInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const next = event.target.value;
     setText(next);
+    setJustChosen(false);
     setOpen(true);
     setActive(0);
-    // Editing clears the choice, unless the text now exactly names an option.
-    choose(options.find((option) => normalize(option.label) === normalize(next) && next.trim() !== ''));
+    // Editing clears the choice, unless the text now exactly names an option or one of its keywords.
+    const typed = normalize(next);
+    choose(
+      options.find(
+        (option) =>
+          typed !== '' && (normalize(option.label) === typed || option.keywords?.some((word) => normalize(word) === typed)),
+      ),
+    );
   };
 
   const showList = open && results.length > 0;
@@ -149,7 +183,7 @@ export default function Combobox({
           placeholder={placeholder}
           onChange={onInput}
           onKeyDown={onKeyDown}
-          onClick={() => setOpen(true)}
+          onClick={openList}
           className="block min-h-[48px] w-full rounded-input border border-field bg-white py-2 pl-4 pr-12 font-body text-base text-ink placeholder:text-muted focus-visible:outline-offset-2"
         />
         <svg

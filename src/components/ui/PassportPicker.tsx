@@ -12,6 +12,24 @@ export interface PassportOption {
   name: string;
 }
 
+/** Hidden search aliases per visa slug; never displayed. */
+const KEYWORDS: Record<string, string[]> = {
+  'united-states': ['usa', 'us', 'u.s.', 'u.s.a.', 'america', 'united states of america'],
+  'united-kingdom': ['uk', 'u.k.', 'britain', 'great britain', 'gb', 'england', 'scotland', 'wales', 'northern ireland'],
+  uae: ['uae', 'emirates', 'dubai', 'abu dhabi', 'united arab emirates'],
+  'south-korea': ['korea', 'republic of korea', 'rok'],
+  'czech-republic': ['czechia'],
+  myanmar: ['burma'],
+  netherlands: ['holland', 'the netherlands'],
+  philippines: ['filipino', 'the philippines'],
+  russia: ['russian federation'],
+  laos: ['lao'],
+  china: ['prc', 'peoples republic of china'],
+  'new-zealand': ['nz', 'aotearoa'],
+  'south-africa': ['rsa'],
+  'saudi-arabia': ['ksa'],
+};
+
 /**
  * Nationality combobox that sends the visitor to /visa/<slug>, or to /visa when nothing is chosen.
  * Takes a slim option list so the full visa data stays on the server.
@@ -36,7 +54,7 @@ export default function PassportPicker({
   const router = useRouter();
   const [slug, setSlug] = useState('');
   const comboOptions = useMemo(
-    () => options.map((option) => ({ value: option.slug, label: option.name })),
+    () => options.map((option) => ({ value: option.slug, label: option.name, keywords: KEYWORDS[option.slug] })),
     [options],
   );
 
