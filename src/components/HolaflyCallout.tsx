@@ -77,14 +77,14 @@ export default function HolaflyCallout({ variant }: { variant: HolaflyVariant | 
           href={HOLAFLY_PLANS_URL}
           target="_blank"
           rel="sponsored noopener"
-          className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+          className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white text-sm font-semibold px-5 py-2.5 min-h-[44px] rounded-full transition-colors"
         >
           Get Holafly Plans
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
         <Link
           href={HOLAFLY_GUIDE_PATH}
-          className="inline-flex items-center justify-center gap-2 border border-primary-200 bg-white text-primary-800 hover:bg-primary-100 text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
+          className="inline-flex items-center justify-center gap-2 border border-primary-200 bg-white text-primary-800 hover:bg-primary-100 text-sm font-semibold px-5 py-2.5 min-h-[44px] rounded-full transition-colors"
         >
           Best eSIM for Vietnam
         </Link>

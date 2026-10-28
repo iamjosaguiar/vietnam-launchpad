@@ -22,7 +22,7 @@ export function VisaBreadcrumbs({ current }: { current: string }) {
     <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted">
       <ol className="m-0 flex list-none flex-wrap items-center p-0">
         <li className="flex items-center">
-          <Link href="/" className="inline-flex min-h-[44px] items-center text-muted underline underline-offset-[3px] hover:text-ink">
+          <Link href="/" className="inline-flex min-h-[44px] min-w-[44px] items-center text-muted underline underline-offset-[3px] hover:text-ink">
             Home
           </Link>
           <span aria-hidden="true" className="mx-2">/</span>

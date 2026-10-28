@@ -102,7 +102,7 @@ function extractToc(content: string): TocItem[] {
 // One calm chip tone for every category (no per-category hues).
 const categoryColor = 'bg-gold-soft text-navy border border-gold-line';
 
-const proseClasses = `prose prose-lg max-w-measure
+const proseClasses = `prose prose-lg max-w-measure break-words
   prose-headings:font-display prose-headings:font-semibold prose-headings:text-ink
   prose-h1:text-4xl prose-h1:mb-6 prose-h1:hidden
   prose-h2:text-step-3 prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-hairline
@@ -116,7 +116,7 @@ const proseClasses = `prose prose-lg max-w-measure
   prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:pl-6 prose-blockquote:not-italic prose-blockquote:bg-gold-soft prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:rounded-r-card prose-blockquote:my-8
   prose-code:text-navy prose-code:bg-sand prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
   prose-hr:my-12 prose-hr:border-hairline
-  prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-card prose-table:overflow-hidden
+  prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-card prose-table:overflow-hidden max-md:prose-table:block max-md:prose-table:overflow-x-auto
   prose-thead:bg-navy
   prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
   prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-hairline

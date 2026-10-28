@@ -23,7 +23,7 @@ export default function ChecklistCard({
   title: string;
   items: ChecklistItem[];
   /**
-   * Ready count text with {done} and {total} placeholders, for example "{done} of {total} ready".
+   * Ready count text using the {done} and {total} tokens, for example "{done} of {total} ready".
    * A string rather than a function so server components can pass it.
    */
   countLabel: string;
