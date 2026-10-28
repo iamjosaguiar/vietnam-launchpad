@@ -19,12 +19,17 @@ export interface ServiceData {
   }[];
   benefits: string[];
   guarantee: string;
+  /** Heading above the guarantee box. Defaults to Our Guarantee. */
+  guaranteeHeading?: string;
+  /** Page title body, without the brand. Defaults to the title. */
+  metaTitle?: string;
 }
 
 export const servicesData: Record<string, ServiceData> = {
   'trc-application': {
     slug: 'trc-application',
     title: 'TRC Application (Temporary Residence Card)',
+    metaTitle: 'Vietnam TRC Application',
     shortDescription: 'Get your Vietnam Temporary Residence Card through investment, work permit, or marriage. 2-3 weeks processing time.',
     timeline: '2-3 weeks',
     heroTitle: 'Get Your Vietnam TRC - Multiple Pathways Available',
@@ -119,7 +124,7 @@ export const servicesData: Record<string, ServiceData> = {
   'work-permit': {
     slug: 'work-permit',
     title: 'Vietnam Work Permit',
-    shortDescription: 'Secure your legal right to work in Vietnam with our fast work permit processing service.',
+    shortDescription: 'Help with your Vietnam work permit application.',
     timeline: '2 months',
     heroTitle: 'Vietnam Work Permit - Legal Authorization to Work',
     heroDescription: 'Work legally in Vietnam without complications. We handle the entire process from start to finish.',
@@ -288,15 +293,16 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'We provide ongoing compliance support, connect you with accountants, and help with annual filings.'
       }
     ],
-    guarantee: 'We guarantee successful company registration or provide a full refund minus any government fees already paid.'
+    guarantee: 'We prepare and submit your registration documents and coordinate the steps listed above. The Vietnamese authorities decide every application. Government fees are set by the authorities and are separate from our service fee.',
+    guaranteeHeading: 'Our role and scope',
   },
   'business-visa': {
     slug: 'business-visa',
     title: 'Vietnam Business Visa',
-    shortDescription: 'Get a 3-month business visa to enter Vietnam quickly and easily.',
+    shortDescription: 'Apply for a 3 month business visa to enter Vietnam for business visits, property viewing or exploring opportunities.',
     timeline: '3-5 business days',
-    heroTitle: 'Vietnam Business Visa - Quick Entry',
-    heroDescription: 'Need to enter Vietnam for business? Get your 3-month business visa processed quickly. Perfect for initial visits, property viewing, or exploring business opportunities.',
+    heroTitle: 'Vietnam Business Visa Support',
+    heroDescription: 'Need to enter Vietnam for business? We prepare your 3 month business visa application. It suits initial visits, property viewing and exploring business opportunities.',
     process: [
       {
         step: 1,
@@ -320,8 +326,7 @@ export const servicesData: Record<string, ServiceData> = {
     included: [
       'Business visa application',
       'Visa approval letter',
-      'Immigration support',
-      'Fast-track option available'
+      'Immigration support'
     ],
     requirements: [
       'Passport copy (minimum 6 months validity)',
@@ -329,7 +334,6 @@ export const servicesData: Record<string, ServiceData> = {
       'Entry and exit dates'
     ],
     benefits: [
-      'Quick processing time',
       'Valid for 3 months',
       'Single or multiple entry options',
       'Can be extended or converted to other visa types'
@@ -349,7 +353,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'Do you offer e-visa services?',
-        answer: 'Yes, we offer expedited e-visa services for quick entry. Contact us for pricing and availability.'
+        answer: 'Yes. We prepare and submit eVisa applications. See our eVisa and Entry Visa service for what is included, or contact us for pricing.'
       }
     ],
     guarantee: 'If we cannot obtain your business visa due to our error, we provide a full refund of our service fee.'
@@ -504,7 +508,8 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'Yes, after 3 years of marriage-based TRC, you may be eligible to apply for permanent residency in Vietnam.'
       }
     ],
-    guarantee: 'We guarantee successful marriage registration and TRC issuance or provide a full refund of our service fee (government fees excluded).'
+    guarantee: 'We prepare your documents, handle the marriage registration and TRC application steps listed above, and follow up with the authorities. The Vietnamese authorities decide whether a marriage is registered and a card is issued. Government fees are separate from our service fee.',
+    guaranteeHeading: 'Our role and scope',
   },
   'drivers-license': {
     slug: 'drivers-license',
@@ -606,15 +611,16 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'The Vietnamese license class depends on your foreign license: Class B (cars), Class A1 (motorbikes up to 175cc), Class A2 (motorbikes over 175cc), or higher classes for trucks/buses if qualified.'
       }
     ],
-    guarantee: 'We guarantee successful license conversion or provide a full refund of our service fee if you meet all eligibility requirements.'
+    guarantee: 'We prepare your documents and application as listed above and follow up with the authorities. The Vietnamese authorities decide every conversion, and eligibility requirements apply.',
+    guaranteeHeading: 'Our role and scope',
   },
   'evisa': {
     slug: 'evisa',
     title: 'Vietnam eVisa & Entry Visa',
-    shortDescription: 'Fast eVisa for first arrivals, property viewings, and business exploration. Valid up to 90 days, single or multiple entry.',
-    timeline: '3 working days',
-    heroTitle: 'Vietnam eVisa - Fast Entry, Hassle-Free',
-    heroDescription: 'The Vietnam eVisa is the quickest way to enter Vietnam legally. Valid up to 90 days, with single or multiple entry, it suits first-time arrivals, property buyers, and business explorers before committing to a TRC or work permit. We handle the application so yours is approved right first time.',
+    shortDescription: 'eVisa applications for first arrivals, property viewings and business exploration. Valid up to 90 days, single or multiple entry.',
+    timeline: 'Set by Immigration',
+    heroTitle: 'Vietnam eVisa Application Support',
+    heroDescription: 'The Vietnam eVisa is valid for up to 90 days, with single or multiple entry. It suits first time arrivals, property buyers and business explorers who want to see Vietnam before committing to a TRC or work permit. You can apply yourself on the official portal, evisa.gov.vn. If you would rather have help, we prepare and submit the application with you. The Immigration Department decides every application.',
     process: [
       {
         step: 1,
@@ -632,7 +638,7 @@ export const servicesData: Record<string, ServiceData> = {
         step: 3,
         title: 'Approval & Delivery',
         description: 'Receive your approved eVisa PDF by email, ready to print and present at the border.',
-        duration: '3 working days'
+        duration: 'Set by Immigration'
       }
     ],
     included: [
@@ -693,6 +699,7 @@ export const servicesData: Record<string, ServiceData> = {
   'relocation-assistance': {
     slug: 'relocation-assistance',
     title: 'Relocation & Settling-In Service',
+    metaTitle: 'Relocation and Settling In Service',
     shortDescription: 'End-to-end relocation support: housing search, bank account setup, SIM card, school search, and first-week orientation.',
     timeline: '1-2 weeks',
     heroTitle: 'Vietnam Relocation & Settling-In Support',
@@ -782,10 +789,11 @@ export const servicesData: Record<string, ServiceData> = {
   'tax-filing': {
     slug: 'tax-filing',
     title: 'Personal Income Tax (PIT) Filing',
-    shortDescription: 'Annual PIT return filing for expats in Vietnam. We handle your tax obligations so you stay compliant and avoid penalties.',
+    metaTitle: 'Personal Income Tax Filing',
+    shortDescription: 'Annual PIT return filing for expats in Vietnam. We prepare and file your annual PIT return from the information you give us.',
     timeline: '1-2 weeks',
     heroTitle: 'Vietnam Personal Income Tax Filing for Expats',
-    heroDescription: 'Vietnam taxes residents on worldwide income after 183 days. We calculate your PIT liability, identify deductions, and file your annual return on time - keeping you compliant and penalty-free.',
+    heroDescription: 'Vietnam taxes residents on worldwide income after 183 days. We calculate your PIT liability and identify deductions. We prepare and file your annual PIT return from the information you give us.',
     process: [
       {
         step: 1,
@@ -831,9 +839,9 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     benefits: [
       'Stay fully compliant with Vietnamese tax law',
-      'Avoid late filing penalties (up to 25% of tax owed)',
+      'Know your filing deadline and what late filing can cost',
       'Claim all eligible deductions to reduce liability',
-      'Peace of mind for audit situations',
+      'Organised records if the tax authority asks for them',
       'Clear documentation for employer reimbursement claims',
       'Understand your worldwide tax obligations'
     ],
@@ -863,7 +871,8 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'We can help you file back years. Late filing penalties and interest apply, but voluntary disclosure before an audit significantly reduces exposure. Contact us to discuss your situation.'
       }
     ],
-    guarantee: 'We guarantee accurate PIT returns based on information you provide. If our preparation error causes a penalty, we cover the penalty cost.'
+    guarantee: 'We prepare and file your annual personal income tax return from the information you give us, as listed above. The tax authority assesses every return and decides any penalty.',
+    guaranteeHeading: 'Our role and scope',
   },
   'apostille-services': {
     slug: 'apostille-services',
@@ -1094,7 +1103,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     benefits: [
       'Stay compliant with Vietnamese accounting standards (VAS)',
-      'Avoid late filing penalties (up to 25M VND per violation)',
+      'Know your filing deadlines and what late filing can cost',
       'Clean books ready for government inspection or audit',
       'Accurate VAT reclaim on business expenses',
       'Professional financial statements for bank loans or investor due diligence',
@@ -1112,7 +1121,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'Do I need an audit?',
-        answer: 'Foreign-invested enterprises (FIEs) with foreign capital must have their annual financial statements audited by an approved audit firm. We coordinate with licensed auditors and prepare your books to minimize audit fees.'
+        answer: 'Foreign-invested enterprises (FIEs) with foreign capital must have their annual financial statements audited by an approved audit firm. We coordinate with approved audit firms and prepare your books so the audit goes smoothly.'
       },
       {
         question: 'What is the corporate income tax rate?',
@@ -1127,7 +1136,8 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'Zero-activity companies still need to file nil returns and annual financial statements. We offer a reduced-rate dormant company compliance package for this situation.'
       }
     ],
-    guarantee: 'We cover any penalties resulting from errors in our filing work. Our team monitors all deadlines so you never face a late filing penalty due to our oversight.'
+    guarantee: 'We prepare and file your VAT, personal income tax withholding and corporate income tax declarations and your annual financial statements, as listed above. The tax authority assesses every filing and decides any penalty.',
+    guaranteeHeading: 'Our role and scope',
   },
   'social-insurance': {
     slug: 'social-insurance',
@@ -1214,11 +1224,13 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'Back contributions plus penalties apply. We can help you calculate the arrears and negotiate payment terms with the Social Insurance Authority to regularize your status.'
       }
     ],
-    guarantee: 'We guarantee timely and accurate enrollment and monthly filings. Any penalties arising from our administrative errors are covered by us.'
+    guarantee: 'We prepare enrolment forms and monthly contribution declarations and send deadline reminders, as listed above. The Social Insurance Authority assesses every filing and decides any penalty.',
+    guaranteeHeading: 'Our role and scope',
   },
   'property-registration': {
     slug: 'property-registration',
     title: 'Vietnam Property Registration - Pink Book, Red Book & Foreign Ownership Documents',
+    metaTitle: 'Vietnam Property Registration',
     shortDescription: 'Complete guide to Vietnam property registration for foreigners. Understand the difference between Red Book and Pink Book, all required documents, registration fees, and the full process for apartments and condominiums.',
     timeline: '1-2 months',
     heroTitle: 'Foreign-Owned Property Registration & Ownership Support',
@@ -1322,11 +1334,13 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'No, property ownership alone does not grant you visa or TRC eligibility in Vietnam. You still need to obtain a visa or TRC through other means (work permit, investment visa, marriage, etc.). However, property ownership can support your case when applying for long-term visas, and having a TRC makes the property purchase process easier.'
       }
     ],
-    guarantee: 'We guarantee proper registration and ownership certificate issuance or provide a full refund of our service fee (government fees and taxes excluded).'
+    guarantee: 'We check project approval and eligibility, review your documents and submit your property registration, as listed above. The Vietnamese authorities decide whether ownership is registered and a certificate is issued. Government fees and taxes are separate from our service fee.',
+    guaranteeHeading: 'Our role and scope',
   },
   'employer-of-record': {
     slug: 'employer-of-record',
     title: 'Employer of Record (EOR) / PEO Vietnam',
+    metaTitle: 'Employer of Record Vietnam',
     shortDescription: 'Hire staff in Vietnam legally without setting up a company. We act as the legal employer so you can onboard talent fast.',
     timeline: '5-10 business days',
     heroTitle: 'Hire in Vietnam Without a Local Entity - EOR Made Simple',
@@ -1390,7 +1404,7 @@ export const servicesData: Record<string, ServiceData> = {
     faqs: [
       {
         question: 'What is an Employer of Record (EOR) in Vietnam?',
-        answer: 'An EOR is a licensed local company that becomes the legal employer of your staff on paper. You direct the employee\'s work, but the EOR handles the labor contract, payroll, tax, and social insurance obligations under Vietnamese law. This lets foreign companies hire in Vietnam without first incorporating a local entity.'
+        answer: 'An EOR is a local company that becomes the legal employer of your staff on paper. You direct the employee\'s work, but the EOR handles the labor contract, payroll, tax, and social insurance obligations under Vietnamese law. This lets foreign companies hire in Vietnam without first incorporating a local entity.'
       },
       {
         question: 'How is EOR different from a staffing agency?',
@@ -1421,7 +1435,8 @@ export const servicesData: Record<string, ServiceData> = {
         answer: 'Most clients transition to their own entity once they have 5 or more employees, need to sign local contracts in their own name, require a business license for their activity, or want greater control over HR policies. We also offer company setup services to make that transition straightforward.'
       }
     ],
-    guarantee: 'We guarantee all employment contracts, payroll filings, and social insurance registrations are fully compliant with Vietnamese law. If a penalty arises due to our processing error, we cover it in full.'
+    guarantee: 'We prepare employment contracts, run payroll and handle social insurance registration and filings, as listed above. The Vietnamese authorities assess every filing and decide any penalty or charge.',
+    guaranteeHeading: 'Our role and scope',
   }
 };
 

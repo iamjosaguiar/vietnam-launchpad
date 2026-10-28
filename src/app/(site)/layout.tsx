@@ -159,7 +159,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     name: 'Vietnam Launchpad',
     image: logoUrl,
     description:
-      'Licensed immigration and business consulting services in Vietnam. Specializing in TRC applications, work permits, and company registration.',
+      'Visa, residency and business support for expats and visitors in Vietnam, including TRC applications, work permits and company registration. A private company, not a government agency.',
     url: baseUrl,
     address: {
       '@type': 'PostalAddress',
@@ -174,7 +174,6 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     },
     telephone: PHONE_E164,
     email: CONTACT_EMAILS[0],
-    priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00'
   };
 

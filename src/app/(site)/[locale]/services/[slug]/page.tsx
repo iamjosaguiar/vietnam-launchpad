@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
-    title: service.title,
+    title: pageTitle(service.metaTitle ?? service.title),
     description: service.shortDescription,
     keywords: [service.title, 'Vietnam', service.slug, 'expat services'],
     alternates: buildAlternates(`/services/${slug}`),

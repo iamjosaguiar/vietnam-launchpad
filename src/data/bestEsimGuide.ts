@@ -4,6 +4,7 @@ import { HOLAFLY_DISCOUNT_CODE, HOLAFLY_PLANS_URL } from '@/lib/site';
 export const bestEsimVietnamGuide: Guide = {
   slug: 'best-esim-vietnam',
   title: 'Best eSIM for Vietnam (2026)',
+  metaTitle: 'Best eSIM for Vietnam 2026',
   subtitle: 'Holafly Plans before you fly, then a local Viettel, Vinaphone, or Mobifone SIM when you need a Vietnamese number',
   excerpt:
     'How to land in Vietnam already online, what an airport SIM actually involves, and when banking, Grab, and VNeID still require a passport-registered local number.',

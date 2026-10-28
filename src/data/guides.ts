@@ -19,7 +19,7 @@ export interface Guide {
   ctaSecondaryText?: string;
   content: string;
   faqs?: { q: string; a: string }[];
-  /** Exact page title for search results. Defaults to the title plus the site name. */
+  /** Page title body, without the brand. The brand is added once when the title fits in 60 characters. Defaults to the title. */
   metaTitle?: string;
   /** Exact meta description. Defaults to the excerpt. */
   metaDescription?: string;
@@ -33,6 +33,7 @@ const guidesData: Record<string, Guide> = {
   'cost-of-living': {
     slug: 'cost-of-living',
     title: 'Cost of Living in Vietnam 2026',
+    metaTitle: 'Cost of Living in Vietnam 2026',
     subtitle: 'From budget nomad to comfortable family life - real numbers, real context',
     excerpt: 'A realistic breakdown of monthly costs in Ho Chi Minh City, Hanoi, and Da Nang - covering rent, food, transport, healthcare, and everything in between.',
     author: 'Vietnam Launchpad',
@@ -280,6 +281,7 @@ See our full [Vietnam Tax Guide for Expats](/guides/taxes).`,
   'taxes': {
     slug: 'taxes',
     title: 'Vietnam Personal Income Tax 2026: Complete Guide for Expats',
+    metaTitle: 'Vietnam Personal Income Tax 2026',
     subtitle: "The 183-day rule, progressive rates, the new PIT law, and what US and UK expats need to know",
     excerpt: "Vietnam's biggest personal income tax reforms since 2012 took effect in January 2026. Here's what changed, what it means for expats, and how to stay compliant.",
     author: 'Vietnam Launchpad',
@@ -491,6 +493,7 @@ Once issued, all Vietnam-sourced income must be declared under this code.
   'healthcare': {
     slug: 'healthcare',
     title: 'Healthcare and Insurance in Vietnam: Complete Expat Guide 2026',
+    metaTitle: 'Healthcare and Insurance in Vietnam',
     subtitle: 'Public vs private hospitals, insurance tiers, what to expect, and how to avoid being caught without cover',
     excerpt: "Vietnam has excellent private hospitals in its major cities, but healthcare costs escalate quickly without the right insurance. This guide covers every option available to expats in 2026.",
     author: 'Vietnam Launchpad',
@@ -707,6 +710,7 @@ Vietnam has seasonal dengue fever - no widely available vaccine, managed through
   'digital-nomads': {
     slug: 'digital-nomads',
     title: 'Digital Nomad in Vietnam 2026: The Honest Visa, Tax and Lifestyle Guide',
+    metaTitle: 'Digital Nomad in Vietnam 2026',
     subtitle: 'Vietnam still has no official digital nomad visa. Here is what is actually available, what is legal, and how to make it work.',
     excerpt: "Vietnam is one of Asia's top digital nomad destinations - but the legal situation is more nuanced than most guides admit. A clear-eyed breakdown of your real options.",
     author: 'Vietnam Launchpad',
@@ -738,7 +742,7 @@ Vietnam's e-visa is the standard entry document for most nationalities:
 - **Duration:** Up to 90 days
 - **Entry:** Single or multiple entry
 - **Government fee:** US$25 single entry, US$50 multiple entry
-- **Processing:** 3 working days online
+- **Processing:** The Immigration Department says 3 working days after you pay
 - **Renewability:** Cannot extend - you must exit and re-enter
 
 For nomads staying under 90 days at a time, this is the cleanest option. Apply through the official Vietnam immigration portal.
@@ -926,6 +930,7 @@ The language barrier is real but improving. Basic Vietnamese phrases are appreci
   'renting': {
     slug: 'renting',
     title: 'Renting an Apartment in Vietnam: Complete Expat Guide 2026',
+    metaTitle: 'Renting an Apartment in Vietnam',
     subtitle: 'Finding your place, avoiding scams, negotiating leases, and what to watch out for in every major city',
     excerpt: "Vietnam's rental market has no shortage of apartments, but finding the right one at the right price takes local knowledge. This guide covers everything from search to signing.",
     author: 'Vietnam Launchpad',
@@ -1119,6 +1124,7 @@ Vietnamese law requires deposit return within a certain period, but enforcement 
   'banking': {
     slug: 'banking',
     title: 'Banking in Vietnam for Foreigners 2026: A Practical Guide',
+    metaTitle: 'Banking in Vietnam for Foreigners 2026',
     subtitle: 'Opening accounts, sending money home, what banks will and will not do for expats, and the best alternatives',
     excerpt: "Opening a Vietnamese bank account as a foreigner is possible but requires the right documentation. Here's exactly what you need, which banks work best for expats, and the best alternatives if a local account is out of reach.",
     author: 'Vietnam Launchpad',
@@ -1307,6 +1313,7 @@ Vietnam's banking sector is rapidly digitizing. Cashless payment is increasingly
   'international-schools': {
     slug: 'international-schools',
     title: 'International Schools in Vietnam 2026: The Complete Guide for Expat Families',
+    metaTitle: 'International Schools in Vietnam 2026',
     subtitle: 'Costs, curricula, top schools in HCMC and Hanoi, application timelines, and how to choose',
     excerpt: "Vietnam's international school sector has expanded significantly in recent years. Fees range from $10,000 to $38,000 per year. This guide covers every option so you can plan your family's move accurately.",
     author: 'Vietnam Launchpad',
@@ -1538,6 +1545,7 @@ Vietnam has several international university campuses (RMIT Vietnam, BUV - Briti
   'retirement': {
     slug: 'retirement',
     title: 'Retiring in Vietnam 2026: The Honest Guide',
+    metaTitle: 'Retiring in Vietnam 2026',
     subtitle: "There's no retirement visa. Here's what long-term retirees actually do instead.",
     excerpt: "Vietnam doesn't have a retirement visa, and that surprises nearly everyone who researches it. This guide covers your real long-term stay options, the true cost of retirement, and what life as a retired expat in Vietnam looks like.",
     author: 'Vietnam Launchpad',
@@ -1746,6 +1754,7 @@ The main genuine concerns are healthcare access as you age, the tax implications
   'working-in-vietnam': {
     slug: 'working-in-vietnam',
     title: 'Working in Vietnam as a Foreigner: Jobs, Work Permits, and Career Guide 2026',
+    metaTitle: 'Working in Vietnam as a Foreigner',
     subtitle: 'What jobs expats actually get, what the legal requirements are, and what you can realistically earn',
     excerpt: "Working legally in Vietnam requires a work permit - but the process, eligibility, and options differ widely by profession and employer. This guide covers the full picture.",
     author: 'Vietnam Launchpad',
@@ -1963,6 +1972,7 @@ Work permits are issued for up to **2 years** and are renewable. Renewal require
   'first-week': {
     slug: 'first-week',
     title: 'Your First Week in Vietnam: The Practical Expat Setup Guide',
+    metaTitle: 'Your First Week in Vietnam',
     subtitle: 'SIM cards, police registration, bank accounts, transport, and everything else to sort in your first 7 days',
     excerpt: "The first week in Vietnam sets the tone for your whole experience. This step-by-step guide covers everything you need to do in order, so nothing slips through the cracks.",
     author: 'Vietnam Launchpad',
@@ -2146,6 +2156,7 @@ The first week is about practical setup. Week 2-4 shifts to:
   'buying-property': {
     slug: 'buying-property',
     title: 'Buying Property in Vietnam as a Foreigner 2026: The Complete Guide',
+    metaTitle: 'Buying Property in Vietnam 2026',
     subtitle: "50-year leaseholds, 30% quotas, Pink Books, and what the 2024 law changes actually mean for foreign buyers",
     excerpt: "Foreigners can legally buy property in Vietnam - but the rules are specific and the pitfalls are real. This guide covers the legal framework, the buying process, costs, and what has changed under the 2024 laws.",
     author: 'Vietnam Launchpad',
@@ -2358,6 +2369,7 @@ If you have Vietnamese citizenship or are of Vietnamese origin, seek specific ad
   'moving-with-family': {
     slug: 'moving-with-family',
     title: 'Moving to Vietnam with Family: The Complete Guide for 2026',
+    metaTitle: 'Moving to Vietnam with Family',
     subtitle: "Schools, childcare, bringing pets, family health insurance, and making it work with children",
     excerpt: "Moving internationally with a family adds layers of complexity to every decision. This guide addresses the specific questions families ask - schools, pets, childcare, family health cover, and child-friendly neighborhoods.",
     author: 'Vietnam Launchpad',
@@ -2548,6 +2560,7 @@ The biggest social challenge is often for secondary-age children who leave estab
   'ho-chi-minh-city': {
     slug: 'ho-chi-minh-city',
     title: "Ho Chi Minh City (Saigon) Expat Guide 2026",
+    metaTitle: 'Ho Chi Minh City Expat Guide 2026',
     subtitle: "Vietnam's commercial capital - neighborhoods, costs, transport, schools, healthcare, and expat community",
     excerpt: "HCMC is where most expats land and where the majority stay. This guide covers everything about living in Vietnam's most dynamic city - from the best neighborhoods to the real cost of life here.",
     author: 'Vietnam Launchpad',
@@ -2743,6 +2756,7 @@ HCMC has one of Asia's most active and welcoming expat communities.
   'hanoi': {
     slug: 'hanoi',
     title: "Hanoi Expat Guide 2026",
+    metaTitle: 'Hanoi Expat Guide 2026',
     subtitle: "Vietnam's capital city - traditional, cultural, political, and different from HCMC in ways that matter",
     excerpt: "Hanoi is Vietnam's capital and has a distinct character from the south. Richer cultural heritage, cooler winters, worse air quality, and a more traditional atmosphere. This guide covers expat life in the north.",
     author: 'Vietnam Launchpad',
@@ -2909,6 +2923,7 @@ The Old Quarter street food scene is extraordinary. Weekend nights on Ta Hien St
   'da-nang': {
     slug: 'da-nang',
     title: "Da Nang Expat Guide 2026",
+    metaTitle: 'Da Nang Expat Guide 2026',
     subtitle: "Vietnam's rising third city - beaches, affordability, a growing nomad scene, and a more relaxed pace",
     excerpt: "Da Nang has become one of Vietnam's most popular expat destinations. Lower cost, beach access, improving infrastructure - with the honest trade-offs around healthcare, schools, and smaller social scene.",
     author: 'Vietnam Launchpad',
@@ -3129,6 +3144,7 @@ Hoi An is a UNESCO World Heritage city - the preserved ancient town, lantern-lit
   'company-setup-vietnam': {
     slug: 'company-setup-vietnam',
     title: 'How to Set Up a Company in Vietnam: The Complete Foreign Investor Guide (2026)',
+    metaTitle: 'How to Set Up a Company in Vietnam',
     subtitle: 'LLC vs Representative Office, 100% foreign ownership, registration steps, costs, and timeline',
     excerpt: 'Setting up a company in Vietnam as a foreigner is entirely possible - and in most sectors, you can own 100% of your business. This guide covers every structure option, the registration process, realistic costs, and the legal requirements you need to know before you start.',
     author: 'Vietnam Launchpad',
@@ -3404,6 +3420,7 @@ Yes. A joint venture (Vietnamese + foreign investor) is also possible. Some sect
   'trc-vietnam': {
     slug: 'trc-vietnam',
     title: 'TRC Vietnam: Complete Guide to the Temporary Residence Card (2026)',
+    metaTitle: 'Vietnam TRC: Temporary Residence Card',
     subtitle: 'What TRC means, who qualifies, all 3 application routes, required documents, and costs',
     excerpt: "TRC stands for Temporary Residence Card (The Tam Tru in Vietnamese) - Vietnam's long-stay residency document for foreigners. This guide covers all three routes to a TRC, the full application process, what documents you need, and how long it takes.",
     author: 'Vietnam Launchpad',
@@ -3647,6 +3664,7 @@ No. Vietnam has a separate Permanent Residency (PR / Thuong Tru) status requirin
   'teaching-english-vietnam': {
     slug: 'teaching-english-vietnam',
     title: 'Teaching English in Vietnam: The Complete Guide for 2026',
+    metaTitle: 'Teaching English in Vietnam 2026',
     subtitle: 'Requirements for native and non-native speakers, UK citizens, work permits, salaries, and how to find jobs',
     excerpt: "Vietnam is one of the most popular destinations in Asia for English teaching jobs - and for good reason. High demand, competitive salaries, and a low cost of living make it financially attractive. This guide covers all the requirements, including specific guidance for non-native English speakers and UK citizens.",
     author: 'Vietnam Launchpad',
@@ -3880,6 +3898,7 @@ International school recruitment agencies (Search Associates, TIE Online, Schrol
   'marriage-registration': {
     slug: 'marriage-registration',
     title: 'Getting Married in Vietnam: The Complete Marriage Registration Guide for Foreigners (2026)',
+    metaTitle: 'Getting Married in Vietnam 2026',
     subtitle: 'How to register a marriage in Vietnam, documents required, the process for foreign nationals, and getting your Vietnamese marriage certificate',
     excerpt: "Marriage registration in Vietnam for foreigners involves more paperwork than a domestic marriage - but the process is manageable if you know what to prepare. This guide covers the full registration process, required documents, where to apply, and how to get your certificate recognized internationally.",
     author: 'Vietnam Launchpad',
@@ -4108,6 +4127,7 @@ A legal marriage from abroad can generally be used as evidence in Vietnam (for p
   'driving-vietnam': {
     slug: 'driving-vietnam',
     title: 'Driving in Vietnam: Licenses, Car Rental, and Converting Your Foreign License (2026)',
+    metaTitle: 'Driving in Vietnam for Foreigners',
     subtitle: 'Can you drive in Vietnam on your foreign license, how to convert it, renting a car, and motorbike rules',
     excerpt: "Can you drive in Vietnam on a US, UK, or international license? The answer is more complicated than most guides suggest. This page covers what is legally required, how to convert your foreign license, and everything you need to know about renting a car or motorbike in Vietnam.",
     author: 'Vietnam Launchpad',
@@ -4345,6 +4365,7 @@ Key rules for driving/riding in Vietnam:
   'divorce-vietnam': {
     slug: 'divorce-vietnam',
     title: 'Divorce in Vietnam: Complete Guide for Foreigners (2026)',
+    metaTitle: 'Divorce in Vietnam for Foreigners',
     subtitle: 'Mutual vs one-sided divorce, court process, asset division, child custody, and what happens to your TRC',
     excerpt: "Vietnam recognises two types of divorce: mutual (both parties agree) and one-sided (contested). This guide covers both processes in full - documents, courts, timelines, costs, and the immigration consequences for foreign nationals.",
     author: 'Vietnam Launchpad',
@@ -4672,6 +4693,7 @@ There is no waiting period under Vietnamese law once the divorce decision is fin
   'property-registration': {
     slug: 'property-registration',
     title: 'Vietnam Property Registration: Red Book, Pink Book, and How Title Works (2026)',
+    metaTitle: 'Vietnam Property Registration Guide',
     subtitle: 'What the property documents actually are, how registration works step by step, and what foreign owners need to do differently',
     excerpt: "Vietnam property title is recorded in a certificate called the Pink Book (Sổ Hồng). This guide explains what it is, the difference from the old Red Book, the full registration process, required documents, costs, and what foreigners need to do differently.",
     author: 'Vietnam Launchpad',
@@ -4850,6 +4872,7 @@ Foreign ownership registrations involve more steps and more potential complicati
   'vneid-vietnam-digital-id-foreigners': {
     slug: 'vneid-vietnam-digital-id-foreigners',
     title: 'VNeID: Vietnam\'s Digital ID App - What Foreigners Need to Know',
+    metaTitle: "VNeID: Vietnam's Digital ID App",
     subtitle: 'Register your TRC on Vietnam\'s national digital identity app and stop carrying physical documents',
     excerpt: 'Vietnam is replacing physical ID cards with the VNeID digital identity app. Foreign nationals with a TRC can now register too. Here is what VNeID is, what it is accepted for, and how to get it set up.',
     author: 'Vietnam Launchpad',
@@ -4985,6 +5008,7 @@ If you are in the process of getting your TRC, add VNeID registration to your to
   'golden-visa-vietnam': {
     slug: 'golden-visa-vietnam',
     title: 'Vietnam Golden Visa 2025: Long-Stay Visas for Investors and Skilled Professionals',
+    metaTitle: 'Vietnam Golden Visa: Long Stay Visas',
     subtitle: 'Vietnam now offers 5-year and 10-year visas for qualified investors, experts, and high-tech talent',
     excerpt: 'Vietnam\'s 2024-2025 visa reforms introduced multi-year long-stay visas that function like a "golden visa" for qualified foreign nationals. Here is who qualifies, what the process looks like, and how it compares to the Temporary Residence Card.',
     author: 'Vietnam Launchpad',
@@ -5092,6 +5116,7 @@ Dependants (spouse and minor children) can apply for visas under their own categ
   'company-setup-checklist': {
     slug: 'company-setup-checklist',
     title: 'Vietnam Company Setup Checklist 2025: Before and After Incorporation',
+    metaTitle: 'Vietnam Company Setup Checklist',
     subtitle: 'A practical pre- and post-incorporation checklist for foreign investors registering a business in Vietnam',
     excerpt: 'Registering a company in Vietnam involves two distinct phases: decisions and preparation before you file, and compliance steps in the first 90 days after registration. This checklist covers both, with timelines and common mistakes to avoid.',
     author: 'Vietnam Launchpad',
@@ -5204,6 +5229,7 @@ Note: Professional service fees (legal/consultant) are separate and vary by prov
   'hoi-an': {
     slug: 'hoi-an',
     title: 'Hoi An Expat Guide 2026',
+    metaTitle: 'Hoi An Expat Guide 2026',
     subtitle: 'Living in Vietnam\'s ancient lantern city - UNESCO World Heritage town, digital nomads, and long-term expat retirees',
     excerpt: 'Hoi An is Vietnam\'s most atmospheric town - UNESCO-listed ancient streets, lantern-lit evenings, and one of the cheapest costs of living among Vietnam\'s expat destinations. This guide covers everything honest about living here long-term.',
     author: 'Vietnam Launchpad',
@@ -5388,6 +5414,7 @@ Hoi An's ancient town is walkable and bikeable - this is one of its genuine char
   'nha-trang': {
     slug: 'nha-trang',
     title: 'Nha Trang Expat Guide 2026',
+    metaTitle: 'Nha Trang Expat Guide 2026',
     subtitle: 'Beach city on Vietnam\'s south-central coast - growing international community, lower costs, honest trade-offs',
     excerpt: 'Nha Trang is Vietnam\'s most famous beach resort city. Beyond tourism, it has a genuine and growing expat community. This guide covers what life is really like here for long-term residents.',
     author: 'Vietnam Launchpad',
@@ -5549,6 +5576,7 @@ Post-2022, this community has changed significantly. The international mix in Nh
   'phu-quoc': {
     slug: 'phu-quoc',
     title: 'Phu Quoc Expat Guide 2026',
+    metaTitle: 'Phu Quoc Expat Guide 2026',
     subtitle: "Vietnam's largest island - booming development, growing expat community, special visa rules",
     excerpt: 'Phu Quoc is Vietnam\'s island boom story. Massive tourism development, a special 30-day visa-free zone, and a growing community of expat retirees and remote workers. Here is the honest picture of island life.',
     author: 'Vietnam Launchpad',
@@ -5733,6 +5761,7 @@ This is the nature of a boom destination. The island is simultaneously more conv
   'da-lat': {
     slug: 'da-lat',
     title: 'Da Lat Expat Guide 2026',
+    metaTitle: 'Da Lat Expat Guide 2026',
     subtitle: 'Vietnam\'s highland city - cool year-round climate, digital nomads, flower farms, and a life unlike any other Vietnamese city',
     excerpt: 'Da Lat sits at 1,500m altitude with a year-round cool climate utterly unlike the rest of Vietnam. It is growing as a digital nomad base and appeals to those who want Vietnamese life without extreme heat. Here is the honest picture.',
     author: 'Vietnam Launchpad',
@@ -5920,6 +5949,7 @@ Da Lat is also more culturally conservative and traditional than Vietnam's large
   'vung-tau': {
     slug: 'vung-tau',
     title: 'Vung Tau Expat Guide 2026',
+    metaTitle: 'Vung Tau Expat Guide 2026',
     subtitle: "HCMC's beach escape - 90km from the city, oil and gas industry, long-established Western expat community",
     excerpt: 'Vung Tau is a beach city 90km from Ho Chi Minh City with a long history as home to Vietnam\'s offshore oil and gas industry. It has one of the most established Western expat communities outside HCMC. This is what life here is really like.',
     author: 'Vietnam Launchpad',
@@ -6100,6 +6130,7 @@ Vung Tau is heavily used as a weekend destination by HCMC residents. This has tw
   'hue': {
     slug: 'hue',
     title: 'Hue Expat Guide 2026',
+    metaTitle: 'Hue Expat Guide 2026',
     subtitle: "Vietnam's imperial capital - Perfume River, UNESCO citadel, traditional culture, and a smaller, quieter expat life",
     excerpt: "Hue was Vietnam's imperial capital for nearly 150 years. It is a city of genuine historical depth, slower pace, and lower costs than Da Nang or HCMC. Here is what living here is really like for expats.",
     author: 'Vietnam Launchpad',
@@ -6299,6 +6330,7 @@ Hue is compact and relatively flat near the river:
   'efta-vietnam-free-trade-agreement': {
     slug: 'efta-vietnam-free-trade-agreement',
     title: 'EFTA-Vietnam Free Trade Agreement (VEFTA): Business Guide 2026',
+    metaTitle: 'EFTA Vietnam Free Trade Agreement',
     subtitle: 'Status, tariff schedules, rules of origin, and what the Iceland-Liechtenstein-Norway-Switzerland deal means for trade and investment',
     excerpt:
       'The Viet Nam-EFTA Free Trade Agreement (VEFTA) was signed in Hanoi on 18 October 2026. Entry into force is still pending ratification. This guide explains the parties, negotiation timeline, main chapters, and practical steps for exporters, importers, and investors.',

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import HolaflyCallout from '@/components/HolaflyCallout';
@@ -26,7 +27,7 @@ const verifiedOn = verifiedDates[verifiedDates.length - 1] ?? '2026-10-27';
 const lastVerified = lastVerifiedLine(verifiedOn);
 
 export const metadata: Metadata = {
-  title: 'Vietnam Visa Requirements by Nationality 2026 | Vietnam Launchpad',
+  title: pageTitle('Vietnam Visa Requirements 2026'),
   description: `Check Vietnam visa requirements for your nationality: who is visa-free and who needs an e-visa. E-visa available to citizens of all countries and territories. ${lastVerified}.`,
   keywords: [
     'vietnam visa requirements',
