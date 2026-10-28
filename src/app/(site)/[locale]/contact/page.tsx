@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import Chip from '@/components/ui/Chip';
+import Container from '@/components/ui/Container';
 import { PHONE_DISPLAY, PHONE_TEL, PHONE_WHATSAPP } from '@/lib/site';
 
 const companyTypes = [
@@ -20,9 +22,9 @@ const companyTypes = [
 
 const investmentSizes = [
   'Under $50,000',
-  '$50,000 – $200,000',
-  '$200,000 – $500,000',
-  '$500,000 – $2M',
+  '$50,000 - $200,000',
+  '$200,000 - $500,000',
+  '$500,000 - $2M',
   '$2M+',
   'Prefer not to say',
 ];
@@ -98,25 +100,24 @@ export default function ContactPage() {
         <Navigation />
 
         {/* Hero */}
-        <section className="relative bg-gradient-to-br from-stone-950 via-primary-950 to-stone-950 text-white py-36 overflow-hidden">
-          <div className="absolute top-0 left-1/3 w-[600px] h-[600px] bg-primary-500/8 rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-400/5 rounded-full blur-[100px]" />
-
-          <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
-            <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-10">
-              <div className="w-1.5 h-1.5 rounded-full bg-primary-400 animate-pulse" />
-              <span className="text-sm text-white/60 font-body">Senior consultant responds within 4 business hours</span>
-            </div>
-            <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl font-display font-bold mb-6 leading-tight">
+        <section
+          aria-labelledby="contact-title"
+          className="bg-hero-wash pb-12 pt-[calc(var(--header-h)+32px)] nav:pb-16 nav:pt-[calc(var(--header-h)+64px)]"
+        >
+          <Container>
+            <Chip as="p" className="mb-4">
+              Senior consultant responds within 4 business hours
+            </Chip>
+            <h1 id="contact-title" className="mb-4 max-w-[22ch] font-display text-step-3 font-semibold text-ink nav:text-step-5">
               Request a{' '}
-              <span className="italic block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-400">
+              <span className="block text-navy">
                 Private Consultation
               </span>
             </h1>
-            <p className="hero-subtitle text-lg md:text-xl text-white/65 max-w-2xl mx-auto font-body">
+            <p className="m-0 max-w-[60ch] text-lead text-muted">
               We engage with a limited number of new clients each month to maintain the quality of our work. Tell us about your situation.
             </p>
-          </div>
+          </Container>
         </section>
 
         <section className="py-24 md:py-32">
@@ -195,9 +196,9 @@ export default function ContactPage() {
                         <select name="timeline" value={formData.timeline} onChange={handleChange} className={inputClass}>
                           <option value="">Select timeline</option>
                           <option value="asap">As soon as possible</option>
-                          <option value="1-3months">Within 1–3 months</option>
-                          <option value="3-6months">3–6 months</option>
-                          <option value="6-12months">6–12 months</option>
+                          <option value="1-3months">Within 1-3 months</option>
+                          <option value="3-6months">3-6 months</option>
+                          <option value="6-12months">6-12 months</option>
                           <option value="exploring">Exploring / No deadline</option>
                         </select>
                       </div>
@@ -259,7 +260,7 @@ export default function ContactPage() {
                       )}
                     </button>
 
-                    <p className="text-center text-stone-400 text-xs">
+                    <p className="text-center text-muted text-xs">
                       By submitting, you agree to our privacy policy. We never share your information.
                     </p>
                   </form>
@@ -303,7 +304,7 @@ export default function ContactPage() {
                           title: 'WhatsApp / Phone',
                           detail: PHONE_DISPLAY,
                           href: PHONE_TEL,
-                          sub: 'Mon–Fri, 9am–6pm ICT',
+                          sub: 'Mon-Fri, 9am-6pm ICT',
                         },
                         {
                           icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
@@ -326,7 +327,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                             {'href' in item && item.href ? (
-                              <a href={item.href} className="font-semibold text-stone-800 text-sm hover:text-primary-600 transition-colors">
+                              <a href={item.href} className="inline-flex min-h-[44px] items-center font-semibold text-stone-800 text-sm hover:text-primary-600 transition-colors">
                                 {item.detail}
                               </a>
                             ) : (
@@ -337,12 +338,12 @@ export default function ContactPage() {
                                 href={PHONE_WHATSAPP}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block text-primary-600 text-xs font-medium hover:text-primary-500"
+                                className="flex min-h-[44px] items-center text-primary-600 text-xs font-medium hover:text-primary-500"
                               >
                                 WhatsApp
                               </a>
                             )}
-                            <div className="text-stone-400 text-xs">{item.sub}</div>
+                            <div className="text-muted text-xs">{item.sub}</div>
                           </div>
                         </div>
                       ))}
