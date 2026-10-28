@@ -19,7 +19,7 @@ const KEYWORDS: Record<string, string[]> = {
   'united-states': ['usa', 'us', 'u.s.', 'u.s.a.', 'america', 'united states of america'],
   'united-kingdom': ['uk', 'u.k.', 'britain', 'great britain', 'gb', 'england', 'scotland', 'wales'],
   uae: ['uae', 'emirates', 'dubai', 'abu dhabi', 'united arab emirates'],
-  'south-korea': ['korea', 'rok'],
+  'south-korea': ['rok'],
   'czech-republic': ['czechia'],
   myanmar: ['burma'],
   netherlands: ['holland', 'the netherlands'],
