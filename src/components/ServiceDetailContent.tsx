@@ -35,6 +35,7 @@ interface ServiceData {
     answer: string;
   }>;
   guarantee: string;
+  guaranteeHeading?: string;
 }
 
 export default function ServiceDetailContent({ service }: { service: ServiceData }) {
@@ -271,7 +272,7 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
                   </svg>
                 </div>
                 <div>
-                  <h3 className="mb-3 font-display text-step-2 font-semibold text-ink">Our Guarantee</h3>
+                  <h3 className="mb-3 font-display text-step-2 font-semibold text-ink">{service.guaranteeHeading ?? 'Our Guarantee'}</h3>
                   <p className="max-w-measure text-lead text-ink">{service.guarantee}</p>
                 </div>
               </div>
@@ -317,7 +318,7 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
                   Ready to Get Started?
                 </h2>
                 <p className="mb-0 mt-2 max-w-measure text-[#D6E2F0]">
-                  Trusted by expats across Vietnam for immigration and business services
+                  Visa, residency and business support for people living in or moving to Vietnam.
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row nav:flex-col">

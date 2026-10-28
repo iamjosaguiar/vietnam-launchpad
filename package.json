@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/check-titles.mjs",
+    "check:titles": "node scripts/check-titles.mjs",
     "start": "next start",
     "lint": "eslint .",
     "export": "next build && next export",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
-    title: guide.metaTitle ? { absolute: guide.metaTitle } : `${guide.title} | Vietnam Launchpad`,
+    title: pageTitle(guide.metaTitle ?? guide.title),
     description: guide.metaDescription ?? guide.excerpt,
     keywords: [guide.category, 'Vietnam', 'expat', 'guide', 'living in Vietnam'],
     alternates: buildAlternates(`/guides/${slug}`),

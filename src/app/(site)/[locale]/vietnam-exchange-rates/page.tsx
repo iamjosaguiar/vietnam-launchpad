@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import LiveRatesWidget from '@/components/LiveRatesWidget';
@@ -10,7 +11,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 export const revalidate = 21600;
 
 export const metadata: Metadata = {
-  title: 'USD to VND Exchange Rate Today | Vietnam Dong Rates | Vietnam Launchpad',
+  title: pageTitle('USD to VND Exchange Rate Today'),
   description:
     'Live USD to VND exchange rate and Vietnamese dong rates for USD, EUR, GBP, AUD, SGD, JPY, KRW and more. Updated every 6 hours. Practical expat money tips for Vietnam.',
   keywords: [

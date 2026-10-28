@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -64,7 +65,7 @@ export async function generateMetadata({
       ...(NOINDEX_UNTIL_FIXED.has(slug)
         ? { robots: { index: false, follow: true, googleBot: { index: false, follow: true } } }
         : {}),
-      title: { absolute: curated.metaTitle },
+      title: pageTitle(curated.metaTitle),
       description: curated.metaDescription,
       alternates: buildAlternates(`/visa/${slug}`),
       openGraph: {
@@ -92,7 +93,7 @@ export async function generateMetadata({
   }
   if (data.evisaEligible) {
     descriptionParts.push(
-      `E-visa: US$25 single entry, US$50 multiple entry, 3 working days, valid up to 90 days. Long-stay options: ${data.recommendedLongStay}.`
+      `eVisa: US$25 single entry, US$50 multiple entry, valid up to 90 days. Check the official processing time on evisa.gov.vn. Long stay options: ${data.recommendedLongStay}.`
     );
   }
 
@@ -102,7 +103,7 @@ export async function generateMetadata({
 
   return {
     ...(robots ? { robots } : {}),
-    title: `Vietnam Visa for ${data.nationality} Citizens 2026 | Vietnam Launchpad`,
+    title: pageTitle(`Vietnam Visa for ${data.nationality} Citizens 2026`),
     description: descriptionParts.join(' '),
     keywords: [
       `vietnam visa ${data.country.toLowerCase()}`,

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from '@/i18n/config';
@@ -9,7 +10,7 @@ import { getExchangeRates, vndPerCurrency, formatVnd } from '@/lib/open-data';
 export const revalidate = 21600;
 
 export const metadata: Metadata = {
-  title: 'VND Currency Converter - Convert to Vietnamese Dong | Vietnam Launchpad',
+  title: pageTitle('VND Currency Converter'),
   description:
     'Convert USD, EUR, GBP, AUD, SGD, JPY, KRW and 19 other currencies to Vietnamese Dong (VND). Live rates updated every 6 hours. Expat-focused currency conversion for Vietnam.',
   keywords: [

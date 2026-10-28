@@ -1,17 +1,18 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { SALARY_ROLES, getAllSalaryCategories } from '@/data/salaryRoles';
 import { Link } from '@/i18n/config';
 
 export const metadata: Metadata = {
-  title: 'Expat Salary Guide Vietnam 2026 | Salaries by Role | Vietnam Launchpad',
+  title: pageTitle('Expat Salary Guide Vietnam 2026'),
   description:
     'Vietnam expat salary guide 2026. Local VND market rates and USD expat packages for 12 key roles - software engineers, teachers, managers, and more.',
   alternates: buildAlternates('/salary'),
   openGraph: {
-    title: 'Expat Salary Guide Vietnam 2026 | Salaries by Role | Vietnam Launchpad',
+    title: 'Expat Salary Guide Vietnam 2026',
     description:
       'Vietnam expat salary guide 2026. Local VND market rates and USD expat packages for 12 key roles.',
     type: 'website',

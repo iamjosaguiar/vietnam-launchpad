@@ -1004,7 +1004,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'Business Visa (apply at consulate or via e-visa)',
     notes:
-      'Pakistani passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. Pakistan and Vietnam have growing trade links. Vietnamese e-visa processing usually takes 3 working days.',
+      'Pakistani passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. Pakistan and Vietnam have growing trade links. The Immigration Department publishes the current processing time on its eVisa page.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_LIST],
     topQueries: [
@@ -1114,7 +1114,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'E-Visa → Business Visa or TRC',
     notes:
-      'Israeli passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. There is a growing Israeli entrepreneurial and startup community in Ho Chi Minh City and Hanoi. The e-visa processing typically takes 3 working days.',
+      'Israeli passport holders are not eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. There is a growing Israeli entrepreneurial and startup community in Ho Chi Minh City and Hanoi. The Immigration Department publishes the current processing time on its eVisa page.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_LIST],
     topQueries: [

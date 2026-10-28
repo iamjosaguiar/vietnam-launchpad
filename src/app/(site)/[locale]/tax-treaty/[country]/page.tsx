@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -26,7 +27,7 @@ export async function generateMetadata({
   const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
-    title: `Vietnam ${treaty.country} Double Tax Agreement (DTA) | Vietnam Launchpad`,
+    title: pageTitle(`Vietnam ${treaty.country} Double Tax Agreement`),
     description: `Vietnam-${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
     alternates: buildAlternates(`/tax-treaty/${treaty.slug}`),
     openGraph: {
