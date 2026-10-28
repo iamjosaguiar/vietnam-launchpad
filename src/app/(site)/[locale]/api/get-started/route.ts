@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { CONTACT_EMAIL_DISPLAY, PHONE_DISPLAY } from '@/lib/site';
 import { getLeadRecipients } from '@/lib/lead-recipients';
+import { escapeHtml, leadSubject, sendAutoReply, sendMail } from '@/lib/lead-email';
 
 export async function POST(request: NextRequest) {
   try {
@@ -40,42 +41,86 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Prepare email content
-    const emailSubject = `New Business Setup Lead: ${name} - ${location}`;
+    // Prepare email content. Every submitted field is escaped before it is
+    // placed in the HTML body; the plain-text part carries the raw values.
+    const multiline = (value: unknown) => escapeHtml(value).replace(/\r?\n/g, '<br>');
+    const submittedAt = new Date().toLocaleString();
+    const emailSubject = leadSubject(
+      location ? `Business setup (${location})` : 'Business setup',
+      name
+    );
+    const emailText = [
+      'New Business Setup Questionnaire Submission',
+      `Submitted at: ${submittedAt}`,
+      '',
+      'Contact Information',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone || 'Not provided'}`,
+      `Timeline: ${timeline || 'Not specified'}`,
+      '',
+      'Business Details',
+      '',
+      '1. Company Type & Activities:',
+      `${companyType}`,
+      '',
+      '2. Proposed Capital:',
+      `${capital || 'Not specified'}`,
+      '',
+      '3. Number of Shareholders:',
+      `${shareholders || 'Not specified'}`,
+      '',
+      '4. Location:',
+      `${location || 'Not specified'}`,
+      '',
+      '5. Shareholder Nationalities:',
+      `${nationalities || 'Not specified'}`,
+      '',
+      '6. Business Model & Revenue:',
+      `${businessModel}`,
+      '',
+      '7. Visa Requirements:',
+      `${visaOption || 'Not specified'}`,
+      '',
+      'Next Steps:',
+      '- Review the information provided',
+      '- Schedule a free 1:1 consultation call',
+      '- Prepare custom quotation based on requirements',
+    ].join('\n');
     const emailBody = `
       <h2>New Business Setup Questionnaire Submission</h2>
-      <p><strong>Submitted at:</strong> ${new Date().toLocaleString()}</p>
+      <p><strong>Submitted at:</strong> ${escapeHtml(submittedAt)}</p>
       <hr>
 
       <h3>Contact Information</h3>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-      <p><strong>Timeline:</strong> ${timeline || 'Not specified'}</p>
+      <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Phone:</strong> ${escapeHtml(phone || 'Not provided')}</p>
+      <p><strong>Timeline:</strong> ${escapeHtml(timeline || 'Not specified')}</p>
 
       <hr>
       <h3>Business Details</h3>
 
       <p><strong>1. Company Type & Activities:</strong></p>
-      <p>${companyType}</p>
+      <p>${multiline(companyType)}</p>
 
       <p><strong>2. Proposed Capital:</strong></p>
-      <p>${capital || 'Not specified'}</p>
+      <p>${escapeHtml(capital || 'Not specified')}</p>
 
       <p><strong>3. Number of Shareholders:</strong></p>
-      <p>${shareholders || 'Not specified'}</p>
+      <p>${escapeHtml(shareholders || 'Not specified')}</p>
 
       <p><strong>4. Location:</strong></p>
-      <p>${location || 'Not specified'}</p>
+      <p>${escapeHtml(location || 'Not specified')}</p>
 
       <p><strong>5. Shareholder Nationalities:</strong></p>
-      <p>${nationalities || 'Not specified'}</p>
+      <p>${multiline(nationalities || 'Not specified')}</p>
 
       <p><strong>6. Business Model & Revenue:</strong></p>
-      <p>${businessModel}</p>
+      <p>${multiline(businessModel)}</p>
 
       <p><strong>7. Visa Requirements:</strong></p>
-      <p>${visaOption || 'Not specified'}</p>
+      <p>${escapeHtml(visaOption || 'Not specified')}</p>
 
       <hr>
       <p><strong>Next Steps:</strong></p>
@@ -86,35 +131,16 @@ export async function POST(request: NextRequest) {
       </ul>
     `;
 
-    // Send email via SendGrid API
-    const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${SENDGRID_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: TO_EMAILS,
-            subject: emailSubject,
-          },
-        ],
-        from: {
-          email: FROM_EMAIL,
-          name: 'Vietnam Launchpad - Business Setup',
-        },
-        reply_to: {
-          email: email,
-          name: name,
-        },
-        content: [
-          {
-            type: 'text/html',
-            value: emailBody,
-          },
-        ],
-      }),
+    // Send the lead notification. A failure here must be reported to the user.
+    const response = await sendMail({
+      apiKey: SENDGRID_API_KEY,
+      to: TO_EMAILS,
+      from: FROM_EMAIL,
+      fromName: 'Vietnam Launchpad - Business Setup',
+      subject: emailSubject,
+      text: emailText,
+      html: emailBody,
+      replyTo: { email, name },
     });
 
     if (!response.ok) {
@@ -125,8 +151,44 @@ export async function POST(request: NextRequest) {
 
     // Send auto-responder to customer
     const autoResponderSubject = 'Your Business Setup Questionnaire - Vietnam Launchpad';
+    const autoResponderText = [
+      `Thank you for your interest in setting up a business in Vietnam, ${name}!`,
+      '',
+      "We've received your detailed questionnaire and are excited to help you establish your business in Vietnam.",
+      '',
+      'What happens next?',
+      '1. Review (Within 24 hours): Our team will carefully review your business requirements and prepare for your consultation',
+      "2. Free Consultation Call: We'll schedule a 1:1 consultation to discuss your specific needs, answer questions, and provide expert guidance",
+      "3. Custom Quotation: Based on your requirements, we'll provide a detailed quotation and timeline for your business setup",
+      '',
+      'Free 1:1 Consultation Included',
+      "As a business setup client, your initial consultation is completely free. We'll discuss:",
+      '- Optimal company structure for your business',
+      '- Capital planning and recommendations',
+      '- Visa options (investment visa vs. work permit)',
+      '- Timeline and next steps',
+      '- Any questions you have about doing business in Vietnam',
+      '',
+      'Your Submission Summary',
+      `- Proposed Capital: ${capital || 'To be discussed'}`,
+      `- Location: ${location || 'To be determined'}`,
+      `- Timeline: ${timeline || 'Flexible'}`,
+      `- Visa Needs: ${visaOption || 'To be discussed'}`,
+      '',
+      'Need immediate assistance?',
+      `- Email: ${CONTACT_EMAIL_DISPLAY}`,
+      `- WhatsApp: ${PHONE_DISPLAY}`,
+      `- Zalo: ${PHONE_DISPLAY}`,
+      '',
+      'We look forward to helping you launch your business in Vietnam!',
+      '',
+      'Best regards,',
+      'The Vietnam Launchpad Team',
+      '',
+      'Not ready for full business setup? We also offer paid 1:1 consultations at $100/hour for specific questions about tax, accounting, work permits, TRC, and living in Vietnam. Reply to this email if interested.',
+    ].join('\n');
     const autoResponderBody = `
-      <h2>Thank you for your interest in setting up a business in Vietnam, ${name}!</h2>
+      <h2>Thank you for your interest in setting up a business in Vietnam, ${escapeHtml(name)}!</h2>
 
       <p>We've received your detailed questionnaire and are excited to help you establish your business in Vietnam.</p>
 
@@ -151,10 +213,10 @@ export async function POST(request: NextRequest) {
 
       <h3>Your Submission Summary</h3>
       <ul>
-        <li><strong>Proposed Capital:</strong> ${capital || 'To be discussed'}</li>
-        <li><strong>Location:</strong> ${location || 'To be determined'}</li>
-        <li><strong>Timeline:</strong> ${timeline || 'Flexible'}</li>
-        <li><strong>Visa Needs:</strong> ${visaOption || 'To be discussed'}</li>
+        <li><strong>Proposed Capital:</strong> ${escapeHtml(capital || 'To be discussed')}</li>
+        <li><strong>Location:</strong> ${escapeHtml(location || 'To be determined')}</li>
+        <li><strong>Timeline:</strong> ${escapeHtml(timeline || 'Flexible')}</li>
+        <li><strong>Visa Needs:</strong> ${escapeHtml(visaOption || 'To be discussed')}</li>
       </ul>
 
       <h3>Need immediate assistance?</h3>
@@ -175,30 +237,15 @@ export async function POST(request: NextRequest) {
       </p>
     `;
 
-    await fetch('https://api.sendgrid.com/v3/mail/send', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${SENDGRID_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email: email }],
-            subject: autoResponderSubject,
-          },
-        ],
-        from: {
-          email: FROM_EMAIL,
-          name: 'Vietnam Launchpad',
-        },
-        content: [
-          {
-            type: 'text/html',
-            value: autoResponderBody,
-          },
-        ],
-      }),
+    // The auto-reply is best effort: a failure is logged and never fails the request.
+    await sendAutoReply({
+      apiKey: SENDGRID_API_KEY,
+      to: [{ email }],
+      from: FROM_EMAIL,
+      fromName: 'Vietnam Launchpad',
+      subject: autoResponderSubject,
+      text: autoResponderText,
+      html: autoResponderBody,
     });
 
     return NextResponse.json(

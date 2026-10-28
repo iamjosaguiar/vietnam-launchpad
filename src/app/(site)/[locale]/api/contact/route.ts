@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PHONE_DISPLAY } from '@/lib/site';
 import { getLeadRecipients } from '@/lib/lead-recipients';
+import { escapeHtml, leadSubject, sendAutoReply, sendMail } from '@/lib/lead-email';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -12,39 +13,6 @@ function oneLine(value: unknown, max: number): string {
 function block(value: unknown, max: number): string {
   if (typeof value !== 'string') return '';
   return value.replace(/\r/g, '').trim().slice(0, max);
-}
-
-function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
-
-async function sendMail(params: {
-  apiKey: string;
-  to: { email: string }[];
-  from: string;
-  fromName: string;
-  subject: string;
-  html: string;
-  replyTo?: { email: string; name: string };
-}): Promise<Response> {
-  return fetch('https://api.sendgrid.com/v3/mail/send', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${params.apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      personalizations: [{ to: params.to, subject: params.subject }],
-      from: { email: params.from, name: params.fromName },
-      ...(params.replyTo ? { reply_to: params.replyTo } : {}),
-      content: [{ type: 'text/html', value: params.html }],
-    }),
-  });
 }
 
 export async function POST(request: NextRequest) {
@@ -101,7 +69,26 @@ export async function POST(request: NextRequest) {
       message: escapeHtml(message || 'No message provided').replace(/\n/g, '<br>'),
     };
 
-    const emailSubject = `New Lead: ${service} - ${name}`;
+    const submittedAt = new Date().toLocaleString('en-GB', { timeZone: 'Asia/Ho_Chi_Minh' });
+    const emailSubject = leadSubject(service, name);
+    const emailText = [
+      'New Contact Form Submission',
+      '',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone || 'Not provided'}`,
+      `Company: ${company || 'Not provided'}`,
+      `Organization type: ${companyType || 'Not provided'}`,
+      `Investment / budget: ${investmentSize || 'Not specified'}`,
+      `Nationality: ${nationality || 'Not provided'}`,
+      `Service Interest: ${service}`,
+      `Timeline: ${timeline || 'Not specified'}`,
+      '',
+      'Message:',
+      message || 'No message provided',
+      '',
+      `Submitted at: ${submittedAt} ICT`,
+    ].join('\n');
     const emailBody = `
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${safe.name}</p>
@@ -116,7 +103,7 @@ export async function POST(request: NextRequest) {
       <p><strong>Message:</strong></p>
       <p>${safe.message}</p>
       <hr>
-      <p><em>Submitted at: ${new Date().toLocaleString('en-GB', { timeZone: 'Asia/Ho_Chi_Minh' })} ICT</em></p>
+      <p><em>Submitted at: ${submittedAt} ICT</em></p>
     `;
 
     const response = await sendMail({
@@ -125,6 +112,7 @@ export async function POST(request: NextRequest) {
       from: FROM_EMAIL,
       fromName: 'Vietnam Launchpad Contact Form',
       subject: emailSubject,
+      text: emailText,
       html: emailBody,
       replyTo: { email, name },
     });
@@ -139,6 +127,25 @@ export async function POST(request: NextRequest) {
     }
 
     const autoResponderSubject = 'Thank You for Contacting Vietnam Launchpad';
+    const autoResponderText = [
+      `Thank you for reaching out, ${name}!`,
+      '',
+      `We've received your inquiry about ${service} and will respond within 24 hours.`,
+      '',
+      'What happens next?',
+      '1. Our team will review your requirements',
+      "2. We'll send you a detailed response via email",
+      "3. If needed, we'll schedule a free consultation call",
+      '',
+      'Need immediate assistance?',
+      `- WhatsApp: ${PHONE_DISPLAY}`,
+      `- Zalo: ${PHONE_DISPLAY}`,
+      '',
+      "We're excited to help you with your Vietnam journey!",
+      '',
+      'Best regards,',
+      'The Vietnam Launchpad Team',
+    ].join('\n');
     const autoResponderBody = `
       <h2>Thank you for reaching out, ${safe.name}!</h2>
       <p>We've received your inquiry about <strong>${safe.service}</strong> and will respond within 24 hours.</p>
@@ -162,21 +169,15 @@ export async function POST(request: NextRequest) {
       The Vietnam Launchpad Team</p>
     `;
 
-    try {
-      const autoReply = await sendMail({
-        apiKey: SENDGRID_API_KEY,
-        to: [{ email }],
-        from: FROM_EMAIL,
-        fromName: 'Vietnam Launchpad',
-        subject: autoResponderSubject,
-        html: autoResponderBody,
-      });
-      if (!autoReply.ok) {
-        console.error('SendGrid auto-reply error:', autoReply.status, await autoReply.text());
-      }
-    } catch (autoReplyError) {
-      console.error('SendGrid auto-reply failed:', autoReplyError);
-    }
+    await sendAutoReply({
+      apiKey: SENDGRID_API_KEY,
+      to: [{ email }],
+      from: FROM_EMAIL,
+      fromName: 'Vietnam Launchpad',
+      subject: autoResponderSubject,
+      text: autoResponderText,
+      html: autoResponderBody,
+    });
 
     return NextResponse.json(
       { message: 'Form submitted successfully', success: true },
