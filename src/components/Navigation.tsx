@@ -11,6 +11,7 @@ import {
   navLivingLast,
   navServiceGroups,
   navServicesLast,
+  navTopOrder,
   navVisas,
   type NavItem as NavLinkItem,
 } from '@/data/siteNav';
@@ -74,8 +75,8 @@ export default function Navigation() {
   const triggerRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const mobileButtonRef = useRef<HTMLButtonElement>(null);
 
-  // Services first, Enterprise only inside the Services menu.
-  const items: TopItem[] = [
+  // Order comes from navTopOrder in src/data/siteNav.ts. Enterprise stays inside the Services menu.
+  const itemsById: TopItem[] = [
     {
       kind: 'menu',
       id: 'services',
@@ -96,6 +97,7 @@ export default function Navigation() {
     { kind: 'link', id: 'blog', label: t('blog'), href: '/blog' },
     { kind: 'link', id: 'contact', label: t('contact'), href: '/contact' },
   ];
+  const items: TopItem[] = navTopOrder.map((id) => itemsById.find((item) => item.id === id)!);
 
   const closeAll = useCallback(() => {
     setOpenMenu(null);
