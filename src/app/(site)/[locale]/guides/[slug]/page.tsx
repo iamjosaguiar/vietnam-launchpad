@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const baseUrl = 'https://www.vietnamlaunchpad.com';
 
   return {
-    title: `${guide.title} | Vietnam Launchpad`,
-    description: guide.excerpt,
+    title: guide.metaTitle ? { absolute: guide.metaTitle } : `${guide.title} | Vietnam Launchpad`,
+    description: guide.metaDescription ?? guide.excerpt,
     keywords: [guide.category, 'Vietnam', 'expat', 'guide', 'living in Vietnam'],
     alternates: buildAlternates(`/guides/${slug}`),
     openGraph: {
@@ -107,7 +107,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       {
         '@type': 'ListItem',
         position: 3,
-        name: guide.title,
+        name: guide.breadcrumbName ?? guide.title,
         item: `${baseUrl}/guides/${guide.slug}`,
       },
     ],

@@ -3,11 +3,30 @@
 import Image from 'next/image';
 import { Link } from '@/i18n/config';
 import { PHONE_DISPLAY, PHONE_TEL } from '@/lib/site';
+import { footerTagline, footerColumns, footerCta, footerLegal, type NavItem } from '@/data/siteNav';
 
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const renderItem = (item: NavItem) => (
+    <li key={item.href}>
+      {item.href === '/sitemap' ? (
+        <a href={item.href} className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+          {item.name}
+        </a>
+      ) : (
+        <Link
+          href={item.href}
+          className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+          onClick={scrollToTop}
+        >
+          {item.name}
+        </Link>
+      )}
+    </li>
+  );
 
   return (
     <footer className="relative bg-stone-950 text-white overflow-hidden pb-24 md:pb-0">
@@ -23,9 +42,9 @@ export default function Footer() {
       />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        {/* Main Footer Content - 4 Columns */}
+        {/* Main Footer Content */}
         <div className="py-16 md:py-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
             {/* Column 1: Brand */}
             <div>
               <div className="mb-6">
@@ -38,7 +57,7 @@ export default function Footer() {
                 />
               </div>
               <p className="text-white/35 text-sm leading-relaxed mb-6">
-                Vietnam's premier market-entry and compliance firm for founders, investors, and executives.
+                {footerTagline}
               </p>
               <div className="space-y-2 text-sm text-gray-400">
                 <div className="flex items-center gap-2">
@@ -55,128 +74,33 @@ export default function Footer() {
                   <a href={PHONE_TEL} className="hover:text-primary-400 transition-colors">{PHONE_DISPLAY}</a>
                 </div>
               </div>
+              <div className="mt-8">
+                <h3 className="text-sm font-semibold text-white mb-2">{footerCta.heading}</h3>
+                <p className="text-gray-400 text-sm mb-4 leading-relaxed">{footerCta.text}</p>
+                <Link
+                  href={footerCta.href}
+                  className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300"
+                  onClick={scrollToTop}
+                >
+                  {footerCta.button}
+                </Link>
+              </div>
             </div>
 
-            {/* Column 2: Services */}
-            <div>
-              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
-                Services
-              </h3>
-              <ul className="space-y-3">
-                {[
-                  { name: 'TRC Applications', href: '/services/trc-application' },
-                  { name: 'Work Permits', href: '/services/work-permit' },
-                  { name: 'eVisa & Entry Visa', href: '/services/evisa' },
-                  { name: 'Company Setup', href: '/services/company-setup' },
-                  { name: 'Employer of Record (EOR)', href: '/services/employer-of-record' },
-                  { name: 'Accounting & Bookkeeping', href: '/services/accounting-bookkeeping' },
-                  { name: 'Tax Filing (PIT)', href: '/services/tax-filing' },
-                  { name: 'Permanent Residency', href: '/services/permanent-residency' },
-                  { name: 'All Services', href: '/services' }
-                ].map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
-                      onClick={scrollToTop}
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
+            {footerColumns.map((col) => (
+              <div key={col.title}>
+                <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
+                  {col.title}
+                </h3>
+                {col.groups.map((group) => (
+                  <div key={group.title} className="mb-5">
+                    <p className="text-xs font-semibold text-white/60 mb-3">{group.title}</p>
+                    <ul className="space-y-3">{group.items.map(renderItem)}</ul>
+                  </div>
                 ))}
-              </ul>
-            </div>
-
-            {/* Column 3: Guides */}
-            <div>
-              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
-                Guides
-              </h3>
-              <ul className="space-y-3">
-                {[
-                  { name: 'Visa by Nationality', href: '/visa' },
-                  { name: 'Currency Converter', href: '/convert' },
-                  { name: 'Salary Guide by Role', href: '/salary' },
-                  { name: 'Tax Treaties', href: '/tax-treaty' },
-                  { name: 'TRC Complete Guide', href: '/guides/trc-vietnam' },
-                  { name: 'Cost of Living', href: '/guides/cost-of-living' },
-                  { name: 'EFTA-Vietnam Free Trade Agreement', href: '/guides/efta-vietnam-free-trade-agreement' },
-                  { name: 'Best eSIM for Vietnam', href: '/guides/best-esim-vietnam' },
-                  { name: 'USD to VND Exchange Rate', href: '/vietnam-exchange-rates' },
-                  { name: 'Vietnam Statistics & Data', href: '/vietnam-statistics' },
-                  { name: 'Compliance Calendar', href: '/vietnam-compliance-calendar' },
-                  { name: 'Salary Calculator', href: '/tools/salary-calculator' },
-                  { name: 'Work Permit Checker', href: '/tools/work-permit-checker' },
-                  { name: 'All Guides', href: '/guides' }
-                ].map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
-                      onClick={scrollToTop}
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 4: Company */}
-            <div>
-              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
-                Company
-              </h3>
-              <ul className="space-y-3">
-                {[
-                  { name: 'About Us', href: '/about' },
-                  { name: 'All Services', href: '/services' },
-                  { name: 'Blog', href: '/blog' },
-                  { name: 'FAQ', href: '/faq' },
-                  { name: 'Contact', href: '/contact' },
-                ].map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
-                      onClick={scrollToTop}
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-                <li>
-                  <a href="/sitemap" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
-                    Sitemap
-                  </a>
-                </li>
-                <li>
-                  <a href="/feed.xml" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
-                    RSS Feed
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 4: Get Started */}
-            <div>
-              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-6">
-                Get Started
-              </h3>
-              <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-                Ready to start your Vietnam journey? Book a free consultation today.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/25"
-                onClick={scrollToTop}
-              >
-                Free Consultation
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
+                {col.items.length > 0 && <ul className="space-y-3">{col.items.map(renderItem)}</ul>}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -206,11 +130,10 @@ export default function Footer() {
           </div>
 
           {/* Legal Disclaimers */}
-          <div className="mt-6 pt-6 border-t border-gray-800/50 text-xs text-gray-600 max-w-4xl">
-            <p>
-              All company registration and legal services are performed in partnership with registered Vietnamese Law Offices.
-              Information on this website is subject to change. Please contact us to confirm current requirements.
-            </p>
+          <div className="mt-6 pt-6 border-t border-gray-800/50 text-xs text-gray-600 max-w-4xl space-y-2">
+            {footerLegal.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
           </div>
         </div>
       </div>

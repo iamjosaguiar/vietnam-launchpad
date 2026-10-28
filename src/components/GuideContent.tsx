@@ -64,6 +64,7 @@ interface Guide {
   ctaLinkText: string;
   ctaSecondaryLink?: string;
   ctaSecondaryText?: string;
+  inlineCtas?: boolean;
 }
 
 interface TocItem {
@@ -146,7 +147,7 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
   const [tocOpen, setTocOpen] = useState(false);
 
   // Split content at --- section dividers and inject CTAs at ~33% and ~65%
-  const sections = guide.content.split(/\n{0,2}---\n{0,2}/);
+  const sections = guide.content.split(/\n+---\n+/);
   const total = sections.length;
   const cta1At = Math.max(1, Math.floor(total * 0.33));
   const cta2At = Math.max(cta1At + 1, Math.floor(total * 0.65));
@@ -209,7 +210,9 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
               {guide.title}
             </h1>
 
-            <p className="hero-subtitle text-lg text-white/50 mb-4 font-medium">{guide.subtitle}</p>
+            {guide.subtitle && (
+              <p className="hero-subtitle text-lg text-white/50 mb-4 font-medium">{guide.subtitle}</p>
+            )}
             <p className="text-xl text-white/60 mb-8">{guide.excerpt}</p>
           </div>
         </div>
@@ -298,8 +301,8 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
                       className={proseClasses}
                       components={mdComponents(slugify)}
                     />
-                    {i === cta1At - 1 && <SoftCta />}
-                    {i === cta2At - 1 && (
+                    {guide.inlineCtas !== false && i === cta1At - 1 && <SoftCta />}
+                    {guide.inlineCtas !== false && i === cta2At - 1 && (
                       <ServiceCta
                         title={guide.ctaTitle}
                         body={guide.ctaBody}
