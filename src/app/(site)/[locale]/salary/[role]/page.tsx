@@ -32,11 +32,11 @@ export async function generateMetadata({
 
   return {
     title: `${salaryRole.title} Salary in Vietnam 2026 | Vietnam Launchpad`,
-    description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}–${localMax} VND/month, expat packages $${expatMin}–$${expatMax}/month USD. Work permit requirements and top employers.`,
+    description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}-${localMax} VND/month, expat packages $${expatMin}-$${expatMax}/month USD. Work permit requirements and top employers.`,
     alternates: buildAlternates(`/salary/${salaryRole.slug}`),
     openGraph: {
       title: `${salaryRole.title} Salary in Vietnam 2026`,
-      description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}–${localMax} VND/month, expat packages $${expatMin}–$${expatMax}/month USD.`,
+      description: `${salaryRole.title} salaries in Vietnam: local market rates ${localMin}-${localMax} VND/month, expat packages $${expatMin}-$${expatMax}/month USD.`,
       type: 'article',
       images: ogImages,
     },
@@ -116,7 +116,7 @@ export default async function SalaryRolePage({
 
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white py-28 overflow-hidden">
@@ -202,7 +202,7 @@ export default async function SalaryRolePage({
                       <p className="text-xs text-gray-400 mb-1">Estimated range (VND/month)</p>
                       <p className="text-3xl font-display font-bold text-gray-900">
                         {formatVndShort(salaryRole.localMonthlyVnd.min)}
-                        <span className="text-gray-400 mx-2">–</span>
+                        <span className="text-gray-400 mx-2">-</span>
                         {formatVndShort(salaryRole.localMonthlyVnd.max)}
                       </p>
                       <p className="text-sm text-gray-500 mt-1">₫ per month <span className="text-amber-600 font-medium">(indicative)</span></p>
@@ -210,7 +210,7 @@ export default async function SalaryRolePage({
 
                     <div className="pt-4 border-t border-gray-200">
                       <p className="text-xs text-gray-500">
-                        Full range: ₫{formatVndFull(salaryRole.localMonthlyVnd.min)} – ₫{formatVndFull(salaryRole.localMonthlyVnd.max)} / month
+                        Full range: ₫{formatVndFull(salaryRole.localMonthlyVnd.min)} - ₫{formatVndFull(salaryRole.localMonthlyVnd.max)} / month
                       </p>
                     </div>
                   </div>
@@ -231,7 +231,7 @@ export default async function SalaryRolePage({
                       <p className="text-xs text-primary-500 mb-1">Estimated range (USD/month)</p>
                       <p className="text-3xl font-display font-bold text-primary-900">
                         ${salaryRole.expatMonthlyUsd.min.toLocaleString()}
-                        <span className="text-primary-400 mx-2">–</span>
+                        <span className="text-primary-400 mx-2">-</span>
                         ${salaryRole.expatMonthlyUsd.max.toLocaleString()}
                       </p>
                       <p className="text-sm text-primary-600 mt-1">USD per month <span className="text-amber-600 font-medium">(indicative)</span></p>
@@ -247,7 +247,7 @@ export default async function SalaryRolePage({
                 </div>
 
                 <p className="text-xs text-gray-400 mt-4 text-center">
-                  Indicative market estimates for 2024–2026 based on publicly available job postings and industry surveys. Ranges vary by experience, company size, and location. Not a substitute for direct employer negotiation or official labour market statistics.
+                  Indicative market estimates for 2024-2026 based on publicly available job postings and industry surveys. Ranges vary by experience, company size, and location. Not a substitute for direct employer negotiation or official labour market statistics.
                 </p>
               </div>
             </div>

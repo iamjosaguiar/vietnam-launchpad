@@ -35,7 +35,7 @@ export default function TaxTreatyListPage() {
       "Vietnam's network of double taxation agreements (DTAs) with countries worldwide.",
     hasPart: TAX_TREATIES.map((t) => ({
       '@type': 'WebPage',
-      name: `Vietnam–${t.country} Double Tax Agreement`,
+      name: `Vietnam-${t.country} Double Tax Agreement`,
       url: `https://www.vietnamlaunchpad.com/tax-treaty/${t.slug}`,
     })),
   };
@@ -51,7 +51,7 @@ export default function TaxTreatyListPage() {
       />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white py-32 overflow-hidden">

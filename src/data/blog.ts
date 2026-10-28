@@ -21,8 +21,6 @@ export const blogPosts: Record<string, BlogPost> = {
     readTime: '5 min read',
     category: 'Living in Vietnam',
     content: `
-# Why Are Vietnamese Houses So Thin and Tall? The Tube House Explained
-
 Walk down any street in Hanoi's Old Quarter or through a Ho Chi Minh City neighbourhood and the architecture hits you immediately. Buildings just 3 or 4 metres wide, stacked five, six, sometimes seven storeys high, pressed shoulder-to-shoulder like books on a shelf. Bright tiles, balconies, spiral staircases visible through open windows.
 
 This is the **nha ong** - literally "tube house" or "tunnel house" - and it is one of the most distinctive and practical architectural forms in the world. Its shape is not aesthetic coincidence. It has four deeply practical origins.
@@ -95,8 +93,6 @@ The tube house is Vietnam's most honest piece of architecture: shaped entirely b
     readTime: '8 min read',
     category: 'Living in Vietnam',
     content: `
-# How to Convert Your Driver's License in Vietnam: Complete Guide 2026
-
 Driving in Vietnam can be an incredible way to explore this beautiful country - from the winding mountain roads of Ha Giang to the coastal highways of Central Vietnam. But before you hop on a motorbike or rent a car, you need to understand the legal requirements for driving as a foreigner.
 
 This guide covers everything you need to know about driving legally in Vietnam, whether you're a short-term visitor or a long-term resident.
@@ -325,8 +321,6 @@ Don't risk fines, insurance issues, or legal complications. Get your driver's li
     readTime: '10 min read',
     category: 'Work Permits',
     content: `
-# How to Legally Teach English in Vietnam: Complete Guide for 2026
-
 Vietnam has become one of the most popular destinations for English teachers in Southeast Asia. With a booming economy and strong emphasis on English education, there's high demand for qualified teachers. However, teaching legally in Vietnam requires proper documentation and understanding of local regulations.
 
 ## Legal Requirements Overview
@@ -589,8 +583,6 @@ Ready to start your teaching journey in Vietnam? [Contact Vietnam Launchpad](/co
     readTime: '7 min read',
     category: 'Finance & Tax',
     content: `
-# Vietnam's New PIT Law 2026: What Changed and What It Means for Expats
-
 Vietnam's personal income tax rules changed significantly at the start of 2026. **Law No. 109/2025/QH15**, passed in late 2025, introduced the country's most substantial PIT reforms since 2012. If you are living and working in Vietnam, here is what you need to know.
 
 ## The Core Change: Raised Deduction Thresholds
@@ -659,8 +651,6 @@ Our consultants can walk through your specific situation and help you understand
     readTime: '5 min read',
     category: 'Visas & Immigration',
     content: `
-# Vietnam Golden Visa 2026: What We Know (And What We Don't)
-
 The Vietnam Golden Visa has been circulating in expat discussions for over a year. As of April 2026, the honest answer is: **it does not yet exist as an official, accessible programme**.
 
 Here is the full picture.
@@ -741,8 +731,6 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
     readTime: '6 min read',
     category: 'Visas & Immigration',
     content: `
-# Vietnam Visa Overstay: Fines, Consequences, and What To Do
-
 Visa overstays happen more often than people expect. A missed flight, a hospital stay, a bureaucratic delay in a paperwork chain - suddenly you are past your permitted date. Vietnam does not treat this lightly, but the consequences are tiered and proportionate to the length of the overstay. Understanding what to expect - and acting quickly - makes a significant difference.
 
 > **Disclaimer:** Fine amounts and procedures are set by Vietnamese government decree and are subject to change. The figures in this article reflect Decree 282/2025/ND-CP (effective 15 December 2025), which replaced the earlier Decree 144/2021. Always verify current amounts with the Vietnam Immigration Department (Cuc Quan ly Xuat nhap canh) or a qualified immigration advisor before making decisions.
@@ -839,8 +827,6 @@ We handle TRC applications for investors, employed expats, and foreign spouses o
     readTime: '6 min read',
     category: 'Visas & Immigration',
     content: `
-# Can You Work on a Marriage TRC in Vietnam?
-
 This is one of the most common questions we get from foreign spouses who have just received their Temporary Residence Card based on marriage to a Vietnamese citizen. The short answer: **a marriage TRC gives you the right to live in Vietnam - not the automatic right to work.**
 
 Here is the full picture.
@@ -913,7 +899,7 @@ If you are not covered by an exemption, the process is largely the same as for a
    - Health certificate from a Vietnamese hospital
    - CV and relevant professional qualifications
 3. **Employer submits application** to the local MOLISA office
-4. **Processing time:** Approximately 10–20 working days
+4. **Processing time:** Approximately 10-20 working days
 5. **Work permit issued** - valid for up to 2 years, tied to the specific employer
 
 **Does having a marriage TRC speed up the work permit?**
@@ -969,8 +955,6 @@ Every situation is slightly different. If you are unsure whether your planned wo
     readTime: '10 min read',
     category: 'Business & Company Setup',
     content: `
-# Vietnam Business Registration Types: LLC, JSC, Rep Office and What Foreigners Can Own
-
 Vietnam has six main business structures available to foreign investors. Each comes with different ownership rules, liability exposure, capital requirements, and administrative burden. Choosing the wrong structure early can mean costly restructuring later, so it pays to understand your options before you start.
 
 This guide covers all six structures under the Enterprise Law 2020 and Investment Law 2020 (as updated through 2024), with a plain-English explanation of what each one means in practice.
@@ -1145,8 +1129,6 @@ Our [company setup service](/services/company-setup) covers everything from stru
     readTime: '8 min read',
     category: 'Finance & Money',
     content: `
-# Banking in Vietnam for Expats: What You Can Do on Each Visa Type
-
 Can you open a Vietnamese bank account on a tourist visa? What about sending money home? Your visa type determines almost everything about your banking options in Vietnam. Here is a complete breakdown.
 
 ## Why Your Visa Type Matters for Banking
@@ -1283,8 +1265,6 @@ Have questions about your specific situation? [Contact us](/contact) and we can 
     readTime: '7 min read',
     category: 'Visas & Immigration',
     content: `
-# Vietnam Work Permit Exemptions 2026: Who Is Exempt Under Decree 393/2026/ND-CP
-
 Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP on 5 December 2026. It lists 18 cases where a foreign worker does not need a work permit in Vietnam. Until that date, the current rules stay in force.
 
 This post covers who is exempt, how the company owner and short-term rules work, what paperwork exempt workers still file, and what is new compared with Decree 219. You can also run your own case through our [work permit checker](/tools/work-permit-checker).

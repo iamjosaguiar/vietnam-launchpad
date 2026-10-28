@@ -249,7 +249,7 @@ export default async function VisaCountryPage({
       />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           <VisaHero
             breadcrumb={data.country}

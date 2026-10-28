@@ -107,7 +107,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
           <ServiceDetailContent service={service} />
         </main>
         <Footer />

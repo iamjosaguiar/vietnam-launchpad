@@ -2,7 +2,7 @@
 export const PHONE_DISPLAY = '+84 39 326 6105';
 export const PHONE_E164 = '+84393266105';
 export const PHONE_TEL = `tel:${PHONE_E164}`;
-export const PHONE_WHATSAPP = `https://wa.me/${PHONE_E164}`;
+export const PHONE_WHATSAPP = `https://wa.me/${PHONE_E164.replace('+', '')}`;
 
 /** Public contact emails, shown on the site and in confirmation emails. */
 export const CONTACT_EMAILS = ['voyennhi187@gmail.com', 'jos@profitgeeks.com.au'] as const;

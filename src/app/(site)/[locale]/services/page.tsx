@@ -292,7 +292,7 @@ export default function ServicesPage() {
       />
     <div className="min-h-screen">
       <Navigation />
-      <main>
+      <main id="main" tabIndex={-1}>
 
         {/* Hero */}
         <section className="bg-hero-wash text-ink pt-[calc(var(--header-h)+32px)] pb-12 nav:pt-[calc(var(--header-h)+64px)] nav:pb-16">

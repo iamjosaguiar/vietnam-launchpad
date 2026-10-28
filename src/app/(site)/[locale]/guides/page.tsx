@@ -94,7 +94,7 @@ export default function GuidesPage() {
       />
     <div className="min-h-screen">
       <Navigation />
-      <main>
+      <main id="main" tabIndex={-1}>
 
         {/* Hero */}
         <section className="bg-hero-wash py-12 nav:py-16">

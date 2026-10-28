@@ -98,7 +98,7 @@ export default function ContactPage() {
       />
       <div className="min-h-screen bg-ivory">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section

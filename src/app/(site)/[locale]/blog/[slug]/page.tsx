@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
           <BlogPostContent post={post} />
         </main>
         <Footer />

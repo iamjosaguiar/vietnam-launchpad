@@ -93,7 +93,7 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }} />
       <Navigation />
-      <main className="min-h-screen bg-paper">
+      <main id="main" tabIndex={-1} className="min-h-screen bg-paper">
         <HeroSection passportOptions={passportOptions} />
 
         {/* Section 1: where do you want to start */}
