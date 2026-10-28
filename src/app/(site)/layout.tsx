@@ -213,6 +213,12 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
         )}
       </head>
       <body>
+        <a
+          href="#main"
+          className="fixed left-2 top-2 z-[100] inline-flex min-h-[44px] -translate-y-[300%] items-center rounded-input bg-navy px-5 font-body font-bold text-white focus:translate-y-0"
+        >
+          Skip to main content
+        </a>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <MobileStickyBar />

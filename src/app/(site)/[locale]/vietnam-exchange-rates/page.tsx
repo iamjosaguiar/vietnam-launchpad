@@ -151,7 +151,7 @@ export default async function VietnamExchangeRatesPage() {
       />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">

@@ -152,7 +152,7 @@ export const TAX_TREATIES: TaxTreaty[] = [
     royaltiesRate: 10,
     tieBreakerRules: 'Tiebreaker follows permanent home, then centre of vital interests, then habitual abode, then nationality.',
     keyBenefit: 'One of Vietnam\'s most practically important treaties, protecting German companies and expats with a 10% cap on withholding taxes and clear PE rules.',
-    notes: 'Germany is a major investor in Vietnam, particularly in manufacturing and industrial sectors. The Germany-Vietnam DTA is regularly invoked for dividend repatriation from German-invested companies. German expats on long-term assignments in Vietnam should seek advice on whether they remain German tax residents — if so, double taxation relief under the treaty\'s exemption or credit method applies.',
+    notes: 'Germany is a major investor in Vietnam, particularly in manufacturing and industrial sectors. The Germany-Vietnam DTA is regularly invoked for dividend repatriation from German-invested companies. German expats on long-term assignments in Vietnam should seek advice on whether they remain German tax residents - if so, double taxation relief under the treaty\'s exemption or credit method applies.',
   },
   {
     slug: 'hungary',
@@ -249,7 +249,7 @@ export const TAX_TREATIES: TaxTreaty[] = [
     interestRate: 10,
     royaltiesRate: 5,
     tieBreakerRules: 'Determined by permanent home, vital interests, habitual abode, then nationality.',
-    keyBenefit: 'Features a low 5% royalties rate — highly beneficial for Korean technology companies licensing IP to Vietnamese subsidiaries. Korea is Vietnam\'s largest single-country investor.',
+    keyBenefit: 'Features a low 5% royalties rate - highly beneficial for Korean technology companies licensing IP to Vietnamese subsidiaries. Korea is Vietnam\'s largest single-country investor.',
     notes: 'South Korea is Vietnam\'s largest foreign investor, led by Samsung, LG, and Hyundai. The DTA is critically important for these businesses. The 5% royalties rate is among the lowest in Vietnam\'s treaty network, reflecting the significant technology transfer between Korean parent companies and Vietnamese subsidiaries. Korean expats in Vietnam number in the tens of thousands, particularly in Hanoi, Binh Duong, and Ho Chi Minh City.',
   },
   {
@@ -361,7 +361,7 @@ export const TAX_TREATIES: TaxTreaty[] = [
     interestRate: 10,
     royaltiesRate: 5,
     tieBreakerRules: 'Determined by permanent home, then vital interests, habitual abode, then nationality.',
-    keyBenefit: 'Features low 5% rates on both dividends and royalties — one of the most favorable treaty terms in Vietnam\'s DTA network, reflecting Singapore\'s role as the primary investment hub for Vietnam.',
+    keyBenefit: 'Features low 5% rates on both dividends and royalties - one of the most favorable treaty terms in Vietnam\'s DTA network, reflecting Singapore\'s role as the primary investment hub for Vietnam.',
     notes: 'Singapore is consistently one of the top investors in Vietnam, and this DTA is among the most actively used. The low 5% dividend and royalties rates make Singapore-Vietnam corporate structures very tax-efficient. Many multinational companies hold their Vietnamese operations through Singaporean holding companies specifically to access these treaty benefits. Singaporean expats in Vietnam are also numerous, particularly in HCMC.',
   },
   {
@@ -376,7 +376,7 @@ export const TAX_TREATIES: TaxTreaty[] = [
     royaltiesRate: 10,
     tieBreakerRules: 'Tiebreaker proceeds through permanent home, vital interests, habitual abode, then nationality.',
     keyBenefit: 'Provides double taxation protection for Spanish companies and expats in Vietnam, supporting growing Spain-Vietnam business ties.',
-    notes: 'Spain concluded its DTA with Vietnam in 2005, relatively later than most European partners. Spanish companies and Spanish nationals working in Vietnam are covered. Spain uses the exemption method for relieving double taxation in most cases, meaning Vietnam-source income exempted in Spain — the DTA article on methods of relief is important for Spanish expats to understand.',
+    notes: 'Spain concluded its DTA with Vietnam in 2005, relatively later than most European partners. Spanish companies and Spanish nationals working in Vietnam are covered. Spain uses the exemption method for relieving double taxation in most cases, meaning Vietnam-source income exempted in Spain - the DTA article on methods of relief is important for Spanish expats to understand.',
   },
   {
     slug: 'sweden',
@@ -626,7 +626,7 @@ export const TAX_TREATIES: TaxTreaty[] = [
     dividendRate: null,
     interestRate: null,
     royaltiesRate: null,
-    tieBreakerRules: 'No treaty — US persons are taxed on worldwide income under US rules regardless of Vietnam tax paid.',
+    tieBreakerRules: 'No treaty - US persons are taxed on worldwide income under US rules regardless of Vietnam tax paid.',
     keyBenefit: 'No treaty exists. US expats in Vietnam should seek advice on FBAR, FATCA, and Foreign Tax Credit planning.',
     notes: 'The US and Vietnam do not have a double taxation agreement. This means US citizens and green card holders must report worldwide income to the IRS while also paying Vietnam PIT. The Foreign Tax Credit (Form 1116) can offset some double taxation, but professional US tax advice is essential for Americans working in Vietnam.',
   },

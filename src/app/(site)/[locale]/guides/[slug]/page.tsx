@@ -157,7 +157,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       )}
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
           <GuideContent guide={guide} topWidget={topWidget} />
         </main>
         <Footer />

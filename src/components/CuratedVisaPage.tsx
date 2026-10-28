@@ -150,7 +150,7 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           <VisaHero
             breadcrumb={country}

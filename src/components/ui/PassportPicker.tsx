@@ -7,6 +7,8 @@ import { Link, useRouter } from '@/i18n/config';
 import Button from './Button';
 import Combobox from './Combobox';
 
+const allLinkClass = 'inline-flex min-h-[44px] items-center font-bold text-navy underline underline-offset-[3px]';
+
 export interface PassportOption {
   slug: string;
   name: string;
@@ -15,9 +17,9 @@ export interface PassportOption {
 /** Hidden search aliases per visa slug; never displayed. */
 const KEYWORDS: Record<string, string[]> = {
   'united-states': ['usa', 'us', 'u.s.', 'u.s.a.', 'america', 'united states of america'],
-  'united-kingdom': ['uk', 'u.k.', 'britain', 'great britain', 'gb', 'england', 'scotland', 'wales', 'northern ireland'],
+  'united-kingdom': ['uk', 'u.k.', 'britain', 'great britain', 'gb', 'england', 'scotland', 'wales'],
   uae: ['uae', 'emirates', 'dubai', 'abu dhabi', 'united arab emirates'],
-  'south-korea': ['korea', 'republic of korea', 'rok'],
+  'south-korea': ['rok'],
   'czech-republic': ['czechia'],
   myanmar: ['burma'],
   netherlands: ['holland', 'the netherlands'],
@@ -76,6 +78,20 @@ export default function PassportPicker({
         onChange={setSlug}
         className="mb-4"
       />
+      <noscript>
+        <details>
+          <summary className="flex min-h-[44px] cursor-pointer items-center font-bold text-navy">{label}</summary>
+          <ul className="m-0 grid list-none gap-0 p-0 sm:grid-cols-2">
+            {options.map((option) => (
+              <li key={option.slug}>
+                <Link href={`/visa/${option.slug}`} className="inline-flex min-h-[44px] items-center text-navy underline underline-offset-[3px]">
+                  {option.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </noscript>
       <div className="grid gap-3">
         <Button type="submit" block icon="arrow">
           {submitLabel}
@@ -88,9 +104,15 @@ export default function PassportPicker({
       </div>
       {allLink && (
         <p className="mb-0 mt-3 text-[0.9rem] text-muted">
-          <Link href={allLink.href} className="inline-flex min-h-[44px] items-center font-bold text-navy underline underline-offset-[3px]">
-            {allLink.label}
-          </Link>
+          {allLink.href.startsWith('#') ? (
+            <a href={allLink.href} className={allLinkClass}>
+              {allLink.label}
+            </a>
+          ) : (
+            <Link href={allLink.href} className={allLinkClass}>
+              {allLink.label}
+            </Link>
+          )}
         </p>
       )}
     </form>
