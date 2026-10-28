@@ -2,9 +2,17 @@ import { Link } from '@/i18n/config';
 
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
-import AnimateOnScroll from '@/components/AnimateOnScroll';
 import HeroSection from '@/components/HeroSection';
+import Accordion from '@/components/ui/Accordion';
+import Button from '@/components/ui/Button';
+import Card from '@/components/ui/Card';
+import ClosingBand from '@/components/ui/ClosingBand';
+import Icon, { type IconName } from '@/components/ui/Icon';
+import Section, { SectionHeader } from '@/components/ui/Section';
+import ServiceGroups from '@/components/ui/ServiceGroups';
+import StepCard from '@/components/ui/StepCard';
 import { homeCopy as c } from '@/data/homeCopy';
+import { VISA_COUNTRIES } from '@/data/visas';
 import { PHONE_E164 } from '@/lib/site';
 import { buildAlternates } from '@/lib/seo';
 import type { Metadata } from 'next';
@@ -38,182 +46,171 @@ const homepageSchema = [
   },
 ];
 
-const h2Class = 'text-3xl md:text-4xl font-display font-bold text-stone-900 mb-6';
-const textClass = 'text-lg text-stone-600 leading-relaxed mb-5';
-const chipClass =
-  'inline-flex items-center rounded-full border border-stone-200 bg-white px-5 py-2.5 text-sm font-semibold text-primary-700 hover:border-primary-300 hover:bg-primary-50 transition-colors';
+const passportOptions = VISA_COUNTRIES.map((country) => ({ slug: country.slug, name: country.country })).sort((a, b) =>
+  a.name.localeCompare(b.name)
+);
 
-function LinkChips({ links }: { links: readonly { readonly name: string; readonly href: string }[] }) {
+/** One icon per start card, in the order of c.s1.cards. */
+const startIcons: IconName[] = ['passport', 'home', 'calendar'];
+
+type CopyLink = { readonly name: string; readonly href: string };
+
+/** Hairline separated rows with an arrow, for short link lists inside cards. */
+function LinkRows({ links }: { links: readonly CopyLink[] }) {
   return (
-    <div className="flex flex-wrap gap-3 mt-6">
-      {links.map((l) => (
-        <Link key={l.href + l.name} href={l.href} className={chipClass}>
-          {l.name}
-        </Link>
+    <ul className="m-0 list-none p-0">
+      {links.map((link) => (
+        <li key={link.href + link.name} className="border-t border-hairline">
+          <Link
+            href={link.href}
+            className="group flex min-h-[48px] items-center justify-between gap-3 py-2 font-bold text-ink no-underline"
+          >
+            <span className="group-hover:underline">{link.name}</span>
+            <Icon name="arrow" className="h-4 w-4 flex-none text-navy" />
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
+
+function Paragraphs({ text, className = 'mb-4 max-w-measure text-muted' }: { text: readonly string[]; className?: string }) {
+  return (
+    <>
+      {text.map((p) => (
+        <p key={p} className={className}>
+          {p}
+        </p>
+      ))}
+    </>
+  );
+}
+
+const cardH2 = 'mb-3 font-display text-step-2 font-semibold text-ink nav:text-step-3';
 
 export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }} />
-      <main className="min-h-screen">
-        <Navigation />
+      <Navigation />
+      <main className="min-h-screen bg-paper">
+        <HeroSection passportOptions={passportOptions} />
 
-        <HeroSection />
-
-        {/* Section 1: where to start */}
-        <section className="py-20 md:py-28 bg-ivory">
-          <div className="container mx-auto px-4 md:px-8">
-            <AnimateOnScroll className="max-w-3xl mx-auto text-center mb-14">
-              <h2 className={h2Class}>{c.s1.h2}</h2>
-              <p className="text-xl text-stone-500 leading-relaxed">{c.s1.intro}</p>
-            </AnimateOnScroll>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-              {c.s1.cards.map((card, index) => (
-                <AnimateOnScroll key={card.Link} delay={index * 150}>
-                  <Link
-                    href={card.Link}
-                    className="group bg-white rounded-3xl p-10 transition-all duration-500 hover:shadow-elevation-3 border border-stone-100 hover:border-primary-100 block h-full"
-                  >
-                    <h3 className="text-2xl font-display font-bold text-stone-900 mb-4 group-hover:text-primary-800 transition-colors">
-                      {card.Title}
-                    </h3>
-                    <p className="text-stone-500 mb-8 leading-relaxed text-base">{card.Text}</p>
-                    <span className="text-primary-600 font-semibold text-sm">{card.Button}</span>
-                  </Link>
-                </AnimateOnScroll>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Section 1: where do you want to start */}
+        <Section labelledBy="home-start">
+          <SectionHeader id="home-start" title={c.s1.h2} intro={<p className="m-0">{c.s1.intro}</p>} />
+          <ul className="m-0 grid list-none gap-4 p-0 nav:grid-cols-3 nav:gap-6">
+            {c.s1.cards.map((card, index) => (
+              <StepCard key={card.Link} title={card.Title} text={card.Text} icon={startIcons[index % startIcons.length]}>
+                <Button href={card.Link} variant="secondary" size="sm" icon="arrow">
+                  {card.Button}
+                </Button>
+              </StepCard>
+            ))}
+          </ul>
+        </Section>
 
         {/* Section 2: visas */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 className={h2Class}>{c.s2.h2}</h2>
-            {c.s2.text.map((p) => (
-              <p key={p} className={textClass}>{p}</p>
+        <Section labelledBy="home-visas" tone="white" bordered>
+          <SectionHeader
+            id="home-visas"
+            title={c.s2.h2}
+            intro={<Paragraphs text={c.s2.text} className="mb-4 last:mb-0" />}
+          />
+          <ul className="m-0 grid list-none gap-3 p-0 md:grid-cols-3">
+            {c.s2.popular.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="flex min-h-[64px] items-center justify-between gap-3 rounded-card border border-hairline bg-white px-4 py-3 font-bold text-ink no-underline hover:border-navy"
+                >
+                  <span className="flex items-center gap-3">
+                    <Icon name="passport" className="h-5 w-5 flex-none text-navy" />
+                    {link.name}
+                  </span>
+                  <Icon name="arrow" className="h-4 w-4 flex-none text-navy" />
+                </Link>
+              </li>
             ))}
-            <LinkChips links={c.s2.popular} />
-            <LinkChips links={c.s2.links} />
-          </div>
-        </section>
-
-        {/* Section 3: living */}
-        <section className="py-16 md:py-20 bg-ivory">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 className={h2Class}>{c.s3.h2}</h2>
-            {c.s3.text.map((p) => (
-              <p key={p} className={textClass}>{p}</p>
+          </ul>
+          <ul className="m-0 mt-4 flex list-none flex-wrap gap-x-6 p-0">
+            {c.s2.links.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="inline-flex min-h-[44px] items-center gap-2 font-bold text-navy underline underline-offset-[3px]"
+                >
+                  {link.name}
+                </Link>
+              </li>
             ))}
-            <LinkChips links={c.s3.links} />
-          </div>
-        </section>
+          </ul>
+        </Section>
 
-        {/* Section 4: staying longer */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 className={h2Class}>{c.s4.h2}</h2>
-            {c.s4.text.map((p) => (
-              <p key={p} className={textClass}>{p}</p>
-            ))}
-            <LinkChips links={c.s4.links} />
-          </div>
-        </section>
+        {/* Sections 3 and 4: living in Vietnam, staying longer */}
+        <Section containerClassName="grid gap-4 nav:grid-cols-2 nav:gap-6">
+          <Card as="section" className="nav:p-8" id="living">
+            <h2 className={cardH2}>{c.s3.h2}</h2>
+            <Paragraphs text={c.s3.text} />
+            <LinkRows links={c.s3.links} />
+          </Card>
+          <Card as="section" className="nav:p-8" id="staying-longer">
+            <h2 className={cardH2}>{c.s4.h2}</h2>
+            <Paragraphs text={c.s4.text} />
+            <LinkRows links={c.s4.links} />
+          </Card>
+        </Section>
 
-        {/* Section 5: services */}
-        <section className="py-20 md:py-28 bg-ivory">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto text-center mb-14">
-              <h2 className={h2Class}>{c.s5.h2}</h2>
-              {c.s5.text.map((p) => (
-                <p key={p} className="text-xl text-stone-500 leading-relaxed">{p}</p>
-              ))}
+        {/* Section 5: all 16 services in four groups */}
+        <Section id="services" labelledBy="home-services" className="pt-0 nav:pt-0">
+          <SectionHeader
+            id="home-services"
+            title={c.s5.h2}
+            intro={<Paragraphs text={c.s5.text} className="mb-4 last:mb-0" />}
+          />
+          <ServiceGroups groups={c.s5.groups} />
+          <div className="mt-6">
+            <Button href={c.s5.all.href} variant="secondary" icon="arrow">
+              {c.s5.all.name}
+            </Button>
+          </div>
+        </Section>
+
+        {/* Sections 6 and 7: for business, who we are */}
+        <Section tone="sand" bordered containerClassName="grid gap-4 nav:grid-cols-2 nav:gap-6">
+          <Card as="section" className="nav:p-8">
+            <h2 className={cardH2}>{c.s6.h2}</h2>
+            <Paragraphs text={c.s6.text} />
+            <LinkRows links={c.s6.links} />
+          </Card>
+          <Card as="section" className="flex flex-col nav:p-8">
+            <h2 className={cardH2}>{c.s7.h2}</h2>
+            <Paragraphs text={c.s7.text} />
+            <div className="mt-auto">
+              <Button href={c.s7.link.href} variant="secondary" icon="arrow">
+                {c.s7.link.name}
+              </Button>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-              {c.s5.groups.map((group) => (
-                <div key={group.title} className="bg-white rounded-3xl p-8 border border-stone-100">
-                  <h3 className="text-xl font-display font-bold text-stone-900 mb-2">{group.title}</h3>
-                  <p className="text-sm text-stone-500 mb-6 leading-relaxed">{group.line}</p>
-                  <ul className="space-y-5">
-                    {group.services.map((service) => (
-                      <li key={service.href}>
-                        <Link href={service.href} className="font-semibold text-primary-700 hover:text-primary-800 transition-colors">
-                          {service.name}
-                        </Link>
-                        <p className="text-sm text-stone-500 leading-relaxed mt-1">{service.line}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-            <div className="mt-10 text-center">
-              <Link href={c.s5.all.href} className="inline-flex items-center gap-2 text-primary-600 font-semibold text-base hover:gap-3 transition-all">
-                {c.s5.all.name}
-              </Link>
-            </div>
-          </div>
-        </section>
+          </Card>
+        </Section>
 
-        {/* Section 6: for business */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 className={h2Class}>{c.s6.h2}</h2>
-            {c.s6.text.map((p) => (
-              <p key={p} className={textClass}>{p}</p>
-            ))}
-            <LinkChips links={c.s6.links} />
-          </div>
-        </section>
-
-        {/* Section 7: who we are */}
-        <section className="py-16 md:py-20 bg-ivory">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 className={h2Class}>{c.s7.h2}</h2>
-            {c.s7.text.map((p) => (
-              <p key={p} className={textClass}>{p}</p>
-            ))}
-            <LinkChips links={[c.s7.link]} />
-          </div>
-        </section>
-
-        {/* FAQ: visible text only, no FAQPage schema on the home page */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 className={h2Class}>{c.faq.h2}</h2>
-            <div className="space-y-8">
-              {c.faq.items.map((item) => (
-                <div key={item.q}>
-                  <h3 className="text-xl font-display font-semibold text-stone-900 mb-2">{item.q}</h3>
-                  <p className="text-stone-600 leading-relaxed">{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="py-20 md:py-28 relative overflow-hidden">
-          <div className="absolute inset-0 bg-stone-950" />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-950/90 via-primary-950/80 to-stone-950/95" />
-          <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">{c.cta.h2}</h2>
-            <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl mx-auto leading-relaxed">{c.cta.text}</p>
-            <Link
-              href={c.cta.button.href}
-              className="inline-flex px-12 py-5 bg-white text-primary-800 rounded-full text-base font-bold hover:shadow-2xl hover:shadow-white/20 transition-all duration-300"
-            >
-              {c.cta.button.text}
-            </Link>
-          </div>
-        </section>
-
-        <Footer />
+        {/* FAQ (visible text only, no FAQPage schema on the home page) and closing band */}
+        <Section labelledBy="home-faq">
+          <SectionHeader id="home-faq" title={c.faq.h2} />
+          <Accordion
+            items={c.faq.items.map((item) => ({ question: item.q, answer: <p className="m-0">{item.a}</p> }))}
+            questionAs="h3"
+            defaultOpenIndex={0}
+          />
+          <ClosingBand
+            className="mt-12"
+            title={c.cta.h2}
+            text={c.cta.text}
+            button={{ label: c.cta.button.text, href: c.cta.button.href }}
+          />
+        </Section>
       </main>
+      <Footer />
     </>
   );
 }
