@@ -25,7 +25,7 @@ export default function MobileStickyBar() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-hairline bg-white px-4 py-3 shadow-[0_-4px_16px_rgba(20,32,43,0.08)] nav:hidden">
+    <div data-track-location="sticky_bar" className="fixed inset-x-0 bottom-0 z-40 border-t border-hairline bg-white px-4 py-3 shadow-[0_-4px_16px_rgba(20,32,43,0.08)] nav:hidden">
       <div className="flex gap-2">
         <a href={PHONE_TEL} className={buttonClasses({ variant: 'secondary', size: 'sm', className: barButton })}>
           <Icon name="phone" className="h-4 w-4" />
@@ -40,7 +40,7 @@ export default function MobileStickyBar() {
           <Icon name="whatsapp" className="h-4 w-4" />
           WhatsApp
         </a>
-        <Link href="/get-started#quote-form" className={buttonClasses({ variant: 'primary', size: 'sm', className: barButton })}>
+        <Link href="/get-started#quote-form" data-track="cta_click" data-track-label="get_started" className={buttonClasses({ variant: 'primary', size: 'sm', className: barButton })}>
           <Icon name="quote" className="h-4 w-4" />
           Quote
         </Link>

@@ -56,7 +56,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-hairline bg-sand pb-24 text-[0.95rem] text-muted nav:pb-0">
+    <footer data-track-location="footer" className="border-t border-hairline bg-sand pb-24 text-[0.95rem] text-muted nav:pb-0">
       <div className="mx-auto w-full max-w-site px-4 md:px-6">
         {/* Brand, contact and CTA */}
         <div className="grid gap-8 border-b border-hairline py-10 nav:grid-cols-[1.2fr_1fr] nav:items-start nav:gap-12">
@@ -92,7 +92,7 @@ export default function Footer() {
           <div className="rounded-card border border-hairline bg-white p-6">
             <h3 className="mb-2 font-display text-step-1 font-semibold text-ink">{footerCta.heading}</h3>
             <p className="mb-4">{footerCta.text}</p>
-            <Button href={footerCta.href} icon="arrow">
+            <Button href={footerCta.href} icon="arrow" track={{ label: 'book_consultation', location: 'footer' }}>
               {footerCta.button}
             </Button>
           </div>

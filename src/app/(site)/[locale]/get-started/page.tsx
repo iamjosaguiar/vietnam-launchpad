@@ -5,6 +5,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
+import { trackEvent } from '@/lib/analytics';
 import { CONTACT_EMAIL_DISPLAY, PHONE_DISPLAY } from '@/lib/site';
 
 export default function GetStartedPage() {
@@ -30,6 +31,7 @@ export default function GetStartedPage() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    let errorType = 'network';
     try {
       const response = await fetch('/api/get-started', {
         method: 'POST',
@@ -40,20 +42,23 @@ export default function GetStartedPage() {
       });
 
       if (!response.ok) {
+        errorType = 'server';
         throw new Error('Failed to submit form');
       }
 
       setSubmitStatus('success');
 
       // Track conversion event
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'generate_lead', {
-          event_category: 'business_setup',
-          event_label: 'questionnaire_completed',
-        });
-      }
+      trackEvent('generate_lead', {
+        form_id: 'get_started',
+        service: 'business_setup',
+        visa_type: formData.visaOption,
+        event_category: 'business_setup',
+        event_label: 'questionnaire_completed',
+      });
     } catch (error) {
       console.error('Form submission error:', error);
+      trackEvent('form_submit_error', { form_id: 'get_started', error_type: errorType });
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -172,7 +177,7 @@ export default function GetStartedPage() {
                 <div id="quote-form" className="scroll-mt-24 bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-hairline">
                   <h2 className="text-3xl font-display font-bold text-ink mb-8">Business Setup Questionnaire</h2>
 
-                  <form onSubmit={handleSubmit} className="space-y-10">
+                  <form onSubmit={handleSubmit} data-track-form="get_started" className="space-y-10">
                     {/* Contact Information */}
                     <div className="border-b border-hairline pb-8">
                       <h3 className="text-xl font-display font-semibold text-ink mb-6 flex items-center gap-3">
