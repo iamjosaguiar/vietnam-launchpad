@@ -113,7 +113,7 @@ const CURRENCY_PAIRS = [
         body: 'Australian bank cards work fine at Vietnamese ATMs. Commbank and ANZ have relatively reasonable international ATM fees, but always check your card\'s specific international transaction costs.',
       },
       {
-        title: 'Vietnam–Australia Tax Treaty',
+        title: 'Vietnam-Australia Tax Treaty',
         body: 'Australia and Vietnam have a double taxation agreement. Australian expats resident in Vietnam for 183+ days should understand which country has primary taxing rights over their income.',
       },
     ],
@@ -159,7 +159,7 @@ const CURRENCY_PAIRS = [
         body: 'Wise and YouTrip (Singapore-based travel card) both handle SGD→VND well. YouTrip is convenient for Singapore residents managing a Vietnam budget.',
       },
       {
-        title: 'Singapore–Vietnam Business Corridor',
+        title: 'Singapore-Vietnam Business Corridor',
         body: 'Many Singapore-headquartered companies have Vietnam offices. Salaries may be paid in SGD but local expenses are in VND. Set up a Wise multi-currency account to manage both.',
       },
       {
@@ -263,7 +263,7 @@ const CURRENCY_PAIRS = [
       'THB conversions are relevant for expats living between Thailand and Vietnam, a common nomad circuit.',
     tips: [
       {
-        title: 'Thailand–Vietnam Nomad Circuit',
+        title: 'Thailand-Vietnam Nomad Circuit',
         body: 'Chiang Mai → Da Nang → Hoi An is a well-traveled nomad route. Managing THB↔VND conversions via Wise minimizes friction. Wise supports both currencies.',
       },
       {
@@ -652,7 +652,7 @@ export default async function CurrencyPairPage({
       />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">

@@ -61,7 +61,7 @@ export default function SalaryListPage() {
       />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white py-32 overflow-hidden">
@@ -168,13 +168,13 @@ export default function SalaryListPage() {
                             <div className="flex items-center justify-between py-2.5 px-3 bg-white rounded-xl border border-gray-100">
                               <span className="text-xs text-gray-500 font-medium">Local (VND/mo)</span>
                               <span className="text-sm font-bold text-gray-900">
-                                {formatVnd(role.localMonthlyVnd.min)}–{formatVnd(role.localMonthlyVnd.max)}
+                                {formatVnd(role.localMonthlyVnd.min)}-{formatVnd(role.localMonthlyVnd.max)}
                               </span>
                             </div>
                             <div className="flex items-center justify-between py-2.5 px-3 bg-primary-50 rounded-xl border border-primary-100">
                               <span className="text-xs text-primary-600 font-medium">Expat (USD/mo)</span>
                               <span className="text-sm font-bold text-primary-700">
-                                ${role.expatMonthlyUsd.min.toLocaleString()}–${role.expatMonthlyUsd.max.toLocaleString()}
+                                ${role.expatMonthlyUsd.min.toLocaleString()}-${role.expatMonthlyUsd.max.toLocaleString()}
                               </span>
                             </div>
                           </div>
@@ -202,7 +202,7 @@ export default function SalaryListPage() {
             <div className="container mx-auto px-4 md:px-8">
               <p className="text-xs text-gray-400 max-w-3xl mx-auto text-center">
                 <strong>Indicative estimates only.</strong> All salary ranges are based on publicly available
-                job postings and industry surveys for 2024–2026 and are not derived from a single authoritative
+                job postings and industry surveys for 2024-2026 and are not derived from a single authoritative
                 statistical source. Individual salaries vary significantly by company size, location, language
                 skills, experience, and negotiation. For authoritative Vietnam labour market data, see the{' '}
                 <a href="https://www.gso.gov.vn" target="_blank" rel="noopener noreferrer" className="underline">
