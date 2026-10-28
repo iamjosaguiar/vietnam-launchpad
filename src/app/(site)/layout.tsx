@@ -158,12 +158,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
     telephone: PHONE_E164,
     email: CONTACT_EMAILS[0],
     priceRange: '$$$',
-    openingHours: 'Mo-Fr 09:00-18:00',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: 4.9,
-      reviewCount: 127
-    }
+    openingHours: 'Mo-Fr 09:00-18:00'
   };
 
   return (
