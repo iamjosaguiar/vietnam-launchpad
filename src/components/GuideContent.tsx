@@ -139,7 +139,7 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
   const [tocOpen, setTocOpen] = useState(false);
 
   // Split content at --- section dividers and inject CTAs at ~33% and ~65%
-  const sections = guide.content.split(/\n{0,2}---\n{0,2}/);
+  const sections = guide.content.split(/\n+---\n+/);
   const total = sections.length;
   const cta1At = Math.max(1, Math.floor(total * 0.33));
   const cta2At = Math.max(cta1At + 1, Math.floor(total * 0.65));

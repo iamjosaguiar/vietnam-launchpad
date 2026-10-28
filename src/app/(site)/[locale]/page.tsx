@@ -18,7 +18,7 @@ import { buildAlternates } from '@/lib/seo';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: c.title,
+  title: { absolute: c.title },
   description: c.description,
   alternates: buildAlternates('/'),
 };

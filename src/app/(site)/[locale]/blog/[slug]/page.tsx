@@ -67,7 +67,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       },
     },
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.lastUpdated ?? post.date,
     publisher: {
       '@type': 'Organization',
       name: 'Vietnam Launchpad',
