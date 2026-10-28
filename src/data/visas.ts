@@ -894,7 +894,7 @@ export const VISA_COUNTRIES: VisaCountry[] = [
     evisaDays: 90,
     recommendedLongStay: 'Business Visa → TRC',
     notes:
-      'Indian passport holders are not currently eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. India is Vietnam\'s growing strategic partner, and Indian IT and pharmaceutical companies are expanding in Vietnam. There is an increasing Indian professional community in HCMC and Hanoi. Processing time for the e-visa is typically 3 working days.',
+      'Indian passport holders are not currently eligible for visa-free entry to Vietnam but can apply for the 90-day e-visa online. India is Vietnam\'s growing strategic partner, and Indian IT and pharmaceutical companies are expanding in Vietnam. There is an increasing Indian professional community in HCMC and Hanoi. The Immigration Department publishes the current processing time on its eVisa page.',
     verifiedOn: '2026-10-27',
     sources: [SRC_MOFA_LIST],
     topQueries: [

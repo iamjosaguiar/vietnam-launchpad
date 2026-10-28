@@ -790,10 +790,10 @@ export const servicesData: Record<string, ServiceData> = {
     slug: 'tax-filing',
     title: 'Personal Income Tax (PIT) Filing',
     metaTitle: 'Personal Income Tax Filing',
-    shortDescription: 'Annual PIT return filing for expats in Vietnam. We handle your tax obligations so you stay compliant and avoid penalties.',
+    shortDescription: 'Annual PIT return filing for expats in Vietnam. We prepare and file your annual PIT return from the information you give us.',
     timeline: '1-2 weeks',
     heroTitle: 'Vietnam Personal Income Tax Filing for Expats',
-    heroDescription: 'Vietnam taxes residents on worldwide income after 183 days. We calculate your PIT liability, identify deductions, and file your annual return on time - keeping you compliant and penalty-free.',
+    heroDescription: 'Vietnam taxes residents on worldwide income after 183 days. We calculate your PIT liability and identify deductions. We prepare and file your annual PIT return from the information you give us.',
     process: [
       {
         step: 1,
@@ -841,7 +841,7 @@ export const servicesData: Record<string, ServiceData> = {
       'Stay fully compliant with Vietnamese tax law',
       'Avoid late filing penalties (up to 25% of tax owed)',
       'Claim all eligible deductions to reduce liability',
-      'Peace of mind for audit situations',
+      'Organised records if the tax authority asks for them',
       'Clear documentation for employer reimbursement claims',
       'Understand your worldwide tax obligations'
     ],

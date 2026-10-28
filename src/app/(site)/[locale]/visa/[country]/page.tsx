@@ -93,7 +93,7 @@ export async function generateMetadata({
   }
   if (data.evisaEligible) {
     descriptionParts.push(
-      `eVisa: US$25 single entry, US$50 multiple entry, valid up to 90 days. Check the official processing time on evisa.gov.vn. Long stay options: ${data.recommendedLongStay}.`
+      'eVisa: US$25 single, US$50 multiple entry, up to 90 days. Official processing time: evisa.gov.vn.'
     );
   }
 
