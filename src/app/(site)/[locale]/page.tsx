@@ -102,7 +102,7 @@ export default function HomePage() {
           <ul className="m-0 grid list-none gap-4 p-0 nav:grid-cols-3 nav:gap-6">
             {c.s1.cards.map((card, index) => (
               <StepCard key={card.Link} title={card.Title} text={card.Text} icon={startIcons[index % startIcons.length]}>
-                <Button href={card.Link} variant="secondary" size="sm" icon="arrow">
+                <Button href={card.Link} variant="secondary" size="sm" icon="arrow" track={{ label: card.Link === '/visa' ? 'visa_cta' : 'read_guide', location: 'home' }}>
                   {card.Button}
                 </Button>
               </StepCard>
@@ -170,7 +170,7 @@ export default function HomePage() {
           />
           <ServiceGroups groups={c.s5.groups} />
           <div className="mt-6">
-            <Button href={c.s5.all.href} variant="secondary" icon="arrow">
+            <Button href={c.s5.all.href} variant="secondary" icon="arrow" track={{ label: 'view_services', location: 'home' }}>
               {c.s5.all.name}
             </Button>
           </div>
@@ -187,7 +187,7 @@ export default function HomePage() {
             <h2 className={cardH2}>{c.s7.h2}</h2>
             <Paragraphs text={c.s7.text} />
             <div className="mt-auto">
-              <Button href={c.s7.link.href} variant="secondary" icon="arrow">
+              <Button href={c.s7.link.href} variant="secondary" icon="arrow" track={{ label: 'about_us', location: 'home' }}>
                 {c.s7.link.name}
               </Button>
             </div>
@@ -207,6 +207,7 @@ export default function HomePage() {
             title={c.cta.h2}
             text={c.cta.text}
             button={{ label: c.cta.button.text, href: c.cta.button.href }}
+            trackLocation="home"
           />
         </Section>
       </main>

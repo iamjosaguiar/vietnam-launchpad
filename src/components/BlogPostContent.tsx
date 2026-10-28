@@ -249,6 +249,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
               <div className="flex flex-col gap-4 sm:flex-row nav:flex-col">
                 <Link
                   href="/contact"
+                  data-track="cta_click" data-track-label="book_consultation" data-track-location="blog"
                   className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gold px-6 font-bold text-ink hover:bg-gold-hover"
                 >
                   Get Free Consultation
@@ -258,6 +259,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                 </Link>
                 <Link
                   href="/services/work-permit"
+                  data-track="cta_click" data-track-label="service_cta" data-track-location="blog"
                   className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full border-2 border-white/60 px-6 font-bold text-white hover:bg-white/10"
                 >
                   View Work Permit Service

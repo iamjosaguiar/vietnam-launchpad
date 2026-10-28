@@ -61,6 +61,7 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
             <div className="hero-cta">
               <Link
                 href="/contact"
+                data-track="cta_click" data-track-label="book_consultation" data-track-location="service_page"
                 className="inline-flex min-h-[48px] items-center gap-3 rounded-full border border-navy bg-navy px-6 font-bold text-white hover:bg-navy-deep"
               >
                 Get Started
@@ -322,6 +323,7 @@ export default function ServiceDetailContent({ service }: { service: ServiceData
               <div className="flex flex-col gap-4 sm:flex-row nav:flex-col">
                 <Link
                   href="/contact"
+                  data-track="cta_click" data-track-label="book_consultation" data-track-location="service_page"
                   className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gold px-6 font-bold text-ink hover:bg-gold-hover"
                 >
                   Start Your Application

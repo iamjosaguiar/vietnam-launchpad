@@ -49,6 +49,7 @@ export default function EnterpriseSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/enterprise"
+                data-track="cta_click" data-track-label="enterprise_cta" data-track-location="home"
                 className="inline-flex min-h-[48px] items-center justify-center gap-2 px-6 border border-gold bg-gold text-ink rounded-full text-base font-bold hover:border-gold-hover hover:bg-gold-hover transition-colors duration-150 motion-reduce:transition-none"
               >
                 Explore Enterprise Services
@@ -58,6 +59,7 @@ export default function EnterpriseSection() {
               </Link>
               <Link
                 href="/contact"
+                data-track="cta_click" data-track-label="book_consultation" data-track-location="home"
                 className="inline-flex min-h-[48px] items-center justify-center gap-2 px-6 rounded-full text-base font-bold text-white border border-white hover:bg-navy transition-colors duration-150 motion-reduce:transition-none"
               >
                 Schedule a strategy call

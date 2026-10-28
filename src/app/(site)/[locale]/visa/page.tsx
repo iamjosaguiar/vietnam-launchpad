@@ -462,11 +462,12 @@ export default function VisaIndexPage() {
                 <p className="mb-0 mt-2 max-w-measure text-sm text-[#D6E2F0]">{PRIVATE_LINE}</p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row nav:flex-col">
-                <Button href="/contact" variant="gold" icon="arrow">
+                <Button href="/contact" variant="gold" icon="arrow" track={{ label: 'book_consultation', location: 'visa_page' }}>
                   Book a Free Consultation
                 </Button>
                 <Link
                   href="/services/trc-application"
+                  data-track="cta_click" data-track-label="service_cta" data-track-location="visa_page"
                   className="inline-flex min-h-[48px] items-center justify-center rounded-full border border-white px-6 font-bold text-white transition-colors hover:bg-white/10 motion-reduce:transition-none"
                 >
                   TRC Application Service
