@@ -93,7 +93,7 @@ export default function GetStartedPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white py-32 overflow-hidden">
+      <section className="relative bg-navy-deep text-white py-32 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-500/5 rounded-full blur-[100px]" />
 
@@ -116,13 +116,13 @@ export default function GetStartedPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-gray-50">
+      <section className="py-24 md:py-32 bg-sand">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
             {/* Process Overview */}
             <AnimateOnScroll className="mb-12">
-              <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
-                <h2 className="text-2xl font-display font-bold text-gray-900 mb-8 text-center">What Happens Next?</h2>
+              <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-hairline">
+                <h2 className="text-2xl font-display font-bold text-ink mb-8 text-center">What Happens Next?</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   {[
                     { step: 1, title: 'Submit Questionnaire', desc: 'Answer questions about your business plans' },
@@ -133,8 +133,8 @@ export default function GetStartedPage() {
                       <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 text-white rounded-2xl flex items-center justify-center font-display font-bold text-xl mx-auto mb-4 shadow-lg shadow-primary-500/20">
                         {item.step}
                       </div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
-                      <p className="text-sm text-gray-500">{item.desc}</p>
+                      <h3 className="font-semibold text-ink mb-2">{item.title}</h3>
+                      <p className="text-sm text-muted">{item.desc}</p>
                     </AnimateOnScroll>
                   ))}
                 </div>
@@ -143,7 +143,7 @@ export default function GetStartedPage() {
 
             {/* Consultation Service Notice */}
             <AnimateOnScroll className="mb-12">
-              <div className="bg-gradient-to-r from-primary-50 to-blue-50 border-l-4 border-primary-600 p-6 md:p-8 rounded-r-2xl">
+              <div className="bg-primary-50 border-l-4 border-primary-600 p-6 md:p-8 rounded-r-2xl">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mr-4">
                     <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,8 +151,8 @@ export default function GetStartedPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-2">Looking for General Consultation?</h3>
-                    <p className="text-gray-600 mb-4">
+                    <h3 className="font-bold text-ink mb-2">Looking for General Consultation?</h3>
+                    <p className="text-muted mb-4">
                       If you're not ready to set up a business but need expert advice on tax, accounting, work permits, TRC, or specific questions about living and working in Vietnam, we offer <strong>1:1 paid consultations at $100/hour</strong>.
                     </p>
                     <Link
@@ -171,19 +171,19 @@ export default function GetStartedPage() {
 
             {/* Questionnaire Form */}
             <AnimateOnScroll>
-              <div id="quote-form" className="scroll-mt-24 bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
-                <h2 className="text-3xl font-display font-bold text-gray-900 mb-8">Business Setup Questionnaire</h2>
+              <div id="quote-form" className="scroll-mt-24 bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-hairline">
+                <h2 className="text-3xl font-display font-bold text-ink mb-8">Business Setup Questionnaire</h2>
 
                 <form onSubmit={handleSubmit} className="space-y-10">
                   {/* Contact Information */}
-                  <div className="border-b border-gray-100 pb-8">
-                    <h3 className="text-xl font-display font-semibold text-gray-900 mb-6 flex items-center gap-3">
+                  <div className="border-b border-hairline pb-8">
+                    <h3 className="text-xl font-display font-semibold text-ink mb-6 flex items-center gap-3">
                       <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-sm font-bold">1</span>
                       Your Information
                     </h3>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="name" className="block text-sm font-medium text-muted mb-2">
                           Full Name *
                         </label>
                         <input
@@ -193,13 +193,13 @@ export default function GetStartedPage() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                          className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                           placeholder="John Doe"
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="email" className="block text-sm font-medium text-muted mb-2">
                           Email Address *
                         </label>
                         <input
@@ -209,13 +209,13 @@ export default function GetStartedPage() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                          className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                           placeholder="john@example.com"
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="phone" className="block text-sm font-medium text-muted mb-2">
                           Phone Number *
                         </label>
                         <input
@@ -225,13 +225,13 @@ export default function GetStartedPage() {
                           required
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                          className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                           placeholder={PHONE_DISPLAY}
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="timeline" className="block text-sm font-medium text-muted mb-2">
                           Timeline *
                         </label>
                         <select
@@ -240,7 +240,7 @@ export default function GetStartedPage() {
                           required
                           value={formData.timeline}
                           onChange={handleChange}
-                          className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                          className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                         >
                           <option value="">Select timeline</option>
                           <option value="asap">ASAP</option>
@@ -255,14 +255,14 @@ export default function GetStartedPage() {
 
                   {/* Business Questions */}
                   <div className="space-y-8">
-                    <h3 className="text-xl font-display font-semibold text-gray-900 flex items-center gap-3">
+                    <h3 className="text-xl font-display font-semibold text-ink flex items-center gap-3">
                       <span className="w-8 h-8 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-sm font-bold">2</span>
                       About Your Business
                     </h3>
 
                     {/* Question 1: Company Type */}
                     <div>
-                      <label htmlFor="companyType" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="companyType" className="block text-sm font-medium text-muted mb-2">
                         What type of company are you looking to open? What will the company do? *
                       </label>
                       <textarea
@@ -272,14 +272,14 @@ export default function GetStartedPage() {
                         rows={3}
                         value={formData.companyType}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all resize-none"
                         placeholder="E.g., Limited Liability Company for software development services..."
                       />
                     </div>
 
                     {/* Question 2: Capital */}
                     <div>
-                      <label htmlFor="capital" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="capital" className="block text-sm font-medium text-muted mb-2">
                         How much capital are you thinking of for your business? *
                       </label>
                       <input
@@ -289,17 +289,17 @@ export default function GetStartedPage() {
                         required
                         value={formData.capital}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                         placeholder="E.g., $50,000 USD or 1B VND"
                       />
-                      <p className="mt-2 text-sm text-gray-500">
+                      <p className="mt-2 text-sm text-muted">
                         Don't worry if you're unsure - we'll help you determine the optimal amount during consultation
                       </p>
                     </div>
 
                     {/* Question 3: Shareholders */}
                     <div>
-                      <label htmlFor="shareholders" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="shareholders" className="block text-sm font-medium text-muted mb-2">
                         How many shareholders will be in this business? (on and off papers) *
                       </label>
                       <input
@@ -309,14 +309,14 @@ export default function GetStartedPage() {
                         required
                         value={formData.shareholders}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                         placeholder="E.g., 2 shareholders - both on paper"
                       />
                     </div>
 
                     {/* Question 4: Location */}
                     <div>
-                      <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="location" className="block text-sm font-medium text-muted mb-2">
                         Where will you be located? Which city/area? *
                       </label>
                       <select
@@ -325,7 +325,7 @@ export default function GetStartedPage() {
                         required
                         value={formData.location}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                       >
                         <option value="">Select location</option>
                         <option value="hanoi">Hanoi</option>
@@ -341,7 +341,7 @@ export default function GetStartedPage() {
 
                     {/* Question 5: Nationalities */}
                     <div>
-                      <label htmlFor="nationalities" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="nationalities" className="block text-sm font-medium text-muted mb-2">
                         What are the nationalities of shareholders? *
                       </label>
                       <input
@@ -351,14 +351,14 @@ export default function GetStartedPage() {
                         required
                         value={formData.nationalities}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                         placeholder="E.g., US, UK, Vietnamese"
                       />
                     </div>
 
                     {/* Question 6: Business Model */}
                     <div>
-                      <label htmlFor="businessModel" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="businessModel" className="block text-sm font-medium text-muted mb-2">
                         Please describe in detail how your business works or makes money *
                       </label>
                       <textarea
@@ -368,14 +368,14 @@ export default function GetStartedPage() {
                         rows={5}
                         value={formData.businessModel}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all resize-none"
                         placeholder="This helps us understand your business model better and ensure we set up the right company structure. Include details about your revenue sources, target market, and operations..."
                       />
                     </div>
 
                     {/* Question 7: Visa Option */}
                     <div>
-                      <label htmlFor="visaOption" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="visaOption" className="block text-sm font-medium text-muted mb-2">
                         Will you look at visa options from this company too? *
                       </label>
                       <select
@@ -384,7 +384,7 @@ export default function GetStartedPage() {
                         required
                         value={formData.visaOption}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
                       >
                         <option value="">Select an option</option>
                         <option value="yes-investment-visa">Yes - Investment visa (need $70,000+ investment)</option>
@@ -397,16 +397,16 @@ export default function GetStartedPage() {
                   </div>
 
                   {submitStatus === 'success' && (
-                    <div className="p-6 bg-green-50 border border-green-200 rounded-2xl">
+                    <div className="p-6 bg-success-soft border border-success rounded-2xl">
                       <div className="flex items-start">
-                        <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                          <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div className="flex-shrink-0 w-10 h-10 bg-success-soft rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-5 h-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
                         <div>
-                          <h3 className="font-bold text-green-800 mb-2">Thank you! Your questionnaire has been submitted.</h3>
-                          <p className="text-green-700">We'll review your information and reach out within 24 hours to schedule your free consultation call. Check your email for confirmation.</p>
+                          <h3 className="font-bold text-success mb-2">Thank you! Your questionnaire has been submitted.</h3>
+                          <p className="text-success">We'll review your information and reach out within 24 hours to schedule your free consultation call. Check your email for confirmation.</p>
                         </div>
                       </div>
                     </div>
@@ -441,7 +441,7 @@ export default function GetStartedPage() {
                     )}
                   </button>
 
-                  <p className="text-sm text-gray-500 text-center">
+                  <p className="text-sm text-muted text-center">
                     By submitting this form, you agree to receive communications about your business setup. We respect your privacy.
                   </p>
                 </form>
@@ -450,21 +450,21 @@ export default function GetStartedPage() {
 
             {/* Capital Planning Guide */}
             <AnimateOnScroll className="mt-12">
-              <div className="bg-gradient-to-br from-primary-50 via-white to-blue-50 rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
-                <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">Capital Planning Guide</h2>
+              <div className="bg-primary-50 rounded-3xl shadow-sm p-8 md:p-10 border border-hairline">
+                <h2 className="text-2xl font-display font-bold text-ink mb-6">Capital Planning Guide</h2>
 
                 <div className="bg-white p-6 rounded-2xl mb-6 border-l-4 border-primary-600 shadow-sm">
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Simple Formula:</h3>
-                  <p className="text-gray-800 mb-2">
+                  <h3 className="text-lg font-display font-bold text-ink mb-3">Simple Formula:</h3>
+                  <p className="text-ink mb-2">
                     <strong>Capitalization should support your business for at least 1.5 years of operational expenses.</strong>
                   </p>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-muted text-sm">
                     Calculate your annual costs (rent + equipment + salaries + operating expenses) and multiply by 1.5 for a safe starting capital.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl mb-6 shadow-sm">
-                  <h3 className="font-bold text-gray-900 mb-4">Industry Examples:</h3>
+                  <h3 className="font-bold text-ink mb-4">Industry Examples:</h3>
                   <div className="space-y-3 text-sm">
                     {[
                       { industry: 'Coffee Shop', range: '1-2B VND ($40-80K) - Depends on location, with/without alcohol license' },
@@ -472,15 +472,15 @@ export default function GetStartedPage() {
                       { industry: 'Import/Export', range: 'Varies based on products and volume - minimum 1B VND recommended' },
                       { industry: 'Tech/Consulting', range: '500M-1B VND ($20-40K) - Lower overhead businesses' }
                     ].map((item, index) => (
-                      <div key={index} className="flex items-start border-l-2 border-primary-300 pl-4 py-2 hover:bg-gray-50 rounded-r-lg transition-colors">
+                      <div key={index} className="flex items-start border-l-2 border-primary-300 pl-4 py-2 hover:bg-sand rounded-r-lg transition-colors">
                         <span className="text-primary-600 font-bold mr-3 whitespace-nowrap">{item.industry}:</span>
-                        <span className="text-gray-600">{item.range}</span>
+                        <span className="text-muted">{item.range}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <p className="text-gray-700 mb-6 font-medium">
+                <p className="text-muted mb-6 font-medium">
                   Three key considerations when deciding your capital amount:
                 </p>
 
@@ -515,13 +515,13 @@ export default function GetStartedPage() {
                             {item.num}
                           </div>
                           <div className="flex-1">
-                            <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-                            <p className="text-gray-600 mb-2">{item.desc}</p>
+                            <h3 className="font-bold text-ink mb-2">{item.title}</h3>
+                            <p className="text-muted mb-2">{item.desc}</p>
                             {item.note && (
-                              <p className="text-sm text-gray-500 italic">{item.note}</p>
+                              <p className="text-sm text-muted italic">{item.note}</p>
                             )}
                             {item.bullets && (
-                              <ul className="space-y-2 text-sm text-gray-600 mt-3">
+                              <ul className="space-y-2 text-sm text-muted mt-3">
                                 {item.bullets.map((bullet, idx) => (
                                   <li key={idx} className="flex items-start">
                                     <span className="text-primary-600 mr-2">•</span>
@@ -538,7 +538,7 @@ export default function GetStartedPage() {
                 </div>
 
                 <div className="mt-8 p-6 bg-primary-100/50 border-l-4 border-primary-600 rounded-r-2xl">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-muted">
                     <strong>Note:</strong> We'll discuss your specific situation during the free consultation and help you calculate the optimal capital amount based on your business plan, industry, and visa needs.
                   </p>
                 </div>

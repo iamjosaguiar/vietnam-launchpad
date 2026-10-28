@@ -36,7 +36,7 @@ export default async function TrustSignals() {
   return (
     <section className="relative py-12 md:py-16 bg-white">
       {/* Subtle top border accent */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-hairline to-transparent" />
 
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
@@ -47,7 +47,7 @@ export default async function TrustSignals() {
             >
               {/* Vertical divider for desktop */}
               {index > 0 && (
-                <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-gray-200 to-transparent" />
+                <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-hairline to-transparent" />
               )}
 
               {/* Content */}
@@ -63,7 +63,7 @@ export default async function TrustSignals() {
                 </div>
 
                 {/* Label */}
-                <div className="text-sm md:text-base text-gray-500 font-medium tracking-wide">
+                <div className="text-sm md:text-base text-muted font-medium tracking-wide">
                   {signal.label}
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default async function TrustSignals() {
       </div>
 
       {/* Subtle bottom border accent */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-hairline to-transparent" />
     </section>
   );
 }
