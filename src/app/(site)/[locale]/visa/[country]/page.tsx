@@ -247,206 +247,241 @@ export default async function VisaCountryPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
+        <main>
 
-        <VisaHero
-          breadcrumb={data.country}
-          flag={data.flag}
-          flagLabel={data.country}
-          badge={
-            data.visaFree && data.visaFreeDays
-              ? `${data.visaFreeDays} Days Visa-Free`
-              : data.evisaEligible
-              ? data.visaFreeCheck
-                ? 'Check current visa-free rules'
-                : 'E-Visa Required'
-              : 'Consulate Visa Required'
-          }
-          title={`Vietnam Visa for ${data.nationality} Citizens`}
-          lead={data.notes}
-          notice={PRIVATE_LINE}
-        />
+          <VisaHero
+            breadcrumb={data.country}
+            flag={data.flag}
+            flagLabel={data.country}
+            badge={
+              data.visaFree && data.visaFreeDays
+                ? `${data.visaFreeDays} Days Visa-Free`
+                : data.evisaEligible
+                ? data.visaFreeCheck
+                  ? 'Check current visa-free rules'
+                  : 'E-Visa Required'
+                : 'Consulate Visa Required'
+            }
+            title={`Vietnam Visa for ${data.nationality} Citizens`}
+            lead={data.notes}
+            notice={PRIVATE_LINE}
+          />
 
-        <VisaColumns
-          asideLabel="Need help with your visa"
-          aside={
-            <div className="rounded-panel border border-hairline bg-white p-6 shadow-soft">
-              <h2 className="mb-3 font-display text-step-1 font-semibold text-ink">
-                Need Help with Your Vietnam Visa or Residency?
+          <VisaColumns
+            asideLabel="Need help with your visa"
+            aside={
+              <div className="rounded-panel border border-hairline bg-white p-6 shadow-soft">
+                <h2 className="mb-3 font-display text-step-1 font-semibold text-ink">
+                  Need Help with Your Vietnam Visa or Residency?
+                </h2>
+                <p className="mb-3 text-[0.95rem] text-muted">
+                  Our consultants handle e-visas, business visas, work permits, and TRC applications
+                  for {data.nationality} nationals. Book a free consultation today.
+                </p>
+                <p className="mb-5 flex items-start gap-2 text-sm text-muted">
+                  <Icon name="shield" className="mt-0.5 h-[18px] w-[18px] flex-none text-success" />
+                  {PRIVATE_LINE}
+                </p>
+                <div className="grid gap-2">
+                  <Button href="/contact" block icon="arrow">
+                    Book a Free Consultation
+                  </Button>
+                  <Button href="/services/trc-application" variant="secondary" block>
+                    TRC Application Service
+                  </Button>
+                </div>
+              </div>
+            }
+          >
+            {/* Disclaimer */}
+            <p className="m-0 flex items-start gap-3 rounded-card border border-hairline bg-sand px-4 py-3 text-sm text-ink">
+              <Icon name="info" className="mt-0.5 h-5 w-5 flex-none text-navy" />
+              <span className="max-w-measure">
+                <strong>Disclaimer:</strong> Visa policies change frequently. This information
+                reflects Vietnam&apos;s policy as of {formatVerifiedDate(data.verifiedOn)} and is provided for general guidance
+                only. Always verify with the Vietnam Immigration Department or your nearest Vietnamese
+                embassy before travel.
+              </span>
+            </p>
+
+            {/* Quick Facts */}
+            <VisaCard>
+              <h2 className={`${visaH2} flex items-start gap-3`}>
+                <Icon name="document" className="mt-1 h-6 w-6 flex-none text-navy" />
+                Quick Facts for {data.nationality} Passport Holders
               </h2>
-              <p className="mb-3 text-[0.95rem] text-muted">
-                Our consultants handle e-visas, business visas, work permits, and TRC applications
-                for {data.nationality} nationals. Book a free consultation today.
-              </p>
-              <p className="mb-5 flex items-start gap-2 text-sm text-muted">
-                <Icon name="shield" className="mt-0.5 h-[18px] w-[18px] flex-none text-success" />
-                {PRIVATE_LINE}
-              </p>
-              <div className="grid gap-2">
-                <Button href="/contact" block icon="arrow">
-                  Book a Free Consultation
-                </Button>
-                <Button href="/services/trc-application" variant="secondary" block>
-                  TRC Application Service
-                </Button>
+              <dl className="m-0">
+                <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
+                  <dt className="text-sm text-muted">Visa-free entry</dt>
+                  <dd className="m-0 text-sm font-bold text-ink sm:text-right">
+                    {data.visaFreeCheck
+                      ? 'Not confirmed'
+                      : data.visaFree && data.visaFreeDays
+                      ? `Yes - ${data.visaFreeDays} days${data.tourismOnly ? ' (tourism only, passport valid 6 months)' : ''}`
+                      : 'No'}
+                  </dd>
+                </div>
+                <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
+                  <dt className="text-sm text-muted">E-visa available</dt>
+                  <dd className="m-0 text-sm font-bold text-ink sm:text-right">
+                    {data.evisaEligible ? 'Yes' : 'No'}
+                  </dd>
+                </div>
+                <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
+                  <dt className="text-sm text-muted">Max visa-free stay</dt>
+                  <dd className="m-0 text-sm font-bold text-ink sm:text-right">
+                    {data.visaFreeCheck
+                      ? 'Not confirmed'
+                      : data.visaFreeDays
+                      ? `${data.visaFreeDays} days`
+                      : 'N/A'}
+                  </dd>
+                </div>
+                <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
+                  <dt className="text-sm text-muted">E-visa duration</dt>
+                  <dd className="m-0 text-sm font-bold text-ink sm:text-right">
+                    {data.evisaEligible ? `${data.evisaDays} days maximum` : 'N/A'}
+                  </dd>
+                </div>
+                <div className="flex flex-col gap-1 border-y border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
+                  <dt className="text-sm text-muted">Recommended for long stays</dt>
+                  <dd className="m-0 text-sm font-bold text-ink sm:max-w-[55%] sm:text-right">
+                    {data.recommendedLongStay}
+                  </dd>
+                </div>
+              </dl>
+              <div className="mt-4 space-y-1 text-sm text-muted">
+                <p className="m-0 font-bold text-ink">{lastVerified}</p>
+                <p className="m-0 [overflow-wrap:anywhere]">
+                  Official source:{' '}
+                  {[...data.sources, SRC_EVISA_FEES]
+                    .filter((src, idx, all) => all.findIndex((x) => x.url === src.url) === idx)
+                    .map((src, i) => (
+                    <span key={src.url}>
+                      {i > 0 && ' | '}
+                      <a
+                        href={src.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-navy underline underline-offset-[3px] hover:text-navy-deep"
+                      >
+                        {src.label}
+                      </a>
+                    </span>
+                  ))}
+                </p>
               </div>
+            </VisaCard>
+
+            {/* Entry summary */}
+            <div className={`grid gap-4 ${data.visaFree && data.visaFreeDays ? 'sm:grid-cols-2' : ''}`}>
+              {data.visaFreeCheck ? (
+                <div className="rounded-card border border-gold-line bg-gold-soft p-6">
+                  <h3 className="mb-2 font-display text-step-1 font-semibold text-ink">Visa-Free Entry</h3>
+                  <p className="m-0 max-w-measure text-[0.95rem] leading-relaxed text-ink">
+                    {INDONESIA_CHECK_LINE} The e-visa is available to {data.nationality}{' '}
+                    passport holders.
+                  </p>
+                </div>
+              ) : data.visaFree && data.visaFreeDays ? (
+                <div className="rounded-card border border-[#BFDCCB] bg-success-soft p-6">
+                  <div className="mb-2 flex items-center gap-2">
+                    <Icon name="check" className="h-5 w-5 flex-none text-success" />
+                    <h3 className="m-0 font-display text-step-1 font-semibold text-ink">Visa-Free Entry</h3>
+                  </div>
+                  <p className="m-0 text-[0.95rem] leading-relaxed text-ink">
+                    As a {data.nationality} passport holder, you can enter Vietnam without
+                    a visa for up to <strong>{data.visaFreeDays} days</strong> per visit. No
+                    application required - just a valid passport with at least 6 months
+                    validity.
+                    {data.tourismOnly ? ' This visa-free entry is for tourism only.' : ''}
+                  </p>
+                </div>
+              ) : (
+                <div className="rounded-card border border-gold-line bg-gold-soft p-6">
+                  <div className="mb-2 flex items-center gap-2">
+                    <Icon name="info" className="h-5 w-5 flex-none text-navy" />
+                    <h3 className="m-0 font-display text-step-1 font-semibold text-ink">Visa Required Before Arrival</h3>
+                  </div>
+                  <p className="m-0 max-w-measure text-[0.95rem] leading-relaxed text-ink">
+                    You need an e-visa. Not visa-free. {data.nationality} passport holders are
+                    not eligible for visa-free entry to Vietnam and can apply for the e-visa
+                    online before the trip.
+                  </p>
+                </div>
+              )}
+
+              {data.visaFree && data.visaFreeDays && (
+                <div className="rounded-card border border-hairline bg-white p-6">
+                  <div className="mb-2 flex items-center gap-2">
+                    <Icon name="calendar" className="h-5 w-5 flex-none text-navy" />
+                    <h3 className="m-0 font-display text-step-1 font-semibold text-ink">
+                      Staying Longer than {data.visaFreeDays} Days?
+                    </h3>
+                  </div>
+                  <p className="m-0 text-[0.95rem] leading-relaxed text-ink">
+                    For stays beyond {data.visaFreeDays} days,{' '}
+                    {data.evisaEligible
+                      ? `apply for the e-visa (valid up to 90 days) before your trip. It is the most popular option for digital nomads and short-term workers.`
+                      : 'you will need to apply for a visa at a Vietnamese embassy or consulate.'}
+                  </p>
+                </div>
+              )}
             </div>
-          }
-        >
-          {/* Disclaimer */}
-          <p className="m-0 flex items-start gap-3 rounded-card border border-hairline bg-sand px-4 py-3 text-sm text-ink">
-            <Icon name="info" className="mt-0.5 h-5 w-5 flex-none text-navy" />
-            <span className="max-w-measure">
-              <strong>Disclaimer:</strong> Visa policies change frequently. This information
-              reflects Vietnam&apos;s policy as of {formatVerifiedDate(data.verifiedOn)} and is provided for general guidance
-              only. Always verify with the Vietnam Immigration Department or your nearest Vietnamese
-              embassy before travel.
-            </span>
-          </p>
+            {!data.evisaEligible && <HolaflyCallout variant="visa" />}
 
-          {/* Quick Facts */}
-          <VisaCard>
-            <h2 className={`${visaH2} flex items-start gap-3`}>
-              <Icon name="document" className="mt-1 h-6 w-6 flex-none text-navy" />
-              Quick Facts for {data.nationality} Passport Holders
-            </h2>
-            <dl className="m-0">
-              <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
-                <dt className="text-sm text-muted">Visa-free entry</dt>
-                <dd className="m-0 text-sm font-bold text-ink sm:text-right">
-                  {data.visaFreeCheck
-                    ? 'Not confirmed'
-                    : data.visaFree && data.visaFreeDays
-                    ? `Yes - ${data.visaFreeDays} days${data.tourismOnly ? ' (tourism only, passport valid 6 months)' : ''}`
-                    : 'No'}
-                </dd>
-              </div>
-              <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
-                <dt className="text-sm text-muted">E-visa available</dt>
-                <dd className="m-0 text-sm font-bold text-ink sm:text-right">
-                  {data.evisaEligible ? 'Yes' : 'No'}
-                </dd>
-              </div>
-              <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
-                <dt className="text-sm text-muted">Max visa-free stay</dt>
-                <dd className="m-0 text-sm font-bold text-ink sm:text-right">
-                  {data.visaFreeCheck
-                    ? 'Not confirmed'
-                    : data.visaFreeDays
-                    ? `${data.visaFreeDays} days`
-                    : 'N/A'}
-                </dd>
-              </div>
-              <div className="flex flex-col gap-1 border-t border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
-                <dt className="text-sm text-muted">E-visa duration</dt>
-                <dd className="m-0 text-sm font-bold text-ink sm:text-right">
-                  {data.evisaEligible ? `${data.evisaDays} days maximum` : 'N/A'}
-                </dd>
-              </div>
-              <div className="flex flex-col gap-1 border-y border-hairline py-3 sm:flex-row sm:justify-between sm:gap-4">
-                <dt className="text-sm text-muted">Recommended for long stays</dt>
-                <dd className="m-0 text-sm font-bold text-ink sm:max-w-[55%] sm:text-right">
-                  {data.recommendedLongStay}
-                </dd>
-              </div>
-            </dl>
-            <div className="mt-4 space-y-1 text-sm text-muted">
-              <p className="m-0 font-bold text-ink">{lastVerified}</p>
-              <p className="m-0 [overflow-wrap:anywhere]">
-                Official source:{' '}
-                {[...data.sources, SRC_EVISA_FEES]
-                  .filter((src, idx, all) => all.findIndex((x) => x.url === src.url) === idx)
-                  .map((src, i) => (
-                  <span key={src.url}>
-                    {i > 0 && ' | '}
-                    <a
-                      href={src.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-navy underline underline-offset-[3px] hover:text-navy-deep"
-                    >
-                      {src.label}
-                    </a>
-                  </span>
-                ))}
-              </p>
-            </div>
-          </VisaCard>
+            {/* E-Visa Section */}
+            {data.evisaEligible && (
+              <>
+                <VisaCard>
+                  <h2 className={visaH2}>Applying for a Vietnam E-Visa</h2>
+                  <p className="mb-6 max-w-measure text-ink">
+                    The e-visa is the simplest way to extend your stay beyond the visa-free period
+                    or to enter Vietnam if you are not visa-exempt. Here is everything you need to
+                    know.
+                  </p>
+                  <h3 className="mb-3 font-display text-step-1 font-semibold text-ink">E-Visa Key Details</h3>
+                  <ul className="m-0 grid max-w-measure list-none gap-3 p-0 text-[0.95rem] text-ink">
+                    <li className="flex items-start gap-2">
+                      <Icon name="check" className="mt-1 h-4 w-4 flex-none text-success" />
+                      <span>
+                        {E_VISA_FACTS}{' '}
+                        <a
+                          href={EVISA_PORTAL_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-medium text-navy underline underline-offset-[3px] hover:text-navy-deep"
+                        >
+                          evisa.gov.vn
+                        </a>
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="check" className="mt-1 h-4 w-4 flex-none text-success" />
+                      Apply online - no embassy visit required
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="check" className="mt-1 h-4 w-4 flex-none text-success" />
+                      Accepted at Vietnam&apos;s designated e-visa border gates
+                    </li>
+                  </ul>
+                </VisaCard>
 
-          {/* Entry summary */}
-          <div className={`grid gap-4 ${data.visaFree && data.visaFreeDays ? 'sm:grid-cols-2' : ''}`}>
-            {data.visaFreeCheck ? (
-              <div className="rounded-card border border-gold-line bg-gold-soft p-6">
-                <h3 className="mb-2 font-display text-step-1 font-semibold text-ink">Visa-Free Entry</h3>
-                <p className="m-0 max-w-measure text-[0.95rem] leading-relaxed text-ink">
-                  {INDONESIA_CHECK_LINE} The e-visa is available to {data.nationality}{' '}
-                  passport holders.
-                </p>
-              </div>
-            ) : data.visaFree && data.visaFreeDays ? (
-              <div className="rounded-card border border-[#BFDCCB] bg-success-soft p-6">
-                <div className="mb-2 flex items-center gap-2">
-                  <Icon name="check" className="h-5 w-5 flex-none text-success" />
-                  <h3 className="m-0 font-display text-step-1 font-semibold text-ink">Visa-Free Entry</h3>
-                </div>
-                <p className="m-0 text-[0.95rem] leading-relaxed text-ink">
-                  As a {data.nationality} passport holder, you can enter Vietnam without
-                  a visa for up to <strong>{data.visaFreeDays} days</strong> per visit. No
-                  application required - just a valid passport with at least 6 months
-                  validity.
-                  {data.tourismOnly ? ' This visa-free entry is for tourism only.' : ''}
-                </p>
-              </div>
-            ) : (
-              <div className="rounded-card border border-gold-line bg-gold-soft p-6">
-                <div className="mb-2 flex items-center gap-2">
-                  <Icon name="info" className="h-5 w-5 flex-none text-navy" />
-                  <h3 className="m-0 font-display text-step-1 font-semibold text-ink">Visa Required Before Arrival</h3>
-                </div>
-                <p className="m-0 max-w-measure text-[0.95rem] leading-relaxed text-ink">
-                  You need an e-visa. Not visa-free. {data.nationality} passport holders are
-                  not eligible for visa-free entry to Vietnam and can apply for the e-visa
-                  online before the trip.
-                </p>
-              </div>
-            )}
-
-            {data.visaFree && data.visaFreeDays && (
-              <div className="rounded-card border border-hairline bg-white p-6">
-                <div className="mb-2 flex items-center gap-2">
-                  <Icon name="calendar" className="h-5 w-5 flex-none text-navy" />
-                  <h3 className="m-0 font-display text-step-1 font-semibold text-ink">
-                    Staying Longer than {data.visaFreeDays} Days?
-                  </h3>
-                </div>
-                <p className="m-0 text-[0.95rem] leading-relaxed text-ink">
-                  For stays beyond {data.visaFreeDays} days,{' '}
-                  {data.evisaEligible
-                    ? `apply for the e-visa (valid up to 90 days) before your trip. It is the most popular option for digital nomads and short-term workers.`
-                    : 'you will need to apply for a visa at a Vietnamese embassy or consulate.'}
-                </p>
-              </div>
-            )}
-          </div>
-          {!data.evisaEligible && <HolaflyCallout variant="visa" />}
-
-          {/* E-Visa Section */}
-          {data.evisaEligible && (
-            <>
-              <VisaCard>
-                <h2 className={visaH2}>Applying for a Vietnam E-Visa</h2>
-                <p className="mb-6 max-w-measure text-ink">
-                  The e-visa is the simplest way to extend your stay beyond the visa-free period
-                  or to enter Vietnam if you are not visa-exempt. Here is everything you need to
-                  know.
-                </p>
-                <h3 className="mb-3 font-display text-step-1 font-semibold text-ink">E-Visa Key Details</h3>
-                <ul className="m-0 grid max-w-measure list-none gap-3 p-0 text-[0.95rem] text-ink">
-                  <li className="flex items-start gap-2">
-                    <Icon name="check" className="mt-1 h-4 w-4 flex-none text-success" />
-                    <span>
-                      {E_VISA_FACTS}{' '}
+                <ChecklistCard
+                  title="Documents Needed"
+                  headingAs="h3"
+                  countLabel={CHECKLIST_COUNT}
+                  items={[
+                    { label: 'Valid passport (minimum 6 months validity)' },
+                    { label: 'Digital passport photo (4x6cm, white background)' },
+                    { label: 'Credit or debit card for payment' },
+                    { label: 'Accommodation address in Vietnam' },
+                  ]}
+                  footer={
+                    <p className="m-0 text-sm text-muted">
+                      <strong className="text-ink">Where to apply:</strong> Use the official portal at{' '}
                       <a
                         href={EVISA_PORTAL_URL}
                         target="_blank"
@@ -455,112 +490,79 @@ export default async function VisaCountryPage({
                       >
                         evisa.gov.vn
                       </a>
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="check" className="mt-1 h-4 w-4 flex-none text-success" />
-                    Apply online - no embassy visit required
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="check" className="mt-1 h-4 w-4 flex-none text-success" />
-                    Accepted at Vietnam&apos;s designated e-visa border gates
-                  </li>
-                </ul>
-              </VisaCard>
+                      .
+                    </p>
+                  }
+                />
+                <HolaflyCallout variant="visa" />
+              </>
+            )}
 
-              <ChecklistCard
-                title="Documents Needed"
-                headingAs="h3"
-                countLabel={CHECKLIST_COUNT}
-                items={[
-                  { label: 'Valid passport (minimum 6 months validity)' },
-                  { label: 'Digital passport photo (4x6cm, white background)' },
-                  { label: 'Credit or debit card for payment' },
-                  { label: 'Accommodation address in Vietnam' },
-                ]}
-                footer={
-                  <p className="m-0 text-sm text-muted">
-                    <strong className="text-ink">Where to apply:</strong> Use the official portal at{' '}
-                    <a
-                      href={EVISA_PORTAL_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-navy underline underline-offset-[3px] hover:text-navy-deep"
-                    >
-                      evisa.gov.vn
-                    </a>
-                    .
-                  </p>
-                }
+            {/* Long-Stay Options */}
+            <VisaCard>
+              <h2 className={visaH2}>Long-Stay Options for {data.nationality} Expats</h2>
+              <p className="mb-6 max-w-measure text-ink">
+                If you plan to live and work in Vietnam beyond a short visit, here are the
+                recommended pathways based on your situation.
+              </p>
+              <div className="grid gap-4 lg:grid-cols-2">
+                <PathwayCard
+                  number={1}
+                  title="Business Visa"
+                  text="The business visa is suitable for freelancers, entrepreneurs, and business visitors planning stays of 3 to 12 months. It requires a sponsor letter from a Vietnamese company or your own registered entity. Single or multiple entry options available."
+                  bullets={['Valid for 3 to 12 months', 'Single or multiple entry', 'Requires Vietnamese company sponsor']}
+                  href="/services/business-visa"
+                  linkText="Learn about Business Visa"
+                />
+                <PathwayCard
+                  number={2}
+                  title="Temporary Residence Card (TRC)"
+                  text="The TRC is Vietnam's primary long-term residency document for foreign nationals. It is valid for 1 to 2 years and is renewable. A TRC eliminates the need for repeated visa renewals and is the most stable residency option for long-term expats."
+                  bullets={['Valid for 1 to 2 years (renewable)', 'Requires work permit or business entity', 'Replaces the need for visa extensions']}
+                  href="/services/trc-application"
+                  linkText="Learn about TRC Application"
+                />
+              </div>
+            </VisaCard>
+
+            {/* FAQ Section */}
+            <VisaCard>
+              <h2 className={visaH2}>Frequently Asked Questions</h2>
+              <Accordion
+                questionAs="h3"
+                items={data.topQueries.map((query, i) => ({
+                  question: `${query.charAt(0).toUpperCase() + query.slice(1)}?`,
+                  answer: <p className="m-0">{getFaqAnswer(i)}</p>,
+                }))}
               />
-              <HolaflyCallout variant="visa" />
-            </>
-          )}
+            </VisaCard>
 
-          {/* Long-Stay Options */}
-          <VisaCard>
-            <h2 className={visaH2}>Long-Stay Options for {data.nationality} Expats</h2>
-            <p className="mb-6 max-w-measure text-ink">
-              If you plan to live and work in Vietnam beyond a short visit, here are the
-              recommended pathways based on your situation.
-            </p>
-            <div className="grid gap-4 lg:grid-cols-2">
-              <PathwayCard
-                number={1}
-                title="Business Visa"
-                text="The business visa is suitable for freelancers, entrepreneurs, and business visitors planning stays of 3 to 12 months. It requires a sponsor letter from a Vietnamese company or your own registered entity. Single or multiple entry options available."
-                bullets={['Valid for 3 to 12 months', 'Single or multiple entry', 'Requires Vietnamese company sponsor']}
-                href="/services/business-visa"
-                linkText="Learn about Business Visa"
-              />
-              <PathwayCard
-                number={2}
-                title="Temporary Residence Card (TRC)"
-                text="The TRC is Vietnam's primary long-term residency document for foreign nationals. It is valid for 1 to 2 years and is renewable. A TRC eliminates the need for repeated visa renewals and is the most stable residency option for long-term expats."
-                bullets={['Valid for 1 to 2 years (renewable)', 'Requires work permit or business entity', 'Replaces the need for visa extensions']}
-                href="/services/trc-application"
-                linkText="Learn about TRC Application"
-              />
-            </div>
-          </VisaCard>
+            {/* Related pages */}
+            <VisaCard>
+              <h3 className="mb-4 font-display text-step-1 font-semibold text-ink">Related Resources</h3>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { name: 'All Visa Requirements by Nationality', href: '/visa' },
+                  { name: 'TRC Application Service', href: '/services/trc-application' },
+                  { name: 'Business Visa Service', href: '/services/business-visa' },
+                  { name: 'Work Permit Service', href: '/services/work-permit' },
+                  { name: 'Cost of Living in Vietnam', href: '/guides/cost-of-living' },
+                ].map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="inline-flex min-h-[44px] items-center rounded-full border border-hairline bg-paper px-4 text-sm font-bold text-navy transition-colors hover:border-navy motion-reduce:transition-none"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </VisaCard>
+          </VisaColumns>
 
-          {/* FAQ Section */}
-          <VisaCard>
-            <h2 className={visaH2}>Frequently Asked Questions</h2>
-            <Accordion
-              questionAs="h3"
-              items={data.topQueries.map((query, i) => ({
-                question: `${query.charAt(0).toUpperCase() + query.slice(1)}?`,
-                answer: <p className="m-0">{getFaqAnswer(i)}</p>,
-              }))}
-            />
-          </VisaCard>
-
-          {/* Related pages */}
-          <VisaCard>
-            <h3 className="mb-4 font-display text-step-1 font-semibold text-ink">Related Resources</h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { name: 'All Visa Requirements by Nationality', href: '/visa' },
-                { name: 'TRC Application Service', href: '/services/trc-application' },
-                { name: 'Business Visa Service', href: '/services/business-visa' },
-                { name: 'Work Permit Service', href: '/services/work-permit' },
-                { name: 'Cost of Living in Vietnam', href: '/guides/cost-of-living' },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="inline-flex min-h-[44px] items-center rounded-full border border-hairline bg-paper px-4 text-sm font-bold text-navy transition-colors hover:border-navy motion-reduce:transition-none"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-          </VisaCard>
-        </VisaColumns>
-
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

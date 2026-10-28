@@ -650,313 +650,315 @@ export default async function CurrencyPairPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
+        <main>
 
-        {/* Hero */}
-        <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[100px]" />
+          {/* Hero */}
+          <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">
+            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
+            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[100px]" />
 
-          <div className="container mx-auto px-4 md:px-8 relative z-10">
-            <div className="max-w-4xl">
-              {/* Breadcrumb */}
-              <nav className="flex items-center gap-2 text-sm text-white/40 mb-8">
-                <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
-                <span>/</span>
-                <Link href="/convert" className="hover:text-white/70 transition-colors">Currency Converter</Link>
-                <span>/</span>
-                <span className="text-white/60">{from} to VND</span>
-              </nav>
+            <div className="container mx-auto px-4 md:px-8 relative z-10">
+              <div className="max-w-4xl">
+                {/* Breadcrumb */}
+                <nav className="flex items-center gap-2 text-sm text-white/40 mb-8">
+                  <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
+                  <span>/</span>
+                  <Link href="/convert" className="hover:text-white/70 transition-colors">Currency Converter</Link>
+                  <span>/</span>
+                  <span className="text-white/60">{from} to VND</span>
+                </nav>
 
-              <div className="hero-badge flex items-center gap-3 mb-8">
-                <span className="flex h-2.5 w-2.5 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                </span>
-                <span className="text-sm text-emerald-400 font-medium">Live data - refreshes every 6 hours</span>
-              </div>
-
-              <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
-                <span className="mr-4">{flag}</span>
-                {from} to{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-primary-400">
-                  VND
-                </span>
-              </h1>
-
-              <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
-                Live {name} to Vietnamese Dong exchange rate. Updated every 6 hours from open.er-api.com.
-              </p>
-
-              {rate !== null && (
-                <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-6 py-4">
-                  <span className="text-2xl font-bold text-white">
-                    1 {from} = {formatVnd(rate)} ₫
+                <div className="hero-badge flex items-center gap-3 mb-8">
+                  <span className="flex h-2.5 w-2.5 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                   </span>
-                  {updatedAt && (
-                    <span className="text-sm text-white/40 border-l border-white/20 pl-3">
-                      {updatedAt}
+                  <span className="text-sm text-emerald-400 font-medium">Live data - refreshes every 6 hours</span>
+                </div>
+
+                <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
+                  <span className="mr-4">{flag}</span>
+                  {from} to{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-primary-400">
+                    VND
+                  </span>
+                </h1>
+
+                <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
+                  Live {name} to Vietnamese Dong exchange rate. Updated every 6 hours from open.er-api.com.
+                </p>
+
+                {rate !== null && (
+                  <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-6 py-4">
+                    <span className="text-2xl font-bold text-white">
+                      1 {from} = {formatVnd(rate)} ₫
                     </span>
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-        </section>
-
-        {/* Live Rate Card */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto">
-              <AnimateOnScroll>
-                <div className="rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
-                  {/* Header */}
-                  <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-slate-900 to-primary-900">
-                    <div className="flex items-center gap-3">
-                      <span className="flex h-3 w-3 relative">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    {updatedAt && (
+                      <span className="text-sm text-white/40 border-l border-white/20 pl-3">
+                        {updatedAt}
                       </span>
-                      <span className="text-white font-semibold">Live {from}/VND Rate</span>
-                    </div>
-                    <div className="text-xs text-white/50">open.er-api.com</div>
+                    )}
                   </div>
-
-                  {!rate ? (
-                    <div className="px-6 py-8 text-center text-gray-500 text-sm">
-                      Exchange rate data is temporarily unavailable.
-                    </div>
-                  ) : (
-                    <div className="p-6">
-                      {/* Big rate display */}
-                      <div className="text-center py-8">
-                        <div className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-2">
-                          {formatVnd(rate)}
-                          <span className="text-3xl text-gray-400 ml-2">₫</span>
-                        </div>
-                        <div className="text-lg text-gray-500 mb-4">per 1 {from} ({name})</div>
-                        <div className="text-sm text-gray-400">
-                          Inverse: 1,000,000 ₫ ={' '}
-                          <span className="font-semibold text-gray-600">
-                            {symbol}{inverseRate !== null ? (inverseRate * 1_000_000).toFixed(2) : '-'} {from}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Rate details */}
-                      <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-100">
-                        <div className="text-center">
-                          <div className="text-xs text-gray-400 mb-1">Last Updated</div>
-                          <div className="text-sm font-semibold text-gray-700">{updatedAt ?? '-'}</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-xs text-gray-400 mb-1">Update Frequency</div>
-                          <div className="text-sm font-semibold text-gray-700">Every 6 hours</div>
-                        </div>
-                      </div>
-
-                      <div className="mt-4 p-3 bg-amber-50 border border-amber-100 rounded-xl">
-                        <p className="text-xs text-amber-700 text-center">
-                          Indicative mid-market rate. Bank and exchange rates will differ. Not financial advice.
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </AnimateOnScroll>
-
-              {/* Rate context */}
-              <AnimateOnScroll animation="fade-up">
-                <div className="mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                  <h2 className="font-display font-bold text-gray-900 text-lg mb-3">
-                    {from} and Vietnam: Expat Context
-                  </h2>
-                  <p className="text-gray-600 text-sm leading-relaxed">{expat}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
-                    The Vietnamese Dong (VND) is managed within a controlled floating band against the USD by the
-                    State Bank of Vietnam. Since {from} rates generally reflect USD cross rates, {from}/VND
-                    movements tend to be gradual rather than volatile.
-                  </p>
-                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
-                    For most expat needs - rent (commonly USD-denominated), daily spending in VND, and occasional
-                    large transfers - understanding the {from}/VND rate helps you plan realistic monthly budgets
-                    and optimise when to convert larger sums.
-                  </p>
-                </div>
-              </AnimateOnScroll>
-            </div>
-          </div>
-        </section>
-
-        {/* Conversion Table */}
-        {rate !== null && (
-          <section className="py-16 bg-gray-50">
-            <div className="container mx-auto px-4 md:px-8">
-              <div className="max-w-3xl mx-auto">
-                <AnimateOnScroll>
-                  <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2 text-center">
-                    {from} to VND Conversion Table
-                  </h2>
-                  <p className="text-gray-500 text-center mb-8 text-sm">
-                    Based on current rate: 1 {from} = {formatVnd(rate)} ₫
-                  </p>
-                </AnimateOnScroll>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  {/* FROM → VND */}
-                  <AnimateOnScroll animation="fade-up">
-                    <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-                      <div className="px-5 py-3 bg-primary-900 text-white text-sm font-semibold">
-                        {from} → Vietnamese Dong
-                      </div>
-                      <div className="divide-y divide-gray-100">
-                        {COMMON_FROM_AMOUNTS.map((amount) => (
-                          <div key={amount} className="flex items-center justify-between px-5 py-3">
-                            <span className="text-sm font-medium text-gray-700">
-                              {formatFromCurrency(amount, symbol, from)}
-                            </span>
-                            <span className="text-sm font-bold text-gray-900">
-                              {formatVndAmount(amount * rate)}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </AnimateOnScroll>
-
-                  {/* VND → FROM */}
-                  <AnimateOnScroll animation="fade-up">
-                    <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-                      <div className="px-5 py-3 bg-slate-800 text-white text-sm font-semibold">
-                        Vietnamese Dong → {from}
-                      </div>
-                      <div className="divide-y divide-gray-100">
-                        {COMMON_VND_AMOUNTS.map((amount) => (
-                          <div key={amount} className="flex items-center justify-between px-5 py-3">
-                            <span className="text-sm font-medium text-gray-700">
-                              {formatVndAmount(amount)}
-                            </span>
-                            <span className="text-sm font-bold text-gray-900">
-                              {inverseRate !== null
-                                ? formatFromCurrency(
-                                    parseFloat((amount * inverseRate).toFixed(2)),
-                                    symbol,
-                                    from
-                                  )
-                                : '-'}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </AnimateOnScroll>
-                </div>
+                )}
               </div>
             </div>
           </section>
-        )}
 
-        {/* Expat Money Tips */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <AnimateOnScroll>
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
-                  Expat Money Tips: {from} in Vietnam
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Practical guidance for managing {name} conversions and finances as an expat in Vietnam.
-                </p>
-              </div>
-            </AnimateOnScroll>
-
-            <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {tips.map((tip, i) => (
-                <AnimateOnScroll key={i} animation="fade-up">
-                  <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center text-primary-700 font-bold text-sm">
-                        {i + 1}
+          {/* Live Rate Card */}
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4 md:px-8">
+              <div className="max-w-3xl mx-auto">
+                <AnimateOnScroll>
+                  <div className="rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+                    {/* Header */}
+                    <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-slate-900 to-primary-900">
+                      <div className="flex items-center gap-3">
+                        <span className="flex h-3 w-3 relative">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                        </span>
+                        <span className="text-white font-semibold">Live {from}/VND Rate</span>
                       </div>
-                      <h3 className="font-semibold text-gray-900">{tip.title}</h3>
+                      <div className="text-xs text-white/50">open.er-api.com</div>
                     </div>
-                    <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
+
+                    {!rate ? (
+                      <div className="px-6 py-8 text-center text-gray-500 text-sm">
+                        Exchange rate data is temporarily unavailable.
+                      </div>
+                    ) : (
+                      <div className="p-6">
+                        {/* Big rate display */}
+                        <div className="text-center py-8">
+                          <div className="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-2">
+                            {formatVnd(rate)}
+                            <span className="text-3xl text-gray-400 ml-2">₫</span>
+                          </div>
+                          <div className="text-lg text-gray-500 mb-4">per 1 {from} ({name})</div>
+                          <div className="text-sm text-gray-400">
+                            Inverse: 1,000,000 ₫ ={' '}
+                            <span className="font-semibold text-gray-600">
+                              {symbol}{inverseRate !== null ? (inverseRate * 1_000_000).toFixed(2) : '-'} {from}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Rate details */}
+                        <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-100">
+                          <div className="text-center">
+                            <div className="text-xs text-gray-400 mb-1">Last Updated</div>
+                            <div className="text-sm font-semibold text-gray-700">{updatedAt ?? '-'}</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="text-xs text-gray-400 mb-1">Update Frequency</div>
+                            <div className="text-sm font-semibold text-gray-700">Every 6 hours</div>
+                          </div>
+                        </div>
+
+                        <div className="mt-4 p-3 bg-amber-50 border border-amber-100 rounded-xl">
+                          <p className="text-xs text-amber-700 text-center">
+                            Indicative mid-market rate. Bank and exchange rates will differ. Not financial advice.
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </AnimateOnScroll>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        {/* Related Currencies */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-8">
-            <AnimateOnScroll>
-              <h2 className="text-2xl font-display font-bold text-gray-900 mb-8 text-center">
-                Other Currency Converters
-              </h2>
-            </AnimateOnScroll>
-            <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
-              {relatedPairs.map((p) => (
-                <Link
-                  key={p.from}
-                  href={`/convert/${p.from.toLowerCase()}-to-vnd`}
-                  className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:border-primary-300 hover:text-primary-700 transition-colors shadow-sm"
-                >
-                  <span>{p.flag}</span>
-                  {p.from} to VND
-                </Link>
-              ))}
-              <Link
-                href="/convert"
-                className="inline-flex items-center gap-2 bg-primary-50 border border-primary-200 rounded-full px-4 py-2 text-sm font-medium text-primary-700 hover:bg-primary-100 transition-colors"
-              >
-                View all →
-              </Link>
+                {/* Rate context */}
+                <AnimateOnScroll animation="fade-up">
+                  <div className="mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                    <h2 className="font-display font-bold text-gray-900 text-lg mb-3">
+                      {from} and Vietnam: Expat Context
+                    </h2>
+                    <p className="text-gray-600 text-sm leading-relaxed">{expat}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                      The Vietnamese Dong (VND) is managed within a controlled floating band against the USD by the
+                      State Bank of Vietnam. Since {from} rates generally reflect USD cross rates, {from}/VND
+                      movements tend to be gradual rather than volatile.
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                      For most expat needs - rent (commonly USD-denominated), daily spending in VND, and occasional
+                      large transfers - understanding the {from}/VND rate helps you plan realistic monthly budgets
+                      and optimise when to convert larger sums.
+                    </p>
+                  </div>
+                </AnimateOnScroll>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* CTA */}
-        <section className="py-20 relative overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />
-          <div className="container mx-auto px-4 md:px-8 relative z-10">
-            <AnimateOnScroll animation="scale" className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-                Moving to Vietnam?
-              </h2>
-              <p className="text-lg text-white/70 mb-8">
-                Our team helps with banking setup, TRC (Temporary Residence Card), company registration, and
-                financial planning - so your move goes smoothly.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Conversion Table */}
+          {rate !== null && (
+            <section className="py-16 bg-gray-50">
+              <div className="container mx-auto px-4 md:px-8">
+                <div className="max-w-3xl mx-auto">
+                  <AnimateOnScroll>
+                    <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-2 text-center">
+                      {from} to VND Conversion Table
+                    </h2>
+                    <p className="text-gray-500 text-center mb-8 text-sm">
+                      Based on current rate: 1 {from} = {formatVnd(rate)} ₫
+                    </p>
+                  </AnimateOnScroll>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {/* FROM → VND */}
+                    <AnimateOnScroll animation="fade-up">
+                      <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                        <div className="px-5 py-3 bg-primary-900 text-white text-sm font-semibold">
+                          {from} → Vietnamese Dong
+                        </div>
+                        <div className="divide-y divide-gray-100">
+                          {COMMON_FROM_AMOUNTS.map((amount) => (
+                            <div key={amount} className="flex items-center justify-between px-5 py-3">
+                              <span className="text-sm font-medium text-gray-700">
+                                {formatFromCurrency(amount, symbol, from)}
+                              </span>
+                              <span className="text-sm font-bold text-gray-900">
+                                {formatVndAmount(amount * rate)}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </AnimateOnScroll>
+
+                    {/* VND → FROM */}
+                    <AnimateOnScroll animation="fade-up">
+                      <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+                        <div className="px-5 py-3 bg-slate-800 text-white text-sm font-semibold">
+                          Vietnamese Dong → {from}
+                        </div>
+                        <div className="divide-y divide-gray-100">
+                          {COMMON_VND_AMOUNTS.map((amount) => (
+                            <div key={amount} className="flex items-center justify-between px-5 py-3">
+                              <span className="text-sm font-medium text-gray-700">
+                                {formatVndAmount(amount)}
+                              </span>
+                              <span className="text-sm font-bold text-gray-900">
+                                {inverseRate !== null
+                                  ? formatFromCurrency(
+                                      parseFloat((amount * inverseRate).toFixed(2)),
+                                      symbol,
+                                      from
+                                    )
+                                  : '-'}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </AnimateOnScroll>
+                  </div>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Expat Money Tips */}
+          <section className="py-16 md:py-24 bg-white">
+            <div className="container mx-auto px-4 md:px-8">
+              <AnimateOnScroll>
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
+                    Expat Money Tips: {from} in Vietnam
+                  </h2>
+                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Practical guidance for managing {name} conversions and finances as an expat in Vietnam.
+                  </p>
+                </div>
+              </AnimateOnScroll>
+
+              <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {tips.map((tip, i) => (
+                  <AnimateOnScroll key={i} animation="fade-up">
+                    <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center text-primary-700 font-bold text-sm">
+                          {i + 1}
+                        </div>
+                        <h3 className="font-semibold text-gray-900">{tip.title}</h3>
+                      </div>
+                      <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
+                    </div>
+                  </AnimateOnScroll>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Related Currencies */}
+          <section className="py-16 bg-gray-50">
+            <div className="container mx-auto px-4 md:px-8">
+              <AnimateOnScroll>
+                <h2 className="text-2xl font-display font-bold text-gray-900 mb-8 text-center">
+                  Other Currency Converters
+                </h2>
+              </AnimateOnScroll>
+              <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
+                {relatedPairs.map((p) => (
+                  <Link
+                    key={p.from}
+                    href={`/convert/${p.from.toLowerCase()}-to-vnd`}
+                    className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:border-primary-300 hover:text-primary-700 transition-colors shadow-sm"
+                  >
+                    <span>{p.flag}</span>
+                    {p.from} to VND
+                  </Link>
+                ))}
                 <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-8 py-4 rounded-full text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  href="/convert"
+                  className="inline-flex items-center gap-2 bg-primary-50 border border-primary-200 rounded-full px-4 py-2 text-sm font-medium text-primary-700 hover:bg-primary-100 transition-colors"
                 >
-                  Free Consultation
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-                <Link
-                  href="/vietnam-exchange-rates"
-                  className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-white/20 transition-all duration-300"
-                >
-                  All Exchange Rates
+                  View all →
                 </Link>
               </div>
-            </AnimateOnScroll>
-          </div>
-        </section>
+            </div>
+          </section>
 
+          {/* CTA */}
+          <section className="py-20 relative overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')` }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />
+            <div className="container mx-auto px-4 md:px-8 relative z-10">
+              <AnimateOnScroll animation="scale" className="max-w-2xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                  Moving to Vietnam?
+                </h2>
+                <p className="text-lg text-white/70 mb-8">
+                  Our team helps with banking setup, TRC (Temporary Residence Card), company registration, and
+                  financial planning - so your move goes smoothly.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-8 py-4 rounded-full text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  >
+                    Free Consultation
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/vietnam-exchange-rates"
+                    className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-white/20 transition-all duration-300"
+                  >
+                    All Exchange Rates
+                  </Link>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </section>
+
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

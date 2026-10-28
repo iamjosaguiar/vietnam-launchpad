@@ -92,8 +92,8 @@ module.exports = {
         field: '#8A96A3',
       },
       fontFamily: {
-        display: ['"Source Serif 4"', 'Georgia', '"Times New Roman"', 'serif'],
-        body: ['"DM Sans"', 'system-ui', '-apple-system', '"Segoe UI"', 'Roboto', 'Arial', 'sans-serif'],
+        display: ['var(--font-display)'],
+        body: ['var(--font-body)'],
       },
       fontSize: {
         lead: ['1.125rem', { lineHeight: '1.6' }],

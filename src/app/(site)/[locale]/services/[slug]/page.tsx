@@ -105,11 +105,13 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
-        <ServiceDetailContent service={service} />
+        <main>
+          <ServiceDetailContent service={service} />
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

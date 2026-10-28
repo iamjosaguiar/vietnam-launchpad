@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
+import { DM_Sans, Source_Serif_4 } from 'next/font/google';
 import Script from 'next/script';
 
 import MobileStickyBar from '@/components/MobileStickyBar';
@@ -9,6 +10,21 @@ import { OG_IMAGE_URL } from '@/lib/seo';
 import { CONTACT_EMAILS, PHONE_E164 } from '@/lib/site';
 
 import '../globals.css';
+
+// Self-hosted at build time, replaces the render-blocking Google Fonts CSS @import.
+const fontBody = DM_Sans({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+});
+const fontDisplay = Source_Serif_4({
+  subsets: ['latin', 'latin-ext', 'vietnamese'],
+  weight: ['400', '600', '700'],
+  display: 'swap',
+  variable: '--font-source-serif',
+});
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -162,7 +178,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
   };
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${fontBody.variable} ${fontDisplay.variable}`}>
       <head>
         <Script
           id="schema-website"

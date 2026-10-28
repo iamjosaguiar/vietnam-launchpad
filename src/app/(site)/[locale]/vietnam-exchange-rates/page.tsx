@@ -149,206 +149,208 @@ export default async function VietnamExchangeRatesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
+        <main>
 
-        {/* Hero */}
-        <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[100px]" />
+          {/* Hero */}
+          <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">
+            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
+            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[100px]" />
 
-          <div className="container mx-auto px-4 md:px-8 relative z-10">
-            <div className="max-w-4xl">
-              <div className="hero-badge flex items-center gap-3 mb-8">
-                <span className="flex h-2.5 w-2.5 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                </span>
-                <span className="text-sm text-emerald-400 font-medium">Live data - refreshes every 6 hours</span>
-              </div>
+            <div className="container mx-auto px-4 md:px-8 relative z-10">
+              <div className="max-w-4xl">
+                <div className="hero-badge flex items-center gap-3 mb-8">
+                  <span className="flex h-2.5 w-2.5 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  </span>
+                  <span className="text-sm text-emerald-400 font-medium">Live data - refreshes every 6 hours</span>
+                </div>
 
-              <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
-                Vietnam Dong{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-primary-400">
-                  Exchange Rates
-                </span>
-              </h1>
+                <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
+                  Vietnam Dong{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-primary-400">
+                    Exchange Rates
+                  </span>
+                </h1>
 
-              <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
-                Live USD to VND rate and Vietnamese Dong rates for USD, EUR, GBP, AUD, SGD, JPY, KRW and more.
-                Mid-market rates updated every 6 hours.
-              </p>
-
-              <div className="flex flex-wrap gap-3 text-sm text-white/50">
-                <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  No registration required
-                </span>
-                <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                  Auto-refreshed 4x daily
-                </span>
-                <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Indicative mid-market rates
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Rates Table */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto">
-              <LiveRatesWidget />
-            </div>
-          </div>
-        </section>
-
-        {/* Expat Tips Grid */}
-        <section className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-8">
-            <AnimateOnScroll>
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
-                  Expat Money Tips for Vietnam
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  How to exchange currency, avoid bad rates, and manage your money as a foreigner in Vietnam.
+                <p className="hero-subtitle text-xl text-white/60 mb-8 max-w-2xl">
+                  Live USD to VND rate and Vietnamese Dong rates for USD, EUR, GBP, AUD, SGD, JPY, KRW and more.
+                  Mid-market rates updated every 6 hours.
                 </p>
-              </div>
-            </AnimateOnScroll>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {TIPS.map((tip, i) => (
-                <AnimateOnScroll key={i} animation="fade-up">
-                  <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="w-10 h-10 rounded-xl bg-primary-100 flex items-center justify-center mb-4">
-                      <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        {tip.icon}
-                      </svg>
+                <div className="flex flex-wrap gap-3 text-sm text-white/50">
+                  <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    No registration required
+                  </span>
+                  <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Auto-refreshed 4x daily
+                  </span>
+                  <span className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Indicative mid-market rates
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Rates Table */}
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4 md:px-8">
+              <div className="max-w-3xl mx-auto">
+                <LiveRatesWidget />
+              </div>
+            </div>
+          </section>
+
+          {/* Expat Tips Grid */}
+          <section className="py-16 md:py-24 bg-gray-50">
+            <div className="container mx-auto px-4 md:px-8">
+              <AnimateOnScroll>
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">
+                    Expat Money Tips for Vietnam
+                  </h2>
+                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    How to exchange currency, avoid bad rates, and manage your money as a foreigner in Vietnam.
+                  </p>
+                </div>
+              </AnimateOnScroll>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {TIPS.map((tip, i) => (
+                  <AnimateOnScroll key={i} animation="fade-up">
+                    <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="w-10 h-10 rounded-xl bg-primary-100 flex items-center justify-center mb-4">
+                        <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          {tip.icon}
+                        </svg>
+                      </div>
+                      <h3 className="font-semibold text-gray-900 mb-2">{tip.title}</h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
                     </div>
-                    <h3 className="font-semibold text-gray-900 mb-2">{tip.title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{tip.body}</p>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Vietnam Economic Snapshot */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto">
-              <AnimateOnScroll>
-                <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">
-                  Vietnam Economic Snapshot
-                </h2>
-                <p className="text-gray-500 text-sm mb-6">
-                  Key economic indicators from World Bank open data - refreshed daily.
-                </p>
-              </AnimateOnScroll>
-              <EconomicSnapshotWidget />
-            </div>
-          </div>
-        </section>
-
-        {/* About the VND */}
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-3xl mx-auto prose prose-lg prose-gray">
-              <AnimateOnScroll>
-                <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">
-                  About the Vietnamese Dong (VND)
-                </h2>
-              </AnimateOnScroll>
-              <p className="text-gray-600 leading-relaxed">
-                The Vietnamese Dong (VND, symbol ₫) is the official currency of Vietnam, issued by the
-                State Bank of Vietnam. Notes range from 500 VND to 500,000 VND, with 100,000, 200,000
-                and 500,000 note denominations in widespread use.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                USD/VND is the most-quoted pair and the reference rate for most expat transactions.
-                The State Bank of Vietnam manages the VND within a controlled floating band against the USD,
-                so rate movements are gradual rather than volatile. The VND has depreciated gently against
-                the USD over recent years (averaging 1-3% annually), largely reflecting inflation differentials.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                For expats: most landlords quote rent in USD, major services may invoice in USD, and
-                international school fees are typically USD-denominated. Day-to-day spending (food, transport,
-                local services) is in VND.
-              </p>
-
-              <h3 className="text-xl font-display font-bold text-gray-900 mt-8 mb-4">
-                Related Resources
-              </h3>
-              <ul className="space-y-2 list-none pl-0">
-                {[
-                  { name: 'Cost of Living in Vietnam 2026', href: '/guides/cost-of-living' },
-                  { name: 'Company Setup in Vietnam', href: '/guides/company-setup-vietnam' },
-                  { name: 'Tax Filing (PIT) for Expats', href: '/services/tax-filing' },
-                  { name: 'Accounting & Bookkeeping Services', href: '/services/accounting-bookkeeping' },
-                ].map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-primary-600 hover:text-primary-700 font-medium text-sm underline underline-offset-2"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
+                  </AnimateOnScroll>
                 ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 relative overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />
-          <div className="container mx-auto px-4 md:px-8 relative z-10">
-            <AnimateOnScroll animation="scale" className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-                Planning Your Move to Vietnam?
-              </h2>
-              <p className="text-lg text-white/70 mb-8">
-                Our consultants handle visas, work permits, company setup, and banking - so your move goes smoothly.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-8 py-4 rounded-full text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                >
-                  Free Consultation
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-                <Link
-                  href="/guides/cost-of-living"
-                  className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-white/20 transition-all duration-300"
-                >
-                  Cost of Living Guide
-                </Link>
               </div>
-            </AnimateOnScroll>
-          </div>
-        </section>
+            </div>
+          </section>
 
+          {/* Vietnam Economic Snapshot */}
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4 md:px-8">
+              <div className="max-w-3xl mx-auto">
+                <AnimateOnScroll>
+                  <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">
+                    Vietnam Economic Snapshot
+                  </h2>
+                  <p className="text-gray-500 text-sm mb-6">
+                    Key economic indicators from World Bank open data - refreshed daily.
+                  </p>
+                </AnimateOnScroll>
+                <EconomicSnapshotWidget />
+              </div>
+            </div>
+          </section>
+
+          {/* About the VND */}
+          <section className="py-16 md:py-20 bg-gray-50">
+            <div className="container mx-auto px-4 md:px-8">
+              <div className="max-w-3xl mx-auto prose prose-lg prose-gray">
+                <AnimateOnScroll>
+                  <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">
+                    About the Vietnamese Dong (VND)
+                  </h2>
+                </AnimateOnScroll>
+                <p className="text-gray-600 leading-relaxed">
+                  The Vietnamese Dong (VND, symbol ₫) is the official currency of Vietnam, issued by the
+                  State Bank of Vietnam. Notes range from 500 VND to 500,000 VND, with 100,000, 200,000
+                  and 500,000 note denominations in widespread use.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  USD/VND is the most-quoted pair and the reference rate for most expat transactions.
+                  The State Bank of Vietnam manages the VND within a controlled floating band against the USD,
+                  so rate movements are gradual rather than volatile. The VND has depreciated gently against
+                  the USD over recent years (averaging 1-3% annually), largely reflecting inflation differentials.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  For expats: most landlords quote rent in USD, major services may invoice in USD, and
+                  international school fees are typically USD-denominated. Day-to-day spending (food, transport,
+                  local services) is in VND.
+                </p>
+
+                <h3 className="text-xl font-display font-bold text-gray-900 mt-8 mb-4">
+                  Related Resources
+                </h3>
+                <ul className="space-y-2 list-none pl-0">
+                  {[
+                    { name: 'Cost of Living in Vietnam 2026', href: '/guides/cost-of-living' },
+                    { name: 'Company Setup in Vietnam', href: '/guides/company-setup-vietnam' },
+                    { name: 'Tax Filing (PIT) for Expats', href: '/services/tax-filing' },
+                    { name: 'Accounting & Bookkeeping Services', href: '/services/accounting-bookkeeping' },
+                  ].map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-primary-600 hover:text-primary-700 font-medium text-sm underline underline-offset-2"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA */}
+          <section className="py-20 relative overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')` }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />
+            <div className="container mx-auto px-4 md:px-8 relative z-10">
+              <AnimateOnScroll animation="scale" className="max-w-2xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+                  Planning Your Move to Vietnam?
+                </h2>
+                <p className="text-lg text-white/70 mb-8">
+                  Our consultants handle visas, work permits, company setup, and banking - so your move goes smoothly.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-8 py-4 rounded-full text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  >
+                    Free Consultation
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/guides/cost-of-living"
+                    className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-white/20 transition-all duration-300"
+                  >
+                    Cost of Living Guide
+                  </Link>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </section>
+
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

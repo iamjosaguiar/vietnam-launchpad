@@ -148,75 +148,77 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
+        <main>
 
-        <VisaHero
-          breadcrumb={country}
-          flag={page.flag}
-          flagLabel={country}
-          badge={page.badge}
-          title={page.h1}
-          lead={page.heroText}
-          notice={page.privateLine}
-        />
+          <VisaHero
+            breadcrumb={country}
+            flag={page.flag}
+            flagLabel={country}
+            badge={page.badge}
+            title={page.h1}
+            lead={page.heroText}
+            notice={page.privateLine}
+          />
 
-        <VisaColumns
-          asideLabel={helpHeading?.text ?? page.factsHeading}
-          asideClassName="hidden nav:block"
-          aside={
-            help?.t === 'buttons' ? (
-              <div className="rounded-panel border border-hairline bg-white p-6 shadow-soft">
-                {helpHeading && (
-                  <p className="mb-4 font-display text-step-1 font-semibold text-ink">{helpHeading.text}</p>
-                )}
-                <div className="grid gap-2">
-                  <Button href={help.primary.href} block icon="arrow">
-                    {help.primary.text}
-                  </Button>
-                  <Button href={help.secondary.href} variant="secondary" block>
-                    {help.secondary.text}
-                  </Button>
+          <VisaColumns
+            asideLabel={helpHeading?.text ?? page.factsHeading}
+            asideClassName="hidden nav:block"
+            aside={
+              help?.t === 'buttons' ? (
+                <div className="rounded-panel border border-hairline bg-white p-6 shadow-soft">
+                  {helpHeading && (
+                    <p className="mb-4 font-display text-step-1 font-semibold text-ink">{helpHeading.text}</p>
+                  )}
+                  <div className="grid gap-2">
+                    <Button href={help.primary.href} block icon="arrow">
+                      {help.primary.text}
+                    </Button>
+                    <Button href={help.secondary.href} variant="secondary" block>
+                      {help.secondary.text}
+                    </Button>
+                  </div>
+                  <p className="mb-0 mt-4 flex items-start gap-2 border-t border-hairline pt-4 text-sm text-muted">
+                    <Icon name="shield" className="mt-0.5 h-[18px] w-[18px] flex-none text-success" />
+                    {page.privateLine}
+                  </p>
                 </div>
-                <p className="mb-0 mt-4 flex items-start gap-2 border-t border-hairline pt-4 text-sm text-muted">
-                  <Icon name="shield" className="mt-0.5 h-[18px] w-[18px] flex-none text-success" />
-                  {page.privateLine}
-                </p>
-              </div>
-            ) : null
-          }
-        >
-          <VisaCard>
-            <h2 className={visaH2}>{page.factsHeading}</h2>
-            <dl className="m-0">
-              {page.facts.map(([label, value]) => (
-                <div
-                  key={label}
-                  className="flex flex-col gap-1 border-t border-hairline py-3 last:border-b sm:flex-row sm:gap-4"
-                >
-                  <dt className="flex-shrink-0 text-sm text-muted sm:w-56">{label}</dt>
-                  <dd className="m-0 text-sm font-bold text-ink">{value}</dd>
-                </div>
-              ))}
-            </dl>
-            <p className="mb-0 mt-4 max-w-measure text-sm text-muted">{page.lastVerified}</p>
-          </VisaCard>
+              ) : null
+            }
+          >
+            <VisaCard>
+              <h2 className={visaH2}>{page.factsHeading}</h2>
+              <dl className="m-0">
+                {page.facts.map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="flex flex-col gap-1 border-t border-hairline py-3 last:border-b sm:flex-row sm:gap-4"
+                  >
+                    <dt className="flex-shrink-0 text-sm text-muted sm:w-56">{label}</dt>
+                    <dd className="m-0 text-sm font-bold text-ink">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mb-0 mt-4 max-w-measure text-sm text-muted">{page.lastVerified}</p>
+            </VisaCard>
 
-          {groupByHeading(page.blocks).map((group, i) => (
-            <GroupCard key={group.heading ?? i} group={group} />
-          ))}
+            {groupByHeading(page.blocks).map((group, i) => (
+              <GroupCard key={group.heading ?? i} group={group} />
+            ))}
 
-          <VisaCard>
-            <h2 className={visaH2}>{page.faqHeading}</h2>
-            <Accordion
-              questionAs="h3"
-              items={page.faqs.map((f) => ({ question: f.q, answer: <p className="m-0">{f.a}</p> }))}
-            />
-          </VisaCard>
-        </VisaColumns>
+            <VisaCard>
+              <h2 className={visaH2}>{page.faqHeading}</h2>
+              <Accordion
+                questionAs="h3"
+                items={page.faqs.map((f) => ({ question: f.q, answer: <p className="m-0">{f.a}</p> }))}
+              />
+            </VisaCard>
+          </VisaColumns>
 
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

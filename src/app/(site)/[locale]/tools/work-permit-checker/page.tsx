@@ -254,217 +254,219 @@ export default function WorkPermitCheckerPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(workPermitSchema) }}
       />
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <Navigation />
+      <main>
 
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-16 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]" />
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-sm text-white/70 mb-6">
-              <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              Free Eligibility Checker
+        {/* Hero */}
+        <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-16 overflow-hidden">
+          <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]" />
+          <div className="container mx-auto px-4 md:px-8 relative z-10">
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-sm text-white/70 mb-6">
+                <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Free Eligibility Checker
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-display font-bold mb-4 leading-tight">
+                Do I Need a Vietnam Work Permit?
+              </h1>
+              <p className="text-xl text-white/60 mb-2">
+                Answer 3-5 questions to find out if you need a work permit, or if you qualify for an exemption.
+              </p>
+              <p className="text-sm text-white/40">
+                Based on Decree 219/2025/ND-CP (in force now). Decree 393/2026/ND-CP replaces it on 5 December 2026. For binding legal advice, consult our team.
+              </p>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-display font-bold mb-4 leading-tight">
-              Do I Need a Vietnam Work Permit?
-            </h1>
-            <p className="text-xl text-white/60 mb-2">
-              Answer 3-5 questions to find out if you need a work permit, or if you qualify for an exemption.
-            </p>
-            <p className="text-sm text-white/40">
-              Based on Decree 219/2025/ND-CP (in force now). Decree 393/2026/ND-CP replaces it on 5 December 2026. For binding legal advice, consult our team.
-            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Checker */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-2xl mx-auto">
+        {/* Checker */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-2xl mx-auto">
 
-            {/* Progress bar */}
-            <div className="mb-8">
-              <div className="flex justify-between text-xs text-gray-400 mb-2">
-                <span>Progress</span>
-                <span>{result ? 'Complete' : `Step ${history.length}`}</span>
+              {/* Progress bar */}
+              <div className="mb-8">
+                <div className="flex justify-between text-xs text-gray-400 mb-2">
+                  <span>Progress</span>
+                  <span>{result ? 'Complete' : `Step ${history.length}`}</span>
+                </div>
+                <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-primary-500 to-primary-600 rounded-full transition-all duration-500"
+                    style={{ width: `${progressPct}%` }}
+                  />
+                </div>
               </div>
-              <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-gradient-to-r from-primary-500 to-primary-600 rounded-full transition-all duration-500"
-                  style={{ width: `${progressPct}%` }}
-                />
-              </div>
-            </div>
 
-            {result ? (
-              /* Result */
-              <div>
-                <div className={`rounded-2xl border-2 ${RESULT_STYLES[result.type].bg} ${RESULT_STYLES[result.type].border} p-6 mb-6`}>
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className={`w-12 h-12 rounded-full ${RESULT_STYLES[result.type].iconBg} flex items-center justify-center text-xl font-bold ${RESULT_STYLES[result.type].iconColor} shrink-0`}>
-                      {RESULT_STYLES[result.type].icon}
+              {result ? (
+                /* Result */
+                <div>
+                  <div className={`rounded-2xl border-2 ${RESULT_STYLES[result.type].bg} ${RESULT_STYLES[result.type].border} p-6 mb-6`}>
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className={`w-12 h-12 rounded-full ${RESULT_STYLES[result.type].iconBg} flex items-center justify-center text-xl font-bold ${RESULT_STYLES[result.type].iconColor} shrink-0`}>
+                        {RESULT_STYLES[result.type].icon}
+                      </div>
+                      <div>
+                        <h2 className={`text-xl font-bold mb-2 ${RESULT_STYLES[result.type].heading}`}>
+                          {result.headline}
+                        </h2>
+                        <p className="text-gray-700 leading-relaxed">{result.body}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h2 className={`text-xl font-bold mb-2 ${RESULT_STYLES[result.type].heading}`}>
-                        {result.headline}
-                      </h2>
-                      <p className="text-gray-700 leading-relaxed">{result.body}</p>
-                    </div>
+
+                    {result.caveats && result.caveats.length > 0 && (
+                      <div className="mt-4 pt-4 border-t border-current border-opacity-10">
+                        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Keep in mind</p>
+                        <ul className="space-y-1.5">
+                          {result.caveats.map((c, i) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                              <span className="text-gray-400 mt-0.5">-</span>
+                              {c}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
 
-                  {result.caveats && result.caveats.length > 0 && (
-                    <div className="mt-4 pt-4 border-t border-current border-opacity-10">
-                      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Keep in mind</p>
-                      <ul className="space-y-1.5">
-                        {result.caveats.map((c, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                            <span className="text-gray-400 mt-0.5">-</span>
-                            {c}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-3 mb-8">
-                  <Link
-                    href={result.actionHref}
-                    className="flex-1 inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-6 py-3.5 rounded-full font-semibold transition-all hover:scale-105"
-                  >
-                    {result.action}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
-                  {result.secondaryAction && result.secondaryHref && (
+                  <div className="flex flex-col sm:flex-row gap-3 mb-8">
                     <Link
-                      href={result.secondaryHref}
-                      className="flex-1 inline-flex items-center justify-center gap-2 border border-gray-200 text-gray-700 px-6 py-3.5 rounded-full font-medium hover:bg-gray-50 transition-all"
+                      href={result.actionHref}
+                      className="flex-1 inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-6 py-3.5 rounded-full font-semibold transition-all hover:scale-105"
                     >
-                      {result.secondaryAction}
+                      {result.action}
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
                     </Link>
-                  )}
-                </div>
-
-                <button
-                  onClick={reset}
-                  className="text-sm text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-1.5"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                  Start over
-                </button>
-              </div>
-            ) : (
-              /* Question */
-              <div>
-                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
-                  <h2 className="text-xl font-bold text-gray-900 mb-2">{current.question}</h2>
-                  {current.subtext && (
-                    <p className="text-sm text-gray-500 mb-4">{current.subtext}</p>
-                  )}
-                  <div className="space-y-2 mt-4">
-                    {current.options.map((opt) => (
-                      <button
-                        key={opt.value}
-                        onClick={() => handleOption(opt.next)}
-                        className="w-full text-left px-5 py-4 rounded-xl border border-gray-200 hover:border-primary-400 hover:bg-primary-50 text-sm text-gray-700 hover:text-primary-700 font-medium transition-all group flex items-center justify-between"
+                    {result.secondaryAction && result.secondaryHref && (
+                      <Link
+                        href={result.secondaryHref}
+                        className="flex-1 inline-flex items-center justify-center gap-2 border border-gray-200 text-gray-700 px-6 py-3.5 rounded-full font-medium hover:bg-gray-50 transition-all"
                       >
-                        <span>{opt.label}</span>
-                        <svg className="w-4 h-4 text-gray-300 group-hover:text-primary-500 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
-                    ))}
+                        {result.secondaryAction}
+                      </Link>
+                    )}
                   </div>
-                </div>
 
-                {history.length > 1 && (
                   <button
-                    onClick={goBack}
+                    onClick={reset}
                     className="text-sm text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-1.5"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
-                    Back
+                    Start over
                   </button>
-                )}
-              </div>
-            )}
+                </div>
+              ) : (
+                /* Question */
+                <div>
+                  <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-4">
+                    <h2 className="text-xl font-bold text-gray-900 mb-2">{current.question}</h2>
+                    {current.subtext && (
+                      <p className="text-sm text-gray-500 mb-4">{current.subtext}</p>
+                    )}
+                    <div className="space-y-2 mt-4">
+                      {current.options.map((opt) => (
+                        <button
+                          key={opt.value}
+                          onClick={() => handleOption(opt.next)}
+                          className="w-full text-left px-5 py-4 rounded-xl border border-gray-200 hover:border-primary-400 hover:bg-primary-50 text-sm text-gray-700 hover:text-primary-700 font-medium transition-all group flex items-center justify-between"
+                        >
+                          <span>{opt.label}</span>
+                          <svg className="w-4 h-4 text-gray-300 group-hover:text-primary-500 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
-            {/* Not sure CTA */}
-            <div className="mt-10 rounded-2xl bg-gradient-to-br from-slate-900 to-primary-900 p-6 flex flex-col sm:flex-row items-center gap-5 justify-between">
-              <div>
-                <p className="text-white font-semibold mb-1">Not 100% sure? Talk to an expert.</p>
-                <p className="text-white/60 text-sm">Work permit rules are nuanced. Our consultants have seen it all - book a free 15-min call.</p>
+                  {history.length > 1 && (
+                    <button
+                      onClick={goBack}
+                      className="text-sm text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-1.5"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                      Back
+                    </button>
+                  )}
+                </div>
+              )}
+
+              {/* Not sure CTA */}
+              <div className="mt-10 rounded-2xl bg-gradient-to-br from-slate-900 to-primary-900 p-6 flex flex-col sm:flex-row items-center gap-5 justify-between">
+                <div>
+                  <p className="text-white font-semibold mb-1">Not 100% sure? Talk to an expert.</p>
+                  <p className="text-white/60 text-sm">Work permit rules are nuanced. Our consultants have seen it all - book a free 15-min call.</p>
+                </div>
+                <Link
+                  href="/contact"
+                  className="shrink-0 inline-flex items-center gap-2 bg-white text-primary-700 px-5 py-3 rounded-full text-sm font-bold hover:scale-105 transition-all whitespace-nowrap"
+                >
+                  Free Call
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
               </div>
-              <Link
-                href="/contact"
-                className="shrink-0 inline-flex items-center gap-2 bg-white text-primary-700 px-5 py-3 rounded-full text-sm font-bold hover:scale-105 transition-all whitespace-nowrap"
-              >
-                Free Call
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Key exemption categories */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">Work Permit Exemption Categories</h2>
-            <p className="text-gray-500 text-sm mb-8">Under Decree 219/2025/ND-CP (in force now), these groups may be exempt from Vietnam work permit requirements:</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[
-                { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and residing in Vietnam are exempt - no full work permit required' },
-                { cat: 'Capital Owners', desc: 'Foreign individuals who are legal capital-contributing members of a Vietnamese company (subject to minimum contribution threshold)' },
-                { cat: 'Board Members', desc: 'Members of the Board of Directors or Members Council who are appointed in official company documents' },
-                { cat: 'Short-Stay Specialists', desc: 'Specialists visiting Vietnam for under 30 days per trip, with no more than 3 visits and under 90 total days per year' },
-                { cat: 'Intra-Company Transfers', desc: 'Managers, executives, and specialists transferred within a multinational for assignments under 3 months' },
-                { cat: 'Students/Interns', desc: 'Foreign students completing internships that are formally part of their academic program' },
-              ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl border border-gray-100 p-5">
-                  <p className="font-semibold text-gray-900 text-sm mb-1.5">{item.cat}</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+        {/* Key exemption categories */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">Work Permit Exemption Categories</h2>
+              <p className="text-gray-500 text-sm mb-8">Under Decree 219/2025/ND-CP (in force now), these groups may be exempt from Vietnam work permit requirements:</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  { cat: 'Spouses of Vietnamese Citizens', desc: 'Foreign nationals married to Vietnamese citizens and residing in Vietnam are exempt - no full work permit required' },
+                  { cat: 'Capital Owners', desc: 'Foreign individuals who are legal capital-contributing members of a Vietnamese company (subject to minimum contribution threshold)' },
+                  { cat: 'Board Members', desc: 'Members of the Board of Directors or Members Council who are appointed in official company documents' },
+                  { cat: 'Short-Stay Specialists', desc: 'Specialists visiting Vietnam for under 30 days per trip, with no more than 3 visits and under 90 total days per year' },
+                  { cat: 'Intra-Company Transfers', desc: 'Managers, executives, and specialists transferred within a multinational for assignments under 3 months' },
+                  { cat: 'Students/Interns', desc: 'Foreign students completing internships that are formally part of their academic program' },
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-gray-100 p-5">
+                    <p className="font-semibold text-gray-900 text-sm mb-1.5">{item.cat}</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <h3 className="text-xl font-display font-bold text-gray-900 mt-12 mb-2">What changes on 5 December 2026</h3>
+              <p className="text-gray-500 text-sm mb-8">Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP and lists 18 cases exempt from a work permit. These are some of the cases it covers:</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  { cat: 'Special Visa Exemption Card Holders', desc: 'Foreigners holding a special visa exemption card under Decree 221/2025/ND-CP' },
+                  { cat: 'Strategic Technology Experts', desc: 'Experts working in fields on the Prime Minister\'s strategic technology lists, and their relatives' },
+                  { cat: 'AI Talent', desc: 'People recruited under the National Programme for Artificial Intelligence Human Resources Development' },
+                  { cat: 'Education Staff', desc: 'Teachers and researchers at education institutions, including master\'s holders in STEM, finance, economics or business, PhD holders, professors and associate professors' },
+                  { cat: 'ODA and Aid Projects', desc: 'Consultants and staff on projects funded by official development assistance, non-refundable aid or concessional loans' },
+                  { cat: 'Ministry or Province Confirmed', desc: 'People certified by a ministry, a ministerial-level agency or a provincial People\'s Committee' },
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-gray-100 p-5">
+                    <p className="font-semibold text-gray-900 text-sm mb-1.5">{item.cat}</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-gray-400 mt-6">Until 5 December 2026, current rules still apply. Please confirm your case with a licensed professional.</p>
+              <p className="text-xs text-gray-400 mt-6">This is a summary only. Exact conditions, thresholds and documentation requirements apply. Always verify your specific situation with a qualified advisor before proceeding.</p>
             </div>
-            <h3 className="text-xl font-display font-bold text-gray-900 mt-12 mb-2">What changes on 5 December 2026</h3>
-            <p className="text-gray-500 text-sm mb-8">Decree 393/2026/ND-CP replaces Decree 219/2025/ND-CP and lists 18 cases exempt from a work permit. These are some of the cases it covers:</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[
-                { cat: 'Special Visa Exemption Card Holders', desc: 'Foreigners holding a special visa exemption card under Decree 221/2025/ND-CP' },
-                { cat: 'Strategic Technology Experts', desc: 'Experts working in fields on the Prime Minister\'s strategic technology lists, and their relatives' },
-                { cat: 'AI Talent', desc: 'People recruited under the National Programme for Artificial Intelligence Human Resources Development' },
-                { cat: 'Education Staff', desc: 'Teachers and researchers at education institutions, including master\'s holders in STEM, finance, economics or business, PhD holders, professors and associate professors' },
-                { cat: 'ODA and Aid Projects', desc: 'Consultants and staff on projects funded by official development assistance, non-refundable aid or concessional loans' },
-                { cat: 'Ministry or Province Confirmed', desc: 'People certified by a ministry, a ministerial-level agency or a provincial People\'s Committee' },
-              ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl border border-gray-100 p-5">
-                  <p className="font-semibold text-gray-900 text-sm mb-1.5">{item.cat}</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-xs text-gray-400 mt-6">Until 5 December 2026, current rules still apply. Please confirm your case with a licensed professional.</p>
-            <p className="text-xs text-gray-400 mt-6">This is a summary only. Exact conditions, thresholds and documentation requirements apply. Always verify your specific situation with a qualified advisor before proceeding.</p>
           </div>
-        </div>
-      </section>
+        </section>
 
+      </main>
       <Footer />
-    </main>
+    </div>
     </>
   );
 }

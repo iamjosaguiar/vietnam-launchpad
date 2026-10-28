@@ -92,170 +92,172 @@ export default function GuidesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(guidesSchema) }}
       />
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <Navigation />
+      <main>
 
-      {/* Hero */}
-      <section className="bg-hero-wash py-12 nav:py-16">
-        <div className="mx-auto w-full max-w-site px-4 md:px-6">
-          <div className="max-w-[760px]">
-            <div className="hero-badge mb-4 inline-flex min-h-[32px] items-center gap-2 rounded-full border border-gold-line bg-gold-soft px-3 py-1 text-sm font-bold text-navy">
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-              <span>Evergreen reference guides</span>
-            </div>
+        {/* Hero */}
+        <section className="bg-hero-wash py-12 nav:py-16">
+          <div className="mx-auto w-full max-w-site px-4 md:px-6">
+            <div className="max-w-[760px]">
+              <div className="hero-badge mb-4 inline-flex min-h-[32px] items-center gap-2 rounded-full border border-gold-line bg-gold-soft px-3 py-1 text-sm font-bold text-navy">
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <span>Evergreen reference guides</span>
+              </div>
 
-            <h1 className="hero-title mb-4 font-display text-step-3 font-semibold leading-tight text-ink nav:text-step-5">
-              The Vietnam Expat
-              <span className="block text-navy">
-                Reference Library
-              </span>
-            </h1>
+              <h1 className="hero-title mb-4 font-display text-step-3 font-semibold leading-tight text-ink nav:text-step-5">
+                The Vietnam Expat
+                <span className="block text-navy">
+                  Reference Library
+                </span>
+              </h1>
 
-            <p className="hero-subtitle mb-8 max-w-measure text-lead text-muted">
-              Deep-dive guides on every major topic expats research before and after moving to Vietnam. Kept current, not dated.
-            </p>
+              <p className="hero-subtitle mb-8 max-w-measure text-lead text-muted">
+                Deep-dive guides on every major topic expats research before and after moving to Vietnam. Kept current, not dated.
+              </p>
 
-            {/* Stats row */}
-            <div className="flex flex-wrap gap-x-8 gap-y-4">
-              {[
-                { value: `${guides.length}`, label: 'Comprehensive Guides' },
-                { value: categories.length.toString(), label: 'Topic Areas' },
-                { value: 'Monthly', label: 'Update Cadence' },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="m-0 font-display text-step-2 font-semibold text-ink">{stat.value}</p>
-                  <p className="m-0 mt-1 text-sm text-muted">{stat.label}</p>
-                </div>
-              ))}
+              {/* Stats row */}
+              <div className="flex flex-wrap gap-x-8 gap-y-4">
+                {[
+                  { value: `${guides.length}`, label: 'Comprehensive Guides' },
+                  { value: categories.length.toString(), label: 'Topic Areas' },
+                  { value: 'Monthly', label: 'Update Cadence' },
+                ].map((stat) => (
+                  <div key={stat.label}>
+                    <p className="m-0 font-display text-step-2 font-semibold text-ink">{stat.value}</p>
+                    <p className="m-0 mt-1 text-sm text-muted">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Filter + Grid */}
-      <section className="bg-paper py-12 nav:py-16">
-        <div className="mx-auto w-full max-w-site px-4 md:px-6">
+        {/* Filter + Grid */}
+        <section className="bg-paper py-12 nav:py-16">
+          <div className="mx-auto w-full max-w-site px-4 md:px-6">
 
-          {/* Category Filter */}
-          <div className="mb-8 flex flex-wrap gap-2">
-            {['All', ...categories].map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                aria-pressed={activeCategory === cat}
-                className={`min-h-[44px] rounded-full border px-5 text-sm font-bold transition-colors duration-150 motion-reduce:transition-none ${
+            {/* Category Filter */}
+            <div className="mb-8 flex flex-wrap gap-2">
+              {['All', ...categories].map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  aria-pressed={activeCategory === cat}
+                  className={`min-h-[44px] rounded-full border px-5 text-sm font-bold transition-colors duration-150 motion-reduce:transition-none ${
                   activeCategory === cat
                     ? 'border-navy bg-navy text-white'
                     : 'border-hairline bg-white text-ink hover:bg-sand'
                 }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
-          {/* Guide Cards */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((guide, index) => {
-              const colors = categoryColors[guide.category] || categoryTone;
-              const icon = categoryIcons[guide.category];
-
-              return (
-                <AnimateOnScroll key={guide.slug} delay={index * 80}>
-                  <article className="group flex h-full flex-col overflow-hidden rounded-card border border-hairline bg-white transition-shadow duration-150 hover:shadow-soft motion-reduce:transition-none">
-
-                    {/* Card Header */}
-                    <div className="p-6 pb-0">
-                      <div className="mb-4 flex items-start justify-between gap-3">
-                        <div className={`w-12 h-12 rounded-card ${colors.bg} ${colors.text} flex items-center justify-center shrink-0`}>
-                          {icon}
-                        </div>
-                        <span className={`text-sm font-bold px-3 py-1 rounded-full ${colors.bg} ${colors.text}`}>
-                          {guide.category}
-                        </span>
-                      </div>
-
-                      <h2 className="mb-3 font-display text-step-1 font-semibold leading-snug text-ink group-hover:text-navy">
-                        <Link href={`/guides/${guide.slug}`} className="inline-block py-1">
-                          {guide.title}
-                        </Link>
-                      </h2>
-
-                      <p className="text-muted text-sm leading-relaxed line-clamp-3 flex-grow">{guide.excerpt}</p>
-                    </div>
-
-                    {/* Card Footer */}
-                    <div className="mt-auto p-6 pt-4">
-                      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-hairline pt-4">
-                        <div className="flex items-center gap-3 text-sm text-muted">
-                          <span className="flex items-center gap-1">
-                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            {guide.readTime}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                            </svg>
-                            {new Date(guide.lastUpdated).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-                          </span>
-                        </div>
-
-                        <Link
-                          href={`/guides/${guide.slug}`}
-                          className="inline-flex min-h-[44px] items-center gap-1.5 text-sm font-bold text-navy hover:underline underline-offset-4"
-                        >
-                          Read Guide
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
-                        </Link>
-                      </div>
-                    </div>
-                  </article>
-                </AnimateOnScroll>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="border-t border-hairline bg-sand py-12 nav:py-16">
-        <div className="mx-auto w-full max-w-site px-4 md:px-6">
-          <AnimateOnScroll>
-            <h2 className="mb-4 font-display text-step-2 font-semibold text-ink nav:text-step-3">
-              Need personalised advice?
-            </h2>
-            <p className="mb-8 max-w-measure text-lead text-muted">
-              Guides cover the general picture. For your specific situation - visa type, tax residency, company structure - talk to one of our experts.
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/contact"
-                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-navy bg-navy px-6 font-bold text-white hover:bg-navy-deep"
-              >
-                Book a Free Consultation
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-navy bg-white px-6 font-bold text-navy hover:bg-sand"
-              >
-                View Our Services
-              </Link>
+                >
+                  {cat}
+                </button>
+              ))}
             </div>
-          </AnimateOnScroll>
-        </div>
-      </section>
 
+            {/* Guide Cards */}
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {filtered.map((guide, index) => {
+                const colors = categoryColors[guide.category] || categoryTone;
+                const icon = categoryIcons[guide.category];
+
+                return (
+                  <AnimateOnScroll key={guide.slug} delay={index * 80}>
+                    <article className="group flex h-full flex-col overflow-hidden rounded-card border border-hairline bg-white transition-shadow duration-150 hover:shadow-soft motion-reduce:transition-none">
+
+                      {/* Card Header */}
+                      <div className="p-6 pb-0">
+                        <div className="mb-4 flex items-start justify-between gap-3">
+                          <div className={`w-12 h-12 rounded-card ${colors.bg} ${colors.text} flex items-center justify-center shrink-0`}>
+                            {icon}
+                          </div>
+                          <span className={`text-sm font-bold px-3 py-1 rounded-full ${colors.bg} ${colors.text}`}>
+                            {guide.category}
+                          </span>
+                        </div>
+
+                        <h2 className="mb-3 font-display text-step-1 font-semibold leading-snug text-ink group-hover:text-navy">
+                          <Link href={`/guides/${guide.slug}`} className="inline-block py-1">
+                            {guide.title}
+                          </Link>
+                        </h2>
+
+                        <p className="text-muted text-sm leading-relaxed line-clamp-3 flex-grow">{guide.excerpt}</p>
+                      </div>
+
+                      {/* Card Footer */}
+                      <div className="mt-auto p-6 pt-4">
+                        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-hairline pt-4">
+                          <div className="flex items-center gap-3 text-sm text-muted">
+                            <span className="flex items-center gap-1">
+                              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              {guide.readTime}
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                              </svg>
+                              {new Date(guide.lastUpdated).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                            </span>
+                          </div>
+
+                          <Link
+                            href={`/guides/${guide.slug}`}
+                            className="inline-flex min-h-[44px] items-center gap-1.5 text-sm font-bold text-navy hover:underline underline-offset-4"
+                          >
+                            Read Guide
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                          </Link>
+                        </div>
+                      </div>
+                    </article>
+                  </AnimateOnScroll>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Bottom CTA */}
+        <section className="border-t border-hairline bg-sand py-12 nav:py-16">
+          <div className="mx-auto w-full max-w-site px-4 md:px-6">
+            <AnimateOnScroll>
+              <h2 className="mb-4 font-display text-step-2 font-semibold text-ink nav:text-step-3">
+                Need personalised advice?
+              </h2>
+              <p className="mb-8 max-w-measure text-lead text-muted">
+                Guides cover the general picture. For your specific situation - visa type, tax residency, company structure - talk to one of our experts.
+              </p>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-navy bg-navy px-6 font-bold text-white hover:bg-navy-deep"
+                >
+                  Book a Free Consultation
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  href="/services"
+                  className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-navy bg-white px-6 font-bold text-navy hover:bg-sand"
+                >
+                  View Our Services
+                </Link>
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </section>
+
+      </main>
       <Footer />
-    </main>
+    </div>
     </>
   );
 }
