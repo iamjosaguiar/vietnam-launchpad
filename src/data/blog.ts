@@ -1,6 +1,8 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Page title body, without the brand. Defaults to the title. */
+  metaTitle?: string;
   excerpt: string;
   author: string;
   date: string;
@@ -15,6 +17,7 @@ export const blogPosts: Record<string, BlogPost> = {
   'why-are-vietnamese-houses-so-thin-and-tall': {
     slug: 'why-are-vietnamese-houses-so-thin-and-tall',
     title: 'Why Are Vietnamese Houses So Thin and Tall? The Tube House Explained',
+    metaTitle: 'Why Vietnamese Houses Are Thin and Tall',
     excerpt: 'Walk down any street in Hanoi or Ho Chi Minh City and you\'ll notice the same striking pattern: houses just 3-4 metres wide, shooting up five or six floors. This is the nha ong - the tube house - and its shape has a fascinating origin rooted in taxes, inheritance, and feng shui.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
@@ -87,6 +90,7 @@ The tube house is Vietnam's most honest piece of architecture: shaped entirely b
   'how-to-convert-drivers-license-vietnam': {
     slug: 'how-to-convert-drivers-license-vietnam',
     title: 'How to Convert Your Driver\'s License in Vietnam: Complete Guide 2026',
+    metaTitle: "Convert Your Driver's License in Vietnam",
     excerpt: 'Everything expats need to know about driving legally in Vietnam - from International Driver\'s Licenses for tourists to full license conversion for TRC holders.',
     author: 'Vietnam Launchpad Team',
     date: '2025-01-19',
@@ -315,6 +319,7 @@ Don't risk fines, insurance issues, or legal complications. Get your driver's li
   'how-to-legally-teach-english-in-vietnam': {
     slug: 'how-to-legally-teach-english-in-vietnam',
     title: 'How to Legally Teach English in Vietnam: Complete Guide for 2026',
+    metaTitle: 'How to Legally Teach English in Vietnam',
     excerpt: 'Everything you need to know about teaching English legally in Vietnam, from work permits to visa requirements and finding legitimate teaching positions.',
     author: 'Vietnam Launchpad Team',
     date: '2025-01-09',
@@ -577,6 +582,7 @@ Ready to start your teaching journey in Vietnam? [Contact Vietnam Launchpad](/co
   'vietnam-pit-law-2026-changes': {
     slug: 'vietnam-pit-law-2026-changes',
     title: "Vietnam's New PIT Law 2026: What Changed and What It Means for Expats",
+    metaTitle: 'Vietnam PIT Law 2026: What Changed',
     excerpt: "Law No. 109/2025/QH15 brought the biggest personal income tax reforms in Vietnam since 2012. Here is what actually changed, what stayed the same, and what expats need to do now.",
     author: 'Vietnam Launchpad Team',
     date: '2026-01-08',
@@ -645,6 +651,7 @@ Our consultants can walk through your specific situation and help you understand
   'vietnam-golden-visa-2026-update': {
     slug: 'vietnam-golden-visa-2026-update',
     title: "Vietnam Golden Visa 2026: What We Know (And What We Don't)",
+    metaTitle: 'Vietnam Golden Visa 2026: What We Know',
     excerpt: "Vietnam's proposed Golden Visa has been discussed since 2025. As of April 2026, there is still no legislation and no application process. Here is the current status and what long-term expats should do instead.",
     author: 'Vietnam Launchpad Team',
     date: '2026-04-01',
@@ -724,6 +731,7 @@ Do not put your Vietnam plans on hold waiting for a visa that may or may not arr
   'vietnam-visa-overstay-fines': {
     slug: 'vietnam-visa-overstay-fines',
     title: 'Vietnam Visa Overstay: Fines, Consequences, and What To Do',
+    metaTitle: 'Vietnam Visa Overstay Fines',
     excerpt: 'Overstaying your Vietnam visa - even by one day - can result in fines and other consequences. Here is exactly what happens, how much it costs, and how to avoid it.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
@@ -821,6 +829,7 @@ We handle TRC applications for investors, employed expats, and foreign spouses o
   'can-you-work-on-marriage-trc-vietnam': {
     slug: 'can-you-work-on-marriage-trc-vietnam',
     title: 'Can You Work on a Marriage TRC in Vietnam? Work Permits Explained',
+    metaTitle: 'Can You Work on a Marriage TRC?',
     excerpt: 'A marriage TRC gives you the right to live in Vietnam long-term - but it does not automatically give you the right to work. Here is what you can and cannot do, and how to get a work permit once you have your marriage TRC.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-11',
@@ -949,6 +958,7 @@ Every situation is slightly different. If you are unsure whether your planned wo
   'vietnam-business-registration-types': {
     slug: 'vietnam-business-registration-types',
     title: 'Vietnam Business Registration Types: LLC, JSC, Rep Office and What Foreigners Can Own',
+    metaTitle: 'Vietnam Business Registration Types',
     excerpt: 'Vietnam has six main business structures available to foreign investors - each with different ownership rules, liability, capital requirements, and tax treatment. Here is a plain-English breakdown of all of them.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
@@ -1123,6 +1133,7 @@ Our [company setup service](/services/company-setup) covers everything from stru
   'banking-in-vietnam-expats-guide': {
     slug: 'banking-in-vietnam-expats-guide',
     title: 'Banking in Vietnam for Expats: What You Can Do on Each Visa Type',
+    metaTitle: 'Banking in Vietnam for Expats',
     excerpt: 'Can you open a Vietnamese bank account on a tourist visa? What about sending money home? Your visa type determines almost everything about your banking options in Vietnam. Here is a complete breakdown.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
@@ -1259,6 +1270,7 @@ Have questions about your specific situation? [Contact us](/contact) and we can 
   'vietnam-work-permit-exemptions-decree-393-2026': {
     slug: 'vietnam-work-permit-exemptions-decree-393-2026',
     title: 'Vietnam Work Permit Exemptions 2026: Who Is Exempt Under Decree 393',
+    metaTitle: 'Work Permit Exemptions Under Decree 393',
     excerpt: 'Decree 393/2026/ND-CP replaces Decree 219 on 5 December 2026 and lists 18 cases where a foreign worker does not need a work permit. Here is who is exempt and what paperwork still applies.',
     author: 'Vietnam Launchpad Team',
     date: '2026-10-26',

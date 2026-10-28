@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import TourismStatsWidget from '@/components/TourismStatsWidget';
@@ -11,7 +12,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: 'Vietnam Economic Statistics & Market Data 2026 | Vietnam Launchpad',
+  title: pageTitle('Vietnam Economic Statistics 2026'),
   description:
     'Live and curated Vietnam economic data: tourism arrivals, GDP, sector breakdown, FDI, and key growth industries. Updated daily from World Bank and VNAT.',
   keywords: [

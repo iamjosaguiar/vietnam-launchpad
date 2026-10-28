@@ -16,6 +16,7 @@
 
 export interface SalaryRole {
   slug: string;
+  metaTitle?: string;      // Page title body without the brand. Defaults to the title plus Salary in Vietnam 2026
   title: string;           // "Software Engineer"
   category: string;        // "Technology", "Education", "Finance" etc.
   icon: string;            // emoji
@@ -33,6 +34,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'software-engineer',
     title: 'Software Engineer / Developer',
+    metaTitle: 'Software Engineer Salary in Vietnam 2026',
     category: 'Technology',
     icon: '💻',
     localMonthlyVnd: { min: 15_000_000, max: 50_000_000 },
@@ -63,6 +65,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'english-teacher',
     title: 'English Teacher (TEFL)',
+    metaTitle: 'English Teacher Salary in Vietnam 2026',
     category: 'Education',
     icon: '📚',
     localMonthlyVnd: { min: 20_000_000, max: 50_000_000 },
@@ -93,6 +96,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'marketing-manager',
     title: 'Marketing Manager',
+    metaTitle: 'Marketing Manager Salary in Vietnam 2026',
     category: 'Business',
     icon: '📊',
     localMonthlyVnd: { min: 20_000_000, max: 60_000_000 },
@@ -123,6 +127,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'accountant-finance-manager',
     title: 'Accountant / Finance Manager',
+    metaTitle: 'Finance Manager Salary in Vietnam 2026',
     category: 'Finance',
     icon: '🧾',
     localMonthlyVnd: { min: 15_000_000, max: 60_000_000 },
@@ -153,6 +158,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'operations-manager',
     title: 'Operations Manager',
+    metaTitle: 'Operations Manager Salary in Vietnam 2026',
     category: 'Business',
     icon: '⚙️',
     localMonthlyVnd: { min: 20_000_000, max: 70_000_000 },
@@ -183,6 +189,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'data-analyst',
     title: 'Data Analyst / Data Scientist',
+    metaTitle: 'Data Analyst Salary in Vietnam 2026',
     category: 'Technology',
     icon: '📈',
     localMonthlyVnd: { min: 15_000_000, max: 45_000_000 },
@@ -213,6 +220,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'project-manager',
     title: 'Project Manager',
+    metaTitle: 'Project Manager Salary in Vietnam 2026',
     category: 'Business',
     icon: '📋',
     localMonthlyVnd: { min: 20_000_000, max: 65_000_000 },
@@ -243,6 +251,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'hospitality-manager',
     title: 'Hospitality Manager / Hotel Manager',
+    metaTitle: 'Hotel Manager Salary in Vietnam 2026',
     category: 'Hospitality',
     icon: '🏨',
     localMonthlyVnd: { min: 20_000_000, max: 80_000_000 },
@@ -273,6 +282,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'sales-manager',
     title: 'Sales Manager / Business Development',
+    metaTitle: 'Sales Manager Salary in Vietnam 2026',
     category: 'Business',
     icon: '🤝',
     localMonthlyVnd: { min: 20_000_000, max: 60_000_000 },
@@ -303,6 +313,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'hr-manager',
     title: 'HR Manager / Human Resources',
+    metaTitle: 'HR Manager Salary in Vietnam 2026',
     category: 'Business',
     icon: '👥',
     localMonthlyVnd: { min: 18_000_000, max: 55_000_000 },
@@ -333,6 +344,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'logistics-supply-chain',
     title: 'Logistics / Supply Chain Manager',
+    metaTitle: 'Logistics Manager Salary in Vietnam 2026',
     category: 'Operations',
     icon: '🚚',
     localMonthlyVnd: { min: 20_000_000, max: 65_000_000 },
@@ -363,6 +375,7 @@ export const SALARY_ROLES: SalaryRole[] = [
   {
     slug: 'graphic-designer-ux',
     title: 'Graphic Designer / UX Designer',
+    metaTitle: 'Graphic Designer Salary in Vietnam 2026',
     category: 'Creative',
     icon: '🎨',
     localMonthlyVnd: { min: 10_000_000, max: 35_000_000 },

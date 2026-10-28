@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -553,7 +554,7 @@ export async function generateMetadata({
   const fromName = pairData.name;
 
   return {
-    title: `${fromCode} to VND Exchange Rate Today (${fromName} to Vietnamese Dong) | Vietnam Launchpad`,
+    title: pageTitle(`${fromCode} to VND Exchange Rate Today`),
     description: `Live ${fromCode} to VND exchange rate. Convert ${fromName} to Vietnamese Dong. Updated every 6 hours. Expat tips for converting ${fromName} in Vietnam.`,
     alternates: buildAlternates(`/convert/${pair}`),
     openGraph: {

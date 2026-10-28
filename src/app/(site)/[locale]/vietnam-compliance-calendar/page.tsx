@@ -1,12 +1,13 @@
 import { Metadata } from 'next';
 import { buildAlternates } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from '@/i18n/config';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 
 export const metadata: Metadata = {
-  title: 'Vietnam Business Compliance Calendar 2026 | Tax & Filing Deadlines',
+  title: pageTitle('Vietnam Compliance Calendar 2026'),
   description:
     'Complete Vietnam business compliance calendar for 2026. Monthly tax deadlines, PIT withholding, VAT, social insurance, and annual filing dates for foreign-owned companies.',
   keywords: [

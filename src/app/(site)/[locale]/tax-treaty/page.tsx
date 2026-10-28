@@ -1,17 +1,18 @@
 import { Metadata } from 'next';
 import { buildAlternates, ogImages, twitterDefaults } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { TAX_TREATIES } from '@/data/taxTreaties';
 import { Link } from '@/i18n/config';
 
 export const metadata: Metadata = {
-  title: 'Vietnam Double Tax Agreements by Country | Vietnam Launchpad',
+  title: pageTitle('Vietnam Double Tax Agreements'),
   description:
     "Complete list of Vietnam's double taxation agreements (DTAs) with 40+ countries. Withholding tax rates on dividends, interest, and royalties for expats and investors.",
   alternates: buildAlternates('/tax-treaty'),
   openGraph: {
-    title: 'Vietnam Double Tax Agreements by Country | Vietnam Launchpad',
+    title: 'Vietnam Double Tax Agreements',
     description:
       "Complete list of Vietnam's double taxation agreements (DTAs) with 40+ countries. Withholding tax rates on dividends, interest, and royalties.",
     type: 'website',

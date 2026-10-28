@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 
 import { buildAlternates } from '@/lib/seo';
+import { pageTitle } from '@/lib/pageTitle';
 
 export const metadata: Metadata = {
-  title: 'Enterprise Market Entry - Vietnam Launchpad',
+  title: pageTitle('Enterprise Market Entry'),
   description: "Complete Vietnam market entry for founders, family offices, and institutional investors. Legal entity, banking, work permits, compliance, and residency. Operational in 90 days.",
   alternates: buildAlternates('/enterprise'),
 };

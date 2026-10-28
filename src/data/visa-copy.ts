@@ -3,7 +3,7 @@
 export const EVISA_PORTAL_URL = 'https://evisa.gov.vn';
 
 export const E_VISA_FACTS =
-  'E-visa: US$25 single entry, US$50 multiple entry. Processing 3 working days. Valid up to 90 days. Available to citizens of all countries and territories. Apply on the official portal:';
+  'eVisa: US$25 single entry, US$50 multiple entry. The Immigration Department says applications are processed in 3 working days after you pay. Valid up to 90 days. Available to citizens of all countries and territories. Apply on the official portal:';
 
 export const E_VISA_LINE_TEXT = `${E_VISA_FACTS} evisa.gov.vn`;
 
