@@ -38,7 +38,7 @@ export default function AboutPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
       <Navigation />
-      <main className="min-h-screen bg-paper">
+      <main id="main" tabIndex={-1} className="min-h-screen bg-paper">
         {/* Hero */}
         <section
           aria-labelledby="about-title"

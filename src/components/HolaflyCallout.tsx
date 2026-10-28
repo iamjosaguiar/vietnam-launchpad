@@ -29,7 +29,7 @@ const copy: Record<HolaflyVariant, { title: string; body: string; compact?: bool
   },
   cost: {
     title: 'A note on that mobile-data row',
-    body: 'The $5–15 figure is a local prepaid plan after a Vietnamese SIM is registered to your passport. Before that, Holafly Plans is the usual bridge: unlimited data across 160 destinations, with code VNLAUNCHPAD for 10% off the first 12 months. We do not republish Holafly Plans prices here because they change. Always On adds 1GB of free backup data each month once a paid plan ends.',
+    body: 'The $5-15 figure is a local prepaid plan after a Vietnamese SIM is registered to your passport. Before that, Holafly Plans is the usual bridge: unlimited data across 160 destinations, with code VNLAUNCHPAD for 10% off the first 12 months. We do not republish Holafly Plans prices here because they change. Always On adds 1GB of free backup data each month once a paid plan ends.',
     compact: true,
   },
   banking: {

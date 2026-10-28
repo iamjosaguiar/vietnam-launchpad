@@ -7,6 +7,8 @@ import { Link, useRouter } from '@/i18n/config';
 import Button from './Button';
 import Combobox from './Combobox';
 
+const allLinkClass = 'inline-flex min-h-[44px] items-center font-bold text-navy underline underline-offset-[3px]';
+
 export interface PassportOption {
   slug: string;
   name: string;
@@ -102,9 +104,15 @@ export default function PassportPicker({
       </div>
       {allLink && (
         <p className="mb-0 mt-3 text-[0.9rem] text-muted">
-          <Link href={allLink.href} className="inline-flex min-h-[44px] items-center font-bold text-navy underline underline-offset-[3px]">
-            {allLink.label}
-          </Link>
+          {allLink.href.startsWith('#') ? (
+            <a href={allLink.href} className={allLinkClass}>
+              {allLink.label}
+            </a>
+          ) : (
+            <Link href={allLink.href} className={allLinkClass}>
+              {allLink.label}
+            </Link>
+          )}
         </p>
       )}
     </form>

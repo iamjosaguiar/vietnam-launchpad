@@ -91,7 +91,7 @@ The three networks you will actually see at arrivals:
 | **Vinaphone** | Solid in the big cities. Fine if you will barely leave HCMC or Hanoi. |
 | **Mobifone** | The third counter in arrivals. City coverage is usable. Same passport-registration step as the other two. |
 
-A starter SIM with a data bundle is commonly sold at airport counters for **around 200,000 VND**, and a heavy monthly 4G plan often lands **around 150,000–200,000 VND**. Those are the figures we use elsewhere on this site as a rough arrival budget. They are not a published tariff. Ask what the current tourist package includes, and pay the counter, not a helper who meets you outside the doors.
+A starter SIM with a data bundle is commonly sold at airport counters for **around 200,000 VND**, and a heavy monthly 4G plan often lands **around 150,000-200,000 VND**. Those are the figures we use elsewhere on this site as a rough arrival budget. They are not a published tariff. Ask what the current tourist package includes, and pay the counter, not a helper who meets you outside the doors.
 
 Holafly Plans is the practical choice for the flight, the airport, and ordinary city use. If you will spend weeks in the mountains or well outside the tourist corridors, buy a Viettel SIM as well. We are not publishing a coverage map for either product. Ask Viettel if a specific district matters to you.
 
@@ -161,7 +161,7 @@ Have a Vietnamese number on that phone before you go. An officer can complete th
 | | Holafly Plans | Viettel / Vinaphone / Mobifone |
 |---|---|---|
 | When you set it up | Before the flight, on wifi | Airport arrivals, or a city store |
-| Data | Unlimited while the plan is active | Bundle. Airport starters are often around 200,000 VND; monthly data often around 150,000–200,000 VND. Confirm at the counter. |
+| Data | Unlimited while the plan is active | Bundle. Airport starters are often around 200,000 VND; monthly data often around 150,000-200,000 VND. Confirm at the counter. |
 | Number | US, UK, or Canadian, for receiving messages and 2FA | Vietnamese +84 number |
 | Where it works | 160 destinations, including Vietnam | Vietnam. Viettel is the widest of the three if you leave the cities. |
 | Passport registration in Vietnam | Not required | Required before the SIM works |

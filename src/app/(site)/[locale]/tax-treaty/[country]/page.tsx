@@ -27,11 +27,11 @@ export async function generateMetadata({
 
   return {
     title: `Vietnam ${treaty.country} Double Tax Agreement (DTA) | Vietnam Launchpad`,
-    description: `Vietnam–${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
+    description: `Vietnam-${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
     alternates: buildAlternates(`/tax-treaty/${treaty.slug}`),
     openGraph: {
       title: `Vietnam ${treaty.country} Double Tax Agreement (DTA)`,
-      description: `Vietnam–${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
+      description: `Vietnam-${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
       type: 'article',
       images: ogImages,
     },
@@ -79,18 +79,18 @@ export default async function TaxTreatyCountryPage({
           a: `Yes. Vietnam and ${treaty.country} have a Double Taxation Agreement (DTA) that has been in force since ${treaty.inForceYear}. The treaty prevents the same income from being taxed in both countries and sets withholding tax caps on dividends, interest, and royalties.`,
         },
         {
-          q: `What is the withholding tax rate on dividends under the Vietnam–${treaty.country} DTA?`,
+          q: `What is the withholding tax rate on dividends under the Vietnam-${treaty.country} DTA?`,
           a:
             treaty.dividendRate !== null
-              ? `Under the Vietnam–${treaty.country} DTA, the withholding tax on dividends is capped at ${treaty.dividendRate}%. Without a treaty, Vietnam's standard domestic WHT rate on dividends paid to foreign entities is generally higher. Always confirm the applicable rate with a tax adviser, as lower rates may apply if specific shareholding thresholds are met.`
-              : `The Vietnam–${treaty.country} DTA does not set a specific withholding tax rate on dividends in the standard sense, as one or both countries may not impose personal income tax on this income type. Consult a tax adviser for your specific situation.`,
+              ? `Under the Vietnam-${treaty.country} DTA, the withholding tax on dividends is capped at ${treaty.dividendRate}%. Without a treaty, Vietnam's standard domestic WHT rate on dividends paid to foreign entities is generally higher. Always confirm the applicable rate with a tax adviser, as lower rates may apply if specific shareholding thresholds are met.`
+              : `The Vietnam-${treaty.country} DTA does not set a specific withholding tax rate on dividends in the standard sense, as one or both countries may not impose personal income tax on this income type. Consult a tax adviser for your specific situation.`,
         },
         {
-          q: `How does the ${treaty.country}–Vietnam DTA affect my salary as an expat?`,
-          a: `Under Article 15 of the Vietnam–${treaty.country} DTA, employment income is generally taxable in Vietnam if you are working in Vietnam. The treaty's tiebreaker rules determine your residency: ${treaty.tieBreakerRules} If you are a Vietnamese tax resident, your worldwide income may be subject to Vietnam PIT, with a credit or exemption for taxes paid in ${treaty.country}.`,
+          q: `How does the ${treaty.country}-Vietnam DTA affect my salary as an expat?`,
+          a: `Under Article 15 of the Vietnam-${treaty.country} DTA, employment income is generally taxable in Vietnam if you are working in Vietnam. The treaty's tiebreaker rules determine your residency: ${treaty.tieBreakerRules} If you are a Vietnamese tax resident, your worldwide income may be subject to Vietnam PIT, with a credit or exemption for taxes paid in ${treaty.country}.`,
         },
         {
-          q: `What is a Permanent Establishment (PE) under the Vietnam–${treaty.country} treaty?`,
+          q: `What is a Permanent Establishment (PE) under the Vietnam-${treaty.country} treaty?`,
           a: `A Permanent Establishment is a fixed place of business through which a ${treaty.country} company carries on business in Vietnam. If a PE exists, Vietnam can tax the profits attributable to it. Common PE triggers include offices, branches, factories, construction sites lasting more than 6 months, and dependent agents. ${treaty.country} companies operating in Vietnam should assess PE risk carefully.`,
         },
       ]
@@ -116,9 +116,9 @@ export default async function TaxTreatyCountryPage({
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `Vietnam–${treaty.country} Double Tax Agreement`,
+    name: `Vietnam-${treaty.country} Double Tax Agreement`,
     url: `${baseUrl}/tax-treaty/${treaty.slug}`,
-    description: `Vietnam–${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
+    description: `Vietnam-${treaty.country} double taxation agreement: withholding tax rates, residency rules, and practical guidance for expats and investors.`,
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -127,7 +127,7 @@ export default async function TaxTreatyCountryPage({
         {
           '@type': 'ListItem',
           position: 3,
-          name: `Vietnam–${treaty.country} DTA`,
+          name: `Vietnam-${treaty.country} DTA`,
           item: `${baseUrl}/tax-treaty/${treaty.slug}`,
         },
       ],
@@ -160,7 +160,7 @@ export default async function TaxTreatyCountryPage({
 
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white py-28 overflow-hidden">
@@ -194,7 +194,7 @@ export default async function TaxTreatyCountryPage({
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
-                  Vietnam–{treaty.country}
+                  Vietnam-{treaty.country}
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 via-primary-400 to-accent-400">
                     Double Tax Agreement
                   </span>

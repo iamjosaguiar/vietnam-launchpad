@@ -35,7 +35,7 @@ export default function SitemapPage() {
   return (
     <div className="min-h-screen bg-ivory">
       <Navigation />
-      <main>
+      <main id="main" tabIndex={-1}>
 
         <section className="relative bg-gradient-to-br from-stone-950 via-primary-950 to-stone-950 text-white pt-36 pb-16 overflow-hidden">
           <div className="container mx-auto px-4 md:px-8 relative z-10 max-w-5xl">

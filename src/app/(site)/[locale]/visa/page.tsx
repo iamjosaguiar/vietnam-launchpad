@@ -11,6 +11,7 @@ import PassportPicker from '@/components/ui/PassportPicker';
 import Section, { SectionHeader } from '@/components/ui/Section';
 import { PathwayCard } from '@/components/visa/VisaShell';
 import { Link } from '@/i18n/config';
+import { homeCopy } from '@/data/homeCopy';
 import { SRC_EVISA_FEES, SRC_MOFA_LIST, VISA_COUNTRIES } from '@/data/visas';
 import {
   E_VISA_FACTS,
@@ -158,6 +159,7 @@ function CountryCard({
 }
 
 function CountryGroup({
+  id,
   tone,
   chip,
   chipTone,
@@ -165,6 +167,7 @@ function CountryGroup({
   intro,
   countries,
 }: {
+  id?: string;
   tone: 'paper' | 'sand' | 'white';
   chip: string;
   chipTone: 'success' | 'navy';
@@ -173,7 +176,7 @@ function CountryGroup({
   countries: typeof VISA_COUNTRIES;
 }) {
   return (
-    <Section tone={tone}>
+    <Section id={id} tone={tone} className="scroll-mt-[var(--header-h)]">
       <Chip variant="outline" className="mb-3">
         <span
           aria-hidden="true"
@@ -207,7 +210,7 @@ export default function VisaIndexPage() {
       />
       <div className="min-h-screen">
         <Navigation />
-        <main>
+        <main id="main" tabIndex={-1}>
 
           {/* Hero */}
           <section className="bg-hero-wash pb-12 pt-[calc(var(--header-h)+32px)] nav:pb-16 nav:pt-[calc(var(--header-h)+64px)]">
@@ -248,6 +251,7 @@ export default function VisaIndexPage() {
                 label={pickerLabel}
                 emptyOption={pickerEmptyOption}
                 submitLabel={pickerSubmit}
+                allLink={{ label: homeCopy.s2.links[0].name, href: '#all-nationalities' }}
               />
             </Container>
           </section>
@@ -318,6 +322,7 @@ export default function VisaIndexPage() {
 
           {/* 45-day Visa-Free Countries */}
           <CountryGroup
+            id="all-nationalities"
             tone="white"
             chip="45-Day Visa-Free Entry"
             chipTone="success"

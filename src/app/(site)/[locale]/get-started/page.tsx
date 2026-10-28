@@ -91,7 +91,7 @@ export default function GetStartedPage() {
       />
     <div className="min-h-screen">
       <Navigation />
-      <main>
+      <main id="main" tabIndex={-1}>
 
         {/* Hero Section */}
         <section className="relative bg-navy-deep text-white py-32 overflow-hidden">

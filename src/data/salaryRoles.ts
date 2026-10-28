@@ -44,11 +44,11 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a software engineer earn in Vietnam?',
-        a: 'Local Vietnamese software engineers typically earn 15–50 million VND per month (roughly $600–$2,000 USD), depending on experience and stack. Expat packages range from $2,500–$6,000/month USD, often including housing allowance and health insurance.',
+        a: 'Local Vietnamese software engineers typically earn 15-50 million VND per month (roughly $600-$2,000 USD), depending on experience and stack. Expat packages range from $2,500-$6,000/month USD, often including housing allowance and health insurance.',
       },
       {
         q: 'Do I need a work permit as a software engineer in Vietnam?',
-        a: "Yes, foreign nationals need a work permit to work legally in Vietnam. Software engineers typically qualify as 'specialists' — you'll need a relevant degree (CS, IT, Engineering) and at least 3 years of relevant work experience. Your employer applies on your behalf.",
+        a: "Yes, foreign nationals need a work permit to work legally in Vietnam. Software engineers typically qualify as 'specialists' - you'll need a relevant degree (CS, IT, Engineering) and at least 3 years of relevant work experience. Your employer applies on your behalf.",
       },
       {
         q: 'Is there demand for software engineer jobs in Vietnam?',
@@ -56,7 +56,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do software engineers earn in USD in Vietnam?',
-        a: 'Foreign software engineers on expat packages earn $2,500–$6,000/month USD, with senior roles at product companies and multinationals at the top of this range. Fully remote roles for Western companies with Vietnam-based engineers can pay $3,000–$8,000/month.',
+        a: 'Foreign software engineers on expat packages earn $2,500-$6,000/month USD, with senior roles at product companies and multinationals at the top of this range. Fully remote roles for Western companies with Vietnam-based engineers can pay $3,000-$8,000/month.',
       },
     ],
   },
@@ -70,11 +70,11 @@ export const SALARY_ROLES: SalaryRole[] = [
     yearsExpRequired: 'TEFL/CELTA certificate required; degree preferred',
     typicalEmployers: 'ILA Vietnam, Apax English, Wall Street English, Apollo English, British Council, international schools',
     workPermitNote: "Teaching requires a work permit. Requirements: bachelor's degree (any field), TEFL/CELTA certificate (min 120 hours), criminal background check with apostille.",
-    description: 'English teaching is the most common entry point for expats in Vietnam. Demand is high at all levels — language centers, international schools, and corporate training. HCMC and Hanoi have the most openings; Da Nang has a smaller but active market.',
+    description: 'English teaching is the most common entry point for expats in Vietnam. Demand is high at all levels - language centers, international schools, and corporate training. HCMC and Hanoi have the most openings; Da Nang has a smaller but active market.',
     faqs: [
       {
         q: 'How much does an English teacher earn in Vietnam?',
-        a: 'English teachers in Vietnam typically earn 20–50 million VND per month (around $800–$2,000 USD). Language center teachers earn at the lower end, while teachers at international schools or those with CELTA/Delta qualifications can earn $2,000–$2,500/month USD.',
+        a: 'English teachers in Vietnam typically earn 20-50 million VND per month (around $800-$2,000 USD). Language center teachers earn at the lower end, while teachers at international schools or those with CELTA/Delta qualifications can earn $2,000-$2,500/month USD.',
       },
       {
         q: 'Do I need a work permit to teach English in Vietnam?',
@@ -82,11 +82,11 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'Is there demand for English teaching jobs in Vietnam?',
-        a: "Demand for qualified English teachers remains very high in Vietnam. The middle class is rapidly expanding and English education is a top priority for Vietnamese families. However, competition has increased — teachers with CELTA, Delta, or international school experience earn significantly more.",
+        a: "Demand for qualified English teachers remains very high in Vietnam. The middle class is rapidly expanding and English education is a top priority for Vietnamese families. However, competition has increased - teachers with CELTA, Delta, or international school experience earn significantly more.",
       },
       {
         q: 'What do English teachers earn in USD in Vietnam?',
-        a: 'Most English teachers in Vietnam earn $1,200–$2,500/month USD. Corporate trainers and international school teachers earn at the top of this range. Some positions include accommodation allowances, which significantly increases the effective compensation.',
+        a: 'Most English teachers in Vietnam earn $1,200-$2,500/month USD. Corporate trainers and international school teachers earn at the top of this range. Some positions include accommodation allowances, which significantly increases the effective compensation.',
       },
     ],
   },
@@ -104,7 +104,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a marketing manager earn in Vietnam?',
-        a: 'Marketing managers in Vietnam earn 20–60 million VND per month locally ($800–$2,400 USD). Expat packages typically range from $2,000–$5,000/month USD. Senior marketing directors at large multinationals can earn above this range.',
+        a: 'Marketing managers in Vietnam earn 20-60 million VND per month locally ($800-$2,400 USD). Expat packages typically range from $2,000-$5,000/month USD. Senior marketing directors at large multinationals can earn above this range.',
       },
       {
         q: 'Do I need a work permit as a marketing manager in Vietnam?',
@@ -112,11 +112,11 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'Is there demand for marketing manager jobs in Vietnam?',
-        a: "Vietnam's rapidly growing consumer market and digital economy create strong demand for experienced marketing managers. FMCG, e-commerce (Shopee, Lazada, Tiki), and hospitality are the most active sectors. Digital marketing skills — especially performance marketing and social media — are particularly valued.",
+        a: "Vietnam's rapidly growing consumer market and digital economy create strong demand for experienced marketing managers. FMCG, e-commerce (Shopee, Lazada, Tiki), and hospitality are the most active sectors. Digital marketing skills - especially performance marketing and social media - are particularly valued.",
       },
       {
         q: 'What do marketing managers earn in USD in Vietnam?',
-        a: 'Expat marketing managers in Vietnam typically earn $2,000–$5,000/month USD depending on industry and company size. FMCG multinationals and tech companies tend to pay at the top of the range. Local market rates are lower, at roughly $800–$2,400/month equivalent.',
+        a: 'Expat marketing managers in Vietnam typically earn $2,000-$5,000/month USD depending on industry and company size. FMCG multinationals and tech companies tend to pay at the top of the range. Local market rates are lower, at roughly $800-$2,400/month equivalent.',
       },
     ],
   },
@@ -134,7 +134,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does an accountant or finance manager earn in Vietnam?',
-        a: 'Accountants in Vietnam earn 15–60 million VND per month locally depending on seniority and credentials. Expat finance managers earn $2,000–$5,500/month USD. Big 4 senior managers and CFOs at larger companies earn at or above the top of this range.',
+        a: 'Accountants in Vietnam earn 15-60 million VND per month locally depending on seniority and credentials. Expat finance managers earn $2,000-$5,500/month USD. Big 4 senior managers and CFOs at larger companies earn at or above the top of this range.',
       },
       {
         q: 'Do I need a work permit as an accountant or finance manager in Vietnam?',
@@ -142,11 +142,11 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'Is there demand for accountant and finance manager jobs in Vietnam?',
-        a: "There is strong demand for qualified accountants in Vietnam, particularly those with ACCA, CPA, or Big 4 experience. Vietnam's regulatory environment is complex — familiarity with VAS (Vietnamese Accounting Standards), CIT, and VAT compliance is highly valued.",
+        a: "There is strong demand for qualified accountants in Vietnam, particularly those with ACCA, CPA, or Big 4 experience. Vietnam's regulatory environment is complex - familiarity with VAS (Vietnamese Accounting Standards), CIT, and VAT compliance is highly valued.",
       },
       {
         q: 'What do accountants earn in USD in Vietnam?',
-        a: 'Foreign accountants and finance managers typically earn $2,000–$5,500/month USD. CFO roles at larger companies can pay $6,000–$10,000/month. Big 4 firms have structured salary bands that are competitive by regional standards.',
+        a: 'Foreign accountants and finance managers typically earn $2,000-$5,500/month USD. CFO roles at larger companies can pay $6,000-$10,000/month. Big 4 firms have structured salary bands that are competitive by regional standards.',
       },
     ],
   },
@@ -164,7 +164,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does an operations manager earn in Vietnam?',
-        a: 'Operations managers in Vietnam earn 20–70 million VND per month locally. Expat packages range from $2,500–$6,000/month USD, with manufacturing and logistics companies at the higher end. Industrial zone positions often include accommodation or transport allowances.',
+        a: 'Operations managers in Vietnam earn 20-70 million VND per month locally. Expat packages range from $2,500-$6,000/month USD, with manufacturing and logistics companies at the higher end. Industrial zone positions often include accommodation or transport allowances.',
       },
       {
         q: 'Do I need a work permit as an operations manager in Vietnam?',
@@ -176,7 +176,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do operations managers earn in USD in Vietnam?',
-        a: 'Expat operations managers typically earn $2,500–$6,000/month USD. Senior plant managers and country operations directors can earn $6,000–$10,000/month at large manufacturing facilities. Many roles include accommodation and vehicle benefits.',
+        a: 'Expat operations managers typically earn $2,500-$6,000/month USD. Senior plant managers and country operations directors can earn $6,000-$10,000/month at large manufacturing facilities. Many roles include accommodation and vehicle benefits.',
       },
     ],
   },
@@ -194,7 +194,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a data analyst earn in Vietnam?',
-        a: 'Data analysts in Vietnam earn 15–45 million VND per month locally ($600–$1,800 USD). Expat data analysts and data scientists with strong skills earn $2,000–$5,000/month USD. Senior data scientists and ML engineers are at the top of this range.',
+        a: 'Data analysts in Vietnam earn 15-45 million VND per month locally ($600-$1,800 USD). Expat data analysts and data scientists with strong skills earn $2,000-$5,000/month USD. Senior data scientists and ML engineers are at the top of this range.',
       },
       {
         q: 'Do I need a work permit as a data analyst in Vietnam?',
@@ -206,7 +206,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do data analysts earn in USD in Vietnam?',
-        a: 'Foreign data analysts in Vietnam typically earn $2,000–$5,000/month USD. Data scientists with strong machine learning or AI skills can command $4,000–$7,000/month at top tech companies and consultancies.',
+        a: 'Foreign data analysts in Vietnam typically earn $2,000-$5,000/month USD. Data scientists with strong machine learning or AI skills can command $4,000-$7,000/month at top tech companies and consultancies.',
       },
     ],
   },
@@ -224,7 +224,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a project manager earn in Vietnam?',
-        a: 'Project managers in Vietnam earn 20–65 million VND per month locally. Expat packages range from $2,000–$5,500/month USD. IT project managers at outsourcing firms and construction PMs on large infrastructure projects are at the higher end.',
+        a: 'Project managers in Vietnam earn 20-65 million VND per month locally. Expat packages range from $2,000-$5,500/month USD. IT project managers at outsourcing firms and construction PMs on large infrastructure projects are at the higher end.',
       },
       {
         q: 'Do I need a work permit as a project manager in Vietnam?',
@@ -236,7 +236,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do project managers earn in USD in Vietnam?',
-        a: 'Expat project managers typically earn $2,000–$5,500/month USD. Senior program managers and portfolio directors at large IT outsourcing firms or construction companies can earn $5,500–$9,000/month.',
+        a: 'Expat project managers typically earn $2,000-$5,500/month USD. Senior program managers and portfolio directors at large IT outsourcing firms or construction companies can earn $5,500-$9,000/month.',
       },
     ],
   },
@@ -254,7 +254,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a hotel or hospitality manager earn in Vietnam?',
-        a: 'Hospitality managers in Vietnam earn 20–80 million VND per month locally. Expat hotel managers earn $2,000–$6,000/month USD. General managers at luxury 5-star properties in prime locations can earn significantly more, plus accommodation and benefits.',
+        a: 'Hospitality managers in Vietnam earn 20-80 million VND per month locally. Expat hotel managers earn $2,000-$6,000/month USD. General managers at luxury 5-star properties in prime locations can earn significantly more, plus accommodation and benefits.',
       },
       {
         q: 'Do I need a work permit as a hospitality manager in Vietnam?',
@@ -266,7 +266,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do hotel managers earn in USD in Vietnam?',
-        a: 'Expat hotel and resort managers typically earn $2,000–$6,000/month USD. General managers at luxury international brand properties earn $6,000–$15,000/month, often with accommodation and flights home included in the package.',
+        a: 'Expat hotel and resort managers typically earn $2,000-$6,000/month USD. General managers at luxury international brand properties earn $6,000-$15,000/month, often with accommodation and flights home included in the package.',
       },
     ],
   },
@@ -284,7 +284,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a sales manager earn in Vietnam?',
-        a: 'Sales managers in Vietnam earn 20–60 million VND per month locally, plus commissions. Expat packages range from $2,000–$5,000/month base USD, typically with performance bonuses on top. FMCG and medical device sales roles are known for strong commission structures.',
+        a: 'Sales managers in Vietnam earn 20-60 million VND per month locally, plus commissions. Expat packages range from $2,000-$5,000/month base USD, typically with performance bonuses on top. FMCG and medical device sales roles are known for strong commission structures.',
       },
       {
         q: 'Do I need a work permit as a sales manager in Vietnam?',
@@ -296,7 +296,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do sales managers earn in USD in Vietnam?',
-        a: 'Expat sales managers typically earn $2,000–$5,000/month base USD, with variable components that can add 20-50% on top. Top sales performers in sectors like medical devices or industrial machinery can earn $8,000+/month total compensation.',
+        a: 'Expat sales managers typically earn $2,000-$5,000/month base USD, with variable components that can add 20-50% on top. Top sales performers in sectors like medical devices or industrial machinery can earn $8,000+/month total compensation.',
       },
     ],
   },
@@ -309,12 +309,12 @@ export const SALARY_ROLES: SalaryRole[] = [
     expatMonthlyUsd: { min: 2000, max: 5000 },
     yearsExpRequired: '4-7 years',
     typicalEmployers: 'Multinational companies, manufacturing firms with large workforces, HR consulting firms',
-    workPermitNote: "HR managers qualify for work permits as managers. Vietnam labor law knowledge is highly valued — familiarity with Vietnamese Labor Code and Social Insurance Law is a significant asset.",
+    workPermitNote: "HR managers qualify for work permits as managers. Vietnam labor law knowledge is highly valued - familiarity with Vietnamese Labor Code and Social Insurance Law is a significant asset.",
     description: "HR roles in Vietnam are in demand at large manufacturers and multinationals, where managing Vietnamese labor law compliance is complex. Vietnam's labor regulations are detailed and change frequently.",
     faqs: [
       {
         q: 'How much does an HR manager earn in Vietnam?',
-        a: 'HR managers in Vietnam earn 18–55 million VND per month locally. Expat HR managers earn $2,000–$5,000/month USD. HR directors at large multinationals or manufacturing companies with large workforces can earn above this range.',
+        a: 'HR managers in Vietnam earn 18-55 million VND per month locally. Expat HR managers earn $2,000-$5,000/month USD. HR directors at large multinationals or manufacturing companies with large workforces can earn above this range.',
       },
       {
         q: 'Do I need a work permit as an HR manager in Vietnam?',
@@ -326,7 +326,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do HR managers earn in USD in Vietnam?',
-        a: 'Foreign HR managers typically earn $2,000–$5,000/month USD. HR directors at large multinationals or companies with 1,000+ employees can earn $5,000–$8,000/month, particularly if they have deep Vietnam labor law expertise.',
+        a: 'Foreign HR managers typically earn $2,000-$5,000/month USD. HR directors at large multinationals or companies with 1,000+ employees can earn $5,000-$8,000/month, particularly if they have deep Vietnam labor law expertise.',
       },
     ],
   },
@@ -344,7 +344,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a logistics or supply chain manager earn in Vietnam?',
-        a: 'Supply chain managers in Vietnam earn 20–65 million VND per month locally. Expat packages range from $2,500–$6,000/month USD. Senior supply chain directors at global logistics companies or large manufacturers can earn above this range.',
+        a: 'Supply chain managers in Vietnam earn 20-65 million VND per month locally. Expat packages range from $2,500-$6,000/month USD. Senior supply chain directors at global logistics companies or large manufacturers can earn above this range.',
       },
       {
         q: 'Do I need a work permit as a logistics or supply chain manager in Vietnam?',
@@ -356,7 +356,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do supply chain managers earn in USD in Vietnam?',
-        a: 'Expat logistics and supply chain managers earn $2,500–$6,000/month USD. Country logistics directors and regional supply chain directors based in Vietnam can earn $6,000–$12,000/month, reflecting the strategic importance of Vietnam in global supply chains.',
+        a: 'Expat logistics and supply chain managers earn $2,500-$6,000/month USD. Country logistics directors and regional supply chain directors based in Vietnam can earn $6,000-$12,000/month, reflecting the strategic importance of Vietnam in global supply chains.',
       },
     ],
   },
@@ -374,7 +374,7 @@ export const SALARY_ROLES: SalaryRole[] = [
     faqs: [
       {
         q: 'How much does a graphic designer or UX designer earn in Vietnam?',
-        a: 'Graphic and UX designers in Vietnam earn 10–35 million VND per month locally ($400–$1,400 USD). Expat designers with strong portfolios earn $1,200–$3,500/month USD. Senior UX/product designers at tech companies are at the top of this range.',
+        a: 'Graphic and UX designers in Vietnam earn 10-35 million VND per month locally ($400-$1,400 USD). Expat designers with strong portfolios earn $1,200-$3,500/month USD. Senior UX/product designers at tech companies are at the top of this range.',
       },
       {
         q: 'Do I need a work permit as a graphic designer or UX designer in Vietnam?',
@@ -386,7 +386,7 @@ export const SALARY_ROLES: SalaryRole[] = [
       },
       {
         q: 'What do graphic designers and UX designers earn in USD in Vietnam?',
-        a: 'Foreign designers in Vietnam typically earn $1,200–$3,500/month USD. Senior UX designers and creative directors at tech companies and large agencies can earn $3,500–$6,000/month. Remote work for Western companies remains the highest-paying option for skilled designers.',
+        a: 'Foreign designers in Vietnam typically earn $1,200-$3,500/month USD. Senior UX designers and creative directors at tech companies and large agencies can earn $3,500-$6,000/month. Remote work for Western companies remains the highest-paying option for skilled designers.',
       },
     ],
   },
