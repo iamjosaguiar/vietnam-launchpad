@@ -31,3 +31,16 @@ export function trackEvent(name: string, params: EventParams = {}): void {
     // Analytics must never break the page.
   }
 }
+
+/** Fixed analytics label for a call to action, chosen from where its link goes. */
+export function ctaLabelForHref(href: string): string {
+  const path = href.split(/[?#]/)[0];
+  if (path === '/contact') return 'book_consultation';
+  if (path === '/get-started') return 'get_started';
+  if (path === '/services') return 'view_services';
+  if (path.startsWith('/services/')) return 'service_cta';
+  if (path === '/enterprise') return 'enterprise_cta';
+  if (path === '/visa' || path.startsWith('/visa/')) return 'visa_cta';
+  if (path.startsWith('/guides/')) return 'read_guide';
+  return 'other_cta';
+}

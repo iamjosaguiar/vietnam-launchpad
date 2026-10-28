@@ -134,6 +134,7 @@ export default function AboutPage() {
             title={c.cta.h2}
             text={c.cta.text}
             button={{ label: c.cta.button.text, href: c.cta.button.href }}
+            trackLocation="about"
           />
           <p className="mb-0 mt-4">
             <Link

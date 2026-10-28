@@ -75,6 +75,8 @@ export default function HolaflyCallout({ variant }: { variant: HolaflyVariant | 
       <div className="flex flex-col sm:flex-row gap-3">
         <a
           href={HOLAFLY_PLANS_URL}
+          data-track-label="holafly_esim"
+          data-track-location="visa_page"
           target="_blank"
           rel="sponsored noopener"
           className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-500 text-white text-sm font-semibold px-5 py-2.5 min-h-[44px] rounded-full transition-colors"

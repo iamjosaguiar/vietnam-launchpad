@@ -1,3 +1,5 @@
+import { ctaLabelForHref } from '@/lib/analytics';
+
 import Button from './Button';
 
 /** Deep navy closing band with a gold button. No logo on it. */
@@ -8,6 +10,7 @@ export default function ClosingBand({
   headingId,
   children,
   className = '',
+  trackLocation,
 }: {
   title: string;
   text?: string;
@@ -15,6 +18,7 @@ export default function ClosingBand({
   headingId?: string;
   children?: React.ReactNode;
   className?: string;
+  trackLocation?: string;
 }) {
   return (
     <div
@@ -27,7 +31,13 @@ export default function ClosingBand({
         {text && <p className="mb-0 mt-2 max-w-measure text-[#D6E2F0]">{text}</p>}
         {children}
       </div>
-      <Button href={button.href} variant="gold" icon="arrow" className="justify-self-start">
+      <Button
+        href={button.href}
+        variant="gold"
+        icon="arrow"
+        className="justify-self-start"
+        track={trackLocation ? { label: ctaLabelForHref(button.href), location: trackLocation } : undefined}
+      >
         {button.label}
       </Button>
     </div>

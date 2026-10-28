@@ -47,7 +47,7 @@ export default function PassportPicker({
   label: string;
   emptyOption: string;
   submitLabel: string;
-  secondary?: { label: string; href: string };
+  secondary?: { label: string; href: string; track?: { label: string; location: string } };
   allLink?: { label: string; href: string };
   className?: string;
 }) {
@@ -81,7 +81,7 @@ export default function PassportPicker({
           {submitLabel}
         </Button>
         {secondary && (
-          <Button href={secondary.href} variant="secondary" block>
+          <Button href={secondary.href} variant="secondary" block track={secondary.track}>
             {secondary.label}
           </Button>
         )}

@@ -14,6 +14,7 @@ import {
   visaH2,
   visaProse,
 } from '@/components/visa/VisaShell';
+import { ctaLabelForHref } from '@/lib/analytics';
 import type { CuratedBlock, CuratedVisaPage as CuratedData } from '@/data/visaCurated';
 
 const BASE_URL = 'https://www.vietnamlaunchpad.com';
@@ -60,10 +61,10 @@ function BlockContent({ block }: { block: CuratedBlock }) {
   if (block.t === 'buttons') {
     return (
       <div className="my-6 flex flex-col gap-3 sm:flex-row">
-        <Button href={block.primary.href} icon="arrow">
+        <Button href={block.primary.href} icon="arrow" track={{ label: ctaLabelForHref(block.primary.href), location: 'visa_page' }}>
           {block.primary.text}
         </Button>
-        <Button href={block.secondary.href} variant="secondary">
+        <Button href={block.secondary.href} variant="secondary" track={{ label: ctaLabelForHref(block.secondary.href), location: 'visa_page' }}>
           {block.secondary.text}
         </Button>
       </div>
@@ -172,10 +173,10 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
                     <p className="mb-4 font-display text-step-1 font-semibold text-ink">{helpHeading.text}</p>
                   )}
                   <div className="grid gap-2">
-                    <Button href={help.primary.href} block icon="arrow">
+                    <Button href={help.primary.href} block icon="arrow" track={{ label: ctaLabelForHref(help.primary.href), location: 'visa_page' }}>
                       {help.primary.text}
                     </Button>
-                    <Button href={help.secondary.href} variant="secondary" block>
+                    <Button href={help.secondary.href} variant="secondary" block track={{ label: ctaLabelForHref(help.secondary.href), location: 'visa_page' }}>
                       {help.secondary.text}
                     </Button>
                   </div>

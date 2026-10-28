@@ -154,6 +154,7 @@ export default function Navigation() {
   return (
     <header
       ref={headerRef}
+      data-track-location="nav"
       className="fixed inset-x-0 top-0 z-50 border-b border-hairline bg-paper/95 backdrop-blur-[6px]"
     >
       {/* The first nav holds the logo, the top-level links in navTopOrder and the call to action. Dropdown panels sit after it. */}
@@ -212,7 +213,7 @@ export default function Navigation() {
               );
             })}
           </ul>
-          <Button href={navButton.href} size="sm" className="ml-3 whitespace-nowrap" onClick={closeAll}>
+          <Button href={navButton.href} size="sm" className="ml-3 whitespace-nowrap" onClick={closeAll} track={{ label: 'book_consultation', location: 'nav' }}>
             {navButton.text}
           </Button>
         </div>
@@ -344,7 +345,7 @@ export default function Navigation() {
           })}
         </ul>
         <div className="px-4 pb-6">
-          <Button href={navButton.href} block onClick={closeAll}>
+          <Button href={navButton.href} block onClick={closeAll} track={{ label: 'book_consultation', location: 'nav' }}>
             {navButton.text}
           </Button>
         </div>

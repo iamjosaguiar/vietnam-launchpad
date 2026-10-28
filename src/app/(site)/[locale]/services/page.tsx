@@ -340,6 +340,7 @@ export default function ServicesPage() {
               </div>
               <Link
                 href="/contact"
+                data-track="cta_click" data-track-label="book_consultation" data-track-location="service_page"
                 className="flex-shrink-0 inline-flex min-h-[44px] items-center text-sm font-bold text-navy underline underline-offset-2 whitespace-nowrap"
               >
                 Get a free quote
@@ -479,6 +480,7 @@ export default function ServicesPage() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   href="/contact"
+                  data-track="cta_click" data-track-label="book_consultation" data-track-location="service_page"
                   className={buttonClasses({ variant: 'gold' })}
                 >
                   Book a Free Call
@@ -488,6 +490,8 @@ export default function ServicesPage() {
                 </Link>
                 <a
                   href={PHONE_WHATSAPP}
+                  data-track-label="whatsapp_us"
+                  data-track-location="service_page"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={buttonClasses({ variant: 'ghost', className: '!border-white/40 !text-white hover:bg-white/10 hover:!no-underline' })}
