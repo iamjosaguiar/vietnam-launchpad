@@ -2,22 +2,121 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import HolaflyCallout from '@/components/HolaflyCallout';
 import MarkdownBlocks from '@/components/MarkdownBlocks';
-import { Link } from '@/i18n/config';
-import type { CuratedVisaPage as CuratedData } from '@/data/visaCurated';
+import Accordion from '@/components/ui/Accordion';
+import Button from '@/components/ui/Button';
+import ChecklistCard, { type ChecklistItem } from '@/components/ui/ChecklistCard';
+import Icon from '@/components/ui/Icon';
+import {
+  CHECKLIST_COUNT,
+  VisaCard,
+  VisaColumns,
+  VisaHero,
+  visaH2,
+  visaProse,
+} from '@/components/visa/VisaShell';
+import type { CuratedBlock, CuratedVisaPage as CuratedData } from '@/data/visaCurated';
 
 const BASE_URL = 'https://www.vietnamlaunchpad.com';
 
-const proseClasses = `prose prose-lg prose-blue max-w-none
-  prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
-  prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-gray-800
-  prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-6
-  prose-a:text-primary-600 prose-a:font-medium prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary-700
-  prose-strong:text-gray-900 prose-strong:font-semibold
-  prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
-  prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2`;
+type BlockGroup = { heading?: string; blocks: CuratedBlock[] };
+
+/** Splits the copy into one group per H2 so each renders as its own card. */
+function groupByHeading(blocks: CuratedBlock[]): BlockGroup[] {
+  const groups: BlockGroup[] = [];
+  for (const block of blocks) {
+    if (block.t === 'h2') {
+      groups.push({ heading: block.text, blocks: [] });
+    } else if (groups.length === 0) {
+      groups.push({ blocks: [block] });
+    } else {
+      groups[groups.length - 1].blocks.push(block);
+    }
+  }
+  return groups;
+}
+
+/**
+ * A markdown block that opens with a plain bullet list (no links) becomes the requirements
+ * checklist. The first sentence of each bullet is the label and the rest is the hint, so the
+ * wording stays exactly as written.
+ */
+function leadingChecklist(markdown: string): { items: ChecklistItem[]; rest: string } | null {
+  const lines = markdown.split('\n');
+  let end = 0;
+  while (end < lines.length && lines[end].startsWith('- ')) end += 1;
+  const bullets = lines.slice(0, end).map((line) => line.slice(2).trim());
+  if (bullets.length < 2 || bullets.some((text) => /\]\(|https?:\/\//.test(text))) return null;
+  const items = bullets.map((text) => {
+    const split = text.indexOf('. ');
+    return split > 0 ? { label: text.slice(0, split + 1), hint: text.slice(split + 2) } : { label: text };
+  });
+  return { items, rest: lines.slice(end).join('\n').trim() };
+}
+
+function BlockContent({ block }: { block: CuratedBlock }) {
+  if (block.t === 'md') {
+    return <MarkdownBlocks markdown={block.text} className={visaProse} />;
+  }
+  if (block.t === 'buttons') {
+    return (
+      <div className="my-6 flex flex-col gap-3 sm:flex-row">
+        <Button href={block.primary.href} icon="arrow">
+          {block.primary.text}
+        </Button>
+        <Button href={block.secondary.href} variant="secondary">
+          {block.secondary.text}
+        </Button>
+      </div>
+    );
+  }
+  if (block.t === 'affiliate') {
+    return <HolaflyCallout variant="visa" />;
+  }
+  return null;
+}
+
+function GroupCard({ group }: { group: BlockGroup }) {
+  const [first, ...others] = group.blocks;
+  const checklist = group.heading && first?.t === 'md' ? leadingChecklist(first.text) : null;
+
+  if (group.heading && checklist) {
+    return (
+      <ChecklistCard
+        title={group.heading}
+        items={checklist.items}
+        countLabel={CHECKLIST_COUNT}
+        footer={
+          checklist.rest || others.length ? (
+            <>
+              {checklist.rest && <MarkdownBlocks markdown={checklist.rest} className={visaProse} />}
+              {others.map((block, i) => (
+                <BlockContent key={i} block={block} />
+              ))}
+            </>
+          ) : undefined
+        }
+      />
+    );
+  }
+
+  return (
+    <VisaCard>
+      {group.heading && <h2 className={visaH2}>{group.heading}</h2>}
+      {group.blocks.map((block, i) => (
+        <BlockContent key={i} block={block} />
+      ))}
+    </VisaCard>
+  );
+}
 
 export default function CuratedVisaPage({ page }: { page: CuratedData }) {
   const country = page.h1.replace('Vietnam Visa for ', '');
+  const help = page.blocks.find((block) => block.t === 'buttons');
+  const helpIndex = help ? page.blocks.indexOf(help) : -1;
+  const helpHeading = page.blocks
+    .slice(0, helpIndex)
+    .reverse()
+    .find((block): block is Extract<CuratedBlock, { t: 'h2' }> => block.t === 'h2');
 
   const webPageSchema = {
     '@context': 'https://schema.org',
@@ -45,114 +144,81 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
     })),
   };
 
-  const badgeClass =
-    page.badgeTone === 'emerald'
-      ? 'bg-emerald-500/20 border-emerald-400/30 text-emerald-300'
-      : 'bg-blue-500/20 border-blue-400/30 text-blue-300';
-
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
+        <main>
 
-        <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-20 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
-          <div className="container mx-auto px-4 md:px-8 relative z-10">
-            <nav className="flex items-center gap-2 text-sm text-white/40 mb-8">
-              <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
-              <span>/</span>
-              <Link href="/visa" className="hover:text-white/70 transition-colors">Vietnam Visa</Link>
-              <span>/</span>
-              <span className="text-white/60">{country}</span>
-            </nav>
-            <div className="max-w-4xl">
-              <div className="flex items-center gap-4 mb-6">
-                <span className="text-6xl" role="img" aria-label={country}>{page.flag}</span>
-                <span className={`inline-flex items-center gap-1.5 border text-sm font-semibold px-4 py-2 rounded-full ${badgeClass}`}>
-                  {page.badge}
-                </span>
-              </div>
-              <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
-                {page.h1}
-              </h1>
-              <p className="hero-subtitle text-xl text-white/60 max-w-2xl">{page.heroText}</p>
-            </div>
-          </div>
-        </section>
+          <VisaHero
+            breadcrumb={country}
+            flag={page.flag}
+            flagLabel={country}
+            badge={page.badge}
+            title={page.h1}
+            lead={page.heroText}
+            notice={page.privateLine}
+          />
 
-        <section className="bg-amber-50 border-b border-amber-100 py-4">
-          <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-            <p className="text-sm text-amber-800">{page.lastVerified}</p>
-            <p className="text-sm text-amber-800 mt-2">{page.privateLine}</p>
-          </div>
-        </section>
-
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm mb-12">
-                <h2 className="text-lg font-semibold text-gray-900 mb-5">{page.factsHeading}</h2>
-                <dl className="space-y-3">
-                  {page.facts.map(([label, value]) => (
-                    <div key={label} className="flex flex-col sm:flex-row sm:gap-4 border-b border-gray-50 pb-3 last:border-0">
-                      <dt className="text-sm text-gray-500 sm:w-56 flex-shrink-0">{label}</dt>
-                      <dd className="text-sm font-medium text-gray-900">{value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-
-              {page.blocks.map((block, i) => {
-                if (block.t === 'h2') {
-                  return (
-                    <h2 key={i} className="text-3xl font-display font-bold text-gray-900 mt-14 mb-6 pb-3 border-b border-gray-200">
-                      {block.text}
-                    </h2>
-                  );
-                }
-                if (block.t === 'md') {
-                  return <MarkdownBlocks key={i} markdown={block.text} className={proseClasses} />;
-                }
-                if (block.t === 'buttons') {
-                  return (
-                    <div key={i} className="flex flex-col sm:flex-row gap-4 my-8">
-                      <Link
-                        href={block.primary.href}
-                        className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-full text-sm font-semibold hover:bg-primary-500 transition-colors"
-                      >
-                        {block.primary.text}
-                      </Link>
-                      <Link
-                        href={block.secondary.href}
-                        className="inline-flex items-center justify-center px-8 py-4 border border-gray-300 text-gray-800 rounded-full text-sm font-semibold hover:bg-gray-50 transition-colors"
-                      >
-                        {block.secondary.text}
-                      </Link>
-                    </div>
-                  );
-                }
-                return <HolaflyCallout key={i} variant="visa" />;
-              })}
-
-              <h2 className="text-3xl font-display font-bold text-gray-900 mt-14 mb-6 pb-3 border-b border-gray-200">
-                {page.faqHeading}
-              </h2>
-              <div className="space-y-8">
-                {page.faqs.map((f) => (
-                  <div key={f.q}>
-                    <h3 className="text-xl font-display font-bold text-gray-800 mb-3">{f.q}</h3>
-                    <p className="text-gray-600 leading-relaxed">{f.a}</p>
+          <VisaColumns
+            asideLabel={helpHeading?.text ?? page.factsHeading}
+            asideClassName="hidden nav:block"
+            aside={
+              help?.t === 'buttons' ? (
+                <div className="rounded-panel border border-hairline bg-white p-6 shadow-soft">
+                  {helpHeading && (
+                    <p className="mb-4 font-display text-step-1 font-semibold text-ink">{helpHeading.text}</p>
+                  )}
+                  <div className="grid gap-2">
+                    <Button href={help.primary.href} block icon="arrow">
+                      {help.primary.text}
+                    </Button>
+                    <Button href={help.secondary.href} variant="secondary" block>
+                      {help.secondary.text}
+                    </Button>
+                  </div>
+                  <p className="mb-0 mt-4 flex items-start gap-2 border-t border-hairline pt-4 text-sm text-muted">
+                    <Icon name="shield" className="mt-0.5 h-[18px] w-[18px] flex-none text-success" />
+                    {page.privateLine}
+                  </p>
+                </div>
+              ) : null
+            }
+          >
+            <VisaCard>
+              <h2 className={visaH2}>{page.factsHeading}</h2>
+              <dl className="m-0">
+                {page.facts.map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="flex flex-col gap-1 border-t border-hairline py-3 last:border-b sm:flex-row sm:gap-4"
+                  >
+                    <dt className="flex-shrink-0 text-sm text-muted sm:w-56">{label}</dt>
+                    <dd className="m-0 text-sm font-bold text-ink">{value}</dd>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </section>
+              </dl>
+              <p className="mb-0 mt-4 max-w-measure text-sm text-muted">{page.lastVerified}</p>
+            </VisaCard>
 
+            {groupByHeading(page.blocks).map((group, i) => (
+              <GroupCard key={group.heading ?? i} group={group} />
+            ))}
+
+            <VisaCard>
+              <h2 className={visaH2}>{page.faqHeading}</h2>
+              <Accordion
+                questionAs="h3"
+                items={page.faqs.map((f) => ({ question: f.q, answer: <p className="m-0">{f.a}</p> }))}
+              />
+            </VisaCard>
+          </VisaColumns>
+
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

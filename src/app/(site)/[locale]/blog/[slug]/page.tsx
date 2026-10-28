@@ -105,11 +105,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
-        <BlogPostContent post={post} />
+        <main>
+          <BlogPostContent post={post} />
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

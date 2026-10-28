@@ -501,3 +501,9 @@ export const footerLegal = [
 ];
 
 export const servicesForBusinessText = "Setting up or running a company in Vietnam? See company registration, employer of record, accounting and our enterprise services.";
+
+/**
+ * Order of the top-level header items, left to right on desktop and top to bottom on mobile.
+ * Current order: Visas, Living in Vietnam, Services, Blog, Contact. Reorder this array to change it.
+ */
+export const navTopOrder = ['visas', 'living', 'services', 'blog', 'contact'] as const;

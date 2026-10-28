@@ -155,11 +155,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         <Navigation />
-        <GuideContent guide={guide} topWidget={topWidget} />
+        <main>
+          <GuideContent guide={guide} topWidget={topWidget} />
+        </main>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

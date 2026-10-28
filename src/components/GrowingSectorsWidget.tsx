@@ -121,7 +121,7 @@ function SectorBar({ label, value, color, bgColor, max }: SectorBarProps) {
           style={{ width: `${pct}%` }}
         />
       </div>
-      <p className="text-xs text-gray-400">% of GDP</p>
+      <p className="text-xs text-gray-500">% of GDP</p>
     </div>
   );
 }
@@ -154,7 +154,7 @@ export default async function GrowingSectorsWidget() {
         <div>
           <div className="flex items-baseline justify-between mb-4">
             <h3 className="text-sm font-semibold text-gray-800">GDP Composition by Sector ({year})</h3>
-            <span className="text-xs text-gray-400">World Bank</span>
+            <span className="text-xs text-gray-500">World Bank</span>
           </div>
           <div className="space-y-5">
             <SectorBar
@@ -186,7 +186,7 @@ export default async function GrowingSectorsWidget() {
               max={max}
             />
           </div>
-          <p className="text-xs text-gray-400 mt-3">
+          <p className="text-xs text-gray-500 mt-3">
             Source: World Bank Open Data (NV.SRV.TOTL.ZS, NV.IND.TOTL.ZS, NV.IND.MANF.ZS, NV.AGR.TOTL.ZS) - ({year})
           </p>
         </div>
@@ -198,7 +198,7 @@ export default async function GrowingSectorsWidget() {
         <div>
           <div className="flex items-baseline justify-between mb-4">
             <h3 className="text-sm font-semibold text-gray-800">Key Growth Sectors</h3>
-            <span className="text-xs text-gray-400">FDI and sector growth data, 2024</span>
+            <span className="text-xs text-gray-500">FDI and sector growth data, 2024</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {KEY_SECTORS.map((sector) => (
@@ -219,11 +219,11 @@ export default async function GrowingSectorsWidget() {
                     </span>
                   </div>
                 </div>
-                <p className="text-xs leading-relaxed opacity-80 pl-8">{sector.desc}</p>
+                <p className="text-xs leading-relaxed pl-8">{sector.desc}</p>
               </div>
             ))}
           </div>
-          <p className="text-xs text-gray-400 mt-3">
+          <p className="text-xs text-gray-500 mt-3">
             Sector data, 2024. Sources: MPI, GSO, VNAT, VINASA, Power Development Plan 8 (PDP8). Individual statistics cited inline. Some figures are approximate or widely-reported estimates.
           </p>
         </div>

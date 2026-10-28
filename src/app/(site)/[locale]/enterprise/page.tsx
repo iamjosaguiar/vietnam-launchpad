@@ -1,6 +1,9 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import Button from '@/components/ui/Button';
+import Chip from '@/components/ui/Chip';
+import Container from '@/components/ui/Container';
 import { Link } from '@/i18n/config';
 
 const packageItems = [
@@ -38,223 +41,208 @@ const packageItems = [
 
 const processSteps = [
   { step: '01', title: 'Strategy Call', duration: '30 minutes', desc: 'We map your full Vietnam situation - investment structure, team composition, timeline, and any complications. You leave with a clear picture of what needs to happen and in what order.' },
-  { step: '02', title: 'Proposal & Scope', duration: '2–3 days', desc: "We present a tailored proposal with a fixed fee, a specific timeline, and a named consultant. Nothing is ambiguous. You know exactly what we're doing and when it will be done." },
+  { step: '02', title: 'Proposal & Scope', duration: '2-3 days', desc: "We present a tailored proposal with a fixed fee, a specific timeline, and a named consultant. Nothing is ambiguous. You know exactly what we're doing and when it will be done." },
   { step: '03', title: 'Execution Begins', duration: 'Within 5 days', desc: "Once you agree, we move immediately. Entity submissions, banking appointments, work permit documentation - everything runs in parallel where possible to move as fast as Vietnam's process allows." },
   { step: '04', title: 'Handover & Ongoing', duration: 'Post-launch', desc: "We hand over a fully documented operational entity with all credentials, contacts, and filing calendars. Ongoing compliance retainer available from month one." },
 ];
 
 export default function EnterprisePage() {
   return (
-    <main className="min-h-screen bg-ivory">
+    <div className="min-h-screen bg-ivory">
       <Navigation />
+      <main>
 
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-stone-950 via-primary-950 to-stone-950 text-white py-36 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-[700px] h-[700px] bg-primary-500/8 rounded-full blur-[140px]" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent-400/6 rounded-full blur-[120px]" />
-        <div
-          className="absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)`,
-            backgroundSize: '80px 80px',
-          }}
-        />
-
-        <div className="container mx-auto px-4 md:px-8 relative z-10 max-w-5xl">
-          <span className="hero-badge inline-block text-accent-400 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-6">
-            Enterprise
-          </span>
-          <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold mb-8 leading-tight">
-            Complete Vietnam
-            <span className="italic block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-400">
-              Market Entry
-            </span>
-          </h1>
-          <p className="hero-subtitle text-lg md:text-xl text-white/65 max-w-2xl font-body leading-relaxed mb-12">
-            For founders, family offices, and institutional investors entering Vietnam. From legal structure to first hire - operational within your timeline.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/contact"
-              className="group inline-flex items-center gap-3 px-10 py-5 bg-white text-stone-900 rounded-full text-base font-semibold hover:shadow-2xl hover:shadow-white/20 hover:-translate-y-0.5 transition-all duration-300"
-            >
-              Request a Private Strategy Call
-              <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </div>
-
-          <p className="text-white/30 text-xs mt-6 font-body">
-            We take on 6–8 new enterprise clients per quarter to maintain quality standards.
-          </p>
-        </div>
-      </section>
-
-      {/* Investment context */}
-      <section className="py-16 bg-white border-b border-stone-100">
-        <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: '3-4', unit: ' mo', label: 'Avg. market-entry time' },
-              { value: '$15k', unit: '+', label: 'Engagements start from' },
-              { value: '100%', unit: '', label: 'Approval rate, 2024' },
-              { value: '1', unit: '', label: 'Named consultant per client' },
-            ].map((s) => (
-              <div key={s.label} className="py-4">
-                <div className="text-4xl font-display font-bold text-stone-900 mb-1">
-                  {s.value}<span className="text-primary-500">{s.unit}</span>
-                </div>
-                <div className="text-stone-400 text-sm font-body">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What's included */}
-      <section className="py-24 md:py-36 bg-ivory">
-        <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-          <AnimateOnScroll className="max-w-2xl mb-16">
-            <span className="inline-block text-primary-600 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-5">
-              What's Included
-            </span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6 leading-tight">
-              Every piece of your Vietnam strategy
-            </h2>
-            <p className="text-stone-500 leading-relaxed">
-              Enterprise engagements cover the full market-entry spectrum. Nothing is outsourced to third parties we don't control. Nothing is left to you to chase.
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {packageItems.map((item, i) => (
-              <AnimateOnScroll key={item.title} delay={i * 80}>
-                <div className="bg-white rounded-3xl p-8 border border-stone-100 h-full hover:shadow-elevation-2 hover:-translate-y-1 transition-all duration-400 group">
-                  <div className="w-11 h-11 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-6 group-hover:bg-primary-100 transition-colors">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-display font-bold text-stone-900 mb-3">{item.title}</h3>
-                  <p className="text-stone-500 text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* The Process */}
-      <section className="py-24 md:py-36 bg-white">
-        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
-          <AnimateOnScroll className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block text-primary-600 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-5">
-              The Process
-            </span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">
-              How an engagement works
-            </h2>
-          </AnimateOnScroll>
-
-          <div className="space-y-6">
-            {processSteps.map((step, i) => (
-              <AnimateOnScroll key={step.step} delay={i * 100}>
-                <div className="flex gap-8 items-start p-8 bg-stone-50 rounded-3xl border border-stone-100 hover:border-primary-100 hover:bg-white transition-all duration-300">
-                  <div className="flex-shrink-0">
-                    <div className="text-5xl font-display font-bold text-stone-100">{step.step}</div>
-                  </div>
-                  <div className="flex-grow min-w-0">
-                    <div className="flex items-center gap-4 mb-3 flex-wrap">
-                      <h3 className="text-xl font-display font-bold text-stone-900">{step.title}</h3>
-                      <span className="inline-block px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-xs font-semibold font-body">
-                        {step.duration}
-                      </span>
-                    </div>
-                    <p className="text-stone-500 text-sm leading-relaxed">{step.desc}</p>
-                  </div>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Investment */}
-      <section className="py-24 md:py-36 bg-primary-950 text-white overflow-hidden relative">
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary-500/6 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-400/5 rounded-full blur-[100px]" />
-
-        <div className="container mx-auto px-4 md:px-8 max-w-5xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <AnimateOnScroll animation="fade-right">
-              <span className="inline-block text-accent-400 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-6">
-                Investment
+        {/* Hero */}
+        <section
+          aria-labelledby="enterprise-title"
+          className="bg-hero-wash pb-12 pt-[calc(var(--header-h)+32px)] nav:pb-16 nav:pt-[calc(var(--header-h)+64px)]"
+        >
+          <Container>
+            <Chip as="p" className="mb-4">
+              Enterprise
+            </Chip>
+            <h1 id="enterprise-title" className="mb-4 max-w-[22ch] font-display text-step-3 font-semibold text-ink nav:text-step-5">
+              Complete Vietnam
+              <span className="block text-navy">
+                Market Entry
               </span>
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
-                Transparent pricing,{' '}
-                <span className="italic">fixed fees</span>
-              </h2>
-              <div className="space-y-5 text-white/65 text-base leading-relaxed">
-                <p>
-                  Enterprise engagements are scoped and priced based on entity structure, team size, and service complexity. We quote fixed fees - no hourly billing, no surprise invoices.
-                </p>
-                <p>
-                  <span className="text-white/90 font-semibold">Market entry packages</span> typically range from <span className="text-white/90 font-semibold">$15,000 to $150,000</span> depending on entity type, banking complexity, and team size.
-                </p>
-                <p>
-                  <span className="text-white/90 font-semibold">Ongoing compliance retainers</span> start at <span className="text-white/90 font-semibold">$3,000/month</span> and cover accounting, tax filings, social insurance, and compliance monitoring.
-                </p>
-                <p>
-                  Individual services (work permits, TRC, company setup) are available on a standalone basis for clients who need specific components only.
-                </p>
-              </div>
-            </AnimateOnScroll>
+            </h1>
+            <p className="mb-8 max-w-[60ch] text-lead text-muted">
+              For founders, family offices, and institutional investors entering Vietnam. From legal structure to first hire - operational within your timeline.
+            </p>
 
-            <AnimateOnScroll animation="fade-left" delay={150}>
-              <div className="bg-white/4 border border-white/8 rounded-3xl p-10">
-                <h3 className="text-2xl font-display font-bold text-white mb-8">Ready to start?</h3>
+            <Button href="/contact" icon="arrow">
+              Request a Private Strategy Call
+            </Button>
 
-                <div className="space-y-4 mb-10">
-                  {[
-                    'Fixed-fee engagement, scoped before you commit',
-                    'Named senior consultant for your engagement',
-                    'Weekly status updates throughout',
-                    '4-hour response guarantee',
-                    'Money-back guarantee if we fail to deliver',
-                  ].map((item) => (
-                    <div key={item} className="flex gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-accent-400/20 flex items-center justify-center mt-0.5">
-                        <svg className="w-3 h-3 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-white/70 text-sm leading-relaxed">{item}</span>
-                    </div>
-                  ))}
+            <p className="mb-0 mt-4 text-sm text-muted">
+              We take on 6-8 new enterprise clients per quarter to maintain quality standards.
+            </p>
+          </Container>
+        </section>
+
+        {/* Investment context */}
+        <section className="py-16 bg-white border-b border-stone-100">
+          <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {[
+                { value: '3-4', unit: ' mo', label: 'Avg. market-entry time' },
+                { value: '$15k', unit: '+', label: 'Engagements start from' },
+                { value: '100%', unit: '', label: 'Approval rate, 2024' },
+                { value: '1', unit: '', label: 'Named consultant per client' },
+              ].map((s) => (
+                <div key={s.label} className="py-4">
+                  <div className="text-4xl font-display font-bold text-stone-900 mb-1">
+                    {s.value}<span className="text-primary-500">{s.unit}</span>
+                  </div>
+                  <div className="text-muted text-sm font-body">{s.label}</div>
                 </div>
-
-                <Link
-                  href="/contact"
-                  className="group w-full inline-flex items-center justify-center gap-3 px-8 py-5 bg-accent-400 text-stone-950 rounded-full text-sm font-semibold hover:bg-accent-300 transition-all duration-300 hover:-translate-y-0.5"
-                >
-                  Request a Private Strategy Call
-                  <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-
-                <p className="text-white/40 text-xs mt-4 text-center font-body">
-                  We take on 6–8 new enterprise clients per quarter
-                </p>
-              </div>
-            </AnimateOnScroll>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
+        {/* What's included */}
+        <section className="py-24 md:py-36 bg-ivory">
+          <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+            <AnimateOnScroll className="max-w-2xl mb-16">
+              <span className="inline-block text-primary-600 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-5">
+                What's Included
+              </span>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6 leading-tight">
+                Every piece of your Vietnam strategy
+              </h2>
+              <p className="text-stone-500 leading-relaxed">
+                Enterprise engagements cover the full market-entry spectrum. Nothing is outsourced to third parties we don't control. Nothing is left to you to chase.
+              </p>
+            </AnimateOnScroll>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {packageItems.map((item, i) => (
+                <AnimateOnScroll key={item.title} delay={i * 80}>
+                  <div className="bg-white rounded-3xl p-8 border border-stone-100 h-full hover:shadow-soft transition-shadow duration-150 motion-reduce:transition-none group">
+                    <div className="w-11 h-11 rounded-xl bg-primary-50 text-primary-600 flex items-center justify-center mb-6 group-hover:bg-primary-100 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-display font-bold text-stone-900 mb-3">{item.title}</h3>
+                    <p className="text-stone-500 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* The Process */}
+        <section className="py-24 md:py-36 bg-white">
+          <div className="container mx-auto px-4 md:px-8 max-w-5xl">
+            <AnimateOnScroll className="text-center max-w-2xl mx-auto mb-16">
+              <span className="inline-block text-primary-600 font-body font-semibold text-xs uppercase tracking-[0.15em] mb-5">
+                The Process
+              </span>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">
+                How an engagement works
+              </h2>
+            </AnimateOnScroll>
+
+            <div className="space-y-6">
+              {processSteps.map((step, i) => (
+                <AnimateOnScroll key={step.step} delay={i * 100}>
+                  <div className="flex gap-8 items-start p-8 bg-stone-50 rounded-3xl border border-stone-100 hover:border-primary-100 hover:bg-white transition-colors duration-150 motion-reduce:transition-none">
+                    <div className="flex-shrink-0">
+                      <div className="text-5xl font-display font-semibold text-navy">{step.step}</div>
+                    </div>
+                    <div className="flex-grow min-w-0">
+                      <div className="flex items-center gap-4 mb-3 flex-wrap">
+                        <h3 className="text-xl font-display font-bold text-stone-900">{step.title}</h3>
+                        <span className="inline-block px-3 py-1 rounded-full bg-primary-50 text-primary-600 text-xs font-semibold font-body">
+                          {step.duration}
+                        </span>
+                      </div>
+                      <p className="text-stone-500 text-sm leading-relaxed">{step.desc}</p>
+                    </div>
+                  </div>
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Investment */}
+        <section className="py-24 md:py-36 bg-navy-deep text-white overflow-hidden relative">
+
+          <div className="container mx-auto px-4 md:px-8 max-w-5xl relative z-10">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <AnimateOnScroll animation="fade-right">
+                <span className="inline-block text-gold font-body font-bold text-sm uppercase tracking-[0.15em] mb-6">
+                  Investment
+                </span>
+                <h2 className="text-4xl md:text-5xl font-display font-semibold text-white mb-8 leading-tight">
+                  Transparent pricing,{' '}
+                  <span className="italic">fixed fees</span>
+                </h2>
+                <div className="space-y-5 text-[#E6EDF4] text-base leading-relaxed">
+                  <p>
+                    Enterprise engagements are scoped and priced based on entity structure, team size, and service complexity. We quote fixed fees - no hourly billing, no surprise invoices.
+                  </p>
+                  <p>
+                    <span className="text-white font-semibold">Market entry packages</span> typically range from <span className="text-white font-semibold">$15,000 to $150,000</span> depending on entity type, banking complexity, and team size.
+                  </p>
+                  <p>
+                    <span className="text-white font-semibold">Ongoing compliance retainers</span> start at <span className="text-white font-semibold">$3,000/month</span> and cover accounting, tax filings, social insurance, and compliance monitoring.
+                  </p>
+                  <p>
+                    Individual services (work permits, TRC, company setup) are available on a standalone basis for clients who need specific components only.
+                  </p>
+                </div>
+              </AnimateOnScroll>
+
+              <AnimateOnScroll animation="fade-left" delay={150}>
+                <div className="bg-navy border border-primary-500 rounded-panel p-6 md:p-10">
+                  <h3 className="text-2xl font-display font-semibold text-white mb-8">Ready to start?</h3>
+
+                  <div className="space-y-4 mb-10">
+                    {[
+                      'Fixed-fee engagement, scoped before you commit',
+                      'Named senior consultant for your engagement',
+                      'Weekly status updates throughout',
+                      '4-hour response guarantee',
+                      'Money-back guarantee if we fail to deliver',
+                    ].map((item) => (
+                      <div key={item} className="flex gap-3">
+                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gold flex items-center justify-center mt-0.5">
+                          <svg className="w-3 h-3 text-ink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <span className="text-[#E6EDF4] text-sm leading-relaxed">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/contact"
+                    className="w-full min-h-[48px] inline-flex items-center justify-center gap-3 px-8 py-4 border border-gold bg-gold text-ink rounded-full text-base font-bold hover:border-gold-hover hover:bg-gold-hover transition-colors duration-150 motion-reduce:transition-none"
+                  >
+                    Request a Private Strategy Call
+                    <svg className="w-4 h-4 flex-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+
+                  <p className="text-[#E6EDF4] text-sm mt-4 text-center font-body">
+                    We take on 6-8 new enterprise clients per quarter
+                  </p>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </div>
+        </section>
+
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }

@@ -80,14 +80,11 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-primary-950 text-white pt-32 pb-24 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-500/5 rounded-full blur-[100px]" />
-
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+      <section className="bg-hero-wash py-12 nav:py-16">
+        <div className="mx-auto w-full max-w-site px-4 md:px-6">
           <Link
             href="/blog"
-            className="hero-badge inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 font-medium transition-colors"
+            className="hero-badge mb-6 inline-flex min-h-[44px] items-center gap-2 font-bold text-navy hover:underline underline-offset-4"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -95,9 +92,9 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
             Back to Blog
           </Link>
 
-          <div className="max-w-5xl">
-            <div className="hero-badge flex flex-wrap items-center gap-4 text-sm text-white/60 mb-6">
-              <span className="bg-white/10 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-xs font-medium">
+          <div className="max-w-[760px]">
+            <div className="hero-badge mb-4 flex flex-wrap items-center gap-4 text-sm text-muted">
+              <span className="inline-flex min-h-[32px] items-center rounded-full border border-gold-line bg-gold-soft px-3 py-1 text-sm font-bold text-navy">
                 {post.category}
               </span>
               <span className="flex items-center gap-1.5">
@@ -115,19 +112,19 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
               </span>
             </div>
 
-            <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6 leading-tight">
+            <h1 className="hero-title mb-4 font-display text-step-3 font-semibold leading-tight text-ink nav:text-step-5">
               {post.title}
             </h1>
 
-            <p className="hero-subtitle text-xl text-white/60 mb-8">{post.excerpt}</p>
+            <p className="hero-subtitle mb-8 max-w-measure text-lead text-muted">{post.excerpt}</p>
 
             <div className="hero-cta flex items-center gap-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary-500/30">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-navy font-display text-step-1 font-semibold text-white">
                 {post.author.charAt(0)}
               </div>
               <div>
-                <p className="font-semibold text-white">{post.author}</p>
-                <p className="text-sm text-white/50">Immigration Specialist</p>
+                <p className="m-0 font-bold text-ink">{post.author}</p>
+                <p className="m-0 text-sm text-muted">Immigration Specialist</p>
               </div>
             </div>
           </div>
@@ -135,26 +132,26 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
       </section>
 
       {/* Article Content */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-7xl mx-auto flex gap-12 items-start">
+      <section className="bg-paper py-12 nav:py-16">
+        <div className="mx-auto w-full max-w-site px-4 md:px-6">
+          <div className="flex gap-12 items-start">
 
             {/* Sticky TOC - Desktop */}
             {toc.length > 0 && (
-              <aside className="hidden xl:block w-64 shrink-0 sticky top-28">
-                <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">In This Article</p>
+              <aside className="hidden xl:block w-64 shrink-0 sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto rounded-card">
+                <div className="bg-sand rounded-card p-6 border border-hairline">
+                  <p className="text-sm font-bold text-muted uppercase tracking-[0.08em] mb-4">In This Article</p>
                   <nav className="space-y-1">
                     {toc.map((item) => (
                       <a
                         key={item.id}
                         href={`#${item.id}`}
-                        className={`block text-sm transition-colors leading-snug py-1 ${
+                        className={`flex min-h-[44px] items-center text-sm transition-colors leading-snug py-1 ${
                           item.level === 3 ? 'pl-4' : ''
                         } ${
                           activeId === item.id
-                            ? 'text-primary-600 font-semibold'
-                            : 'text-gray-500 hover:text-gray-900'
+                            ? 'text-navy font-bold'
+                            : 'text-muted hover:text-ink'
                         }`}
                       >
                         {item.text}
@@ -173,10 +170,11 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                 <div className="xl:hidden mb-8">
                   <button
                     onClick={() => setTocOpen(!tocOpen)}
-                    className="w-full flex items-center justify-between bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 text-sm font-semibold text-gray-700"
+                    className="w-full flex min-h-[48px] items-center justify-between bg-sand border border-hairline rounded-card px-5 py-3 text-sm font-bold text-ink"
+                    aria-expanded={tocOpen}
                   >
                     <span className="flex items-center gap-2">
-                      <svg className="w-4 h-4 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h10" />
                       </svg>
                       Table of Contents
@@ -189,13 +187,13 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
                     </svg>
                   </button>
                   {tocOpen && (
-                    <div className="mt-2 bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 space-y-2">
+                    <div className="mt-2 bg-sand border border-hairline rounded-card px-5 py-3">
                       {toc.map((item) => (
                         <a
                           key={item.id}
                           href={`#${item.id}`}
                           onClick={() => setTocOpen(false)}
-                          className={`block text-sm text-gray-600 hover:text-primary-600 transition-colors ${
+                          className={`block py-3 text-sm text-muted hover:text-navy transition-colors ${
                             item.level === 3 ? 'pl-4' : ''
                           }`}
                         >
@@ -209,25 +207,25 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
 
               <MarkdownBlocks
                 markdown={post.content}
-                className="prose prose-lg prose-blue max-w-none
-                prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
+                className="prose prose-lg max-w-measure break-words
+                prose-headings:font-display prose-headings:font-semibold prose-headings:text-ink
                 prose-h1:text-4xl prose-h1:mb-6 prose-h1:hidden
-                prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200
-                prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-gray-800
-                prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-6
-                prose-a:text-primary-600 prose-a:font-medium prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary-700
-                prose-strong:text-gray-900 prose-strong:font-semibold
+                prose-h2:text-step-3 prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-hairline
+                prose-h3:text-step-1 prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-ink
+                prose-p:text-muted prose-p:leading-relaxed prose-p:mb-6
+                prose-a:text-navy prose-a:font-medium prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-navy-deep
+                prose-strong:text-ink prose-strong:font-semibold
                 prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
                 prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
-                prose-li:text-gray-600 prose-li:leading-relaxed
-                prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:pl-6 prose-blockquote:not-italic prose-blockquote:bg-primary-50 prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:rounded-r-xl prose-blockquote:my-8
-                prose-code:text-primary-600 prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
-                prose-hr:my-12 prose-hr:border-gray-200
-                prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-xl prose-table:overflow-hidden
-                prose-thead:bg-primary-600
+                prose-li:text-muted prose-li:leading-relaxed
+                prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:pl-6 prose-blockquote:not-italic prose-blockquote:bg-gold-soft prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:rounded-r-card prose-blockquote:my-8
+                prose-code:text-navy prose-code:bg-sand prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+                prose-hr:my-12 prose-hr:border-hairline
+                prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:rounded-card prose-table:overflow-hidden max-md:prose-table:block max-md:prose-table:overflow-x-auto
+                prose-thead:bg-navy
                 prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
-                prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100
-                prose-tr:even:bg-gray-50"
+                prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-hairline
+                [&_tbody_tr:nth-child(even)]:bg-sand"
                 components={mdComponents}
               />
             </div>
@@ -236,51 +234,47 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/images/backgrounds/vietnam-landscape.jpg')`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-slate-900/95" />
-
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <AnimateOnScroll animation="scale" className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-              Need Help with Your Work Permit or Visa?
-            </h2>
-            <p className="text-xl text-white/70 mb-10">
-              Our expert team can guide you through the entire process and ensure everything is done correctly.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-3 bg-white text-primary-700 px-10 py-5 rounded-full text-lg font-bold hover:shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all duration-300"
-              >
-                Get Free Consultation
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link
-                href="/services/work-permit"
-                className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/20 transition-all duration-300"
-              >
-                View Work Permit Service
-              </Link>
+      <section className="bg-paper pb-12 nav:pb-16">
+        <div className="mx-auto w-full max-w-site px-4 md:px-6">
+          <AnimateOnScroll animation="scale">
+            <div className="grid gap-6 rounded-panel bg-navy-deep px-6 py-8 text-white nav:grid-cols-[1fr_auto] nav:items-center nav:p-12">
+              <div>
+                <h2 className="m-0 font-display text-step-2 font-semibold text-white nav:text-step-4">
+                  Need Help with Your Work Permit or Visa?
+                </h2>
+                <p className="mb-0 mt-2 max-w-measure text-[#D6E2F0]">
+                  Our expert team can guide you through the entire process and ensure everything is done correctly.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4 sm:flex-row nav:flex-col">
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gold px-6 font-bold text-ink hover:bg-gold-hover"
+                >
+                  Get Free Consultation
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  href="/services/work-permit"
+                  className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full border-2 border-white/60 px-6 font-bold text-white hover:bg-white/10"
+                >
+                  View Work Permit Service
+                </Link>
+              </div>
             </div>
           </AnimateOnScroll>
         </div>
       </section>
 
       {/* Back to Blog */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-8 text-center">
+      <section className="bg-sand py-8">
+        <div className="mx-auto w-full max-w-site px-4 md:px-6 text-center">
           <AnimateOnScroll>
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold text-lg hover:gap-4 transition-all"
+              className="inline-flex min-h-[44px] items-center gap-2 text-navy hover:text-navy-deep font-bold text-lg hover:gap-4 transition-all"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
