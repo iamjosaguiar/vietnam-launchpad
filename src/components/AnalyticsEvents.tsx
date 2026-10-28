@@ -58,7 +58,7 @@ function locationOf(element: Element): string | undefined {
  *   data-track-label="..."      short fixed label for the CTA
  *   data-track-location="..."   where it sits (hero, nav, footer, service_page, visa_page, blog);
  *                               also read from the nearest ancestor that sets it
- *   data-track-form="..."       on a <form>: the form_id used for form_start
+ *   data-track-form="..."       on a <form>: the form_id used for visa_form_start
  * Links to WhatsApp, mailto:, tel: and other sites are recognised from the href alone.
  */
 export default function AnalyticsEvents() {
@@ -93,7 +93,7 @@ export default function AnalyticsEvents() {
       const form = event.target.closest(`form[${FORM_ATTRIBUTE}]`);
       if (!form || seenForms.has(form)) return;
       seenForms.add(form);
-      trackEvent('form_start', { form_id: form.getAttribute(FORM_ATTRIBUTE) });
+      trackEvent('visa_form_start', { form_id: form.getAttribute(FORM_ATTRIBUTE) });
     };
 
     // The country picker keeps its choice in component state, so the pick is read from the page
