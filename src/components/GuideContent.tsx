@@ -120,7 +120,7 @@ const proseClasses = `prose prose-lg max-w-measure break-words
   prose-thead:bg-navy
   prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-sm prose-th:text-white
   prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-hairline
-  prose-tr:even:bg-sand`;
+  [&_tbody_tr:nth-child(even)]:bg-sand`;
 
 const mdComponents = (slugifyFn: (t: string) => string) => ({
   h2: ({ children, ...props }: React.ComponentPropsWithoutRef<'h2'>) => {
@@ -212,7 +212,7 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
 
             {/* Sticky TOC - Desktop */}
             {toc.length > 0 && (
-              <aside className="hidden xl:block w-64 shrink-0 sticky top-28">
+              <aside className="hidden xl:block w-64 shrink-0 sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto rounded-card">
                 <div className="bg-sand rounded-card p-6 border border-hairline">
                   <p className="text-sm font-bold text-muted uppercase tracking-[0.08em] mb-4">In This Guide</p>
                   <nav className="space-y-1">
@@ -220,7 +220,7 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
                       <a
                         key={item.id}
                         href={`#${item.id}`}
-                        className={`block text-sm transition-colors leading-snug py-1 ${
+                        className={`flex min-h-[44px] items-center text-sm transition-colors leading-snug py-1 ${
                           item.level === 3 ? 'pl-4' : ''
                         } ${
                           activeId === item.id

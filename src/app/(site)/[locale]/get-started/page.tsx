@@ -94,23 +94,20 @@ export default function GetStartedPage() {
 
       {/* Hero Section */}
       <section className="relative bg-navy-deep text-white py-32 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent-500/5 rounded-full blur-[100px]" />
-
         <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
-          <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8">
-            <svg className="w-4 h-4 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="hero-badge inline-flex min-h-[32px] items-center gap-2 px-3 py-1 rounded-full border border-gold-line bg-gold-soft mb-8">
+            <svg className="w-4 h-4 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            <span className="text-sm text-white/70">Free consultation included</span>
+            <span className="text-sm font-bold text-navy">Free consultation included</span>
           </div>
-          <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl font-display font-bold mb-6 leading-tight">
+          <h1 className="hero-title text-step-4 sm:text-step-5 md:text-7xl font-display font-semibold text-white mb-6 leading-tight">
             Start Your Business
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-300 via-primary-400 to-accent-400">
+            <span className="block text-gold">
               in Vietnam
             </span>
           </h1>
-          <p className="hero-subtitle text-xl md:text-2xl text-white/60 max-w-3xl mx-auto">
+          <p className="hero-subtitle text-lead md:text-2xl text-[#E6EDF4] max-w-3xl mx-auto">
             Answer a few questions to help us understand your needs better
           </p>
         </div>
@@ -157,7 +154,7 @@ export default function GetStartedPage() {
                     </p>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 hover:gap-3 transition-all"
+                      className="inline-flex min-h-[44px] items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 hover:gap-3 transition-all"
                     >
                       Book a Consultation
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -421,7 +418,7 @@ export default function GetStartedPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-5 rounded-full text-lg font-bold hover:shadow-xl hover:shadow-primary-500/30 hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none flex items-center justify-center gap-3"
+                    className="w-full min-h-[48px] border border-navy bg-navy text-white px-8 py-5 rounded-full text-lg font-bold hover:border-navy-deep hover:bg-navy-deep transition-colors duration-150 motion-reduce:transition-none disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                   >
                     {isSubmitting ? (
                       <>

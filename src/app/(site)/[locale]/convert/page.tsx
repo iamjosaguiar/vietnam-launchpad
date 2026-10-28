@@ -160,7 +160,7 @@ export default async function ConvertIndexPage() {
                 </div>
                 <Link
                   href="/vietnam-exchange-rates"
-                  className="text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
+                  className="inline-flex min-h-[44px] items-center text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors"
                 >
                   Full rates table →
                 </Link>
@@ -193,7 +193,7 @@ export default async function ConvertIndexPage() {
                             <div className="text-sm font-bold text-gray-900">
                               {formatVnd(rate)} ₫
                             </div>
-                            <div className="text-xs text-gray-400">per 1 {pair.from}</div>
+                            <div className="text-xs text-gray-500">per 1 {pair.from}</div>
                           </>
                         ) : (
                           <div className="text-sm text-gray-400">-</div>
@@ -251,7 +251,7 @@ export default async function ConvertIndexPage() {
                 ].map((group) => (
                   <div key={group.label} className="bg-white rounded-xl border border-gray-200 p-4">
                     <div className="text-xs font-semibold text-primary-600 mb-1">{group.label}</div>
-                    <div className="text-xs text-gray-400 mb-3">{group.note}</div>
+                    <div className="text-xs text-gray-500 mb-3">{group.note}</div>
                     <div className="space-y-1">
                       {group.pairs.map((code) => {
                         const p = CURRENCY_PAIRS.find((x) => x.from === code);
@@ -259,7 +259,7 @@ export default async function ConvertIndexPage() {
                           <Link
                             key={code}
                             href={`/convert/${code.toLowerCase()}-to-vnd`}
-                            className="flex items-center gap-2 text-sm text-gray-700 hover:text-primary-600 transition-colors"
+                            className="flex min-h-[44px] items-center gap-2 text-sm text-gray-700 hover:text-primary-600 transition-colors"
                           >
                             <span>{p.flag}</span>
                             {code} to VND

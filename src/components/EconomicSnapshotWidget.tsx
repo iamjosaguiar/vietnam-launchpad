@@ -19,9 +19,9 @@ function StatCard({
   };
   return (
     <div className={`rounded-xl border p-4 ${colors[color]}`}>
-      <div className="text-xs font-medium mb-1 opacity-70">{label}</div>
+      <div className="text-xs font-medium mb-1 opacity-90">{label}</div>
       <div className="text-xl font-bold">{value}</div>
-      {sub && <div className="text-xs opacity-60 mt-0.5">{sub}</div>}
+      {sub && <div className="text-xs opacity-90 mt-0.5">{sub}</div>}
     </div>
   );
 }
@@ -44,7 +44,7 @@ export default async function EconomicSnapshotWidget() {
     <div className="not-prose my-8 rounded-2xl border border-hairline overflow-hidden">
       <div className="px-5 py-4 bg-navy-deep flex items-center justify-between">
         <span className="text-white font-semibold text-sm">Vietnam Economic Snapshot</span>
-        <span className="text-white/40 text-xs">World Bank data ({year})</span>
+        <span className="text-white/75 text-xs">World Bank data ({year})</span>
       </div>
       <div className="p-5 grid grid-cols-2 sm:grid-cols-3 gap-3">
         <StatCard
@@ -83,7 +83,7 @@ export default async function EconomicSnapshotWidget() {
             href="https://data.worldbank.org/country/vietnam"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-medium text-primary-600 hover:underline"
+            className="inline-flex min-h-[44px] items-center text-xs font-medium text-primary-600 hover:underline"
           >
             World Bank Open Data
           </a>

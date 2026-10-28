@@ -64,11 +64,11 @@ export default async function LiveRatesWidget({ compact = false }: LiveRatesWidg
           </div>
         )}
 
-        <div className="px-5 py-3 bg-success-soft flex items-center justify-between">
+        <div className="px-5 py-1 bg-success-soft flex items-center justify-between">
           <p className="text-xs text-muted">Indicative rates. Bank rates will vary.</p>
           <a
             href="/vietnam-exchange-rates"
-            className="text-xs font-semibold text-success hover:text-ink transition-colors"
+            className="inline-flex min-h-[44px] items-center text-xs font-semibold text-success hover:text-ink transition-colors"
           >
             Full rates table →
           </a>

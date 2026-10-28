@@ -66,12 +66,12 @@ export default function ChecklistCard({
       <ul className="m-0 list-none p-0" aria-labelledby={`${id}-title`}>
         {items.map((item, index) => (
           <li key={item.label} className="border-t border-hairline">
-            <label className="flex min-h-[52px] cursor-pointer items-center gap-3 py-2 font-medium">
+            <label className="flex min-h-[52px] cursor-pointer items-center gap-1 py-1 font-medium">
               <input
                 type="checkbox"
                 checked={checked.has(index)}
                 onChange={() => toggle(index)}
-                className="h-6 w-6 flex-none rounded-[6px] border-2 border-[#6F7B88] text-success accent-[#17694A]"
+                className="relative h-11 w-11 flex-none cursor-pointer appearance-none bg-transparent before:absolute before:inset-2.5 before:rounded-[6px] before:border-2 before:border-[#6F7B88] before:bg-white before:content-[''] checked:before:border-success checked:before:bg-success checked:before:bg-[url('data:image/svg+xml;utf8,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22none%22%20stroke=%22white%22%20stroke-width=%223.5%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22><path%20d=%22M5%2013l4%204L19%207%22/></svg>')] checked:before:bg-center checked:before:bg-no-repeat focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-navy"
               />
               <span>
                 {item.label}

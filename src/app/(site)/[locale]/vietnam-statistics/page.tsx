@@ -227,7 +227,7 @@ export default async function VietnamStatisticsPage() {
                     </p>
                   </div>
                   <div className="pt-2 border-t border-gray-100">
-                    <p className="text-xs text-gray-400">
+                    <p className="text-xs text-gray-500">
                       All data is provided for informational purposes. For investment decisions, always consult primary
                       sources and qualified advisors. Data accuracy cannot be guaranteed.
                     </p>
