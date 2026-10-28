@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Chip from '@/components/ui/Chip';
 import Container from '@/components/ui/Container';
+import { trackEvent } from '@/lib/analytics';
 import { PHONE_DISPLAY, PHONE_TEL, PHONE_WHATSAPP } from '@/lib/site';
 
 const companyTypes = [
@@ -52,6 +53,7 @@ export default function ContactPage() {
     setSubmitStatus('idle');
     setErrorMessage('');
 
+    let errorType = 'network';
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -60,18 +62,19 @@ export default function ContactPage() {
       });
 
       if (!response.ok) {
+        errorType = 'server';
         const data = await response.json().catch(() => null);
         const message = data && typeof data.error === 'string' ? data.error : 'Failed to submit form';
         throw new Error(message);
       }
 
       setSubmitStatus('success');
+      const leadService = formData.service;
       setFormData({ name: '', email: '', phone: '', company: '', companyType: '', investmentSize: '', service: '', timeline: '', situation: '' });
 
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'generate_lead', { event_category: 'engagement', event_label: formData.service });
-      }
+      trackEvent('generate_lead', { form_id: 'contact', service: leadService, event_category: 'engagement', event_label: leadService });
     } catch (err) {
+      trackEvent('form_submit_error', { form_id: 'contact', error_type: errorType });
       setSubmitStatus('error');
       setErrorMessage(err instanceof Error ? err.message : 'Something went wrong. Please try again or email us directly.');
     } finally {
@@ -133,7 +136,7 @@ export default function ContactPage() {
                       The more context you share, the more useful your consultation will be.
                     </p>
 
-                    <form onSubmit={handleSubmit} className="space-y-5">
+                    <form onSubmit={handleSubmit} data-track-form="contact" className="space-y-5">
                       {/* Name + Email */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>

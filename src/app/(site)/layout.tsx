@@ -4,6 +4,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { DM_Sans, Source_Serif_4 } from 'next/font/google';
 import Script from 'next/script';
 
+import AnalyticsEvents from '@/components/AnalyticsEvents';
 import MobileStickyBar from '@/components/MobileStickyBar';
 import { routing } from '@/i18n/config';
 import { OG_IMAGE_URL } from '@/lib/seo';
@@ -216,6 +217,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <MobileStickyBar />
+          <AnalyticsEvents />
         </NextIntlClientProvider>
       </body>
     </html>
