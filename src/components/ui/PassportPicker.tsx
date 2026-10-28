@@ -1,10 +1,11 @@
 'use client';
 
-import { useId, useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import { Link, useRouter } from '@/i18n/config';
 
 import Button from './Button';
+import Combobox from './Combobox';
 
 export interface PassportOption {
   slug: string;
@@ -12,7 +13,7 @@ export interface PassportOption {
 }
 
 /**
- * Nationality select that sends the visitor to /visa/<slug>, or to /visa when nothing is chosen.
+ * Nationality combobox that sends the visitor to /visa/<slug>, or to /visa when nothing is chosen.
  * Takes a slim option list so the full visa data stays on the server.
  */
 export default function PassportPicker({
@@ -32,9 +33,12 @@ export default function PassportPicker({
   allLink?: { label: string; href: string };
   className?: string;
 }) {
-  const id = useId();
   const router = useRouter();
   const [slug, setSlug] = useState('');
+  const comboOptions = useMemo(
+    () => options.map((option) => ({ value: option.slug, label: option.name })),
+    [options],
+  );
 
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -47,22 +51,13 @@ export default function PassportPicker({
       action="/visa"
       className={`rounded-panel border border-hairline bg-white p-6 shadow-soft ${className}`}
     >
-      <label htmlFor={`${id}-select`} className="mb-1 block text-[0.9rem] font-bold text-ink">
-        {label}
-      </label>
-      <select
-        id={`${id}-select`}
-        value={slug}
-        onChange={(event) => setSlug(event.target.value)}
-        className="mb-4 block min-h-[48px] w-full rounded-input border border-field bg-white px-4 font-body text-base text-ink"
-      >
-        <option value="">{emptyOption}</option>
-        {options.map((option) => (
-          <option key={option.slug} value={option.slug}>
-            {option.name}
-          </option>
-        ))}
-      </select>
+      <Combobox
+        options={comboOptions}
+        label={label}
+        placeholder={emptyOption}
+        onChange={setSlug}
+        className="mb-4"
+      />
       <div className="grid gap-3">
         <Button type="submit" block icon="arrow">
           {submitLabel}
