@@ -839,7 +839,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     benefits: [
       'Stay fully compliant with Vietnamese tax law',
-      'Avoid late filing penalties (up to 25% of tax owed)',
+      'Know your filing deadline and what late filing can cost',
       'Claim all eligible deductions to reduce liability',
       'Organised records if the tax authority asks for them',
       'Clear documentation for employer reimbursement claims',
@@ -1103,7 +1103,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     benefits: [
       'Stay compliant with Vietnamese accounting standards (VAS)',
-      'Avoid late filing penalties (up to 25M VND per violation)',
+      'Know your filing deadlines and what late filing can cost',
       'Clean books ready for government inspection or audit',
       'Accurate VAT reclaim on business expenses',
       'Professional financial statements for bank loans or investor due diligence',
