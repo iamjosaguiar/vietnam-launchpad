@@ -504,7 +504,6 @@ export const servicesForBusinessText = "Setting up or running a company in Vietn
 
 /**
  * Order of the top-level header items, left to right on desktop and top to bottom on mobile.
- * Currently Services first. To switch to Visas, Living in Vietnam, Services, Blog, Contact,
- * change this array to ['visas', 'living', 'services', 'blog', 'contact'].
+ * Current order: Visas, Living in Vietnam, Services, Blog, Contact. Reorder this array to change it.
  */
-export const navTopOrder = ['services', 'visas', 'living', 'blog', 'contact'] as const;
+export const navTopOrder = ['visas', 'living', 'services', 'blog', 'contact'] as const;

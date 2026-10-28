@@ -23,7 +23,7 @@ type MenuGroup = { title?: string; items: NavLinkItem[] };
 
 type TopItem =
   | { kind: 'link'; id: string; label: string; href: string }
-  | { kind: 'menu'; id: string; label: string; href: string; groups: MenuGroup[]; footerLink?: NavLinkItem };
+  | { kind: 'menu'; id: string; label: string; href: string; match?: string; groups: MenuGroup[]; footerLink?: NavLinkItem };
 
 /** Logo: the unchanged file, framed to its artwork with CSS. 48px high, 60px from 900px. */
 export function SiteLogo({ priority = false }: { priority?: boolean }) {
@@ -73,6 +73,8 @@ export default function Navigation() {
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const headerRef = useRef<HTMLElement>(null);
   const triggerRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const itemRefs = useRef<Record<string, HTMLLIElement | null>>({});
+  const [panelLeft, setPanelLeft] = useState(0);
   const mobileButtonRef = useRef<HTMLButtonElement>(null);
 
   // Order comes from navTopOrder in src/data/siteNav.ts. Enterprise stays inside the Services menu.
@@ -90,7 +92,8 @@ export default function Navigation() {
       kind: 'menu',
       id: 'living',
       label: 'Living in Vietnam',
-      href: '/guides',
+      href: '/guides/living-in-vietnam',
+      match: '/guides',
       groups: navLivingGroups,
       footerLink: navLivingLast,
     },
@@ -128,9 +131,15 @@ export default function Navigation() {
     };
   }, [openMenu, isMobileOpen]);
 
+  const openPanel = (id: string) => {
+    const li = itemRefs.current[id];
+    const header = headerRef.current;
+    if (li && header) setPanelLeft(li.getBoundingClientRect().left - header.getBoundingClientRect().left);
+    setOpenMenu(id);
+  };
   const hoverOpen = (id: string) => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
-    setOpenMenu(id);
+    openPanel(id);
   };
   const hoverClose = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -147,20 +156,22 @@ export default function Navigation() {
       ref={headerRef}
       className="fixed inset-x-0 top-0 z-50 border-b border-hairline bg-paper/95 backdrop-blur-[6px]"
     >
-      <div className="mx-auto flex h-header w-full max-w-site items-center justify-between gap-4 px-4 md:px-6">
+      {/* The first nav holds the logo, the top-level links in navTopOrder and the call to action. Dropdown panels sit after it. */}
+      <nav aria-label="Main" className="mx-auto flex h-header w-full max-w-site items-center justify-between gap-4 px-4 md:px-6">
         <Link href="/" aria-label="Vietnam Launchpad home" className="inline-flex min-h-[44px] shrink-0 items-center" onClick={closeAll}>
           <SiteLogo priority />
         </Link>
 
-        {/* Desktop navigation */}
-        <nav aria-label="Main" className="hidden items-center gap-1 nav:flex">
+        {/* Desktop top level */}
+        <div className="hidden items-center gap-1 nav:flex">
           <ul className="m-0 flex list-none items-center gap-1 p-0">
             {items.map((item) => {
-              const active = isActive(pathname, item.href);
+              const active = isActive(pathname, item.kind === 'menu' && item.match ? item.match : item.href);
+              const current = pathname === item.href ? 'page' : undefined;
               if (item.kind === 'link') {
                 return (
                   <li key={item.id}>
-                    <Link href={item.href} className={topLinkClass(active)} aria-current={pathname === item.href ? 'page' : undefined}>
+                    <Link href={item.href} className={topLinkClass(active)} aria-current={current}>
                       {item.label}
                     </Link>
                   </li>
@@ -168,14 +179,19 @@ export default function Navigation() {
               }
               const open = openMenu === item.id;
               const panelId = `${menuId}-${item.id}`;
-              const wide = item.groups.length > 1;
               return (
                 <li
                   key={item.id}
-                  className={wide ? '' : 'relative'}
+                  ref={(el) => {
+                    itemRefs.current[item.id] = el;
+                  }}
+                  className="flex items-center"
                   onMouseEnter={() => hoverOpen(item.id)}
                   onMouseLeave={hoverClose}
                 >
+                  <Link href={item.href} onClick={closeAll} className={`${topLinkClass(active)} pr-1`} aria-current={current}>
+                    {item.label}
+                  </Link>
                   <button
                     type="button"
                     ref={(el) => {
@@ -183,38 +199,15 @@ export default function Navigation() {
                     }}
                     aria-expanded={open}
                     aria-controls={panelId}
-                    onClick={() => setOpenMenu(open ? null : item.id)}
-                    className={topLinkClass(active)}
+                    aria-label={`${item.label} menu`}
+                    onClick={() => (open ? setOpenMenu(null) : openPanel(item.id))}
+                    className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-input text-ink hover:text-navy"
                   >
-                    {item.label}
                     <Icon
                       name="chevron"
                       className={`h-4 w-4 transition-transform duration-150 motion-reduce:transition-none ${open ? 'rotate-180' : ''}`}
                     />
                   </button>
-                  <div
-                    id={panelId}
-                    hidden={!open}
-                    className={wide ? 'absolute inset-x-0 top-full pt-2' : 'absolute left-0 top-full w-[320px] pt-2'}
-                  >
-                    <div className={wide ? 'mx-auto w-full max-w-site px-4 md:px-6' : ''}>
-                      <div className="rounded-card border border-hairline bg-white p-5 shadow-soft">
-                        <MenuGroups item={item} onNavigate={closeAll} />
-                        {item.footerLink && (
-                          <div className="mt-4 border-t border-hairline pt-3">
-                            <Link
-                              href={item.footerLink.href}
-                              onClick={closeAll}
-                              className="inline-flex min-h-[44px] items-center gap-2 px-2 font-bold text-navy no-underline hover:underline"
-                            >
-                              {item.footerLink.name}
-                              <Icon name="arrow" className="h-4 w-4" />
-                            </Link>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
                 </li>
               );
             })}
@@ -222,7 +215,7 @@ export default function Navigation() {
           <Button href={navButton.href} size="sm" className="ml-3 whitespace-nowrap" onClick={closeAll}>
             {navButton.text}
           </Button>
-        </nav>
+        </div>
 
         {/* Mobile menu button */}
         <button
@@ -236,12 +229,50 @@ export default function Navigation() {
           <Icon name={isMobileOpen ? 'close' : 'menu'} className="h-5 w-5" />
           <span>Menu</span>
         </button>
+      </nav>
+
+      {/* Desktop dropdown panels, kept in the page and hidden until opened */}
+      <div className="hidden nav:block">
+        {items.map((item) => {
+          if (item.kind !== 'menu') return null;
+          const open = openMenu === item.id;
+          const wide = item.groups.length > 1;
+          return (
+            <div
+              key={item.id}
+              id={`${menuId}-${item.id}`}
+              hidden={!open}
+              onMouseEnter={() => hoverOpen(item.id)}
+              onMouseLeave={hoverClose}
+              className={wide ? 'absolute inset-x-0 top-full pt-2' : 'absolute top-full w-[320px] pt-2'}
+              style={wide ? undefined : { left: panelLeft }}
+            >
+              <div className={wide ? 'mx-auto w-full max-w-site px-4 md:px-6' : ''}>
+                <div className="rounded-card border border-hairline bg-white p-5 shadow-soft">
+                  <MenuGroups item={item} onNavigate={closeAll} />
+                  {item.footerLink && (
+                    <div className="mt-4 border-t border-hairline pt-3">
+                      <Link
+                        href={item.footerLink.href}
+                        onClick={closeAll}
+                        className="inline-flex min-h-[44px] items-center gap-2 px-2 font-bold text-navy no-underline hover:underline"
+                      >
+                        {item.footerLink.name}
+                        <Icon name="arrow" className="h-4 w-4" />
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* Mobile navigation */}
       <nav
         id={`${menuId}-mobile`}
-        aria-label="Main"
+        aria-label="Main mobile"
         hidden={!isMobileOpen}
         className="max-h-[calc(100dvh-var(--header-h))] overflow-y-auto border-t border-hairline bg-paper nav:hidden"
       >
