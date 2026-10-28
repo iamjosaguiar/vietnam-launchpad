@@ -1,0 +1,18 @@
+Rendered <title> lengths of the 7 changed pages (limit 60):
+   51  /  'Vietnam Launchpad: Visas, Residency and Settling In'
+   57  /about  'About Vietnam Launchpad | Vietnam Visa and Residency Help'
+   46  /visa/australia  'Vietnam Visa for Australians: eVisa Guide 2026'
+   46  /visa/united-states  'Vietnam Visa for US Citizens: eVisa Guide 2026'
+   46  /visa/united-kingdom  'Vietnam Visa for UK Citizens: Entry Rules 2026'
+   51  /guides/how-long-can-you-stay-in-vietnam  'How Long Can You Stay in Vietnam? Visa Limits Guide'
+   47  /guides/living-in-vietnam  'Living in Vietnam: A Practical Expat Guide 2026'
+  /guides/how-long-can-you-stay-in-vietnam: <table> count 3, stray pipe paragraphs 0
+  /guides/living-in-vietnam: <table> count 0, stray pipe paragraphs 0
+  /guides/cost-of-living: <table> count 8, stray pipe paragraphs 0, bytes 155670
+  /blog/vietnam-visa-overstay-fines: dateModified ['2026-10-27']
+  grep -r Extendable src: 0 matches
+FAIL /: content PR: top nav items are ['/services/trc-application', '/services/work-permit', '/services/evisa', '/services/business-visa', '/services/marriage-registration', '/services/permanent-residency']; expected logo, Visas, Living in Vietnam, Services, Blog, Contact (no Enterprise, no Home)
+
+Base: http://127.0.0.1:3124  mode: noindex-until-fixed
+Pages fetched: 53/53  checks run: 2745  failures: 1
+RESULT: FAIL
