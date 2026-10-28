@@ -36,7 +36,7 @@ export default function HeroSection({ passportOptions }: { passportOptions: Pass
             label={pickerLabel}
             emptyOption={pickerEmptyOption}
             submitLabel={homeCopy.primary.text}
-            secondary={{ label: homeCopy.secondary.text, href: homeCopy.secondary.href }}
+            secondary={{ label: homeCopy.secondary.text, href: homeCopy.secondary.href, track: { label: 'book_consultation', location: 'hero' } }}
             allLink={{ label: allVisaPages.name, href: allVisaPages.href }}
           />
         </Container>

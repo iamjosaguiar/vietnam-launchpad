@@ -71,7 +71,7 @@ export default function EnterprisePage() {
               For founders, family offices, and institutional investors entering Vietnam. From legal structure to first hire - operational within your timeline.
             </p>
 
-            <Button href="/contact" icon="arrow">
+            <Button href="/contact" icon="arrow" track={{ label: 'book_consultation', location: 'enterprise' }}>
               Request a Private Strategy Call
             </Button>
 
@@ -224,6 +224,7 @@ export default function EnterprisePage() {
 
                   <Link
                     href="/contact"
+                    data-track="cta_click" data-track-label="book_consultation" data-track-location="enterprise"
                     className="w-full min-h-[48px] inline-flex items-center justify-center gap-3 px-8 py-4 border border-gold bg-gold text-ink rounded-full text-base font-bold hover:border-gold-hover hover:bg-gold-hover transition-colors duration-150 motion-reduce:transition-none"
                   >
                     Request a Private Strategy Call

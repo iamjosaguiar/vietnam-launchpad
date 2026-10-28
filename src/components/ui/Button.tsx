@@ -42,6 +42,8 @@ type CommonProps = {
   /** Icon before the label instead of after it. */
   iconFirst?: boolean;
   className?: string;
+  /** Marks the button as a call to action for analytics: fixed label and where it sits. */
+  track?: { label: string; location: string };
   children: React.ReactNode;
 };
 
@@ -60,6 +62,9 @@ type NativeButtonProps = CommonProps & {
 export default function Button(props: LinkButtonProps | NativeButtonProps) {
   const { variant, size, block, icon, iconFirst, className, children } = props;
   const classes = buttonClasses({ variant, size, block, className });
+  const trackAttributes = props.track
+    ? { 'data-track': 'cta_click', 'data-track-label': props.track.label, 'data-track-location': props.track.location }
+    : {};
   const iconEl = icon ? <Icon name={icon} className="h-4 w-4 flex-none" /> : null;
   const content = (
     <>
@@ -78,6 +83,7 @@ export default function Button(props: LinkButtonProps | NativeButtonProps) {
           href={props.href}
           className={classes}
           onClick={props.onClick}
+          {...trackAttributes}
           {...(newTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         >
           {content}
@@ -85,14 +91,14 @@ export default function Button(props: LinkButtonProps | NativeButtonProps) {
       );
     }
     return (
-      <Link href={props.href} className={classes} onClick={props.onClick}>
+      <Link href={props.href} className={classes} onClick={props.onClick} {...trackAttributes}>
         {content}
       </Link>
     );
   }
 
   return (
-    <button type={props.type ?? 'button'} className={classes} onClick={props.onClick}>
+    <button type={props.type ?? 'button'} className={classes} onClick={props.onClick} {...trackAttributes}>
       {content}
     </button>
   );

@@ -285,10 +285,10 @@ export default async function VisaCountryPage({
                   {PRIVATE_LINE}
                 </p>
                 <div className="grid gap-2">
-                  <Button href="/contact" block icon="arrow">
+                  <Button href="/contact" block icon="arrow" track={{ label: 'book_consultation', location: 'visa_page' }}>
                     Book a Free Consultation
                   </Button>
-                  <Button href="/services/trc-application" variant="secondary" block>
+                  <Button href="/services/trc-application" variant="secondary" block track={{ label: 'service_cta', location: 'visa_page' }}>
                     TRC Application Service
                   </Button>
                 </div>

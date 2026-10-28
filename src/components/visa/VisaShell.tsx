@@ -161,6 +161,9 @@ export function PathwayCard({
       )}
       <Link
         href={href}
+        data-track="cta_click"
+        data-track-label="service_cta"
+        data-track-location="visa_page"
         className="mt-auto inline-flex min-h-[44px] items-center gap-2 self-start font-bold text-navy underline underline-offset-[3px] hover:text-navy-deep"
       >
         {linkText}

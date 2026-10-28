@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { Link } from '@/i18n/config';
 import MarkdownBlocks from '@/components/MarkdownBlocks';
+import { ctaLabelForHref } from '@/lib/analytics';
 
 // ─── Inline CTA components ────────────────────────────────────────────────────
 
@@ -16,6 +17,7 @@ function SoftCta() {
       </div>
       <Link
         href="/contact"
+        data-track="cta_click" data-track-label="book_consultation" data-track-location="guide"
         className="shrink-0 inline-flex min-h-[44px] items-center gap-2 bg-navy hover:bg-navy-deep text-white text-sm font-bold px-5 rounded-full transition-colors whitespace-nowrap"
       >
         Book free call
@@ -36,6 +38,7 @@ function ServiceCta({ title, body, href, linkText }: { title: string; body: stri
       </div>
       <Link
         href={href}
+        data-track="cta_click" data-track-label={ctaLabelForHref(href)} data-track-location="guide"
         className="shrink-0 inline-flex min-h-[44px] items-center gap-2 bg-gold hover:bg-gold-hover text-ink text-sm font-bold px-5 rounded-full transition-colors whitespace-nowrap"
       >
         {linkText}
@@ -338,6 +341,7 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
               <div className="flex flex-col gap-4 sm:flex-row nav:flex-col">
                 <Link
                   href={guide.ctaLink}
+                  data-track="cta_click" data-track-label={ctaLabelForHref(guide.ctaLink)} data-track-location="guide"
                   className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gold px-6 font-bold text-ink hover:bg-gold-hover"
                 >
                   {guide.ctaLinkText}
@@ -348,6 +352,7 @@ export default function GuideContent({ guide, topWidget }: { guide: Guide; topWi
                 {guide.ctaSecondaryLink && guide.ctaSecondaryText && (
                   <Link
                     href={guide.ctaSecondaryLink}
+                    data-track="cta_click" data-track-label={ctaLabelForHref(guide.ctaSecondaryLink)} data-track-location="guide"
                     className="inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full border-2 border-white/60 px-6 font-bold text-white hover:bg-white/10"
                   >
                     {guide.ctaSecondaryText}
