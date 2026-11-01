@@ -3897,231 +3897,204 @@ International school recruitment agencies (Search Associates, TIE Online, Schrol
 
   'marriage-registration': {
     slug: 'marriage-registration',
-    title: 'Getting Married in Vietnam: The Complete Marriage Registration Guide for Foreigners (2026)',
-    metaTitle: 'Getting Married in Vietnam 2026',
-    subtitle: 'How to register a marriage in Vietnam, documents required, the process for foreign nationals, and getting your Vietnamese marriage certificate',
-    excerpt: "Marriage registration in Vietnam for foreigners involves more paperwork than a domestic marriage - but the process is manageable if you know what to prepare. This guide covers the full registration process, required documents, where to apply, and how to get your certificate recognized internationally.",
+    title: 'How to Get a Marriage Certificate in Vietnam as a Foreigner',
+    metaTitle: 'Marriage Certificate in Vietnam for Foreigners 2026',
+    metaDescription: 'How to get a marriage certificate in Vietnam as a foreigner: who can marry, documents including a CNI, commune registration, costs and timing.',
+    subtitle: '',
+    excerpt: 'Getting a marriage certificate in Vietnam as a foreigner starts at your commune level People\'s Committee, which has handled marriage registration involving a foreigner since 1 July 2025. You will need proof that you are free to marry, a health certificate, and Vietnamese translations of any foreign papers.',
     author: 'Vietnam Launchpad',
     date: '2026-02-01',
-    lastUpdated: '2026-04-01',
-    readTime: '13 min read',
+    lastUpdated: '2026-11-01',
+    readTime: '10 min read',
     category: 'Daily Life',
-    ctaTitle: 'Need Help with Marriage Registration or the TRC Afterward?',
-    ctaBody: 'Vietnam Launchpad handles marriage registration document preparation for foreign nationals and the subsequent TRC application for the foreign spouse. We know exactly what each province requires and manage the full process.',
+    ctaTitle: 'Need Help With Marriage Registration or the TRC Afterward?',
+    ctaBody: 'Our marriage registration service page explains how we can help. If you would rather talk it through first, contact us or arrange a consultation.',
     ctaLink: '/contact',
-    ctaLinkText: 'Book a Consultation',
+    ctaLinkText: 'Contact us',
     ctaSecondaryLink: '/services/trc-application',
-    ctaSecondaryText: 'Learn About Marriage-Based TRC',
+    ctaSecondaryText: 'Learn About Marriage Based TRC',
+    inlineCtas: false,
     faqs: [
-      { q: 'Can I work in Vietnam with a marriage-based TRC?', a: 'Yes. Being married to a Vietnamese citizen and holding a marriage-based TRC qualifies you for a work permit exemption in Vietnam. You do not need a full work permit. Instead, you apply for a Work Permit Exemption Certificate through DOLISA, which is faster and simpler than a standard work permit application. This covers employment by Vietnamese companies as well as running your own business.' },
-      { q: 'Do I need a work permit if I have a marriage TRC in Vietnam?', a: 'No - marriage TRC holders qualify for a work permit exemption. Rather than a full work permit, you apply for a Work Permit Exemption Certificate, which confirms your legal right to work in Vietnam based on your spousal status. This is one of the key practical advantages of the marriage TRC route.' },
-      { q: 'How do I get a marriage TRC in Vietnam?', a: 'After completing your marriage registration at the Provincial Department of Justice or local People\'s Committee, you apply for a TRC at the immigration department using your Vietnamese Marriage Certificate as the basis. The TRC is valid for up to 3 years and is renewable. We handle the full process including document preparation and submission.' },
-      { q: 'What is a Work Permit Exemption Certificate and how do I apply?', a: 'A Work Permit Exemption Certificate is a government document confirming you are legally exempt from needing a standard work permit. For marriage TRC holders, the exemption is based on your spousal relationship with a Vietnamese citizen. You apply through DOLISA (Department of Labour, Invalids and Social Affairs) with your marriage certificate, TRC, and passport. We manage the full application as part of our marriage TRC service.' },
+      { q: 'Can foreigners get married in Vietnam?', a: 'Yes. The law lets a Vietnamese citizen marry a foreigner at the commune level People\'s Committee. Two non Vietnamese citizens can only register in Vietnam if at least one of them holds a Vietnamese permanent or temporary residence card.' },
+      { q: 'Can I get married in Vietnam as a tourist?', a: 'If you are marrying a Vietnamese citizen, the official requirements we reviewed do not list a residence card for the foreign partner, but confirm this with the office. Both of you must be present to sign, so plan your visa or stay to cover lodging and signing. Two foreigners without a residence card generally cannot register in Vietnam.' },
+      { q: 'Where do we register our marriage in Vietnam?', a: 'Since 1 July 2025, the commune level People\'s Committee has handled marriage registration involving a foreigner. Start with the local People\'s Committee where you or your partner live. Under the current rules, you can choose where to lodge, and the receiving commune helps submit the file online to the competent authority.' },
+      { q: 'What is a CNI and do I need one?', a: 'A CNI is a Certificate of No Impediment to Marriage, which Australians get from DFAT to show they are free to marry. DFAT advises asking the local authority whether a CNI is needed, whether it must be issued in that country, and whether it needs an Apostille or authentication. Other nationalities may use a different document, such as an affidavit, so confirm what the office accepts.' },
+      { q: 'How long does it take to get a marriage certificate in Vietnam?', a: 'Processing takes 5 working days from receipt of a complete, valid file, and up to 10 working days if verification is needed. Document gathering from your home country is usually the slowest part.' },
+      { q: 'How much does it cost to get married in Vietnam?', a: 'Costs fall into three separate groups. Government fees differ by locality, third party costs cover items such as a CNI, translation, legalisation or an Apostille and the health certificate, and if you use our service, Vietnam Launchpad\'s fee is quoted separately. Ask the office to confirm the government fees that apply to you.' },
+      { q: 'Can we marry at a resort or on the beach?', a: 'You can hold a celebration there, but it does not register the marriage. The certificate is the legal record, so you still need to register at the commune level People\'s Committee.' },
+      { q: 'Does the foreign spouse get a residence card automatically?', a: 'No. A foreign spouse may apply for a temporary residence card after the marriage, but it is a separate application and is not automatic.' },
     ],
-    content: `## Getting Married in Vietnam: Overview
+    content: `This guide covers who can marry, which documents to prepare, how registration works, and what to do with the certificate afterward. Requirements vary by locality and can change, so confirm the details with the office before you start.
 
-Foreign nationals can legally marry Vietnamese citizens in Vietnam. The marriage is registered at the local People's Committee and produces a **Vietnamese Marriage Registration Certificate** (Giay Chung Nhan Ket Hon) - the official legal document proving your marriage under Vietnamese law.
+## Can Foreigners Get Married in Vietnam?
 
-Vietnam also allows two foreign nationals (neither being Vietnamese) to marry in Vietnam, though this is less common and the requirements differ slightly.
+Yes. Getting married in Vietnam for foreigners is possible, but the route depends on who is marrying whom.
 
-This guide primarily covers the most common scenario: a foreign national marrying a Vietnamese citizen in Vietnam.
+### A Vietnamese Citizen Marrying a Foreigner
 
----
+A Vietnamese citizen can register a marriage with a foreigner at the commune level People's Committee. The official requirements we reviewed do not list a residence card for the foreign partner, but confirm this with the office.
 
-## Why the Marriage Registration Matters
+### Two Foreigners
 
-The Vietnamese Marriage Registration Certificate is essential for:
+Two non Vietnamese citizens can only register in Vietnam if at least one of them holds a Vietnamese permanent or temporary residence card. Two foreigners without a residence card generally cannot register in Vietnam.
 
-1. **Residency (TRC):** Your foreign spouse can use the marriage certificate as the basis for a long-stay Temporary Residence Card (TRC)
-2. **Spousal visa for the Vietnamese partner** to move abroad (if applicable)
-3. **Inheritance and property rights** within Vietnam
-4. **Recognition in your home country** (with appropriate translation, apostille, and registration processes depending on your country)
+### Visiting as a Tourist
 
-Do not mistake a religious or traditional Vietnamese wedding ceremony for legal registration - the ceremony is cultural; the legal registration at the People's Committee is what creates the legally binding marriage.
+Both of you must be present to sign, so plan your visa or stay to cover lodging and signing.
 
----
+Visa rules depend on your nationality. Australians cannot get a visa on arrival, and an eVisa allows stays of up to 90 days if granted. See our pages on [visas for Australians](/visa/australia), [visas for US citizens](/visa/united-states) and [visas for UK citizens](/visa/united-kingdom).
 
-## Who Handles Marriage Registration in Vietnam?
+Foreigners must register their place of stay with local police within 24 hours. Hotels do this for guests.
 
-Marriage registration in Vietnam is handled at two levels depending on who is involved:
+## Vietnam Marriage Laws and Eligibility
 
-**Provincial Department of Justice (So Tu Phap):**
-Handles all marriages involving a foreign national. This is where you will register if one or both parties are foreign nationals.
+Vietnam marriage laws set the conditions, and the office checks your file against them. The main points for foreigners are:
 
-**District People's Committee:**
-Handles marriages between two Vietnamese citizens only. Foreign nationals cannot use this route.
+* Both partners must be free to marry and show it with documents.
+* Anyone previously married needs a divorce or death certificate.
+* The office checks the complete file against Vietnam's marriage law.
 
-**Key point:** If you are a foreigner marrying a Vietnamese citizen, you must go to the **Provincial Department of Justice** in the province where the Vietnamese party has their household registration (Ho Khau).
+Two legal instruments matter here. Decree 120/2025/ND-CP sets the current procedure. The new Law on Civil Status No. 03/2026/QH16 takes effect on 1 March 2027, and files lodged before that date are handled under the current rules.
 
----
+## Documents You Need, Including a CNI
 
-## Marriage Registration: Step-by-Step Process
+Requirements vary by locality and can change, so ask the office for its current list before you collect anything.
 
-### Step 1: Determine Which Province to Apply In
+### Documents Usually Needed
 
-The application is filed at the Department of Justice of the province where the Vietnamese citizen's household registration (Ho Khau) is located. If the Vietnamese party has moved and their Ho Khau is in a different province from where they live, this can affect logistics.
+* A health certificate from a Vietnamese or competent foreign health organisation, issued within 6 months, confirming no mental illness or condition that prevents you understanding your actions
+* Proof that you are free to marry
+* A divorce decree if you were previously married, or a death certificate if your spouse died
+* A certified Vietnamese translation of any document not in Vietnamese
+* A Vietnamese permanent or temporary residence card if neither of you is a Vietnamese citizen
 
-If the Vietnamese party has changed their Ho Khau to a new province (a process in itself), you may be able to apply locally - discuss with the relevant office.
+Civil status papers can be shown on paper or electronically, or the office looks the data up in the database. If it cannot find them, you provide them.
 
-### Step 2: Prepare Documents
+### Proof You Are Free to Marry, by Nationality
 
-Document preparation is the most time-consuming part. Allow **3-6 weeks** for full document gathering, particularly for the foreign national's documents from abroad.
+**Australians.** A Certificate of No Impediment to Marriage, or CNI, comes from DFAT. You can get one through Australian Passport Offices, Australian embassies and consulates overseas including Hanoi and Ho Chi Minh City, or by mail.
 
-See the full document checklist below.
+At least one of the couple must be an Australian citizen or permanent resident to apply. The form is signed before an authorised witness. Supporting documents include your passport and, if you were previously married, a divorce or death certificate. Fees apply and are indexed each 1 January.
 
-### Step 3: Submit Application
+DFAT advises asking the local authority three things: whether a CNI is needed, whether it must be issued in that country, and whether it needs an Apostille or authentication. Smartraveller's Vietnam page says the CNI needs authentication by the Embassy or Consulate of Vietnam in Australia, so confirm the current requirement with the office before you lodge.
 
-Submit at the Provincial Department of Justice in person. Both parties must be present at the time of submission (or at the interview stage - practices vary by province, confirm locally).
+**US citizens.** You can sign an Affidavit of Single Status at the US Embassy in Hanoi or the Consulate General in Ho Chi Minh City by appointment. It must be signed within 6 months before use.
 
-### Step 4: Interview / Verification (if required)
+**British nationals.** You may be asked to provide an affidavit of marital status before local authorities in Vietnam to prove you are free to marry. The FCDO publishes a Vietnam form.
 
-Some provinces require an interview with both parties to confirm the marriage is genuine and voluntary. This is conducted in Vietnamese - an interpreter can attend.
+**Other nationalities.** Ask the office what it will accept as proof that you are free to marry.
 
-### Step 5: Certificate Issued
+### Apostille, Legalisation and Translation
 
-If everything is in order, the **Vietnamese Marriage Registration Certificate** is issued typically within **15-20 business days** of submission (some provinces faster, some slower).
+The Apostille Convention entered into force for Vietnam on 11 September 2026, with member states that did not object. Between those countries, an Apostille replaces consular legalisation for public documents. An Apostille certifies the signature, the capacity of the signer and the seal, not the content.
 
----
+Otherwise, foreign documents need consular legalisation unless a treaty exempts them. They also need a Vietnamese translation with a certified translator signature. The new Law on Civil Status keeps this rule.
 
-## Document Requirements: Foreign National
+For help with this stage, see our [Apostille services](/services/apostille-services).
 
-The following documents are typically required from the foreign national. Requirements can vary slightly by province - confirm the current requirements at the specific Department of Justice where you will apply.
+## How to Register Your Marriage, Step by Step
 
-| Document | Notes |
-|---|---|
-| **Original valid passport** | Plus copies |
-| **Birth certificate** | Apostilled from your country of birth; translated into Vietnamese |
-| **Certificate of No Impediment to Marriage** | Issued by your home country - confirms you are legally single. Most countries issue this through the embassy or civil registry. Apostilled. Translated. |
-| **Criminal record certificate** (some provinces) | From home country or local police; requirements vary |
-| **Health certificate** | Confirming no conditions that prevent marriage; issued by a licensed hospital in Vietnam (~$30-80) |
-| **Confirmation of Vietnamese law compliance** | Some provinces require you to sign a declaration that you understand Vietnamese marriage law |
-| **Photos** | Passport-style photos (usually 4-6 required) |
+1. **Contact the office.** Speak to the local People's Committee where you or your partner live. Ask for its current document list and how it wants papers presented.
+2. **Gather your documents.** Collect your proof of being free to marry, your health certificate and any divorce or death certificate. Watch the 6 month limits that apply to the health certificate and the US affidavit.
+3. **Prepare foreign papers.** Get an Apostille or consular legalisation as required, then get a certified Vietnamese translation.
+4. **Lodge your file.** Under Decree 120, you can choose where to lodge, and the receiving commune helps submit the file online to the competent authority.
+5. **Wait for processing.** This takes 5 working days from receipt of a complete, valid file, and up to 10 working days if verification is needed.
+6. **Sign together.** Both of you must be present to sign, so ask the office when to attend.
+7. **Receive your certificate.** Check with the office how and when to collect it.
 
-**Certificate of No Impediment (CNI) / Marital Status Certificate:** This is often the hardest document to obtain. Requirements vary dramatically by nationality:
+### What Changes on 1 March 2027
 
-- **UK citizens:** Certificate of No Impediment issued by FCDO (Legalisation Office), or Marital Status Certificate from the General Register Office. Apostille required.
-- **US citizens:** The USA does not issue a national CNI. A "Letter of No Impediment" can sometimes be obtained from the US Consulate in Vietnam, or an affidavit sworn before a notary public (apostilled) is accepted by some provinces. Confirm with the specific DPJ office.
-- **Australian citizens:** Single status declaration before the Australian Consulate in Vietnam, or a statement from the Registry of Births, Deaths and Marriages in your home state. Apostille required.
-- **Other nationalities:** Contact your home country's civil registry or your country's embassy in Vietnam for the correct document and process.
+Under the new Law on Civil Status:
 
----
+* Registration is at commune level regardless of where you live.
+* It covers a Vietnamese citizen marrying a foreigner and foreigners with permanent residence.
+* Both people must be present to sign.
+* You can lodge online, by post or in person, but you collect the certificate in person.
+* Fees follow the fee law.
 
-## Document Requirements: Vietnamese Citizen
+Files lodged before 1 March 2027 are handled under the current rules.
 
-| Document | Notes |
-|---|---|
-| **CCCD (National ID card)** | Must be current and valid |
-| **Household registration book (Ho Khau)** | Or digital household registration confirmation |
-| **Birth certificate** | Vietnamese-issued |
-| **Certificate of marital status** | Issued by local ward People's Committee confirming they are legally single |
-| **Health certificate** | From a licensed hospital |
-| **Photos** | Passport-style |
+## Getting Your Marriage Certificate
 
----
+The certificate is the legal record of your marriage. It is what proves you are married in Vietnam, not a ceremony or celebration.
 
-## Document Translation and Apostille Requirements
+Under the new law, you must collect the certificate in person. Until then, confirm the collection arrangements with the office that holds your file.
 
-All foreign documents must be:
+## Costs and Timing
 
-1. **Apostilled** in the country of origin (for countries in the Hague Apostille Convention) OR notarized through the Vietnamese Embassy in your home country (for non-Hague countries)
-2. **Translated into Vietnamese** by a licensed translation company and notarized in Vietnam
+### Costs
 
-**Common Hague Convention countries:** UK, USA, Australia, most European countries, etc. Check the official Hague Conference website for the full list.
+There is no single figure, because costs fall into three separate groups:
 
-**Translation note:** Do not use online translation services or personal translators for official documents. Use a licensed translation company (Cong ty dich thuat co phep) that can provide notarized translations. In HCMC and Hanoi, there are many reliable services; fees typically $20-60 per document.
+* **Government fees.** These are set under Vietnam's fee rules and differ by locality. Ask the office what applies.
+* **Third party costs.** These can include a CNI, translation, legalisation or an Apostille, and the health certificate.
+* **Vietnam Launchpad's service fee.** If you use our service, our fee is separate from government fees and third party costs. Ask us for a quote.
 
----
+### Timing
 
-## Costs
+Processing takes 5 working days from receipt of a complete, valid file, and up to 10 working days if verification is needed.
 
-### Official Fees
+Document gathering from your home country is usually the slowest part, so start there.
 
-| Item | Approximate Cost |
-|---|---|
-| Marriage registration fee (provincial) | VND 500,000 - 2,000,000 (~$20-80) |
-| Health certificate (per person) | ~$30-80 |
-| Document translation (per document) | $20-60 |
-| Notarization (per document) | $5-20 |
+## Getting Your Certificate Recognised Abroad
 
-### External Document Costs
+Your marriage certificate in Vietnam may need extra steps before you can use it in another country.
 
-| Item | Approximate Cost |
-|---|---|
-| CNI / Marital status certificate (from home country) | $50-200 depending on country |
-| Apostille fees (home country) | $25-80 per document |
-| Postage/courier (if getting documents from abroad) | $30-100 |
+1. Ask Vietnam's Ministry of Foreign Affairs for an Apostille on the certificate if you will use it in a member country that did not object. Since 11 September 2026, this is available through the Consular Department in Hanoi and the Ho Chi Minh City Department of Foreign Affairs.
+2. Use legalisation instead for other countries.
+3. Check with your home country's registry or consulate what it needs, such as a certified translation.
 
-**Agent fees** if using a professional service to manage the process: typically $400-800.
+## The Wedding Ceremony Is Separate
 
-**Total realistic cost:** $500-1,500 all-in depending on nationality and number of documents needing apostille.
+A ceremony at a resort, on a beach or at a banquet is a celebration. It does not register the marriage. Only the certificate is the legal record, so plan commune registration separately from your wedding day.
 
----
+## Same Sex Couples
 
-## Timeline
+Smartraveller says same sex relationships are legal in Vietnam, but same sex partners are not legally protected or recognised. Confirm your position with the commune People's Committee before you make plans or collect documents.
 
-| Phase | Duration |
-|---|---|
-| Obtaining documents from home country (CNI, birth cert, apostilles) | 2-6 weeks |
-| Translation and notarization in Vietnam | 1 week |
-| Department of Justice processing | 15-20 business days |
-| **Total from start to certificate** | **6-10 weeks** |
+## Need Help With Marriage Registration or the TRC Afterward?
 
-The main variable is how quickly you can obtain documents from your home country - particularly the Certificate of No Impediment.
+Our [marriage registration service page](/services/marriage-registration) explains how we can help. If you would rather talk it through first, [contact us](/contact) or [arrange a consultation](/services/consultation).
 
----
+After you marry, a foreign spouse may apply for a temporary residence card. It is a separate application and is not automatic. Read our [TRC guide for Vietnam](/guides/trc-vietnam), or see our [TRC application service](/services/trc-application).
 
-## After Registration: Getting Your Vietnamese Marriage Certificate Recognized Abroad
+If your family is relocating too, read our guide to [moving to Vietnam with family](/guides/moving-with-family), or browse [all Vietnam guides](/guides).
 
-The Vietnamese Marriage Registration Certificate is a Vietnamese legal document. To use it in your home country, you will typically need to:
-
-1. **Obtain an apostille from Vietnam** for the marriage certificate (through Vietnam's Ministry of Foreign Affairs - Consular Department or their provincial offices). Cost: minimal.
-2. **Have it translated** into your home country's language by a certified translator
-3. **Register or present it** to your home country's civil registry or relevant authority
-
-**UK:** Register with the General Register Office; you will need an apostille and certified translation.
-
-**USA:** State-level civil authorities vary; generally requires apostille and certified translation. Some states require additional notarization.
-
-**Australia:** Register with the relevant state/territory registry.
-
-Confirm current requirements with your home country's consulate or civil registry as processes change.
-
----
-
-## Getting Married: The Wedding Itself
-
-Registration at the People's Committee or Department of Justice is the legal act. The ceremony is separate.
-
-Many couples:
-1. **Legally register** at the Department of Justice (quiet, official, with required witnesses)
-2. **Hold a wedding ceremony separately** - traditional Vietnamese wedding banquet, Western ceremony, beach ceremony, or any combination
-
-Vietnamese traditional weddings typically involve a formal engagement ceremony (le an hoi) where the groom's family visits the bride's family, and a wedding banquet with many guests. These are cultural traditions, not legal requirements.
-
----
-
-## Same-Sex Marriage in Vietnam
-
-As of 2026, Vietnam does not legally recognize same-sex marriage. The National Assembly removed criminal penalties for same-sex ceremonies in 2015, but no legislation for legal recognition has passed. Same-sex partners cannot register a marriage at the Department of Justice.
-
----
+Vietnam Launchpad is a private company, not a government agency. This guide is general information, not legal advice. Confirm current requirements with the commune People's Committee.
 
 ## Frequently Asked Questions
 
-**Can we marry at a resort or on the beach?**
-The legal registration must happen at the Department of Justice. You can have your ceremony anywhere you wish. Some resorts have officiant services that accompany the legal registration process.
+### Can foreigners get married in Vietnam?
 
-**How long after registration can we apply for the TRC?**
-Immediately. The marriage certificate is the basis for the TRC application; file as soon as you have the certificate.
+Yes. The law lets a Vietnamese citizen marry a foreigner at the commune level People's Committee. Two non Vietnamese citizens can only register in Vietnam if at least one of them holds a Vietnamese permanent or temporary residence card.
 
-**Does the foreign spouse automatically get a TRC after marriage?**
-No - the TRC must be applied for separately. The marriage certificate enables the application but does not automatically grant residency.
+### Can I get married in Vietnam as a tourist?
 
-**What if one partner cannot be present at the Department of Justice?**
-Both parties typically need to be present. For the submission in some provinces, a Power of Attorney may allow an agent to submit documents, but the interview (if required) usually requires both parties. Confirm with the specific office.
+If you are marrying a Vietnamese citizen, the official requirements we reviewed do not list a residence card for the foreign partner, but confirm this with the office. Both of you must be present to sign, so plan your visa or stay to cover lodging and signing. Two foreigners without a residence card generally cannot register in Vietnam.
 
-**Is a marriage abroad recognized in Vietnam?**
-A legal marriage from abroad can generally be used as evidence in Vietnam (for property, visa purposes, etc.) with appropriate apostille and translation. However, for the Vietnamese TRC based on marriage, Vietnamese immigration typically prefers a Vietnamese Marriage Registration Certificate. This may require registering the foreign marriage at the Department of Justice in Vietnam.`,
+### Where do we register our marriage in Vietnam?
+
+Since 1 July 2025, the commune level People's Committee has handled marriage registration involving a foreigner. Start with the local People's Committee where you or your partner live. Under the current rules, you can choose where to lodge, and the receiving commune helps submit the file online to the competent authority.
+
+### What is a CNI and do I need one?
+
+A CNI is a Certificate of No Impediment to Marriage, which Australians get from DFAT to show they are free to marry. DFAT advises asking the local authority whether a CNI is needed, whether it must be issued in that country, and whether it needs an Apostille or authentication. Other nationalities may use a different document, such as an affidavit, so confirm what the office accepts.
+
+### How long does it take to get a marriage certificate in Vietnam?
+
+Processing takes 5 working days from receipt of a complete, valid file, and up to 10 working days if verification is needed. Document gathering from your home country is usually the slowest part.
+
+### How much does it cost to get married in Vietnam?
+
+Costs fall into three separate groups. Government fees differ by locality, third party costs cover items such as a CNI, translation, legalisation or an Apostille and the health certificate, and if you use our service, Vietnam Launchpad's fee is quoted separately. Ask the office to confirm the government fees that apply to you.
+
+### Can we marry at a resort or on the beach?
+
+You can hold a celebration there, but it does not register the marriage. The certificate is the legal record, so you still need to register at the commune level People's Committee.
+
+### Does the foreign spouse get a residence card automatically?
+
+No. A foreign spouse may apply for a temporary residence card after the marriage, but it is a separate application and is not automatic.`,
   },
 
   'driving-vietnam': {
