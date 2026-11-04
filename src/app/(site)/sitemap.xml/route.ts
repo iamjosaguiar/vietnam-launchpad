@@ -1,4 +1,5 @@
 import { BASE_URL, getSitemapEntries, type SitemapEntry } from '@/lib/sitemap';
+import { indexableEntries } from '@/lib/sitemap-indexable';
 
 export const dynamic = 'force-static';
 export const runtime = 'nodejs';
@@ -24,8 +25,9 @@ function withHtmlSitemap(entries: SitemapEntry[]): SitemapEntry[] {
   ];
 }
 
-export function GET() {
-  const urls = withHtmlSitemap(getSitemapEntries())
+export async function GET() {
+  // Pages whose metadata sets robots noindex are left out (see sitemap-indexable).
+  const urls = withHtmlSitemap(await indexableEntries(getSitemapEntries()))
     .map((entry) => {
       const loc = xmlEscape(`${BASE_URL}${entry.path}`);
       const lastmod = entry.lastmod ? `\n    <lastmod>${entry.lastmod}</lastmod>` : '';
