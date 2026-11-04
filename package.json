@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "export": "next build && next export",
     "deploy": "npm run build",
-    "check": "npm run lint && npm run build"
+    "check": "npm run lint && npm run build",
+    "test:indexnow": "node --test scripts/indexnow.test.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

@@ -1,0 +1,122 @@
+name: IndexNow
+# After a successful production deploy, ping IndexNow with only the URLs
+# added, changed or removed in that deploy. Previews are skipped.
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      paths:
+        description: 'Space separated paths to ping, e.g. "/ /sitemap"'
+        required: true
+      dry_run:
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  actions: read
+  deployments: read
+concurrency:
+  group: indexnow-${{ github.event.deployment.environment || 'manual' }}
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    if: >-
+      github.event_name == 'deployment_status' &&
+      github.event.deployment_status.state == 'success' &&
+      startsWith(github.event.deployment_status.environment, 'Production ') &&
+      endsWith(github.event.deployment_status.environment, ' vietnam-launchpad')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ENVIRONMENT: ${{ github.event.deployment.environment }}
+      ARTIFACT: indexnow-snapshot-production
+      DEPLOYMENT_ID: ${{ github.event.deployment.id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Restore previous snapshot
+        run: |
+          mkdir -p .indexnow/prev
+          id=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=$ARTIFACT&per_page=1" \
+            --jq '[.artifacts[] | select(.expired == false)][0].id // empty' || true)
+          if [ -z "$id" ]; then
+            echo "No previous snapshot artifact."
+          elif gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$id/zip" > prev.zip && unzip -o -q prev.zip -d .indexnow/prev; then
+            echo "Restored snapshot from artifact $id."
+          else
+            echo "Could not restore artifact $id, continuing without it."
+          fi
+
+      - name: Find previous successful deployment
+        id: previous
+        run: |
+          env_enc=$(jq -rn --arg v "$ENVIRONMENT" '$v|@uri')
+          since=""
+          from=""
+          list=$(gh api "repos/$GITHUB_REPOSITORY/deployments?environment=$env_enc&per_page=20" \
+            --jq '.[] | "\(.id) \(.created_at) \(.sha)"' || true)
+          while read -r id created sha; do
+            [ -n "$id" ] || continue
+            [ "$id" -lt "$DEPLOYMENT_ID" ] || continue
+            if gh api "repos/$GITHUB_REPOSITORY/deployments/$id/statuses" --jq '.[].state' 2>/dev/null | grep -qx success; then
+              since="$created"
+              from="$sha"
+              break
+            fi
+          done <<< "$list"
+          echo "Previous successful deployment: ${since:-none} ${from}"
+          echo "since=$since" >> "$GITHUB_OUTPUT"
+          echo "from=$from" >> "$GITHUB_OUTPUT"
+
+      - name: Settle
+        run: sleep 45
+
+      - name: Ping IndexNow
+        env:
+          SINCE: ${{ steps.previous.outputs.since }}
+          FROM: ${{ steps.previous.outputs.from }}
+        run: |
+          args=(--host www.vietnamlaunchpad.com --prev .indexnow/prev/snapshot.json --out .indexnow/next/snapshot.json)
+          if [ -n "$SINCE" ]; then args+=(--since "$SINCE"); fi
+          if [ -n "$FROM" ]; then args+=(--from "$FROM"); fi
+          node scripts/indexnow.mjs "${args[@]}"
+
+      - name: Save snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-snapshot-production
+          path: .indexnow/next/snapshot.json
+          retention-days: 90
+          if-no-files-found: ignore
+          include-hidden-files: true
+
+  manual:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Ping IndexNow
+        env:
+          PATHS: ${{ inputs.paths }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          read -r -a paths <<< "$PATHS"
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          node scripts/indexnow.mjs "${args[@]}" -- "${paths[@]}"
