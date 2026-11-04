@@ -12,7 +12,8 @@
     "export": "next build && next export",
     "deploy": "npm run build",
     "check": "npm run lint && npm run build",
-    "test:indexnow": "node --test scripts/indexnow.test.mjs"
+    "test:indexnow": "node --test scripts/indexnow.test.mjs",
+    "test:noindex": "node --test scripts/noindex-visa.test.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
