@@ -3,6 +3,7 @@ export type CuratedBlock =
   | { t: 'h2'; text: string }
   | { t: 'md'; text: string }
   | { t: 'buttons'; primary: { text: string; href: string }; secondary: { text: string; href: string } }
+  | { t: 'feeTable'; heading: string; intro: string; headings: string[]; rows: string[][]; caption: string }
   | { t: 'affiliate' };
 
 export interface CuratedVisaPage {
@@ -29,11 +30,11 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
     "flag": "🇦🇺",
     "badgeTone": "blue",
     "metaTitle": "Vietnam Visa for Australians: eVisa Guide 2026",
-    "metaDescription": "Australians need a visa for Vietnam. See eVisa fees, the official processing time, 90 day validity and official sources, checked 27 October 2026.",
+    "metaDescription": "Australians need a visa for Vietnam. US$25 single entry and US$50 multiple entry eVisa, valid up to 90 days. Official sources, checked 29 October 2026.",
     "badge": "eVisa needed",
     "h1": "Vietnam Visa for Australians",
     "heroText": "Yes, Australian passport holders need a visa to enter Vietnam. Australia is not on Vietnam's visa exemption list. The eVisa is the online option, and you apply for it before you fly.",
-    "lastVerified": "Last verified: 27 October 2026. Checked against Vietnam's Ministry of Foreign Affairs, the Vietnam Immigration Department, the Embassy of Vietnam in Australia and Smartraveller. Rules and fees can change, so confirm on the official sources below before you book.",
+    "lastVerified": "Last verified: 29 October 2026. Checked against Vietnam's Ministry of Foreign Affairs, the Vietnam Immigration Department, the Embassy of Vietnam in Australia, Vietnam's Law on Entry, Exit, Transit and Residence of Foreigners and Smartraveller. Rules and fees can change, so confirm on the official sources below before you book.",
     "privateLine": "Vietnam Launchpad is a private company, not the Vietnamese government. The official eVisa portal is evisa.gov.vn.",
     "factsHeading": "Quick facts for Australian passport holders",
     "facts": [
@@ -46,12 +47,12 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
         "No, apart from the Phu Quoc and airport transit cases below"
       ],
       [
-        "eVisa fee",
-        "US$25 for a single entry, US$50 for multiple entry"
+        "Government eVisa fee",
+        "US$25 for a single entry, US$50 for multiple entry. See the fee table below."
       ],
       [
         "eVisa processing",
-        "3 working days after you pay"
+        "The Immigration Department says 3 working days after you pay"
       ],
       [
         "eVisa validity",
@@ -63,7 +64,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       ],
       [
         "Passport",
-        "check the current passport rule on the official eVisa portal before you apply"
+        "You need a valid passport. Vietnam's law says a visa's term must end at least 30 days before your passport expires."
       ]
     ],
     "faqHeading": "Vietnam visa questions from Australians",
@@ -89,12 +90,38 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
         "text": "eVisa fees and processing time"
       },
       {
-        "t": "md",
-        "text": "The eVisa is issued by the Vietnam Immigration Department. These are the figures shown by the Immigration Department on 27 October 2026:\n\n- An eVisa for a single entry costs US$25.\n- An eVisa for multiple entry costs US$50.\n- Applications are processed in 3 working days after you pay the fee.\n- An eVisa is valid for up to 90 days, for single or multiple entry.\n- The fee is paid by electronic payment on the portal and is not refunded if your application is refused.\n\nFees and times are set by the Vietnamese authorities and can change. Check the portal before you pay."
+        "t": "feeTable",
+        "heading": "What an eVisa costs and who you pay",
+        "intro": "The government fee is set by Vietnam and paid to the Vietnam Immigration Department on the official portal. Any other cost, if you choose to pay for help, is separate from it.",
+        "headings": [
+          "What you pay for",
+          "Who you pay",
+          "Amount",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "Government fee, single entry eVisa",
+            "Vietnam Immigration Department, on the official portal",
+            "US$25",
+            "Valid for up to 90 days. Not refunded if your application is refused."
+          ],
+          [
+            "Government fee, multiple entry eVisa",
+            "Vietnam Immigration Department, on the official portal",
+            "US$50",
+            "Valid for up to 90 days. Not refunded if your application is refused."
+          ]
+        ],
+        "caption": "Last checked: 29 October 2026. Source: Vietnam Immigration Department, evisa.gov.vn. The fee schedule is set by Ministry of Finance Circular 28 of 2026, in force from 1 April 2026. Fees are set by the Vietnamese authorities and can change, so check the portal before you pay."
       },
       {
         "t": "md",
-        "text": "### How the official process works\n\nStep 1: Go to evisa.gov.vn. The Immigration Department also lists thithucdientu.gov.vn. Check the address before you enter any details.\n\nStep 2: Fill in the form and upload a photo of your passport details page and a portrait photo. The portal gives you a registration code. Missing or incorrect information means the application will not be accepted.\n\nStep 3: Pay the fee. Processing takes 3 working days.\n\nStep 4: Use your registration code, email and date of birth in the eVisa search on the portal to see the result. If approved, print your eVisa to enter and exit Vietnam."
+        "text": "The eVisa is issued by the Vietnam Immigration Department. This is what the Immigration Department publishes, checked on 29 October 2026:\n\n- An eVisa is valid for up to 90 days, for single or multiple entry.\n- The Immigration Department says applications are processed in 3 working days after you pay the fee.\n- The fee is paid by electronic payment on the portal and is not refunded if your application is refused.\n\nFees and times are set by the Vietnamese authorities and can change. Check the portal before you pay."
+      },
+      {
+        "t": "md",
+        "text": "### How the official process works\n\nStep 1: Go to evisa.gov.vn. The Immigration Department also lists thithucdientu.gov.vn. Check the address before you enter any details.\n\nStep 2: Fill in the form and upload a photo of your passport details page and a portrait photo. The portal gives you a registration code. Missing or incorrect information means the application will not be accepted.\n\nStep 3: Pay the government fee shown in the fee table. The Immigration Department says processing takes 3 working days after you pay.\n\nStep 4: Use your registration code, email and date of birth in the eVisa search on the portal to see the result. If approved, print your eVisa to enter and exit Vietnam."
       },
       {
         "t": "md",
@@ -117,7 +144,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       },
       {
         "t": "md",
-        "text": "- A passport that is valid for your whole stay. Check the current passport rule on the official eVisa portal.\n- A printed copy of your approved eVisa.\n- The details on your eVisa checked against your passport.\n\nAsk your airline if it needs anything else before you fly."
+        "text": "- A valid passport. Vietnam's law says your visa's term must end at least 30 days before your passport expires, so check the expiry date against your travel dates.\n- A printed copy of your approved eVisa.\n- The details on your eVisa checked against your passport.\n\nAsk your airline if it needs anything else before you fly."
       },
       {
         "t": "h2",
@@ -156,7 +183,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       },
       {
         "t": "md",
-        "text": "Check these before you book. We last read them on 27 October 2026.\n\n- Vietnam Immigration Department eVisa portal: https://evisa.gov.vn\n- Vietnam Immigration Department eVisa information: https://immigration.gov.vn/trang-chu-ttdt\n- Ministry of Foreign Affairs, Vietnam visa exemption list: https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-172.html\n- Embassy of Vietnam in Australia, FAQ: https://www.vietnamembassy.org.au/en/faq\n- Smartraveller, Vietnam travel advice: https://www.smartraveller.gov.au/destinations/asia/vietnam"
+        "text": "Check these before you book. We last read them on 29 October 2026.\n\n- Vietnam Immigration Department eVisa portal: https://evisa.gov.vn\n- Vietnam Immigration Department eVisa information: https://immigration.gov.vn/trang-chu-ttdt\n- Ministry of Finance Circular 28 of 2026, visa fee schedule, in force from 1 April 2026: https://congbao.chinhphu.vn/van-ban/thong-tu-so-28-2026-tt-btc-469231.htm\n- Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam, consolidated text of 23 March 2026: https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-62-vbhn-vpqh-469192.htm\n- Ministry of Foreign Affairs, Vietnam visa exemption list: https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-172.html\n- Embassy of Vietnam in Australia, FAQ: https://www.vietnamembassy.org.au/en/faq\n- Smartraveller, Vietnam travel advice: https://www.smartraveller.gov.au/destinations/asia/vietnam"
       }
     ],
     "faqs": [
@@ -166,7 +193,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       },
       {
         "q": "How much is a Vietnam eVisa for Australians?",
-        "a": "The Vietnam Immigration Department lists US$25 for a single entry eVisa and US$50 for a multiple entry eVisa. The fee is not refunded if your application is refused. Check the portal for the current fee before you pay."
+        "a": "The Vietnam Immigration Department charges US$25 for a single entry eVisa and US$50 for a multiple entry eVisa. That is the government fee. The fee is not refunded if your application is refused. Check the portal for the current fee before you pay."
       },
       {
         "q": "How long does a Vietnam eVisa take?",
@@ -191,11 +218,11 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
     "flag": "🇺🇸",
     "badgeTone": "blue",
     "metaTitle": "Vietnam Visa for US Citizens: eVisa Guide 2026",
-    "metaDescription": "US citizens need a visa for Vietnam. See eVisa fees, the official processing time, 90 day validity and official sources, checked 27 October 2026.",
+    "metaDescription": "US citizens need a visa for Vietnam. US$25 single entry and US$50 multiple entry eVisa, valid up to 90 days. Official sources, checked 29 October 2026.",
     "badge": "eVisa needed",
     "h1": "Vietnam Visa for US Citizens",
     "heroText": "Yes, US passport holders need a visa to enter Vietnam. The United States is not on Vietnam's visa exemption list. The eVisa is the online option, and you apply for it before you fly.",
-    "lastVerified": "Last verified: 27 October 2026. Checked against Vietnam's Ministry of Foreign Affairs, the Vietnam Immigration Department and the Embassy of Vietnam in the United States. Rules and fees can change, so confirm on the official sources below before you book.",
+    "lastVerified": "Last verified: 29 October 2026. Checked against Vietnam's Ministry of Foreign Affairs, the Vietnam Immigration Department, the Embassy of Vietnam in the United States and Vietnam's Law on Entry, Exit, Transit and Residence of Foreigners. Rules and fees can change, so confirm on the official sources below before you book.",
     "privateLine": "Vietnam Launchpad is a private company, not the Vietnamese government. The official eVisa portal is evisa.gov.vn.",
     "factsHeading": "Quick facts for US passport holders",
     "facts": [
@@ -208,12 +235,12 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
         "No, apart from the Phu Quoc and airport transit cases below"
       ],
       [
-        "eVisa fee",
-        "US$25 for a single entry, US$50 for multiple entry"
+        "Government eVisa fee",
+        "US$25 for a single entry, US$50 for multiple entry. See the fee table below."
       ],
       [
         "eVisa processing",
-        "3 working days after you pay"
+        "The Immigration Department says 3 working days after you pay"
       ],
       [
         "eVisa validity",
@@ -225,7 +252,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       ],
       [
         "Passport",
-        "check the current passport rule on the official eVisa portal before you apply"
+        "You need a valid passport. Vietnam's law says a visa's term must end at least 30 days before your passport expires."
       ]
     ],
     "faqHeading": "Vietnam visa questions from US citizens",
@@ -259,12 +286,38 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
         "text": "eVisa fees and processing time"
       },
       {
-        "t": "md",
-        "text": "The eVisa is issued by the Vietnam Immigration Department, not by the Embassy. These are the figures shown by the Immigration Department on 27 October 2026:\n\n- An eVisa for a single entry costs US$25.\n- An eVisa for multiple entry costs US$50.\n- Applications are processed in 3 working days after you pay the fee.\n- An eVisa is valid for up to 90 days, for single or multiple entry.\n- The fee is paid by electronic payment on the portal and is not refunded if your application is refused.\n\nVietnam opened the eVisa to citizens of all countries and territories from 15 August 2023. Fees and times are set by the Vietnamese authorities and can change. Check the portal before you pay."
+        "t": "feeTable",
+        "heading": "What an eVisa costs and who you pay",
+        "intro": "The government fee is set by Vietnam and paid to the Vietnam Immigration Department on the official portal. Any other cost, if you choose to pay for help, is separate from it.",
+        "headings": [
+          "What you pay for",
+          "Who you pay",
+          "Amount",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "Government fee, single entry eVisa",
+            "Vietnam Immigration Department, on the official portal",
+            "US$25",
+            "Valid for up to 90 days. Not refunded if your application is refused."
+          ],
+          [
+            "Government fee, multiple entry eVisa",
+            "Vietnam Immigration Department, on the official portal",
+            "US$50",
+            "Valid for up to 90 days. Not refunded if your application is refused."
+          ]
+        ],
+        "caption": "Last checked: 29 October 2026. Source: Vietnam Immigration Department, evisa.gov.vn. The fee schedule is set by Ministry of Finance Circular 28 of 2026, in force from 1 April 2026. Fees are set by the Vietnamese authorities and can change, so check the portal before you pay."
       },
       {
         "t": "md",
-        "text": "### How the official process works\n\nStep 1: Go to evisa.gov.vn. The Immigration Department also lists thithucdientu.gov.vn. Check the address before you enter any details.\n\nStep 2: Fill in the form and upload a photo of your passport details page and a portrait photo. The portal gives you a registration code.\n\nStep 3: Pay the fee. Processing takes 3 working days.\n\nStep 4: Use your registration code, email and date of birth in the eVisa search on the portal to see the result. If approved, print your eVisa to enter and exit Vietnam.\n\nThe Embassy of Vietnam in the United States says eVisas are processed directly by the Immigration Department in Hanoi, not by the Embassy. It gives foreigners@immigration.gov.vn for eVisa questions."
+        "text": "The eVisa is issued by the Vietnam Immigration Department, not by the Embassy. This is what the Immigration Department publishes, checked on 29 October 2026:\n\n- An eVisa is valid for up to 90 days, for single or multiple entry.\n- The Immigration Department says applications are processed in 3 working days after you pay the fee.\n- The fee is paid by electronic payment on the portal and is not refunded if your application is refused.\n\nVietnam opened the eVisa to citizens of all countries and territories from 15 August 2023. Fees and times are set by the Vietnamese authorities and can change. Check the portal before you pay."
+      },
+      {
+        "t": "md",
+        "text": "### How the official process works\n\nStep 1: Go to evisa.gov.vn. The Immigration Department also lists thithucdientu.gov.vn. Check the address before you enter any details.\n\nStep 2: Fill in the form and upload a photo of your passport details page and a portrait photo. The portal gives you a registration code. Missing or incorrect information means the application will not be accepted.\n\nStep 3: Pay the government fee shown in the fee table. The Immigration Department says processing takes 3 working days after you pay.\n\nStep 4: Use your registration code, email and date of birth in the eVisa search on the portal to see the result. If approved, print your eVisa to enter and exit Vietnam.\n\nThe Embassy of Vietnam in the United States says eVisas are processed directly by the Immigration Department in Hanoi, not by the Embassy. It gives foreigners@immigration.gov.vn for eVisa questions."
       },
       {
         "t": "md",
@@ -287,7 +340,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       },
       {
         "t": "md",
-        "text": "- A passport that is valid for your whole stay. Check the current passport rule on the official eVisa portal.\n- A printed copy of your approved eVisa.\n- The details on your eVisa checked against your passport.\n\nAsk your airline if it needs anything else before you fly."
+        "text": "- A valid passport. Vietnam's law says your visa's term must end at least 30 days before your passport expires, so check the expiry date against your travel dates.\n- A printed copy of your approved eVisa.\n- The details on your eVisa checked against your passport.\n\nAsk your airline if it needs anything else before you fly."
       },
       {
         "t": "h2",
@@ -326,7 +379,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       },
       {
         "t": "md",
-        "text": "Check these before you book. We last read them on 27 October 2026.\n\n- Vietnam Immigration Department eVisa portal: https://evisa.gov.vn\n- Vietnam Immigration Department eVisa information: https://immigration.gov.vn/trang-chu-ttdt\n- Ministry of Foreign Affairs, Vietnam visa exemption list: https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-172.html\n- Embassy of Vietnam in the United States, visa procedures: https://vietnamembassy-usa.org/content/visa-application-process\n- Embassy of Vietnam in the United States, visa exemption certificate: https://vietnamembassy-usa.org/consular/visa-exemption\n- Smartraveller, Vietnam travel advice: https://www.smartraveller.gov.au/destinations/asia/vietnam"
+        "text": "Check these before you book. We last read them on 29 October 2026.\n\n- Vietnam Immigration Department eVisa portal: https://evisa.gov.vn\n- Vietnam Immigration Department eVisa information: https://immigration.gov.vn/trang-chu-ttdt\n- Ministry of Finance Circular 28 of 2026, visa fee schedule, in force from 1 April 2026: https://congbao.chinhphu.vn/van-ban/thong-tu-so-28-2026-tt-btc-469231.htm\n- Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam, consolidated text of 23 March 2026: https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-62-vbhn-vpqh-469192.htm\n- Ministry of Foreign Affairs, Vietnam visa exemption list: https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-172.html\n- Embassy of Vietnam in the United States, visa procedures: https://vietnamembassy-usa.org/content/visa-application-process\n- Embassy of Vietnam in the United States, visa exemption certificate: https://vietnamembassy-usa.org/consular/visa-exemption\n- Smartraveller, Vietnam travel advice: https://www.smartraveller.gov.au/destinations/asia/vietnam"
       }
     ],
     "faqs": [
@@ -336,7 +389,7 @@ export const curatedVisaPages: Record<string, CuratedVisaPage> = {
       },
       {
         "q": "How much is a Vietnam eVisa for US citizens?",
-        "a": "The Vietnam Immigration Department lists US$25 for a single entry eVisa and US$50 for a multiple entry eVisa. The fee is not refunded if your application is refused. Check the portal for the current fee before you pay."
+        "a": "The Vietnam Immigration Department charges US$25 for a single entry eVisa and US$50 for a multiple entry eVisa. That is the government fee. The fee is not refunded if your application is refused. Check the portal for the current fee before you pay."
       },
       {
         "q": "How long does a Vietnam eVisa take?",

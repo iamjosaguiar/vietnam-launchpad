@@ -70,6 +70,54 @@ function BlockContent({ block }: { block: CuratedBlock }) {
       </div>
     );
   }
+  if (block.t === 'feeTable') {
+    return (
+      <>
+        <h3 id="fee-table-heading" className="mb-3 mt-6 font-display text-step-1 font-semibold text-ink">
+          {block.heading}
+        </h3>
+        <p className="mb-4 max-w-measure text-ink leading-relaxed">{block.intro}</p>
+        <div
+          className="mb-4 overflow-x-auto rounded-card border border-hairline"
+          tabIndex={0}
+          role="region"
+          aria-labelledby="fee-table-heading"
+        >
+          <table className="w-full min-w-[40rem] border-collapse text-left text-sm">
+            <caption className="caption-bottom border-t border-hairline px-4 py-3 text-left text-sm text-muted">
+              {block.caption}
+            </caption>
+            <thead>
+              <tr>
+                {block.headings.map((heading, i) => (
+                  <th key={i} scope="col" className="bg-paper px-4 py-3 font-semibold text-ink">
+                    {heading}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, r) => (
+                <tr key={r} className="border-t border-hairline align-top">
+                  {row.map((cell, c) =>
+                    c === 0 ? (
+                      <th key={c} scope="row" className="px-4 py-3 text-left font-semibold text-ink">
+                        {cell}
+                      </th>
+                    ) : (
+                      <td key={c} className={c === 2 ? 'px-4 py-3 font-bold whitespace-nowrap text-ink' : 'px-4 py-3 text-ink'}>
+                        {cell}
+                      </td>
+                    ),
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    );
+  }
   if (block.t === 'affiliate') {
     return <HolaflyCallout variant="visa" />;
   }

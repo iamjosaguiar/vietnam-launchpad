@@ -32,8 +32,6 @@ import {
 } from '@/data/visa-copy';
 
 const NOINDEX_UNTIL_FIXED = new Set([
-  'united-states',
-  'australia',
   'canada',
   'new-zealand',
   'austria',
