@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Same family as next/font/local DM_Sans. Loaded only when italic text is used. */
+@font-face {
+  font-family: DM_Sans;
+  src: url('./fonts/dm-sans-italic.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   /* Design D "Calm Path" tokens */
   --font-display: var(--font-source-serif), 'Source Serif 4', Georgia, 'Times New Roman', serif;

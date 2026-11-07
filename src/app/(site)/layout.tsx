@@ -13,11 +13,9 @@ import { CONTACT_EMAILS, PHONE_E164 } from '@/lib/site';
 import '../globals.css';
 
 // Bundled woff2 files. Builds do not fetch Google Fonts.
+// Italic is declared in globals.css so next/font does not preload it.
 const DM_Sans = localFont({
-  src: [
-    { path: '../fonts/dm-sans.woff2', weight: '400 700', style: 'normal' },
-    { path: '../fonts/dm-sans-italic.woff2', weight: '400 700', style: 'italic' },
-  ],
+  src: [{ path: '../fonts/dm-sans.woff2', weight: '400 700', style: 'normal' }],
   display: 'swap',
   variable: '--font-dm-sans',
 });
