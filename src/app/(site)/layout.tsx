@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { DM_Sans, Source_Serif_4 } from 'next/font/google';
+import localFont from 'next/font/local';
 import Script from 'next/script';
 
 import AnalyticsEvents from '@/components/AnalyticsEvents';
@@ -12,17 +12,15 @@ import { CONTACT_EMAILS, PHONE_E164 } from '@/lib/site';
 
 import '../globals.css';
 
-// Self-hosted at build time, replaces the render-blocking Google Fonts CSS @import.
-const fontBody = DM_Sans({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '700'],
-  style: ['normal', 'italic'],
+// Bundled woff2 files. Builds do not fetch Google Fonts.
+// Italic is declared in globals.css so next/font does not preload it.
+const DM_Sans = localFont({
+  src: [{ path: '../fonts/dm-sans.woff2', weight: '400 700', style: 'normal' }],
   display: 'swap',
   variable: '--font-dm-sans',
 });
-const fontDisplay = Source_Serif_4({
-  subsets: ['latin', 'latin-ext', 'vietnamese'],
-  weight: ['400', '600', '700'],
+const Source_Serif_4 = localFont({
+  src: [{ path: '../fonts/source-serif-4.woff2', weight: '400 700', style: 'normal' }],
   display: 'swap',
   variable: '--font-source-serif',
 });
@@ -178,7 +176,7 @@ export default async function SiteLayout({ children, params }: LayoutProps) {
   };
 
   return (
-    <html lang={locale} className={`${fontBody.variable} ${fontDisplay.variable}`}>
+    <html lang={locale} className={`${DM_Sans.variable} ${Source_Serif_4.variable}`}>
       <head>
         <Script
           id="schema-website"

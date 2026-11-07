@@ -2,6 +2,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { Components } from 'react-markdown';
 import HolaflyCallout from '@/components/HolaflyCallout';
+import { withoutAstNode } from '@/lib/markdownDomProps';
 import { HOLAFLY_PLANS_URL } from '@/lib/site';
 
 const CALLOUT_SPLIT = /\{\{holafly:([a-z0-9-]+)\}\}/;
@@ -46,7 +47,7 @@ export default function MarkdownBlocks({
   components?: Components;
 }) {
   const parts = markdown.split(CALLOUT_SPLIT);
-  const merged = withAffiliateLinks(components);
+  const merged = withoutAstNode(withAffiliateLinks(components));
 
   return (
     <>
