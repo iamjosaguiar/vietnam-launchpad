@@ -234,7 +234,7 @@ export default function VisaIndexPage() {
                 </p>
 
                 <p className="mb-6 max-w-[52ch] text-sm text-muted">
-                  A new tourism law takes effect on 1 January 2027. Current visa rules still apply.{' '}
+                  A new tourism resolution takes effect on 1 January 2027. Current visa rules still apply.{' '}
                   <Link href={VISA_2027_POST_HREF} className={sourceLink}>
                     What it means
                   </Link>
