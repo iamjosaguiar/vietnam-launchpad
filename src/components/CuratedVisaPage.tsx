@@ -15,6 +15,8 @@ import {
   visaProse,
 } from '@/components/visa/VisaShell';
 import { ctaLabelForHref } from '@/lib/analytics';
+import { Link } from '@/i18n/config';
+import { VISA_2027_NOTE_LEAD, VISA_2027_NOTE_LINK_LABEL, VISA_2027_POST_HREF } from '@/data/visa-copy';
 import type { CuratedBlock, CuratedVisaPage as CuratedData } from '@/data/visaCurated';
 
 const BASE_URL = 'https://www.vietnamlaunchpad.com';
@@ -202,6 +204,15 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
                 ))}
               </dl>
               <p className="mb-0 mt-4 max-w-measure text-sm text-muted">{page.lastVerified}</p>
+              <p className="mb-0 mt-3 max-w-measure text-sm text-ink">
+                {VISA_2027_NOTE_LEAD}{' '}
+                <Link
+                  href={VISA_2027_POST_HREF}
+                  className="font-medium text-navy underline underline-offset-[3px] hover:text-navy-deep"
+                >
+                  {VISA_2027_NOTE_LINK_LABEL}
+                </Link>
+              </p>
             </VisaCard>
 
             {groupByHeading(page.blocks).map((group, i) => (

@@ -27,6 +27,9 @@ import {
   EVISA_PORTAL_URL,
   INDONESIA_CHECK_LINE,
   PRIVATE_LINE,
+  VISA_2027_NOTE_LEAD,
+  VISA_2027_NOTE_LINK_LABEL,
+  VISA_2027_POST_HREF,
   formatVerifiedDate,
   lastVerifiedLine,
 } from '@/data/visa-copy';
@@ -304,6 +307,15 @@ export default async function VisaCountryPage({
                 reflects Vietnam&apos;s policy as of {formatVerifiedDate(data.verifiedOn)} and is provided for general guidance
                 only. Always verify with the Vietnam Immigration Department or your nearest Vietnamese
                 embassy before travel.
+                <span className="mt-2 block">
+                  {VISA_2027_NOTE_LEAD}{' '}
+                  <Link
+                    href={VISA_2027_POST_HREF}
+                    className="font-medium text-navy underline underline-offset-[3px] hover:text-navy-deep"
+                  >
+                    {VISA_2027_NOTE_LINK_LABEL}
+                  </Link>
+                </span>
               </span>
             </p>
 

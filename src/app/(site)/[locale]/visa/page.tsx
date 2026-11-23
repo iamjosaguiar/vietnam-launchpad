@@ -18,6 +18,9 @@ import {
   E_VISA_FACTS,
   EVISA_PORTAL_URL,
   PRIVATE_LINE,
+  VISA_2027_NOTE_LEAD,
+  VISA_2027_NOTE_LINK_LABEL,
+  VISA_2027_POST_HREF,
   formatVerifiedDate,
   lastVerifiedLine,
 } from '@/data/visa-copy';
@@ -230,6 +233,13 @@ export default function VisaIndexPage() {
                   for longer-term residency, by nationality.
                 </p>
 
+                <p className="mb-6 max-w-[52ch] text-sm text-muted">
+                  A new tourism law takes effect on 1 January 2027. Current visa rules still apply.{' '}
+                  <Link href={VISA_2027_POST_HREF} className={sourceLink}>
+                    What it means
+                  </Link>
+                </p>
+
                 <ul className="m-0 grid list-none gap-3 p-0 text-[0.95rem] font-medium text-ink">
                   {(
                     [
@@ -294,6 +304,12 @@ export default function VisaIndexPage() {
                     Vietnam Immigration Department or your nearest Vietnamese embassy
                   </span>{' '}
                   before travel.
+                  <span className="mt-2 block">
+                    {VISA_2027_NOTE_LEAD}{' '}
+                    <Link href={VISA_2027_POST_HREF} className={sourceLink}>
+                      {VISA_2027_NOTE_LINK_LABEL}
+                    </Link>
+                  </span>
                 </span>
               </p>
               <div className="max-w-measure space-y-1 text-sm text-muted [overflow-wrap:anywhere]">

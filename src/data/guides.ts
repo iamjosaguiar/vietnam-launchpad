@@ -715,7 +715,7 @@ Vietnam has seasonal dengue fever - no widely available vaccine, managed through
     excerpt: "Vietnam is one of Asia's top digital nomad destinations - but the legal situation is more nuanced than most guides admit. A clear-eyed breakdown of your real options.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-11-23',
     readTime: '13 min read',
     category: 'Visas & Residency',
     ctaTitle: 'Want to Stay in Vietnam Long-Term?',
@@ -729,6 +729,8 @@ Vietnam has seasonal dengue fever - no widely available vaccine, managed through
 Vietnam consistently ranks among Asia's top digital nomad destinations - low costs, excellent internet, great food, vibrant culture. But there is a common misconception: Vietnam does **not** have an official digital nomad visa, and the legal status of remote work is genuinely murky.
 
 This guide cuts through the noise and tells you what is actually available, what is legal, and how most people navigate the situation in practice.
+
+**Update, 23 November 2026:** New law passed 21 November 2026 (Resolution 59/2026/QH16), effective 1 January 2027. It directs a controlled pilot of visa and residence rules for foreigners working remotely, but no rules have been published and there is still no digital nomad visa to apply for. Current visa rules still apply. [Read our update on the 2027 visa changes](/blog/vietnam-visa-changes-2027).
 
 ---
 
@@ -782,6 +784,8 @@ The application process and eligibility criteria are still being fully operation
 ### The Golden Visa (Proposed)
 
 As of April 2026, Vietnam's Golden Visa remains a proposal. The Tourism Advisory Board recommended it in April 2025. There is no legislation, no application process, and no confirmed timeline. Do not plan around this.
+
+Resolution 59/2026/QH16 (passed 21 November 2026, effective 1 January 2027) directs a controlled visa pilot for foreigners working remotely. That is not a Golden Visa, and the pilot rules have not been published. See our [2027 visa changes update](/blog/vietnam-visa-changes-2027).
 
 ---
 
@@ -1552,7 +1556,7 @@ Vietnam has several international university campuses (RMIT Vietnam, BUV - Briti
     excerpt: "Vietnam doesn't have a retirement visa, and that surprises nearly everyone who researches it. This guide covers your real long-term stay options, the true cost of retirement, and what life as a retired expat in Vietnam looks like.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-11-23',
     readTime: '11 min read',
     category: 'Visas & Residency',
     ctaTitle: "Planning Long-Term Stay in Vietnam?",
@@ -1615,6 +1619,8 @@ See our [Marriage Registration and TRC service](/services/marriage-registration)
 ### Option 4: The Proposed Golden Visa
 
 In April 2025, Vietnam's Tourism Advisory Board proposed a "Golden Visa" specifically intended to attract long-term resident investors and retirees. As of April 2026, this remains a proposal - no legislation, no timeline, no application process.
+
+Resolution 59/2026/QH16 (passed 21 November 2026, effective 1 January 2027) directs controlled visa pilots for remote workers and for medical, rehabilitation and long-stay wellness visitors. That is not a Golden Visa, and the pilot rules have not been published. See our [2027 visa changes update](/blog/vietnam-visa-changes-2027).
 
 Monitor this development but do not plan around it yet.
 

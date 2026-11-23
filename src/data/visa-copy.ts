@@ -39,3 +39,13 @@ export function formatVerifiedDate(iso: string): string {
 export function lastVerifiedLine(iso: string): string {
   return `Last verified: ${formatVerifiedDate(iso)}`;
 }
+
+// Resolution 59/2026/QH16 (tourism resolution passed 21 November 2026). Keep wording in one place.
+export const VISA_2027_POST_HREF = '/blog/vietnam-visa-changes-2027';
+
+export const VISA_2027_NOTE_LEAD =
+  'New law passed 21 November 2026 (Resolution 59/2026/QH16), effective 1 January 2027. Current visa rules still apply.';
+
+export const VISA_2027_NOTE_LINK_LABEL = 'Read our update on the 2027 visa changes.';
+
+export const VISA_2027_NOTE_TEXT = `${VISA_2027_NOTE_LEAD} ${VISA_2027_NOTE_LINK_LABEL}`;
