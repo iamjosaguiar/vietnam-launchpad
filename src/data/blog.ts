@@ -11,9 +11,168 @@ export interface BlogPost {
   category: string;
   image?: string;
   content: string;
+  /** Visible FAQ section, repeated here for FAQPage structured data. */
+  faqs?: { q: string; a: string }[];
 }
 
 export const blogPosts: Record<string, BlogPost> = {
+  'vietnam-visa-changes-2027': {
+    slug: 'vietnam-visa-changes-2027',
+    title: "Vietnam Visa Changes 2027: What's Official, and What Isn't",
+    metaTitle: 'Vietnam Visa Changes 2027 Explained',
+    excerpt: "Vietnam's current visa rules still apply: the 90-day e-visa, the existing visa-free list and border runs are unchanged. Resolution 59/2026/QH16 takes effect on 1 January 2027, but it sets direction and pilots rather than opening a new visa you can apply for.",
+    author: 'Vietnam Launchpad Team',
+    date: '2026-11-23',
+    lastUpdated: '2026-11-23',
+    readTime: '8 min read',
+    category: 'Visas & Immigration',
+    faqs: [
+      {
+        q: 'Has Vietnam passed a digital nomad visa?',
+        a: 'No. Resolution 59/2026/QH16 directs a controlled study and pilot of visa and residence rules for foreigners working remotely. That is the closest official move yet toward a digital nomad visa, but no such visa exists today and no pilot rules have been published.',
+      },
+      {
+        q: 'When do the new rules start?',
+        a: 'The resolution takes effect on 1 January 2027 and runs until 31 December 2036. The Government still has to issue implementing guidance, and the date any pilot actually opens is unknown.',
+      },
+      {
+        q: 'Can I stay longer than 90 days from 1 January 2027?',
+        a: 'Not on the basis of this resolution alone. It does not set any stay lengths. Until implementing rules are published and take effect, the e-visa is still valid for up to 90 days and longer stays still need a visa type that fits your purpose, such as work, investment or marriage, and usually a temporary residence card.',
+      },
+      {
+        q: 'Which countries will be visa-free?',
+        a: 'Unknown. The resolution directs Vietnam to expand bilateral visa exemptions for key source markets and markets with strong growth potential and high spending power, but no countries have been named. The current visa-free list still applies.',
+      },
+      {
+        q: 'Do I need to leave Vietnam to apply?',
+        a: 'Nobody knows yet. The resolution as reported does not say whether a change of status inside Vietnam will be allowed, or whether you will need to apply from another country. Do not assume you can convert a tourist e-visa into a new long-stay or remote-worker visa from inside Vietnam.',
+      },
+      {
+        q: 'Do current e-visa and visa-free rules still apply?',
+        a: 'Yes. The e-visa of up to 90 days, single or multiple entry, is still open to all nationalities, the existing visa-free stays still apply, and exiting and re-entering is still the current way to start a new e-visa stay.',
+      },
+    ],
+    content: `
+On the morning of Saturday 21 November 2026, Vietnam's National Assembly passed **Resolution No. 59/2026/QH16 on a number of specific mechanisms and policies for the development of tourism in Vietnam**. 468 of 480 delegates voted in favour (93.79%). It takes effect on **1 January 2027** and runs until **31 December 2036**.
+
+The most important point for travellers and expats: **nothing about your visa changes yet**. The 90-day e-visa, the current visa-free list and the usual exit-and-re-enter pattern all still apply. The resolution tells the Government what direction to take. It does not itself create a new visa type, and the implementing rules have not been published.
+
+Here is what the resolution actually says, what it does not say, and what long-stayers should do in the meantime.
+
+## What is Resolution 59/2026/QH16?
+
+It is a tourism-development resolution, not a standalone immigration law. It was passed at the 2nd Session of the 16th National Assembly, has 14 articles, and puts into law Politburo Resolution 26-NQ/TW of 22 August 2026 on making tourism a key economic sector.
+
+Visa facilitation is one part of it. The Government is directed to issue implementing guidance, and the Ministry of Culture, Sports and Tourism is to monitor implementation.
+
+As of 23 November 2026, the full official text had not yet appeared on the Government's public document database. This post is based on official and reputable press reports of the vote, listed in the Sources section below. Their wording on the visa provisions is consistent.
+
+## What changes (direction only)
+
+The reported visa provisions point in three directions:
+
+**1. More bilateral visa exemptions.** Vietnam is to expand bilateral visa exemptions for visitors from key source markets and from markets with strong growth potential and high spending power. No countries are named.
+
+**2. More flexible treatment of certain travellers.** Visa policy is to be more flexible and set market by market, with priority for long-stay visitors, returning and repeat visitors, and travellers who combine a trip with official business, conferences or international seminars.
+
+**3. Controlled pilots for remote workers and health travellers.** Vietnam is to conduct a controlled study or pilot of visa and residence policies for foreigners working remotely. A similar pilot covers visitors coming for medical treatment, rehabilitation, resort or wellness stays and extended health care.
+
+The remote-worker pilot is the closest official move yet toward a digital nomad visa. But it is a pilot to be studied and designed, not a visa that exists today. Vietnam still has no official digital nomad visa.
+
+### What about accompanying family?
+
+Thanh Nien reported more detail on the health pilot on 23 November 2026. According to its report, foreigners coming for medical treatment, rehabilitation, resort stays or long-term health care, **and the people accompanying them**, may be considered for a pilot of more convenient visa and residence arrangements, based on confirmation from a qualified receiving facility and the competent authority.
+
+The shorter official summaries (VnExpress, Tuoi Tre, Vietnam News and VOV / the Vietnam National Administration of Tourism) name the medical, rehabilitation and long-stay wellness visitors, but do not mention accompanying family in that sentence. Treat the family point as reported, not confirmed, until the implementing rules are out.
+
+## What does not change
+
+Until implementing rules are issued and take effect, the current rules stay in place:
+
+- **E-visa:** up to 90 days, single or multiple entry, open to all nationalities. Apply on the official portal, [evisa.gov.vn](https://evisa.gov.vn).
+- **Visa-free entry:** the existing visa-free list and stay lengths still apply. Many listed countries get 45 days, and some get shorter stays. Check your nationality on our [Vietnam visa requirements page](/visa).
+- **Border runs:** exiting and re-entering is still the current way to start a new e-visa stay.
+- **No digital nomad visa:** remote workers are still in the same position described in our [digital nomad guide](/guides/digital-nomads).
+
+This resolution is also **not a Golden Visa programme**. It does not create an investor or long-stay residence visa of the kind discussed since 2025. For that story, see our [Golden Visa update](/blog/vietnam-golden-visa-2026-update).
+
+## What is still unknown
+
+The resolution as reported does not answer any of these questions:
+
+- **Which countries** will get new visa-free entry
+- **How long** visitors will be allowed to stay
+- **Who is eligible** for the remote-worker and health pilots, including which nationalities
+- **Income, insurance or other requirements**
+- **Fees**
+- **The application process** and where to apply
+- **Whether you can change status inside Vietnam**, or must leave and apply from another country
+- **When the pilots will actually open**. The resolution takes effect on 1 January 2027, but implementing rules have not been published
+
+Anyone quoting stay lengths, income thresholds or fees for a new Vietnam remote-worker visa right now is guessing.
+
+## Advice for long-stayers
+
+**Do not wait for the pilots, and do not assume you can convert your status in-country.** It is not confirmed whether a new long-stay or remote-worker visa could be obtained from inside Vietnam. Some existing routes already require applying from outside the country, and the resolution as reported does not say how the new pilots will work. Plan as though you may need to leave Vietnam and apply from abroad, until the rules say otherwise.
+
+In the meantime, keep using the legal pathways that exist today:
+
+- **E-visa cycle:** rolling 90-day e-visas with exits in between. Simple, and still the default for many remote workers. Our [e-visa service](/services/evisa) can help with applications.
+- **Special Visa Exemption Card (SVEC):** for eligible nationals, a 5-year, multiple-entry card with stays of up to 90 days each. It saves repeated applications but is not residency.
+- **Work permit and TRC:** if you are employed by a Vietnamese entity. See our [working in Vietnam guide](/guides/working-in-vietnam) and [work permit service](/services/work-permit).
+- **Investment TRC:** for those investing in a Vietnamese company. See our [company setup guide](/guides/company-setup-vietnam) and [TRC guide](/guides/trc-vietnam).
+- **Marriage TRC:** if you are married to a Vietnamese citizen. See our [marriage registration and TRC service](/services/marriage-registration).
+
+If you are planning a longer stay, our [TRC application service](/services/trc-application) and [retirement guide](/guides/retirement) cover the options in more detail.
+
+## Frequently asked questions
+
+### Has Vietnam passed a digital nomad visa?
+
+No. Resolution 59/2026/QH16 directs a controlled study and pilot of visa and residence rules for foreigners working remotely. That is the closest official move yet toward a digital nomad visa, but no such visa exists today and no pilot rules have been published.
+
+### When do the new rules start?
+
+The resolution takes effect on 1 January 2027 and runs until 31 December 2036. The Government still has to issue implementing guidance, and the date any pilot actually opens is unknown.
+
+### Can I stay longer than 90 days from 1 January 2027?
+
+Not on the basis of this resolution alone. It does not set any stay lengths. Until implementing rules are published and take effect, the e-visa is still valid for up to 90 days and longer stays still need a visa type that fits your purpose, such as work, investment or marriage, and usually a temporary residence card.
+
+### Which countries will be visa-free?
+
+Unknown. The resolution directs Vietnam to expand bilateral visa exemptions for key source markets and markets with strong growth potential and high spending power, but no countries have been named. The current visa-free list still applies.
+
+### Do I need to leave Vietnam to apply?
+
+Nobody knows yet. The resolution as reported does not say whether a change of status inside Vietnam will be allowed, or whether you will need to apply from another country. Do not assume you can convert a tourist e-visa into a new long-stay or remote-worker visa from inside Vietnam.
+
+### Do current e-visa and visa-free rules still apply?
+
+Yes. The e-visa of up to 90 days, single or multiple entry, is still open to all nationalities, the existing visa-free stays still apply, and exiting and re-entering is still the current way to start a new e-visa stay.
+
+## Our recommendation
+
+Treat 1 January 2027 as the start of a process, not the day new visas open. Keep your current visa legal, plan with the pathways that exist now, and watch for the implementing rules. We will update this post when they are published.
+
+[Talk to our team](/contact) or [book a consultation](/services/consultation) if you want help choosing a long-term option, or start with our [Vietnam visa requirements page](/visa).
+
+## Sources
+
+- Vietnam News (22 November 2026): [report on the visa provisions (English)](https://vietnamnews.vn/politics-laws/1804915/viet-nam-widens-visa-exemptions-trialling-long-stay-visas-for-remote-workers-medical-tourists.html)
+- VnExpress (21 November 2026): [report on the vote (Vietnamese)](https://vnexpress.net/quoc-hoi-thong-qua-loat-chinh-sach-dac-thu-phat-trien-du-lich-5147501.html)
+- Tuoi Tre (21 November 2026): [report on the vote (Vietnamese)](https://tuoitre.vn/quoc-hoi-thong-qua-co-che-dac-thu-mo-them-du-dia-phat-trien-du-lich-viet-nam-100261121203732469.htm)
+- Voice of Vietnam / VOV (21 November 2026): [report on the vote (Vietnamese)](https://vov.vn/du-lich/thong-qua-nghi-quyet-ve-mot-so-co-che-chinh-sach-dac-thu-phat-trien-du-lich-post1352216.vov)
+- Vietnam National Administration of Tourism: [report on the resolution (Vietnamese)](https://vietnamtourism.gov.vn/post/68789)
+- Thanh Nien (23 November 2026), for the accompanying-persons detail: [report on the resolution (Vietnamese)](https://thanhnien.vn/cao-toc-cho-du-lich-chinh-thuc-mo-185261122204215222.htm)
+- Current e-visa rules: [evisa.gov.vn](https://evisa.gov.vn)
+
+---
+
+*Last updated: 23 November 2026. Implementing rules for Resolution 59/2026/QH16 have not been published, and visa rules can change. Confirm current requirements with the Vietnam Immigration Department, the official e-visa portal or your nearest Vietnamese embassy before you travel or make plans.*
+    `
+  },
+
   'why-are-vietnamese-houses-so-thin-and-tall': {
     slug: 'why-are-vietnamese-houses-so-thin-and-tall',
     title: 'Why Are Vietnamese Houses So Thin and Tall? The Tube House Explained',
@@ -655,10 +814,13 @@ Our consultants can walk through your specific situation and help you understand
     excerpt: "Vietnam's proposed Golden Visa has been discussed since 2025. As of April 2026, there is still no legislation and no application process. Here is the current status and what long-term expats should do instead.",
     author: 'Vietnam Launchpad Team',
     date: '2026-04-01',
+    lastUpdated: '2026-11-23',
     readTime: '5 min read',
     category: 'Visas & Immigration',
     content: `
 The Vietnam Golden Visa has been circulating in expat discussions for over a year. As of April 2026, the honest answer is: **it does not yet exist as an official, accessible programme**.
+
+**Update, 23 November 2026:** On 21 November 2026, the National Assembly passed a tourism resolution (Resolution 59/2026/QH16) that directs a controlled visa pilot for foreigners working remotely from 1 January 2027. This is not a Golden Visa programme, the pilot details have not been published, and current visa rules still apply. [Read our update on the 2027 visa changes](/blog/vietnam-visa-changes-2027).
 
 Here is the full picture.
 
