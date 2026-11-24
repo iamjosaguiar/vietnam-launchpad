@@ -71,7 +71,7 @@ Rent is the single biggest variable in any expat budget.
 
 **Thao Dien / District 2:** $700-1,500/mo. Quieter, greener, preferred by families and long-term expats. Walking distance to international schools.
 
-**Binh Thanh:** $400-700/mo. Local neighborhood with good value. A growing favourite with digital nomads and younger expats.
+**Binh Thanh:** $400-700/mo. Local neighbourhood with good value. A growing favourite with digital nomads and younger expats.
 
 **District 7 / Phu My Hung:** $600-1,200/mo. Planned, clean infrastructure. Very popular with Korean and Japanese expats.
 
@@ -846,7 +846,7 @@ Vietnam's commercial capital. The most international, most connected, most socia
 
 **Cons:** Traffic is intense, air quality moderate, more expensive than other Vietnamese cities.
 
-**Best neighborhoods:** Binh Thanh (creative, affordable), District 1 (central, convenient), Thao Dien (quieter, greener, popular for longer stays).
+**Best neighbourhoods:** Binh Thanh (creative, affordable), District 1 (central, convenient), Thao Dien (quieter, greener, popular for longer stays).
 
 ### Da Nang
 
@@ -856,7 +856,7 @@ The rising star. Smaller, more relaxed, beach access, growing infrastructure.
 
 **Cons:** Smaller social scene, fewer international healthcare options, typhoon risk September-November.
 
-**Best neighborhoods:** My Khe beach area, An Thuong (known locally as the "foreigners' street").
+**Best neighbourhoods:** My Khe beach area, An Thuong (known locally as the "foreigners' street").
 
 ### Hanoi
 
@@ -866,7 +866,7 @@ Vietnam's capital. More traditional, more cultural, more bureaucratic.
 
 **Cons:** Worst air quality of the three (especially October-March), colder winters, less international in feel.
 
-**Best neighborhoods:** Tay Ho (West Lake), Ba Dinh.
+**Best neighbourhoods:** Tay Ho (West Lake), Ba Dinh.
 
 ---
 
@@ -984,7 +984,7 @@ For the full position, including current fines and what changes in 2027, see [is
 
 **On the Ground:**
 
-- Walk target neighborhoods and look for signs: "Phong Cho Thue" (Room for Rent), "Nha Cho Thue" (House for Rent)
+- Walk target neighbourhoods and look for signs: "Phong Cho Thue" (Room for Rent), "Nha Cho Thue" (House for Rent)
 - Ask local cafes and guesthouses for leads
 - Connect with other expats who often know of apartments through word of mouth before they are publicly listed
 
@@ -996,7 +996,7 @@ For an agency option, we recommend [Nest Living: apartments for rent in Hanoi, H
 
 ---
 
-## Neighborhood Guides
+## Neighbourhood Guides
 
 ### Ho Chi Minh City
 

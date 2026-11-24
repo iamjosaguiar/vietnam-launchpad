@@ -207,7 +207,7 @@ export function getSitemapEntries(): SitemapEntry[] {
 
   for (const slug of getAllBlogSlugs()) {
     const post = getBlogPostBySlug(slug);
-    entries.push(entry(`/blog/${slug}`, post?.title ?? slug, 0.75, 'monthly', isoDate(post?.date)));
+    entries.push(entry(`/blog/${slug}`, post?.title ?? slug, 0.75, 'monthly', isoDate(post?.lastUpdated ?? post?.date)));
   }
 
   for (const slug of getAllVisaSlugs()) {

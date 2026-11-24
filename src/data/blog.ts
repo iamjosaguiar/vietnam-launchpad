@@ -156,7 +156,7 @@ It is not yet confirmed whether Decree 339 will be amended to match the new law.
 
 ### Ho Chi Minh City
 
-Ho Chi Minh City already has its own rule. Decision 19/2026/QD-UBND, issued on 11 April 2026 and in force since 25 April 2026, sets the city's regulation on managing and using apartment buildings. It replaced Decision 26/2025/QD-UBND, which had restricted short stays by zone, and Binh Duong's Decision 16/2021.
+Ho Chi Minh City already has its own rule. Decision 19/2026/QD-UBND, issued on 11 April 2026 and in force since 25 April 2026, sets the city's regulation on managing and using apartment buildings. It replaced Decision 26/2025/QD-UBND and Binh Duong's Decision 16/2021.
 
 Under Decision 19:
 
