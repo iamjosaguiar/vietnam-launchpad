@@ -720,7 +720,7 @@ export const servicesData: Record<string, ServiceData> = {
       {
         step: 3,
         title: 'Arrival & Orientation',
-        description: 'Airport pickup (optional), neighborhood tour, sim card, and same-day essentials.',
+        description: 'Airport pickup (optional), neighbourhood tour, sim card, and same-day essentials.',
         duration: 'Day 1'
       },
       {
@@ -735,7 +735,7 @@ export const servicesData: Record<string, ServiceData> = {
       'Housing search and shortlisting (Hanoi or Da Nang)',
       'Lease contract review and negotiation support',
       'Airport pickup (Hanoi or Da Nang)',
-      'Neighborhood orientation walkthrough',
+      'Neighbourhood orientation walkthrough',
       'Local SIM card setup assistance',
       'Bank account opening support (Vietnamese bank)',
       'Temporary Residence Registration with local police (mandatory for expats)',
@@ -746,7 +746,7 @@ export const servicesData: Record<string, ServiceData> = {
     requirements: [
       'Valid passport with Vietnam visa or TRC',
       'Budget range for housing',
-      'Target neighborhood or area preference',
+      'Target neighbourhood or area preference',
       'Intended arrival date'
     ],
     benefits: [
@@ -773,7 +773,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'What is the police registration (temporary residence registration)?',
-        answer: 'Foreign nationals living in Vietnam are required to register with the local police ward within 24-48 hours of arrival at a new address. Your landlord should handle this, but many don\'t. We make sure it is done correctly - it\'s essential for TRC applications and bank accounts.'
+        answer: 'It is the declaration of your temporary residence to the local police. For foreign nationals, the landlord or accommodation provider must make it at each new address: immediately on arrival if it is made electronically, or within 12 hours if it is made on paper, 24 hours in remote areas. Your landlord should handle this, but many don\'t. We make sure it is done correctly. It\'s essential for TRC applications and bank accounts.'
       },
       {
         question: 'Can you help with school search for my children?',
