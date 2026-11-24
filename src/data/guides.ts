@@ -1020,7 +1020,7 @@ For an agency option, we recommend [Nest Living: apartments for rent in Hanoi, H
 
 **My Khe Beach Area:** Walking distance to the beach. The main tourist and expat zone.
 
-**An Thuong:** Often called the "foreign neighborhood." Concentrated expat cafes, restaurants, and housing. Strong community feel.
+**An Thuong:** Often called the "foreign neighbourhood." Concentrated expat cafes, restaurants, and housing. Strong community feel.
 
 **Son Tra Peninsula:** More residential and scenic but a longer commute to the city center.
 
@@ -1030,7 +1030,7 @@ For an agency option, we recommend [Nest Living: apartments for rent in Hanoi, H
 
 ### Ho Chi Minh City
 
-| Type | Neighborhood | Monthly |
+| Type | Neighbourhood | Monthly |
 |---|---|---|
 | Studio / 1BR | District 1 | $400-700 |
 | Studio / 1BR | Binh Thanh | $300-550 |
@@ -1040,7 +1040,7 @@ For an agency option, we recommend [Nest Living: apartments for rent in Hanoi, H
 
 ### Hanoi
 
-| Type | Neighborhood | Monthly |
+| Type | Neighbourhood | Monthly |
 |---|---|---|
 | 1BR apartment | Tay Ho | $500-900 |
 | 2BR apartment | Tay Ho | $800-1,500 |
@@ -2071,7 +2071,7 @@ Stay somewhere flexible for the first 2 weeks: a reputable hotel, a serviced apa
 
 If you choose an Airbnb in an apartment building, know its legal status. Apartment short stays are restricted until 1 July 2027, except registered tourist apartments in Ho Chi Minh City. Our post on [apartment Airbnb rules](/blog/vietnam-airbnb-apartment-rental-law-2027) explains the detail. Wherever you stay, your host must declare your temporary residence to the police. See below.
 
-Check our [Renting in Vietnam guide](/guides/renting) for neighborhood breakdowns.
+Check our [Renting in Vietnam guide](/guides/renting) for neighbourhood breakdowns.
 
 ### Police Registration (Temporary Residence Declaration)
 
@@ -2176,7 +2176,7 @@ Vietnam's traffic is intense, particularly in HCMC. This is the number one cultu
 - [ ] Identify and register with a GP clinic
 - [ ] Confirm health insurance is active
 - [ ] Identify your nearest international hospital and save their number
-- [ ] Start exploring neighborhoods to find where you want to rent long-term
+- [ ] Start exploring neighbourhoods to find where you want to rent long-term
 - [ ] Start your 183-day count from arrival date
 
 ---

@@ -720,7 +720,7 @@ export const servicesData: Record<string, ServiceData> = {
       {
         step: 3,
         title: 'Arrival & Orientation',
-        description: 'Airport pickup (optional), neighborhood tour, sim card, and same-day essentials.',
+        description: 'Airport pickup (optional), neighbourhood tour, sim card, and same-day essentials.',
         duration: 'Day 1'
       },
       {
@@ -735,7 +735,7 @@ export const servicesData: Record<string, ServiceData> = {
       'Housing search and shortlisting (Hanoi or Da Nang)',
       'Lease contract review and negotiation support',
       'Airport pickup (Hanoi or Da Nang)',
-      'Neighborhood orientation walkthrough',
+      'Neighbourhood orientation walkthrough',
       'Local SIM card setup assistance',
       'Bank account opening support (Vietnamese bank)',
       'Temporary Residence Registration with local police (mandatory for expats)',
@@ -746,7 +746,7 @@ export const servicesData: Record<string, ServiceData> = {
     requirements: [
       'Valid passport with Vietnam visa or TRC',
       'Budget range for housing',
-      'Target neighborhood or area preference',
+      'Target neighbourhood or area preference',
       'Intended arrival date'
     ],
     benefits: [
