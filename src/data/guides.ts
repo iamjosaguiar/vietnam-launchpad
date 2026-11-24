@@ -38,7 +38,7 @@ const guidesData: Record<string, Guide> = {
     excerpt: 'A realistic breakdown of monthly costs in Ho Chi Minh City, Hanoi, and Da Nang - covering rent, food, transport, healthcare, and everything in between.',
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-11-24',
     readTime: '12 min read',
     category: 'Finance & Money',
     ctaTitle: 'Planning Your Move to Vietnam?',
@@ -86,6 +86,10 @@ Rent is the single biggest variable in any expat budget.
 ### Da Nang
 
 The most affordable of the three cities. A well-appointed 2-bedroom apartment near the beach runs $500-900/mo. The expat community is smaller but growing fast.
+
+### Short Stays
+
+Nightly rentals and serviced apartments cost more than a monthly lease, so allow for that in your first weeks while you look. If you are planning to stay in an apartment Airbnb, note that apartment short stays become legal nationally only from 1 July 2027, under rules that are still being set. Ho Chi Minh City already allows registered tourist apartments. See our post on [Airbnb legal status](/blog/vietnam-airbnb-apartment-rental-law-2027) for the detail.
 
 ---
 
@@ -939,7 +943,7 @@ The language barrier is real but improving. Basic Vietnamese phrases are appreci
     excerpt: "Vietnam's rental market has no shortage of apartments, but finding the right one at the right price takes local knowledge. This guide covers everything from search to signing.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-11-24',
     readTime: '11 min read',
     category: 'Housing & Real Estate',
     ctaTitle: 'Getting Established in Vietnam?',
@@ -950,7 +954,23 @@ The language barrier is real but improving. Basic Vietnamese phrases are appreci
     ctaSecondaryText: 'Explore TRC Options',
     content: `## Before You Search
 
-**Rent short-term first.** Book an Airbnb, hotel, or serviced apartment for your first 2-4 weeks before committing to a long-term lease. Many expats regret signing a lease based purely on online research. The neighborhood you thought you wanted is often not the one you end up loving.
+**Rent short-term first.** Stay in a hotel, a serviced apartment or an Airbnb for your first 2-4 weeks before committing to a long-term lease. Many expats regret signing a lease based purely on online research. The neighbourhood you thought you wanted is often not the one you end up loving.
+
+If you book an Airbnb in an apartment building, check where it stands. Apartment short stays are currently restricted under the 2023 Housing Law and Decree 339/2026/ND-CP, except registered tourist apartments in Ho Chi Minh City. From 1 July 2027 they become legal nationally, subject to each building's security and order rules. Wherever you stay, your host must declare your temporary residence to the police. Ask them to confirm it has been done.
+
+---
+
+## Short Stays and the Law
+
+Short stays in apartments are in a transition period.
+
+- **Now:** the 2023 Housing Law bans using an apartment for non-residential purposes, and Decree 339/2026/ND-CP, in force since 26 August 2026, sets fines for it. Renting an apartment out for people to live in is allowed.
+- **Ho Chi Minh City:** Decision 19/2026/QD-UBND, in force since 25 April 2026, allows tourist apartment rental if the apartment is registered as a tourist accommodation establishment.
+- **From 1 July 2027:** the amended Housing Law allows apartments to be rented for accommodation nationally, subject to security and order conditions under the apartment management regulation. The detailed rules have not yet been published.
+
+Building rules (noi quy) bind tenants and guests as well as owners. In Ho Chi Minh City, Decision 19/2026 requires operators to make tenants follow them. If building management turns away short-stay guests, the building's rules apply to you, so take it up with your host and keep a backup option. Before you book, ask the host whether the building allows short stays.
+
+For the full position, including current fines and what changes in 2027, see [is Airbnb legal in Vietnam](/blog/vietnam-airbnb-apartment-rental-law-2027).
 
 ---
 
@@ -1041,6 +1061,8 @@ For an agency option, we recommend [Nest Living: apartments for rent in Hanoi, H
 
 This is where many expats get into trouble. Vietnam has weak tenant protection laws compared to most Western countries.
 
+The building's rules (noi quy) also bind you as a tenant. In Ho Chi Minh City, Decision 19/2026/QD-UBND requires operators to make tenants follow the building rules, so ask to see them before you sign.
+
 ### What a Good Lease Includes
 
 - Full names and passport numbers of both parties
@@ -1056,7 +1078,7 @@ This is where many expats get into trouble. Vietnam has weak tenant protection l
 
 ### Red Flags to Watch For
 
-- **No written contract** - always insist on one, even with a seemingly trustworthy landlord
+- **No written contract** - always insist on one, even with a seemingly trustworthy landlord. In Ho Chi Minh City, Decision 19/2026/QD-UBND allows written or electronic rental contracts and does not require them to be notarised.
 - **Utilities unspecified** - get electricity terms in writing (see below)
 - **No move-in condition documentation** - document everything with photos before signing
 - **Very short notice period** - you want at least 30 days from either side
@@ -1064,6 +1086,12 @@ This is where many expats get into trouble. Vietnam has weak tenant protection l
 ### Language
 
 Many leases are in Vietnamese only. Either have a trusted Vietnamese speaker review it, or request a bilingual version. The **Vietnamese text is legally binding** - in any dispute, the Vietnamese version takes precedence in Vietnamese courts.
+
+### After You Sign: Temporary Residence Declaration
+
+Once you move in, your temporary residence at the new address must be declared to the police. For foreigners, the landlord or accommodation provider makes the declaration, not you. An electronic declaration must be made immediately on your arrival. A paper declaration goes to the ward or commune police within 12 hours, or 24 hours in remote areas. Ask your landlord to confirm it has been done and keep a record, because you will need it for a TRC application.
+
+See the registration section of our [first week guide](/guides/first-week) for how it works.
 
 ---
 
@@ -1985,7 +2013,7 @@ Work permits are issued for up to **2 years** and are renewable. Renewal require
     excerpt: "The first week in Vietnam sets the tone for your whole experience. This step-by-step guide covers everything you need to do in order, so nothing slips through the cracks.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-11-24',
     readTime: '9 min read',
     category: 'Daily Life',
     ctaTitle: 'Just Arrived in Vietnam?',
@@ -2039,19 +2067,22 @@ Having mobile data immediately means Grab works, Google Maps works, and you can 
 
 ### Your Temporary Base
 
-Stay somewhere flexible for the first 2 weeks - Airbnb, a serviced apartment, or a reputable hotel. Use this time to explore different neighborhoods before committing to a long-term lease.
+Stay somewhere flexible for the first 2 weeks: a reputable hotel, a serviced apartment or an Airbnb. Use this time to explore different neighbourhoods before committing to a long-term lease.
+
+If you choose an Airbnb in an apartment building, know its legal status. Apartment short stays are restricted until 1 July 2027, except registered tourist apartments in Ho Chi Minh City. Our post on [apartment Airbnb rules](/blog/vietnam-airbnb-apartment-rental-law-2027) explains the detail. Wherever you stay, your host must declare your temporary residence to the police. See below.
 
 Check our [Renting in Vietnam guide](/guides/renting) for neighborhood breakdowns.
 
-### Police Registration (Important - Often Overlooked)
+### Police Registration (Temporary Residence Declaration)
 
-Foreign nationals staying in Vietnam are legally required to register with local police (tạm trú) within **30 days of arrival** if not staying in a hotel.
+Every foreigner staying in Vietnam must have their temporary residence (tạm trú) declared to the police. The accommodation provider or host makes the declaration, not you.
 
-- **Hotels do this automatically** - the front desk handles your registration as part of check-in.
-- **Private apartments** - your landlord is supposed to register you. Many do. Some do not. Ask your landlord directly.
-- **If your landlord doesn't register you:** Visit the local ward police station (phường) with your passport, visa, and lease agreement. The registration form is simple.
+- **Electronic declaration:** must be made **immediately on your arrival**, under Circular 87/2026/TT-BCA of the Ministry of Public Security. This also covers stays booked through digital accommodation platforms.
+- **Paper declaration:** must be made to the ward or commune police **within 12 hours** of your arrival, or 24 hours in remote areas, under Article 33 of Law 47/2014/QH13 on the entry, exit, transit and residence of foreigners.
+- **Hotels** handle the declaration as part of check-in.
+- **Landlords and Airbnb hosts** have the same duty. If you are staying in a private apartment, ask your host to confirm it has been done.
 
-This is rarely enforced against short-term tourists but is important for long-term residents. It becomes particularly relevant when applying for work permits or TRCs.
+The declaration matters beyond your first week. It becomes particularly relevant when applying for work permits or TRCs.
 
 ---
 
@@ -2140,7 +2171,7 @@ Vietnam's traffic is intense, particularly in HCMC. This is the number one cultu
 - [ ] Download Zalo and add any local contacts
 - [ ] Download Google Maps offline for your city
 - [ ] Set up a VPN
-- [ ] Confirm police registration (hotel does this; apartment - check with landlord)
+- [ ] Confirm your police registration has been made (your hotel, apartment landlord or Airbnb host does this)
 - [ ] Set up Wise or confirm your international card works at Vietnamese ATMs
 - [ ] Identify and register with a GP clinic
 - [ ] Confirm health insurance is active
@@ -2165,11 +2196,11 @@ The first week is about practical setup. Week 2-4 shifts to:
     slug: 'buying-property',
     title: 'Buying Property in Vietnam as a Foreigner 2026: The Complete Guide',
     metaTitle: 'Buying Property in Vietnam 2026',
-    subtitle: "50-year leaseholds, 30% quotas, Pink Books, and what the 2024 law changes actually mean for foreign buyers",
+    subtitle: "50-year leaseholds, 30% quotas, Pink Books, and what the 2024 laws and the 2027 amendment mean for foreign buyers",
     excerpt: "Foreigners can legally buy property in Vietnam - but the rules are specific and the pitfalls are real. This guide covers the legal framework, the buying process, costs, and what has changed under the 2024 laws.",
     author: 'Vietnam Launchpad',
     date: '2026-01-15',
-    lastUpdated: '2026-04-01',
+    lastUpdated: '2026-11-24',
     readTime: '12 min read',
     category: 'Housing & Real Estate',
     ctaTitle: 'Buying Property in Vietnam?',
@@ -2193,16 +2224,20 @@ Vietnam's constitution defines all land as collectively owned by the Vietnamese 
 
 Foreigners can legally hold residential properties (apartments and houses) on a **50-year leasehold**, renewable for a further 50 years.
 
+**Changes from 1 July 2027:** The amended Housing Law, passed by the National Assembly on 21 November 2026, takes effect on 1 July 2027. Press reports of the passed law say that from that date foreigners will be limited to apartments, and that a foreign owner's certificate will not be attached to land use rights. The gazetted text has not yet been published, so neither point is confirmed, and the transition rules for foreigners who already own houses are not yet known. The current rules in this guide apply until 1 July 2027.
+
 ---
 
 ## The Current Legal Framework
 
-Two laws govern foreign property ownership, both updated and effective January 1, 2025:
+Two laws govern foreign property ownership. Both took effect on 1 August 2024, after Law 43/2024/QH15 brought forward the start date of the Housing Law 2023, the Land Law 2024 and the Real Estate Business Law 2023:
 
 - **Housing Law 2023** (Law No. 27/2023/QH15): Governs residential housing rights for foreign individuals and organisations
 - **Land Law 2024** (Law No. 31/2024/QH15): Governs land use rights, lease terms, and overseas Vietnamese rights
 
 These laws clarified and in some cases expanded foreign ownership rights compared to the previous framework.
+
+**The amended Housing Law:** On 21 November 2026 the National Assembly passed an amended Housing Law. It takes effect on 1 July 2027. Until then, the Housing Law 2023 applies as described in this guide. The gazetted text of the amendment has not yet been published.
 
 ---
 
@@ -2211,7 +2246,7 @@ These laws clarified and in some cases expanded foreign ownership rights compare
 ### What You CAN Purchase
 
 - Apartments (condominiums) in **approved commercial residential developments**
-- Individual houses (landed property) in **approved housing development projects**
+- Individual houses (landed property) in **approved housing development projects**. From 1 July 2027, the amended Housing Law is reported to limit foreigners to apartments. This is not yet confirmed in the gazetted text.
 
 ### What You CANNOT Purchase
 
@@ -2226,7 +2261,7 @@ These laws clarified and in some cases expanded foreign ownership rights compare
 
 **The 30% Rule:** Foreign nationals collectively cannot own more than 30% of the total units in any single apartment building (or 30% of any single section within a multi-block building).
 
-**For landed property:** Foreign nationals cannot collectively own more than 250 houses per administrative unit (ward/commune with a population of 10,000 or more).
+**For landed property:** Foreign nationals cannot collectively own more than 250 houses per administrative unit (ward/commune with a population of 10,000 or more). This is the current rule. The amended Housing Law is reported to limit foreigners to apartments from 1 July 2027, which is not yet confirmed in the gazetted text, and transition rules for existing owners are not yet known.
 
 **Practical implication:** In popular expat developments, the foreign quota fills quickly. Always check the current foreign quota availability before signing any purchase agreement.
 
@@ -2344,13 +2379,21 @@ For resale (no VAT), costs are significantly lower.
 
 ## Short-Term Rental Considerations
 
-If you are buying as an investment property to short-term rent (Airbnb etc.):
+If you are buying an apartment to rent out on short stays (Airbnb and similar):
 
-**HCMC regulation change (February 2025):** HCMC has restricted short-term rentals in residential developments to mixed-use tourism zones only. Standard residential condos in HCMC cannot legally be used for short-term rental accommodation.
+**Until 1 July 2027:** The Housing Law 2023 bans using an apartment for non-residential purposes. Under Decree 339/2026/ND-CP, in force since 26 August 2026, the fine is VND 100 to 130 million for individuals and VND 200 to 260 million for organisations, and the owner is required to use the apartment for living again.
 
-This significantly affects investment yield calculations for condos in HCMC. Verify the zoning status of any investment property before purchasing.
+**Ho Chi Minh City:** Decision 19/2026/QD-UBND, issued on 11 April 2026 and in force since 25 April 2026, replaced Decision 26/2025. It allows tourist apartment rental if the apartment is registered as a tourist accommodation establishment and the operator meets its tax, residence declaration and fire safety duties.
 
-Long-term rental (12+ month leases) is not restricted.
+**Nationally from 1 July 2027:** The amended Housing Law allows apartments to be rented for accommodation, subject to security and order conditions under the apartment management regulation. The detailed eligibility criteria are not yet set out in a published decree.
+
+Before you buy for short-stay income, check the building's management regulation and the approved design and function of the building, and ask building management whether short stays are allowed.
+
+**Renting for living:** Renting an apartment out for people to live in is allowed, for any term. Foreign owners must give written notice to the housing authority before leasing and pay tax on the rental income (Housing Law 2023, Article 21). Which authority now receives that notice is not yet confirmed, because the district level of government was abolished in the 2025 reform.
+
+**Tax on rental income:** The VAT and personal income tax threshold for household and individual business revenue is VND 1 billion a year. Up to that amount, no VAT or personal income tax is due. Above it, e-invoices are required. Check how this applies to your rental income before you buy, or talk to our [tax filing](/services/tax-filing) team.
+
+For the full picture, see our post on [Vietnam's 2027 apartment rental law](/blog/vietnam-airbnb-apartment-rental-law-2027).
 
 ---
 
@@ -3433,7 +3476,7 @@ Yes. A joint venture (Vietnamese + foreign investor) is also possible. Some sect
     excerpt: "TRC stands for Temporary Residence Card (The Tam Tru in Vietnamese) - Vietnam's long-stay residency document for foreigners. This guide covers all three routes to a TRC, the full application process, what documents you need, and how long it takes.",
     author: 'Vietnam Launchpad',
     date: '2026-02-01',
-    lastUpdated: '2026-10-26',
+    lastUpdated: '2026-11-24',
     readTime: '14 min read',
     category: 'Visas & Residency',
     ctaTitle: 'Need Help with Your TRC Application?',
@@ -3543,7 +3586,7 @@ The exact document checklist varies slightly by route and by province, but the c
 | Document | Notes |
 |---|---|
 | Original passport | Must be valid for at least 6 months beyond TRC start date |
-| Temporary accommodation registration | Registered at local ward police (CT01 form - registered by your landlord or hotel) |
+| Temporary accommodation registration | Your temporary residence must be declared to the ward or commune police by your landlord, hotel or host |
 | 2 passport photos | White background, recent, specific size requirements (3x4 cm or 4x6 cm - confirm current spec) |
 | Application form (NA5 or NA6) | Provided by immigration; complete in Vietnamese |
 | Proof of legal entry | Visa or entry stamp in passport |
@@ -3643,7 +3686,7 @@ Renew your TRC before it expires - do not let it lapse. Overstaying a TRC is tre
 
 These are different:
 
-**Temporary Residence Registration (Tam Tru / CT01 form):** A local registration that your landlord files at the ward police station declaring you are living at their property. This is an address-level registration, not a visa or stay permission. You need this for daily practicalities (bank account, some government services) and it is a prerequisite for TRC application.
+**Temporary Residence Registration (Tam Tru):** A declaration to the ward or commune police that you are staying at a particular address. For foreigners, the accommodation provider makes it, meaning your landlord, hotel or host, not you. An electronic declaration must be made immediately on your arrival, and a paper declaration within 12 hours, or 24 hours in remote areas. This is an address-level registration, not a visa or stay permission. You need this for daily practicalities (bank account, some government services) and it is a prerequisite for TRC application.
 
 **TRC:** The actual residency card that authorizes your stay in Vietnam.
 
@@ -4706,7 +4749,7 @@ There is no waiting period under Vietnamese law once the divorce decision is fin
     excerpt: "Vietnam property title is recorded in a certificate called the Pink Book (Sổ Hồng). This guide explains what it is, the difference from the old Red Book, the full registration process, required documents, costs, and what foreigners need to do differently.",
     author: 'Vietnam Launchpad',
     date: '2026-04-11',
-    lastUpdated: '2026-04-11',
+    lastUpdated: '2026-11-24',
     readTime: '10 min read',
     category: 'Housing & Real Estate',
     ctaTitle: 'Need Help Registering Property in Vietnam?',
@@ -4801,6 +4844,8 @@ Foreigners purchasing property in Vietnam go through the same basic process but 
 - The Pink Book will show the 50-year expiry date
 - Renewal requires reapplication at least 3 months before expiry
 - Some restricted zones are not available to foreign buyers - the DONRE will flag this during review
+
+**Changes from 1 July 2027:** The amended Housing Law, passed on 21 November 2026, takes effect on 1 July 2027. Press reports of the passed law say a foreign owner's certificate will not be attached to land use rights. The ownership term is 50 years from the date the certificate is issued, with one extension of up to 50 years. The gazetted text has not yet been published, so check the final wording before relying on this. Our post on the [amended Housing Law](/blog/vietnam-airbnb-apartment-rental-law-2027) covers what is confirmed so far.
 
 **One critical note:** The Pink Book application for a foreign buyer must clearly identify the buyer as a foreign national and the land use term as 50-year fixed. Applications that attempt to obscure foreign ownership are illegal and result in the Pink Book being invalid.
 

@@ -16,6 +16,309 @@ export interface BlogPost {
 }
 
 export const blogPosts: Record<string, BlogPost> = {
+  'vietnam-airbnb-apartment-rental-law-2027': {
+    slug: 'vietnam-airbnb-apartment-rental-law-2027',
+    title: "Is Airbnb Legal in Vietnam? The 2027 Apartment Rental Law: What's Official, and What Isn't",
+    metaTitle: 'Is Airbnb Legal in Vietnam? 2027 Law',
+    excerpt: "Vietnam's amended Housing Law lets apartments be rented for accommodation from 1 July 2027. What's legal now, what changes, and what is still to be set.",
+    author: 'Vietnam Launchpad Team',
+    date: '2026-11-24',
+    lastUpdated: '2026-11-24',
+    readTime: '19 min read',
+    category: 'Housing & Real Estate',
+    faqs: [
+      {
+        q: 'Is Airbnb legal in Vietnam right now?',
+        a: 'Not nationally for apartments. The amended Housing Law allows apartments to be rented for accommodation from 1 July 2027. Until then, the 2023 Housing Law applies and Decree 339/2026/ND-CP fines the use of apartments for non-residential purposes. Ho Chi Minh City already allows apartments registered as tourist accommodation establishments.',
+      },
+      {
+        q: 'When does the new apartment rental rule start?',
+        a: 'On 1 July 2027. The National Assembly passed the amended Housing Law on 21 November 2026, with 467 of 485 deputies voting in favour. The gazetted text and the implementing rules have not been published yet.',
+      },
+      {
+        q: 'What is the fine for renting an apartment as an Airbnb today?',
+        a: 'Under Decree 339/2026/ND-CP, using an apartment for non-residential purposes carries a fine of VND 100 to 130 million for individuals and VND 200 to 260 million for organisations. The owner is also required to use the apartment for living again.',
+      },
+      {
+        q: 'Can I legally run an Airbnb in Ho Chi Minh City?',
+        a: "Only through the city's tourist apartment route. Under Decision 19/2026/QD-UBND, the apartment must be registered as a tourist accommodation establishment, and the operator must meet its tax, residence declaration, fire safety and other legal duties. If you are a foreigner, how you can operate is not yet settled, so get advice before you start.",
+      },
+      {
+        q: 'Do I need to register my stay if I book an Airbnb in Vietnam?',
+        a: 'Your host must declare your temporary residence to the police, not you. An electronic declaration must be made immediately on your arrival. A paper declaration must be made within 12 hours, or 24 hours in remote areas. Ask your host to confirm it has been done.',
+      },
+      {
+        q: 'Can foreigners rent out their Vietnam apartment on Airbnb?',
+        a: 'This is not settled. Today, a foreign owner can lease an apartment for living after giving written notice to the housing authority, and must pay tax on the rental income. Whether foreign owners get the new right to rent for accommodation from 1 July 2027, and how a foreigner can run short-stay rentals, is not yet confirmed in the published text.',
+      },
+      {
+        q: 'How much tax do Airbnb hosts pay in Vietnam?',
+        a: 'Household and individual businesses with revenue up to VND 1 billion a year pay no VAT or personal income tax, and e-invoices are required above that. We have not confirmed the rates for nightly apartment rentals, so we do not give figures. Check your own position before you start hosting.',
+      },
+      {
+        q: 'Can foreigners still buy houses in Vietnam after 2027?',
+        a: 'Apartments, yes: the cap of 30% of apartments per building and the 50-year term with one extension continue under the amended law. Houses are less certain. The amended Housing Law is reported to limit foreigners to apartments from 1 July 2027, but this is not yet confirmed in the gazetted text, and transition rules for existing owners are not known.',
+      },
+    ],
+    content: `
+On the morning of 21 November 2026, Vietnam's National Assembly passed the **amended Housing Law**. 467 of 485 deputies voted in favour. It takes effect on **1 July 2027**, and it allows apartments to be rented for accommodation, not only for people to live in.
+
+The most important point for guests, hosts and owners: **nothing changes yet**. Until 1 July 2027, the 2023 Housing Law and the fines in Decree 339/2026/ND-CP still apply. The detailed rules that will decide which buildings qualify and how guests are managed have not been published.
+
+Here is what is settled, what is not, and what it means if you are booking an Airbnb in Vietnam, renting long term, or own an apartment here.
+
+## Is Airbnb legal in Vietnam? The short answer
+
+Not yet, for apartments nationally. The amended Housing Law, passed on 21 November 2026, allows apartments to be rented for accommodation from 1 July 2027. Until then, the 2023 Housing Law applies and Decree 339 fines the use of apartments for non-residential purposes. Ho Chi Minh City already allows registered tourist apartments.
+
+### When does the new law take effect?
+
+On 1 July 2027. The National Assembly passed it on 21 November 2026, at the 2nd session of the 16th National Assembly.
+
+### What exactly changed?
+
+As reported, Article 3 now bans using apartments for non-residential purposes "except when rented out for living or accommodation", and Article 12 adds the owner's right to rent an apartment for accommodation. These article numbers come from press reports of the passed law. The final text has not yet been gazetted.
+
+### What is the fine today?
+
+Under Decree 339/2026/ND-CP, using an apartment for non-residential purposes carries a fine of VND 100 to 130 million for individuals and VND 200 to 260 million for organisations. The owner is also required to use the apartment for living again.
+
+### Do foreign guests need to be registered?
+
+Yes. The host declares a foreign guest's temporary residence to the police. An electronic declaration must be made immediately on arrival. A paper declaration must be made within 12 hours, or 24 hours in remote areas.
+
+## What's official and what isn't yet
+
+As of 24 November 2026, the gazetted text of the amended Housing Law has not been published. This post is based on the Government's report of the vote, the decrees and decisions already in force, and reputable press reports of the passed law. Each is listed in the Sources section below.
+
+| Item | Status | Source |
+|---|---|---|
+| Passed on 21 November 2026, 467 of 485 deputies in favour | Official | Government portal, chinhphu.vn |
+| Takes effect on 1 July 2027 | Official | Government portal, VnExpress, Tuoi Tre |
+| 13 chapters and 129 articles | Official | Government portal |
+| Apartments may be rented out for living or accommodation, reported as Article 3 | Official, article number as reported | VnExpress, Tuoi Tre |
+| Owners' right to rent for accommodation, reported as Article 12 | Official, article number as reported | VnExpress, Bao Phap Luat |
+| Accommodation rental subject to security and order conditions under the apartment management regulation | Official | VnExpress, 1thegioi, Bao Phap Luat |
+| Foreign owners: up to 30% of apartments per building, 50 years plus one extension | Official | Tuoi Tre News, Bao Phap Luat |
+| Current fines: VND 100 to 130 million for individuals, VND 200 to 260 million for organisations | In force since 26 August 2026 | Official Gazette, Decree 339/2026/ND-CP |
+| Ho Chi Minh City tourist apartments must register as tourist accommodation establishments | In force since 25 April 2026 | Ho Chi Minh City Official Gazette, Decision 19/2026/QD-UBND |
+| Paper declaration of foreign guests within 12 hours, or 24 hours in remote areas | In force | Law 47/2014/QH13, Article 33 |
+| Electronic declaration of foreign guests immediately on arrival | Issued, dated 9 June 2026 | Circular 87/2026/TT-BCA, via LuatVietnam |
+| No VAT or personal income tax on household and individual business revenue up to VND 1 billion a year | In force | Decree 141/2026/ND-CP, Government portal |
+| Law number and signing date | Awaiting gazetted text | Not yet published |
+| Final article numbers and wording | Awaiting gazetted text | Press reports only |
+| Rules on building eligibility, fire safety and guest management | Not yet issued | No implementing decree published |
+| Revised apartment management regulation | Not yet issued | No new circular published |
+| Whether foreign owners get the right to rent for accommodation | Not yet confirmed in the published text | Press reports do not settle it |
+| Which body foreign owners notify before leasing | Not yet confirmed | Draft text named the commune People's Committee |
+| Foreigners limited to apartments from 1 July 2027 | Reported, pending gazetted text | Bao Phap Luat |
+| Tax rates for nightly apartment rentals | Not yet confirmed by us | No figures given |
+| A Hanoi rule on short stays in apartments | We have not found a 2026 Hanoi rule | None found |
+| Whether Decree 339 will be amended to match the new law | Not yet issued | No amending decree published |
+
+## What the amended Housing Law changes
+
+### Before: a ban on non-residential use
+
+Under the 2023 Housing Law, apartments may not be used for non-residential purposes. Renting an apartment out for people to live in is allowed. Renting it out for accommodation, the kind of stay people book through Airbnb, is not listed as a permitted use. That is the gap the amendment closes.
+
+### After: renting for living or accommodation
+
+As reported, the amended law keeps the ban on non-residential use but adds an exception for apartments rented out for living or accommodation (cho thue de o hoac luu tru). It also adds renting for accommodation to the rights of apartment owners, alongside living in the apartment and renting it out for living.
+
+Earlier drafts used the words "short-term". That wording was removed from the final version, so the law permits renting for living or accommodation without a short-term limit.
+
+### What "accommodation" means
+
+The Vietnamese term is luu tru. Tuoi Tre reports that the Residence Law 2020 defines this kind of stay as one of under 30 days.
+
+### Conditions still to come
+
+The new right comes with conditions. Owners must meet security and order conditions under the regulation on the management and use of apartment buildings. The implementing decrees on which buildings qualify, fire safety and guest management have not been issued, and the market has to wait for them.
+
+Industry voices have made suggestions. Le Hoang Chau, chair of the Ho Chi Minh City Real Estate Association (HoREA), has proposed higher management fees, residence registration, standard building rules, fire insurance and fire extinguishers for apartments used this way. These are proposals, not rules.
+
+## Until 1 July 2027: what applies now
+
+The new right does not apply yet. Until 1 July 2027, the 2023 Housing Law stays in force, and so do the fines.
+
+Decree 339/2026/ND-CP on administrative penalties in construction and housing was issued and took effect on 26 August 2026. It replaced Decree 16/2022/ND-CP. Article 62(3)(d) fines "using an apartment for non-residential purposes, except renting it out for living under housing law":
+
+- **Individuals:** VND 100 to 130 million. Household businesses are fined at the individual rate.
+- **Organisations:** VND 200 to 260 million, double the individual amount.
+- **Remedy:** the owner is required to use the apartment for living again.
+
+In the view of Ho Chi Minh City lawyer Nguyen Hong Thao, as reported by Dan Tri, renting an apartment by the night is not automatically a breach. Authorities look at the actual use, the operating model, the length of stay, guest turnover and the services offered. This is a lawyer's opinion, not a ruling or official guidance.
+
+It is not yet confirmed whether Decree 339 will be amended to match the new law.
+
+## Ho Chi Minh City vs Hanoi
+
+### Ho Chi Minh City
+
+Ho Chi Minh City already has its own rule. Decision 19/2026/QD-UBND, issued on 11 April 2026 and in force since 25 April 2026, sets the city's regulation on managing and using apartment buildings. It replaced Decision 26/2025/QD-UBND, which had restricted short stays by zone, and Binh Duong's Decision 16/2021.
+
+Under Decision 19:
+
+- Renting out a tourist apartment (can ho du lich) requires registering it as a tourist accommodation establishment and following tourism law. The city treats Airbnb-style stays as tourist accommodation, not ordinary housing rental.
+- Operators must comply with housing, real estate business, tax, residence, security, e-commerce, tourism, sanitation and fire safety law.
+- Operators must declare their tenants' temporary residence or stay, and make tenants follow the building rules.
+- Apartments must be used in line with their type, function and approved design.
+- Rental contracts can be written or electronic, and do not need to be notarised.
+
+For more on the city, see our guide to [living in Ho Chi Minh City](/guides/ho-chi-minh-city).
+
+### Hanoi
+
+We have not found a 2026 Hanoi rule on short stays in apartments. VnExpress reports that Hanoi and Ho Chi Minh City had both moved to tighten short-term rental in apartments under the 2023 law. The national rules apply in Hanoi: the 2023 Housing Law and Decree 339 until 1 July 2027, then the amended law. Our guide to [living in Hanoi](/guides/hanoi) covers the city in more detail.
+
+### Other cities
+
+We are not stating a local rule for Da Nang or any other city, because we have not found one in official sources. The national rules apply.
+
+## What hosts will need: registration, guests, fire safety
+
+The full national requirements will come in the implementing decrees and a revised apartment management regulation. Neither has been issued. Here is what is clear now.
+
+- **Building rules:** owners must meet security and order conditions under the apartment management regulation. Check your building's rules and its approved design and function before you list.
+- **Guest declaration:** hosts must declare foreign guests' temporary residence. In Ho Chi Minh City, operators can do this in person or online through the National Public Service Portal, the Ministry of Public Security portal, the immigration website for declaring foreigners, or VNeID.
+- **Fire safety and tax:** fire safety law and tax law already apply to rentals, and still will. Fire safety rules specific to short stays have not been published.
+- **Registration:** in Ho Chi Minh City, tourist apartments must be registered as tourist accommodation establishments. National registration and licensing rules have not been published.
+- **Household business:** under a 2021 decree, only Vietnamese citizens could register a household business. We have not confirmed whether that rule still applies under the current decree.
+
+Nguyen Chi Thanh, vice chair of the Vietnam Association of Realtors (VARS), has called for unified guidance on which apartments qualify, guest registration and declaration, fire safety, insurance and tax. That is an industry call, not a rule.
+
+If you are weighing a structure for a hosting business, our guide to [business registration types](/blog/vietnam-business-registration-types) explains the options, and our [accounting and bookkeeping](/services/accounting-bookkeeping) service can help once you are operating.
+
+## Tax on apartment rental income
+
+Rental income is taxable, and hosts must register for tax and declare it. Decree 141/2026/ND-CP, which amends Decree 68/2026/ND-CP, raised the revenue threshold for household and individual businesses from VND 500 million to VND 1 billion a year. Up to that threshold, no VAT or personal income tax is due. Above it, e-invoices are required.
+
+We do not give tax rates for nightly apartment rentals here, because we have not yet confirmed them against the official text. For your own position, our [rental income tax filing](/services/tax-filing) service can help, and our post on the [2026 personal income tax changes](/blog/vietnam-pit-law-2026-changes) covers the wider rules.
+
+## Foreigners as guests or renters
+
+If you are staying somewhere in Vietnam, declaring your stay is your host's job, not yours.
+
+- **Electronic declaration:** Circular 87/2026/TT-BCA of the Ministry of Public Security requires it to be made immediately on your arrival. It covers stays booked through digital accommodation platforms.
+- **Paper declaration:** Article 33 of Law 47/2014/QH13 requires it to be made to the ward or commune police within 12 hours of your arrival, or 24 hours in remote areas.
+
+The declaration is made by the owner, legal representative or an authorised person for the accommodation. Hotels, landlords and Airbnb hosts all have this duty. If you are in a private apartment, ask your host to confirm the declaration has been made.
+
+Building rules apply to tenants and guests too. In Ho Chi Minh City, operators must make tenants follow them. If building management turns away short-stay guests, take it up with your host, and have a backup plan for your first nights.
+
+Our guides to [your first week in Vietnam](/guides/first-week) and [renting an apartment in Vietnam](/guides/renting) cover registration and leases in more detail. If you are moving for longer, see [living in Vietnam](/guides/living-in-vietnam), the [cost of living in Vietnam](/guides/cost-of-living) and our [relocation assistance](/services/relocation-assistance) service. A long stay also needs the right visa: see our [temporary residence card](/guides/trc-vietnam) guide and [Vietnam visa changes 2027](/blog/vietnam-visa-changes-2027).
+
+## Foreigners as owners or hosts
+
+As reported, the amended law keeps the main rules for foreign buyers:
+
+- Foreign individuals permitted to enter Vietnam can own apartments by buying or lease-purchasing commercial housing from developers, or by gift or inheritance, in projects outside defence and security areas.
+- Foreigners can own up to 30% of the apartments in each building. In projects with several buildings, the cap applies to each building.
+- Provinces publish lists of eligible projects after consulting the Ministry of National Defence and the Ministry of Public Security.
+- Ownership runs for an agreed term of up to 50 years from the date of the certificate, with one extension of up to 50 years, subject to the building's remaining life.
+- Foreigners married to Vietnamese citizens and living in Vietnam can own jointly, with the same rights as citizens.
+
+Reported by Bao Phap Luat, pending the gazetted text:
+
+- **Certificate:** a foreign owner's certificate is not attached to land use rights.
+- **Apartments only:** foreigners will be limited to apartments from 1 July 2027. Transition rules for foreigners who already own houses are not known.
+
+Not yet settled:
+
+- **Leasing notice:** under Article 21 of the Housing Law 2023, a foreign individual owner can lease an apartment for purposes that are not prohibited, after giving written notice to the district-level housing management agency, and must pay tax on the rental income. The district level was abolished in the 2025 reform, so which body now receives that notice is not confirmed. A draft of the amended law named the commune-level People's Committee, but that was draft text.
+- **Accommodation right:** it is not yet confirmed whether foreign owners get the new right to rent for accommodation.
+- **Running short stays:** it is not yet confirmed how a foreigner can legally operate short-stay rentals.
+
+For the buying side, see [can foreigners buy property in Vietnam](/guides/buying-property) and our guide to [registering property ownership](/guides/property-registration). We offer [property registration help](/services/property-registration), and if you are looking at a business route, our team can talk you through [setting up a company](/services/company-setup).
+
+## What we'll update
+
+> **We will update this post when:**
+>
+> - the law number and the gazetted text are published
+> - implementing decrees on building eligibility, fire safety and guest management are issued
+> - the revised apartment management regulation is issued
+> - Decree 339 is amended, or confirmed unchanged
+> - we confirm the date Circular 87/2026 took effect
+> - Hanoi issues a rule on short stays in apartments
+> - we confirm tax rates for nightly apartment rentals
+> - the amended law takes effect on 1 July 2027
+>
+> Last updated: 24 November 2026.
+
+## Frequently asked questions
+
+### Is Airbnb legal in Vietnam right now?
+
+Not nationally for apartments. The amended Housing Law allows apartments to be rented for accommodation from 1 July 2027. Until then, the 2023 Housing Law applies and Decree 339/2026/ND-CP fines the use of apartments for non-residential purposes. Ho Chi Minh City already allows apartments registered as tourist accommodation establishments.
+
+### When does the new apartment rental rule start?
+
+On 1 July 2027. The National Assembly passed the amended Housing Law on 21 November 2026, with 467 of 485 deputies voting in favour. The gazetted text and the implementing rules have not been published yet.
+
+### What is the fine for renting an apartment as an Airbnb today?
+
+Under Decree 339/2026/ND-CP, using an apartment for non-residential purposes carries a fine of VND 100 to 130 million for individuals and VND 200 to 260 million for organisations. The owner is also required to use the apartment for living again.
+
+### Can I legally run an Airbnb in Ho Chi Minh City?
+
+Only through the city's tourist apartment route. Under Decision 19/2026/QD-UBND, the apartment must be registered as a tourist accommodation establishment, and the operator must meet its tax, residence declaration, fire safety and other legal duties. If you are a foreigner, how you can operate is not yet settled, so get advice before you start.
+
+### Do I need to register my stay if I book an Airbnb in Vietnam?
+
+Your host must declare your temporary residence to the police, not you. An electronic declaration must be made immediately on your arrival. A paper declaration must be made within 12 hours, or 24 hours in remote areas. Ask your host to confirm it has been done.
+
+### Can foreigners rent out their Vietnam apartment on Airbnb?
+
+This is not settled. Today, a foreign owner can lease an apartment for living after giving written notice to the housing authority, and must pay tax on the rental income. Whether foreign owners get the new right to rent for accommodation from 1 July 2027, and how a foreigner can run short-stay rentals, is not yet confirmed in the published text.
+
+### How much tax do Airbnb hosts pay in Vietnam?
+
+Household and individual businesses with revenue up to VND 1 billion a year pay no VAT or personal income tax, and e-invoices are required above that. We have not confirmed the rates for nightly apartment rentals, so we do not give figures. Check your own position before you start hosting.
+
+### Can foreigners still buy houses in Vietnam after 2027?
+
+Apartments, yes: the cap of 30% of apartments per building and the 50-year term with one extension continue under the amended law. Houses are less certain. The amended Housing Law is reported to limit foreigners to apartments from 1 July 2027, but this is not yet confirmed in the gazetted text, and transition rules for existing owners are not known.
+
+## Our recommendation
+
+Treat 1 July 2027 as the start of a process, not the day every apartment can be listed. Until then, book registered accommodation, make sure your host declares your stay, and check your building's rules before you buy or list. [Talk to our team](/contact) if you want help with your situation.
+
+## Sources
+
+Primary sources:
+
+- Government portal, chinhphu.vn (23 November 2026): [Thong qua Luat Nha o sua doi, report on the passage of the amended Housing Law (Vietnamese)](https://xaydungchinhsach.chinhphu.vn/thong-qua-luat-nha-o-sua-doi-119261121150950284.htm)
+- Official Gazette (issued 26 August 2026): [Decree 339/2026/ND-CP on administrative penalties in construction and housing (Vietnamese)](https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-339-2026-nd-cp-470389.htm), also on the [Government portal](https://xaydungchinhsach.chinhphu.vn/nghi-dinh-so-339-2026-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-xay-dung-quan-ly-cong-trinh-ha-tang-ky-thuat-quan-ly-phat-trien-nha-kinh-doanh-bat-dong-san-119260905094343023.htm)
+- Ho Chi Minh City Official Gazette (11 April 2026): [Decision 19/2026/QD-UBND, regulation on managing and using apartment buildings (Vietnamese)](https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/19-2026-qd-ubnd/ngay/11-04-2026/tai-ve/49189), also on [Thu Vien Phap Luat](https://thuvienphapluat.vn/van-ban/Bat-dong-san/Quyet-dinh-19-2026-QD-UBND-Quy-dinh-quan-ly-su-dung-nha-chung-cu-Ho-Chi-Minh-701803.aspx)
+- Law 47/2014/QH13, Article 33, consolidated text 62/VBHN-VPQH (23 March 2026): [consolidated law (PDF, Vietnamese)](https://www.vplsdms.vn/upload/post/D33_L62_2026_QH15.pdf), with a summary on [LawNet (English)](https://lawnet.vn/en/laws/what-are-the-new-regulations-on-declaration-of-temporary-residence-of-foreigners-in-vietnam-applied-108267.html)
+- Government portal, chinhphu.vn (8 May 2026): [Full text of Decree 141/2026/ND-CP raising the revenue threshold to VND 1 billion (Vietnamese)](https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-so-141-2026-nd-cp-nang-nguong-doanh-thu-khong-phai-chiu-thue-len-1-ty-dong-119260504154326455.htm)
+- Housing Law 27/2023/QH15, Article 21: [LuatVietnam (English)](https://english.luatvietnam.vn/dat-dai/housing-law-no-27-2023-qh15-284800-d1.html) and [Hethongphapluat (English)](https://hethongphapluat.com/law-no-27-2023-qh15-dated-december-27-2023-on-housing/dieu-21)
+- Decree 339/2026/ND-CP, Articles 2, 5 and 62: [Hethongphapluat, Article 62 (Vietnamese)](https://hethongphapluat.com/nghi-dinh-339-2026-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-xay-dung-quan-ly-cong-trinh-ha-tang-ky-thuat-quan-ly-phat-trien-nha-kinh-doanh-bat-dong-san/dieu-62) and [Thu Vien Phap Luat (Vietnamese)](https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Nghi-dinh-339-2026-ND-CP-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-xay-dung-723438.aspx)
+- LuatVietnam (24 June 2026): [Circular 87/2026/TT-BCA of the Ministry of Public Security, dated 9 June 2026, on methods of declaration and receipt of information (English)](https://english.luatvietnam.vn/circular-no-87-2026-tt-bca-dated-june-09-2026-of-the-ministry-of-public-security-providing-for-the-methods-of-declaration-and-receipt-of-information-437955-doc1.html)
+
+Press reports:
+
+- VnExpress (23 November 2026): [Can ho chung cu duoc cho thue luu tru (Vietnamese)](https://vnexpress.net/can-ho-chung-cu-duoc-cho-thue-luu-tru-5147754.html)
+- Bao Phap Luat Viet Nam (November 2026): [Amended Housing Law clarifies apartment ownership and limits for foreigners (Vietnamese)](https://dnbeta.baophapluat.vn/luat-nha-o-sua-doi-phan-dinh-ro-quyen-so-huu-chung-cu-va-gioi-han-mua-nha-cua-nguoi-nuoc-ngoai.html)
+- Tuoi Tre News (21 November 2026): [Foreigners allowed to own up to 30% of apartments in each condominium building (English)](https://news.tuoitre.vn/foreigners-allowed-to-own-up-to-30-of-apartments-in-each-condominium-building-in-vietnam-103261121152438446.htm)
+- Tuoi Tre News (23 November 2026): [report on the passed law and apartment rentals (English)](https://news.tuoitre.vn/vietnam-legalizes-short-term-apartment-rentals-103261123143439286.htm)
+- Tuoi Tre (22 November 2026): [Luat Nha o sua doi chinh thuc cho phep su dung can ho chung cu de cho thue luu tru (Vietnamese)](https://tuoitre.vn/luat-nha-o-sua-doi-chinh-thuc-cho-phep-su-dung-can-ho-chung-cu-de-cho-thue-luu-tru-100261122102130507.htm)
+- 1thegioi (23 November 2026): [Notable changes in the new Housing Law (Vietnamese)](https://1thegioi.vn/nhung-thay-doi-dang-chu-y-co-tac-dong-lon-nhat-tai-luat-nha-o-moi-261971.html)
+- Tuoi Tre (17 May 2026): [Luu tru ngan ngay trong chung cu TP.HCM: quy dinh moi (Vietnamese)](https://tuoitre.vn/dulichtphcm/luu-tru-ngan-ngay-trong-chung-cu-tp-hcm-quy-dinh-moi-va-nhung-dieu-can-biet-107113553.htm)
+
+Opinion, draft and background:
+
+- Legal opinion. Dan Tri (12 September 2026): [Cho thue can ho theo ngay: truong hop nao bi phat 130 trieu dong (Vietnamese)](https://dantri.com.vn/bat-dong-san/cho-thue-can-ho-theo-ngay-truong-hop-nao-bi-phat-130-trieu-dong-20260912105550190.htm)
+- Draft text, not the passed law. Thu Vien Phap Luat (draft dated 9 September 2026): [Luat Nha o, draft (Vietnamese)](https://thuvienphapluat.vn/van-ban/Bat-dong-san/Luat-Nha-o-725984.aspx)
+- 2021, under a since-replaced decree. Thu Vien Phap Luat (11 November 2021): [Can foreigners set up a household business in Vietnam? (Vietnamese)](https://thuvienphapluat.vn/phap-luat-doanh-nghiep/bai-viet/nguoi-nuoc-ngoai-co-duoc-thanh-lap-ho-kinh-doanh-tai-viet-nam-khong-1396.html)
+
+---
+
+*Last updated: 24 November 2026. The gazetted text of the amended Housing Law and its implementing rules have not been published, and the rules can change. This post is general information, not legal advice. Confirm the current position with official sources, your building management and the local authorities before you book, buy or list an apartment.*
+    `,
+  },
   'vietnam-visa-changes-2027': {
     slug: 'vietnam-visa-changes-2027',
     title: "Vietnam Visa Changes 2027: What's Official, and What Isn't",
@@ -1124,6 +1427,7 @@ Every situation is slightly different. If you are unsure whether your planned wo
     excerpt: 'Vietnam has six main business structures available to foreign investors - each with different ownership rules, liability, capital requirements, and tax treatment. Here is a plain-English breakdown of all of them.',
     author: 'Vietnam Launchpad Team',
     date: '2026-04-12',
+    lastUpdated: '2026-11-24',
     readTime: '10 min read',
     category: 'Business & Company Setup',
     content: `
@@ -1223,7 +1527,7 @@ Under the Investment Law and Vietnam\'s WTO commitments, some industries restric
 - General trading (with some product-specific conditions)
 
 **Conditional or restricted sectors:**
-- Real estate: foreigners can own apartments and villas on 50-year renewable terms but cannot own land; development projects require Vietnamese joint venture partners in some cases
+- Real estate: foreigners can own apartments and villas on 50-year renewable terms but cannot own land; development projects require Vietnamese joint venture partners in some cases. From 1 July 2027, the amended Housing Law is reported to limit foreign ownership to apartments, removing villas and other landed houses, but the gazetted text has not yet been published. If you are thinking of hosting short-term guests, note that under a 2021 decree only Vietnamese citizens could register a household business. Whether that rule still applies under the current decree is not yet confirmed in the published text we have checked. See our post on the [apartment rental law 2027](/blog/vietnam-airbnb-apartment-rental-law-2027).
 - Education: up to 100% foreign ownership is permitted but requires licensing
 - Healthcare: licensed, subject to conditions
 - Media and publishing: joint ventures with Vietnamese partners required

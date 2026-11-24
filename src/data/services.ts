@@ -773,7 +773,7 @@ export const servicesData: Record<string, ServiceData> = {
       },
       {
         question: 'What is the police registration (temporary residence registration)?',
-        answer: 'Foreign nationals living in Vietnam are required to register with the local police ward within 24-48 hours of arrival at a new address. Your landlord should handle this, but many don\'t. We make sure it is done correctly - it\'s essential for TRC applications and bank accounts.'
+        answer: 'It is the declaration of your temporary residence to the local police. For foreign nationals, the landlord or accommodation provider must make it at each new address: immediately on arrival if it is made electronically, or within 12 hours if it is made on paper, 24 hours in remote areas. Your landlord should handle this, but many don\'t. We make sure it is done correctly. It\'s essential for TRC applications and bank accounts.'
       },
       {
         question: 'Can you help with school search for my children?',
