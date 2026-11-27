@@ -1,0 +1,82 @@
+---
+/**
+ * The page shell for every route: <head> (metadata, fonts, structured data,
+ * analytics), the skip link, header, footer, mobile call bar and click tracking.
+ * Each page passes its own metadata and renders its <main> into the slot.
+ */
+import AnalyticsEvents from '@/components/AnalyticsEvents';
+import Footer from '@/components/Footer';
+import MobileStickyBar from '@/components/MobileStickyBar';
+import Navigation, { LOGO_SIZES, LOGO_SRCSET } from '@/components/Navigation';
+import Head from '@/components/astro/Head.astro';
+import { routing } from '@/i18n/config';
+import { metadataTags, resolveMetadata, type Metadata } from '@/lib/metadata';
+import { jsonLd, layoutMetadata, siteSchemas } from '@/lib/siteLayout';
+
+import dmSansUrl from '@/assets/fonts/dm-sans.woff2?url';
+import sourceSerifUrl from '@/assets/fonts/source-serif-4.woff2?url';
+import '@/styles/globals.css';
+
+interface Props {
+  /** The page's own metadata, merged over the site defaults. */
+  metadata?: Metadata;
+}
+
+const { metadata = {} } = Astro.props;
+const locale = routing.defaultLocale;
+const tags = metadataTags(resolveMetadata(layoutMetadata(locale), metadata));
+// The active nav link is part of the static HTML, so the header gets the path at build time.
+const pathname = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '') || '/';
+// Google Analytics 4 measurement ID, read at build time. Leave unset to load no analytics.
+const gaId = import.meta.env.PUBLIC_GA_ID;
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href={dmSansUrl} as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" href={sourceSerifUrl} as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" as="image" imagesrcset={LOGO_SRCSET} imagesizes={LOGO_SIZES} />
+    <Head tags={tags} />
+    {siteSchemas.map(({ id, data }) => <script is:inline id={id} type="application/ld+json" set:html={jsonLd(data)} />)}
+    {
+      gaId && (
+        <>
+          <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+          <script is:inline define:vars={{ gaId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', gaId);
+          </script>
+        </>
+      )
+    }
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="fixed left-2 top-2 z-[100] inline-flex min-h-[44px] -translate-y-[300%] items-center rounded-input bg-navy px-5 font-body font-bold text-white focus:translate-y-0"
+    >
+      Skip to main content
+    </a>
+    <Navigation client:load pathname={pathname} />
+    <slot />
+    <Footer />
+    <MobileStickyBar client:load />
+    <AnalyticsEvents client:load />
+    <script>
+      // The footer's "Back to top" button. The footer is static HTML, so this is its only script.
+      document.addEventListener('click', (event) => {
+        if (event.target instanceof Element && event.target.closest('[data-back-to-top]')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SalaryCalculatorPage from '@/views/tools/salary-calculator/page';
+import { metadata } from '@/views/tools/salary-calculator/meta';
+// Interactive page: the whole view hydrates in the browser.
+---
+
+<BaseLayout metadata={metadata}>
+  <SalaryCalculatorPage client:load />
+</BaseLayout>

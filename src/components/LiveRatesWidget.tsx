@@ -1,4 +1,4 @@
-import { getExchangeRates, vndPerCurrency, formatVnd } from '@/lib/open-data';
+import { vndPerCurrency, formatVnd, type ExchangeRates } from '@/lib/open-data';
 
 const CURRENCIES = [
   { code: 'USD', name: 'US Dollar', symbol: '$' },
@@ -13,11 +13,12 @@ const CURRENCIES = [
 ];
 
 interface LiveRatesWidgetProps {
+  /** From getExchangeRates(), loaded by the page at build time. null shows the unavailable state. */
+  data: ExchangeRates | null;
   compact?: boolean;
 }
 
-export default async function LiveRatesWidget({ compact = false }: LiveRatesWidgetProps) {
-  const data = await getExchangeRates();
+export default function LiveRatesWidget({ data, compact = false }: LiveRatesWidgetProps) {
 
   const updatedAt = data?.time_last_update_utc
     ? new Date(data.time_last_update_utc).toLocaleDateString('en-US', {

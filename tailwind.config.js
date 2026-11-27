@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{astro,js,ts,jsx,tsx,mdx}',
+    './src/layouts/**/*.{astro,js,ts,jsx,tsx}',
+    './src/components/**/*.{astro,js,ts,jsx,tsx,mdx}',
+    './src/views/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     // Design D breakpoints: `nav` (900px) is where the desktop header and layouts switch on.

@@ -25,21 +25,25 @@ const SITEMAP = 'https://www.vietnamlaunchpad.com/sitemap.xml';
 // lastmod comes from git history (or the committed snapshot on a shallow
 // clone), never a build-time stamp, so every lastmod change is meaningful.
 const IGNORE_LASTMOD = [];
-const PAGES = { router: 'next-app', dir: 'src/app' };
+// Astro routes are thin files in src/pages; each page's content and metadata live in
+// src/views/<route>/ (page.tsx, meta.ts, data.ts), mirroring the URL.
+const PAGES = { router: 'astro', dir: 'src/pages', exts: ['.astro'] };
 // Changed repo files -> route patterns. Components, layouts and styles map to
 // nothing on purpose: a template change is not a content change.
 // Pages outside the sitemap (noindex or HTML-only) are left out so a deleted
 // one is not mistaken for a removed URL.
-const APP_EXCLUDED = /^src\/app\/\(site\)\/(?:\[locale\]\/)?(?:api|enterprise|get-started)(?:\/|$)/;
-// URLs carry no locale segment (localePrefix 'never'), so drop [locale].
-const localeFree = (route) => (route === '/[locale]' ? '/' : route.replace(/^\/\[locale\]/, ''));
+const EXCLUDED = /^src\/(?:pages|views)\/(?:api|enterprise|get-started|not-found|404)(?:[/.]|$)/;
 export const ROUTES = [
   {
-    file: /^src\/app\/.+/,
+    file: /^src\/views\/(?:(.+)\/)?(?:page\.tsx|meta\.ts|data\.ts)$/,
+    to: (m) => (EXCLUDED.test(m[0]) ? [] : [m[1] ? `/${m[1]}` : '/']),
+  },
+  {
+    file: /^src\/pages\/.+/,
     to: (m) => {
-      if (APP_EXCLUDED.test(m[0])) return [];
+      if (EXCLUDED.test(m[0])) return [];
       const route = fileRoute(m[0], PAGES);
-      return route ? [localeFree(route)] : [];
+      return route ? [route] : [];
     },
   },
   // Data sources read by the dynamic routes (generateStaticParams) and the listings.

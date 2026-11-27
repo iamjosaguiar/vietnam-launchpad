@@ -1,4 +1,4 @@
-import { getVietnamEconomicData } from '@/lib/open-data';
+import type { VietnamEconomicData } from '@/lib/open-data';
 
 function StatCard({
   label,
@@ -36,8 +36,8 @@ function fmtBillions(n: number): string {
   return `$${n.toFixed(0)}`;
 }
 
-export default async function EconomicSnapshotWidget() {
-  const data = await getVietnamEconomicData();
+/** `data` comes from getVietnamEconomicData(), loaded by the page at build time. */
+export default function EconomicSnapshotWidget({ data }: { data: VietnamEconomicData }) {
   const year = data.year ?? 'latest';
 
   return (

@@ -1,4 +1,4 @@
-import { getVietnamSectorTrend, SectorDataPoint } from '@/lib/open-data';
+import type { SectorDataPoint } from '@/lib/open-data';
 
 // ─── Static key-growth-sectors data ──────────────────────────────────────────
 
@@ -128,8 +128,8 @@ function SectorBar({ label, value, color, bgColor, max }: SectorBarProps) {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default async function GrowingSectorsWidget() {
-  const sectorTrend = await getVietnamSectorTrend();
+/** `sectorTrend` comes from getVietnamSectorTrend(), loaded by the page at build time. */
+export default function GrowingSectorsWidget({ sectorTrend }: { sectorTrend: SectorDataPoint[] }) {
   const latest: SectorDataPoint | undefined = sectorTrend[0];
 
   // Compute a sensible max for bars - services will be the largest (~40%+)

@@ -1,0 +1,6 @@
+# Secrets for the lead form endpoints (/api/contact, /api/get-started) during `npm run dev`
+# and `npm run preview`. Copy to .dev.vars (git-ignored). In production these are Worker
+# secrets: npx wrangler secret put SENDGRID_API_KEY (and CONTACT_EMAIL, FROM_EMAIL).
+SENDGRID_API_KEY=your_sendgrid_api_key_here
+CONTACT_EMAIL=voyennhi187@gmail.com,jos@profitgeeks.com.au
+FROM_EMAIL=contact@vietnamlaunchpad.com

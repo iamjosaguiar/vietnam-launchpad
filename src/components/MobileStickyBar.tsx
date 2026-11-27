@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { PHONE_TEL, PHONE_WHATSAPP } from '@/lib/site';
 
 import Icon from './ui/Icon';
@@ -40,10 +39,10 @@ export default function MobileStickyBar() {
           <Icon name="whatsapp" className="h-4 w-4" />
           WhatsApp
         </a>
-        <Link href="/get-started#quote-form" data-track="cta_click" data-track-label="get_started" className={buttonClasses({ variant: 'primary', size: 'sm', className: barButton })}>
+        <a href="/get-started#quote-form" data-track="cta_click" data-track-label="get_started" className={buttonClasses({ variant: 'primary', size: 'sm', className: barButton })}>
           <Icon name="quote" className="h-4 w-4" />
           Quote
-        </Link>
+        </a>
       </div>
     </div>
   );

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CurrencyPairPage, { generateMetadata, generateStaticParams, loadData } from '@/views/convert/[pair]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { pair } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ pair }) });
+const data = await loadData();
+---
+
+<BaseLayout metadata={metadata}>
+  <CurrencyPairPage pair={pair} {...data} />
+</BaseLayout>

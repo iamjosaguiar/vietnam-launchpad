@@ -1,0 +1,11 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PassportPicker from '@/components/ui/PassportPicker';
+import VisaIndexPage, { metadata, pickerProps } from '@/views/visa/page';
+---
+
+<BaseLayout metadata={metadata}>
+  <VisaIndexPage>
+    <PassportPicker slot="picker" client:load {...pickerProps} />
+  </VisaIndexPage>
+</BaseLayout>

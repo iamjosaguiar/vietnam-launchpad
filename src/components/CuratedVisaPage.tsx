@@ -1,5 +1,3 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
 import HolaflyCallout from '@/components/HolaflyCallout';
 import MarkdownBlocks from '@/components/MarkdownBlocks';
 import Accordion from '@/components/ui/Accordion';
@@ -152,7 +150,6 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="min-h-screen">
-        <Navigation />
         <main id="main" tabIndex={-1}>
 
           <VisaHero
@@ -229,7 +226,6 @@ export default function CuratedVisaPage({ page }: { page: CuratedData }) {
           </VisaColumns>
 
         </main>
-        <Footer />
       </div>
     </>
   );

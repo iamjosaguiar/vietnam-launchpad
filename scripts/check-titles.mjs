@@ -1,19 +1,18 @@
 // Fails the build when a served page has a title over 60 characters, a repeated brand,
-// a missing title or placeholder text. Run after `next build` (wired as the `postbuild` script).
+// a missing title or placeholder text. Run after `astro build` (wired as the `postbuild` script).
 //
-// Pages are served under /en (the proxy rewrites every path there), so the check covers
-// en.html and everything under en/. Other files in .next/server/app are unreachable
-// duplicates of the same routes and are not checked.
+// Every page is a static file in dist/client (about.html is served at /about), so the
+// check covers every .html file there.
 import fs from 'node:fs';
 import path from 'node:path';
 
 const MAX = 60;
 const BRAND = 'Vietnam Launchpad';
 const PLACEHOLDER = /\b(TODO|TBC|TBD|lorem ipsum|placeholder|undefined|null)\b|\[object|\{\{|\}\}/i;
-const root = path.join(process.cwd(), '.next', 'server', 'app');
+const root = path.join(process.cwd(), 'dist', 'client');
 
 if (!fs.existsSync(root)) {
-  console.error('check-titles: .next/server/app not found. Run the build first.');
+  console.error('check-titles: dist/client not found. Run the build first.');
   process.exit(1);
 }
 
@@ -21,6 +20,7 @@ const decode = (s) =>
   s
     .replace(/&amp;/g, '&')
     .replace(/&#x27;/g, "'")
+    .replace(/&#x26;/g, '&')
     .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"')
     .replace(/&lt;/g, '<')
@@ -31,14 +31,13 @@ function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      if (!entry.name.endsWith('.segments')) walk(full);
+      if (entry.name !== '_astro') walk(full);
     } else if (entry.name.endsWith('.html')) {
       files.push(full);
     }
   }
 }
-if (fs.existsSync(path.join(root, 'en.html'))) files.push(path.join(root, 'en.html'));
-if (fs.existsSync(path.join(root, 'en'))) walk(path.join(root, 'en'));
+walk(root);
 
 const problems = [];
 let longest = 0;

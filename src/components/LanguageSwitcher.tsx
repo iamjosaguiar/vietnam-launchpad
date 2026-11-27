@@ -1,6 +1,6 @@
 'use client';
 
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from '@/i18n/messages';
 import { usePathname, useRouter } from '@/i18n/config';
 import { useState, useRef, useEffect } from 'react';
 

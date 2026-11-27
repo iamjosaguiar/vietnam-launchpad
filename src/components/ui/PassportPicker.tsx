@@ -36,6 +36,16 @@ const KEYWORDS: Record<string, string[]> = {
  * Nationality combobox that sends the visitor to /visa/<slug>, or to /visa when nothing is chosen.
  * Takes a slim option list so the full visa data stays on the server.
  */
+export interface PassportPickerProps {
+  options: PassportOption[];
+  label: string;
+  emptyOption: string;
+  submitLabel: string;
+  secondary?: { label: string; href: string; track?: { label: string; location: string } };
+  allLink?: { label: string; href: string };
+  className?: string;
+}
+
 export default function PassportPicker({
   options,
   label,
@@ -44,15 +54,7 @@ export default function PassportPicker({
   secondary,
   allLink,
   className = '',
-}: {
-  options: PassportOption[];
-  label: string;
-  emptyOption: string;
-  submitLabel: string;
-  secondary?: { label: string; href: string; track?: { label: string; location: string } };
-  allLink?: { label: string; href: string };
-  className?: string;
-}) {
+}: PassportPickerProps) {
   const router = useRouter();
   const [slug, setSlug] = useState('');
   const comboOptions = useMemo(

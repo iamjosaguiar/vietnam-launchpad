@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ConvertPage, { loadData, metadata } from '@/views/convert/page';
+
+const data = await loadData();
+---
+
+<BaseLayout metadata={metadata}>
+  <ConvertPage {...data} />
+</BaseLayout>

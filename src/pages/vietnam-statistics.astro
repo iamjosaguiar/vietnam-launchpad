@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatisticsPage, { loadData, metadata } from '@/views/vietnam-statistics/page';
+
+const data = await loadData();
+---
+
+<BaseLayout metadata={metadata}>
+  <StatisticsPage {...data} />
+</BaseLayout>

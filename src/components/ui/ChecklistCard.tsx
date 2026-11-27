@@ -1,6 +1,4 @@
-'use client';
-
-import { useId, useState } from 'react';
+import { useId } from 'react';
 
 export interface ChecklistItem {
   label: string;
@@ -10,6 +8,9 @@ export interface ChecklistItem {
 /**
  * Requirements checklist with a progress bar and ready count. Ticks are local to the
  * visitor's browser. All wording comes from props.
+ *
+ * Rendered as static HTML with native checkboxes. src/scripts/checklist.ts updates the
+ * count and the bar when a box changes, using the data-checklist attributes below.
  */
 export default function ChecklistCard({
   title,
@@ -34,31 +35,24 @@ export default function ChecklistCard({
   className?: string;
 }) {
   const id = useId();
-  const [checked, setChecked] = useState<Set<number>>(() => new Set(initialChecked));
+  const checked = new Set(initialChecked);
   const done = checked.size;
   const total = items.length;
   const percent = total ? Math.round((done / total) * 100) : 0;
 
-  const toggle = (index: number) =>
-    setChecked((prev) => {
-      const next = new Set(prev);
-      if (next.has(index)) next.delete(index);
-      else next.add(index);
-      return next;
-    });
-
   return (
-    <div className={`rounded-panel border border-hairline bg-white p-6 shadow-soft ${className}`}>
+    <div data-checklist={countLabel} className={`rounded-panel border border-hairline bg-white p-6 shadow-soft ${className}`}>
       <div className="mb-3 flex items-center justify-between gap-3">
         <Heading id={`${id}-title`} className="m-0 font-display text-step-1 font-semibold text-ink">
           {title}
         </Heading>
-        <span className="whitespace-nowrap rounded-full bg-success-soft px-3 py-0.5 text-sm font-bold text-success" aria-live="polite">
+        <span data-checklist-count className="whitespace-nowrap rounded-full bg-success-soft px-3 py-0.5 text-sm font-bold text-success" aria-live="polite">
           {countLabel.replace('{done}', String(done)).replace('{total}', String(total))}
         </span>
       </div>
       <div className="mb-3 h-2 overflow-hidden rounded-full bg-[#EAE3D3]" aria-hidden="true">
         <span
+          data-checklist-bar
           className="block h-full rounded-full bg-success transition-[width] duration-200 motion-reduce:transition-none"
           style={{ width: `${percent}%` }}
         />
@@ -69,8 +63,7 @@ export default function ChecklistCard({
             <label className="flex min-h-[52px] cursor-pointer items-center gap-1 py-1 font-medium">
               <input
                 type="checkbox"
-                checked={checked.has(index)}
-                onChange={() => toggle(index)}
+                defaultChecked={checked.has(index)}
                 className="relative h-11 w-11 flex-none cursor-pointer appearance-none bg-transparent before:absolute before:inset-2.5 before:rounded-[6px] before:border-2 before:border-[#6F7B88] before:bg-white before:content-[''] checked:before:border-success checked:before:bg-success checked:before:bg-[url('data:image/svg+xml;utf8,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%20fill=%22none%22%20stroke=%22white%22%20stroke-width=%223.5%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22><path%20d=%22M5%2013l4%204L19%207%22/></svg>')] checked:before:bg-center checked:before:bg-no-repeat focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-0 focus-visible:outline-navy"
               />
               <span>

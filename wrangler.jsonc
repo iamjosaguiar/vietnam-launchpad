@@ -1,0 +1,21 @@
+{
+  // Cloudflare Worker for www.vietnamlaunchpad.com.
+  // Static pages are served from ./dist/client by Workers Static Assets (free, not metered).
+  // The Worker itself only runs for /api/contact, /api/get-started and unknown URLs (404).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vietnam-launchpad",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist/client"
+  },
+  "observability": {
+    "enabled": true
+  },
+  // SENDGRID_API_KEY, CONTACT_EMAIL and FROM_EMAIL are set as secrets
+  // (`npx wrangler secret put NAME` or the dashboard), never in this file.
+  // keep_vars stops a deploy from removing variables added in the dashboard.
+  "keep_vars": true
+}

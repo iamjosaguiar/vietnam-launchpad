@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslator } from '@/i18n/messages';
 
 const SignalIcons = {
   applications: (
@@ -23,8 +23,8 @@ const SignalIcons = {
   )
 };
 
-export default async function TrustSignals() {
-  const t = await getTranslations('homepage.trustSignals');
+export default function TrustSignals() {
+  const t = getTranslator('homepage.trustSignals');
 
   const signals = [
     { value: t('applications'), label: t('applicationsLabel'), iconKey: 'applications' },

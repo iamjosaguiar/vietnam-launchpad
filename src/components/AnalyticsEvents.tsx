@@ -1,8 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
-import { usePathname } from '@/i18n/config';
 import { trackEvent, type EventParams } from '@/lib/analytics';
 
 type ContactEvent = 'whatsapp_click' | 'email_click' | 'phone_click';
@@ -13,6 +12,27 @@ const FORM_ATTRIBUTE = 'data-track-form';
 const VISA_PATH = /^\/visa\/([a-z0-9-]+)\/?$/;
 // How long after a country form submit a /visa/<slug> navigation still counts as that pick.
 const PICK_WINDOW_MS = 10000;
+// Every link is a full page load, so a pick made on one page is read on the next from here.
+const PICK_KEY = 'vl:visa-pick';
+
+function setPick(value: number | null) {
+  try {
+    if (value === null) window.sessionStorage.removeItem(PICK_KEY);
+    else window.sessionStorage.setItem(PICK_KEY, String(value));
+  } catch {
+    // Storage can be unavailable (private mode, blocked cookies). The pick is then not tracked.
+  }
+}
+
+function takePick(): number | null {
+  try {
+    const value = window.sessionStorage.getItem(PICK_KEY);
+    window.sessionStorage.removeItem(PICK_KEY);
+    return value === null ? null : Number(value);
+  } catch {
+    return null;
+  }
+}
 
 const WHATSAPP_HOSTS = ['wa.me', 'whatsapp.com'];
 
@@ -62,14 +82,17 @@ function locationOf(element: Element): string | undefined {
  * Links to WhatsApp, mailto:, tel: and other sites are recognised from the href alone.
  */
 export default function AnalyticsEvents() {
-  const pathname = usePathname();
-  const pendingPick = useRef<number | null>(null);
-  const lastPath = useRef<string | null>(null);
-
   useEffect(() => {
+    // A country picked on the previous page counts if this page is its /visa/<slug> page.
+    const submittedAt = takePick();
+    if (submittedAt !== null && Date.now() - submittedAt <= PICK_WINDOW_MS) {
+      const country = VISA_PATH.exec(window.location.pathname)?.[1];
+      if (country) trackEvent('visa_country_select', { country });
+    }
+
     const onClick = (event: MouseEvent) => {
       // A click always comes before the submit it may cause, so a stale country pick is dropped here.
-      pendingPick.current = null;
+      setPick(null);
       if (event.button > 1 || !(event.target instanceof Element)) return;
       const tracked = event.target.closest(`[${TRACK_ATTRIBUTE}]`);
       const anchor = (tracked instanceof HTMLAnchorElement ? tracked : event.target.closest('a[href]')) as HTMLAnchorElement | null;
@@ -97,10 +120,10 @@ export default function AnalyticsEvents() {
     };
 
     // The country picker keeps its choice in component state, so the pick is read from the page
-    // it navigates to (see the pathname effect below) instead of from the picker itself.
+    // it navigates to (see the start of this effect) instead of from the picker itself.
     const onSubmit = (event: Event) => {
       if (event.target instanceof HTMLFormElement && event.target.querySelector('[role="combobox"]')) {
-        pendingPick.current = Date.now();
+        setPick(Date.now());
       }
     };
 
@@ -115,17 +138,6 @@ export default function AnalyticsEvents() {
       document.removeEventListener('submit', onSubmit, true);
     };
   }, []);
-
-  useEffect(() => {
-    if (lastPath.current === pathname) return;
-    lastPath.current = pathname;
-    const submittedAt = pendingPick.current;
-    if (submittedAt === null) return;
-    pendingPick.current = null;
-    if (Date.now() - submittedAt > PICK_WINDOW_MS) return;
-    const country = VISA_PATH.exec(pathname)?.[1];
-    if (country) trackEvent('visa_country_select', { country });
-  }, [pathname]);
 
   return null;
 }

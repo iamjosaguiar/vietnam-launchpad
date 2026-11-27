@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useId, useRef, useState } from 'react';
 
-import { Link, usePathname } from '@/i18n/config';
+import { Link } from '@/i18n/config';
+// Named JSON import: only the navigation strings are bundled into this island.
+import { navigation as navigationMessages } from '@/messages/en.json';
 import {
   navButton,
   navLivingGroups,
@@ -25,11 +25,24 @@ type TopItem =
   | { kind: 'link'; id: string; label: string; href: string }
   | { kind: 'menu'; id: string; label: string; href: string; match?: string; groups: MenuGroup[]; footerLink?: NavLinkItem };
 
-/** Logo: the unchanged file, framed to its artwork with CSS. 48px high, 60px from 900px. */
+/** Resized copies of public/vietnam-launchpad-logo.png. The logo is shown about 134px wide. */
+export const LOGO_SRCSET = [140, 280, 420].map((w) => `/images/logo/vietnam-launchpad-logo-${w}.webp ${w}w`).join(', ');
+export const LOGO_SIZES = '140px';
+
+/** Logo: the unchanged artwork, framed with CSS. 48px high, 60px from 900px. */
 export function SiteLogo({ priority = false }: { priority?: boolean }) {
   return (
     <span className="logo-frame">
-      <Image src="/vietnam-launchpad-logo.png" alt="Vietnam Launchpad" width={1024} height={1024} sizes="140px" priority={priority} />
+      <img
+        src="/images/logo/vietnam-launchpad-logo-420.webp"
+        srcSet={LOGO_SRCSET}
+        sizes={LOGO_SIZES}
+        alt="Vietnam Launchpad"
+        width={1024}
+        height={1024}
+        decoding="async"
+        {...(priority ? { fetchPriority: 'high' as const } : { loading: 'lazy' as const })}
+      />
     </span>
   );
 }
@@ -63,9 +76,9 @@ function MenuGroups({ item, onNavigate }: { item: Extract<TopItem, { kind: 'menu
   );
 }
 
-export default function Navigation() {
-  const t = useTranslations('navigation');
-  const pathname = usePathname();
+/** `pathname` is the page's path, passed in at build time so the active link is in the static HTML. */
+export default function Navigation({ pathname }: { pathname: string }) {
+  const t = (key: keyof typeof navigationMessages) => navigationMessages[key];
   const menuId = useId();
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
