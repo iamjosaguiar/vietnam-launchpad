@@ -127,7 +127,7 @@ export default function Footer() {
                 </p>
               ))}
               <p className="m-0 text-ink">
-                &copy; {new Date().getFullYear()} Vietnam Launchpad. All rights reserved. &middot; Company No. 0108305670
+                &copy; {new Date().getFullYear()} Vietnam Launchpad. All rights reserved.
               </p>
             </div>
             <button
