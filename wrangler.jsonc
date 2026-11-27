@@ -1,7 +1,8 @@
 {
   // Cloudflare Worker for www.vietnamlaunchpad.com.
-  // Static pages are served from ./dist/client by Workers Static Assets (free, not metered).
-  // The Worker itself only runs for /api/contact, /api/get-started and unknown URLs (404).
+  // Pages, redirects and the 404 page are served from ./dist/client by Workers Static
+  // Assets, which is free and not metered. The Worker itself only runs for /api/*
+  // (the two lead forms), so only those requests count toward the free daily limit.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "vietnam-launchpad",
   "main": "@astrojs/cloudflare/entrypoints/server",
@@ -9,7 +10,9 @@
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "binding": "ASSETS",
-    "directory": "./dist/client"
+    "directory": "./dist/client",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
   },
   "observability": {
     "enabled": true
