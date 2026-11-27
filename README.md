@@ -1,6 +1,6 @@
 # Vietnam Launchpad
 
-A multilingual Next.js website for Vietnam immigration and business consulting services, built with TypeScript, Tailwind CSS, and next-intl for internationalization.
+A website for Vietnam immigration and business consulting services, built with Astro, React, TypeScript and Tailwind CSS, and hosted on Cloudflare Workers.
 
 ## 🌟 Features
 
@@ -26,11 +26,11 @@ A multilingual Next.js website for Vietnam immigration and business consulting s
 
 ## 🚀 Technology Stack
 
-- **Framework**: Next.js 15 with App Router
+- **Framework**: Astro 7, with React 19 for components and interactive islands
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Internationalization**: next-intl
-- **Deployment Ready**: Optimized for Vercel/Netlify
+- **Styling**: Tailwind CSS 3
+- **Hosting**: Cloudflare Workers (static pages on Workers Static Assets, lead form API in the Worker)
+- **Email**: SendGrid, called from the Worker
 
 ## 📊 Market Research Integration
 
@@ -56,8 +56,8 @@ This site is built based on comprehensive market research including:
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
-- Node.js 18.17 or later
-- npm or yarn
+- Node.js 22.23.4 or later
+- npm
 
 ### Local Development
 ```bash
@@ -68,34 +68,37 @@ cd vietnam-launchpad
 # Install dependencies
 npm install
 
+# Optional: secrets for the contact and questionnaire forms
+cp .dev.vars.example .dev.vars
+
 # Start development server
 npm run dev
 
-# Open http://localhost:3000
+# Open http://localhost:4321
 ```
 
 ### Build for Production
 ```bash
-# Build the application
+# Type-check, build every page to dist/, and check page titles
 npm run build
 
-# Start production server
-npm start
+# Serve the build in the Cloudflare Workers runtime, as in production
+npm run preview
+
+# Open http://localhost:8787
 ```
+
+`npm test` runs the script tests and `npm run lint` lints the TypeScript and React code.
 
 ## 🌍 Internationalization
 
-The site supports 4 languages with localized URLs:
+The site is published in English, with no locale in URLs (`/about`, not `/en/about`; old `/en/...` links redirect).
+Translation files for Vietnamese, Chinese and Korean are kept in `src/messages/`.
 
-- **English** (default): `/en/`
-- **Vietnamese**: `/vi/` 
-- **Chinese**: `/zh/`
-- **Korean**: `/ko/`
+- `src/i18n/config.ts`: the locale list, plus the `Link` and navigation helpers components use
+- `src/i18n/messages.ts`: `useTranslations()` for the strings in `src/messages/en.json`
 
-### Adding New Languages
-1. Add locale to `src/i18n/config.ts`
-2. Create translation file in `src/messages/[locale].json`
-3. Update middleware matcher in `src/middleware.ts`
+Publishing another language means adding its locale to `src/i18n/config.ts` and building its pages under a locale path in `src/pages/`.
 
 ## 💰 Payment Integration
 
@@ -147,17 +150,27 @@ The site supports 4 languages with localized URLs:
 
 ```
 src/
-├── app/[locale]/           # Localized pages
-├── components/             # Reusable components
-├── i18n/                  # Internationalization config
-├── messages/              # Translation files
-└── middleware.ts          # Locale routing
+├── pages/                 # Routes: one thin .astro file per URL pattern, plus api/ and feed/sitemap endpoints
+├── views/                 # Page content, mirroring the URLs (views/visa/[country]/page.tsx is /visa/<country>)
+├── layouts/               # BaseLayout.astro: <head>, header, footer, analytics
+├── components/            # React components (interactive ones hydrate as islands)
+├── data/                  # Content: services, guides, blog posts, visas, treaties, salaries
+├── lib/                   # SEO, metadata, sitemap, open data, lead email helpers
+├── server/                # Lead form handlers (run in the Worker)
+├── i18n/ and messages/    # Locale config and strings
+└── styles/                # Tailwind and global CSS
 
 Key Files:
-├── tailwind.config.js     # Styling configuration
-├── next.config.js         # Next.js + i18n setup
-└── tsconfig.json          # TypeScript config
+├── astro.config.mjs       # Astro, React and Cloudflare adapter setup
+├── wrangler.jsonc         # Cloudflare Worker settings
+├── public/_redirects      # Redirects (old URLs, trailing slashes)
+├── public/_headers        # Response headers for the feed and sitemap
+└── tailwind.config.js     # Styling configuration
 ```
+
+Each route file in `src/pages/` renders its view inside `BaseLayout`. A view exports its metadata
+(`metadata` or `generateMetadata`), and dynamic routes export `generateStaticParams`, which the route
+file turns into `getStaticPaths`. Views that show live figures export `loadData()`, which runs at build time.
 
 ## 📱 Responsive Design
 
@@ -174,16 +187,30 @@ Key Files:
 
 ## 🚀 Deployment
 
-### Recommended Platforms
-1. **Vercel** (Next.js optimized)
-2. **Netlify** (Alternative with good i18n support)
-3. **Vietnamese Hosting** (for better local performance)
+The site runs on Cloudflare Workers, within the free plan: every page is a static file, and static
+requests are free and unlimited. Only the two lead form endpoints (`/api/contact`, `/api/get-started`)
+run as Worker code, which the free plan allows 100,000 times a day.
+
+`.github/workflows/deploy.yml` builds and deploys on every push to `main`, and again every 6 hours so the
+exchange rates and World Bank figures (fetched at build time) stay fresh. After each deploy it pings
+IndexNow with the URLs that changed. See [CLOUDFLARE_SETUP.md](CLOUDFLARE_SETUP.md) for the one-time setup.
 
 ### Environment Variables
-```env
-NEXT_PUBLIC_SITE_URL=https://vietnamlaunchpad.com
-NEXT_PUBLIC_CONTACT_EMAIL=hello@vietnamlaunchpad.com
-```
+
+| Name | Where | Purpose |
+|------|-------|---------|
+| `SENDGRID_API_KEY` | Worker secret | Sends lead notifications and auto-replies |
+| `CONTACT_EMAIL` | Worker secret | Lead recipients, comma separated (defaults to the addresses in `src/lib/lead-recipients.ts`) |
+| `FROM_EMAIL` | Worker secret | Sender address (default `contact@vietnamlaunchpad.com`) |
+| `PUBLIC_GA_ID` | GitHub repository variable (build time) | Google Analytics 4 ID; leave unset for no analytics |
+
+For local development, put the Worker secrets in `.dev.vars` and `PUBLIC_GA_ID` in `.env`.
+
+### Sitemap dates
+
+`lastmod` dates in `/sitemap.xml` come from git history. A commit that only moves or restructures
+files (no content change) should include the line `Lastmod-Skip: true` in its message, so it does not
+change any page's date. Keep that line when squash-merging such a pull request.
 
 ## 📊 Analytics & Tracking
 

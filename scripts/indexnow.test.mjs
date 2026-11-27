@@ -201,16 +201,25 @@ const SITE_URLS = [
   `${O}/convert/usd-to-vnd`,
 ];
 
-test('mapChanges uses ROUTES, strips route groups and [locale], and flags deleted static pages', () => {
+test('mapChanges uses ROUTES for views and Astro pages, ignores templates, and flags deleted static pages', () => {
   const changes = parseNameStatus(
-    'M\tsrc/app/(site)/[locale]/page.tsx\nM\tsrc/components/Navigation.tsx\nM\tsrc/app/(site)/[locale]/layout.tsx\n' +
-      'D\tsrc/app/(site)/[locale]/old-page/page.tsx\nM\tsrc/app/(site)/[locale]/about/page.tsx\n' +
-      'M\tsrc/app/(site)/visa/page.tsx\n',
+    'M\tsrc/views/page.tsx\nM\tsrc/components/Navigation.tsx\nM\tsrc/layouts/BaseLayout.astro\n' +
+      'D\tsrc/views/old-page/page.tsx\nM\tsrc/views/about/meta.ts\n' +
+      'M\tsrc/pages/visa/index.astro\nM\tsrc/pages/api/contact.ts\nM\tsrc/views/get-started/page.tsx\n',
   );
-  assert.equal(changes.length, 6);
+  assert.equal(changes.length, 8);
   const out = mapChanges(changes, SITE_URLS, { rules: ROUTES, host: HOST });
   assert.deepEqual(out.changed, [O, `${O}/about`, `${O}/visa`]);
   assert.deepEqual(out.removed, [`${O}/old-page`]);
+});
+
+test('ROUTES maps dynamic views and Astro routes to every page of that route', () => {
+  for (const file of ['src/views/visa/[country]/page.tsx', 'src/pages/visa/[country].astro']) {
+    const out = mapChanges([{ status: 'M', file }], SITE_URLS, { rules: ROUTES, host: HOST });
+    assert.deepEqual(out.changed, [`${O}/visa/australia`, `${O}/visa/canada`], file);
+  }
+  const out = mapChanges([{ status: 'M', file: 'src/views/guides/data.ts' }], SITE_URLS, { rules: ROUTES, host: HOST });
+  assert.deepEqual(out.changed, [`${O}/guides`]);
 });
 
 test('ROUTES maps visa/[country] data to the visa country pages', () => {
@@ -238,10 +247,10 @@ test('ROUTES maps content data files to their listings and detail pages', () => 
   }
 });
 
-test('ROUTES maps dynamic page files without the locale segment', () => {
+test('ROUTES maps dynamic view and route files to their pages', () => {
   const changes = parseNameStatus(
-    'M\tsrc/app/(site)/[locale]/visa/[country]/page.tsx\nM\tsrc/app/(site)/[locale]/convert/[pair]/page.tsx\n' +
-      'M\tsrc/app/(site)/[locale]/blog/[slug]/page.tsx\n',
+    'M\tsrc/views/visa/[country]/page.tsx\nM\tsrc/views/convert/[pair]/page.tsx\n' +
+      'M\tsrc/pages/blog/[slug].astro\n',
   );
   const out = mapChanges(changes, SITE_URLS, { rules: ROUTES, host: HOST });
   assert.deepEqual(out.changed.sort(), [

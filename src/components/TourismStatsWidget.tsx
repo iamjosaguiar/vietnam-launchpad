@@ -1,4 +1,4 @@
-import { getVietnamTourismTrend, TourismDataPoint } from '@/lib/open-data';
+import type { TourismDataPoint } from '@/lib/open-data';
 
 // ─── Static origin-market data ───────────────────────────────────────────────
 // The 17.5M total arrivals figure is VNAT's published 2024 annual result.
@@ -64,13 +64,14 @@ function TrendBar({ point, maxArrivals }: { point: TourismDataPoint; maxArrivals
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 interface TourismStatsWidgetProps {
+  /** From getVietnamTourismTrend(), loaded by the page at build time. */
+  trend: TourismDataPoint[];
   compact?: boolean;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default async function TourismStatsWidget({ compact = false }: TourismStatsWidgetProps) {
-  const trend = await getVietnamTourismTrend();
+export default function TourismStatsWidget({ trend, compact = false }: TourismStatsWidgetProps) {
 
   const latest = trend[0] ?? null;
   const previous = trend[1] ?? null;

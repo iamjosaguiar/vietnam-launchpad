@@ -1,0 +1,24 @@
+{
+  // Cloudflare Worker for www.vietnamlaunchpad.com.
+  // Pages, redirects and the 404 page are served from ./dist/client by Workers Static
+  // Assets, which is free and not metered. The Worker itself only runs for /api/*
+  // (the two lead forms), so only those requests count toward the free daily limit.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vietnam-launchpad",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist/client",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": {
+    "enabled": true
+  },
+  // SENDGRID_API_KEY, CONTACT_EMAIL and FROM_EMAIL are set as secrets
+  // (`npx wrangler secret put NAME` or the dashboard), never in this file.
+  // keep_vars stops a deploy from removing variables added in the dashboard.
+  "keep_vars": true
+}

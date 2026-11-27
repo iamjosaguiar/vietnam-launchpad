@@ -6,27 +6,32 @@ import { resolve } from 'node:path';
  * Last-modified dates from git, used when a page has no content date.
  * A shallow clone (fewer than 20 commits) is ignored so a one-commit
  * checkout cannot stamp every file with the deploy date.
+ *
+ * Commits whose message has the trailer `Lastmod-Skip: true` are structural
+ * (a move, a framework migration, a formatting pass) and never count as a
+ * content change. A file moved by such a commit keeps the date of its last
+ * content change at the old path.
  */
 
 const root = process.cwd();
 
 export const PAGE_SOURCES: Record<string, string> = {
-  '': 'src/app/(site)/[locale]/page.tsx',
-  '/services': 'src/app/(site)/[locale]/services/page.tsx',
-  '/guides': 'src/app/(site)/[locale]/guides/page.tsx',
-  '/blog': 'src/app/(site)/[locale]/blog/page.tsx',
-  '/contact': 'src/app/(site)/[locale]/contact/page.tsx',
-  '/faq': 'src/app/(site)/[locale]/faq/page.tsx',
-  '/about': 'src/app/(site)/[locale]/about/page.tsx',
-  '/vietnam-exchange-rates': 'src/app/(site)/[locale]/vietnam-exchange-rates/page.tsx',
-  '/vietnam-statistics': 'src/app/(site)/[locale]/vietnam-statistics/page.tsx',
-  '/vietnam-compliance-calendar': 'src/app/(site)/[locale]/vietnam-compliance-calendar/page.tsx',
-  '/tools/salary-calculator': 'src/app/(site)/[locale]/tools/salary-calculator/page.tsx',
-  '/tools/work-permit-checker': 'src/app/(site)/[locale]/tools/work-permit-checker/page.tsx',
-  '/visa': 'src/app/(site)/[locale]/visa/page.tsx',
-  '/convert': 'src/app/(site)/[locale]/convert/page.tsx',
-  '/tax-treaty': 'src/app/(site)/[locale]/tax-treaty/page.tsx',
-  '/salary': 'src/app/(site)/[locale]/salary/page.tsx',
+  '': 'src/views/page.tsx',
+  '/services': 'src/views/services/page.tsx',
+  '/guides': 'src/views/guides/page.tsx',
+  '/blog': 'src/views/blog/page.tsx',
+  '/contact': 'src/views/contact/page.tsx',
+  '/faq': 'src/views/faq/page.tsx',
+  '/about': 'src/views/about/page.tsx',
+  '/vietnam-exchange-rates': 'src/views/vietnam-exchange-rates/page.tsx',
+  '/vietnam-statistics': 'src/views/vietnam-statistics/page.tsx',
+  '/vietnam-compliance-calendar': 'src/views/vietnam-compliance-calendar/page.tsx',
+  '/tools/salary-calculator': 'src/views/tools/salary-calculator/page.tsx',
+  '/tools/work-permit-checker': 'src/views/tools/work-permit-checker/page.tsx',
+  '/visa': 'src/views/visa/page.tsx',
+  '/convert': 'src/views/convert/page.tsx',
+  '/tax-treaty': 'src/views/tax-treaty/page.tsx',
+  '/salary': 'src/views/salary/page.tsx',
 };
 
 export const BLOCK_FILES = {
@@ -34,13 +39,17 @@ export const BLOCK_FILES = {
   visas: 'src/data/visas.ts',
   treaties: 'src/data/taxTreaties.ts',
   salary: 'src/data/salaryRoles.ts',
-  convert: 'src/app/(site)/[locale]/convert/[pair]/page.tsx',
+  convert: 'src/views/convert/[pair]/page.tsx',
 } as const;
 
 export type LastmodSnapshot = {
   files: Record<string, string>;
   blocks: Record<string, string>;
 };
+
+/** Commit message trailer that marks a commit as structural, not a content change. */
+export const LASTMOD_SKIP_TRAILER = 'Lastmod-Skip: true';
+const SKIP_GREP = `^${LASTMOD_SKIP_TRAILER}$`;
 
 function git(args: string[]): string | undefined {
   try {
@@ -66,26 +75,79 @@ function isoDate(value: string | undefined): string | undefined {
   return /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : undefined;
 }
 
+let skipCache: string[] | undefined;
+
+/** Full hashes of structural commits. */
+function skipCommits(): string[] {
+  skipCache ??= (git(['log', '--format=%H', `--grep=${SKIP_GREP}`]) ?? '').split('\n').filter(Boolean);
+  return skipCache;
+}
+
+/** Where a structural commit moved `file` from, if that is how the file got its current path. */
+function movedFrom(file: string, rev: string): { sha: string; path: string } | undefined {
+  const sha = git(['log', '-1', '--no-renames', '--diff-filter=A', '--format=%H', rev, '--', file]);
+  if (!sha || !skipCommits().includes(sha)) return undefined;
+  for (const line of (git(['show', '-M', '--name-status', '--format=', sha]) ?? '').split('\n')) {
+    const [status, from, to] = line.split('\t');
+    if (status?.startsWith('R') && to === file) return { sha, path: from };
+  }
+  return undefined;
+}
+
+/**
+ * Newest commit that touched the file (`git log -1 -- file`, merges included as git
+ * shows them), skipping structural commits. When only a structural move touched the
+ * current path, the history continues at the path the file had before the move.
+ */
 export function fileLastmod(file: string): string | undefined {
-  return isoDate(git(['log', '-1', '--format=%cs', '--', file]));
+  let path = file;
+  let rev = 'HEAD';
+  for (let moves = 0; moves < 10; moves += 1) {
+    const date = isoDate(git(['log', '-1', '--invert-grep', `--grep=${SKIP_GREP}`, '--format=%cs', rev, '--', path]));
+    if (date) return date;
+    const moved = movedFrom(path, rev);
+    if (!moved) return undefined;
+    path = moved.path;
+    rev = `${moved.sha}^`;
+  }
+  return undefined;
+}
+
+/** YYYY-MM-DD in the commit's own time zone, like `git blame --date=short`. */
+function blameDay(epoch: number, tz: string): string {
+  const offset = (tz.startsWith('-') ? -1 : 1) * (Number(tz.slice(1, 3)) * 60 + Number(tz.slice(3, 5)));
+  return new Date((epoch + offset * 60) * 1000).toISOString().slice(0, 10);
 }
 
 const blameCache = new Map<string, string[]>();
 
+/**
+ * Author date of each line. Structural commits are ignored (`--ignore-rev`), so a
+ * line they only touched keeps its earlier date, and a line they added counts as undated.
+ */
 function blameDates(file: string): string[] {
   const cached = blameCache.get(file);
   if (cached) return cached;
   let dates: string[] = [];
   try {
-    const out = execFileSync('git', ['blame', '-w', '--date=short', '--', file], {
+    const skip = skipCommits();
+    const out = execFileSync('git', ['blame', '-w', '--line-porcelain', ...skip.flatMap((sha) => ['--ignore-rev', sha]), '--', file], {
       cwd: root,
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'ignore'],
+      maxBuffer: 64 * 1024 * 1024,
     });
-    dates = out
-      .split('\n')
-      .filter((line) => line.length > 0)
-      .map((line) => isoDate(line.match(/(\d{4}-\d{2}-\d{2})/)?.[1]) ?? '');
+    const skipped = new Set(skip);
+    let sha = '';
+    let time = 0;
+    for (const line of out.split('\n')) {
+      const header = line.match(/^([0-9a-f]{40}) \d+ \d+/);
+      if (header) sha = header[1];
+      else if (line.startsWith('author-time ')) time = Number(line.slice(12));
+      else if (line.startsWith('author-tz ')) {
+        dates.push(skipped.has(sha) ? '' : blameDay(time, line.slice(10)));
+      }
+    }
   } catch {
     dates = [];
   }

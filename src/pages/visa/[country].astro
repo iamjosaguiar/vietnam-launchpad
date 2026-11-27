@@ -1,0 +1,20 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import VisaCountryPage, { generateMetadata, generateStaticParams } from '@/views/visa/[country]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { country } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ country }) });
+---
+
+<BaseLayout metadata={metadata}>
+  <VisaCountryPage country={country} />
+</BaseLayout>
+
+<script>
+  // Ready count and progress bar for the document checklists.
+  import '@/scripts/checklist';
+</script>

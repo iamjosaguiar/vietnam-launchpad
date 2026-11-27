@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import GetStartedPage from '@/views/get-started/page';
+import { metadata } from '@/views/get-started/meta';
+// Interactive page: the whole view hydrates in the browser.
+---
+
+<BaseLayout metadata={metadata}>
+  <GetStartedPage client:load />
+</BaseLayout>

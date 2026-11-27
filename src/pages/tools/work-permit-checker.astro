@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import WorkPermitCheckerPage from '@/views/tools/work-permit-checker/page';
+import { metadata } from '@/views/tools/work-permit-checker/meta';
+// Interactive page: the whole view hydrates in the browser.
+---
+
+<BaseLayout metadata={metadata}>
+  <WorkPermitCheckerPage client:load />
+</BaseLayout>

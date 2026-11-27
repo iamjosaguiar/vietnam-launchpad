@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/i18n/messages';
 import { useState, useEffect } from 'react';
 
 const testimonialKeys = [

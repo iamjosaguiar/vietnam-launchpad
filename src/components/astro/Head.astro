@@ -1,0 +1,15 @@
+---
+import type { HeadTag } from '@/lib/metadata';
+
+interface Props {
+  tags: HeadTag[];
+}
+
+const { tags } = Astro.props;
+---
+
+{
+  tags.map((tag) =>
+    tag.tag === 'title' ? <title>{tag.text}</title> : tag.tag === 'meta' ? <meta {...tag.attrs} /> : <link {...tag.attrs} />,
+  )
+}

@@ -3,7 +3,7 @@ import { homeCopy } from '@/data/homeCopy';
 import Container from './ui/Container';
 import Chip from './ui/Chip';
 import Icon, { type IconName } from './ui/Icon';
-import PassportPicker, { type PassportOption } from './ui/PassportPicker';
+import type { PassportOption, PassportPickerProps } from './ui/PassportPicker';
 
 /** One icon per trust line, in the order of homeCopy.trust. */
 const trustIcons: IconName[] = ['shield', 'pin', 'chat', 'calendar'];
@@ -13,8 +13,23 @@ const pickerLabel = 'Choose your nationality';
 const pickerEmptyOption = 'Select a nationality';
 const allVisaPages = homeCopy.s2.links[0];
 
-/** Home hero: warm wash, eyebrow, H1, subheading, passport picker and the trust strip. */
-export default function HeroSection({ passportOptions }: { passportOptions: PassportOption[] }) {
+/** Props for the hero's passport picker, which the page renders as an interactive island. */
+export function heroPickerProps(passportOptions: PassportOption[]): PassportPickerProps {
+  return {
+    options: passportOptions,
+    label: pickerLabel,
+    emptyOption: pickerEmptyOption,
+    submitLabel: homeCopy.primary.text,
+    secondary: { label: homeCopy.secondary.text, href: homeCopy.secondary.href, track: { label: 'book_consultation', location: 'hero' } },
+    allLink: { label: allVisaPages.name, href: allVisaPages.href },
+  };
+}
+
+/**
+ * Home hero: warm wash, eyebrow, H1, subheading, passport picker and the trust strip.
+ * `picker` is <PassportPicker {...heroPickerProps(options)} />, hydrated by the page.
+ */
+export default function HeroSection({ picker }: { picker?: React.ReactNode }) {
   return (
     <>
       <section
@@ -31,14 +46,7 @@ export default function HeroSection({ passportOptions }: { passportOptions: Pass
             </h1>
             <p className="m-0 max-w-[52ch] text-lead text-muted">{homeCopy.sub}</p>
           </div>
-          <PassportPicker
-            options={passportOptions}
-            label={pickerLabel}
-            emptyOption={pickerEmptyOption}
-            submitLabel={homeCopy.primary.text}
-            secondary={{ label: homeCopy.secondary.text, href: homeCopy.secondary.href, track: { label: 'book_consultation', location: 'hero' } }}
-            allLink={{ label: allVisaPages.name, href: allVisaPages.href }}
-          />
+          {picker}
         </Container>
       </section>
 

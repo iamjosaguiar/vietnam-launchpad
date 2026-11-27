@@ -1,0 +1,13 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import GuidesPage from '@/views/guides/page';
+import { metadata } from '@/views/guides/meta';
+import { loadData } from '@/views/guides/data';
+
+const data = loadData();
+// Interactive page (category filter): the view hydrates in the browser.
+---
+
+<BaseLayout metadata={metadata}>
+  <GuidesPage client:load {...data} />
+</BaseLayout>

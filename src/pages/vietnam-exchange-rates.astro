@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ExchangeRatesPage, { loadData, metadata } from '@/views/vietnam-exchange-rates/page';
+
+const data = await loadData();
+---
+
+<BaseLayout metadata={metadata}>
+  <ExchangeRatesPage {...data} />
+</BaseLayout>

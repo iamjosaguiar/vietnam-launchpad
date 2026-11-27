@@ -1,0 +1,20 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BlogPostContent from '@/components/BlogPostContent';
+import { getBlogPostBySlug } from '@/data/blog';
+import BlogPostPage, { generateMetadata, generateStaticParams } from '@/views/blog/[slug]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { slug } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ slug }) });
+const post = getBlogPostBySlug(slug)!;
+---
+
+<BaseLayout metadata={metadata}>
+  <BlogPostPage slug={slug}>
+    <BlogPostContent slot="article" client:load post={post} />
+  </BlogPostPage>
+</BaseLayout>

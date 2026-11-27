@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import GuideContent from '@/components/GuideContent';
+import { getGuideBySlug } from '@/data/guides';
+import GuidePage, { GuideTopWidget, generateMetadata, generateStaticParams, hasTopWidget, loadData } from '@/views/guides/[slug]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { slug } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ slug }) });
+const guide = getGuideBySlug(slug)!;
+const data = await loadData(slug);
+---
+
+<BaseLayout metadata={metadata}>
+  <GuidePage slug={slug}>
+    <GuideContent slot="article" client:load guide={guide}>
+      {hasTopWidget(slug) && <GuideTopWidget slot="topWidget" slug={slug} {...data} />}
+    </GuideContent>
+  </GuidePage>
+</BaseLayout>

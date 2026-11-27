@@ -1,0 +1,107 @@
+name: Deploy
+# Builds the site, deploys it to Cloudflare Workers, then pings IndexNow with the
+# URLs added, changed or removed since the previous deploy.
+#
+# Runs on every push to main, every 6 hours, and on demand. The schedule refreshes
+# the exchange rates and World Bank figures, which are fetched at build time.
+#
+# Setup (see CLOUDFLARE_SETUP.md): repository variable CLOUDFLARE_ACCOUNT_ID and
+# secret CLOUDFLARE_API_TOKEN. Until the variable exists, this workflow is skipped.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: vars.CLOUDFLARE_ACCOUNT_ID != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Sitemap lastmod dates come from git history. A shallow clone would fall
+          # back to the committed src/lib/sitemap-lastmod.json.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+      - name: Build
+        run: npm run build
+        env:
+          # Optional Google Analytics 4 measurement ID, set as a repository variable.
+          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
+
+      - name: Deploy to Cloudflare Workers
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ARTIFACT: indexnow-snapshot-production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # The previous deploy's sitemap snapshot and commit, kept as an Actions artifact.
+      - name: Restore previous snapshot
+        run: |
+          mkdir -p .indexnow/prev .indexnow/next
+          id=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=$ARTIFACT&per_page=1" \
+            --jq '[.artifacts[] | select(.expired == false)][0].id // empty' || true)
+          if [ -z "$id" ]; then
+            echo "No previous snapshot artifact."
+          elif gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$id/zip" > prev.zip && unzip -o -q prev.zip -d .indexnow/prev; then
+            echo "Restored snapshot from artifact $id."
+          else
+            echo "Could not restore artifact $id, continuing without it."
+          fi
+
+      - name: Settle
+        run: sleep 45
+
+      - name: Ping IndexNow
+        run: |
+          args=(--host www.vietnamlaunchpad.com --prev .indexnow/prev/snapshot.json --out .indexnow/next/snapshot.json)
+          from=$(cat .indexnow/prev/sha.txt 2>/dev/null || true)
+          if [ -n "$from" ] && git cat-file -e "$from^{commit}" 2>/dev/null; then
+            args+=(--from "$from")
+          fi
+          node scripts/indexnow.mjs "${args[@]}"
+          echo "$GITHUB_SHA" > .indexnow/next/sha.txt
+
+      - name: Save snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-snapshot-production
+          path: .indexnow/next/
+          retention-days: 90
+          if-no-files-found: ignore
+          include-hidden-files: true

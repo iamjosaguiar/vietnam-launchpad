@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { generateMetadata as visaMetadata } from '@/app/(site)/[locale]/visa/[country]/page';
+import type { Metadata } from '@/lib/metadata';
+import { generateMetadata as visaMetadata } from '@/views/visa/[country]/page';
 import type { SitemapEntry } from '@/lib/sitemap';
 
 // A page whose own metadata says robots noindex should not be in the XML

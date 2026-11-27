@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SalaryRolePage, { generateMetadata, generateStaticParams } from '@/views/salary/[role]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { role } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ role }) });
+---
+
+<BaseLayout metadata={metadata}>
+  <SalaryRolePage role={role} />
+</BaseLayout>

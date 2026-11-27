@@ -1,0 +1,16 @@
+# Redirects served by Cloudflare Workers Static Assets, before any page or the Worker.
+# Specific rules first, then splats. www and apex: see README ("Cloudflare setup").
+
+# Old HTML sitemap URLs.
+/sitemap.html /sitemap 301
+/site-map /sitemap 301
+
+# Post that moved to the guides.
+/blog/vneid-vietnam-digital-id-foreigners /guides/vneid-vietnam-digital-id-foreigners 308
+
+# URLs carry no locale: /en/about is /about.
+/en / 301
+/en/* /:splat 301
+
+# No trailing slash: /about/ is /about (permanent, as on the Next.js site).
+/*/ /:splat 308

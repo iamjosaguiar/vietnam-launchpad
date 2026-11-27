@@ -1,5 +1,3 @@
-'use client';
-
 import { Link } from '@/i18n/config';
 import { PHONE_DISPLAY, PHONE_TEL, PHONE_WHATSAPP } from '@/lib/site';
 import { footerTagline, footerColumns, footerCta, footerLegal, type FooterColumn, type NavItem } from '@/data/siteNav';
@@ -50,11 +48,8 @@ function ColumnLinks({ column }: { column: FooterColumn }) {
   );
 }
 
+/** Static HTML: the "Back to top" button is wired up by a script in src/layouts/BaseLayout.astro. */
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <footer data-track-location="footer" className="border-t border-hairline bg-sand pb-24 text-[0.95rem] text-muted nav:pb-0">
       <div className="mx-auto w-full max-w-site px-4 md:px-6">
@@ -137,7 +132,7 @@ export default function Footer() {
             </div>
             <button
               type="button"
-              onClick={scrollToTop}
+              data-back-to-top
               className="inline-flex min-h-[44px] items-center gap-2 self-start font-medium text-ink hover:text-navy"
               aria-label="Back to top"
             >

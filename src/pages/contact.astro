@@ -1,0 +1,10 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContactPage from '@/views/contact/page';
+import { metadata } from '@/views/contact/meta';
+// Interactive page: the whole view hydrates in the browser.
+---
+
+<BaseLayout metadata={metadata}>
+  <ContactPage client:load />
+</BaseLayout>

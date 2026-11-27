@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import TaxTreatyCountryPage, { generateMetadata, generateStaticParams } from '@/views/tax-treaty/[country]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { country } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ country }) });
+---
+
+<BaseLayout metadata={metadata}>
+  <TaxTreatyCountryPage country={country} />
+</BaseLayout>

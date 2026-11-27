@@ -22,26 +22,34 @@ export interface VietnamEconomicData {
   year: string | null;
 }
 
-export async function getExchangeRates(): Promise<ExchangeRates | null> {
-  try {
-    const res = await fetch('https://open.er-api.com/v6/latest/USD', {
-      next: { revalidate: 21600 }, // 6 hours
-    });
-    if (!res.ok) return null;
-    return res.json();
-  } catch {
-    return null;
+/*
+ * These run at build time. Pages are static, so the figures are as fresh as the
+ * last deploy; the scheduled deploy in .github/workflows/deploy.yml rebuilds the
+ * site every 6 hours to refresh them. Each URL is fetched once per build and
+ * shared by every page that shows it, and a failed or slow request makes the
+ * widgets show their "unavailable" state instead of failing the build.
+ */
+const FETCH_TIMEOUT_MS = 15000;
+const responses = new Map<string, Promise<unknown>>();
+
+function fetchJson(url: string): Promise<unknown> {
+  let pending = responses.get(url);
+  if (!pending) {
+    pending = fetch(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) })
+      .then((res) => (res.ok ? res.json() : null))
+      .catch(() => null);
+    responses.set(url, pending);
   }
+  return pending;
+}
+
+export async function getExchangeRates(): Promise<ExchangeRates | null> {
+  return (await fetchJson('https://open.er-api.com/v6/latest/USD')) as ExchangeRates | null;
 }
 
 async function fetchWorldBankIndicator(indicator: string): Promise<WorldBankEntry | null> {
   try {
-    const res = await fetch(
-      `https://api.worldbank.org/v2/country/VN/indicator/${indicator}?format=json&mrv=1`,
-      { next: { revalidate: 86400 } } // daily
-    );
-    if (!res.ok) return null;
-    const data = await res.json();
+    const data = await fetchJson(`https://api.worldbank.org/v2/country/VN/indicator/${indicator}?format=json&mrv=1`);
     if (Array.isArray(data) && Array.isArray(data[1]) && data[1].length > 0) {
       return data[1][0] as WorldBankEntry;
     }
@@ -90,12 +98,7 @@ export function formatVnd(amount: number): string {
 
 async function fetchWorldBankSeries(indicator: string, years: number = 5): Promise<WorldBankEntry[]> {
   try {
-    const res = await fetch(
-      `https://api.worldbank.org/v2/country/VN/indicator/${indicator}?format=json&mrv=${years}`,
-      { next: { revalidate: 86400 } }
-    );
-    if (!res.ok) return [];
-    const data = await res.json();
+    const data = await fetchJson(`https://api.worldbank.org/v2/country/VN/indicator/${indicator}?format=json&mrv=${years}`);
     if (Array.isArray(data) && Array.isArray(data[1])) {
       const entries = (data[1] as WorldBankEntry[]).filter((e) => e.value !== null);
       return entries.sort((a, b) => Number(b.date) - Number(a.date));

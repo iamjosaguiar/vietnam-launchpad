@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ServiceDetailPage, { generateMetadata, generateStaticParams } from '@/views/services/[slug]/page';
+
+export async function getStaticPaths() {
+  return (await generateStaticParams()).map((params) => ({ params }));
+}
+
+const { slug } = Astro.params;
+const metadata = await generateMetadata({ params: Promise.resolve({ slug }) });
+---
+
+<BaseLayout metadata={metadata}>
+  <ServiceDetailPage slug={slug} />
+</BaseLayout>
