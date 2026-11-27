@@ -9,8 +9,8 @@ import { resolve } from 'node:path';
  *
  * Commits whose message has the trailer `Lastmod-Skip: true` are structural
  * (a move, a framework migration, a formatting pass) and never count as a
- * content change. Files are followed across renames, so moving a page keeps
- * its date.
+ * content change. A file moved by such a commit keeps the date of its last
+ * content change at the old path.
  */
 
 const root = process.cwd();
@@ -75,17 +75,42 @@ function isoDate(value: string | undefined): string | undefined {
   return /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : undefined;
 }
 
-/** Newest commit that touched the file, following renames and skipping structural commits. */
-export function fileLastmod(file: string): string | undefined {
-  return isoDate(git(['log', '-1', '--follow', '--invert-grep', `--grep=${SKIP_GREP}`, '--format=%cs', '--', file]));
-}
-
 let skipCache: string[] | undefined;
 
 /** Full hashes of structural commits. */
 function skipCommits(): string[] {
   skipCache ??= (git(['log', '--format=%H', `--grep=${SKIP_GREP}`]) ?? '').split('\n').filter(Boolean);
   return skipCache;
+}
+
+/** Where a structural commit moved `file` from, if that is how the file got its current path. */
+function movedFrom(file: string, rev: string): { sha: string; path: string } | undefined {
+  const sha = git(['log', '-1', '--no-renames', '--diff-filter=A', '--format=%H', rev, '--', file]);
+  if (!sha || !skipCommits().includes(sha)) return undefined;
+  for (const line of (git(['show', '-M', '--name-status', '--format=', sha]) ?? '').split('\n')) {
+    const [status, from, to] = line.split('\t');
+    if (status?.startsWith('R') && to === file) return { sha, path: from };
+  }
+  return undefined;
+}
+
+/**
+ * Newest commit that touched the file (`git log -1 -- file`, merges included as git
+ * shows them), skipping structural commits. When only a structural move touched the
+ * current path, the history continues at the path the file had before the move.
+ */
+export function fileLastmod(file: string): string | undefined {
+  let path = file;
+  let rev = 'HEAD';
+  for (let moves = 0; moves < 10; moves += 1) {
+    const date = isoDate(git(['log', '-1', '--invert-grep', `--grep=${SKIP_GREP}`, '--format=%cs', rev, '--', path]));
+    if (date) return date;
+    const moved = movedFrom(path, rev);
+    if (!moved) return undefined;
+    path = moved.path;
+    rev = `${moved.sha}^`;
+  }
+  return undefined;
 }
 
 /** YYYY-MM-DD in the commit's own time zone, like `git blame --date=short`. */
