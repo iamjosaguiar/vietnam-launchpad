@@ -448,3 +448,28 @@ textarea:focus-visible,
     scroll-behavior: auto !important;
   }
 }
+
+/*
+ * International phone field (src/components/forms/IntlPhoneInput.tsx).
+ * The wrapper carries the form's input look; the flag selector, calling code
+ * and number sit inside it, so the inner input drops its own box.
+ */
+.intl-phone {
+  --PhoneInputCountrySelect-marginRight: 0.625em;
+  --PhoneInputCountryFlag-height: 1em;
+  --PhoneInputCountrySelectArrow-opacity: 0.6;
+}
+.intl-phone .intl-phone__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  box-shadow: none;
+}
+.intl-phone .PhoneInputCountrySelect {
+  cursor: pointer;
+}

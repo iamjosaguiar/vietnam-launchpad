@@ -2,9 +2,10 @@
 
 import { useState } from 'react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import IntlPhoneInput from '@/components/forms/IntlPhoneInput';
 import { Link } from '@/i18n/config';
 import { trackEvent } from '@/lib/analytics';
-import { CONTACT_EMAIL_DISPLAY, PHONE_DISPLAY } from '@/lib/site';
+import { CONTACT_EMAIL_DISPLAY } from '@/lib/site';
 
 export default function GetStartedPage() {
   const [formData, setFormData] = useState({
@@ -218,15 +219,13 @@ export default function GetStartedPage() {
                           <label htmlFor="phone" className="block text-sm font-medium text-muted mb-2">
                             Phone Number *
                           </label>
-                          <input
-                            type="tel"
+                          <IntlPhoneInput
                             id="phone"
                             name="phone"
                             required
                             value={formData.phone}
-                            onChange={handleChange}
-                            className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus:bg-white focus:ring-2 focus:ring-navy focus:border-transparent transition-all"
-                            placeholder={PHONE_DISPLAY}
+                            onChange={(phone) => setFormData({ ...formData, phone })}
+                            className="w-full px-4 py-3.5 border border-hairline rounded-xl bg-sand focus-within:bg-white focus-within:ring-2 focus-within:ring-navy focus-within:border-transparent transition-all"
                           />
                         </div>
 

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Chip from '@/components/ui/Chip';
 import Container from '@/components/ui/Container';
+import IntlPhoneInput from '@/components/forms/IntlPhoneInput';
 import { trackEvent } from '@/lib/analytics';
 import { PHONE_DISPLAY, PHONE_TEL, PHONE_WHATSAPP } from '@/lib/site';
 
@@ -149,8 +150,15 @@ export default function ContactPage() {
                       {/* Phone + Company */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2">Phone / WhatsApp</label>
-                          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className={inputClass} placeholder={PHONE_DISPLAY} />
+                          <label htmlFor="contact-phone" className="block text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2">Phone / WhatsApp</label>
+                          <IntlPhoneInput
+                            id="contact-phone"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={(phone) => setFormData({ ...formData, phone })}
+                            className="w-full px-4 py-3.5 border border-stone-200 rounded-xl focus-within:ring-2 focus-within:ring-primary-500/30 focus-within:border-primary-400 transition-all bg-white text-stone-900 text-sm font-body"
+                            inputClassName="placeholder-stone-300"
+                          />
                         </div>
                         <div>
                           <label className="block text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2">Company / Organization</label>

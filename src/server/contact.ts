@@ -2,6 +2,7 @@ import { PHONE_DISPLAY } from '@/lib/site';
 import { getLeadRecipients } from '@/lib/lead-recipients';
 import type { LeadEnv } from '@/server/env';
 import { escapeHtml, leadSubject, sendAutoReply, sendMail } from '@/lib/lead-email';
+import { formatLeadPhone } from '@/lib/lead-phone';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -24,7 +25,7 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
     // submission is never rejected for a field the form does not collect.
     const name = oneLine(body.name, 200);
     const email = oneLine(body.email, 254).toLowerCase();
-    const phone = oneLine(body.phone, 40);
+    const phone = formatLeadPhone(body.phone, 'VN');
     const company = oneLine(body.company, 200);
     const companyType = oneLine(body.companyType, 120);
     const investmentSize = oneLine(body.investmentSize, 80);
@@ -59,7 +60,7 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
     const safe = {
       name: escapeHtml(name),
       email: escapeHtml(email),
-      phone: escapeHtml(phone || 'Not provided'),
+      phone: phone.html,
       company: escapeHtml(company || 'Not provided'),
       companyType: escapeHtml(companyType || 'Not provided'),
       investmentSize: escapeHtml(investmentSize || 'Not specified'),
@@ -76,7 +77,7 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
       '',
       `Name: ${name}`,
       `Email: ${email}`,
-      `Phone: ${phone || 'Not provided'}`,
+      `Phone: ${phone.text}`,
       `Company: ${company || 'Not provided'}`,
       `Organization type: ${companyType || 'Not provided'}`,
       `Investment / budget: ${investmentSize || 'Not specified'}`,

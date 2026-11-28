@@ -2,6 +2,7 @@ import { CONTACT_EMAIL_DISPLAY, PHONE_DISPLAY } from '@/lib/site';
 import { getLeadRecipients } from '@/lib/lead-recipients';
 import type { LeadEnv } from '@/server/env';
 import { escapeHtml, leadSubject, sendAutoReply, sendMail } from '@/lib/lead-email';
+import { formatLeadPhone } from '@/lib/lead-phone';
 
 export async function POST(request: Request, env: LeadEnv): Promise<Response> {
   try {
@@ -9,7 +10,6 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
     const {
       name,
       email,
-      phone,
       companyType,
       capital,
       shareholders,
@@ -19,6 +19,8 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
       visaOption,
       timeline
     } = body;
+    // Phone is sanitised and normalised here; it is never interpolated raw.
+    const phone = formatLeadPhone(body.phone, 'VN');
 
     // Validate required fields
     if (!name || !email || !companyType || !businessModel) {
@@ -56,7 +58,7 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
       'Contact Information',
       `Name: ${name}`,
       `Email: ${email}`,
-      `Phone: ${phone || 'Not provided'}`,
+      `Phone: ${phone.text}`,
       `Timeline: ${timeline || 'Not specified'}`,
       '',
       'Business Details',
@@ -95,7 +97,7 @@ export async function POST(request: Request, env: LeadEnv): Promise<Response> {
       <h3>Contact Information</h3>
       <p><strong>Name:</strong> ${escapeHtml(name)}</p>
       <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-      <p><strong>Phone:</strong> ${escapeHtml(phone || 'Not provided')}</p>
+      <p><strong>Phone:</strong> ${phone.html}</p>
       <p><strong>Timeline:</strong> ${escapeHtml(timeline || 'Not specified')}</p>
 
       <hr>
